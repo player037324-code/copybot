@@ -1,2 +1,4 @@
-id: 12
-papertest
+id: 13
+set PAPER=false
+reset-positions
+start
