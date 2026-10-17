@@ -112,3 +112,36 @@ Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 failed: custom program erro
 watching balance (150s)...
 20:56:25 BUY GQhGVgVSEreBxFi6p68M5sEKn2KirzZMDfoj6BpbVnoY 7.016 SOL
 done: 1 balance changes, 1 signed txs
+=== cmd 11 @ 2026-10-17T21:14:02Z ===
+> set PAPER=true
+set PAPER=true
+> set BUY_PCT=40
+added BUY_PCT=40
+> set MIN_TARGET_BUY_SOL=4
+set MIN_TARGET_BUY_SOL=4
+> set COPY_REBUYS=false
+set COPY_REBUYS=false
+> set MAX_POSITIONS=0
+set MAX_POSITIONS=0
+> set SELL_ALL_ON_ANY_SELL=true
+added SELL_ALL_ON_ANY_SELL=true
+> set MIRROR_SELLS=true
+set MIRROR_SELLS=true
+> set TAKE_PROFIT_PCT=0
+set TAKE_PROFIT_PCT=0
+> set STOP_LOSS_PCT=0
+set STOP_LOSS_PCT=0
+> set SLIPPAGE_BPS=2000
+set SLIPPAGE_BPS=2000
+> set SELL_SLIPPAGE_BPS=3000
+added SELL_SLIPPAGE_BPS=3000
+> papertest
+[2026-10-17 21:14:03] === copybot starting ===
+[2026-10-17 21:14:03] mode: PAPER (no real trades)
+[2026-10-17 21:14:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-17 21:14:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-17 21:14:03] buy 40% of Lunar's SOL when he spends > 4 SOL | initial buy only: true | max per buy: none
+[2026-10-17 21:14:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-17 21:14:03] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-17 21:14:03] open positions: 0
+[2026-10-17 21:14:03] websocket connected: transactionSubscribe (processed)
