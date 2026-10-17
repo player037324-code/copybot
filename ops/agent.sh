@@ -63,6 +63,7 @@ if [ -f control/cmd.txt ]; then
               sed -i "s|^PRIVATE_KEY=.*|$old|" .env
               echo "restored key from $f"
             fi ;;
+          inspect)  timeout 120 node scripts/inspect.js 2>&1 ;;
           stats)    npm run -s stats 2>&1 ;;
           start)    pm2 describe copybot >/dev/null 2>&1 && pm2 restart copybot || pm2 start src/bot.js --name copybot; pm2 save >/dev/null ;;
           stop)     pm2 stop copybot; pm2 save >/dev/null ;;
