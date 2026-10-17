@@ -92,7 +92,22 @@ export function buy(ev, targetSig, targetSlot, seenAt) {
 
   return withLock(ev.mint, async () => {
     try {
-      const r = await swap(SOL_MINT, ev.mint, Math.floor(size * 1e9), cfg.slippageBps);
+      const steps = [cfg.slippageBps, ...cfg.buyRetrySlippages];
+      let r;
+      for (let i = 0; i < steps.length; i++) {
+        try {
+          r = await swap(SOL_MINT, ev.mint, Math.floor(size * 1e9), steps[i]);
+          if (i > 0) log(`  ${tag} landed on retry ${i} at ${steps[i] / 100}% slippage`);
+          break;
+        } catch (e) {
+          const behind = e.slot && targetSlot ? ` (landed +${e.slot - targetSlot} slots after Lunar)` : '';
+          const slip = /"Custom":6001|SlippageToleranceExceeded|0x1771/.test(e.message);
+          warn(`  ${tag} attempt ${i + 1} at ${steps[i] / 100}% failed${behind}: ${slip ? 'slippage exceeded' : e.message.slice(0, 160)}`);
+          recordTrade({ side: 'BUY_FAIL', mint: ev.mint, sol: size, slippageBps: steps[i], slotsBehind: e.slot && targetSlot ? e.slot - targetSlot : null, error: e.message.slice(0, 200), targetSig });
+          if (!slip || i === steps.length - 1) throw e;
+          if (!pending.has(ev.mint)) throw new Error('cancelled');
+        }
+      }
       const reactMs = Date.now() - seenAt;
       let amountRaw = BigInt(r.q.outAmount);
       if (!cfg.paper) {
@@ -114,9 +129,8 @@ export function buy(ev, targetSig, targetSlot, seenAt) {
         recordTrade({ side: 'BUY', mint: ev.mint, sol: size, targetSol: ev.solSpent, mcapUsd: Math.round(m), slotsBehind, reactMs, paper: cfg.paper, sig: r.sig, targetSig });
       });
     } catch (e) {
-      warn(`BUY ${tag} failed: ${e.message}`);
+      warn(`BUY ${tag} gave up: ${e.message.slice(0, 160)}`);
       balanceSol += size;
-      recordTrade({ side: 'BUY_FAIL', mint: ev.mint, sol: size, error: e.message.slice(0, 200), targetSig });
     } finally {
       pending.delete(ev.mint);
       refreshBalance();

@@ -30,7 +30,9 @@ export const cfg = {
   priceCheckMs: num('PRICE_CHECK_MS', 8000),
 
   // ---- execution / speed ----
-  slippageBps: num('SLIPPAGE_BPS', 2000),
+  slippageBps: num('SLIPPAGE_BPS', 2500),
+  // if a buy fails on slippage, retry right away at these levels (bps)
+  buyRetrySlippages: str('BUY_RETRY_SLIPPAGES', '4000,5500').split(',').map(Number).filter(Boolean),
   sellSlippageBps: num('SELL_SLIPPAGE_BPS', 3000),
   onlyDirectRoutes: bool('ONLY_DIRECT_ROUTES', true),
   cuLimit: num('CU_LIMIT', 400000),

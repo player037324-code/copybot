@@ -88,7 +88,7 @@ export async function sendAndLand(conn, tx) {
     await new Promise((r) => setTimeout(r, 300));
     const st = (await conn.getSignatureStatuses([sig]).catch(() => ({ value: [null] }))).value[0];
     if (st) {
-      if (st.err) throw new Error(`tx failed ${sig}: ${JSON.stringify(st.err)}`);
+      if (st.err) { const e = new Error(`tx failed ${sig}: ${JSON.stringify(st.err)}`); e.slot = st.slot; e.sig = sig; throw e; }
       return { sig, slot: st.slot };
     }
     if (i % 3 === 2) postSender(b64).catch(() => {});
