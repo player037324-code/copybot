@@ -10,7 +10,7 @@ Description=copybot GitHub sync agent
 After=network-online.target
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c '/root/copybot-ops/ops/agent.sh >> /root/copybot-agent.log 2>&1'
+ExecStart=/bin/bash -c '/bin/bash /root/copybot-ops/ops/agent.sh >> /root/copybot-agent.log 2>&1'
 TimeoutStartSec=170
 EOF
 
@@ -34,6 +34,6 @@ echo ""
 systemctl list-timers copybot-agent.timer --no-pager | head -3
 echo
 echo "--- agent log ---"
-tail -n 15 /root/copybot-agent.log 2>/dev/null || echo "(empty, good)"
+: > /root/copybot-agent.log; systemctl start copybot-agent.service; tail -n 15 /root/copybot-agent.log; echo "(empty above = good)"
 echo ""
 systemctl is-active copybot-agent.timer >/dev/null && echo "ALL SET (timer running). You can close this window." || echo "TIMER NOT RUNNING, send Claude a screenshot"
