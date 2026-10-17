@@ -19,6 +19,12 @@ log(`open positions: ${Object.keys(getPositions()).length}`);
 startTrader();
 
 const seen = new Set();
+const feed = { txs: 0, signed: 0, lagMs: [] };
+setInterval(() => {
+  const lag = feed.lagMs.length ? Math.round(feed.lagMs.reduce((a, b) => a + b, 0) / feed.lagMs.length) : null;
+  log(`feed: ${feed.txs} txs mentioning Lunar, ${feed.signed} signed by him (last 60s)${lag !== null ? `, avg ${lag}ms after block time` : ''}`);
+  feed.txs = 0; feed.signed = 0; feed.lagMs = [];
+}, 60000).unref();
 function remember(sig) {
   if (seen.has(sig)) return false;
   seen.add(sig);
@@ -27,6 +33,10 @@ function remember(sig) {
 }
 
 function handleTx(tx, sig, slot, seenAt) {
+  feed.txs++;
+  const k = tx?.transaction?.message?.accountKeys?.find((x) => (x.pubkey?.toString?.() ?? x) === cfg.target);
+  if (k?.signer) feed.signed++;
+  if (tx?.blockTime) feed.lagMs.push(seenAt - tx.blockTime * 1000);
   for (const ev of parseTrades(tx, cfg.target)) {
     if (ev.type === 'BUY') {
       log(`Lunar BUY ${ev.mint} ${ev.solSpent.toFixed(3)} SOL (slot ${slot})`);
