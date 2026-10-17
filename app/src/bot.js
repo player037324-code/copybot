@@ -2,7 +2,7 @@ import WebSocket from 'ws';
 import { PublicKey } from '@solana/web3.js';
 import { cfg, validate } from './config.js';
 import { parseTrades } from './detect.js';
-import { conn, buy, sell, monitorLoop, walletAddress, getPositions } from './trader.js';
+import { conn, buy, sell, monitorLoop, startTrader, walletAddress, getPositions } from './trader.js';
 import { log, warn } from './log.js';
 
 validate();
@@ -11,55 +11,51 @@ log('=== copybot starting ===');
 log(`mode: ${cfg.paper ? 'PAPER (no real trades)' : 'LIVE'}`);
 log(`copying: ${cfg.target}`);
 log(`our wallet: ${walletAddress}`);
-log(`buy ${cfg.buySol} SOL | max ${cfg.maxPositions} positions | TP ${cfg.takeProfitPct || 'off'}% SL ${cfg.stopLossPct || 'off'}% | mirror sells ${cfg.mirrorSells}`);
+log(`buy ${cfg.buyPct}% of Lunar's SOL when he spends > ${cfg.minTargetBuySol} SOL | initial buy only: ${!cfg.copyRebuys} | max per buy: ${cfg.maxBuySol || 'none'}`);
+log(`sell: ${cfg.sellAllOnAnySell ? 'SELL ALL on any Lunar sell or transfer out' : 'mirror proportionally'} | TP ${cfg.takeProfitPct || 'off'} SL ${cfg.stopLossPct || 'off'}`);
+log(`exec: slippage ${cfg.slippageBps / 100}% buy / ${cfg.sellSlippageBps / 100}% sell | tip ${cfg.tipSol} SOL | sender ${cfg.senderUrl}`);
 log(`open positions: ${Object.keys(getPositions()).length}`);
 
-const seen = new Set();
+startTrader();
 
-async function fetchTx(sig) {
-  // logs come in at "processed"; the full tx is fetchable a moment later
-  for (let i = 0; i < 20; i++) {
-    const tx = await conn.getParsedTransaction(sig, { maxSupportedTransactionVersion: 1, commitment: 'confirmed' }).catch(() => null);
-    if (tx) return tx;
-    await new Promise((r) => setTimeout(r, 250));
-  }
-  return null;
+const seen = new Set();
+function remember(sig) {
+  if (seen.has(sig)) return false;
+  seen.add(sig);
+  if (seen.size > 20000) seen.delete(seen.values().next().value);
+  return true;
 }
 
-async function handleSig(sig) {
-  if (seen.has(sig)) return;
-  seen.add(sig);
-  if (seen.size > 5000) seen.delete(seen.values().next().value);
-
-  const tx = await fetchTx(sig);
-  if (!tx) return warn(`could not fetch ${sig}`);
+function handleTx(tx, sig, slot, seenAt) {
   for (const ev of parseTrades(tx, cfg.target)) {
     if (ev.type === 'BUY') {
-      log(`target BUY ${ev.mint} for ${ev.solSpent.toFixed(3)} SOL`);
-      buy(ev, sig);
-    } else if (ev.type === 'SELL') {
-      log(`target SELL ${Math.round(ev.fraction * 100)}% of ${ev.mint}`);
-      if (cfg.mirrorSells && getPositions()[ev.mint]) sell(ev.mint, ev.fraction, 'mirror', sig);
+      log(`Lunar BUY ${ev.mint} ${ev.solSpent.toFixed(3)} SOL (slot ${slot})`);
+      buy(ev, sig, slot, seenAt);
+    } else {
+      const held = !!getPositions()[ev.mint];
+      log(`Lunar ${ev.solGot > 0 ? 'SELL' : 'TRANSFER OUT'} ${Math.round(ev.fraction * 100)}% of ${ev.mint}${held ? ' -> dumping ours' : ''}`);
+      if (cfg.mirrorSells && held) sell(ev.mint, ev.fraction, ev.solGot > 0 ? 'Lunar sold' : 'Lunar moved tokens out', sig);
     }
   }
 }
 
-// The target address gets spammed by other bots (~100+ tx/sec that just mention it).
-// So instead of reacting to every mention, we watch the wallet's SOL balance. It only
-// changes when the wallet itself does something (every tx it signs pays a fee).
-// On a change we look up that slot's transactions and keep the ones it signed.
+// ---- fast path: Helius transactionSubscribe at processed, full tx included ----
+// ---- fallback: watch SOL balance + look up signed txs (works on any plan) ----
+let mode = 'fast';
 const targetKey = new PublicKey(cfg.target);
-let scanning = Promise.resolve();
+
 async function onBalanceChange(slot) {
+  const seenAt = Date.now();
   for (let attempt = 0; attempt < 12; attempt++) {
     const sigs = await conn.getSignaturesForAddress(targetKey, { limit: 1000 }, 'confirmed').catch(() => []);
-    const hits = sigs.filter((s) => !s.err && s.slot >= slot - 1 && s.slot <= slot + 1);
+    const hits = sigs.filter((s) => !s.err && Math.abs(s.slot - slot) <= 1 && !seen.has(s.signature));
     let found = false;
     for (const s of hits) {
-      if (seen.has(s.signature)) { found = true; continue; }
-      const before = seen.size;
-      await handleSig(s.signature);
-      if (seen.size > before) found = true;
+      const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1, commitment: 'confirmed' }).catch(() => null);
+      if (!tx) continue;
+      remember(s.signature);
+      handleTx(tx, s.signature, s.slot, seenAt);
+      found = true;
     }
     if (found) return;
     await new Promise((r) => setTimeout(r, 300));
@@ -67,26 +63,46 @@ async function onBalanceChange(slot) {
 }
 
 function connect() {
-  const ws = new WebSocket(cfg.wsUrl);
+  const ws = new WebSocket(cfg.wsUrl, { perMessageDeflate: false });
   let ping;
+  let chain = Promise.resolve();
   ws.on('open', () => {
-    log('websocket connected, watching target wallet balance...');
-    ws.send(JSON.stringify({
-      jsonrpc: '2.0', id: 1, method: 'accountSubscribe',
-      params: [cfg.target, { commitment: 'confirmed', encoding: 'base64' }],
-    }));
-    ping = setInterval(() => ws.readyState === 1 && ws.ping(), 30000);
+    if (mode === 'fast') {
+      log('websocket connected: transactionSubscribe (processed)');
+      ws.send(JSON.stringify({
+        jsonrpc: '2.0', id: 1, method: 'transactionSubscribe',
+        params: [
+          { accountRequired: [cfg.target], failed: false, vote: false },
+          { commitment: 'processed', encoding: 'jsonParsed', transactionDetails: 'full', showRewards: false, maxSupportedTransactionVersion: 1 },
+        ],
+      }));
+    } else {
+      log('websocket connected: balance watch (fallback mode)');
+      ws.send(JSON.stringify({ jsonrpc: '2.0', id: 2, method: 'accountSubscribe', params: [cfg.target, { commitment: 'confirmed', encoding: 'base64' }] }));
+    }
+    ping = setInterval(() => ws.readyState === 1 && ws.ping(), 20000);
   });
   ws.on('message', (data) => {
-    try {
-      const m = JSON.parse(data);
-      const slot = m?.params?.result?.context?.slot;
-      if (m.method === 'accountNotification' && slot) {
-        scanning = scanning.then(() => onBalanceChange(slot)).catch((e) => warn(e.message));
-      }
-    } catch {}
+    const seenAt = Date.now();
+    let m;
+    try { m = JSON.parse(data); } catch { return; }
+    if (m.id === 1 && m.error) {
+      warn(`transactionSubscribe not available (${JSON.stringify(m.error).slice(0, 120)}), switching to fallback`);
+      mode = 'fallback';
+      ws.close();
+      return;
+    }
+    if (m.method === 'transactionNotification') {
+      const r = m.params?.result;
+      const sig = r?.signature;
+      if (!sig || !remember(sig)) return;
+      try { handleTx(r.transaction, sig, r.slot, seenAt); } catch (e) { warn(`parse ${sig}: ${e.message}`); }
+    } else if (m.method === 'accountNotification') {
+      const slot = m.params?.result?.context?.slot;
+      if (slot) chain = chain.then(() => onBalanceChange(slot)).catch((e) => warn(e.message));
+    }
   });
-  ws.on('close', () => { clearInterval(ping); warn('websocket closed, reconnecting in 2s'); setTimeout(connect, 2000); });
+  ws.on('close', () => { clearInterval(ping); warn('websocket closed, reconnecting'); setTimeout(connect, 500); });
   ws.on('error', (e) => warn(`websocket error: ${e.message}`));
 }
 

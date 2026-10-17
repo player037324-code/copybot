@@ -19,6 +19,7 @@ if (sells.length) console.log(`Win rate: ${((wins / sells.length) * 100).toFixed
 console.log('\nLast 10 trades:');
 for (const r of rows.slice(-10)) {
   const t = r.time.slice(5, 19).replace('T', ' ');
-  if (r.side === 'BUY') console.log(`${t}  BUY  ${r.mint.slice(0, 8)}  ${r.sol} SOL  @ $${(r.mcapUsd / 1000).toFixed(1)}K mcap`);
+  if (r.side === 'BUY') console.log(`${t}  BUY  ${r.mint.slice(0, 8)}  ${Number(r.sol).toFixed(3)} SOL  @ $${((r.mcapUsd || 0) / 1000).toFixed(1)}K mcap  (+${r.slotsBehind ?? '?'} slots, ${r.reactMs ?? '?'}ms)`);
+  else if (r.side === 'BUY_FAIL') console.log(`${t}  FAIL ${r.mint.slice(0, 8)}  ${r.error}`);
   else console.log(`${t}  SELL ${r.mint.slice(0, 8)}  ${r.pnlSol >= 0 ? '+' : ''}${r.pnlSol.toFixed(4)} SOL  [${r.reason}]`);
 }

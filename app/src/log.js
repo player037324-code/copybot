@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const dir = path.resolve('logs');
+const dir = path.resolve(process.env.LOG_DIR || 'logs');
 fs.mkdirSync(dir, { recursive: true });
 const tradesFile = path.join(dir, 'trades.jsonl');
 
@@ -15,3 +15,4 @@ export function recordTrade(t) {
 }
 
 export const TRADES_FILE = tradesFile;
+export const LOG_DIR = dir;
