@@ -1,2 +1,13 @@
-id: 10
-watch
+id: 11
+set PAPER=true
+set BUY_PCT=40
+set MIN_TARGET_BUY_SOL=4
+set COPY_REBUYS=false
+set MAX_POSITIONS=0
+set SELL_ALL_ON_ANY_SELL=true
+set MIRROR_SELLS=true
+set TAKE_PROFIT_PCT=0
+set STOP_LOSS_PCT=0
+set SLIPPAGE_BPS=2000
+set SELL_SLIPPAGE_BPS=3000
+papertest
