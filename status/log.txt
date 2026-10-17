@@ -94,3 +94,4 @@
 [2026-10-17 22:25:29] skip E7eCZS: Lunar already holds it (adding, not a new position)
 [2026-10-17 22:25:29] Lunar BUY E7eCZS2cq655qJ7uVx3dSHR2zK31kwNQsWS6P6Hpump 1.014 SOL (adding) (slot 458201452)
 [2026-10-17 22:25:29] skip E7eCZS: Lunar already holds it (adding, not a new position)
+[2026-10-17 22:26:05] feed: 3 txs mentioning Lunar, 3 signed by him (last 60s)
