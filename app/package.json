@@ -1,0 +1,19 @@
+{
+  "name": "copybot",
+  "version": "1.0.0",
+  "description": "Solana copytrade bot: mirrors one target wallet's buys and sells via Jupiter",
+  "type": "module",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "wallet": "node scripts/new-wallet.js",
+    "stats": "node scripts/stats.js",
+    "check": "node scripts/check.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "ws": "^8.18.0"
+  }
+}
