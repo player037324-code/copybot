@@ -145,3 +145,16 @@ added SELL_SLIPPAGE_BPS=3000
 [2026-10-17 21:14:03] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-17 21:14:03] open positions: 0
 [2026-10-17 21:14:03] websocket connected: transactionSubscribe (processed)
+=== cmd 12 @ 2026-10-17T21:18:02Z ===
+> papertest
+[2026-10-17 21:18:03] === copybot starting ===
+[2026-10-17 21:18:03] mode: PAPER (no real trades)
+[2026-10-17 21:18:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-17 21:18:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-17 21:18:03] buy 40% of Lunar's SOL when he spends > 4 SOL | initial buy only: true | max per buy: none
+[2026-10-17 21:18:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-17 21:18:03] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-17 21:18:03] open positions: 0
+[2026-10-17 21:18:03] websocket connected: transactionSubscribe (processed)
+[2026-10-17 21:19:03] feed: 186 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 21:20:03] feed: 401 txs mentioning Lunar, 0 signed by him (last 60s)
