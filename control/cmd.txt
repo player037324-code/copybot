@@ -1,4 +1,3 @@
-id: 13
-set PAPER=false
-reset-positions
-start
+id: 14
+set SLIPPAGE_BPS=2500
+restart
