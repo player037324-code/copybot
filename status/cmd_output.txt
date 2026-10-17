@@ -66,3 +66,10 @@ Of the last 14 successful: 0 buys, 0 sells, 14 non-trade
 === cmd 7 @ 2026-10-17T20:44:03Z ===
 > inspect
 unknown command
+=== cmd 8 @ 2026-10-17T20:45:02Z ===
+> inspect
+
+sample failed: progs=7JwTi9am,pumpfun,system err={"InstructionError":[0,{"Custom":7}]}
+Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG invoke [1]
+Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG consumed 1288 of 75920 compute units
+Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG failed: custom program error: 0x7
