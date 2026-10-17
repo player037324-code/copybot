@@ -20,8 +20,11 @@ function sumByMint(balances, owner) {
 
 export function parseTrades(tx, target) {
   if (!tx || !tx.meta || tx.meta.err) return [];
-  const keys = tx.transaction.message.accountKeys.map((k) => (typeof k === 'string' ? k : k.pubkey.toString()));
+  const raw = tx.transaction.message.accountKeys;
+  const keys = raw.map((k) => (typeof k === 'string' ? k : k.pubkey.toString()));
   const idx = keys.indexOf(target);
+  // only count transactions the target actually signed (ignores the spam that just mentions it)
+  if (idx < 0 || (typeof raw[idx] === 'object' && raw[idx].signer === false)) return [];
   const solDelta = idx >= 0 ? (tx.meta.postBalances[idx] - tx.meta.preBalances[idx]) / 1e9 : 0;
 
   // count wrapped SOL movement as SOL too

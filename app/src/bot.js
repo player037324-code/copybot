@@ -1,4 +1,5 @@
 import WebSocket from 'ws';
+import { PublicKey } from '@solana/web3.js';
 import { cfg, validate } from './config.js';
 import { parseTrades } from './detect.js';
 import { conn, buy, sell, monitorLoop, walletAddress, getPositions } from './trader.js';
@@ -43,22 +44,46 @@ async function handleSig(sig) {
   }
 }
 
+// The target address gets spammed by other bots (~100+ tx/sec that just mention it).
+// So instead of reacting to every mention, we watch the wallet's SOL balance. It only
+// changes when the wallet itself does something (every tx it signs pays a fee).
+// On a change we look up that slot's transactions and keep the ones it signed.
+const targetKey = new PublicKey(cfg.target);
+let scanning = Promise.resolve();
+async function onBalanceChange(slot) {
+  for (let attempt = 0; attempt < 12; attempt++) {
+    const sigs = await conn.getSignaturesForAddress(targetKey, { limit: 1000 }, 'confirmed').catch(() => []);
+    const hits = sigs.filter((s) => !s.err && s.slot >= slot - 1 && s.slot <= slot + 1);
+    let found = false;
+    for (const s of hits) {
+      if (seen.has(s.signature)) { found = true; continue; }
+      const before = seen.size;
+      await handleSig(s.signature);
+      if (seen.size > before) found = true;
+    }
+    if (found) return;
+    await new Promise((r) => setTimeout(r, 300));
+  }
+}
+
 function connect() {
   const ws = new WebSocket(cfg.wsUrl);
   let ping;
   ws.on('open', () => {
-    log('websocket connected, watching target...');
+    log('websocket connected, watching target wallet balance...');
     ws.send(JSON.stringify({
-      jsonrpc: '2.0', id: 1, method: 'logsSubscribe',
-      params: [{ mentions: [cfg.target] }, { commitment: 'processed' }],
+      jsonrpc: '2.0', id: 1, method: 'accountSubscribe',
+      params: [cfg.target, { commitment: 'confirmed', encoding: 'base64' }],
     }));
     ping = setInterval(() => ws.readyState === 1 && ws.ping(), 30000);
   });
   ws.on('message', (data) => {
     try {
       const m = JSON.parse(data);
-      const v = m?.params?.result?.value;
-      if (v?.signature && !v.err) handleSig(v.signature).catch((e) => warn(e.message));
+      const slot = m?.params?.result?.context?.slot;
+      if (m.method === 'accountNotification' && slot) {
+        scanning = scanning.then(() => onBalanceChange(slot)).catch((e) => warn(e.message));
+      }
     } catch {}
   });
   ws.on('close', () => { clearInterval(ping); warn('websocket closed, reconnecting in 2s'); setTimeout(connect, 2000); });
