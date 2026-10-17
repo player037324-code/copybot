@@ -1,0 +1,1 @@
+[TAILING] Tailing last 200 lines for [copybot] process (change the value with --lines option)

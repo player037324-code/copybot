@@ -1,0 +1,30 @@
+updated: 2026-10-17T00:30:30Z
+deployed: 49ed28dce36978c327dd74ad1e7bf16f18d83693
+pm2: not started
+wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+
+--- settings (secrets hidden) ---
+HELIUS_API_KEY=<set>
+JUP_API_KEY=<set>
+PRIVATE_KEY=<set>
+TARGET_WALLET=GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+PAPER=false
+BUY_SOL=0.05
+MIN_TARGET_BUY_SOL=0.1
+MAX_POSITIONS=5
+COPY_REBUYS=false
+MIN_MCAP_USD=0
+MAX_MCAP_USD=0
+MIRROR_SELLS=true
+TAKE_PROFIT_PCT=100
+STOP_LOSS_PCT=40
+MAX_HOLD_MIN=0
+PRICE_CHECK_MS=8000
+SLIPPAGE_BPS=1500
+PRIORITY_FEE_LAMPORTS=1000000
+
+--- stats ---
+No trades yet.
+
+--- positions ---
+{}
