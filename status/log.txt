@@ -102,3 +102,4 @@
 [2026-10-17 22:27:05] feed: 2 txs mentioning Lunar, 2 signed by him (last 60s)
 [2026-10-17 22:28:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:28:22] Lunar TRANSFER OUT 50% of 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump
+[2026-10-17 22:29:05] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
