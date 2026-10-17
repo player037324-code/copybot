@@ -11,3 +11,4 @@
 [2026-10-17 21:23:02] open positions: 0
 [2026-10-17 21:23:02] websocket connected: transactionSubscribe (processed)
 [2026-10-17 21:24:02] feed: 47 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 21:25:02] feed: 127 txs mentioning Lunar, 0 signed by him (last 60s)
