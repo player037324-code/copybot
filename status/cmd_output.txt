@@ -1,0 +1,25 @@
+=== cmd 2 @ 2026-10-17T00:48:02Z ===
+> check
+Helius RPC... OK
+Jupiter API... OK (SOL = $104.08)
+Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.9487 SOL
+
+Target's last trades (GijFWw...):
+/root/copybot/node_modules/@solana/web3.js/lib/index.cjs.js:7709
+      throw new SolanaJSONRPCError(res.error, 'failed to get transaction');
+            ^
+
+SolanaJSONRPCError: failed to get transaction: Transaction version (1) is not supported by the requesting client. Please try the request again with the following configuration parameter: "maxSupportedTransactionVersion": 1
+    at Connection.getParsedTransaction (/root/copybot/node_modules/@solana/web3.js/lib/index.cjs.js:7709:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///root/copybot/scripts/check.js:21:14 {
+  code: -32015,
+  data: undefined
+}
+
+Node.js v22.23.3
+> wallet-force
+Old key backed up to wallet-backup-1792198083397.txt
+New trading wallet created and saved to .env
+Address (send SOL here): GEPWmJEMXUyR6MCaQazab3uzbWBG5bpL6d76c6M1oZX6
+To import into Phantom later: cat .env | grep PRIVATE_KEY  (only do this on the server)
