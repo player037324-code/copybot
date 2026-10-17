@@ -1,7 +1,7 @@
-updated: 2026-10-17T00:48:03Z
-deployed: 49ed28dce36978c327dd74ad1e7bf16f18d83693
+updated: 2026-10-17T20:38:34Z
+deployed: 9bb86c13a458cbb2cfa2c53bb355b420af93dca7
 pm2: not started
-wallet: GEPWmJEMXUyR6MCaQazab3uzbWBG5bpL6d76c6M1oZX6
+wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
 HELIUS_API_KEY=<set>

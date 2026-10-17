@@ -23,3 +23,12 @@ Old key backed up to wallet-backup-1792198083397.txt
 New trading wallet created and saved to .env
 Address (send SOL here): GEPWmJEMXUyR6MCaQazab3uzbWBG5bpL6d76c6M1oZX6
 To import into Phantom later: cat .env | grep PRIVATE_KEY  (only do this on the server)
+=== cmd 4 @ 2026-10-17T20:38:33Z ===
+> wallet-restore
+restored key from wallet-backup-1792198083397.txt
+> check
+Helius RPC... OK
+Jupiter API... OK (SOL = $104.01)
+Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
+
+Target's last trades (GijFWw...):
