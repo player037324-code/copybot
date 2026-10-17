@@ -58,3 +58,5 @@
 [2026-10-17 22:04:02] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (slot 458195543)
 [2026-10-17 22:04:02] skip 2UfsAi: Lunar spent 0.26 SOL (need > 4)
 [2026-10-17 22:04:02] feed: 2 txs mentioning Lunar, 2 signed by him (last 60s)
+[2026-10-17 22:05:02] feed: 3 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 22:06:02] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
