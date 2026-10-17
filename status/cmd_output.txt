@@ -63,3 +63,6 @@ Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
 Scanning target's last 1000 txs (GijFWw...)
 1000 txs over 0.0h: 14 succeeded, 986 failed
 Of the last 14 successful: 0 buys, 0 sells, 14 non-trade
+=== cmd 7 @ 2026-10-17T20:44:03Z ===
+> inspect
+unknown command
