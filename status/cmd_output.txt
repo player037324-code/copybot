@@ -73,3 +73,37 @@ sample failed: progs=7JwTi9am,pumpfun,system err={"InstructionError":[0,{"Custom
 Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG invoke [1]
 Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG consumed 1288 of 75920 compute units
 Program 7JwTi9ambvCTYwZbNQEZA8hzpG3ymPWRZpAxgKPJ94ZG failed: custom program error: 0x7
+=== cmd 9 @ 2026-10-17T20:46:03Z ===
+> inspect
+15000 txs over 0.03h, 393 succeeded
+oyx8tasaTz4E signer=false sol=0.00000 progs=SPAMh3Qj
+4aF1wcASGT6a signer=false sol=0.00000 progs=SPAMh3Qj
+2hCCPRAjefP7 signer=false sol=0.00000 progs=SPAMh3Qj
+3zzH5n9aWxaD signer=false sol=0.00000 progs=SPAMh3Qj
+2BSsSoa5BPtg signer=false sol=0.00000 progs=SPAMh3Qj
+5e5KP2nf3p9Y signer=false sol=0.00000 progs=SPAMh3Qj
+4PUNp1T8hZua signer=false sol=0.00000 progs=SPAMh3Qj
+33ABvp35ckTK signer=false sol=0.00000 progs=SPAMh3Qj
+3Y2SvD1Bj2bm signer=false sol=0.00000 progs=SPAMh3Qj
+2aV8PEfQvsoM signer=false sol=0.00000 progs=SPAMh3Qj
+4teJbMHV2pwj signer=false sol=0.00000 progs=SPAMh3Qj
+4WYNY7jwNED1 signer=false sol=0.00000 progs=SPAMh3Qj
+36yWr1X8qiTR signer=false sol=0.00000 progs=SPAMh3Qj
+6mEoRuf3bPEA signer=false sol=0.00000 progs=SPAMh3Qj
+4Kmdy6JEjEUW signer=false sol=0.00000 progs=SPAMh3Qj
+5eSvWHmLnDV5 signer=false sol=0.00000 progs=SPAMh3Qj
+5oLKSkGTVxXW signer=false sol=0.00000 progs=SPAMh3Qj
+2d4zLfCmpBod signer=false sol=0.00000 progs=SPAMh3Qj
+5A5LxPeZxVrC signer=false sol=0.00000 progs=SPAMh3Qj
+5qWyJoTSWe1K signer=false sol=0.00000 progs=SPAMh3Qj
+3gm8ssLckv1D signer=false sol=0.00000 progs=SPAMh3Qj
+9avrq1VhsGvg signer=false sol=0.00000 progs=SPAMh3Qj
+4BEhRdHwVEUQ signer=false sol=0.00000 progs=SPAMh3Qj
+irhLRuwRaXGd signer=false sol=0.00000 progs=SPAMh3Qj
+WQjULeki8dpL signer=false sol=0.00000 progs=SPAMh3Qj
+
+sample failed: progs=cb,BevFQ2LK,system err={"InstructionError":[1,{"Custom":3}]}
+Program ComputeBudget111111111111111111111111111111 success
+Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 invoke [1]
+Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 consumed 1241 of 57576 compute units
+Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 failed: custom program error: 0x3
