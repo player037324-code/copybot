@@ -1,6 +1,6 @@
-updated: 2026-10-17T23:40:02Z
+updated: 2026-10-17T23:41:02Z
 deployed: 68313360012fab745c61e80ca49ed9ed3289f457
-pm2: online uptime=90m restarts=1
+pm2: online uptime=91m restarts=1
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -27,7 +27,11 @@ SELL_ALL_ON_ANY_SELL=true
 SELL_SLIPPAGE_BPS=3000
 
 --- stats ---
-No trades yet.
+Buys: 0   Sells: 0   Open: 0
+Realized PnL: +0.0000 SOL ($0.00)
+
+Last 10 trades:
+10-17 23:40:34  FAIL 4h7jHyjb  tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
 
 --- positions ---
 {}

@@ -1,6 +1,4 @@
 [TAILING] Tailing last 200 lines for [copybot] process (change the value with --lines option)
-/root/.pm2/logs/copybot-error.log last 200 lines:
-
 /root/.pm2/logs/copybot-out.log last 200 lines:
 [2026-10-17 21:23:02] === copybot starting ===
 [2026-10-17 21:23:02] mode: LIVE
@@ -178,3 +176,7 @@
 [2026-10-17 23:37:05] feed: 62 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:38:05] feed: 108 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:39:05] feed: 55 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 23:40:05] feed: 105 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 23:40:34] Lunar BUY 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 5.016 SOL NEW POSITION (slot 458222173)
+
+/root/.pm2/logs/copybot-error.log last 200 lines:
