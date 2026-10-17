@@ -52,6 +52,17 @@ if [ -f control/cmd.txt ]; then
           check)    timeout 90 npm run -s check 2>&1 ;;
           wallet)   timeout 30 npm run -s wallet 2>&1 ;;
           wallet-force) timeout 30 npm run -s wallet -- --force 2>&1 ;;
+          wallet-restore)
+            # put back the most recent backed-up key (current one gets backed up first)
+            f=$(ls -t wallet-backup-*.txt 2>/dev/null | head -1)
+            if [ -z "$f" ]; then echo "no backup found"
+            else
+              cur=$(grep '^PRIVATE_KEY=' .env)
+              [ -n "${cur#PRIVATE_KEY=}" ] && { echo "$cur" > "wallet-backup-$(date +%s%3N).txt"; chmod 600 wallet-backup-*.txt; }
+              old=$(grep '^PRIVATE_KEY=' "$f" | head -1)
+              sed -i "s|^PRIVATE_KEY=.*|$old|" .env
+              echo "restored key from $f"
+            fi ;;
           stats)    npm run -s stats 2>&1 ;;
           start)    pm2 describe copybot >/dev/null 2>&1 && pm2 restart copybot || pm2 start src/bot.js --name copybot; pm2 save >/dev/null ;;
           stop)     pm2 stop copybot; pm2 save >/dev/null ;;

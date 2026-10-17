@@ -1,2 +1,3 @@
-id: 3
+id: 4
+wallet-restore
 check
