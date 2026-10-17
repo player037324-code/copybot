@@ -37,3 +37,4 @@
 [2026-10-17 21:47:51] Lunar SELL 15% of 48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump
 [2026-10-17 21:48:02] feed: 76 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-17 21:49:02] feed: 70 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 21:50:02] feed: 496 txs mentioning Lunar, 0 signed by him (last 60s)
