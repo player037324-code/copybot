@@ -18,7 +18,7 @@ if (!cfg.paper || cfg.privateKey) {
 console.log(`\nTarget's last trades (${cfg.target.slice(0, 6)}...):`);
 const sigs = await conn.getSignaturesForAddress(new PublicKey(cfg.target), { limit: 15 });
 for (const s of sigs) {
-  const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 0 });
+  const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1 }).catch((e) => { console.log(`  (skip ${s.signature.slice(0, 8)}: ${e.message.slice(0, 80)})`); return null; });
   for (const ev of parseTrades(tx, cfg.target)) {
     const when = s.blockTime ? new Date(s.blockTime * 1000).toISOString().slice(5, 16).replace('T', ' ') : '';
     console.log(`${when}  ${ev.type.padEnd(4)} ${ev.mint}  ${ev.type === 'BUY' ? ev.solSpent.toFixed(3) + ' SOL' : Math.round(ev.fraction * 100) + '%'}`);

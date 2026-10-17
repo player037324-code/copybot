@@ -18,7 +18,7 @@ const seen = new Set();
 async function fetchTx(sig) {
   // logs come in at "processed"; the full tx is fetchable a moment later
   for (let i = 0; i < 20; i++) {
-    const tx = await conn.getParsedTransaction(sig, { maxSupportedTransactionVersion: 0, commitment: 'confirmed' }).catch(() => null);
+    const tx = await conn.getParsedTransaction(sig, { maxSupportedTransactionVersion: 1, commitment: 'confirmed' }).catch(() => null);
     if (tx) return tx;
     await new Promise((r) => setTimeout(r, 250));
   }
