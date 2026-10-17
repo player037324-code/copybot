@@ -158,3 +158,17 @@ added SELL_SLIPPAGE_BPS=3000
 [2026-10-17 21:18:03] websocket connected: transactionSubscribe (processed)
 [2026-10-17 21:19:03] feed: 186 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 21:20:03] feed: 401 txs mentioning Lunar, 0 signed by him (last 60s)
+=== cmd 13 @ 2026-10-17T21:23:01Z ===
+> set PAPER=false
+set PAPER=false
+> reset-positions
+cleared
+> start
+[PM2] Starting /root/copybot/src/bot.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 90227    │ 0s     │ 0    │ online    │ 0%       │ 28.8mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.5% | ram usage: 30.9% | disk: ⇓ 0mb/s ⇑ 0.034mb/s
