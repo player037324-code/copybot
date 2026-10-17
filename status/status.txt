@@ -1,6 +1,6 @@
-updated: 2026-10-17T23:43:02Z
+updated: 2026-10-17T23:44:03Z
 deployed: b92440af121c7c29109a2eea91d2ea2bc434e55a
-pm2: online uptime=1m restarts=2
+pm2: online uptime=0m restarts=3
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -20,7 +20,7 @@ TAKE_PROFIT_PCT=0
 STOP_LOSS_PCT=0
 MAX_HOLD_MIN=0
 PRICE_CHECK_MS=8000
-SLIPPAGE_BPS=2000
+SLIPPAGE_BPS=2500
 PRIORITY_FEE_LAMPORTS=1000000
 BUY_PCT=40
 SELL_ALL_ON_ANY_SELL=true

@@ -172,3 +172,16 @@ cleared
 │ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 90227    │ 0s     │ 0    │ online    │ 0%       │ 28.8mb   │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 0.5% | ram usage: 30.9% | disk: ⇓ 0mb/s ⇑ 0.034mb/s
+=== cmd 14 @ 2026-10-17T23:44:02Z ===
+> set SLIPPAGE_BPS=2500
+set SLIPPAGE_BPS=2500
+> restart
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
+[PM2] [copybot](0) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 110864   │ 0s     │ 3    │ online    │ 0%       │ 20.8mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.7% | ram usage: 36.4% | enp1s0: ⇓ 0.019mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.005mb/s
