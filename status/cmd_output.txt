@@ -32,3 +32,25 @@ Jupiter API... OK (SOL = $104.01)
 Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
 
 Target's last trades (GijFWw...):
+=== cmd 5 @ 2026-10-17T20:42:01Z ===
+> check
+Helius RPC... OK
+Jupiter API... OK (SOL = $104.01)
+Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
+
+Target's last trades (GijFWw...):
+  2kHnLFJPRn  failed tx
+  a8SVrrP5DR  failed tx
+  22gyLSGXGE  failed tx
+  5PMFn4v9da  failed tx
+  3vzbM5zG4Q  failed tx
+  4sV86Dbaui  failed tx
+  2n7jbUPawf  failed tx
+  jTAKNNWRNv  failed tx
+  4AUueqsmJB  failed tx
+  4LzenbHdus  failed tx
+  3GR5mwcHXZ  failed tx
+  4kExadf3FP  failed tx
+  66MywoK7HE  failed tx
+  3wQaae2L6G  failed tx
+  5z97JHfGXo  failed tx
