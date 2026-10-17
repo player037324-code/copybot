@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 21:23:02] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-17 21:23:02] buy 40% of Lunar's SOL when he spends > 4 SOL | initial buy only: true | max per buy: none
 [2026-10-17 21:23:02] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
 [2026-10-17 21:23:02] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
@@ -202,3 +201,4 @@
 [2026-10-17 23:44:03] open positions: 0
 [2026-10-17 23:44:04] websocket connected: transactionSubscribe (processed)
 [2026-10-17 23:45:03] feed: 41 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-17 23:46:03] feed: 192 txs mentioning Lunar, 0 signed by him (last 60s)
