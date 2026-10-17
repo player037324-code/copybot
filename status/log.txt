@@ -73,3 +73,4 @@
 [2026-10-17 22:10:05] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-17 22:10:05] open positions: 0
 [2026-10-17 22:10:05] websocket connected: transactionSubscribe (processed)
+[2026-10-17 22:11:05] feed: 395 txs mentioning Lunar, 0 signed by him (last 60s)
