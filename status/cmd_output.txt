@@ -107,3 +107,8 @@ Program ComputeBudget111111111111111111111111111111 success
 Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 invoke [1]
 Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 consumed 1241 of 57576 compute units
 Program BevFQ2LKT3riywRANkmWWKE5dksoTkpCtn7B1uzp56A3 failed: custom program error: 0x3
+=== cmd 10 @ 2026-10-17T20:54:02Z ===
+> watch
+watching balance (150s)...
+20:56:25 BUY GQhGVgVSEreBxFi6p68M5sEKn2KirzZMDfoj6BpbVnoY 7.016 SOL
+done: 1 balance changes, 1 signed txs
