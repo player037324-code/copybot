@@ -19,6 +19,7 @@ export const cfg = {
   reserveSol: num('RESERVE_SOL', 0.05),          // always keep this much SOL for fees
   maxPositions: num('MAX_POSITIONS', 0),         // 0 = unlimited
   copyRebuys: bool('COPY_REBUYS', false),        // only copy the initial buy
+  newPositionsOnly: bool('NEW_POSITIONS_ONLY', true), // only copy when Lunar held 0 of the coin before
 
   // ---- selling ----
   mirrorSells: bool('MIRROR_SELLS', true),

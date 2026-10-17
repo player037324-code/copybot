@@ -74,6 +74,7 @@ async function swap(inputMint, outputMint, amountRaw, slippageBps) {
 export function buy(ev, targetSig, targetSlot, seenAt) {
   const tag = ev.mint.slice(0, 6);
   // cheap checks first, before any network call
+  if (cfg.newPositionsOnly && !ev.isNew) return log(`skip ${tag}: Lunar already holds it (adding, not a new position)`);
   if (!(ev.solSpent > cfg.minTargetBuySol)) return log(`skip ${tag}: Lunar spent ${ev.solSpent.toFixed(2)} SOL (need > ${cfg.minTargetBuySol})`);
   if ((positions[ev.mint] || pending.has(ev.mint)) && !cfg.copyRebuys) return log(`skip ${tag}: already in it (initial buy only)`);
   if (cfg.maxPositions && Object.keys(positions).length + pending.size >= cfg.maxPositions) return log(`skip ${tag}: max positions`);

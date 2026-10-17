@@ -43,7 +43,7 @@ export function parseTrades(tx, target) {
     const decimals = (post[mint] || pre[mint]).decimals;
     if (b > a) {
       // got tokens. Only count it as a buy if they spent SOL (not an airdrop/transfer in)
-      if (totalSolDelta < 0) events.push({ type: 'BUY', mint, decimals, solSpent: -totalSolDelta });
+      if (totalSolDelta < 0) events.push({ type: 'BUY', mint, decimals, solSpent: -totalSolDelta, isNew: a === 0n });
     } else {
       const fraction = a === 0n ? 1 : Number(a - b) / Number(a);
       events.push({ type: 'SELL', mint, decimals, fraction: Math.min(1, fraction), solGot: Math.max(0, totalSolDelta) });

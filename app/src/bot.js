@@ -11,7 +11,7 @@ log('=== copybot starting ===');
 log(`mode: ${cfg.paper ? 'PAPER (no real trades)' : 'LIVE'}`);
 log(`copying: ${cfg.target}`);
 log(`our wallet: ${walletAddress}`);
-log(`buy ${cfg.buyPct}% of Lunar's SOL when he spends > ${cfg.minTargetBuySol} SOL | initial buy only: ${!cfg.copyRebuys} | max per buy: ${cfg.maxBuySol || 'none'}`);
+log(`buy ${cfg.buyPct}% of Lunar's SOL when he spends > ${cfg.minTargetBuySol} SOL | new positions only: ${cfg.newPositionsOnly} | max per buy: ${cfg.maxBuySol || 'none'}`);
 log(`sell: ${cfg.sellAllOnAnySell ? 'SELL ALL on any Lunar sell or transfer out' : 'mirror proportionally'} | TP ${cfg.takeProfitPct || 'off'} SL ${cfg.stopLossPct || 'off'}`);
 log(`exec: slippage ${cfg.slippageBps / 100}% buy / ${cfg.sellSlippageBps / 100}% sell | tip ${cfg.tipSol} SOL | sender ${cfg.senderUrl}`);
 log(`open positions: ${Object.keys(getPositions()).length}`);
@@ -39,7 +39,7 @@ function handleTx(tx, sig, slot, seenAt) {
   if (tx?.blockTime) feed.lagMs.push(seenAt - tx.blockTime * 1000);
   for (const ev of parseTrades(tx, cfg.target)) {
     if (ev.type === 'BUY') {
-      log(`Lunar BUY ${ev.mint} ${ev.solSpent.toFixed(3)} SOL (slot ${slot})`);
+      log(`Lunar BUY ${ev.mint} ${ev.solSpent.toFixed(3)} SOL ${ev.isNew ? 'NEW POSITION' : '(adding)'} (slot ${slot})`);
       buy(ev, sig, slot, seenAt);
     } else {
       const held = !!getPositions()[ev.mint];
