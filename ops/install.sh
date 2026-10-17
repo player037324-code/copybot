@@ -18,18 +18,21 @@ cat > /etc/systemd/system/copybot-agent.timer <<'EOF'
 [Unit]
 Description=run copybot sync agent every minute
 [Timer]
-OnBootSec=30
-OnUnitActiveSec=60
+OnCalendar=*-*-* *:*:00
 AccuracySec=5
+Persistent=true
 [Install]
 WantedBy=timers.target
 EOF
 
 systemctl daemon-reload
-systemctl enable --now copybot-agent.timer >/dev/null 2>&1
+systemctl enable copybot-agent.timer >/dev/null 2>&1
+systemctl restart copybot-agent.timer
 command -v pm2 >/dev/null && pm2 startup systemd -u root --hp /root >/dev/null 2>&1 || true
 systemctl start copybot-agent.service || true
 echo ""
+systemctl list-timers copybot-agent.timer --no-pager | head -3
+echo
 echo "--- agent log ---"
 tail -n 15 /root/copybot-agent.log 2>/dev/null || echo "(empty, good)"
 echo ""
