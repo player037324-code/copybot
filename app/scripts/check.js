@@ -15,17 +15,27 @@ if (!cfg.paper || cfg.privateKey) {
     console.log(`Our wallet ${walletAddress}: ${(bal / 1e9).toFixed(4)} SOL`);
   }
 }
-console.log(`\nTarget's last trades (${cfg.target.slice(0, 6)}...):`);
-const sigs = await conn.getSignaturesForAddress(new PublicKey(cfg.target), { limit: 15 });
-for (const s of sigs) {
-  const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1 }).catch((e) => { console.log(`  (skip ${s.signature.slice(0, 8)}: ${e.message.slice(0, 80)})`); return null; });
+console.log(`\nScanning target's last 1000 txs (${cfg.target.slice(0, 6)}...)`);
+let all = [], before;
+for (let page = 0; page < 1; page++) {
+  const batch = await conn.getSignaturesForAddress(new PublicKey(cfg.target), { limit: 1000, before });
+  if (!batch.length) break;
+  all = all.concat(batch); before = batch[batch.length - 1].signature;
+}
+const ok = all.filter((s) => !s.err);
+const span = all.length ? ((all[0].blockTime - all[all.length - 1].blockTime) / 3600).toFixed(1) : 0;
+console.log(`${all.length} txs over ${span}h: ${ok.length} succeeded, ${all.length - ok.length} failed`);
+let buys = 0, sells = 0, other = 0;
+const lines = [];
+for (const s of ok.slice(0, 60)) {
+  const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1 }).catch(() => null);
   const evs = parseTrades(tx, cfg.target);
-  if (!evs.length) {
-    const why = !tx ? 'unreadable' : tx.meta?.err ? 'failed tx' : `no swap (${(tx.meta?.postTokenBalances || []).filter((b) => b.owner === cfg.target).length} token accts, sol ${((tx.meta.postBalances[0] - tx.meta.preBalances[0]) / 1e9).toFixed(4)})`;
-    console.log(`  ${s.signature.slice(0, 10)}  ${why}`);
-  }
+  if (!evs.length) { other++; continue; }
   for (const ev of evs) {
+    ev.type === 'BUY' ? buys++ : sells++;
     const when = s.blockTime ? new Date(s.blockTime * 1000).toISOString().slice(5, 16).replace('T', ' ') : '';
-    console.log(`${when}  ${ev.type.padEnd(4)} ${ev.mint}  ${ev.type === 'BUY' ? ev.solSpent.toFixed(3) + ' SOL' : Math.round(ev.fraction * 100) + '%'}`);
+    lines.push(`${when}  ${ev.type.padEnd(4)} ${ev.mint}  ${ev.type === 'BUY' ? ev.solSpent.toFixed(3) + ' SOL' : Math.round(ev.fraction * 100) + '% (+' + ev.solGot.toFixed(3) + ' SOL)'}`);
   }
 }
+console.log(`Of the last ${Math.min(60, ok.length)} successful: ${buys} buys, ${sells} sells, ${other} non-trade`);
+lines.slice(0, 30).forEach((l) => console.log(l));
