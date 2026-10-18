@@ -2,8 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 05:07:05] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
-[2026-10-18 05:07:24] Lunar SELL 24% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
 [2026-10-18 05:08:05] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 05:09:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:10:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,9 +200,12 @@
 [2026-10-18 08:05:05] feed: 60 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:06:05] feed: 18 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:07:05] feed: 29 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 08:08:05] feed: 55 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 08:08:37] websocket connected: transactionSubscribe (processed)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
 [2026-10-17 23:30:11] WARN websocket closed, reconnecting
 [2026-10-17 23:40:34] WARN BUY 4h7jHy failed: tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
 [2026-10-18 02:03:32] WARN   3ZAnpe direct swap failed: no supported AMM buy in Lunar tx -> falling back to Jupiter
+[2026-10-18 08:08:36] WARN websocket closed, reconnecting
