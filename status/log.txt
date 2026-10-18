@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 21:41:02] feed: 160 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 21:42:02] feed: 501 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 21:43:02] feed: 58 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 21:44:02] feed: 460 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +201,4 @@
 [2026-10-18 00:05:03] feed: 53 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:06:03] feed: 56 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:07:03] feed: 53 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 00:08:03] feed: 103 txs mentioning Lunar, 0 signed by him (last 60s)
