@@ -1,6 +1,6 @@
-updated: 2026-10-18T02:03:02Z
+updated: 2026-10-18T02:04:02Z
 deployed: d0741e01548026e2f93d1d35f633c2f1ff47dd36
-pm2: online uptime=44m restarts=12
+pm2: online uptime=45m restarts=12
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -28,12 +28,22 @@ SELL_SLIPPAGE_BPS=6000
 BUY_RETRY_SLIPPAGES=6000
 
 --- stats ---
-Buys: 1   Sells: 0   Open: 0
+Buys: 2   Sells: 0   Open: 1
 Realized PnL: +0.0000 SOL ($0.00)
 
 Last 10 trades:
 10-17 23:40:34  FAIL 4h7jHyjb  tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
 10-18 00:57:51  BUY  arSAePhm  1.606 SOL  @ $35.4K mcap  (+1 slots, 421ms)
+10-18 02:03:33  BUY  3ZAnpeVB  4.006 SOL  @ $82.5K mcap  (+1 slots, 435ms)
 
 --- positions ---
-{}
+{
+  "3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump": {
+    "amountRaw": "4910217315840",
+    "decimals": 6,
+    "costSol": 4.006207536,
+    "openedAt": 1792289013206,
+    "targetSlot": 458261848,
+    "entryMcapUsd": 82530.75245305873
+  }
+}
