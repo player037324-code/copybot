@@ -2,12 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 15:48:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:49:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:50:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:51:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:52:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:53:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:54:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:55:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:56:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +196,12 @@
 [2026-10-18 18:28:05] feed: 719 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 18:28:57] Lunar BUY FX9YgaciNcCf7cHZdMRJjmL98MxiGqFNwXby4oXvpump 0.264 SOL (adding) (slot 458534634)
 [2026-10-18 18:28:57] skip FX9Yga: Lunar already holds it (adding, not a new position)
+[2026-10-18 18:29:05] feed: 3531 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 18:29:32] Lunar BUY E21PwGPQN1hbzdLL8m3LEJubDZh4bqpWDoeFxB91pump 1.451 SOL NEW POSITION (slot 458534795)
+[2026-10-18 18:29:32] skip E21PwG: Lunar spent 1.45 SOL (need > 4)
+[2026-10-18 18:29:50] Lunar BUY FX9YgaciNcCf7cHZdMRJjmL98MxiGqFNwXby4oXvpump 0.264 SOL (adding) (slot 458534880)
+[2026-10-18 18:29:50] skip FX9Yga: Lunar already holds it (adding, not a new position)
+[2026-10-18 18:30:03] Lunar SELL 10% of E21PwGPQN1hbzdLL8m3LEJubDZh4bqpWDoeFxB91pump
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
