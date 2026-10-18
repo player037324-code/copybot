@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 00:57:51]   arSAeP entry mcap $35.4K
 [2026-10-18 00:58:03] === copybot starting ===
 [2026-10-18 00:58:03] mode: LIVE
 [2026-10-18 00:58:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
@@ -202,6 +201,7 @@
 [2026-10-18 02:30:05] feed: 24 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:30:56] Lunar BUY 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 0.264 SOL (adding) (slot 458269399)
 [2026-10-18 02:30:56] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
+[2026-10-18 02:31:05] feed: 2 txs mentioning Lunar, 1 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
