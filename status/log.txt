@@ -2,11 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 14:59:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:00:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:01:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:02:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 15:03:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:04:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:05:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 15:06:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +197,11 @@
 [2026-10-18 17:54:28] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 [2026-10-18 17:55:05] feed: 7209 txs mentioning Lunar, 5 signed by him (last 60s)
 [2026-10-18 17:56:05] feed: 6096 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 17:57:05] feed: 7898 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 17:57:18] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525899)
+[2026-10-18 17:57:18] skip 2UfsAi: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:57:19] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525900)
+[2026-10-18 17:57:19] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
