@@ -2,17 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:38:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:39:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:40:05] feed: 362 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:41:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:42:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:43:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:44:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:45:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:46:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:47:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:48:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:49:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:50:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:51:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +191,14 @@
 [2026-10-18 00:58:04] websocket connected: transactionSubscribe (processed)
 [2026-10-18 00:59:03] feed: 121 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 01:00:03] feed: 73 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:01:03] feed: 85 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:02:03] feed: 63 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:02:04] === copybot starting ===
+[2026-10-18 01:02:04] mode: LIVE
+[2026-10-18 01:02:04] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 01:02:04] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 01:02:04] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 01:02:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 01:02:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 01:02:04] open positions: 1
+[2026-10-18 01:02:05] websocket connected: transactionSubscribe (processed)
