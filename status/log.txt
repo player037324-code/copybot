@@ -2,9 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:09:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
-[2026-10-18 01:09:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-[2026-10-18 01:09:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
 [2026-10-18 01:09:05] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
 [2026-10-18 01:09:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:09:05] open positions: 1
@@ -202,6 +199,9 @@
 [2026-10-18 02:51:05] feed: 86 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:52:05] feed: 87 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:53:05] feed: 135 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 02:54:05] feed: 81 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 02:54:05] Lunar BUY 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 1.014 SOL (adding) (slot 458275798)
+[2026-10-18 02:54:05] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
