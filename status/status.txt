@@ -1,6 +1,6 @@
-updated: 2026-10-18T00:57:04Z
+updated: 2026-10-18T00:58:03Z
 deployed: f1145a3f8a280f3763f0d97d8ebc742c91c4aafa
-pm2: online uptime=0m restarts=4
+pm2: online uptime=0m restarts=5
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -20,18 +20,29 @@ TAKE_PROFIT_PCT=0
 STOP_LOSS_PCT=0
 MAX_HOLD_MIN=0
 PRICE_CHECK_MS=8000
-SLIPPAGE_BPS=2500
+SLIPPAGE_BPS=6000
 PRIORITY_FEE_LAMPORTS=1000000
 BUY_PCT=40
 SELL_ALL_ON_ANY_SELL=true
-SELL_SLIPPAGE_BPS=3000
+SELL_SLIPPAGE_BPS=6000
+BUY_RETRY_SLIPPAGES=6000
 
 --- stats ---
-Buys: 0   Sells: 0   Open: 0
+Buys: 1   Sells: 0   Open: 1
 Realized PnL: +0.0000 SOL ($0.00)
 
 Last 10 trades:
 10-17 23:40:34  FAIL 4h7jHyjb  tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
+10-18 00:57:51  BUY  arSAePhm  1.606 SOL  @ $35.4K mcap  (+1 slots, 421ms)
 
 --- positions ---
-{}
+{
+  "arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq": {
+    "amountRaw": "4686163165049",
+    "decimals": 6,
+    "costSol": 1.606197376,
+    "openedAt": 1792285071964,
+    "targetSlot": 458243655,
+    "entryMcapUsd": 35418.88422178417
+  }
+}

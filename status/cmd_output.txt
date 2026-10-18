@@ -185,3 +185,20 @@ Use --update-env to update environment variables
 │ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 110864   │ 0s     │ 3    │ online    │ 0%       │ 20.8mb   │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 0.7% | ram usage: 36.4% | enp1s0: ⇓ 0.019mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.005mb/s
+=== cmd 15 @ 2026-10-18T00:58:02Z ===
+> set SLIPPAGE_BPS=6000
+set SLIPPAGE_BPS=6000
+> set SELL_SLIPPAGE_BPS=6000
+set SELL_SLIPPAGE_BPS=6000
+> set BUY_RETRY_SLIPPAGES=6000
+added BUY_RETRY_SLIPPAGES=6000
+> restart
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
+[PM2] [copybot](0) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 121705   │ 0s     │ 5    │ online    │ 0%       │ 21.5mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.6% | ram usage: 35.3% | enp1s0: ⇓ 0.012mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.008mb/s

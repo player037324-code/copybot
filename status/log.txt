@@ -2,18 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:27:05] Lunar BUY 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump 0.264 SOL (adding) (slot 458201890)
-[2026-10-17 22:27:05] skip 2gVNeu: Lunar already holds it (adding, not a new position)
-[2026-10-17 22:27:05] feed: 2 txs mentioning Lunar, 2 signed by him (last 60s)
-[2026-10-17 22:28:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:28:22] Lunar TRANSFER OUT 50% of 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump
-[2026-10-17 22:29:05] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
-[2026-10-17 22:30:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:31:05] feed: 386 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:32:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:33:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:34:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:35:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:36:05] feed: 407 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:37:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:38:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +190,15 @@
 [2026-10-18 00:57:05] exec: slippage 25% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 00:57:05] open positions: 0
 [2026-10-18 00:57:05] websocket connected: transactionSubscribe (processed)
+[2026-10-18 00:57:51] Lunar BUY arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 4.015 SOL NEW POSITION (slot 458243655)
+[2026-10-18 00:57:51] BUY arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 1.606 SOL (Lunar 4.02) | landed +1 slots after Lunar | 421ms from seeing Lunar | {"quote":21,"ixs":39,"build":40,"land":320} | ynNeu2u8nrMypKbXW7vfAscFdEPs6K8bnpv5qGQsYmm4sHujA1eYAf5haGBQXRdJYHbtoA1wWDp14VYxMGX6HKr
+[2026-10-18 00:57:51]   arSAeP entry mcap $35.4K
+[2026-10-18 00:58:03] === copybot starting ===
+[2026-10-18 00:58:03] mode: LIVE
+[2026-10-18 00:58:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 00:58:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 00:58:03] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 00:58:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 00:58:03] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 00:58:03] open positions: 1
+[2026-10-18 00:58:04] websocket connected: transactionSubscribe (processed)
