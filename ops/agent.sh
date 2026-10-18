@@ -66,6 +66,7 @@ if [ -f control/cmd.txt ]; then
           inspect)  timeout 120 node scripts/inspect.js 2>&1 ;;
           watch)    timeout 160 node scripts/watch.js 2>&1 ;;
           stats)    npm run -s stats 2>&1 ;;
+          txinfo\ *) a=${c#txinfo }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{60,90}$ ]] && timeout 60 node scripts/txinfo.js "$a" 2>&1 ;;
           errlog)   tail -n 60 /root/.pm2/logs/copybot-error.log 2>&1; ls -la /root/.pm2/logs/ 2>&1 ;;
           clonetest\ *) a=${c#clonetest }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{60,90}$ ]] && timeout 60 node scripts/clonetest.js "$a" 2>&1 ;;
           race\ *) m=${c#race }; [[ "$m" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && OUR=$(node -e 'import("dotenv/config").then(async()=>{const bs58=(await import("bs58")).default;const {Keypair}=await import("@solana/web3.js");console.log(Keypair.fromSecretKey(bs58.decode(process.env.PRIVATE_KEY)).publicKey.toBase58())})') timeout 140 node scripts/race.js "$m" 2>&1 ;;
