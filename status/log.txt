@@ -2,11 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 02:45:05] feed: 35 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 02:46:05] feed: 20 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 02:47:05] feed: 138 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 02:48:05] feed: 7 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 02:49:05] feed: 35 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:49:18] Lunar BUY 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump 0.266 SOL NEW POSITION (slot 458274472)
 [2026-10-18 02:49:18] skip 3t4Bsg: Lunar spent 0.27 SOL (need > 4)
 [2026-10-18 02:49:18] Lunar SELL 2% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
@@ -202,6 +197,11 @@
 [2026-10-18 05:01:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:02:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:02:57] Lunar SELL 9% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
+[2026-10-18 05:03:05] feed: 2 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 05:03:15] Lunar SELL 9% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
+[2026-10-18 05:03:15] Lunar SELL 10% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
+[2026-10-18 05:03:18] Lunar SELL 12% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
+[2026-10-18 05:03:18] Lunar SELL 14% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
