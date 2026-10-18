@@ -2,10 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 00:40:46] Lunar BUY 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 1.014 SOL (adding) (slot 458238904)
-[2026-10-18 00:40:46] skip 4h7jHy: Lunar already holds it (adding, not a new position)
-[2026-10-18 00:41:03] feed: 43 txs mentioning Lunar, 1 signed by him (last 60s)
-[2026-10-18 00:42:03] feed: 53 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:43:03] feed: 96 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:43:35] Lunar BUY 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 0.264 SOL (adding) (slot 458239688)
 [2026-10-18 00:43:35] skip 4h7jHy: Lunar already holds it (adding, not a new position)
@@ -202,6 +198,10 @@
 [2026-10-18 02:10:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 02:10:05] open positions: 1
 [2026-10-18 02:10:05] websocket connected: transactionSubscribe (processed)
+[2026-10-18 02:10:47] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 1.014 SOL (adding) (slot 458263842)
+[2026-10-18 02:10:47] skip 8QtbrC: Lunar already holds it (adding, not a new position)
+[2026-10-18 02:10:48] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 1.014 SOL (adding) (slot 458263847)
+[2026-10-18 02:10:48] skip 8QtbrC: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
