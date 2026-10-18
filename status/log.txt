@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:13:04] mode: LIVE
 [2026-10-18 01:13:04] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
 [2026-10-18 01:13:04] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-18 01:13:04] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
@@ -202,6 +201,7 @@
 [2026-10-18 03:08:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:09:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:10:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 03:11:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
