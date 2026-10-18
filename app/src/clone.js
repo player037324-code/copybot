@@ -14,14 +14,15 @@ const ATA_PROGRAM = new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'
 
 // program -> { buy instruction names Lunar might use, the exact-in name we send, user-seeded PDAs }
 export const AMMS = {
-  '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P': { name: 'pump.fun', buys: ['buy', 'buy_exact_sol_in'], use: 'buy_exact_sol_in', nativeSol: true, userPdas: ['user_volume_accumulator'] },
-  'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA': { name: 'pumpswap', buys: ['buy', 'buy_exact_quote_in'], use: 'buy_exact_quote_in', userPdas: ['user_volume_accumulator'] },
-  'cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG': { name: 'meteora-damm2', buys: ['swap', 'swap2'], use: 'swap', userPdas: [] },
-  'dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN': { name: 'meteora-dbc', buys: ['swap', 'swap2'], use: 'swap', userPdas: [] },
+  '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P': { name: 'pump.fun', buys: ['buy', 'buy_exact_sol_in', 'buy_exact_quote_in'], exactIn: ['buy_exact_sol_in', 'buy_exact_quote_in'], use: 'buy_exact_sol_in', nativeSol: true, userPdas: ['user_volume_accumulator'] },
+  'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA': { name: 'pumpswap', buys: ['buy', 'buy_exact_quote_in'], exactIn: ['buy_exact_quote_in'], use: 'buy_exact_quote_in', userPdas: ['user_volume_accumulator'] },
+  'cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG': { name: 'meteora-damm2', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
+  'dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN': { name: 'meteora-dbc', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
 };
 for (const a of Object.values(AMMS)) {
   a.buyDiscs = new Set(a.buys.map((n) => hex(disc(n))));
   a.useDisc = disc(a.use);
+  a.exactInDiscs = new Set(a.exactIn.map((n) => hex(disc(n))));
 }
 
 const b58 = (() => {
@@ -133,7 +134,11 @@ export function cloneBuy(tx, target, wallet, ev, lamports, slippageBps) {
   amt.writeBigUInt64LE(BigInt(lamports), 0);
   amt.writeBigUInt64LE(minOut, 8);
   const tail = data.length > 24 ? data.subarray(24) : Buffer.alloc(0); // e.g. pump track_volume flag
-  const ixData = Buffer.concat([amm.useDisc, amt, amm.use === 'swap' ? Buffer.alloc(0) : tail]);
+  // if Lunar already used an exact-SOL-in instruction, reuse exactly that one (same account layout)
+  const hisDisc = data.subarray(0, 8);
+  const useDisc = amm.exactInDiscs.has(hex(hisDisc)) ? hisDisc : amm.useDisc;
+  const isSwap = hex(useDisc) === hex(disc('swap'));
+  const ixData = Buffer.concat([useDisc, amt, isSwap ? Buffer.alloc(0) : tail]);
   const swapIx = new TransactionInstruction({ programId: new PublicKey(pid), keys: outKeys, data: ixData });
 
   // setup: our token ATA (+ funded WSOL if this AMM takes WSOL)
