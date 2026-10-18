@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:19:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
 [2026-10-18 01:19:03] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
 [2026-10-18 01:19:03] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:19:03] open positions: 0
@@ -202,6 +201,7 @@
 [2026-10-18 03:15:44] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:44] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:45] Lunar SELL 100% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:16:05] feed: 22 txs mentioning Lunar, 21 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
