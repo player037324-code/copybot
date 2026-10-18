@@ -219,3 +219,28 @@ slot 458243667 (+12)  DNio5  sol   -0.184  prio 0.00000 SOL (0uL x 0)  tip 0.000
 slot 458243667 (+12)  CWryq  sol   -0.198  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:5L2QKq  fee 0.00001  progs FLAS,1111
 slot 458243667 (+12)  BBQ6y  sol   -0.216  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:5BqYhu  fee 0.00001  progs FLAS,1111
 slot 458243667 (+12)  E8B7E  sol   -0.216  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:7oi1L8  fee 0.00001  progs FLAS,1111
+=== cmd 17 @ 2026-10-18T01:08:02Z ===
+> clonetest 3gTwLTKuG8X1VEDL7LHAhfiP8zk58fVg8S5FWGXFAh8Lje3Acm31E9AQuT5xYWRHN2DDKsoPftS3aRbnRBVEHS1t
+Lunar buy: arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 4.015 SOL tokens 13804389356323
+AMM ix: meteora-damm2 disc f8c69e91e17587c8 accts 14 datalen 24
+Lunar top-level programs: 111111,FLASHX,FLASHX,FLASHX,111111
+built in 53ms: {"amm":"meteora-damm2","minOut":"292211433","usesWsol":true} size 775B
+SIM: OK  CU 39855
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [1]
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success
+Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Program 11111111111111111111111111111111 invoke [1]
+Program 11111111111111111111111111111111 success
+> clonetest 27RPgFgd5d9dR3Xe838kVRjb3utHofzfiCTMPnsB3TXhnxuenkyRzQxi4oHqddGoGYRzAW8UPyHMHn6LYfADTv67
+Lunar buy: 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 5.016 SOL tokens 22973815284106
+AMM ix: none found
+Lunar top-level programs: 111111,FLASHX,FLASHX,111111
+  inner: AToken,Tokenz,111111,Tokenz,Tokenz
+  inner: 6EF8rr,Tokenz,111111,6EF8rr,FLASHX,111111
