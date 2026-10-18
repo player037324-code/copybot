@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 05:45:05] feed: 70 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 05:45:57] Lunar BUY FLLeL6kT4rkF2zNpCJ1es1uAFXeURXrfXiNRVNXqpump 1.014 SOL (adding) (slot 458323420)
 [2026-10-18 05:45:57] skip FLLeL6: Lunar already holds it (adding, not a new position)
 [2026-10-18 05:46:05] feed: 38 txs mentioning Lunar, 1 signed by him (last 60s)
@@ -202,6 +201,7 @@
 [2026-10-18 08:49:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:50:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:51:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 08:52:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
