@@ -2,9 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 17:54:05] feed: 2414 txs mentioning Lunar, 1 signed by him (last 60s)
-[2026-10-18 17:54:27] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525110)
-[2026-10-18 17:54:27] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 [2026-10-18 17:54:27] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525110)
 [2026-10-18 17:54:27] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 [2026-10-18 17:54:28] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525111)
@@ -202,6 +199,9 @@
 [2026-10-18 20:24:45] Lunar BUY 7Nv7ecyag3Dj7HvddWYVkNHZvP6trrwVY4YT1BPgpump 10.016 SOL NEW POSITION (slot 458566588)
 [2026-10-18 20:24:47] BUY 7Nv7ecyag3Dj7HvddWYVkNHZvP6trrwVY4YT1BPgpump 4.006 SOL (Lunar 10.02) | landed +4 slots after Lunar | 1105ms from seeing Lunar | {"quote":24,"ixs":42,"build":42,"land":317} | 22ukR8sC7aicbHGYThP6eLsxCFJ2r7yLNJw8QRhjpTcTtpWYbTBBaUEVRTfmiHjrUzwYWihc5B71pDRCegmM68Ue
 [2026-10-18 20:24:47]   7Nv7ec entry mcap $3.15M
+[2026-10-18 20:25:05] feed: 115 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 20:25:18] Lunar BUY 7Nv7ecyag3Dj7HvddWYVkNHZvP6trrwVY4YT1BPgpump 1.014 SOL (adding) (slot 458566737)
+[2026-10-18 20:25:18] skip 7Nv7ec: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
