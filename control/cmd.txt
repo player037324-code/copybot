@@ -1,5 +1,2 @@
-id: 15
-set SLIPPAGE_BPS=6000
-set SELL_SLIPPAGE_BPS=6000
-set BUY_RETRY_SLIPPAGES=6000
-restart
+id: 16
+race arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq
