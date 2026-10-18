@@ -316,3 +316,14 @@ Use --update-env to update environment variables
 │ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 125203   │ 0s     │ 12   │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 0.5% | ram usage: 36% | enp1s0: ⇓ 0.036mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.018mb/s
+=== cmd 22 @ 2026-10-18T02:08:02Z ===
+> errlog
+[2026-10-17 21:53:40] WARN websocket closed, reconnecting
+[2026-10-17 23:30:11] WARN websocket closed, reconnecting
+[2026-10-17 23:40:34] WARN BUY 4h7jHy failed: tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
+[2026-10-18 02:03:32] WARN   3ZAnpe direct swap failed: no supported AMM buy in Lunar tx -> falling back to Jupiter
+total 52
+drwxr-xr-x 2 root root  4096 Oct 17 21:23 .
+drwxr-xr-x 5 root root  4096 Oct 17 21:23 ..
+-rw-r--r-- 1 root root   419 Oct 18 02:03 copybot-error.log
+-rw-r--r-- 1 root root 36410 Oct 18 02:07 copybot-out.log
