@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:04:02] skip 2UfsAi: Lunar spent 0.26 SOL (need > 4)
 [2026-10-17 22:04:02] feed: 2 txs mentioning Lunar, 2 signed by him (last 60s)
 [2026-10-17 22:05:02] feed: 3 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:06:02] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +201,4 @@
 [2026-10-18 00:27:53] skip HXc9Hj: Lunar spent 1.33 SOL (need > 4)
 [2026-10-18 00:28:03] feed: 94 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 00:29:03] feed: 50 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 00:30:03] feed: 71 txs mentioning Lunar, 0 signed by him (last 60s)
