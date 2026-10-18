@@ -1,13 +1,3 @@
-Helius RPC... OK
-Jupiter API... OK (SOL = $104.01)
-Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
-
-Target's last trades (GijFWw...):
-  2kHnLFJPRn  failed tx
-  a8SVrrP5DR  failed tx
-  22gyLSGXGE  failed tx
-  5PMFn4v9da  failed tx
-  3vzbM5zG4Q  failed tx
   4sV86Dbaui  failed tx
   2n7jbUPawf  failed tx
   jTAKNNWRNv  failed tx
@@ -398,3 +388,13 @@ slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000
 slot 458568956 (+1)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs HiP3
 slot 458568957 (+2)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
 slot 458568957 (+2)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 jito  fee 0.00001  progs 1111,HiP3
+=== cmd 27 @ 2026-10-18T20:38:02Z ===
+> stop
+[PM2] Applying action stopProcessId on app [copybot](ids: [ 0 ])
+[PM2] [copybot](0) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.6% | ram usage: 30.8% | enp1s0: ⇓ 0.007mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.085mb/s
