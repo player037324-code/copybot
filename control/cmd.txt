@@ -1,2 +1,3 @@
-id: 20
-clonetest 27RPgFgd5d9dR3Xe838kVRjb3utHofzfiCTMPnsB3TXhnxuenkyRzQxi4oHqddGoGYRzAW8UPyHMHn6LYfADTv67
+id: 21
+reset-positions
+restart
