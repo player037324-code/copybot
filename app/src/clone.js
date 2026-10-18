@@ -15,7 +15,7 @@ const ATA_PROGRAM = new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'
 // program -> { buy instruction names Lunar might use, the exact-in name we send, user-seeded PDAs }
 export const AMMS = {
   '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P': { name: 'pump.fun', buys: ['buy', 'buy_exact_sol_in', 'buy_exact_quote_in'], exactIn: ['buy_exact_sol_in', 'buy_exact_quote_in'], rawExactIn: ['e1f7501ed5b38488'], use: 'buy_exact_sol_in', nativeSol: true, userPdas: ['user_volume_accumulator'] },
-  'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA': { name: 'pumpswap', buys: ['buy', 'buy_exact_quote_in'], exactIn: ['buy_exact_quote_in'], use: 'buy_exact_quote_in', userPdas: ['user_volume_accumulator'] },
+  'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA': { name: 'pumpswap', buys: ['buy', 'buy_exact_quote_in'], exactIn: ['buy_exact_quote_in'], rawExactIn: ['c2ab1c46684d5b2f'], use: 'buy_exact_quote_in', userPdas: ['user_volume_accumulator'] },
   'cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG': { name: 'meteora-damm2', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
   'dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN': { name: 'meteora-dbc', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
 };
@@ -75,6 +75,23 @@ export function findBuyIx(tx) {
     const data = b58(ix.data);
     if (data.length < 24 || !amm.buyDiscs.has(hex(data.subarray(0, 8)))) continue;
     return { pid, amm, accounts: ix.accounts.map(keyStr), data };
+  }
+  // Fallback for new instruction versions: pump programs log the instruction name in their
+  // trade event (self-CPI, disc e445a52e51cb9a1d). If it says buy_exact_*_in*, trust that ix.
+  const EVT = 'e445a52e51cb9a1d';
+  for (const ix of cands) {
+    const pid = keyStr(ix.programId);
+    const amm = AMMS[pid];
+    if (!amm || !ix.data || !ix.accounts) continue;
+    const data = b58(ix.data);
+    if (data.length < 24 || data.length > 26 || hex(data.subarray(0, 8)) === EVT) continue;
+    const evt = cands.find((e) => keyStr(e.programId) === pid && e.data && hex(b58(e.data).subarray(0, 8)) === EVT);
+    if (!evt) continue;
+    const name = (b58(evt.data).toString('latin1').match(/buy_exact_(sol|quote)_in[a-z0-9_]*/) || [])[0];
+    if (!name) continue;
+    amm.exactInDiscs.add(hex(data.subarray(0, 8)));
+    amm.buyDiscs.add(hex(data.subarray(0, 8)));
+    return { pid, amm, accounts: ix.accounts.map(keyStr), data, learned: name };
   }
   return null;
 }
