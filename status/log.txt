@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 05:37:05] feed: 54 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:38:05] feed: 85 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:39:05] feed: 30 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:40:05] feed: 32 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +201,7 @@
 [2026-10-18 08:39:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:40:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 08:41:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 08:42:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
