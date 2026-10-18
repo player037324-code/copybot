@@ -2,16 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:54:05] feed: 4 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:54:49] Lunar BUY 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump 1.014 SOL (adding) (slot 458209528)
-[2026-10-17 22:54:49] skip 2gVNeu: Lunar already holds it (adding, not a new position)
-[2026-10-17 22:55:05] feed: 2 txs mentioning Lunar, 1 signed by him (last 60s)
-[2026-10-17 22:56:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:57:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:58:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:59:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:00:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:01:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:02:05] feed: 2 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:03:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:04:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +192,13 @@
 [2026-10-18 01:04:09] Lunar BUY arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 0.264 SOL (adding) (slot 458245399)
 [2026-10-18 01:04:09] skip arSAeP: Lunar already holds it (adding, not a new position)
 [2026-10-18 01:05:04] feed: 55 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 01:06:04] feed: 7 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:07:05] === copybot starting ===
+[2026-10-18 01:07:05] mode: LIVE
+[2026-10-18 01:07:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 01:07:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 01:07:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 01:07:05] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 01:07:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 01:07:05] open positions: 1
+[2026-10-18 01:07:05] websocket connected: transactionSubscribe (processed)
