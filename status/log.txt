@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:02:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
 [2026-10-18 01:02:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:02:04] open positions: 1
 [2026-10-18 01:02:05] websocket connected: transactionSubscribe (processed)
@@ -202,6 +201,7 @@
 [2026-10-18 02:45:05] feed: 35 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:46:05] feed: 20 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:47:05] feed: 138 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 02:48:05] feed: 7 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
