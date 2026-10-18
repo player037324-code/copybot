@@ -2,9 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 03:15:41] Lunar BUY 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump 0.264 SOL NEW POSITION (slot 458281772)
-[2026-10-18 03:15:41] skip 3t4Bsg: Lunar spent 0.26 SOL (need > 4)
-[2026-10-18 03:15:41] Lunar SELL 2% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:41] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
@@ -202,6 +199,9 @@
 [2026-10-18 05:41:05] feed: 46 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:42:05] feed: 11 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 05:43:05] feed: 24 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 05:44:05] feed: 10 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 05:44:25] Lunar BUY FLLeL6kT4rkF2zNpCJ1es1uAFXeURXrfXiNRVNXqpump 1.436 SOL NEW POSITION (slot 458322994)
+[2026-10-18 05:44:25] skip FLLeL6: Lunar spent 1.44 SOL (need > 4)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
