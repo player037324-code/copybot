@@ -4,8 +4,6 @@
 /root/.pm2/logs/copybot-out.log last 200 lines:
 [2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
-[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
-[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
@@ -202,6 +200,8 @@
 [2026-10-18 05:45:57] Lunar BUY FLLeL6kT4rkF2zNpCJ1es1uAFXeURXrfXiNRVNXqpump 1.014 SOL (adding) (slot 458323420)
 [2026-10-18 05:45:57] skip FLLeL6: Lunar already holds it (adding, not a new position)
 [2026-10-18 05:46:05] feed: 38 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 05:47:05] feed: 24 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 05:47:34] Lunar SELL 100% of FLLeL6kT4rkF2zNpCJ1es1uAFXeURXrfXiNRVNXqpump
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
