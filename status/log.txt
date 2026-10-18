@@ -2,17 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 00:30:03] feed: 71 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:31:03] feed: 25 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:32:03] feed: 53 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:33:03] feed: 133 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:34:03] feed: 122 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:35:03] feed: 63 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:36:03] feed: 94 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:37:03] feed: 66 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:38:03] feed: 105 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:39:03] feed: 83 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 00:40:03] feed: 36 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:40:46] Lunar BUY 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 1.014 SOL (adding) (slot 458238904)
 [2026-10-18 00:40:46] skip 4h7jHy: Lunar already holds it (adding, not a new position)
 [2026-10-18 00:41:03] feed: 43 txs mentioning Lunar, 1 signed by him (last 60s)
@@ -202,3 +191,20 @@
 [2026-10-18 02:08:33] Lunar BUY 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 1.014 SOL (adding) (slot 458263220)
 [2026-10-18 02:08:33] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
 [2026-10-18 02:09:03] feed: 2 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 02:10:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 02:10:05] === copybot starting ===
+[2026-10-18 02:10:05] mode: LIVE
+[2026-10-18 02:10:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 02:10:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 02:10:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 02:10:05] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 02:10:05] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
+[2026-10-18 02:10:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 02:10:05] open positions: 1
+[2026-10-18 02:10:05] websocket connected: transactionSubscribe (processed)
+
+--- errors ---
+[2026-10-17 21:53:40] WARN websocket closed, reconnecting
+[2026-10-17 23:30:11] WARN websocket closed, reconnecting
+[2026-10-17 23:40:34] WARN BUY 4h7jHy failed: tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
+[2026-10-18 02:03:32] WARN   3ZAnpe direct swap failed: no supported AMM buy in Lunar tx -> falling back to Jupiter
