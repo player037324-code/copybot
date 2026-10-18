@@ -2,16 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 23:22:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:23:05] feed: 3 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:24:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:25:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:26:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:27:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:28:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:28:30] Lunar BUY BSb9F8obHSKNaY46txG7Rf8YykcYXZpWvoksDcaFpump 1.589 SOL NEW POSITION (slot 458218834)
-[2026-10-17 23:28:30] skip BSb9F8: Lunar spent 1.59 SOL (need > 4)
-[2026-10-17 23:29:05] feed: 15 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-17 23:30:05] feed: 14 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:30:12] websocket connected: transactionSubscribe (processed)
 [2026-10-17 23:31:05] feed: 75 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +192,13 @@
 [2026-10-18 01:11:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:11:04] open positions: 1
 [2026-10-18 01:11:04] websocket connected: transactionSubscribe (processed)
+[2026-10-18 01:12:04] feed: 32 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:13:04] === copybot starting ===
+[2026-10-18 01:13:04] mode: LIVE
+[2026-10-18 01:13:04] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 01:13:04] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 01:13:04] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 01:13:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 01:13:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 01:13:04] open positions: 1
+[2026-10-18 01:13:05] websocket connected: transactionSubscribe (processed)
