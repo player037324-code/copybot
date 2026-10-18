@@ -2,17 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 14:46:05] feed: 16 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:47:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:48:05] feed: 407 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:49:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:50:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:51:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:52:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:53:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:54:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:55:05] feed: 2 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 14:56:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 14:57:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 14:58:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 14:59:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +191,17 @@
 [2026-10-18 17:53:05] feed: 418 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 17:53:15] Lunar BUY 6dhKENbCU9M9hsjvsG7GahMmxVXpRKkf3Q7zCXgUpump 0.373 SOL (adding) (slot 458524768)
 [2026-10-18 17:53:15] skip 6dhKEN: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:54:05] feed: 2414 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 17:54:27] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525110)
+[2026-10-18 17:54:27] skip 2UfsAi: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:54:27] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525110)
+[2026-10-18 17:54:27] skip 2UfsAi: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:54:28] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525111)
+[2026-10-18 17:54:28] skip 2UfsAi: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:54:28] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525112)
+[2026-10-18 17:54:28] skip 2UfsAi: Lunar already holds it (adding, not a new position)
+[2026-10-18 17:54:28] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525112)
+[2026-10-18 17:54:28] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
