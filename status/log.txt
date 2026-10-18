@@ -2,17 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 23:30:05] feed: 14 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:30:12] websocket connected: transactionSubscribe (processed)
-[2026-10-17 23:31:05] feed: 75 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:32:05] feed: 97 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:33:05] feed: 108 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:34:05] feed: 53 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:35:05] feed: 88 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:36:05] feed: 118 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:37:05] feed: 62 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:38:05] feed: 108 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:39:05] feed: 55 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:40:05] feed: 105 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:40:34] Lunar BUY 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 5.016 SOL NEW POSITION (slot 458222173)
 [2026-10-17 23:41:05] feed: 81 txs mentioning Lunar, 1 signed by him (last 60s)
@@ -202,3 +191,14 @@
 [2026-10-18 01:13:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:13:04] open positions: 1
 [2026-10-18 01:13:05] websocket connected: transactionSubscribe (processed)
+[2026-10-18 01:14:04] feed: 84 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:15:05] === copybot starting ===
+[2026-10-18 01:15:05] mode: LIVE
+[2026-10-18 01:15:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 01:15:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 01:15:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 01:15:05] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 01:15:05] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
+[2026-10-18 01:15:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 01:15:05] open positions: 1
+[2026-10-18 01:15:05] websocket connected: transactionSubscribe (processed)
