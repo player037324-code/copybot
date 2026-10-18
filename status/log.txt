@@ -2,9 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:52:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:53:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:54:03] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 01:55:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 01:56:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 01:57:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +199,9 @@
 [2026-10-18 03:55:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:56:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:57:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 03:58:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 03:58:50] Lunar BUY 7gaSwUhZHFwdUCuzxppShRq6CjGgu19xoQTMSVinpump 3.016 SOL NEW POSITION (slot 458293750)
+[2026-10-18 03:58:50] skip 7gaSwU: Lunar spent 3.02 SOL (need > 4)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
