@@ -284,3 +284,22 @@ Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
 Program 11111111111111111111111111111111 invoke [1]
 Program 11111111111111111111111111111111 success
+=== cmd 20 @ 2026-10-18T01:14:02Z ===
+> clonetest 27RPgFgd5d9dR3Xe838kVRjb3utHofzfiCTMPnsB3TXhnxuenkyRzQxi4oHqddGoGYRzAW8UPyHMHn6LYfADTv67
+Lunar buy: 4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump 5.016 SOL tokens 22973815284106
+AMM ix: pump.fun disc e1f7501ed5b38488 accts 17 datalen 25
+Lunar top-level programs: 111111,FLASHX,FLASHX,111111
+built in 66ms: {"amm":"pump.fun","minOut":"389346418","usesWsol":false} size 836B
+SIM: ERR {"InstructionError":[3,{"Custom":6005}]}  CU 47199
+Program ComputeBudget111111111111111111111111111111 success
+Program ComputeBudget111111111111111111111111111111 invoke [1]
+Program ComputeBudget111111111111111111111111111111 success
+Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success
+Program 11111111111111111111111111111111 success
+Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success
+Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success
+Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P invoke [1]
+Program log: AnchorError thrown in programs/pump/src/trade_v3.rs:148. Error Code: BondingCurveComplete. Error Number: 6005. Error Message: The bonding curve has completed and liquidity migrated to raydium..
+Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P failed: custom program error: 0x1775
