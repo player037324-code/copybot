@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 02:17:25] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
 [2026-10-18 02:18:05] feed: 3 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 02:19:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:20:05] feed: 67 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +201,7 @@
 [2026-10-18 04:44:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 04:45:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 04:46:05] feed: 2 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 04:47:05] feed: 2 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
