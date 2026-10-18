@@ -2,17 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 17:57:18] skip 2UfsAi: Lunar already holds it (adding, not a new position)
-[2026-10-18 17:57:19] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525900)
-[2026-10-18 17:57:19] skip 2UfsAi: Lunar already holds it (adding, not a new position)
-[2026-10-18 17:58:05] feed: 1160 txs mentioning Lunar, 2 signed by him (last 60s)
-[2026-10-18 17:59:05] feed: 1229 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 18:00:05] feed: 2785 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 18:01:05] feed: 1625 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 18:02:05] feed: 142 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 18:03:02] Lunar BUY 2uwxxiD1PshoPrrSoNvttRD8Aa1nwxVDTFf4JK36pump 0.264 SOL (adding) (slot 458527485)
-[2026-10-18 18:03:02] skip 2uwxxi: Lunar already holds it (adding, not a new position)
-[2026-10-18 18:03:05] feed: 1727 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 18:03:47] Lunar SELL 100% of 48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump
 [2026-10-18 18:04:01] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 1.014 SOL (adding) (slot 458527757)
 [2026-10-18 18:04:01] skip 2UfsAi: Lunar already holds it (adding, not a new position)
@@ -202,6 +191,17 @@
 [2026-10-18 20:34:05] open positions: 1
 [2026-10-18 20:34:05] websocket connected: transactionSubscribe (processed)
 [2026-10-18 20:35:05] feed: 127 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 20:36:05] feed: 48 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 20:37:04] === copybot starting ===
+[2026-10-18 20:37:04] mode: LIVE
+[2026-10-18 20:37:04] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 20:37:04] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 20:37:04] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 20:37:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 20:37:04] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
+[2026-10-18 20:37:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 20:37:04] open positions: 1
+[2026-10-18 20:37:04] websocket connected: transactionSubscribe (processed)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
