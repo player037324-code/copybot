@@ -2,9 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 02:30:05] feed: 24 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 02:30:56] Lunar BUY 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 0.264 SOL (adding) (slot 458269399)
-[2026-10-18 02:30:56] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
 [2026-10-18 02:31:05] feed: 2 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 02:32:05] feed: 44 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:33:05] feed: 14 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,6 +199,9 @@
 [2026-10-18 04:53:18] 3ZAnpe: nothing left to sell
 [2026-10-18 04:53:18] Lunar SELL 6% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
 [2026-10-18 04:53:21] Lunar SELL 7% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
+[2026-10-18 04:54:05] feed: 3 txs mentioning Lunar, 3 signed by him (last 60s)
+[2026-10-18 04:54:42] Lunar BUY 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump 1.014 SOL (adding) (slot 458309212)
+[2026-10-18 04:54:42] skip 2gVNeu: Lunar already holds it (adding, not a new position)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
