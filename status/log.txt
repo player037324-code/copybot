@@ -2,16 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 23:12:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:13:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:14:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:15:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:16:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:17:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:18:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:19:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:20:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 23:21:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:22:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:23:05] feed: 3 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 23:24:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +192,13 @@
 [2026-10-18 01:09:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 01:09:05] open positions: 1
 [2026-10-18 01:09:05] websocket connected: transactionSubscribe (processed)
+[2026-10-18 01:10:05] feed: 110 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 01:11:04] === copybot starting ===
+[2026-10-18 01:11:04] mode: LIVE
+[2026-10-18 01:11:04] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
+[2026-10-18 01:11:04] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-18 01:11:04] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
+[2026-10-18 01:11:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
+[2026-10-18 01:11:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
+[2026-10-18 01:11:04] open positions: 1
+[2026-10-18 01:11:04] websocket connected: transactionSubscribe (processed)
