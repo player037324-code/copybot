@@ -66,6 +66,7 @@ if [ -f control/cmd.txt ]; then
           inspect)  timeout 120 node scripts/inspect.js 2>&1 ;;
           watch)    timeout 160 node scripts/watch.js 2>&1 ;;
           stats)    npm run -s stats 2>&1 ;;
+          race\ *) m=${c#race }; [[ "$m" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && OUR=$(node -e 'import("dotenv/config").then(async()=>{const bs58=(await import("bs58")).default;const {Keypair}=await import("@solana/web3.js");console.log(Keypair.fromSecretKey(bs58.decode(process.env.PRIVATE_KEY)).publicKey.toBase58())})') timeout 140 node scripts/race.js "$m" 2>&1 ;;
           papertest) mkdir -p /root/copybot/papertest-logs; PAPER=true LOG_DIR=/root/copybot/papertest-logs timeout 130 node src/bot.js 2>&1 | tail -n 60 ;;
           start)    pm2 describe copybot >/dev/null 2>&1 && pm2 restart copybot || pm2 start src/bot.js --name copybot; pm2 save >/dev/null ;;
           stop)     pm2 stop copybot; pm2 save >/dev/null ;;
