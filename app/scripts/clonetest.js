@@ -16,7 +16,13 @@ const f = findBuyIx(tx);
 console.log(`AMM ix: ${f ? `${f.amm.name} disc ${Buffer.from(f.data.subarray(0, 8)).toString('hex')} accts ${f.accounts.length} datalen ${f.data.length}` : 'none found'}`);
 const tops = tx.transaction.message.instructions.map((i) => (i.programId.toString()).slice(0, 6)).join(',');
 console.log(`Lunar top-level programs: ${tops}`);
-if (!f) { for (const inner of tx.meta.innerInstructions || []) console.log('  inner:', inner.instructions.map((i) => i.programId.toString().slice(0, 6)).join(',')); process.exit(0); }
+if (!f) {
+  const { AMMS } = await import('../src/clone.js');
+  const B = (await import('bs58')).default;
+  const all = [...tx.transaction.message.instructions]; for (const inner of tx.meta.innerInstructions || []) all.push(...inner.instructions);
+  for (const ix of all) { const pid = ix.programId.toString(); if (AMMS[pid] && ix.data) { const d = Buffer.from(B.decode(ix.data)); console.log(`  ${AMMS[pid].name} ix disc ${d.subarray(0, 8).toString('hex')} datalen ${d.length} accts ${ix.accounts.length}`); console.log('    accts: ' + ix.accounts.map((a, i) => i + ':' + a.toString().slice(0, 6)).join(' ')); console.log('    data: ' + d.toString('hex')); } }
+  process.exit(0);
+}
 const t0 = Date.now();
 const { ixs, info } = cloneBuy(tx, cfg.target, wallet, ev, Math.floor(sol * 1e9), 9900);
 const alts = (tx.transaction.message.addressTableLookups || []).map((l) => l.accountKey.toString());
