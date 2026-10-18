@@ -36,6 +36,8 @@ export const cfg = {
   sellSlippageBps: num('SELL_SLIPPAGE_BPS', 3000),
   onlyDirectRoutes: bool('ONLY_DIRECT_ROUTES', true),
   cuLimit: num('CU_LIMIT', 400000),
+  directSwap: bool('DIRECT_SWAP', true),        // clone Lunar's own AMM ix (no Jupiter) when possible
+  directCuLimit: num('DIRECT_CU_LIMIT', 150000),
   cuPriceMicroLamports: num('CU_PRICE_MICROLAMPORTS', 1000000),
   tipSol: num('TIP_SOL', 0.001),
   senderUrl: str('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),

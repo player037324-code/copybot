@@ -3,7 +3,8 @@ import bs58 from 'bs58';
 import { Connection, Keypair, PublicKey } from '@solana/web3.js';
 import { cfg } from './config.js';
 import { quote, swapInstructions, getSolUsd, SOL_MINT } from './jupiter.js';
-import { buildTx, sendAndLand, startWarmers } from './fast.js';
+import { buildTx, buildFromIxs, sendAndLand, startWarmers } from './fast.js';
+import { cloneBuy } from './clone.js';
 import { log, warn, recordTrade, LOG_DIR } from './log.js';
 
 const STATE_FILE = `${LOG_DIR}/positions.json`;
@@ -71,7 +72,7 @@ async function swap(inputMint, outputMint, amountRaw, slippageBps) {
   return { q, sig, slot, ms: { quote: t1 - t0, ixs: t2 - t1, build: t3 - t2, land: Date.now() - t3 } };
 }
 
-export function buy(ev, targetSig, targetSlot, seenAt) {
+export function buy(ev, targetSig, targetSlot, seenAt, lunarTx) {
   const tag = ev.mint.slice(0, 6);
   // cheap checks first, before any network call
   if (cfg.newPositionsOnly && !ev.isNew) return log(`skip ${tag}: Lunar already holds it (adding, not a new position)`);
@@ -94,7 +95,24 @@ export function buy(ev, targetSig, targetSlot, seenAt) {
     try {
       const steps = [cfg.slippageBps, ...cfg.buyRetrySlippages];
       let r;
-      for (let i = 0; i < steps.length; i++) {
+      // 1) fastest: rebuild Lunar's own swap with our wallet, no API calls
+      if (cfg.directSwap && !cfg.paper && lunarTx) {
+        const t0 = Date.now();
+        try {
+          const { ixs, info } = cloneBuy(lunarTx, cfg.target, wallet, ev, Math.floor(size * 1e9), cfg.slippageBps);
+          const alts = (lunarTx.transaction.message.addressTableLookups || []).map((l) => l.accountKey.toString());
+          const { tx } = await buildFromIxs(conn, wallet, ixs, alts, cfg.directCuLimit);
+          const t1 = Date.now();
+          const landed = await sendAndLand(conn, tx);
+          r = { q: { outAmount: info.minOut }, sig: landed.sig, slot: landed.slot, ms: { direct: info.amm, build: t1 - t0, land: Date.now() - t1 } };
+        } catch (e) {
+          const behind = e.slot && targetSlot ? ` (landed +${e.slot - targetSlot} slots after Lunar)` : '';
+          warn(`  ${tag} direct swap failed${behind}: ${e.message.slice(0, 160)} -> falling back to Jupiter`);
+          if (e.slot) recordTrade({ side: 'BUY_FAIL', mint: ev.mint, sol: size, direct: true, slotsBehind: e.slot && targetSlot ? e.slot - targetSlot : null, error: e.message.slice(0, 200), targetSig });
+        }
+      }
+      // 2) Jupiter, with slippage retries
+      for (let i = 0; !r && i < steps.length; i++) {
         try {
           r = await swap(SOL_MINT, ev.mint, Math.floor(size * 1e9), steps[i]);
           if (i > 0) log(`  ${tag} landed on retry ${i} at ${steps[i] / 100}% slippage`);

@@ -13,6 +13,7 @@ log(`copying: ${cfg.target}`);
 log(`our wallet: ${walletAddress}`);
 log(`buy ${cfg.buyPct}% of Lunar's SOL when he spends > ${cfg.minTargetBuySol} SOL | new positions only: ${cfg.newPositionsOnly} | max per buy: ${cfg.maxBuySol || 'none'}`);
 log(`sell: ${cfg.sellAllOnAnySell ? 'SELL ALL on any Lunar sell or transfer out' : 'mirror proportionally'} | TP ${cfg.takeProfitPct || 'off'} SL ${cfg.stopLossPct || 'off'}`);
+log(`direct swap: ${cfg.directSwap ? 'ON (pump.fun, pumpswap, meteora; Jupiter fallback)' : 'off'}`);
 log(`exec: slippage ${cfg.slippageBps / 100}% buy / ${cfg.sellSlippageBps / 100}% sell | tip ${cfg.tipSol} SOL | sender ${cfg.senderUrl}`);
 log(`open positions: ${Object.keys(getPositions()).length}`);
 
@@ -40,7 +41,7 @@ function handleTx(tx, sig, slot, seenAt) {
   for (const ev of parseTrades(tx, cfg.target)) {
     if (ev.type === 'BUY') {
       log(`Lunar BUY ${ev.mint} ${ev.solSpent.toFixed(3)} SOL ${ev.isNew ? 'NEW POSITION' : '(adding)'} (slot ${slot})`);
-      buy(ev, sig, slot, seenAt);
+      buy(ev, sig, slot, seenAt, tx);
     } else {
       const held = !!getPositions()[ev.mint];
       log(`Lunar ${ev.solGot > 0 ? 'SELL' : 'TRANSFER OUT'} ${Math.round(ev.fraction * 100)}% of ${ev.mint}${held ? ' -> dumping ours' : ''}`);
