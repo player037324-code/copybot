@@ -107,7 +107,7 @@ mkdir -p status
   echo "--- positions ---"
   cat "$APP/logs/positions.json" 2>/dev/null || echo "{}"
 } 2>&1 | redact > status/status.txt
-pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null | redact > status/log.txt
+{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
 cp "$APP/logs/trades.jsonl" status/trades.jsonl 2>/dev/null
 
 git add status
