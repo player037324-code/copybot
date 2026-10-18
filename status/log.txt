@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 02:10:05] websocket connected: transactionSubscribe (processed)
 [2026-10-18 02:10:47] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 1.014 SOL (adding) (slot 458263842)
 [2026-10-18 02:10:47] skip 8QtbrC: Lunar already holds it (adding, not a new position)
 [2026-10-18 02:10:48] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 1.014 SOL (adding) (slot 458263847)
@@ -202,6 +201,7 @@
 [2026-10-18 04:29:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 04:30:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 04:31:05] feed: 2 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 04:32:05] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
