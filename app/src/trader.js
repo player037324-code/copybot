@@ -150,7 +150,7 @@ export function sell(mint, fraction, reason, targetSig) {
         if (!cfg.paper && all) amount = await tokenBalanceRaw(mint);
         if (amount <= 0n) { delete positions[mint]; save(); return log(`${tag}: nothing left to sell`); }
 
-        const r = await swap(mint, SOL_MINT, amount, cfg.sellSlippageBps + (attempt - 1) * 1000);
+        const r = await swap(mint, SOL_MINT, amount, cfg.sellSlippageBps);
         const solOut = Number(r.q.outAmount) / 1e9;
         const portion = all ? 1 : Number(amount) / Number(BigInt(p.amountRaw));
         const costPart = p.costSol * portion;
