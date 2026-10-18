@@ -46,6 +46,29 @@ const toIx = (ix) => new TransactionInstruction({
   data: Buffer.from(ix.data, 'base64'),
 });
 
+// Generic: our compute budget + given instructions + tip. Tries without lookup tables, then with the given ones.
+export async function buildFromIxs(conn, wallet, ixs, altAddrs = [], cuLimit = cfg.cuLimit) {
+  if (!blockhash) blockhash = await conn.getLatestBlockhash('confirmed');
+  const bh = blockhash;
+  const all = [
+    ComputeBudgetProgram.setComputeUnitLimit({ units: cuLimit }),
+    ComputeBudgetProgram.setComputeUnitPrice({ microLamports: cfg.cuPriceMicroLamports }),
+    ...ixs,
+    SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: TIP_ACCOUNTS[Math.floor(Math.random() * TIP_ACCOUNTS.length)], lamports: Math.round(cfg.tipSol * 1e9) }),
+  ];
+  const compile = (alts) => {
+    const msg = new TransactionMessage({ payerKey: wallet.publicKey, recentBlockhash: bh.blockhash, instructions: all }).compileToV0Message(alts);
+    const tx = new VersionedTransaction(msg);
+    tx.sign([wallet]);
+    tx.serialize(); // throws if too large
+    return tx;
+  };
+  try { return { tx: compile([]), lastValidBlockHeight: bh.lastValidBlockHeight }; } catch (e) {
+    if (!altAddrs.length) throw e;
+    return { tx: compile(await getAlts(conn, altAddrs)), lastValidBlockHeight: bh.lastValidBlockHeight };
+  }
+}
+
 export async function buildTx(conn, wallet, jupIx) {
   if (!blockhash) blockhash = await conn.getLatestBlockhash('confirmed');
   const alts = await getAlts(conn, jupIx.addressLookupTableAddresses || []);
