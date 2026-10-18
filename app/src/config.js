@@ -21,7 +21,7 @@ export const cfg = {
   copyRebuys: bool('COPY_REBUYS', false),        // only copy the initial buy
   newPositionsOnly: bool('NEW_POSITIONS_ONLY', true),
   // never pay more than this multiple of Lunar's own fill price (stops junk-pool / bad-route fills)
-  maxPriceVsLunar: num('MAX_PRICE_VS_LUNAR', 2), // only copy when Lunar held 0 of the coin before
+  maxPriceVsLunar: num('MAX_PRICE_VS_LUNAR', 2),
 
   // ---- selling ----
   mirrorSells: bool('MIRROR_SELLS', true),
