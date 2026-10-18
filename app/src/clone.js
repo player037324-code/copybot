@@ -14,7 +14,7 @@ const ATA_PROGRAM = new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL'
 
 // program -> { buy instruction names Lunar might use, the exact-in name we send, user-seeded PDAs }
 export const AMMS = {
-  '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P': { name: 'pump.fun', buys: ['buy', 'buy_exact_sol_in', 'buy_exact_quote_in'], exactIn: ['buy_exact_sol_in', 'buy_exact_quote_in'], use: 'buy_exact_sol_in', nativeSol: true, userPdas: ['user_volume_accumulator'] },
+  '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P': { name: 'pump.fun', buys: ['buy', 'buy_exact_sol_in', 'buy_exact_quote_in'], exactIn: ['buy_exact_sol_in', 'buy_exact_quote_in'], rawExactIn: ['e1f7501ed5b38488'], use: 'buy_exact_sol_in', nativeSol: true, userPdas: ['user_volume_accumulator'] },
   'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA': { name: 'pumpswap', buys: ['buy', 'buy_exact_quote_in'], exactIn: ['buy_exact_quote_in'], use: 'buy_exact_quote_in', userPdas: ['user_volume_accumulator'] },
   'cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG': { name: 'meteora-damm2', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
   'dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN': { name: 'meteora-dbc', buys: ['swap', 'swap2'], exactIn: ['swap'], use: 'swap', userPdas: [] },
@@ -22,7 +22,8 @@ export const AMMS = {
 for (const a of Object.values(AMMS)) {
   a.buyDiscs = new Set(a.buys.map((n) => hex(disc(n))));
   a.useDisc = disc(a.use);
-  a.exactInDiscs = new Set(a.exactIn.map((n) => hex(disc(n))));
+  a.exactInDiscs = new Set([...a.exactIn.map((n) => hex(disc(n))), ...(a.rawExactIn || [])]);
+  for (const r of a.rawExactIn || []) a.buyDiscs.add(r);
 }
 
 const b58 = (() => {
