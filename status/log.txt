@@ -2,11 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 21:57:02] feed: 290 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 21:58:02] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 21:59:02] feed: 183 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:00:02] feed: 211 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 22:01:02] feed: 385 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:02:02] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:03:02] feed: 1 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:04:02] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (slot 458195543)
@@ -202,3 +197,8 @@
 [2026-10-18 00:23:03] feed: 153 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:24:03] feed: 212 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:25:03] feed: 149 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 00:26:03] feed: 103 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 00:26:47] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 0.264 SOL (adding) (slot 458234991)
+[2026-10-18 00:26:47] skip 8QtbrC: Lunar already holds it (adding, not a new position)
+[2026-10-18 00:26:47] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 0.264 SOL (adding) (slot 458234991)
+[2026-10-18 00:26:47] skip 8QtbrC: Lunar already holds it (adding, not a new position)
