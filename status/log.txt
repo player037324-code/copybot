@@ -6,8 +6,6 @@
 [2026-10-18 02:49:19] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:49:19] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:49:19] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
-[2026-10-18 02:49:19] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
-[2026-10-18 02:49:19] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:49:20] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:49:20] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:49:20] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
@@ -202,6 +200,8 @@
 [2026-10-18 05:04:05] feed: 4 txs mentioning Lunar, 4 signed by him (last 60s)
 [2026-10-18 05:04:38] Lunar SELL 16% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
 [2026-10-18 05:05:05] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 05:06:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 05:06:20] Lunar SELL 21% of 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
