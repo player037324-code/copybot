@@ -1,6 +1,6 @@
-updated: 2026-10-18T01:18:02Z
+updated: 2026-10-18T01:19:03Z
 deployed: d0741e01548026e2f93d1d35f633c2f1ff47dd36
-pm2: online uptime=3m restarts=11
+pm2: online uptime=0m restarts=12
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -28,7 +28,7 @@ SELL_SLIPPAGE_BPS=6000
 BUY_RETRY_SLIPPAGES=6000
 
 --- stats ---
-Buys: 1   Sells: 0   Open: 1
+Buys: 1   Sells: 0   Open: 0
 Realized PnL: +0.0000 SOL ($0.00)
 
 Last 10 trades:
@@ -36,13 +36,4 @@ Last 10 trades:
 10-18 00:57:51  BUY  arSAePhm  1.606 SOL  @ $35.4K mcap  (+1 slots, 421ms)
 
 --- positions ---
-{
-  "arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq": {
-    "amountRaw": "4686163165049",
-    "decimals": 6,
-    "costSol": 1.606197376,
-    "openedAt": 1792285071964,
-    "targetSlot": 458243655,
-    "entryMcapUsd": 35418.88422178417
-  }
-}
+{}

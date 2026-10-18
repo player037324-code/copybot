@@ -303,3 +303,16 @@ Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
 Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P invoke [1]
 Program log: AnchorError thrown in programs/pump/src/trade_v3.rs:148. Error Code: BondingCurveComplete. Error Number: 6005. Error Message: The bonding curve has completed and liquidity migrated to raydium..
 Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P failed: custom program error: 0x1775
+=== cmd 21 @ 2026-10-18T01:19:02Z ===
+> reset-positions
+cleared
+> restart
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
+[PM2] [copybot](0) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 125203   │ 0s     │ 12   │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.5% | ram usage: 36% | enp1s0: ⇓ 0.036mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.018mb/s
