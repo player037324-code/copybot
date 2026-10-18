@@ -32,7 +32,8 @@ if [ "$HASH" != "$(cat "$APP/.deployed" 2>/dev/null)" ]; then
   [ -f "$APP/.env" ] || cp "$APP/.env.example" "$APP/.env"
   chmod 600 "$APP/.env"
   (cd "$APP" && npm install --omit=dev --silent >/dev/null 2>&1)
-  pm2 describe copybot >/dev/null 2>&1 && pm2 restart copybot >/dev/null 2>&1
+  # only restart if it was already running; never start a bot the user stopped
+  pm2 jlist 2>/dev/null | grep -q '"name":"copybot".*"status":"online"' && pm2 restart copybot >/dev/null 2>&1
   echo "$HASH" > "$APP/.deployed"
 fi
 
