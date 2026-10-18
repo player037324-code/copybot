@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 00:26:47] Lunar BUY 8QtbrC9d3BezyCwzBFUQbNsWJGte7ckrZ7HWcn81pump 0.264 SOL (adding) (slot 458234991)
 [2026-10-18 00:26:47] skip 8QtbrC: Lunar already holds it (adding, not a new position)
 [2026-10-18 00:27:03] feed: 89 txs mentioning Lunar, 2 signed by him (last 60s)
 [2026-10-18 00:27:53] Lunar BUY HXc9Hja5YLyjTHaUDWDtZpVChfYBz6UYV94ZPZp9pump 1.327 SOL NEW POSITION (slot 458235299)
@@ -202,3 +201,4 @@
 [2026-10-18 02:04:03] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
 [2026-10-18 02:04:07] Lunar BUY 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 3.014 SOL (adding) (slot 458262013)
 [2026-10-18 02:04:07] skip 3ZAnpe: Lunar already holds it (adding, not a new position)
+[2026-10-18 02:05:03] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
