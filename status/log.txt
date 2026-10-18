@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:09:05] === copybot starting ===
 [2026-10-18 01:09:05] mode: LIVE
 [2026-10-18 01:09:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
 [2026-10-18 01:09:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -202,6 +201,7 @@
 [2026-10-18 02:49:21] Lunar SELL 100% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 [2026-10-18 02:50:05] feed: 112 txs mentioning Lunar, 15 signed by him (last 60s)
 [2026-10-18 02:51:05] feed: 86 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 02:52:05] feed: 87 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
