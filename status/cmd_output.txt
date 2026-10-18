@@ -1,39 +1,3 @@
-=== cmd 2 @ 2026-10-17T00:48:02Z ===
-> check
-Helius RPC... OK
-Jupiter API... OK (SOL = $104.08)
-Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.9487 SOL
-
-Target's last trades (GijFWw...):
-/root/copybot/node_modules/@solana/web3.js/lib/index.cjs.js:7709
-      throw new SolanaJSONRPCError(res.error, 'failed to get transaction');
-            ^
-
-SolanaJSONRPCError: failed to get transaction: Transaction version (1) is not supported by the requesting client. Please try the request again with the following configuration parameter: "maxSupportedTransactionVersion": 1
-    at Connection.getParsedTransaction (/root/copybot/node_modules/@solana/web3.js/lib/index.cjs.js:7709:13)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async file:///root/copybot/scripts/check.js:21:14 {
-  code: -32015,
-  data: undefined
-}
-
-Node.js v22.23.3
-> wallet-force
-Old key backed up to wallet-backup-1792198083397.txt
-New trading wallet created and saved to .env
-Address (send SOL here): GEPWmJEMXUyR6MCaQazab3uzbWBG5bpL6d76c6M1oZX6
-To import into Phantom later: cat .env | grep PRIVATE_KEY  (only do this on the server)
-=== cmd 4 @ 2026-10-17T20:38:33Z ===
-> wallet-restore
-restored key from wallet-backup-1792198083397.txt
-> check
-Helius RPC... OK
-Jupiter API... OK (SOL = $104.01)
-Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
-
-Target's last trades (GijFWw...):
-=== cmd 5 @ 2026-10-17T20:42:01Z ===
-> check
 Helius RPC... OK
 Jupiter API... OK (SOL = $104.01)
 Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 8.4359 SOL
@@ -385,3 +349,52 @@ Program 11111111111111111111111111111111 success
 │ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 13   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 0.5% | ram usage: 33.7% | enp1s0: ⇓ 0.007mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.011mb/s
+=== cmd 26 @ 2026-10-18T20:35:02Z ===
+> txinfo 22ukR8sC7aicbHGYThP6eLsxCFJ2r7yLNJw8QRhjpTcTtpWYbTBBaUEVRTfmiHjrUzwYWihc5B71pDRCegmM68Ue
+slot 458566592 err null signer CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+programs: ComputeBudget111111111111111111111111111111 ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL 11111111111111111111111111111111 TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG
+  5aE4QKJC owner CXo65mgY mint 7Nv7ecya 0 -> 125296.115841 (125296.1158)
+  HzstxCJ1 owner HLnpSz9h mint 7Nv7ecya 129360.126412 -> 4064.010571 (-125296.1158)
+  JCSWDQTA owner HLnpSz9h mint So111111 0.045479817 -> 4.051687353 (4.0062)
+SOL change signer: -4.0091
+  Program ComputeBudget111111111111111111111111111111 invoke [1]
+  Program ComputeBudget111111111111111111111111111111 invoke [1]
+  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+  Program 11111111111111111111111111111111 invoke [2]
+  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+  Program 11111111111111111111111111111111 invoke [1]
+  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: GetAccountDataSize
+  Program 11111111111111111111111111111111 invoke [2]
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: InitializeImmutableOwner
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: InitializeAccount3
+  Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]
+  Program log: Instruction: Route
+  Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]
+  Program log: Instruction: Swap
+  Program log: Instruction: TransferChecked
+  Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]
+  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+  Program 11111111111111111111111111111111 invoke [1]
+> race 7Nv7ecyag3Dj7HvddWYVkNHZvP6trrwVY4YT1BPgpump
+1313 successful txs on this coin. Lunar's buy is #964. Showing from #961:
+slot 458568953  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568954  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568954  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 jito  fee 0.00001  progs 1111,HiP3
+slot 458568955 (+0)  LUNAR  sol   -1.014  prio 0.00000 SOL (0uL x 0)  tip 0.0140 other:8GV86M  fee 0.00004  progs FLAS,1111
+slot 458568955 (+0)  Hc1fX  sol    0.055  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:5L2QKq  fee 0.00001  progs FLAS,1111
+slot 458568955 (+0)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs HiP3
+slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568956 (+1)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs HiP3
+slot 458568957 (+2)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
+slot 458568957 (+2)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 jito  fee 0.00001  progs 1111,HiP3

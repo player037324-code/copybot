@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 17:57:18] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525899)
 [2026-10-18 17:57:18] skip 2UfsAi: Lunar already holds it (adding, not a new position)
 [2026-10-18 17:57:19] Lunar BUY 2UfsAijU7msunH4yrSoR7ZmV9tb5z4qEXWeKVaCqpump 0.264 SOL (adding) (slot 458525900)
 [2026-10-18 17:57:19] skip 2UfsAi: Lunar already holds it (adding, not a new position)
@@ -202,6 +201,7 @@
 [2026-10-18 20:34:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
 [2026-10-18 20:34:05] open positions: 1
 [2026-10-18 20:34:05] websocket connected: transactionSubscribe (processed)
+[2026-10-18 20:35:05] feed: 127 txs mentioning Lunar, 0 signed by him (last 60s)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
