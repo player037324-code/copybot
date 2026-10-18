@@ -375,3 +375,13 @@ Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
 Program 11111111111111111111111111111111 invoke [1]
 Program 11111111111111111111111111111111 success
+=== cmd 25 @ 2026-10-18T20:27:01Z ===
+> stop
+[PM2] Applying action stopProcessId on app [copybot](ids: [ 0 ])
+[PM2] [copybot](0) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 13   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.5% | ram usage: 33.7% | enp1s0: ⇓ 0.007mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.011mb/s
