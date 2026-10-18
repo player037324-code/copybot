@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 00:21:03] feed: 56 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:22:03] feed: 39 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:23:03] feed: 153 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:24:03] feed: 212 txs mentioning Lunar, 0 signed by him (last 60s)
@@ -202,3 +201,4 @@
 [2026-10-18 02:00:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 02:00:20] Lunar SELL 50% of 48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump
 [2026-10-18 02:01:03] feed: 1 txs mentioning Lunar, 1 signed by him (last 60s)
+[2026-10-18 02:02:03] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
