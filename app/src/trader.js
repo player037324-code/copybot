@@ -59,9 +59,10 @@ async function mcapUsd(mint, decimals, tokensRaw, sol) {
   } catch { return 0; }
 }
 
-async function swap(inputMint, outputMint, amountRaw, slippageBps) {
+async function swap(inputMint, outputMint, amountRaw, slippageBps, guard) {
   const t0 = Date.now();
   const q = await quote(inputMint, outputMint, amountRaw, slippageBps);
+  if (guard) guard(q);
   const t1 = Date.now();
   if (cfg.paper) return { q, sig: 'paper', slot: null, ms: { quote: t1 - t0 } };
   const ixs = await swapInstructions(q, wallet.publicKey.toBase58());
@@ -114,7 +115,17 @@ export function buy(ev, targetSig, targetSlot, seenAt, lunarTx) {
       // 2) Jupiter, with slippage retries
       for (let i = 0; !r && i < steps.length; i++) {
         try {
-          r = await swap(SOL_MINT, ev.mint, Math.floor(size * 1e9), steps[i]);
+          r = await swap(SOL_MINT, ev.mint, Math.floor(size * 1e9), steps[i], (q) => {
+            // quoted tokens per SOL on this route vs what Lunar got per SOL on his pool
+            const ours = Number(q.outAmount) / Math.floor(size * 1e9);
+            const his = Number(ev.tokensRaw) / (ev.solSpent * 1e9);
+            const worse = his / ours;
+            const route = (q.routePlan || []).map((p) => p.swapInfo?.label).join('>');
+            if (!(worse <= cfg.maxPriceVsLunar)) {
+              const e = new Error(`PRICE GUARD: route ${route} quotes ${worse.toFixed(1)}x Lunar's price (max ${cfg.maxPriceVsLunar}x), not buying`);
+              e.guard = true; throw e;
+            }
+          });
           if (i > 0) log(`  ${tag} landed on retry ${i} at ${steps[i] / 100}% slippage`);
           break;
         } catch (e) {
@@ -122,7 +133,7 @@ export function buy(ev, targetSig, targetSlot, seenAt, lunarTx) {
           const slip = /"Custom":6001|SlippageToleranceExceeded|0x1771/.test(e.message);
           warn(`  ${tag} attempt ${i + 1} at ${steps[i] / 100}% failed${behind}: ${slip ? 'slippage exceeded' : e.message.slice(0, 160)}`);
           recordTrade({ side: 'BUY_FAIL', mint: ev.mint, sol: size, slippageBps: steps[i], slotsBehind: e.slot && targetSlot ? e.slot - targetSlot : null, error: e.message.slice(0, 200), targetSig });
-          if (!slip || i === steps.length - 1) throw e;
+          if (e.guard || !slip || i === steps.length - 1) throw e;
           if (!pending.has(ev.mint)) throw new Error('cancelled');
         }
       }

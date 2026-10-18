@@ -19,7 +19,9 @@ export const cfg = {
   reserveSol: num('RESERVE_SOL', 0.05),          // always keep this much SOL for fees
   maxPositions: num('MAX_POSITIONS', 0),         // 0 = unlimited
   copyRebuys: bool('COPY_REBUYS', false),        // only copy the initial buy
-  newPositionsOnly: bool('NEW_POSITIONS_ONLY', true), // only copy when Lunar held 0 of the coin before
+  newPositionsOnly: bool('NEW_POSITIONS_ONLY', true),
+  // never pay more than this multiple of Lunar's own fill price (stops junk-pool / bad-route fills)
+  maxPriceVsLunar: num('MAX_PRICE_VS_LUNAR', 2), // only copy when Lunar held 0 of the coin before
 
   // ---- selling ----
   mirrorSells: bool('MIRROR_SELLS', true),
