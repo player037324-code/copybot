@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:53:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:54:05] feed: 4 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-17 22:54:49] Lunar BUY 2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump 1.014 SOL (adding) (slot 458209528)
 [2026-10-17 22:54:49] skip 2gVNeu: Lunar already holds it (adding, not a new position)
@@ -202,3 +201,4 @@
 [2026-10-18 01:04:04] feed: 40 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 01:04:09] Lunar BUY arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 0.264 SOL (adding) (slot 458245399)
 [2026-10-18 01:04:09] skip arSAeP: Lunar already holds it (adding, not a new position)
+[2026-10-18 01:05:04] feed: 55 txs mentioning Lunar, 1 signed by him (last 60s)
