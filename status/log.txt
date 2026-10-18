@@ -2,29 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-18 01:13:04] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
-[2026-10-18 01:13:04] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
-[2026-10-18 01:13:04] open positions: 1
-[2026-10-18 01:13:05] websocket connected: transactionSubscribe (processed)
-[2026-10-18 01:14:04] feed: 84 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:15:05] === copybot starting ===
-[2026-10-18 01:15:05] mode: LIVE
-[2026-10-18 01:15:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
-[2026-10-18 01:15:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-[2026-10-18 01:15:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
-[2026-10-18 01:15:05] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
-[2026-10-18 01:15:05] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
-[2026-10-18 01:15:05] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
-[2026-10-18 01:15:05] open positions: 1
-[2026-10-18 01:15:05] websocket connected: transactionSubscribe (processed)
-[2026-10-18 01:16:05] feed: 41 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:17:05] feed: 104 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:18:05] feed: 160 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-18 01:19:03] === copybot starting ===
-[2026-10-18 01:19:03] mode: LIVE
-[2026-10-18 01:19:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
-[2026-10-18 01:19:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-[2026-10-18 01:19:03] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
 [2026-10-18 01:19:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
 [2026-10-18 01:19:03] direct swap: ON (pump.fun, pumpswap, meteora; Jupiter fallback)
 [2026-10-18 01:19:03] exec: slippage 60% buy / 60% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
@@ -202,6 +179,29 @@
 [2026-10-18 03:12:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:13:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 03:14:05] feed: 3 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 03:15:05] feed: 0 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 03:15:16] Lunar SELL 50% of 8gMWXHfSwBRSLc2wKtLv24JYboCAsKaEqfC5cXLeZJXL
+[2026-10-18 03:15:18] Lunar SELL 100% of 8gMWXHfSwBRSLc2wKtLv24JYboCAsKaEqfC5cXLeZJXL
+[2026-10-18 03:15:22] Lunar SELL 100% of A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS
+[2026-10-18 03:15:41] Lunar BUY 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump 0.264 SOL NEW POSITION (slot 458281772)
+[2026-10-18 03:15:41] skip 3t4Bsg: Lunar spent 0.26 SOL (need > 4)
+[2026-10-18 03:15:41] Lunar SELL 2% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:41] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:42] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:43] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:44] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:44] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:44] Lunar SELL 3% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
+[2026-10-18 03:15:45] Lunar SELL 100% of 3t4BsgLNAQ1bHbP7CEFtvZeDrWMYJtuvC3Ucter7pump
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
