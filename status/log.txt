@@ -2,7 +2,6 @@
 /root/.pm2/logs/copybot-error.log last 200 lines:
 
 /root/.pm2/logs/copybot-out.log last 200 lines:
-[2026-10-17 22:10:05] mode: LIVE
 [2026-10-17 22:10:05] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
 [2026-10-17 22:10:05] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-17 22:10:05] buy 40% of Lunar's SOL when he spends > 4 SOL | new positions only: true | max per buy: none
@@ -202,3 +201,4 @@
 [2026-10-18 00:36:03] feed: 94 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:37:03] feed: 66 txs mentioning Lunar, 0 signed by him (last 60s)
 [2026-10-18 00:38:03] feed: 105 txs mentioning Lunar, 0 signed by him (last 60s)
+[2026-10-18 00:39:03] feed: 83 txs mentioning Lunar, 0 signed by him (last 60s)
