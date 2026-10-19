@@ -11,8 +11,8 @@ if (r.error) { console.log('getTransactionsForAddress error:', JSON.stringify(r.
 const sigs = r.result?.data || [];
 console.log(`oldest ${sigs.length} txs: first ${new Date(sigs[0].blockTime * 1000).toISOString()} slot ${sigs[0].slot}`);
 const t0 = sigs[0];
-let found = null, n = 0;
-for (const s of sigs) {
+let found = null, n = 0; const hist = {}, launchProgs = {};
+for (const s of sigs.slice(0, 450)) {
   const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1 });
   if (!tx) continue;
   const progs = new Set([...tx.transaction.message.instructions.map((i) => i.programId.toString()), ...(tx.meta.innerInstructions || []).flatMap((g) => g.instructions.map((i) => i.programId.toString()))]);
@@ -20,8 +20,11 @@ for (const s of sigs) {
   const signer = tx.transaction.message.accountKeys[0].pubkey.toString();
   if (n < 3) { console.log(`tx#${n} slot ${s.slot} +${s.slot - t0.slot} signer ${signer.slice(0, 6)} ix ${[...new Set(logs)].slice(0, 8).join(',')}`); }
   n++;
-  if (!progs.has(LAUNCHLAB) || !logs.some((l) => /^Initialize/.test(l))) continue;
-  const mints = [...new Set((tx.meta.postTokenBalances || []).map((b) => b.mint))].filter((m) => m !== addr);
+  for (const p of progs) hist[p] = (hist[p] || 0) + 1;
+  const preM = new Set((tx.meta.preTokenBalances || []).map((b) => b.mint));
+  const mints = [...new Set((tx.meta.postTokenBalances || []).map((b) => b.mint))].filter((m) => m !== addr && m !== 'So11111111111111111111111111111111111111112' && !preM.has(m));
+  if (!mints.length || !logs.some((l) => /InitializeMint|Initialize/.test(l))) continue;
+  launchProgs[[...progs].filter((p) => !/^(Compute|Token|ATok|1111|metaq|Sysvar)/.test(p)).join('+')] = (launchProgs[[...progs].filter((p) => !/^(Compute|Token|ATok|1111|metaq|Sysvar)/.test(p)).join('+')] || 0) + 1;
   for (const m of mints) {
     const md = await das(m);
     const hit = (md.symbol || '').replace('$', '').toUpperCase() === want;
@@ -30,6 +33,8 @@ for (const s of sigs) {
   }
   if (found && n > 60) break;
 }
+console.log('programs seen:', Object.entries(hist).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, v]) => k.slice(0, 8) + ':' + v).join(' '));
+console.log('launch txs by program:', JSON.stringify(launchProgs));
 if (!found) { console.log(`no $${want} in first ${n}`); process.exit(0); }
 const ms = (await rpc('getTransactionsForAddress', [found.m, { transactionDetails: 'signatures', sortOrder: 'asc', limit: 15, filters: { status: 'succeeded' } }])).result?.data || [];
 console.log(`\nfirst trades on $${want} (${found.m}):`);
