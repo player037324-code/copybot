@@ -67,6 +67,7 @@ if [ -f control/cmd.txt ]; then
           inspect)  timeout 120 node scripts/inspect.js 2>&1 ;;
           watch)    timeout 160 node scripts/watch.js 2>&1 ;;
           stats)    npm run -s stats 2>&1 ;;
+          stonk\ *) a=${c#stonk }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ \$?[A-Za-z0-9]{1,15})?$ ]] && timeout 150 node scripts/stonk.js $a 2>&1 ;;
           txinfo\ *) a=${c#txinfo }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{60,90}$ ]] && timeout 60 node scripts/txinfo.js "$a" 2>&1 ;;
           errlog)   tail -n 60 /root/.pm2/logs/copybot-error.log 2>&1; ls -la /root/.pm2/logs/ 2>&1 ;;
           clonetest\ *) a=${c#clonetest }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{60,90}$ ]] && timeout 60 node scripts/clonetest.js "$a" 2>&1 ;;
