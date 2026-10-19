@@ -12,7 +12,9 @@ const sigs = r.result?.data || [];
 console.log(`oldest ${sigs.length} txs: first ${new Date(sigs[0].blockTime * 1000).toISOString()} slot ${sigs[0].slot}`);
 const t0 = sigs[0];
 let found = null, n = 0; const hist = {}, launchProgs = {};
+const deadline = Date.now() + 85000;
 for (const s of sigs.slice(0, 450)) {
+  if (Date.now() > deadline) { console.log('(time limit, stopping scan)'); break; }
   const tx = await conn.getParsedTransaction(s.signature, { maxSupportedTransactionVersion: 1 });
   if (!tx) continue;
   const progs = new Set([...tx.transaction.message.instructions.map((i) => i.programId.toString()), ...(tx.meta.innerInstructions || []).flatMap((g) => g.instructions.map((i) => i.programId.toString()))]);
