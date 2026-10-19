@@ -14,6 +14,8 @@ exec 9>/tmp/copybot-agent.lock; flock -n 9 || exit 0
 cd "$REPO" || exit 1
 # a run killed mid-git leaves lock files that block every later run; clear stale ones
 find .git -maxdepth 2 -name "*.lock" -mmin +2 -delete 2>/dev/null
+# same for a pull --rebase that got killed halfway
+[ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && { git rebase --abort 2>/dev/null; rm -rf .git/rebase-merge .git/rebase-apply; }
 git fetch -q origin main && git reset -q --hard origin/main
 
 redact() {
