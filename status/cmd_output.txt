@@ -1,9 +1,3 @@
-no $ALTCOIN in first 1000
-=== cmd 31 @ 2026-10-19T22:38:02Z ===
-> stonk 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ ALTCOIN
-oldest 1000 txs: first 2026-10-19T19:57:46.000Z slot 458957363
-tx#0 slot 458957363 +0 signer H1TRD2 ix Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
-LAUNCH slot 458957363 (+0 slots, +0s) $RDDT RDDTGbhHwVXfyCvQMXzzowKjf5qrYBZAnehoXW83ooh by H1TRD2 [Initialize,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3]
 LAUNCH slot 458957363 (+0 slots, +0s) $OPENAI PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF by H1TRD2 [Initialize,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3]
 LAUNCH slot 458957363 (+0 slots, +0s) $WLD WLDTE73PPdfFFjhpBz8Yuhvx5N45gvgEgyMXqwa3rFn by H1TRD2 [Initialize,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3]
 LAUNCH slot 458957363 (+0 slots, +0s) $ABNB ABNB56TteaTZG1S3DY2W8VMncQmHMvNCGaZgAba49CLP by H1TRD2 [Initialize,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3,InitializeImmutableOwner,InitializeAccount3]
@@ -398,3 +392,9 @@ Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 7.0533 SOL
 Scanning target's last 1000 txs (GijFWw...)
 1000 txs over 0.0h: 13 succeeded, 987 failed
 Of the last 13 successful: 0 buys, 0 sells, 13 non-trade
+=== cmd 47 @ 2026-10-20T20:27:02Z ===
+> keyprefix
+HELIUS_API_KEY: 4374... (1 line(s) in .env)
+JUP_API_KEY: jup_... (1 line(s) in .env)
+NOZOMI_KEY: 1282... (2 line(s) in .env)
+ASTRALANE_KEY: jude... (2 line(s) in .env)
