@@ -1,13 +1,3 @@
-=== cmd 55 @ 2026-10-20T21:15:02Z ===
-> recent 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-100 txs in last 30 min touching 6s2umN
-21:14:54 NEW TOKEN $BBC (Big Beautiful Coin) Hw1RRhEaoZQRDxDTnRHyGaX78ms9GVtNLtHhxaEfzdox | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,SplitSupply | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd | signer 5ATz3k
-top-level programs: 11111111:108 FLASHX8D:93 Tokenkeg:67 ATokenGP:59 ComputeB:37 JUP6LkbZ:14 J7pourVw:10 DF1ow4ts:10
-=== cmd 56 @ 2026-10-20T21:16:06Z ===
-> set SNIPE_DRY_RUN=true
-set SNIPE_DRY_RUN=true
-> snipe-start
-Use --update-env to update environment variables
 [PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
 [PM2] [sniper](2) ✓
 ┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
@@ -398,3 +388,13 @@ grpc subscribed to http://ny.rpc.orbitflare.com:10000
 grpc error: subscribe stream receive failed code GenericFailure
 txs seen: helius 12, orbit 0, both 0, only-helius 12, only-orbit 0
 orbit sent nothing (IP not whitelisted? wrong endpoint?)
+=== cmd 69 @ 2026-10-20T22:38:02Z ===
+> orbitcheck
+server ip: 108.61.155.146
+rpc getSlot:
+{"jsonrpc":"2.0","error":{"code":-32401,"message":"missing API key"}}
+
+ws upgrade:
+HTTP/1.1 401 Unauthorized
+Date: Tue, 20 Oct 2026 22:38:02 GMT
+Content-Type: application/json
