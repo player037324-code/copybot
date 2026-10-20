@@ -208,18 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:31:06.781] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:31:06.781] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:31:06.890] feed beta connected
-[2026-10-20 21:31:06.928] feed mainnet connected
-[2026-10-20 21:31:07.405] launch [beta] $SALUTE (The Balcony Salute) EhJfnwJ3oa21Yj9TtapBfnK48WaxWSSGjJgQcsJ3BJPF quote 6s2umN platform 6BwHHD token2022 slot 459380064
-[2026-10-20 21:31:07.418]   not a target (or target already taken), ignoring
-[2026-10-20 21:31:19.473] launch [beta] $BONER (Boner) 4J1ijfD1TMfEagtTJ9AeqpqgTc25mKyKcXAaFeNWAZg9 quote 6s2umN platform 6BwHHD token2022 slot 459380122
-[2026-10-20 21:31:19.473]   not a target (or target already taken), ignoring
-[2026-10-20 21:31:42.237] launch [beta] $GOLF (Golf Trip) Hr3zumBs9DuSuT98uPAT8SXUauy1EKwTvXuF8qkz1sQd quote 6s2umN platform 6BwHHD token2022 slot 459380227
-[2026-10-20 21:31:42.237]   not a target (or target already taken), ignoring
-[2026-10-20 21:31:55.801] launch [beta] $TMI6900 (Trump Misery Index 6900) 47ZEaga3iNgH3rxbJ7SyafmyTHTcDAQDLGi7rFLFQBEs quote 6s2umN platform 6BwHHD token2022 slot 459380290
-[2026-10-20 21:31:55.801]   not a target (or target already taken), ignoring
 [2026-10-20 21:31:59.060] launch [beta] $DREAM (American Dream) EWcGPo8feKx4aaAJiaguwb6Em4HMZ1gzu5uNH2RafM8g quote 6s2umN platform 6BwHHD token2022 slot 459380304
 [2026-10-20 21:31:59.060]   not a target (or target already taken), ignoring
 [2026-10-20 21:32:00.105] launch [beta] $SNEAKERS (Never Surrender Sneakers) DmyXhKpnSvwAfq13KWmTas5TskQELucv8QFcUNyyLzvA quote 6s2umN platform 6BwHHD token2022 slot 459380308
@@ -248,6 +236,18 @@
 [2026-10-20 21:33:42.912]   not a target (or target already taken), ignoring
 [2026-10-20 21:33:58.107] launch [beta] $JET (The Qatar Jet) BTWkHanKPtbsjBSbeiNnyHwtWHiVYiYtgBY13hUca89M quote 6s2umN platform 6BwHHD token2022 slot 459380854
 [2026-10-20 21:33:58.107]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:06.485] launch [beta] $FAKEOUT (The Trump Fakeout) C7mW784jXpJKe3kZwo6nHHDViQ36KbCZCbwBVEaAADfV quote 6s2umN platform 6BwHHD token2022 slot 459380889
+[2026-10-20 21:34:06.485]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:15.565] launch [beta] $DRILL (Drill Baby Drill) CPbQKBFd1KpTb5RaA2AEhLUWrkHhibWgCvbaHecy556c quote 6s2umN platform 6BwHHD token2022 slot 459380930
+[2026-10-20 21:34:15.565]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:19.875] launch [beta] $TRUMP3 (Official Trump 3) 3gxm3DHRrkx9u9WAay7MPjDA7VBe5LbgxfhPkH47NLjR quote 6s2umN platform 6BwHHD token2022 slot 459380950
+[2026-10-20 21:34:19.876]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:28.391] launch [mainnet] $TIME (Person of the Year) 2FHuQgdkg1sQsNFaccdxa6si3k5Fyga4Fuyub3vwDiw3 quote 6s2umN platform 6BwHHD token2022 slot 459380989
+[2026-10-20 21:34:28.391]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:41.578] launch [beta] $FAKENEWS (Fake News) GyXHfGxcePB8MjRA7sTfSVsT4TvCPoPVGwK8187j8ydj quote 6s2umN platform 6BwHHD token2022 slot 459381048
+[2026-10-20 21:34:41.579]   not a target (or target already taken), ignoring
+[2026-10-20 21:34:54.376] launch [beta] $TOILET (Golden Toilet) GuRkxMW6RL3Kbp29aZdRpHdzW2PGy6broBZiD6YWEmYV quote 6s2umN platform 6BwHHD token2022 slot 459381107
+[2026-10-20 21:34:54.376]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
