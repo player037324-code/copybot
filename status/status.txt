@@ -1,6 +1,6 @@
-updated: 2026-10-20T20:02:02Z
+updated: 2026-10-20T20:03:02Z
 deployed: 50aff3a974f52ae726fe35645ba99eda70fbd6ae
-pm2: stopped uptime=2845m restarts=14
+pm2: stopped uptime=2846m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -44,6 +44,7 @@ sniper pm2: not started
 --- alerts ---
 alerts pm2: online
 {"time":"2026-10-20T19:59:45.937Z","kind":"NOW TRADEABLE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue just got its first deposit/swap. Buy it now for the snipe. Last two pairings went live 79-86 min after this, so around 21:18-21:25 UTC.","mint":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue"}
+{"time":"2026-10-20T20:02:47.637Z","kind":"first StonkFun launch on older pool","text":"$CZ4 (CZ4) DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump is now live on StonkFun. First launch: $s C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r. Pool token is 71.1d old.","quote":"DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump","firstMint":"C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r","firstTicker":"s","isNew":false}
 
 --- positions ---
 {
