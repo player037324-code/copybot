@@ -1,14 +1,3 @@
-   {"decimals":6,"freezeAuthority":null,"isInitialized":true,"mintAuthority":"86KpPkNtoBgwecGUgHUvxyP4ustrC2D1REQLs8RxS922","supply":"465762457627"}
-  token: SAMA Index ($SAMA4)
-10000 txs. first: 2026-10-19T21:40:29.000Z slot 458985627  last: 2026-10-19T21:41:02.000Z
-LAUNCH slot 458985628 21:40:29 $ALTRON (Sam Altron) mint 5w2iNg5BThiTdfY4JSo7iARu44f2XrSRFmjvLAh51T5j creator Cimru7
-no $ALTCOIN launch found in first 400 txs
-=== cmd 29 @ 2026-10-19T21:46:02Z ===
-> stonk 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ ALTCOIN
-oldest 1000 txs: first 2026-10-19T19:57:46.000Z slot 458957363
-tx#0 slot 458957363 +0 signer H1TRD2 ix Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
-tx#1 slot 458957492 +129 signer chudc2 ix 
-tx#2 slot 458957514 +151 signer 3Uz91B ix 
 no $ALTCOIN in first 1000
 === cmd 31 @ 2026-10-19T22:38:02Z ===
 > stonk 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ ALTCOIN
@@ -398,3 +387,14 @@ BUY: route BisonFi>Meteora DLMM>Raydium CP impact 4.81%
 SELL: route Raydium CP>Meteora DLMM impact 3.32%
   SELL LANDED in 335ms slot 459358430 sig q3uZQYZpnUjBXD4XvC4yJpM5APjTyinSmcZSNjfHuodyDE8cdCS1ipuR6BKBLeZraBQECU1cTyz35N7cW3zRTqv
 ROUND TRIP DONE: SOL 7.1029 -> 7.0533 (-0.0496 SOL incl. fees, tips, slippage)
+=== cmd 46 @ 2026-10-20T20:26:02Z ===
+> keyprefix
+unknown command
+> check
+Helius RPC... OK
+Jupiter API... OK (SOL = $105.99)
+Our wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr: 7.0533 SOL
+
+Scanning target's last 1000 txs (GijFWw...)
+1000 txs over 0.0h: 13 succeeded, 987 failed
+Of the last 13 successful: 0 buys, 0 sells, 13 non-trade
