@@ -208,20 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:43:56.387]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:06.040] launch [beta] $YUUUGE (YUUUGE) 44Vyyyknrzu1mf3Bj2M9ungFy3ezPVnjWM87kj7CefkF quote 6s2umN platform 6BwHHD token2022 slot 459383648
-[2026-10-20 21:44:06.041]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:07.165] launch [beta] $YUGE (Yuge) 83aEg8GvWcYcg7hys5Yc3gLCHwETT6yYJ68cmFxVJy4w quote 6s2umN platform 6BwHHD token2022 slot 459383653
-[2026-10-20 21:44:07.165]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:09.398] launch [beta] $YUUUGE (YUUUGE) 78YXDPm2Zdty9hRpXWs5NLVLtetyvnMyqSXucuEq8GUb quote 6s2umN platform 6BwHHD token2022 slot 459383663
-[2026-10-20 21:44:09.398]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:15.573] launch [beta] $KING (Long Live the King) 4U7Z2VXUFggiki9vbMPGY5HdiHnUq5cfZcNzTAmybjGc quote 6s2umN platform 6BwHHD token2022 slot 459383691
-[2026-10-20 21:44:15.574]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:19.127] launch [beta] $YMCA (YMCA) 3tJTaQQERRhujAKe3xwhGR1DfXJ5XkFiEnHvjeqhmWPp quote 6s2umN platform 6BwHHD token2022 slot 459383708
-[2026-10-20 21:44:19.127]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:28.725] launch [beta] $BELL (Ringing the Bell) 4Vd5Eyx362mbcUdzVLHWFsM1vihvJx3euuvjMYSJbk9A quote 6s2umN platform 6BwHHD token2022 slot 459383753
-[2026-10-20 21:44:28.725]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:40.923] launch [mainnet] $HOAX (Hoax) FrJksfBJC1uJ13nuu2x5EQFunB8bUnBq7PS5U2nj4vny quote 6s2umN platform 6BwHHD token2022 slot 459383808
 [2026-10-20 21:44:40.924]   not a target (or target already taken), ignoring
 [2026-10-20 21:44:56.507] launch [beta] $REDWAVE (Red Wave) 3fM5FCi7xqWJ859Xgh7Mj1SpFdQmwcTL1nu1HhpHp5dF quote 6s2umN platform 6BwHHD token2022 slot 459383882
 [2026-10-20 21:44:56.507]   not a target (or target already taken), ignoring
@@ -248,6 +234,20 @@
 [2026-10-20 21:46:51.534]   not a target (or target already taken), ignoring
 [2026-10-20 21:46:59.258] launch [beta] $BUBBLE (Bubble) FvyMAfSmec93fEuLq3FXFvRUQHZPMHN6My2WCAPYBi4Q quote 6s2umN platform 6BwHHD token2022 slot 459384450
 [2026-10-20 21:46:59.258]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:15.163] launch [beta] $MIDTERMS (Midterms) HXDZRsLDfNjSr7q2L8HwUaMz7hrLDrTK3VhUYBg2Efyf quote 6s2umN platform 6BwHHD token2022 slot 459384524
+[2026-10-20 21:47:15.163]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:18.205] launch [beta] $MAGA (Make Aliens Great Again) 8tNwTZxRJoK5ur9YkqwBcyHUGsWqDiMXfzGQJsjrM8Gj quote 6s2umN platform 4E876q token2022 slot 459384538
+[2026-10-20 21:47:18.205]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:47:30.096] launch [beta] $THUMBS (Thumbs Up) 5GgRuwmxg5b4eeYCQogZV3NLPyZp7q49eSKrBFMnES4u quote 6s2umN platform 6BwHHD token2022 slot 459384591
+[2026-10-20 21:47:30.096]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:40.647] launch [beta] $BIG (BIG) HSZi5BYPQZqrpRvmszzB5yakTThPSNDuzonYtV5ifzfT quote 6s2umN platform 6BwHHD token2022 slot 459384638
+[2026-10-20 21:47:40.647]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:44.273] launch [beta] $STUMP (Can't Stump the Trump) 6zyNfA4b29HAnhV1Yz8NQTJiqne9Zow2kWA4BRmkL9Mi quote 6s2umN platform 6BwHHD token2022 slot 459384654
+[2026-10-20 21:47:44.273]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:47.176] launch [beta] $CHYYYNA (CHYYYNA) CQrhUT1vw48p2S5MUmwi8fQkPAXA1ke6pr6RoDph8yop quote 6s2umN platform 6BwHHD token2022 slot 459384667
+[2026-10-20 21:47:47.176]   not a target (or target already taken), ignoring
+[2026-10-20 21:47:54.925] launch [beta] $WINNING (Winning) 4DWfz3cENctAQMQehK2qL1vDSSEDAsmN1fveJ9PaV3oA quote 6s2umN platform 6BwHHD token2022 slot 459384704
+[2026-10-20 21:47:54.925]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
