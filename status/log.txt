@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 22:29:04.265] feed mainnet connected
 [2026-10-20 22:30:07.840] === sniper starting ===
 [2026-10-20 22:30:07.846] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-20 22:30:07.846] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
@@ -248,6 +247,7 @@
 [2026-10-20 22:59:46.033]   not a target, ignoring
 [2026-10-20 22:59:46.035] launch [beta] $MAGA (MAGA Coin) HastRq5UZUjzWhcW5c1drjJh1f9MzjvHk37QVsBmzEnn quote 6s2umN platform 6BwHHD token2022 slot 459404653
 [2026-10-20 22:59:46.036]   not a target, ignoring
+[2026-10-20 23:04:07.801] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
