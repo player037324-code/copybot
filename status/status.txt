@@ -1,6 +1,6 @@
-updated: 2026-10-20T20:56:04Z
+updated: 2026-10-20T20:57:07Z
 deployed: 011f075fde01f53f97b36359c90a295243ab9193
-pm2: stopped uptime=2899m restarts=14
+pm2: stopped uptime=2900m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -31,8 +31,8 @@ ASTRALANE_KEY=<set>
 NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
 SNIPE_DRY_RUN=true
-SNIPE_QUOTE_MINT=7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
-SNIPE_TARGETS=*:1
+SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+SNIPE_TARGETS=*:1,TRUMP:1
 
 --- stats ---
 Buys: 3   Sells: 0   Open: 1

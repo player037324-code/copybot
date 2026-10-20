@@ -208,17 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 20:43:05.145] === sniper starting ===
-[2026-10-20 20:43:05.151] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 20:43:05.152] pool 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ on platform 6BwHHD
-[2026-10-20 20:43:05.153] target: first launch (ANY ticker) -> buy 1
-[2026-10-20 20:43:05.155] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 1
-[2026-10-20 20:43:06.296] warm build time: 22.17ms
-[2026-10-20 20:43:06.297] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:43:06.297] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 20:43:06.400] feed beta connected
-[2026-10-20 20:43:06.429] feed mainnet connected
-[2026-10-20 20:44:00.212] launch [beta] $SAMA (Startup Annihilation & Merger AG) HC2zr132Gt5JWKqVssCDVAKaminu66DE3dUCygxiLtZq quote 7V1evj platform 4E876q slot 459367004
 [2026-10-20 20:44:00.212]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
 [2026-10-20 20:45:05.966] === sniper starting ===
 [2026-10-20 20:45:05.973] mode: DRY RUN (builds + simulates, never sends)
@@ -248,6 +237,17 @@
 [2026-10-20 20:55:07.001] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 20:55:07.113] feed beta connected
 [2026-10-20 20:55:07.117] feed mainnet connected
+[2026-10-20 20:57:03.870] === sniper starting ===
+[2026-10-20 20:57:03.873] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 20:57:03.873] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 20:57:03.873] target: first launch (ANY ticker) -> buy 1
+[2026-10-20 20:57:03.873] target: first $TRUMP -> buy 1
+[2026-10-20 20:57:03.873] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 2
+[2026-10-20 20:57:04.197] warm build time (median of 10): total 4.86ms = accounts 1.43 + compile/sign 3.09 + serialize 0.18
+[2026-10-20 20:57:04.197] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:57:04.197] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 20:57:04.213] feed beta connected
+[2026-10-20 20:57:04.248] feed mainnet connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
