@@ -86,6 +86,7 @@ if [ -f control/cmd.txt ]; then
           timeline\ *) a=${c#timeline }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && timeout 95 node scripts/timeline.js $a 2>&1 ;;
           testtrade\ *) a=${c#testtrade }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}\ [0-9.]+$ ]] && timeout 100 node scripts/testtrade.js $a 2>&1 ;;
           keyprefix) for k in HELIUS_API_KEY JUP_API_KEY NOZOMI_KEY ASTRALANE_KEY; do v=$(grep -E "^$k=" .env | tail -1 | cut -d= -f2-); echo "$k: ${v:0:4}... ($(grep -cE "^$k=" .env) line(s) in .env)"; done ;;
+          sendertest) timeout 90 node scripts/sendertest.js 2>&1 ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
           snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;

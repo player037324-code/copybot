@@ -24,7 +24,7 @@ const S = {
   minOutRaw: BigInt(env('SNIPE_MIN_OUT_RAW', '0')),
   cuLimit: Number(env('SNIPE_CU_LIMIT', '150000')),
   cuPrice: Number(env('SNIPE_CU_PRICE', '33000000')), // microLamports/CU. 150k x 33M = 0.005 SOL (matches the #1 buy on $ALTCOIN)
-  jitoTipSol: Number(env('SNIPE_JITO_TIP_SOL', '0.4')),  // the #1 buy on $ALTCOIN tipped Jito 0.4 SOL
+  jitoTipSol: Number(env('SNIPE_JITO_TIP_SOL', '0.45')),  // the #1 buy on $ALTCOIN tipped Jito 0.4 SOL
   tipSol: Number(env('SNIPE_TIP_SOL', '0.001')),         // Helius Sender tip
   jitoUrls: env('SNIPE_JITO_URLS', 'https://ny.mainnet.block-engine.jito.wtf,https://mainnet.block-engine.jito.wtf,https://slc.mainnet.block-engine.jito.wtf,https://frankfurt.mainnet.block-engine.jito.wtf').split(',').map((x) => x.trim()).filter(Boolean),
   maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
