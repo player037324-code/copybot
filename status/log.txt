@@ -208,16 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:17:43.600] launch [beta] $IT'S YUGE (YUGE) D3AzhPZBTtTD6pAex3GSt7nu2qggk1HcZU4sdRQNyhJr quote 6s2umN platform 6BwHHD token2022 slot 459376353
-[2026-10-20 21:17:43.600]   not a target (or target already taken), ignoring
-[2026-10-20 21:17:44.185] launch [beta] $thinair (thinair) 66wpucXyEvG2vE3rkjLgmJna6nQ8QHjNz8Lrr6EouN4p quote 6s2umN platform 6BwHHD token2022 slot 459376356
-[2026-10-20 21:17:44.185]   not a target (or target already taken), ignoring
-[2026-10-20 21:17:44.728] launch [beta] $TRUMPINA (Trumpina) Dpw5dUuJ72ih9yQi4xSrxFQtdA8rwUvdtBLWu6NbbZLX quote 6s2umN platform 4E876q token2022 slot 459376359
-[2026-10-20 21:17:44.728]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
-[2026-10-20 21:17:46.176] launch [beta] $TRUMP (Trump Coin) Ec98PqBeYu975EHfD6h5SxYUnjgCNcCBkdihdXc3tmMk quote 6s2umN platform 6BwHHD token2022 slot 459376365
-[2026-10-20 21:17:46.176]   not a target (or target already taken), ignoring
-[2026-10-20 21:17:48.387] launch [beta] $MWG (MEME WAR GENERAL) 3MZEFh6GntYQzgmc9oxNTZGWk62zYHqpWJVkYHXf8W9L quote 6s2umN platform 6BwHHD token2022 slot 459376375
-[2026-10-20 21:17:48.387]   not a target (or target already taken), ignoring
 [2026-10-20 21:17:49.439] launch [beta] $USDT (USDT) U1ZpEsPQCtQovwYy9qPVzMjiyvvXtVkoqmojZydvNBj quote 6s2umN platform 6BwHHD token2022 slot 459376380
 [2026-10-20 21:17:49.439]   not a target (or target already taken), ignoring
 [2026-10-20 21:17:53.078] launch [beta] $WORTH (WORTH) HhRcwTjRHcvuX7Wq9gKmQK4xi3YNHyfc2gj7riegxBmZ quote 6s2umN platform 6BwHHD token2022 slot 459376398
@@ -248,6 +238,16 @@
 [2026-10-20 21:18:48.453]   not a target (or target already taken), ignoring
 [2026-10-20 21:18:49.078] launch [beta] $FIGHT (Fight Fight Fight) GBbpCzBpcZPadTzNtGdMzu5GYPCWrdcTRkrSEL1McbQp quote 6s2umN platform 6BwHHD token2022 slot 459376654
 [2026-10-20 21:18:49.079]   not a target (or target already taken), ignoring
+[2026-10-20 21:19:15.906] launch [beta] $FAFO (Fuck Around and Find Out) AiX4hoSFSGc3eKqCKg4oG7Xk2Wvmjy5FsF6oUPzZnGhh quote 6s2umN platform 6BwHHD token2022 slot 459376778
+[2026-10-20 21:19:15.906]   not a target (or target already taken), ignoring
+[2026-10-20 21:19:22.775] launch [beta] $air (aircoin) 6p2eZ5XB9ifytfFad6zcLUH1n5pftrn5eaTGwVyPkknv quote 6s2umN platform 6BwHHD token2022 slot 459376807
+[2026-10-20 21:19:22.775]   not a target (or target already taken), ignoring
+[2026-10-20 21:19:23.253] launch [beta] $MWG (MEME WARS GENERAL) 7thxdXhvK1EVVXDtYGyXFm59WVTd6ugFbUTV6xWuYfQ quote 6s2umN platform 6BwHHD token2022 slot 459376809
+[2026-10-20 21:19:23.253]   not a target (or target already taken), ignoring
+[2026-10-20 21:19:38.839] launch [beta] $TRUMP (Trump Dividend) 7qmzLVyxf3M7Tiat7zf4zuPPGHRM1d7FRmjJFTRK1Gyc quote 6s2umN platform 6BwHHD token2022 slot 459376884
+[2026-10-20 21:19:38.839]   not a target (or target already taken), ignoring
+[2026-10-20 21:19:58.581] launch [beta] $TRUMP (Trump Dividend) FGjKPKuosEhqkpod57VEpKYRxik9bvW7h7zzbUECXY6Y quote 6s2umN platform 6BwHHD token2022 slot 459376975
+[2026-10-20 21:19:58.582]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
