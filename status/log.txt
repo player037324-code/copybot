@@ -208,15 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 20:55:05.646] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 20:55:06.999] warm build time (median of 10): total 17.49ms = accounts 7.18 + compile/sign 8.78 + serialize 0.21
-[2026-10-20 20:55:07.001] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:55:07.001] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 20:55:07.113] feed beta connected
-[2026-10-20 20:55:07.117] feed mainnet connected
-[2026-10-20 20:57:03.870] === sniper starting ===
-[2026-10-20 20:57:03.873] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 20:57:03.873] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 20:57:03.873] target: first launch (ANY ticker) -> buy 1
 [2026-10-20 20:57:03.873] target: first $TRUMP -> buy 1
 [2026-10-20 20:57:03.873] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 2
@@ -248,6 +239,15 @@
 [2026-10-20 21:07:06.536] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 21:07:06.626] feed beta connected
 [2026-10-20 21:07:06.661] feed mainnet connected
+[2026-10-20 21:10:04.113] === sniper starting ===
+[2026-10-20 21:10:04.116] mode: LIVE
+[2026-10-20 21:10:04.116] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 21:10:04.116] target: first $TRUMP -> buy 762
+[2026-10-20 21:10:04.116] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 762
+[2026-10-20 21:10:04.575] warm build time (median of 10): total 4.33ms = accounts 0.77 + compile/sign 2.47 + serialize 0.20
+[2026-10-20 21:10:04.576] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:10:04.576] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 21:10:04.667] feed mainnet connected
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
