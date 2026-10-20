@@ -1,3 +1,2 @@
-id: 56
-set SNIPE_DRY_RUN=true
-snipe-start
+id: 58
+launchinfo BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
