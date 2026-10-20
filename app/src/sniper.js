@@ -284,4 +284,6 @@ async function main() {
   setInterval(() => log(`alive | pool ${S.quoteMint.slice(0, 6)} | ${targets.map((t) => (t.ticker === '*' ? 'FIRST' : '$' + t.ticker) + (t.fired ? ' done' : ' armed')).join(', ')}`), 300000).unref();
 }
 
-if (process.argv[1] && process.argv[1].endsWith('sniper.js')) main().catch((e) => { console.error(e); process.exit(1); });
+// run when launched directly or by pm2 (pm2 puts the real script path in pm_exec_path), not when imported
+const entry = process.env.pm_exec_path || process.argv[1] || '';
+if (entry.endsWith('sniper.js')) main().catch((e) => { console.error(e); process.exit(1); });
