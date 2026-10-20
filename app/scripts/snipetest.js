@@ -19,6 +19,8 @@ const amountRaw = BigInt(Math.floor(Number(amt || 1) * 10 ** dec));
 const bh = await conn.getLatestBlockhash();
 const t2 = performance.now();
 const ixs = buildBuyIxs(L, wallet, amountRaw, 0n);
+for (let i = 0; i < 25; i++) buildTx(wallet, buildBuyIxs(L, wallet, amountRaw, 0n), bh.blockhash).serialize();
+const tw = performance.now(); buildTx(wallet, buildBuyIxs(L, wallet, amountRaw, 0n), bh.blockhash).serialize(); console.log(`warm build+sign: ${(performance.now() - tw).toFixed(2)}ms`);
 const ours = buildTx(wallet, ixs, bh.blockhash);
 const t3 = performance.now();
 console.log(`built + signed in ${(t3 - t2).toFixed(2)}ms, ${ours.serialize().length} bytes`);

@@ -22,9 +22,11 @@ const S = {
   amount: Number(env('SNIPE_AMOUNT', '0')), // in quote-token units (e.g. 1400 SAMA4)
   platform: env('SNIPE_PLATFORM', '6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt'), // StonkFun's LaunchLab platform
   minOutRaw: BigInt(env('SNIPE_MIN_OUT_RAW', '0')),
-  cuLimit: Number(env('SNIPE_CU_LIMIT', '120000')),
-  cuPrice: Number(env('SNIPE_CU_PRICE', '3000000')), // microLamports/CU (120k CU x 3M = 0.00036 SOL)
-  tipSol: Number(env('SNIPE_TIP_SOL', '0.002')),
+  cuLimit: Number(env('SNIPE_CU_LIMIT', '150000')),
+  cuPrice: Number(env('SNIPE_CU_PRICE', '33000000')), // microLamports/CU. 150k x 33M = 0.005 SOL (matches the #1 buy on $ALTCOIN)
+  jitoTipSol: Number(env('SNIPE_JITO_TIP_SOL', '0.4')),  // the #1 buy on $ALTCOIN tipped Jito 0.4 SOL
+  tipSol: Number(env('SNIPE_TIP_SOL', '0.001')),         // Helius Sender tip
+  jitoUrl: env('SNIPE_JITO_URL', 'https://ny.mainnet.block-engine.jito.wtf'),
   maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
   dryRun: env('SNIPE_DRY_RUN', 'true').toLowerCase() === 'true',
   senderUrl: env('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),
@@ -56,6 +58,12 @@ const TIP_ACCOUNTS = [
   '2nyhqdwKcJZR2vcqCyrYsaPVdAnFoJjiksCXJ7hfEYgD', '2q5pghRs6arqVjRvT5gfgWfWcHWmw1ZuCzphgd5KfWGJ',
   'wyvPkWjVZz1M8fHQnMMCDTQDbkManefNNhweYk5WkcF', '3KCKozbAaF75qEU33jtzozcJ29yJuaLJTy2jFdzUY8bT',
   '4vieeGHPYPG2MmyPRcYjdiDmmhN3ww7hsFNap8pVN3Ey', '4TQLFNWK8AovT1gFvda5jfw2oJeRMKEmw7aH6MGBJ3or',
+].map((a) => new PublicKey(a));
+const JITO_TIP_ACCOUNTS = [
+  '96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5', 'HFqU5x63VTqvQss8hp11i4wVV8bD44PvwucfZ2bU7gRe',
+  'Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY', 'ADaUMid9yfUytqMBgopwjb2DTLSokTSzL1zt6iGPaS49',
+  'DfXygSm4jCyNCybVYYK6DwvWqjKee8pbDmJGcLWNDXjh', 'ADuUkR4vqLUMWXxW9gh6D6L8pMSawimctcNZ5pGwDcEt',
+  'DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL', '3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6jT',
 ].map((a) => new PublicKey(a));
 
 const ata = (owner, mint, prog) => PublicKey.findProgramAddressSync([owner.toBuffer(), prog.toBuffer(), mint.toBuffer()], ATA_PROGRAM)[0];
@@ -113,12 +121,14 @@ export function buildBuyIxs(L, wallet, amountRaw, minOutRaw) {
   return [createBaseAta, new TransactionInstruction({ programId: LL, keys, data })];
 }
 
-export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S.cuPrice, tipSol = S.tipSol) {
+const pick = (a) => a[Math.floor(Math.random() * a.length)];
+export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S.cuPrice, tipSol = S.tipSol, jitoTipSol = S.jitoTipSol) {
   const all = [
     ComputeBudgetProgram.setComputeUnitLimit({ units: cuLimit }),
     ComputeBudgetProgram.setComputeUnitPrice({ microLamports: cuPrice }),
     ...ixs,
-    SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: TIP_ACCOUNTS[Math.floor(Math.random() * TIP_ACCOUNTS.length)], lamports: Math.round(tipSol * 1e9) }),
+    ...(jitoTipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(JITO_TIP_ACCOUNTS), lamports: Math.round(jitoTipSol * 1e9) })] : []),
+    ...(tipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(TIP_ACCOUNTS), lamports: Math.round(tipSol * 1e9) })] : []),
   ];
   const msg = new TransactionMessage({ payerKey: wallet.publicKey, recentBlockhash: blockhash, instructions: all }).compileToV0Message();
   const tx = new VersionedTransaction(msg);
@@ -146,7 +156,9 @@ async function main() {
   log('=== sniper starting ===');
   log(`mode: ${S.dryRun ? 'DRY RUN (builds + simulates, never sends)' : 'LIVE'}`);
   log(`target: first $${S.ticker} paired to ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
-  log(`wallet ${wallet.publicKey.toBase58()} | buy ${S.amount} quote tokens | holds ${have} | tip ${S.tipSol} SOL | prio ${S.cuPrice} uL x ${S.cuLimit}`);
+  log(`wallet ${wallet.publicKey.toBase58()} | buy ${S.amount} quote tokens | holds ${have}`);
+  const solBal = (await conn.getBalance(wallet.publicKey)) / 1e9;
+  if (solBal < S.jitoTipSol + S.tipSol + 0.02) warn(`wallet has ${solBal.toFixed(3)} SOL, needs ~${(S.jitoTipSol + S.tipSol + 0.02).toFixed(3)} for tips/fees/rent`);
   if (have < S.amount) warn(`wallet holds ${have} of the quote token, needs ${S.amount}. Buy will fail until funded.`);
   if (state[key]) { log(`already sniped/claimed first $${S.ticker} for this pool (${state[key].mint}). Nothing to do. Clear with snipe-reset.`); }
 
@@ -157,6 +169,16 @@ async function main() {
   // precompute everything that doesn't depend on the new coin
   const senderSend = `${S.senderUrl}/fast?api-key=${S.heliusKey}`;
   const post = (b64) => fetch(senderSend, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64', skipPreflight: true, maxRetries: 0 }] }) }).then((r) => r.json());
+  const jitoSend = (b64) => fetch(`${S.jitoUrl}/api/v1/transactions`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64' }] }) }).then((r) => r.json());
+  setInterval(() => fetch(`${S.jitoUrl}/api/v1/getTipAccounts`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"jsonrpc":"2.0","id":1,"method":"getTipAccounts","params":[]}' }).catch(() => {}), 20000);
+  // warm up: build + sign a throwaway tx so the first real build isn't cold (JIT, PDA math, signing)
+  for (let i = 0; i < 25; i++) {
+    const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
+    Buffer.from(buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize()).toString('base64');
+  }
+  { const t = performance.now(); const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
+    buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize(); log(`warm build time: ${(performance.now() - t).toFixed(2)}ms`); }
+  log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender tip ${S.tipSol} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol).toFixed(4)} SOL per snipe`);
   const seenMints = new Set();
   let fired = !!state[key];
 
@@ -186,7 +208,7 @@ async function main() {
     }
     // fire on every path at once, then keep rebroadcasting until it lands
     const sendT = Date.now();
-    const r = await Promise.allSettled([post(b64), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
+    const r = await Promise.allSettled([post(b64), jitoSend(b64), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
     const ourSig = bs58.encode(ours.signatures[0]);
     log(`  SENT buy ${S.amount} -> $${S.ticker} | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
     r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`));
@@ -201,7 +223,7 @@ async function main() {
         fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
         return;
       }
-      if (i % 2 === 1 && i < 12) post(b64).catch(() => {});
+      if (i % 2 === 1 && i < 12) { post(b64).catch(() => {}); jitoSend(b64).catch(() => {}); }
     }
     warn('  buy never landed');
   }
