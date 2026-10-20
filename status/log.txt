@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 22:29:03.897] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-20 22:29:03.898] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 22:29:03.898] target: first $TRUMP -> buy 762 [ALREADY DONE]
 [2026-10-20 22:29:03.899] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
@@ -248,6 +247,7 @@
 [2026-10-20 22:34:07.878] feed mainnet connected
 [2026-10-20 22:39:07.800] alive | pool 6s2umN | $TRUMP done
 [2026-10-20 22:44:07.800] alive | pool 6s2umN | $TRUMP done
+[2026-10-20 22:49:07.801] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
