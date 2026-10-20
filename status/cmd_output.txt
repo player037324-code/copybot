@@ -1,9 +1,3 @@
-[2026-10-20 21:10:04.116] target: first $TRUMP -> buy 762
-[2026-10-20 21:10:04.116] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 762
-[2026-10-20 21:10:04.575] warm build time (median of 10): total 4.33ms = accounts 0.77 + compile/sign 2.47 + serialize 0.20
-[2026-10-20 21:10:04.576] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:10:04.576] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:10:04.667] feed mainnet connected
 === cmd 55 @ 2026-10-20T21:15:02Z ===
 > recent 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
 100 txs in last 30 min touching 6s2umN
@@ -397,4 +391,10 @@ host metrics | cpu: 1.8% | ram usage: 47.5% | enp1s0: ⇓ 0.028mb/s ⇑ 0.003mb/
 grpc connect failed: Cannot read properties of undefined (reading 'PROCESSED')
 grpc error: subscribe stream receive failed
 txs seen: helius 22, orbit 0, both 0, only-helius 22, only-orbit 0
+orbit sent nothing (IP not whitelisted? wrong endpoint?)
+=== cmd 68 @ 2026-10-20T22:34:07Z ===
+> feedrace 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue 120
+grpc subscribed to http://ny.rpc.orbitflare.com:10000
+grpc error: subscribe stream receive failed code GenericFailure
+txs seen: helius 12, orbit 0, both 0, only-helius 12, only-orbit 0
 orbit sent nothing (IP not whitelisted? wrong endpoint?)
