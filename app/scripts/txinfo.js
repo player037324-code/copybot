@@ -20,5 +20,6 @@ for (const ix of tx.transaction.message.instructions) {
   if (ix.programId.toString() === 'ComputeBudget111111111111111111111111111111') { const d = Buffer.from((await import('bs58')).default.decode(ix.data)); if (d[0] === 2) console.log('  CU limit', d.readUInt32LE(1)); if (d[0] === 3) console.log('  CU price', Number(d.readBigUInt64LE(1)), 'microLamports'); }
 }
 console.log('SOL change signer:', ((tx.meta.postBalances[0] - tx.meta.preBalances[0]) / 1e9).toFixed(4));
+(tx.meta.logMessages || []).filter((l) => /AnchorError|Left:|Right:|failed/.test(l)).forEach((l) => console.log('  ANCHOR ' + l));
 (tx.meta.logMessages || []).filter((l) => /Instruction: |invoke \[1\]|invoke \[2\]/.test(l)).slice(0, 25).forEach((l) => console.log('  ' + l));
 process.exit(0);
