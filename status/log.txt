@@ -208,30 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:50:15.925] launch [beta] $DIVIDEND (Dividend) G1PfJ81bwPD5UephkcMjwt8vDVmm6SEzQvMkmpnWGRij quote 6s2umN platform 6BwHHD token2022 slot 459385355
-[2026-10-20 21:50:15.925]   not a target (or target already taken), ignoring
-[2026-10-20 21:50:40.573] launch [beta] $YUGE (Yuge Coin) 69uzvXBvge2sRsogdDRaJmVrL9tEWpPYZBLxfzi86aTK quote 6s2umN platform 6BwHHD token2022 slot 459385469
-[2026-10-20 21:50:40.573]   not a target (or target already taken), ignoring
-[2026-10-20 21:50:41.888] launch [beta] $COVFEFE (Covfefe) HHx6UfoYuH4Dc5HaEZcFLPsA92uxKioxccdSBh8VuSdq quote 6s2umN platform 6BwHHD token2022 slot 459385475
-[2026-10-20 21:50:41.888]   not a target (or target already taken), ignoring
-[2026-10-20 21:51:06.818] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 21:51:22.886] launch [beta] $MTGA (Make The Trenches Great Again) AoU9afEBwYPH8QEh2GqsM23fUiD26EHKcJenvd3AXaQe quote 6s2umN platform 6BwHHD token2022 slot 459385661
-[2026-10-20 21:51:22.887]   not a target (or target already taken), ignoring
-[2026-10-20 21:51:25.893] launch [beta] $MTTGA (Make The Trenches Great Again) Ctd5WGU51thp1qQB6Foj725nDxmD5LpWxEmCPqy1xFYd quote 6s2umN platform 6BwHHD token2022 slot 459385675
-[2026-10-20 21:51:25.893]   not a target (or target already taken), ignoring
-[2026-10-20 21:51:38.077] launch [beta] $SEED (Seed) 8MFL1s8swdX75mdyKn2pXPAj8sZD8HkDEJYWWtgoEKiz quote 6s2umN platform 6BwHHD token2022 slot 459385731
-[2026-10-20 21:51:38.077]   not a target (or target already taken), ignoring
-[2026-10-20 21:51:41.057] launch [beta] $YUGE (donald trump jr said "yugecoin") 9ktyCaDYijmDfHvxD42QYsmxtSd49diQRCnbcgWoPi3N quote 6s2umN platform 6BwHHD token2022 slot 459385744
-[2026-10-20 21:51:41.057]   not a target (or target already taken), ignoring
-[2026-10-20 21:52:00.711] launch [beta] $YUGE (Yugecoin) EDro3p1Q42kyqBAfovg4mNpGdfTvsAbJfWgKEKnx3tNn quote 6s2umN platform 6BwHHD token2022 slot 459385835
-[2026-10-20 21:52:00.711]   not a target (or target already taken), ignoring
-[2026-10-20 21:52:13.381] launch [beta] $WIN (WE'RE GONNA WIN SO MUCH) 555uSrb9ykP8YUEzndBB74DCh4978BEMG19J16PtDMwX quote 6s2umN platform 6BwHHD token2022 slot 459385896
-[2026-10-20 21:52:13.381]   not a target (or target already taken), ignoring
-[2026-10-20 21:53:02.114] launch [beta] $MAGA (Make America Great Again) 2yQKvGHT5SehGgUrbMJUjoxJpi8cq2NH8T24jgy2RDri quote 6s2umN platform 6BwHHD token2022 slot 459386114
-[2026-10-20 21:53:02.115]   not a target (or target already taken), ignoring
-[2026-10-20 21:53:05.566] launch [beta] $MTGA (Make The Trenches Great Again) BEAgzWbShLvtLGV9czsy8dhn8gN1t3JDjXNfqQNHiK7h quote 6s2umN platform 6BwHHD token2022 slot 459386130
-[2026-10-20 21:53:05.566]   not a target (or target already taken), ignoring
-[2026-10-20 21:53:07.062] launch [beta] $ORANGE (Orange Man) H4aeJt5R7vHcDPDT8SiigaTrqZHGQYVEixinCfcAS2ho quote 6s2umN platform 6BwHHD token2022 slot 459386136
 [2026-10-20 21:53:07.062]   not a target (or target already taken), ignoring
 [2026-10-20 21:53:42.325] launch [beta] $DANCE (Dance) 1hmaEcweGCw9nuYxPwxAnRLAsVZtLER4cv9MtALyB1v quote 6s2umN platform 6BwHHD token2022 slot 459386301
 [2026-10-20 21:53:42.326]   not a target (or target already taken), ignoring
@@ -248,6 +224,30 @@
 [2026-10-20 21:54:06.900] feed mainnet connected
 [2026-10-20 21:54:06.906] feed pre (preprocessed/shreds) connected
 [2026-10-20 21:54:06.914] feed pre subscribed (1)
+[2026-10-20 21:54:12.221] launch [beta] $GRIFT (Grift) AVoY2ayZbUTgsHYdpE6PtrecuhEgEsg42quK4BCQ2d1a quote 6s2umN platform 6BwHHD token2022 slot 459386438
+[2026-10-20 21:54:12.221]   not a target, ignoring
+[2026-10-20 21:54:13.216] launch [pre] $YUGE (Yuge Coin) Ebze2vcxNiC2oeiTSCmV8VuNYVKYPmiMcCpPFJVtcNos quote 6s2umN platform 6BwHHD token2022 slot 459386443
+[2026-10-20 21:54:13.216]   not a target, ignoring
+[2026-10-20 21:54:13.219] launch [beta] $YUGE (Yuge Coin) Ebze2vcxNiC2oeiTSCmV8VuNYVKYPmiMcCpPFJVtcNos quote 6s2umN platform 6BwHHD token2022 slot 459386443
+[2026-10-20 21:54:13.220]   not a target, ignoring
+[2026-10-20 21:54:24.309] launch [beta] $DONALD (Donald) HFSsghprZvcb4ji4JmtiaA1kCyWZXFUAp4pALvMPB4Gp quote 6s2umN platform 6BwHHD token2022 slot 459386494
+[2026-10-20 21:54:24.314]   not a target, ignoring
+[2026-10-20 21:54:36.436] launch [pre] $SIF (Sif) 6VcvGs3dkah6HUW2BSynbWu7bXmtAUHCX5yw2YuryVBD quote 6s2umN platform 6BwHHD token2022 slot 459386550
+[2026-10-20 21:54:36.436]   not a target, ignoring
+[2026-10-20 21:54:36.438] launch [beta] $SIF (Sif) 6VcvGs3dkah6HUW2BSynbWu7bXmtAUHCX5yw2YuryVBD quote 6s2umN platform 6BwHHD token2022 slot 459386550
+[2026-10-20 21:54:36.438]   not a target, ignoring
+[2026-10-20 21:54:48.222] launch [pre] $TRUBUB (Trubub) 4cNhdcyH2G1GzdDrqruvhaZVa5mJX9hFkxu6zTqJf3ij quote 6s2umN platform 6BwHHD token2022 slot 459386610
+[2026-10-20 21:54:48.222]   not a target, ignoring
+[2026-10-20 21:54:48.225] launch [beta] $TRUBUB (Trubub) 4cNhdcyH2G1GzdDrqruvhaZVa5mJX9hFkxu6zTqJf3ij quote 6s2umN platform 6BwHHD token2022 slot 459386610
+[2026-10-20 21:54:48.225]   not a target, ignoring
+[2026-10-20 21:54:52.408] launch [pre] $YUGE (Yuge Coin) Hqk77pgQMJH57vATh3KvcPetvAbh5vuc2cTUxwTdyA4 quote 6s2umN platform 6BwHHD token2022 slot 459386630
+[2026-10-20 21:54:52.408]   not a target, ignoring
+[2026-10-20 21:54:52.410] launch [beta] $YUGE (Yuge Coin) Hqk77pgQMJH57vATh3KvcPetvAbh5vuc2cTUxwTdyA4 quote 6s2umN platform 6BwHHD token2022 slot 459386630
+[2026-10-20 21:54:52.411]   not a target, ignoring
+[2026-10-20 21:54:59.381] launch [pre] $AMERICA (America) HUbJRxYRidu3Jrt1bD9owX244291F9vRxjXg83EQP6Hh quote 6s2umN platform 6BwHHD token2022 slot 459386662
+[2026-10-20 21:54:59.381]   not a target, ignoring
+[2026-10-20 21:54:59.385] launch [beta] $AMERICA (America) HUbJRxYRidu3Jrt1bD9owX244291F9vRxjXg83EQP6Hh quote 6s2umN platform 6BwHHD token2022 slot 459386662
+[2026-10-20 21:54:59.386]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
