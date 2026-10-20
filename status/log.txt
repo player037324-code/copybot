@@ -208,22 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:30:07.221] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 21:30:14.133] launch [beta] $FRIES (Fries in the Bag) Afr39xjc1BoaxX7st71pzYWskME5oPijVnMZMN56eucC quote 6s2umN platform 6BwHHD token2022 slot 459379817
-[2026-10-20 21:30:14.134]   not a target (or target already taken), ignoring
-[2026-10-20 21:30:28.601] launch [beta] $GARBAGE (Garbage Truck) NBrSasHrprFn6jvmXjquM1HajCtbPLN8fBAoJjPcPhZ quote 6s2umN platform 6BwHHD token2022 slot 459379884
-[2026-10-20 21:30:28.602]   not a target (or target already taken), ignoring
-[2026-10-20 21:30:39.019] launch [beta] $𝕏 (SpaceXTeslaxAIBoringCompanyX) GkqLFtzrmfZzDZo6DKHYrbmmBrgNWMzrtgS32qZJdX2L quote 6s2umN platform 6BwHHD token2022 slot 459379932
-[2026-10-20 21:30:39.019]   not a target (or target already taken), ignoring
-[2026-10-20 21:30:41.735] launch [beta] $FLAGHUG (Flag Hug) EgYJJkZKG8nW1Aa3MEJzZ4q1YGqfkX4WiBEoXNecwRW5 quote 6s2umN platform 6BwHHD token2022 slot 459379944
-[2026-10-20 21:30:41.735]   not a target (or target already taken), ignoring
-[2026-10-20 21:31:05.249] === sniper starting ===
-[2026-10-20 21:31:05.254] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:31:05.256] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:31:05.256] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 21:31:05.257] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 21:31:05.303] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 21:31:06.778] warm build time (median of 10): total 22.27ms = accounts 7.83 + compile/sign 14.02 + serialize 0.17
 [2026-10-20 21:31:06.781] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:31:06.781] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 21:31:06.890] feed beta connected
@@ -248,6 +232,22 @@
 [2026-10-20 21:32:54.468]   not a target (or target already taken), ignoring
 [2026-10-20 21:32:59.638] launch [beta] $BBB (Big Beautiful Basket) 8SahG3BMj3BGjuXp8LwCeND3oeM9iqLUBSLkGV7KJ7Ca quote 6s2umN platform 4E876q token2022 slot 459380581
 [2026-10-20 21:32:59.638]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:33:05.407] launch [beta] $trump (trumpcoin) 49hWGiyY9L3pM5zibK7Saqg5Bjr77ThU74t5ZDUUixso quote 6s2umN platform 6BwHHD token2022 slot 459380607
+[2026-10-20 21:33:05.407]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:12.016] launch [beta] $DOME (Golden Dome) CjHLUdV4KhW2481LeKV2G9kTAw31offA4Ch1xZ4Jqujx quote 6s2umN platform 6BwHHD token2022 slot 459380638
+[2026-10-20 21:33:12.016]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:12.222] launch [beta] $TSM6900 (Trump Stock Market) 5Edi6trJkyqb5XWgN2NbHry6Ub1wrLTfiWsASAHoZte6 quote 6s2umN platform 6BwHHD token2022 slot 459380639
+[2026-10-20 21:33:12.222]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:15.700] launch [beta] $MAGA (MAGA) 33PjF1KKxKEQsNCXxZTVKJXS7FzXBudRFVFQFnNUdTxc quote 6s2umN platform 6BwHHD token2022 slot 459380656
+[2026-10-20 21:33:15.700]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:24.141] launch [beta] $TRUMP (Trump Coin) HgSyhgsiXBHL3LiBbLfD65gFUV5n2gumq8LNjyL9n3dr quote 6s2umN platform 6BwHHD token2022 slot 459380696
+[2026-10-20 21:33:24.141]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:29.895] launch [beta] $RALLY (Rally) 9iTFNjw6cVv7GyBweL6aKtftsHd5mTe52ZzG1Gtfc3TJ quote 6s2umN platform 6BwHHD token2022 slot 459380723
+[2026-10-20 21:33:29.895]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:42.912] launch [beta] $BIBLE (God Bless the USA Bible) FUubjZgwEfmphfTb5TXGtE2eUTEQiimLFjWRcMEuusyk quote 6s2umN platform 6BwHHD token2022 slot 459380783
+[2026-10-20 21:33:42.912]   not a target (or target already taken), ignoring
+[2026-10-20 21:33:58.107] launch [beta] $JET (The Qatar Jet) BTWkHanKPtbsjBSbeiNnyHwtWHiVYiYtgBY13hUca89M quote 6s2umN platform 6BwHHD token2022 slot 459380854
+[2026-10-20 21:33:58.107]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
