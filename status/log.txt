@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 22:06:38.992] launch [beta] $BIG (BIG) 7yAbUhNRzJPAGixPCpxVqqL2F8fFxhUxz3jgXEu7tHEt quote 6s2umN platform 6BwHHD token2022 slot 459389894
-[2026-10-20 22:06:38.992]   not a target, ignoring
-[2026-10-20 22:06:45.514] launch [pre] $BABY ($1,000 Per Baby) c6wZFu1Z4h3AEir7ThZJ4JY7fsveK87SgcGcD3JDPqP quote 6s2umN platform 6BwHHD token2022 slot 459389926
-[2026-10-20 22:06:45.514]   not a target, ignoring
 [2026-10-20 22:06:45.524] launch [beta] $BABY ($1,000 Per Baby) c6wZFu1Z4h3AEir7ThZJ4JY7fsveK87SgcGcD3JDPqP quote 6s2umN platform 6BwHHD token2022 slot 459389926
 [2026-10-20 22:06:45.524]   not a target, ignoring
 [2026-10-20 22:06:51.160] launch [pre] $YUUUUGE (YUUUUGE) Bz7eQbN9GiY3xVeZ19FLekYTUu8xva1TdzBUhNJGw71T quote 6s2umN platform 6BwHHD token2022 slot 459389951
@@ -248,6 +244,10 @@
 [2026-10-20 22:15:17.605]   not a target, ignoring
 [2026-10-20 22:15:17.608] launch [beta] $PORK (Trump Pork) 8PvMM4BJPkP2mUntvnNXZxwGcDn3KM3Yb4fxZo61BQyP quote 6s2umN platform 6BwHHD token2022 slot 459392313
 [2026-10-20 22:15:17.609]   not a target, ignoring
+[2026-10-20 22:17:10.220] launch [pre] $DTRT (Donald Trump Revocable Trust) 6oxVSn96gnQBEnch9NzS97J6EVVRHvEx3iuFF3Ft7D9A quote 6s2umN platform 6BwHHD token2022 slot 459392831
+[2026-10-20 22:17:10.220]   not a target, ignoring
+[2026-10-20 22:17:10.223] launch [beta] $DTRT (Donald Trump Revocable Trust) 6oxVSn96gnQBEnch9NzS97J6EVVRHvEx3iuFF3Ft7D9A quote 6s2umN platform 6BwHHD token2022 slot 459392831
+[2026-10-20 22:17:10.223]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
