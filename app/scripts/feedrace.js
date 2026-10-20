@@ -5,7 +5,7 @@ import WebSocket from 'ws';
 import bs58 from 'bs58';
 import YS from '@triton-one/yellowstone-grpc';
 const Client = YS.default || YS.Client || YS;
-const { CommitmentLevel } = YS;
+const PROCESSED = 0; // yellowstone CommitmentLevel.PROCESSED
 const pool = process.argv[2]; const secs = Number(process.argv[3] || 120); const grpcUrl = process.argv[4] || process.env.ORBIT_GRPC || 'http://ny.rpc.orbitflare.com:10000';
 const LL = 'LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj';
 const seen = {}; const mark = (sig, src) => { (seen[sig] ||= {})[src] ||= performance.now(); };
@@ -20,8 +20,8 @@ try {
   await client.connect?.();
   const stream = await client.subscribe();
   stream.on('data', (u) => { if (u.transaction?.transaction?.signature) { grpcOk = true; mark(bs58.encode(u.transaction.transaction.signature), 'orbit'); } });
-  stream.on('error', (e) => console.log('grpc error:', e.message?.slice(0, 200)));
-  stream.write({ accounts: {}, slots: {}, transactions: { t: { vote: false, failed: false, accountInclude: [], accountExclude: [], accountRequired: [LL, pool] } }, transactionsStatus: {}, entry: {}, blocks: {}, blocksMeta: {}, accountsDataSlice: [], commitment: CommitmentLevel.PROCESSED });
+  stream.on('error', (e) => console.log('grpc error:', (e.details || e.message || '').slice(0, 200), 'code', e.code));
+  stream.write({ accounts: {}, slots: {}, transactions: { t: { vote: false, failed: false, accountInclude: [], accountExclude: [], accountRequired: [LL, pool] } }, transactionsStatus: {}, entry: {}, blocks: {}, blocksMeta: {}, accountsDataSlice: [], commitment: PROCESSED });
   console.log(`grpc subscribed to ${grpcUrl}`);
 } catch (e) { console.log('grpc connect failed:', e.message?.slice(0, 200)); }
 setTimeout(() => {
