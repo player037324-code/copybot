@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:54:06.900] feed mainnet connected
-[2026-10-20 21:54:06.906] feed pre (preprocessed/shreds) connected
-[2026-10-20 21:54:06.914] feed pre subscribed (1)
-[2026-10-20 21:54:12.221] launch [beta] $GRIFT (Grift) AVoY2ayZbUTgsHYdpE6PtrecuhEgEsg42quK4BCQ2d1a quote 6s2umN platform 6BwHHD token2022 slot 459386438
 [2026-10-20 21:54:12.221]   not a target, ignoring
 [2026-10-20 21:54:13.216] launch [pre] $YUGE (Yuge Coin) Ebze2vcxNiC2oeiTSCmV8VuNYVKYPmiMcCpPFJVtcNos quote 6s2umN platform 6BwHHD token2022 slot 459386443
 [2026-10-20 21:54:13.216]   not a target, ignoring
@@ -248,6 +244,10 @@
 [2026-10-20 22:02:23.467]   our pool but other platform (4E876q), ignoring
 [2026-10-20 22:02:23.470] launch [beta] $TBucks (Trump Bucks) 9VsKWTMhmzvGvQ8Z4tV8y2toVr6wD2v2P91ZDitxhnZ9 quote 6s2umN platform 4E876q token2022 slot 459388712
 [2026-10-20 22:02:23.470]   our pool but other platform (4E876q), ignoring
+[2026-10-20 22:03:54.540] launch [pre] $FRAUDCOIN (FRAUDCOIN) 6kA4F3Gfwc4LvniAaT2D6WJsBq6nCAgfoHN2qvCCbNh7 quote 6s2umN platform 6BwHHD token2022 slot 459389131
+[2026-10-20 22:03:54.540]   not a target, ignoring
+[2026-10-20 22:03:54.544] launch [beta] $FRAUDCOIN (FRAUDCOIN) 6kA4F3Gfwc4LvniAaT2D6WJsBq6nCAgfoHN2qvCCbNh7 quote 6s2umN platform 6BwHHD token2022 slot 459389131
+[2026-10-20 22:03:54.544]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
