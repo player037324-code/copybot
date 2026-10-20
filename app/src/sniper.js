@@ -30,7 +30,8 @@ const S = {
   jitoTipSol: Number(env('SNIPE_JITO_TIP_SOL', '0.45')),  // the #1 buy on $ALTCOIN tipped Jito 0.4 SOL
   tipSol: Number(env('SNIPE_TIP_SOL', '0.001')),         // Helius Sender tip
   jitoUrls: env('SNIPE_JITO_URLS', 'https://ny.mainnet.block-engine.jito.wtf,https://mainnet.block-engine.jito.wtf,https://slc.mainnet.block-engine.jito.wtf,https://frankfurt.mainnet.block-engine.jito.wtf').split(',').map((x) => x.trim()).filter(Boolean),
-  maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
+  maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')),
+  preprocessed: env('SNIPE_PREPROCESSED', 'true').toLowerCase() === 'true', // early shred-decoded feed
   dryRun: env('SNIPE_DRY_RUN', 'true').toLowerCase() === 'true',
   senderUrl: env('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),
   nozomiKey: env('NOZOMI_KEY', ''), nozomiUrl: env('NOZOMI_URL', 'http://ewr1.nozomi.temporal.xyz'), nozomiTipSol: Number(env('SNIPE_NOZOMI_TIP_SOL', '0.001')),
@@ -190,16 +191,16 @@ async function main() {
   const have = bal ? Number(bal.value.uiAmount) : 0;
 
   let state = {}; try { state = JSON.parse(fs.readFileSync(STATE, 'utf8')); } catch {}
-  for (const t of targets) { t.key = `${S.quoteMint}:${t.ticker}`; t.fired = !!state[t.key]; }
+  for (const t of targets) t.key = `${S.quoteMint}:${t.ticker}`;
   log('=== sniper starting ===');
   log(`mode: ${S.dryRun ? 'DRY RUN (builds + simulates, never sends)' : 'LIVE'}`);
   log(`pool ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
-  for (const t of targets) log(`target: first ${t.ticker === '*' ? 'launch (ANY ticker)' : '$' + t.ticker} -> buy ${t.amount}${t.fired ? ' [ALREADY DONE]' : ''}`);
+  for (const t of targets) log(`target: first ${t.ticker === '*' ? 'launch (ANY ticker)' : '$' + t.ticker} -> buy ${t.amount}${state[t.key] ? ' [ALREADY DONE]' : ''}`);
   log(`wallet ${wallet.publicKey.toBase58()} | holds ${have} of pool token, targets need up to ${totalAmount}`);
   const solBal = (await conn.getBalance(wallet.publicKey)) / 1e9;
   if (solBal < targets.length * (S.jitoTipSol + 0.01) + 0.02) warn(`wallet has ${solBal.toFixed(3)} SOL, needs ~${(targets.length * (S.jitoTipSol + 0.01) + 0.02).toFixed(3)} for ${targets.length} snipes' tips/fees/rent`);
   if (have < totalAmount) warn(`wallet holds ${have} of the pool token, needs ${totalAmount} for all targets. Buys will fail until funded.`);
-  if (targets.every((t) => t.fired)) log('all targets already done for this pool. Clear with snipe-reset.');
+  if (targets.every((t) => state[t.key])) log('all targets already done for this pool. Clear with snipe-reset.');
 
   // keep a fresh blockhash + warm connections so the hot path never waits
   let bh = await conn.getLatestBlockhash('confirmed');
@@ -231,68 +232,104 @@ async function main() {
   log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender ${S.tipSol} + Nozomi/Astralane ${extra} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol + extra).toFixed(4)} SOL per snipe (tips only paid if it lands)`);
   const seenMints = new Set();
 
-  async function onTx(tx, sig, slot, src, seenAt) {
-    const L = parseLaunch(tx);
-    if (!L || seenMints.has(L.base)) return;
-    seenMints.add(L.base);
-    const sym = L.symbol.replace(/^\$/, '').toUpperCase();
-    log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} ${L.variant} slot ${slot}`);
-    if (L.quote !== S.quoteMint) return;
-    if (L.platform !== S.platform) return log(`  our pool but other platform (${L.platform}), ignoring`);
-    const hits = targets.filter((t) => !t.fired && (t.ticker === '*' || t.ticker === sym));
-    if (!hits.length) return log(`  not a target (or target already taken), ignoring`);
-    for (const t of hits) t.fired = true; // claim instantly so nothing else can fire for these targets
+  // ---------------- launch handling ----------------
+  // Two feeds:
+  //  'pre'  = Helius preprocessedSubscribe: txs decoded from shreds BEFORE execution (fastest; may later fail)
+  //  'conf' = transactionSubscribe at processed: only txs that actually executed successfully (the truth)
+  // We fire on the first matching launch from 'pre'. When 'conf' shows the first launch that really
+  // succeeded, we check it is the coin we fired on; if the early one failed, we fire on the real one.
+  for (const t of targets) { const st = state[t.key]; if (st) { t.firedMint = st.mint; t.confirmedMint = st.mint; t.buyState = st.err ? 'failed' : 'done'; } }
+  const isDone = (t) => !!t.confirmedMint;
+  const seen = new Set();
+
+  async function fire(L, hits, createSig, slot, src, seenAt, why) {
+    for (const t of hits) { t.firedMint = L.base; t.buyState = 'pending'; }
     const buyRaw = hits[0].amountRaw;
     const label = hits.map((t) => (t.ticker === '*' ? 'FIRST LAUNCH' : '$' + t.ticker)).join(' + ');
     const t0 = performance.now();
-    const ixs = buildBuyIxs(L, wallet, buyRaw, S.minOutRaw);
-    const ours = buildTx(wallet, ixs, bh.blockhash);
+    const ours = buildTx(wallet, buildBuyIxs(L, wallet, buyRaw, S.minOutRaw), bh.blockhash);
     const raw = Buffer.from(ours.serialize());
     const b64 = raw.toString('base64');
     const buildMs = (performance.now() - t0).toFixed(2);
-    for (const t of hits) state[t.key] = { mint: L.base, symbol: L.symbol, sig, slot, at: new Date().toISOString(), coveredBy: label };
-    log(`  >>> MATCH ${label}: $${L.symbol} ${L.base}`);
+    const ourSig = bs58.encode(ours.signatures[0]);
+    if (!S.dryRun) {
+      // send first, log after: every ms counts
+      const sendT = Date.now();
+      const sends = Promise.allSettled([post(b64), jitoSend(b64), ...(S.nozomiKey ? [nozomiSend(b64)] : []), ...(S.astraKey ? [astraSend(b64)] : []), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
+      log(`  >>> FIRE ${label} on $${L.symbol} ${L.base} [${src}${why ? ', ' + why : ''}] | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
+      sends.then((r) => r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`)));
+    } else {
+      log(`  >>> DRY RUN would fire ${label} on $${L.symbol} ${L.base} [${src}${why ? ', ' + why : ''}] | build ${buildMs}ms | ${Date.now() - seenAt}ms after seeing launch`);
+    }
+    for (const t of hits) state[t.key] = { mint: L.base, symbol: L.symbol, createSig, slot, src, at: new Date().toISOString(), coveredBy: label, ourSig: S.dryRun ? null : ourSig };
     fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
     if (S.dryRun) {
-      const sim = await conn.simulateTransaction(ours, { sigVerify: false, replaceRecentBlockhash: true, commitment: 'processed' });
-      log(`  DRY RUN: built in ${buildMs}ms (${Date.now() - seenAt}ms after seeing launch). sim: ${sim.value.err ? 'ERR ' + JSON.stringify(sim.value.err) : 'OK'} CU ${sim.value.unitsConsumed}`);
-      (sim.value.logs || []).filter((l) => /Error|failed|Instruction: Buy/.test(l)).slice(-4).forEach((l) => log('   ' + l));
+      const sim = await conn.simulateTransaction(ours, { sigVerify: false, replaceRecentBlockhash: true, commitment: 'processed' }).catch((e) => ({ value: { err: e.message, logs: [] } }));
+      log(`  DRY RUN sim: ${sim.value.err ? 'ERR ' + JSON.stringify(sim.value.err) : 'OK'} ${(sim.value.logs || []).find((l) => /AnchorError/.test(l))?.slice(0, 150) || ''}`);
+      for (const t of hits) t.buyState = 'done';
       return;
     }
-    // fire on every path at once, then keep rebroadcasting until it lands
-    const sendT = Date.now();
-    const r = await Promise.allSettled([post(b64), jitoSend(b64), ...(S.nozomiKey ? [nozomiSend(b64)] : []), ...(S.astraKey ? [astraSend(b64)] : []), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
-    const ourSig = bs58.encode(ours.signatures[0]);
-    log(`  SENT buy ${Number(buyRaw) / 10 ** decimals} -> $${L.symbol} [${label}] | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
-    r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`));
     for (let i = 0; i < 40; i++) {
       await new Promise((res) => setTimeout(res, 250));
       const st = (await conn.getSignatureStatuses([ourSig]).catch(() => ({ value: [null] }))).value[0];
       if (st) {
         const behind = st.slot - slot;
-        if (st.err) { warn(`  BUY FAILED (landed +${behind} slots): ${JSON.stringify(st.err)}`); }
+        if (st.err) { warn(`  BUY FAILED on $${L.symbol} (landed +${behind} slots): ${JSON.stringify(st.err)}`); for (const t of hits) if (t.firedMint === L.base) t.buyState = 'failed'; }
         else {
-          log(`  BUY LANDED +${behind} slots after launch (slot ${st.slot})`);
-          // record the position for the take-profit ladder: what we paid (pool token) and tokens received
+          log(`  BUY LANDED on $${L.symbol} +${behind} slots after launch (slot ${st.slot})`);
+          for (const t of hits) if (t.firedMint === L.base) t.buyState = 'done';
           setTimeout(async () => {
             try {
               const bal = await conn.getTokenAccountBalance(ata(wallet.publicKey, new PublicKey(L.base), new PublicKey(L.baseProg)), 'confirmed');
-              for (const t of hits) { state[t.key].tokensRaw = bal.value.amount; state[t.key].decimals = bal.value.decimals; state[t.key].costRaw = buyRaw.toString(); state[t.key].costDecimals = decimals; state[t.key].baseProg = L.baseProg; }
+              for (const t of hits) if (state[t.key]?.mint === L.base) { Object.assign(state[t.key], { tokensRaw: bal.value.amount, decimals: bal.value.decimals, costRaw: buyRaw.toString(), costDecimals: decimals, baseProg: L.baseProg }); }
               fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
               log(`  position recorded: ${bal.value.uiAmountString} $${L.symbol} for ${Number(buyRaw) / 10 ** decimals} pool tokens`);
             } catch (e) { warn(`  could not record position: ${e.message}`); }
           }, 1500);
         }
-        for (const t of hits) { state[t.key].ourSig = ourSig; state[t.key].landedSlot = st.slot; state[t.key].err = st.err || null; }
+        for (const t of hits) if (state[t.key]?.mint === L.base) { state[t.key].landedSlot = st.slot; state[t.key].err = st.err || null; }
         fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
         return;
       }
       if (i % 2 === 1 && i < 12) { post(b64).catch(() => {}); jitoSend(b64).catch(() => {}); if (S.nozomiKey) nozomiSend(b64).catch(() => {}); if (S.astraKey) astraSend(b64).catch(() => {}); }
     }
-    warn('  buy never landed');
+    warn(`  buy on $${L.symbol} never landed`);
+    for (const t of hits) if (t.firedMint === L.base) t.buyState = 'failed';
   }
 
-  // race two independent websocket feeds; whichever sees the launch first wins
+  async function onLaunch(L, createSig, slot, src, seenAt, confirmed) {
+    const k = `${confirmed ? 'c' : 'p'}${L.base}`;
+    if (seen.has(k)) return; seen.add(k);
+    log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} ${L.variant} slot ${slot}`);
+    if (L.quote !== S.quoteMint) return;
+    if (L.platform !== S.platform) return log(`  our pool but other platform (${L.platform.slice(0, 6)}), ignoring`);
+    const sym = L.symbol.replace(/^\$/, '').toUpperCase();
+    const matching = targets.filter((t) => t.ticker === '*' || t.ticker === sym);
+    if (!confirmed) {
+      // early signal: fire on the first match we see, unless the target is already settled
+      const hits = matching.filter((t) => !t.firedMint && !isDone(t));
+      if (!hits.length) return log(matching.length ? '  already fired/settled for this target, ignoring' : '  not a target, ignoring');
+      return fire(L, hits, createSig, slot, src, seenAt, 'early');
+    }
+    // confirmed: the first SUCCESSFUL match is the real "first" for each target
+    const toFire = [];
+    for (const t of matching) {
+      if (isDone(t)) continue;                       // a later copy
+      t.confirmedMint = L.base;
+      if (t.firedMint === L.base) { log(`  confirmed: $${L.symbol} is the real first for ${t.ticker === '*' ? 'FIRST LAUNCH' : '$' + t.ticker}, we already fired on it`); continue; }
+      if (t.firedMint && t.buyState !== 'failed') {
+        // we fired early on a different coin; only re-fire if that early launch did not actually succeed
+        const createSt = (await conn.getSignatureStatuses([state[t.key]?.createSig].filter(Boolean)).catch(() => ({ value: [null] }))).value[0];
+        if (createSt && !createSt.err) { warn(`  early-fired coin ${t.firedMint} also launched OK; not double-buying. Real first was $${L.symbol} ${L.base}`); continue; }
+        log(`  early-fired launch ${t.firedMint.slice(0, 6)} did not succeed -> firing on the real first $${L.symbol}`);
+      }
+      toFire.push(t);
+    }
+    if (toFire.length) await fire(L, toFire, createSig, slot, src, seenAt, toFire.some((t) => t.firedMint) ? 'correction' : 'confirmed feed');
+    else if (!matching.length) log('  not a target, ignoring');
+  }
+
+  // confirmed feeds (two endpoints, whichever is first)
   for (const [i, url] of WSS.entries()) {
     const src = i === 0 ? 'mainnet' : 'beta';
     const connect = () => {
@@ -311,14 +348,57 @@ async function main() {
         let m; try { m = JSON.parse(data); } catch { return; }
         if (m.error) return warn(`feed ${src}: ${JSON.stringify(m.error).slice(0, 150)}`);
         const r = m.params?.result;
-        if (r?.transaction) onTx(r.transaction, r.signature, r.slot, src, seenAt).catch((e) => warn(`onTx: ${e.message}`));
+        if (!r?.transaction) return;
+        const L = parseLaunch(r.transaction);
+        if (L) onLaunch(L, r.signature, r.slot, src, seenAt, true).catch((e) => warn(`onLaunch: ${e.message}`));
       });
       ws.on('close', () => { clearInterval(ping); warn(`feed ${src} closed, reconnecting`); setTimeout(connect, 300); });
       ws.on('error', (e) => warn(`feed ${src} error: ${e.message}`));
     };
     connect();
   }
-  setInterval(() => log(`alive | pool ${S.quoteMint.slice(0, 6)} | ${targets.map((t) => (t.ticker === '*' ? 'FIRST' : '$' + t.ticker) + (t.fired ? ' done' : ' armed')).join(', ')}`), 300000).unref();
+
+  // early feed: Helius preprocessed transactions (decoded from shreds, before execution). Binary frames:
+  // [0] version u8 | [1..9) slot u64 LE | [9..73) signature | [73..] transaction wire bytes
+  if (S.preprocessed) {
+    const altCache = new Map();
+    const connectPre = () => {
+      const ws = new WebSocket(`wss://beta.helius-rpc.com/?api-key=${S.heliusKey}`, { perMessageDeflate: false });
+      let ping;
+      ws.on('open', () => {
+        log('feed pre (preprocessed/shreds) connected');
+        ws.send(JSON.stringify({ jsonrpc: '2.0', id: 7, method: 'preprocessedSubscribe', params: { accountInclude: [], accountExclude: [], accountRequired: [LL.toBase58(), S.quoteMint] } }));
+        ping = setInterval(() => ws.readyState === 1 && ws.ping(), 15000);
+      });
+      ws.on('message', (data, isBinary) => {
+        const seenAt = Date.now();
+        if (!isBinary) { try { const m = JSON.parse(data); if (m.error) warn(`feed pre: ${JSON.stringify(m.error).slice(0, 200)}`); else if (m.id === 7) log(`feed pre subscribed (${m.result})`); } catch {} return; }
+        try {
+          const buf = Buffer.from(data);
+          if (buf[0] !== 1) return;
+          const slot = Number(buf.readBigUInt64LE(1));
+          const sig = bs58.encode(buf.subarray(9, 73));
+          const vtx = VersionedTransaction.deserialize(buf.subarray(73));
+          const msg = vtx.message;
+          let keys = msg.staticAccountKeys.map((k) => k.toBase58());
+          for (const l of msg.addressTableLookups || []) {
+            const alt = altCache.get(l.accountKey.toBase58());
+            if (!alt) { conn.getAddressLookupTable(l.accountKey).then((r) => r.value && altCache.set(l.accountKey.toBase58(), r.value.state.addresses.map((a) => a.toBase58()))).catch(() => {}); keys = null; break; }
+            keys.push(...l.writableIndexes.map((i) => alt[i]));
+          }
+          if (keys) for (const l of msg.addressTableLookups || []) { const alt = altCache.get(l.accountKey.toBase58()); keys.push(...l.readonlyIndexes.map((i) => alt[i])); }
+          if (!keys) return; // needs a lookup table we haven't cached yet; confirmed feed will catch it
+          const tx = { transaction: { message: { instructions: msg.compiledInstructions.map((ix) => ({ programId: keys[ix.programIdIndex], accounts: ix.accountKeyIndexes.map((i) => keys[i]), data: bs58.encode(ix.data) })) } }, meta: null };
+          const L = parseLaunch(tx);
+          if (L) onLaunch(L, sig, slot, 'pre', seenAt, false).catch((e) => warn(`onLaunch(pre): ${e.message}`));
+        } catch { /* v1 or unparseable tx: confirmed feed covers it */ }
+      });
+      ws.on('close', () => { clearInterval(ping); warn('feed pre closed, reconnecting'); setTimeout(connectPre, 300); });
+      ws.on('error', (e) => warn(`feed pre error: ${e.message}`));
+    };
+    connectPre();
+  }
+  setInterval(() => log(`alive | pool ${S.quoteMint.slice(0, 6)} | ${targets.map((t) => (t.ticker === '*' ? 'FIRST' : '$' + t.ticker) + (t.confirmedMint ? ' done' : t.firedMint ? ' fired' : ' armed')).join(', ')}`), 300000).unref();
 }
 
 // run when launched directly or by pm2 (pm2 puts the real script path in pm_exec_path), not when imported
