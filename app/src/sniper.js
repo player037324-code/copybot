@@ -91,8 +91,16 @@ export function parseLaunch(tx) {
       let o = 8; const decimals = d[o]; o += 1;
       const [name, o2] = readStr(d, o); const [symbol] = readStr(d, o2);
       const a = ix.accounts.map((k) => k.toString());
-      // create accounts: 0 payer,1 creator,2 global,3 platform,4 authority,5 pool,6 base,7 quote,8 baseVault,9 quoteVault,10 baseProg,11 quoteProg
-      return { name, symbol, decimals, creator: a[1], platform: a[3], pool: a[5], base: a[6], quote: a[7], baseVault: a[8], quoteVault: a[9], baseProg: a[10], quoteProg: a[11] };
+      // create accounts (both variants): 0 payer,1 creator,2 global,3 platform,4 authority,5 pool,6 base,7 quote,8 baseVault,9 quoteVault
+      // token programs sit at different slots per variant (Token-2022 launch vs classic SPL launch), so read them
+      // from the token balances in this same tx (each balance carries its programId), with a safe fallback.
+      const bals = [...(tx.meta?.postTokenBalances || []), ...(tx.meta?.preTokenBalances || [])];
+      const progOf = (mint) => bals.find((b) => b.mint === mint && b.programId)?.programId;
+      const isT22 = d.subarray(0, 8).toString('hex') === '25be7ede2c9aab11';
+      const tokenProgs = a.filter((k) => k === TOKEN.toBase58() || k === TOKEN22.toBase58());
+      const baseProg = progOf(a[6]) || (isT22 ? TOKEN22.toBase58() : TOKEN.toBase58());
+      const quoteProg = progOf(a[7]) || (isT22 ? a[11] : tokenProgs[tokenProgs.length - 1]) || TOKEN.toBase58();
+      return { name, symbol, decimals, creator: a[1], platform: a[3], pool: a[5], base: a[6], quote: a[7], baseVault: a[8], quoteVault: a[9], baseProg, quoteProg, variant: isT22 ? 'token2022' : 'spl' };
     } catch { return null; }
   }
   return null;
@@ -225,7 +233,7 @@ async function main() {
     if (!L || seenMints.has(L.base)) return;
     seenMints.add(L.base);
     const sym = L.symbol.replace(/^\$/, '').toUpperCase();
-    log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} slot ${slot}`);
+    log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} ${L.variant} slot ${slot}`);
     if (L.quote !== S.quoteMint) return;
     if (L.platform !== S.platform) return log(`  our pool but other platform (${L.platform}), ignoring`);
     const hits = targets.filter((t) => !t.fired && (t.ticker === '*' || t.ticker === sym));
