@@ -1,15 +1,3 @@
-Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success
-Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
-Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P invoke [1]
-Program log: AnchorError thrown in programs/pump/src/trade_v3.rs:148. Error Code: BondingCurveComplete. Error Number: 6005. Error Message: The bonding curve has completed and liquidity migrated to raydium..
-Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P failed: custom program error: 0x1775
-=== cmd 21 @ 2026-10-18T01:19:02Z ===
-> reset-positions
-cleared
-> restart
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
-[PM2] [copybot](0) ✓
 ┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
 │ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
 ├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
@@ -398,3 +386,15 @@ SOL change signer: -0.4105
   Program 11111111111111111111111111111111 invoke [1]
   Program 11111111111111111111111111111111 invoke [1]
   Program 11111111111111111111111111111111 invoke [1]
+=== cmd 37 @ 2026-10-20T19:35:02Z ===
+> snipetest 5m8XU9rzAVaBxuB7gkqZx39SK216XDXmXE2Qov4GkYbt3R7NxKZyA6Xe15ntXCRu9xMYEeQ9EUvbjXrXiq1FEvF5 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG 1
+parsed in 3.35ms: $ALTCOIN "Alt-coin" base DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP quote 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ creator B9Zbs2 platform 6BwHHD
+warm build+sign: 7.73ms
+built + signed in 318.07ms, 925 bytes
+accounts vs real sniper (agiGgE): 18/18 match (user accounts correctly swapped to ours)
+simulate now: ERR {"InstructionError":[2,{"Custom":1}]} CU 13079
+  Program 11111111111111111111111111111111 failed: custom program error: 0x1
+  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL failed: custom program error: 0x1
+> snipe-fund 0.1 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+0.1 SOL -> 10.1020 of 7V1evj | 1.0451 USD each | price impact 0.00% | route Kipseli(100%) > Meteora DLMM(100%)
+quote only. Run snipe-fund with --go to buy.
