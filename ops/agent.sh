@@ -93,6 +93,7 @@ if [ -f control/cmd.txt ]; then
           snipe-grep\ *) a=${c#snipe-grep }; [[ "$a" =~ ^[0-9:]+$ ]] && grep -h "$a" /root/.pm2/logs/sniper-out.log /root/.pm2/logs/sniper-error.log 2>&1 | head -40 ;;
           snipe-events) grep -hE "BUY|never landed|send path|position|WARN" /root/.pm2/logs/sniper-out.log /root/.pm2/logs/sniper-error.log 2>&1 | grep "2026-10-2" | tail -20 ;;
           feedrace\ *) a=${c#feedrace }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9]+)?$ ]] && timeout 140 node scripts/feedrace.js $a 2>&1 | tail -8 ;;
+          orbitcheck) echo "server ip: $(curl -s -m 5 https://api.ipify.org)"; echo "rpc getSlot:"; curl -s -m 8 -X POST http://ny.rpc.orbitflare.com -H 'content-type: application/json' -d '{"jsonrpc":"2.0","id":1,"method":"getSlot"}' | head -c 300; echo; echo "ws upgrade:"; curl -s -m 5 -i -N -H 'Connection: Upgrade' -H 'Upgrade: websocket' -H 'Sec-WebSocket-Version: 13' -H 'Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==' http://ny.rpc.orbitflare.com | head -3 ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
           snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;
