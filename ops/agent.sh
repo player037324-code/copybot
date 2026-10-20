@@ -91,6 +91,7 @@ if [ -f control/cmd.txt ]; then
           ladder-stop) pm2 stop ladder; pm2 save >/dev/null ;;
           recent\ *) a=${c#recent }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && timeout 80 node scripts/recent.js $a 2>&1 ;;
           snipe-grep\ *) a=${c#snipe-grep }; [[ "$a" =~ ^[0-9:]+$ ]] && grep -h "$a" /root/.pm2/logs/sniper-out.log /root/.pm2/logs/sniper-error.log 2>&1 | head -40 ;;
+          snipe-events) grep -hE "BUY|never landed|send path|position|WARN" /root/.pm2/logs/sniper-out.log /root/.pm2/logs/sniper-error.log 2>&1 | grep "2026-10-2" | tail -20 ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
           snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;
