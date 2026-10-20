@@ -1,6 +1,6 @@
-updated: 2026-10-20T20:24:02Z
+updated: 2026-10-20T20:25:02Z
 deployed: ef4febe89440eee0fb5c45426dfaa5027275145c
-pm2: stopped uptime=2867m restarts=14
+pm2: stopped uptime=2868m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -26,10 +26,10 @@ BUY_PCT=40
 SELL_ALL_ON_ANY_SELL=true
 SELL_SLIPPAGE_BPS=6000
 BUY_RETRY_SLIPPAGES=6000
-NOZOMI_KEY=12826bc5-2c0d-465b-b0b7-99946c1e0bc8
-ASTRALANE_KEY=judeaJ7b3qRsVfYXUwMWwr8LBvZzcQEfV58jS7bHmhh8LQ9mWjF1JNHbvP5F6eto
-NOZOMI_KEY=12826bc5-2c0d-465b-b0b7-99946c1e0bc8
-ASTRALANE_KEY=judeaJ7b3qRsVfYXUwMWwr8LBvZzcQEfV58jS7bHmhh8LQ9mWjF1JNHbvP5F6eto
+NOZOMI_KEY=<set>
+ASTRALANE_KEY=<set>
+NOZOMI_KEY=<set>
+ASTRALANE_KEY=<set>
 
 --- stats ---
 Buys: 3   Sells: 0   Open: 1
