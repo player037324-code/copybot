@@ -1,2 +1,4 @@
-id: 65-1
-alerts-log
+id: 66
+set SNIPE_CU_LIMIT=100000
+set SNIPE_CU_PRICE=100000000
+snipe-start
