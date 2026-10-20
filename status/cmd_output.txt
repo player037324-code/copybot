@@ -1,18 +1,3 @@
-=== cmd 24 @ 2026-10-18T02:11:02Z ===
-> clonetest 28G3EPQ7GuQDzf5A6R6VRZv6V5UXDQSCsx24EH1Pmgk1NYKD5yvbL8X7tMEZuyaq8xrkRBnx6fBE43GdfC33MS6g
-Lunar buy: 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 10.016 SOL tokens 16460357333840
-AMM ix: pumpswap disc c2ab1c46684d5b2f accts 17 datalen 24
-Lunar top-level programs: 111111,FLASHX,FLASHX,FLASHX,111111
-built in 71ms: {"amm":"pumpswap","minOut":"139696244","usesWsol":true} size 874B
-SIM: OK  CU 79866
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA invoke [1]
-Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA success
-Program pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA success
 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
 Program 11111111111111111111111111111111 invoke [1]
@@ -398,3 +383,18 @@ NEW $SAMA4    7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ  pool token created 2
     $HIMS     HiMSSzzwkZkrXJ4PGVJRdtfLaANeAztjjcgk5Dxe7Lwx  pool token created 2987.3h ago | 1 launches, first 22.9h ago | $PPx1
     $tOpenAI  oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ  pool token created 3056.0h ago | 4 launches, first 23.1h ago | $BIx1 $Viviennex1 $ALTCOINx1 $FLOORx1
     $SPCXx    Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8  pool token created 3389.8h ago | 4 launches, first 17.4h ago | $MOONBASEx1 $SMYW2x1 $TMINUSx1 $JARVISx1
+=== cmd 39 @ 2026-10-20T19:45:02Z ===
+> whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+owner program: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  type: mint
+decimals 6 supply 0 mintAuthority 5c6s8C5SHq7pDR6VcKcrhffCiFAtAXu1Zt2KgGNEiw2y freezeAuthority null
+name: Trump Index  symbol: $TRUMP3  uri: https://assets.diversifi.trade/token_metadata/TRUMP3/f3c4d821-6dd4-45f5-bf9a-df9b4c30b434.json  desc: TRUMP3 index token on DiversiFi.
+created 2026-10-20T19:10:08.000Z (0.6h ago) by H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd  ix: Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
+  same tx also touched mints: EPjFWdd5 6p6xgHyF WLFinEv6 DJTu7vi8
+activity: 9 txs total, latest 2026-10-20T19:44:00.000Z
+  holder Fc7iZJqd 0
+  holder JAL4ecPt 0
+  holder GXPFM2ca 0
+  holder 5c6s8C5S 0
+  holder CzY9GYAG 0
+not tradeable on Jupiter yet (Jupiter 400: {"error":"The token 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is)
+StonkFun/LaunchLab launches paired to it (in latest 9 txs): 0
