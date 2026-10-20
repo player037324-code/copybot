@@ -208,46 +208,46 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:15:49.632]   not a target (or target already taken), ignoring
-[2026-10-20 21:15:56.484] launch [beta] $MAGA (MAGA) EHdf17xJ5aDzYTrpZkRAp3NP23yNCKiff4CP724ycU6r quote 6s2umN platform 6BwHHD token2022 slot 459375855
-[2026-10-20 21:15:56.484]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:04.206] launch [beta] $Pump (Donald Pump) 99ocTd4SzUrc6YpPDxC7R2B8BCbeLNM6cqyqiYwyfkar quote 6s2umN platform 6BwHHD token2022 slot 459375891
-[2026-10-20 21:16:04.207]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:05.333] === sniper starting ===
-[2026-10-20 21:16:05.343] mode: LIVE
-[2026-10-20 21:16:05.343] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:16:05.344] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 21:16:05.344] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 21:16:05.393] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 21:16:07.707] === sniper starting ===
-[2026-10-20 21:16:07.708] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:16:07.708] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:16:07.709] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 21:16:07.709] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 21:16:07.728] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 21:16:08.088] warm build time (median of 10): total 4.29ms = accounts 0.92 + compile/sign 2.24 + serialize 0.16
-[2026-10-20 21:16:08.088] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:16:08.089] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:16:08.104] feed beta connected
-[2026-10-20 21:16:08.134] feed mainnet connected
-[2026-10-20 21:16:08.183] launch [beta] $TA (Trump Accounts) 7rem9toVPc8fBzM6SeX2iJx3EWPR4zdGPopJmpTwaZT2 quote 6s2umN platform 6BwHHD token2022 slot 459375909
-[2026-10-20 21:16:08.183]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:11.057] launch [beta] $FAFO (Fuck Around and Find Out) GpZqyKXPf5BVUG7m4vavdcwb85thsm4xhehEMpEPzzhs quote 6s2umN platform 6BwHHD token2022 slot 459375921
-[2026-10-20 21:16:11.057]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:19.673] launch [beta] $Goose (Golden Goose) DQUU1nWoEo4XPLJjnk5RgtXEGGVs8j7Y2rSfXfPnJsey quote 6s2umN platform 6BwHHD token2022 slot 459375961
-[2026-10-20 21:16:19.673]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:27.610] launch [beta] $TrumpPool (TrumpPool) HYnY7HzwXDEKNmx4Ayw8m3AbedGHjt9CE88C4nQksEGS quote 6s2umN platform 6BwHHD token2022 slot 459375999
-[2026-10-20 21:16:27.610]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:29.978] launch [beta] $DREAM (American Dream) F76uwM4v1FoYRFfMEBiT49WTSMxiZcT8XNYoXdrENYdR quote 6s2umN platform 6BwHHD token2022 slot 459376009
-[2026-10-20 21:16:29.979]   not a target (or target already taken), ignoring
-[2026-10-20 21:16:31.218] launch [beta] $TriumphalArch (Triumphal Arch) 77owxtFtduc2QwV5WJanYpx61oukSTESWEqE9JQaRxS5 quote 6s2umN platform 6BwHHD token2022 slot 459376015
-[2026-10-20 21:16:31.219]   not a target (or target already taken), ignoring
 [2026-10-20 21:16:40.265] launch [beta] $TREMP (Dunuld tremp) J2tm4QoyFuwGWwP9V7XbHh3N2spmtZmAWfzKHwfU3Z2v quote 6s2umN platform 6BwHHD token2022 slot 459376056
 [2026-10-20 21:16:40.265]   not a target (or target already taken), ignoring
 [2026-10-20 21:16:55.050] launch [beta] $TripleT (Trump Trump Trump Sahur) Ft8ADrmowCYd9nJGAznY3VNi7PWwFcnmLuifFRYLLPmx quote 6s2umN platform 6BwHHD token2022 slot 459376124
 [2026-10-20 21:16:55.050]   not a target (or target already taken), ignoring
 [2026-10-20 21:17:02.136] launch [beta] $Freedom (Project Freedom) EaRP81uSAjv9Mfhxg5WP8YgMwnr3aNXK3YgFxNmnncVA quote 6s2umN platform 6BwHHD token2022 slot 459376158
 [2026-10-20 21:17:02.136]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:07.979] launch [beta] $OBBB (One Big Beautiful Basket) ab4bkuow9x8rHefiJ1EMnNTQUKZCkgoBN4yi26Mj3WX quote 6s2umN platform 4E876q token2022 slot 459376186
+[2026-10-20 21:17:07.979]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:17:11.922] launch [beta] $TRUMP2 (OFFICIAL TRUMP2) 5jEE2pb89ojFcwrzqHFc1e1APKBu7pDZrtJSEJEZ6SMs quote 6s2umN platform 6BwHHD token2022 slot 459376204
+[2026-10-20 21:17:11.922]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:14.812] launch [beta] $BBC (Big Beautiful Coin) C6f3LpTFumKsNhrZF3Yfm3KvF8akce7QDWhPd9bgnzjK quote 6s2umN platform 6BwHHD token2022 slot 459376219
+[2026-10-20 21:17:14.813]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:23.196] launch [beta] $Americoin (Americoin) 48NwbpwRatocQ6KNBqcbVC1RstmWNTAnSAykSbDKMDnN quote 6s2umN platform 6BwHHD token2022 slot 459376259
+[2026-10-20 21:17:23.197]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:26.053] launch [beta] $TRIPLETS (Trump Triplets) Lxs8WUQv8kDft9BfwmivqvVJpkWTcKYyG36X8gecG61 quote 6s2umN platform 4E876q token2022 slot 459376271
+[2026-10-20 21:17:26.053]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:17:28.523] launch [beta] $BBC (Big Beautiful Coin) 2DmZUTCi7hiTVLppCWqgZQNUjc3noQaHx5o3YJzxnRpo quote 6s2umN platform 6BwHHD token2022 slot 459376282
+[2026-10-20 21:17:28.524]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:28.718] launch [beta] $TripleT (Trump Trump Trump Sahur) D4r1JJ4mvzzSHThKBCUYWCB7dsPbQVKnWbmYAgsKrnx7 quote 6s2umN platform 6BwHHD token2022 slot 459376283
+[2026-10-20 21:17:28.718]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:29.604] launch [beta] $NA (New America) 47srBoZYp64ZiE1QDS8Man2psDoQGhpneFGx2udHuiaR quote 6s2umN platform 6BwHHD token2022 slot 459376287
+[2026-10-20 21:17:29.604]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:35.844] launch [beta] $TA (Trump Accounts) Cy3iqAYhwvc82XxAULwMF96QEH7vJh5F9bKMNWY3psTB quote 6s2umN platform 6BwHHD token2022 slot 459376316
+[2026-10-20 21:17:35.845]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:38.551] launch [beta] $530A (buy and retire) 5QBfL5qdTkxFf3EQyGUb2BtakbmAK5uuJqwSBDcS4K3Y quote 6s2umN platform 6BwHHD token2022 slot 459376328
+[2026-10-20 21:17:38.552]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:43.600] launch [beta] $IT'S YUGE (YUGE) D3AzhPZBTtTD6pAex3GSt7nu2qggk1HcZU4sdRQNyhJr quote 6s2umN platform 6BwHHD token2022 slot 459376353
+[2026-10-20 21:17:43.600]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:44.185] launch [beta] $thinair (thinair) 66wpucXyEvG2vE3rkjLgmJna6nQ8QHjNz8Lrr6EouN4p quote 6s2umN platform 6BwHHD token2022 slot 459376356
+[2026-10-20 21:17:44.185]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:44.728] launch [beta] $TRUMPINA (Trumpina) Dpw5dUuJ72ih9yQi4xSrxFQtdA8rwUvdtBLWu6NbbZLX quote 6s2umN platform 4E876q token2022 slot 459376359
+[2026-10-20 21:17:44.728]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:17:46.176] launch [beta] $TRUMP (Trump Coin) Ec98PqBeYu975EHfD6h5SxYUnjgCNcCBkdihdXc3tmMk quote 6s2umN platform 6BwHHD token2022 slot 459376365
+[2026-10-20 21:17:46.176]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:48.387] launch [beta] $MWG (MEME WAR GENERAL) 3MZEFh6GntYQzgmc9oxNTZGWk62zYHqpWJVkYHXf8W9L quote 6s2umN platform 6BwHHD token2022 slot 459376375
+[2026-10-20 21:17:48.387]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:49.439] launch [beta] $USDT (USDT) U1ZpEsPQCtQovwYy9qPVzMjiyvvXtVkoqmojZydvNBj quote 6s2umN platform 6BwHHD token2022 slot 459376380
+[2026-10-20 21:17:49.439]   not a target (or target already taken), ignoring
+[2026-10-20 21:17:53.078] launch [beta] $WORTH (WORTH) HhRcwTjRHcvuX7Wq9gKmQK4xi3YNHyfc2gj7riegxBmZ quote 6s2umN platform 6BwHHD token2022 slot 459376398
+[2026-10-20 21:17:53.078]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
