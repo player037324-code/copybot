@@ -80,6 +80,7 @@ if [ -f control/cmd.txt ]; then
           stonkpools*) a=${c#stonkpools}; a=${a# }; [[ "$a" =~ ^[0-9]*$ ]] && timeout 100 node scripts/stonkpools.js $a 2>&1 ;;
           whatis\ *) a=${c#whatis }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && timeout 100 node scripts/whatis.js $a 2>&1 ;;
           alerts-start) pm2 describe alerts >/dev/null 2>&1 && pm2 restart alerts || pm2 start src/alerts.js --name alerts; pm2 save >/dev/null; sleep 20; pm2 logs alerts --nostream --lines 15 --raw 2>&1 | tail -15 ;;
+          alerts-test) node -e 'import("dotenv/config").then(async()=>{const t=process.env.TELEGRAM_BOT_TOKEN,c=process.env.TELEGRAM_CHAT_ID;if(!t||!c)return console.log("telegram not set up");const r=await fetch("https://api.telegram.org/bot"+t+"/sendMessage",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({chat_id:c,text:"✅ copybot alerts connected. You will get NEW INDEX TOKEN and NEW PAIRING LIVE alerts here."})});const j=await r.json();console.log(j.ok?"telegram test sent":"telegram error: "+JSON.stringify(j).slice(0,150))})' 2>&1 ;;
           alerts-stop) pm2 stop alerts; pm2 save >/dev/null ;;
           alerts-log) pm2 logs alerts --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
