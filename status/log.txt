@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:54:13.216] launch [pre] $YUGE (Yuge Coin) Ebze2vcxNiC2oeiTSCmV8VuNYVKYPmiMcCpPFJVtcNos quote 6s2umN platform 6BwHHD token2022 slot 459386443
-[2026-10-20 21:54:13.216]   not a target, ignoring
-[2026-10-20 21:54:13.219] launch [beta] $YUGE (Yuge Coin) Ebze2vcxNiC2oeiTSCmV8VuNYVKYPmiMcCpPFJVtcNos quote 6s2umN platform 6BwHHD token2022 slot 459386443
-[2026-10-20 21:54:13.220]   not a target, ignoring
 [2026-10-20 21:54:24.309] launch [beta] $DONALD (Donald) HFSsghprZvcb4ji4JmtiaA1kCyWZXFUAp4pALvMPB4Gp quote 6s2umN platform 6BwHHD token2022 slot 459386494
 [2026-10-20 21:54:24.314]   not a target, ignoring
 [2026-10-20 21:54:36.436] launch [pre] $SIF (Sif) 6VcvGs3dkah6HUW2BSynbWu7bXmtAUHCX5yw2YuryVBD quote 6s2umN platform 6BwHHD token2022 slot 459386550
@@ -248,6 +244,10 @@
 [2026-10-20 22:03:54.544] launch [beta] $FRAUDCOIN (FRAUDCOIN) 6kA4F3Gfwc4LvniAaT2D6WJsBq6nCAgfoHN2qvCCbNh7 quote 6s2umN platform 6BwHHD token2022 slot 459389131
 [2026-10-20 22:03:54.544]   not a target, ignoring
 [2026-10-20 22:04:06.735] alive | pool 6s2umN | $TRUMP done
+[2026-10-20 22:05:56.838] launch [pre] $DOLLAR (Trump $1 Coin) 9mdDNJdBvhqfdhYYhDGUTnYUqKZHZBTWxVrZrQusUs6i quote 6s2umN platform 6BwHHD token2022 slot 459389698
+[2026-10-20 22:05:56.838]   not a target, ignoring
+[2026-10-20 22:05:56.843] launch [beta] $DOLLAR (Trump $1 Coin) 9mdDNJdBvhqfdhYYhDGUTnYUqKZHZBTWxVrZrQusUs6i quote 6s2umN platform 6BwHHD token2022 slot 459389698
+[2026-10-20 22:05:56.843]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
