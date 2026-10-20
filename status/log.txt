@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:18:29.572] launch [beta] $BIG (BIG Coin) 7nhbwqWBxECiiChSuV6DF2kHXjtVcjRH9Lj48ez7626S quote 6s2umN platform 6BwHHD token2022 slot 459376565
-[2026-10-20 21:18:29.572]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:34.858] launch [beta] $tremp (doland tremp) Dnmy59QnKGDsDyHQXSyGU8v9NfakSRWQ3NLWa9Znhrxw quote 6s2umN platform 6BwHHD token2022 slot 459376590
-[2026-10-20 21:18:34.858]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:37.273] launch [beta] $BIG (BIG COIN) 7ei7iJ6Nb3V3CL5t4zVfcaLjYxd46EaCx2J5v42sNoq8 quote 6s2umN platform 6BwHHD token2022 slot 459376601
-[2026-10-20 21:18:37.273]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:37.937] launch [beta] $BIG (BIGCOIN) 4T9kKxb7GWh2g6pAtJqDcQ2qCVpCKyqHA4J8GfmLbTZy quote 6s2umN platform 6BwHHD token2022 slot 459376604
-[2026-10-20 21:18:37.937]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:38.076] launch [beta] $BIG (BIG COIN) 8gsc9QpmpSxncc68CK4kWztK4B3X63JGxknhgKSQfAXQ quote 6s2umN platform 6BwHHD token2022 slot 459376605
-[2026-10-20 21:18:38.076]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:46.953] launch [beta] $WORTH (WORTH) 5AtL1GqZ7f9KjMxJG6HpYgzAdTWBu5UYxtvqJ8Nn1d5P quote 6s2umN platform 6BwHHD token2022 slot 459376645
-[2026-10-20 21:18:46.953]   not a target (or target already taken), ignoring
-[2026-10-20 21:18:48.452] launch [beta] $Downald (Downald Tump) G9E9a9qE6VdeGQsFCEGUbz6F5F7KHgHxG1u9YuCu4zgP quote 6s2umN platform 6BwHHD token2022 slot 459376651
 [2026-10-20 21:18:48.453]   not a target (or target already taken), ignoring
 [2026-10-20 21:18:49.078] launch [beta] $FIGHT (Fight Fight Fight) GBbpCzBpcZPadTzNtGdMzu5GYPCWrdcTRkrSEL1McbQp quote 6s2umN platform 6BwHHD token2022 slot 459376654
 [2026-10-20 21:18:49.079]   not a target (or target already taken), ignoring
@@ -248,6 +235,19 @@
 [2026-10-20 21:20:49.178]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
 [2026-10-20 21:21:03.357] launch [beta] $STIMMY (TRUMP STIMMY) BVwVMo4tTcj7hZH5P3ZTcMrnX5j1h89Wwp6neB3fkTK3 quote 6s2umN platform 6BwHHD token2022 slot 459377275
 [2026-10-20 21:21:03.357]   not a target (or target already taken), ignoring
+[2026-10-20 21:21:06.576] launch [beta] $Pump (Donald Pump) 5Cg76xFUrdMTiGUYrHxDokqLBLmN2gfv2SuWY1ohwkGD quote 6s2umN platform 6BwHHD token2022 slot 459377291
+[2026-10-20 21:21:06.577]   not a target (or target already taken), ignoring
+[2026-10-20 21:21:07.321] launch [beta] $TAKID (Trump Account Kid) GQzN4wZ6QM1mj7UgSi6R7JwfH5zWmQvEjRdtZsS22WLa quote 6s2umN platform 4E876q token2022 slot 459377294
+[2026-10-20 21:21:07.321]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:21:08.093] alive | pool 6s2umN | $TRUMP done
+[2026-10-20 21:21:11.031] launch [beta] $STIMMY (STIMMY) 6Qoj1XmEdqzRaPsTupB6HAtT9mbb2MH96wW3ch4GW6dv quote 6s2umN platform 6BwHHD token2022 slot 459377311
+[2026-10-20 21:21:11.032]   not a target (or target already taken), ignoring
+[2026-10-20 21:21:24.825] launch [beta] $SIGIRL (Super Intelligence Girl) 3swL5YqA4EsvTcvGJwEAveJBxZoQBodut3FGyLst5j2V quote 6s2umN platform 4E876q token2022 slot 459377375
+[2026-10-20 21:21:24.825]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:21:32.206] launch [beta] $YUGE (IT'S YUGE) HUo5FnjDGjFCQMLj5ZUSFhP76wC4CqWH5bWv1whj1xr quote 6s2umN platform 6BwHHD token2022 slot 459377408
+[2026-10-20 21:21:32.206]   not a target (or target already taken), ignoring
+[2026-10-20 21:21:33.524] launch [beta] $TRUMPFOLIO (Trumpfolio) MquFQsNALEqorGu1mFbjanXWpUAhrmMfjmSsZwJbdMD quote 6s2umN platform 6BwHHD token2022 slot 459377414
+[2026-10-20 21:21:33.524]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)

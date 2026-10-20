@@ -1,45 +1,3 @@
-[2026-10-20 19:51:03] known pools: 107
-[2026-10-20 19:51:03] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 19:51:03] feed stonkfun-launches connected
-[2026-10-20 19:51:03] feed creators connected
-=== cmd 43 @ 2026-10-20T19:58:02Z ===
-> timeline 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
-created 2026-10-19T19:57:46.000Z | scanned 2105 txs
-+0.5m  chudc2 []
-+0.6m  3Uz91B []
-+2.8m  3HZKaV []
-+5.2m  FZjG6m [InitializeDeposit]
-+5.3m  FIRST POOL/SWAP activity: Jupiter,Raydium CLMM [Deposit,Route,SwapV2,TransferChecked] by H1TRD2
-+6.5m  FZjG6m [InitializeDeposit]
-+91.5m  FIRST STONKFUN LAUNCH: $ALTCOIN
-=> tradeable -> pairing live: 86.2 min
-> timeline ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a
-created 2026-10-16T15:26:05.000Z | scanned 909 txs
-+45.4m  FZjG6m [InitializeDeposit]
-+45.5m  FIRST POOL/SWAP activity: Jupiter [Deposit,Route,SwapV3Dyn,TransferChecked] by H1TRD2
-+55.1m  91Pg4W [InitializeDeposit]
-+88.1m  7q3HUG [InitializeDeposit]
-+94.4m  ARymmK [InitializeDeposit]
-+95.3m  HvFdDW []
-+124.5m  FIRST STONKFUN LAUNCH: $MUSK4
-=> tradeable -> pairing live: 79.0 min
-=== cmd 44 @ 2026-10-20T20:01:00Z ===
-> alerts-log
-[TAILING] Tailing last 40 lines for [alerts] process (change the value with --lines option)
-/root/.pm2/logs/alerts-error.log last 40 lines:
-/root/.pm2/logs/alerts-out.log last 40 lines:
-[2026-10-20 19:49:03] seeding known pools from the last 48h of StonkFun launches...
-[2026-10-20 19:51:03] known pools: 107
-[2026-10-20 19:51:03] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 19:51:03] feed stonkfun-launches connected
-[2026-10-20 19:51:03] feed creators connected
-[2026-10-20 19:55:05] known pools: 107
-[2026-10-20 19:55:05] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 19:55:05] feed stonkfun-launches connected
-[2026-10-20 19:55:05] feed creators connected
-[2026-10-20 19:57:04] known pools: 107
-[2026-10-20 19:57:04] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 19:57:05] feed stonkfun-launches connected
 [2026-10-20 19:57:05] feed creators connected
 [2026-10-20 19:59:05] known pools: 107
 [2026-10-20 19:59:05] tracking 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue for NOW TRADEABLE
@@ -398,3 +356,45 @@ created 2026-10-20T21:12:10.000Z slot 459374814  (33849 slots / 122.0 min after 
 [2026-10-20 21:13:35.945]   not a target (or target already taken), ignoring
 [2026-10-20 21:13:42.805] launch [beta] $FAMILY (Official Trump Family Meme) HAQ3W47mkRMmwH4YHp2dPzVdwsG7MYZpTEAeH9Wgjeom quote 6s2umN platform 6BwHHD token2022 slot 459375241
 [2026-10-20 21:13:42.805]   not a target (or target already taken), ignoring
+=== cmd 61 @ 2026-10-20T21:22:02Z ===
+> snipe-events
+[2026-10-20 20:43:06.297] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:45:07.598] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:55:07.001] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:57:04.197] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:06:06.841] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:07:06.535] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:10:04.576] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:14:07.049] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:16:08.088] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:43:05.203] WARN wallet holds 0 of the pool token, needs 1 for all targets. Buys will fail until funded.
+[2026-10-20 20:45:06.022] WARN wallet holds 0 of the pool token, needs 1 for all targets. Buys will fail until funded.
+[2026-10-20 20:55:05.646] WARN wallet holds 0 of the pool token, needs 1 for all targets. Buys will fail until funded.
+[2026-10-20 20:57:03.898] WARN wallet holds 0 of the pool token, needs 2 for all targets. Buys will fail until funded.
+[2026-10-20 21:12:11.414] WARN   BUY FAILED (landed +1 slots): {"InstructionError":[3,{"Custom":2012}]}
+[2026-10-20 21:14:05.589] WARN wallet holds 0 of the pool token, needs 762 for all targets. Buys will fail until funded.
+[2026-10-20 21:16:05.391] WARN wallet holds 0 of the pool token, needs 762 for all targets. Buys will fail until funded.
+[2026-10-20 21:16:07.728] WARN wallet holds 0 of the pool token, needs 762 for all targets. Buys will fail until funded.
+> txinfo 2TMHWuzKLnBQY5Mm5tywDmtnjoE2HMVmNFt1WVef8XRACHuniCJjV45jZowGWjAbz47fDXZT17iBuSdsftgS3pLX
+slot 459374815 err {"InstructionError":[3,{"Custom":2012}]} signer CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+programs: ComputeBudget111111111111111111111111111111 ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj 11111111111111111111111111111111 TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+tx fee (base+priority): 0.004955 SOL  CU used 46881
+  CU limit 150000
+  CU price 33000000 microLamports
+  TRANSFER 0.450000 SOL -> 96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5
+  TRANSFER 0.001000 SOL -> D2L6yPZ2FmmmTKPgzaMKdhu6EWZcTpLy1Vhx8uvZe7NZ
+  TRANSFER 0.001000 SOL -> nozFrhfnNGoyqwVuwPAW4aaGqempx4PU6g6D9CJMv7Z
+  TRANSFER 0.001000 SOL -> astraRVUuTHjpwEVvNBeQEgwYx9w9CFyfxjYoobCZhL
+SOL change signer: -0.0050
+  Program ComputeBudget111111111111111111111111111111 invoke [1]
+  Program ComputeBudget111111111111111111111111111111 invoke [1]
+  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: GetAccountDataSize
+  Program 11111111111111111111111111111111 invoke [2]
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: InitializeImmutableOwner
+  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
+  Program log: Instruction: InitializeAccount3
+  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [1]
+  Program log: Instruction: BuyExactIn
