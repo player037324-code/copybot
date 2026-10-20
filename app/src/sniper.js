@@ -103,7 +103,7 @@ export function parseLaunch(tx) {
       const tokenProgs = a.filter((k) => k === TOKEN.toBase58() || k === TOKEN22.toBase58());
       const baseProg = progOf(a[6]) || (isT22 ? TOKEN22.toBase58() : TOKEN.toBase58());
       const quoteProg = progOf(a[7]) || (isT22 ? a[11] : tokenProgs[tokenProgs.length - 1]) || TOKEN.toBase58();
-      return { name, symbol, decimals, globalConfig: a[2], creator: a[1], platform: a[3], pool: a[5], base: a[6], quote: a[7], baseVault: a[8], quoteVault: a[9], baseProg, quoteProg, variant: isT22 ? 'token2022' : 'spl' };
+      return { name, symbol, decimals, globalConfig: a[2], authority: a[4], creator: a[1], platform: a[3], pool: a[5], base: a[6], quote: a[7], baseVault: a[8], quoteVault: a[9], baseProg, quoteProg, variant: isT22 ? 'token2022' : 'spl' };
     } catch { return null; }
   }
   return null;
@@ -128,7 +128,7 @@ export function buildBuyIxs(L, wallet, amountRaw, minOutRaw) {
   const platformFee = cached(`pf${L.platform}${L.quote}`, () => pda([platform.toBuffer(), quote.toBuffer()]));
   const creatorFee = pda([new PublicKey(L.creator).toBuffer(), quote.toBuffer()]);
   const keys = [
-    [me, true, true], [AUTHORITY, false, false], [L.globalConfig ? cached(`g${L.globalConfig}`, () => new PublicKey(L.globalConfig)) : GLOBAL_CONFIG, false, false], [platform, false, false],
+    [me, true, true], [L.authority ? cached(`a${L.authority}`, () => new PublicKey(L.authority)) : AUTHORITY, false, false], [L.globalConfig ? cached(`g${L.globalConfig}`, () => new PublicKey(L.globalConfig)) : GLOBAL_CONFIG, false, false], [platform, false, false],
     [pool, false, true], [myBase, false, true], [myQuote, false, true],
     [baseVault, false, true], [quoteVault, false, true],
     [base, false, false], [quote, false, false], [baseProg, false, false], [quoteProg, false, false],

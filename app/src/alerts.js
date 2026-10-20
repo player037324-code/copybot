@@ -5,7 +5,9 @@
 import 'dotenv/config';
 import fs from 'fs';
 import WebSocket from 'ws';
-import { parseLaunch, LL } from './sniper.js';
+import { parseLaunch, LL, buildBuyIxs, buildTx } from './sniper.js';
+import bs58 from 'bs58';
+import { Keypair, Connection } from '@solana/web3.js';
 
 const env = (k, d) => (process.env[k] === undefined || process.env[k] === '' ? d : process.env[k].trim());
 const KEY = env('HELIUS_API_KEY', '');
@@ -55,9 +57,38 @@ async function seed() {
   log(`known pools: ${Object.keys(state.quotes).length}`);
 }
 
+// ---- sniper self-test: simulate our buy against a real recent StonkFun launch every few minutes ----
+// "not enough pool token" style errors are expected (wallet doesn't hold every pool token); anything else
+// (wrong account, new layout, new program) means the sniper's buy is broken -> alert.
+const SELFTEST_MIN = Number(env('SELFTEST_EVERY_MIN', '10'));
+const selfConn = new Connection(RPC, 'confirmed');
+let selfWallet = null; try { selfWallet = Keypair.fromSecretKey(bs58.decode(env('SNIPE_PRIVATE_KEY', env('PRIVATE_KEY', '')))); } catch {}
+let latestLaunch = null, lastSelftest = 0, lastSelftestOk = null;
+const OK_ERRORS = new Set([2506, 3012, 1]); // require_gte (balance), account not initialized (no quote ATA), insufficient funds
+async function selftest() {
+  if (!selfWallet || !latestLaunch) return;
+  const L = latestLaunch; latestLaunch = null; lastSelftest = Date.now();
+  try {
+    const bh = await selfConn.getLatestBlockhash();
+    const tx = buildTx(selfWallet, buildBuyIxs(L, selfWallet, 1000n, 0n), bh.blockhash, 150000, 1000, 0, 0);
+    const sim = await selfConn.simulateTransaction(tx, { sigVerify: false, replaceRecentBlockhash: true });
+    const err = sim.value.err; const code = err?.InstructionError?.[1]?.Custom;
+    const reachedBuy = (sim.value.logs || []).some((l) => /Instruction: BuyExactIn/.test(l));
+    const anchor = (sim.value.logs || []).find((l) => /AnchorError/.test(l)) || '';
+    // OK = our buy got into LaunchLab's BuyExactIn and only failed on our wallet's balance/quote account (or succeeded)
+    const ok = !err || (reachedBuy && (code === 2506 || /user_quote_token/.test(anchor)));
+    log(`selftest on $${L.symbol} (${L.variant}, config ${L.globalConfig?.slice(0, 6)}): ${ok ? 'OK' : 'BROKEN'} ${err ? JSON.stringify(err) : 'sim ok'} ${anchor.slice(0, 140)}`);
+    if (!ok && lastSelftestOk !== false) await alert('SNIPER BUY BROKEN', `Self-test failed on a real launch ($${L.symbol} ${L.base}): ${JSON.stringify(err)} ${anchor.slice(0, 160)}. Tell Claude before the next pairing.`, { mint: L.base });
+    if (ok && lastSelftestOk === false) await alert('SNIPER BUY OK AGAIN', `Self-test passing again on $${L.symbol}.`);
+    lastSelftestOk = ok;
+  } catch (e) { warn(`selftest: ${e.message}`); }
+}
+setInterval(() => { if (Date.now() - lastSelftest > SELFTEST_MIN * 60000) selftest(); }, 30000);
+
 async function onLaunch(tx, slot) {
   const L = parseLaunch(tx);
   if (!L || L.platform !== PLATFORM) return;
+  latestLaunch = L;
   if (state.quotes[L.quote]) return;
   state.quotes[L.quote] = { firstSeen: Math.floor(Date.now() / 1000), firstTicker: L.symbol, firstMint: L.base, slot };
   save();
