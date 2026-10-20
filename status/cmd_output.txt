@@ -1,12 +1,3 @@
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 0.6% | ram usage: 35.3% | enp1s0: ⇓ 0.012mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.008mb/s
-=== cmd 16 @ 2026-10-18T01:03:00Z ===
-> race arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq
-1109 successful txs on this coin. Lunar's buy is #860. Showing from #857:
-slot 458243643  AgmLJ  sol   -0.002  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:AgmLJB  fee 0.00073  progs DF1o,Toke,1111
-slot 458243644  3oLQS  sol   -0.508  prio 0.00035 SOL (2874162uL x 121148)  tip 0.0060 other:3t9EKm  fee 0.00035  progs Comp,ATok,1111,Toke,cpam
-slot 458243654  AgmLJ  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:AgmLJB  fee 0.00041  progs DF1o,Toke,1111
-slot 458243655 (+0)  LUNAR  sol   -4.015  prio 0.00000 SOL (0uL x 0)  tip 0.0140 other:8GV86M  fee 0.00002  progs 1111,FLAS
 slot 458243656 (+1)  4cTuS  sol   -0.012  prio 0.00000 SOL (0uL x 0)  tip 0.0100 other:ASTyaN  fee 0.00002  progs 1111,Toke,cpam
 slot 458243656 (+1)  DijCe  sol   -2.002  prio 0.00004 SOL (200000uL x 220000)  tip 0.0000 helius  fee 0.00005  progs Comp,ATok,1111,Toke,cpam
 slot 458243656 (+1)  US     sol   -1.609  prio 0.00040 SOL (1000000uL x 400000)  tip 0.0010 helius  fee 0.00040  progs Comp,ATok,1111,Toke,JUP6
@@ -398,3 +389,12 @@ created 2026-10-19T21:29:16.000Z slot 458982526  (25163 slots / 91.5 min after p
 [in5] LaunchLab disc e445a52e51cb9a1d len 155
    data e445a52e51cb9a1dbddb7fd34ee661eeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da0078c5fb51d10200acdb0e3ee9cf0300e8ccdcb30000000014e576305513010096f7af46000000007d724d37dfc1010015ccd1990000000067382f5400000000698dd6068aae0000c8e03500000000002083d7000000000000000000000000000000000000000000000001
     0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+=== cmd 34 @ 2026-10-20T19:29:02Z ===
+> snipetest 5m8XU9rzAVaBxuB7gkqZx39SK216XDXmXE2Qov4GkYbt3R7NxKZyA6Xe15ntXCRu9xMYEeQ9EUvbjXrXiq1FEvF5 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG 1
+parsed in 4.28ms: $ALTCOIN "Alt-coin" base DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP quote 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ creator B9Zbs2 platform 6BwHHD
+built + signed in 34.51ms, 876 bytes
+accounts vs real sniper (agiGgE): 18/18 match (user accounts correctly swapped to ours)
+simulate now: ERR {"InstructionError":[3,{"Custom":3012}]} CU 31568
+  Program log: Instruction: BuyExactIn
+  Program log: AnchorError caused by account: user_quote_token. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj failed: custom program error: 0xbc4
