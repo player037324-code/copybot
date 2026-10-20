@@ -1,9 +1,3 @@
-[2026-10-20 21:07:06.536] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:07:06.626] feed beta connected
-[2026-10-20 21:07:06.661] feed mainnet connected
-[2026-10-20 21:10:04.113] === sniper starting ===
-[2026-10-20 21:10:04.116] mode: LIVE
-[2026-10-20 21:10:04.116] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 21:10:04.116] target: first $TRUMP -> buy 762
 [2026-10-20 21:10:04.116] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 762
 [2026-10-20 21:10:04.575] warm build time (median of 10): total 4.33ms = accounts 0.77 + compile/sign 2.47 + serialize 0.20
@@ -398,3 +392,9 @@ host metrics | cpu: 1.8% | ram usage: 47.5% | enp1s0: ⇓ 0.028mb/s ⇑ 0.003mb/
 [2026-10-20 22:29:04.243] feed beta connected
 [2026-10-20 22:29:04.246] feed pre subscribed (1)
 [2026-10-20 22:29:04.265] feed mainnet connected
+=== cmd 67 @ 2026-10-20T22:31:02Z ===
+> feedrace 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue 120
+grpc connect failed: Cannot read properties of undefined (reading 'PROCESSED')
+grpc error: subscribe stream receive failed
+txs seen: helius 22, orbit 0, both 0, only-helius 22, only-orbit 0
+orbit sent nothing (IP not whitelisted? wrong endpoint?)
