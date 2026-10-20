@@ -208,24 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:29:09.401] launch [beta] $POTUS (President of the United States) 3ruh1w1W6cY5D5rJp76tPF6MLbAfV1Vx3Wvj4Xen9z2W quote 6s2umN platform 6BwHHD token2022 slot 459379522
-[2026-10-20 21:29:09.401]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:12.666] launch [beta] $TSMI (Truth Social Memecoin Index ETF) DQWAYWhMXJQsbiYHDpPdZ3RNYBAMRaYELFE5FJb44pvU quote 6s2umN platform 6BwHHD token2022 slot 459379536
-[2026-10-20 21:29:12.667]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:13.100] launch [beta] $BBB (Big Beautiful Basket) 3mifjRmmmzyqxBLKrrUKJoicVvPfdqSbvM7wX9ttPkwQ quote 6s2umN platform 6BwHHD token2022 slot 459379539
-[2026-10-20 21:29:13.100]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:29.835] launch [beta] $TACOBOWL (Taco Bowl) Dyehdb33T5AGid2Dob6hU7QpQchkxvpx4Qip39vLZPPB quote 6s2umN platform 6BwHHD token2022 slot 459379614
-[2026-10-20 21:29:29.836]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:35.070] launch [beta] $TRUMP (Trump Coin) FdriphUTcGKzejCkjGs8Vs1iMTrrzFwLZnLUg9MYD9KQ quote 6s2umN platform 6BwHHD token2022 slot 459379640
-[2026-10-20 21:29:35.070]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:44.815] launch [beta] $530A (buy and retire) 6CBTzKt37tvcqAW1kJhy4FAa7R9ys2M9cXYYZbrSVV5g quote 6s2umN platform 6BwHHD token2022 slot 459379683
-[2026-10-20 21:29:44.815]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:46.552] launch [beta] $FIGHT (Fight Fight Fight) 6VcutRba68HpkRa7iQ2xJvt3P2hJp59eX96QCqYUCrL6 quote 6s2umN platform 6BwHHD token2022 slot 459379691
-[2026-10-20 21:29:46.552]   not a target (or target already taken), ignoring
-[2026-10-20 21:29:54.540] launch [beta] $530A (buy and retire) CkhhePuXKuhH8QSDv7GGkyPgzRUV4R8FUNKUpxnKQzZG quote 6s2umN platform 4E876q token2022 slot 459379727
-[2026-10-20 21:29:54.540]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
-[2026-10-20 21:30:00.645] launch [mainnet] $FIRED (You're Fired) 5YdAwi3hPwLRu3pXuLn23YXvG71m8K7XBrqssicx1GKL quote 6s2umN platform 6BwHHD token2022 slot 459379755
-[2026-10-20 21:30:00.645]   not a target (or target already taken), ignoring
 [2026-10-20 21:30:07.221] alive | pool 6s2umN | $TRUMP done
 [2026-10-20 21:30:14.133] launch [beta] $FRIES (Fries in the Bag) Afr39xjc1BoaxX7st71pzYWskME5oPijVnMZMN56eucC quote 6s2umN platform 6BwHHD token2022 slot 459379817
 [2026-10-20 21:30:14.134]   not a target (or target already taken), ignoring
@@ -248,6 +230,24 @@
 [2026-10-20 21:31:06.928] feed mainnet connected
 [2026-10-20 21:31:07.405] launch [beta] $SALUTE (The Balcony Salute) EhJfnwJ3oa21Yj9TtapBfnK48WaxWSSGjJgQcsJ3BJPF quote 6s2umN platform 6BwHHD token2022 slot 459380064
 [2026-10-20 21:31:07.418]   not a target (or target already taken), ignoring
+[2026-10-20 21:31:19.473] launch [beta] $BONER (Boner) 4J1ijfD1TMfEagtTJ9AeqpqgTc25mKyKcXAaFeNWAZg9 quote 6s2umN platform 6BwHHD token2022 slot 459380122
+[2026-10-20 21:31:19.473]   not a target (or target already taken), ignoring
+[2026-10-20 21:31:42.237] launch [beta] $GOLF (Golf Trip) Hr3zumBs9DuSuT98uPAT8SXUauy1EKwTvXuF8qkz1sQd quote 6s2umN platform 6BwHHD token2022 slot 459380227
+[2026-10-20 21:31:42.237]   not a target (or target already taken), ignoring
+[2026-10-20 21:31:55.801] launch [beta] $TMI6900 (Trump Misery Index 6900) 47ZEaga3iNgH3rxbJ7SyafmyTHTcDAQDLGi7rFLFQBEs quote 6s2umN platform 6BwHHD token2022 slot 459380290
+[2026-10-20 21:31:55.801]   not a target (or target already taken), ignoring
+[2026-10-20 21:31:59.060] launch [beta] $DREAM (American Dream) EWcGPo8feKx4aaAJiaguwb6Em4HMZ1gzu5uNH2RafM8g quote 6s2umN platform 6BwHHD token2022 slot 459380304
+[2026-10-20 21:31:59.060]   not a target (or target already taken), ignoring
+[2026-10-20 21:32:00.105] launch [beta] $SNEAKERS (Never Surrender Sneakers) DmyXhKpnSvwAfq13KWmTas5TskQELucv8QFcUNyyLzvA quote 6s2umN platform 6BwHHD token2022 slot 459380308
+[2026-10-20 21:32:00.105]   not a target (or target already taken), ignoring
+[2026-10-20 21:32:24.212] launch [beta] $SHARPIE (The Sharpie Map) 6XjDfsscW3UD4uYjWqnGsfpmpPsE8LxfoHKz1W56L81P quote 6s2umN platform 6BwHHD token2022 slot 459380419
+[2026-10-20 21:32:24.212]   not a target (or target already taken), ignoring
+[2026-10-20 21:32:53.450] launch [beta] $TINYDESK (Tiny Desk) 6mhYq18c87LkcjysiJZccY1SuN8qUF2GZfWZHKbu3hz8 quote 6s2umN platform 6BwHHD token2022 slot 459380553
+[2026-10-20 21:32:53.451]   not a target (or target already taken), ignoring
+[2026-10-20 21:32:54.468] launch [beta] $BABYTRUMP (Official Baby Trump Coin) CHcP3rdaE8g1sCCKCsJXoBLQMcEVMzzZmUxDySRT4kok quote 6s2umN platform 6BwHHD token2022 slot 459380557
+[2026-10-20 21:32:54.468]   not a target (or target already taken), ignoring
+[2026-10-20 21:32:59.638] launch [beta] $BBB (Big Beautiful Basket) 8SahG3BMj3BGjuXp8LwCeND3oeM9iqLUBSLkGV7KJ7Ca quote 6s2umN platform 4E876q token2022 slot 459380581
+[2026-10-20 21:32:59.638]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)

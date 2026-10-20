@@ -1,44 +1,3 @@
-[2026-10-20 20:57:03.870] === sniper starting ===
-[2026-10-20 20:57:03.873] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 20:57:03.873] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 20:57:03.873] target: first launch (ANY ticker) -> buy 1
-[2026-10-20 20:57:03.873] target: first $TRUMP -> buy 1
-[2026-10-20 20:57:03.873] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 2
-[2026-10-20 20:57:04.197] warm build time (median of 10): total 4.86ms = accounts 1.43 + compile/sign 3.09 + serialize 0.18
-[2026-10-20 20:57:04.197] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:57:04.197] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 20:57:04.213] feed beta connected
-[2026-10-20 20:57:04.248] feed mainnet connected
-=== cmd 52 @ 2026-10-20T21:04:02Z ===
-> snipe-fund 1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-1 SOL -> 102.6276 of 6s2umN | 1.0393 USD each | price impact 0.25% | route Raydium CLMM(100%)
-quote only. Run snipe-fund with --go to buy.
-> snipe-fund 12 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-12 SOL -> 1218.9221 of 6s2umN | 1.0501 USD each | price impact 1.26% | route Raydium CLMM(100%)
-quote only. Run snipe-fund with --go to buy.
-> whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-owner program: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  type: mint
-decimals 6 supply 110408.575776 mintAuthority 5c6s8C5SHq7pDR6VcKcrhffCiFAtAXu1Zt2KgGNEiw2y freezeAuthority null
-name: Trump Index  symbol: $TRUMP3  uri: https://assets.diversifi.trade/token_metadata/TRUMP3/f3c4d821-6dd4-45f5-bf9a-df9b4c30b434.json  desc: TRUMP3 index token on DiversiFi.
-created 2026-10-20T19:10:08.000Z (1.9h ago) by H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd  ix: Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
-  same tx also touched mints: EPjFWdd5 6p6xgHyF WLFinEv6 DJTu7vi8
-activity: 77 txs total, latest 2026-10-20T21:03:56.000Z
-  holder 7q3HUGf8 49200.925491
-  holder 5wcSGFKi 15342.020518
-  holder FZjG6mfe 12406.602153
-  holder 91Pg4WAe 11816.115458
-  holder 3iBECgTb 9844.004783
-tradeable: 0.1 SOL -> 10.271455 | impact 0.16% | Raydium CLMM
-StonkFun/LaunchLab launches paired to it (in latest 77 txs): 0
-=== cmd 53 @ 2026-10-20T21:09:02Z ===
-> ladder-start
-[PM2] Starting /root/copybot/src/ladder.js in fork_mode (1 instance)
-[PM2] Done.
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 742528   │ 118s   │ 13   │ online    │ 0%       │ 84.5mb   │ root     │ disabled │
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
 │ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 743021   │ 0s     │ 0    │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
 │ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 742492   │ 118s   │ 6    │ online    │ 0%       │ 98.8mb   │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
@@ -398,3 +357,44 @@ simulate now: ERR {"InstructionError":[3,{"Custom":2506}]} CU 34504
   Program log: Instruction: BuyExactIn
   Program log: AnchorError thrown in programs/launchpad/src/instructions/buy_exact_in.rs:136. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.
   Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj failed: custom program error: 0x9ca
+=== cmd 65-1 @ 2026-10-20T21:33:02Z ===
+> alerts-log
+[2026-10-20 20:45:07] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 20:45:07] feed creators connected
+[2026-10-20 20:45:07] feed stonkfun-launches connected
+[2026-10-20 20:55:06] known pools: 110
+[2026-10-20 20:55:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 20:55:07] feed creators connected
+[2026-10-20 20:55:07] feed stonkfun-launches connected
+[2026-10-20 21:05:07] alive | 110 known pools | 1 new tokens seen
+[2026-10-20 21:06:06] known pools: 110
+[2026-10-20 21:06:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:06:06] feed creators connected
+[2026-10-20 21:06:06] feed stonkfun-launches connected
+[2026-10-20 21:07:06] known pools: 110
+[2026-10-20 21:07:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:07:06] feed stonkfun-launches connected
+[2026-10-20 21:07:06] feed creators connected
+[2026-10-20 21:10:55] 🚨 first StonkFun launch on older pool: $COPX (Global X Copper Miners ETF - Backpack Securities) CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5 is now live on StonkFun. First launch: $COPPER 9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ. Pool token is 57.0d old.
+[2026-10-20 21:12:11] 🚨 NEW PAIRING LIVE: $TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is now live on StonkFun. First launch: $TRUMP BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1. Pool token is 2.0h old.
+[2026-10-20 21:14:06] known pools: 112
+[2026-10-20 21:14:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:14:07] feed stonkfun-launches connected
+[2026-10-20 21:14:07] feed creators connected
+[2026-10-20 21:16:06] known pools: 112
+[2026-10-20 21:16:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:16:06] feed stonkfun-launches connected
+[2026-10-20 21:16:06] feed creators connected
+[2026-10-20 21:23:06] known pools: 112
+[2026-10-20 21:23:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:23:06] feed stonkfun-launches connected
+[2026-10-20 21:23:06] feed creators connected
+[2026-10-20 21:25:06] known pools: 112
+[2026-10-20 21:25:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:25:07] feed creators connected
+[2026-10-20 21:25:07] feed stonkfun-launches connected
+[2026-10-20 21:31:06] known pools: 112
+[2026-10-20 21:31:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 21:31:07] feed creators connected
+[2026-10-20 21:31:07] feed stonkfun-launches connected
+[2026-10-20 21:31:37] selftest on $X (token2022, config 6k9BeZ): OK {"InstructionError":[3,{"Custom":3012}]} Program log: AnchorError caused by account: user_quote_token. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The prog
