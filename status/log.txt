@@ -208,30 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:34:19.876]   not a target (or target already taken), ignoring
-[2026-10-20 21:34:28.391] launch [mainnet] $TIME (Person of the Year) 2FHuQgdkg1sQsNFaccdxa6si3k5Fyga4Fuyub3vwDiw3 quote 6s2umN platform 6BwHHD token2022 slot 459380989
-[2026-10-20 21:34:28.391]   not a target (or target already taken), ignoring
-[2026-10-20 21:34:41.578] launch [beta] $FAKENEWS (Fake News) GyXHfGxcePB8MjRA7sTfSVsT4TvCPoPVGwK8187j8ydj quote 6s2umN platform 6BwHHD token2022 slot 459381048
-[2026-10-20 21:34:41.579]   not a target (or target already taken), ignoring
-[2026-10-20 21:34:54.376] launch [beta] $TOILET (Golden Toilet) GuRkxMW6RL3Kbp29aZdRpHdzW2PGy6broBZiD6YWEmYV quote 6s2umN platform 6BwHHD token2022 slot 459381107
-[2026-10-20 21:34:54.376]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:07.309] launch [beta] $BELIEVE (Believe Me) EFpaTuED7cFeL4XG63WkpVXzt3TJw5HTaJPk7faeBEm9 quote 6s2umN platform 6BwHHD token2022 slot 459381167
-[2026-10-20 21:35:07.309]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:12.115] launch [beta] $PARDON (Pardon) 9WbtKWP4WFX4t19sq145ePgAUsnt9v4QpxzdsBtMDXee quote 6s2umN platform 6BwHHD token2022 slot 459381190
-[2026-10-20 21:35:12.115]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:22.945] launch [beta] $4DCHESS (4D Chess) 2wyvTD1GoqPSTnZGQBApd2X3jVEKz4ZHaaxCeaRdqP1Q quote 6s2umN platform 6BwHHD token2022 slot 459381241
-[2026-10-20 21:35:22.945]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:28.679] launch [beta] $WOOF (Woof) 2PztkMNaaAZo8UJTyWDxGHFBzPYEb67iVUEYWDEFSvr3 quote 6s2umN platform 6BwHHD token2022 slot 459381266
-[2026-10-20 21:35:28.679]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:34.947] launch [beta] $GOLDEN (Golden Age) CjJRgEQH12NfQXXLGca4eSBNFKvkRJqza9sVhmEjB8Jw quote 6s2umN platform 6BwHHD token2022 slot 459381293
-[2026-10-20 21:35:34.948]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:39.174] launch [beta] $TOA (The Official Anti-Trump) 6VYzVpeP4dWP5bSA7ZsTe1mLmKmCVanFcSuxCLGeeLsm quote 6s2umN platform 6BwHHD token2022 slot 459381312
-[2026-10-20 21:35:39.174]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:46.558] launch [beta] $REDTIE (Red Tie) DVesRZfocUL8hTSYaczV4LXuJQfr7uSqxRJv8iMWHmQF quote 6s2umN platform 6BwHHD token2022 slot 459381346
-[2026-10-20 21:35:46.559]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:51.191] launch [beta] $POPE (Pope Trump) 2Mej9NYJyDiGTbfstuUmKDjMb2MM1HcBGTLVZrfJuaVC quote 6s2umN platform 6BwHHD token2022 slot 459381367
-[2026-10-20 21:35:51.192]   not a target (or target already taken), ignoring
-[2026-10-20 21:35:57.756] launch [beta] $ULTRA (Ultra MAGA) 2eZwAqdSo6NbeanVjHNCKtK9CA5vnNT8HbmaBFjoW45b quote 6s2umN platform 6BwHHD token2022 slot 459381397
 [2026-10-20 21:35:57.756]   not a target (or target already taken), ignoring
 [2026-10-20 21:36:04.113] launch [beta] $GIRAFFE (Which One Is The Giraffe) FwdGxuBbuU28M5XupSMN7qxwpWnZFe742SfvACsQmhJX quote 6s2umN platform 6BwHHD token2022 slot 459381425
 [2026-10-20 21:36:04.114]   not a target (or target already taken), ignoring
@@ -248,6 +224,30 @@
 [2026-10-20 21:36:50.522]   not a target (or target already taken), ignoring
 [2026-10-20 21:37:01.311] launch [beta] $ASK (ASK TRUMP) 5ibES3m3q17K8GYiD17bq5MzwERtTjQT6wnJ6brndPfV quote 6s2umN platform 6BwHHD token2022 slot 459381686
 [2026-10-20 21:37:01.311]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:12.197] launch [beta] $GENIUS (Very Stable Genius) CvQQw9Jw9GL6Yyvd2z3pnFbEWJWAbgBTQrt4raqLptoK quote 6s2umN platform 6BwHHD token2022 slot 459381737
+[2026-10-20 21:37:12.197]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:13.150] launch [beta] $STEAK (I Like Steak) 2moVehN1xGeJK8VcuhbmL1SgabtMt86GteEwQXLY79sL quote 6s2umN platform 6BwHHD token2022 slot 459381742
+[2026-10-20 21:37:13.150]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:21.244] launch [beta] $FAKEOUT (The Trump Fakeout) FznDjDanfnjy5cdA61AeM88oQjbpFMFqB756ftugrSdi quote 6s2umN platform 6BwHHD token2022 slot 459381782
+[2026-10-20 21:37:21.245]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:21.246] launch [beta] $FRAUD (Fraud Cat) 5KPWbEkbjRbTnU6qPSPqWToZigxrqdGvHRSEMHCYSTNK quote 6s2umN platform 6BwHHD token2022 slot 459381782
+[2026-10-20 21:37:21.247]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:23.215] launch [beta] $BEAST (The Beast) HkVpdkDVt3oWh9MeKvRYoao4oAvvxdou1aHXPH6r2deG quote 6s2umN platform 6BwHHD token2022 slot 459381791
+[2026-10-20 21:37:23.215]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:33.383] launch [beta] $TACO (Trump Always Chickens Out) 4rQMyT8QtUZT5gqandEGxTthPi1jgcAzhif1V4wRUYGL quote 6s2umN platform 6BwHHD token2022 slot 459381838
+[2026-10-20 21:37:33.383]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:42.020] launch [beta] $WALL (Build the Wall) Ddk4AoKTebaj51W4cRkU5jwjoPP4BS7w5NYjpPugR2zz quote 6s2umN platform 6BwHHD token2022 slot 459381878
+[2026-10-20 21:37:42.020]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:47.238] launch [beta] $ELVIS (Could I Beat Elvis) HUVXRxjgikr1La2uxA2AwqanU1NuR4pGr5Frm7pxmG5J quote 6s2umN platform 6BwHHD token2022 slot 459381902
+[2026-10-20 21:37:47.238]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:48.964] launch [beta] $POTUS (President of the Unites States) Dzt62tXK7vmaRorF1Z67RUgG4cMzqedC5uQkBdxvykcn quote 6s2umN platform 6BwHHD token2022 slot 459381910
+[2026-10-20 21:37:48.964]   not a target (or target already taken), ignoring
+[2026-10-20 21:37:56.395] launch [beta] $BERDERS (Hamberders) 83BKEE3PoUt2D1gEVgVqZFfcT1LsKXh7XYt8tJWosHJ9 quote 6s2umN platform 6BwHHD token2022 slot 459381944
+[2026-10-20 21:37:56.396]   not a target (or target already taken), ignoring
+[2026-10-20 21:38:01.797] launch [beta] $POTUS (President of the Unites States) GRovaGdPjFRSH3RWcgoQaviA14SysJtfdQPaEHPn9ibZ quote 6s2umN platform 6BwHHD token2022 slot 459381969
+[2026-10-20 21:38:01.797]   not a target (or target already taken), ignoring
+[2026-10-20 21:38:03.089] launch [beta] $400M (Four Hundred Million) 9KNAgk7aMfS26ucSCoe4n9dAhJhi9Fuu52BzZUj5uUbN quote 6s2umN platform 6BwHHD token2022 slot 459381975
+[2026-10-20 21:38:03.091]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
