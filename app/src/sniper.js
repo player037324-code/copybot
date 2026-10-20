@@ -268,7 +268,18 @@ async function main() {
       if (st) {
         const behind = st.slot - slot;
         if (st.err) { warn(`  BUY FAILED (landed +${behind} slots): ${JSON.stringify(st.err)}`); }
-        else log(`  BUY LANDED +${behind} slots after launch (slot ${st.slot})`);
+        else {
+          log(`  BUY LANDED +${behind} slots after launch (slot ${st.slot})`);
+          // record the position for the take-profit ladder: what we paid (pool token) and tokens received
+          setTimeout(async () => {
+            try {
+              const bal = await conn.getTokenAccountBalance(ata(wallet.publicKey, new PublicKey(L.base), new PublicKey(L.baseProg)), 'confirmed');
+              for (const t of hits) { state[t.key].tokensRaw = bal.value.amount; state[t.key].decimals = bal.value.decimals; state[t.key].costRaw = buyRaw.toString(); state[t.key].costDecimals = decimals; state[t.key].baseProg = L.baseProg; }
+              fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
+              log(`  position recorded: ${bal.value.uiAmountString} $${L.symbol} for ${Number(buyRaw) / 10 ** decimals} pool tokens`);
+            } catch (e) { warn(`  could not record position: ${e.message}`); }
+          }, 1500);
+        }
         for (const t of hits) { state[t.key].ourSig = ourSig; state[t.key].landedSlot = st.slot; state[t.key].err = st.err || null; }
         fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
         return;
