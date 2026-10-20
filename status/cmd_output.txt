@@ -1,20 +1,3 @@
-    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
-[in0] spl-token initializeMetadataPointer {"metadataAddress":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP"}
-[in0] spl-token initializeTokenMetadata {"metadata":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mintAuthority":"WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh","name":"Alt-coin","symbol
-[in3] LaunchLab disc e445a52e51cb9a1d len 155
-   data e445a52e51cb9a1dbddb7fd34ee661eeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da0078c5fb51d10200acdb0e3ee9cf0300e8ccdcb3000000000000000000000000000000000000000014e576305513010096f7af4600000000af0795470000000014e576305513010005d02d00000000001440b7000000000000000000000000000000000000000000000001
-    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
-
-=== 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG slot 458982527 signer agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
-[top] LaunchLab disc faea0d7bd59c13ec len 32
-   data faea0d7bd59c13ec67382f540000000000000000000000000000000000000000
-    0 SW agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
-    1 -- WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh
-    2 -- 31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH
-    3 -- 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt
-    4 -W H3jKGdsD5UcMH52f7SVBESQHpnjhhV6qQRdejjkvJhJ9
-    5 -W 9NX6EZjr7EqAAwruqQx4g4dhuZXmKEZJNTqKPCqQ2xHf
-    6 -W DpWBRuBkTLAukXmYt5W96Y1zLBiDTUj23TxoZxNnnGZR
     7 -W CC1ox6PG8KsgBGkGjShmvvJ6QJKdJitwZAEFbpiYX8De
     8 -W 3erKebh7Bp1zB59iLEhUcZr4e8Bsxx7V5VeYR4dJsQxy
     9 -- DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
@@ -398,3 +381,20 @@ activity: 77 txs total, latest 2026-10-20T21:03:56.000Z
   holder 3iBECgTb 9844.004783
 tradeable: 0.1 SOL -> 10.271455 | impact 0.16% | Raydium CLMM
 StonkFun/LaunchLab launches paired to it (in latest 77 txs): 0
+=== cmd 53 @ 2026-10-20T21:09:02Z ===
+> ladder-start
+[PM2] Starting /root/copybot/src/ladder.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 742528   │ 118s   │ 13   │ online    │ 0%       │ 84.5mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 743021   │ 0s     │ 0    │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 742492   │ 118s   │ 6    │ online    │ 0%       │ 98.8mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.9% | ram usage: 37.3% | enp1s0: ⇓ 0.026mb/s ⇑ 0.002mb/s | disk: ⇓ 0mb/s ⇑ 0.019mb/s
+[TAILING] Tailing last 8 lines for [ladder] process (change the value with --lines option)
+/root/.pm2/logs/ladder-error.log last 8 lines:
+/root/.pm2/logs/ladder-out.log last 8 lines:
+[2026-10-20 21:09:03] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
