@@ -249,6 +249,8 @@
 [2026-10-20 21:07:06.626] feed beta connected
 [2026-10-20 21:07:06.661] feed mainnet connected
 
+--- ladder ---
+[TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
 [2026-10-17 23:30:11] WARN websocket closed, reconnecting
