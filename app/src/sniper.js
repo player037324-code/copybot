@@ -26,7 +26,7 @@ const S = {
   cuPrice: Number(env('SNIPE_CU_PRICE', '33000000')), // microLamports/CU. 150k x 33M = 0.005 SOL (matches the #1 buy on $ALTCOIN)
   jitoTipSol: Number(env('SNIPE_JITO_TIP_SOL', '0.4')),  // the #1 buy on $ALTCOIN tipped Jito 0.4 SOL
   tipSol: Number(env('SNIPE_TIP_SOL', '0.001')),         // Helius Sender tip
-  jitoUrl: env('SNIPE_JITO_URL', 'https://ny.mainnet.block-engine.jito.wtf'),
+  jitoUrls: env('SNIPE_JITO_URLS', 'https://ny.mainnet.block-engine.jito.wtf,https://mainnet.block-engine.jito.wtf,https://slc.mainnet.block-engine.jito.wtf,https://frankfurt.mainnet.block-engine.jito.wtf').split(',').map((x) => x.trim()).filter(Boolean),
   maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
   dryRun: env('SNIPE_DRY_RUN', 'true').toLowerCase() === 'true',
   senderUrl: env('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),
@@ -169,8 +169,9 @@ async function main() {
   // precompute everything that doesn't depend on the new coin
   const senderSend = `${S.senderUrl}/fast?api-key=${S.heliusKey}`;
   const post = (b64) => fetch(senderSend, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64', skipPreflight: true, maxRetries: 0 }] }) }).then((r) => r.json());
-  const jitoSend = (b64) => fetch(`${S.jitoUrl}/api/v1/transactions`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64' }] }) }).then((r) => r.json());
-  setInterval(() => fetch(`${S.jitoUrl}/api/v1/getTipAccounts`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"jsonrpc":"2.0","id":1,"method":"getTipAccounts","params":[]}' }).catch(() => {}), 20000);
+  const jitoOne = (url, b64) => fetch(`${url}/api/v1/transactions`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64' }] }) }).then((r) => r.json());
+  const jitoSend = (b64) => Promise.allSettled(S.jitoUrls.map((u) => jitoOne(u, b64)));
+  setInterval(() => S.jitoUrls.forEach((u) => fetch(`${u}/api/v1/getTipAccounts`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"jsonrpc":"2.0","id":1,"method":"getTipAccounts","params":[]}' }).catch(() => {})), 20000);
   // warm up: build + sign a throwaway tx so the first real build isn't cold (JIT, PDA math, signing)
   for (let i = 0; i < 25; i++) {
     const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
@@ -178,6 +179,7 @@ async function main() {
   }
   { const t = performance.now(); const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
     buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize(); log(`warm build time: ${(performance.now() - t).toFixed(2)}ms`); }
+  log(`send paths: Helius Sender x2 + Helius RPC + Jito ${S.jitoUrls.map((u) => u.split('//')[1].split('.')[0]).join(',')}`);
   log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender tip ${S.tipSol} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol).toFixed(4)} SOL per snipe`);
   const seenMints = new Set();
   let fired = !!state[key];
