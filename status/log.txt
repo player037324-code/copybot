@@ -205,8 +205,20 @@
 
 --- sniper ---
 [TAILING] Tailing last 40 lines for [sniper] process (change the value with --lines option)
-/root/.pm2/logs/sniper-out.log last 40 lines:
 /root/.pm2/logs/sniper-error.log last 40 lines:
+
+/root/.pm2/logs/sniper-out.log last 40 lines:
+[2026-10-20 20:43:05.145] === sniper starting ===
+[2026-10-20 20:43:05.151] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 20:43:05.152] pool 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ on platform 6BwHHD
+[2026-10-20 20:43:05.153] target: first launch (ANY ticker) -> buy 1
+[2026-10-20 20:43:05.155] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 1
+[2026-10-20 20:43:06.296] warm build time: 22.17ms
+[2026-10-20 20:43:06.297] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:43:06.297] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 20:43:06.400] feed beta connected
+[2026-10-20 20:43:06.429] feed mainnet connected
+
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
 [2026-10-17 23:30:11] WARN websocket closed, reconnecting
