@@ -69,7 +69,35 @@ async function onLaunch(tx, slot) {
     { quote: L.quote, firstMint: L.base, firstTicker: L.symbol, isNew });
 }
 
+// TRADEABLE: first deposit/swap touching a token we saw get created (H1TRD2 did the first one for SAMA4 and MUSK4)
+async function checkTradeable(tx) {
+  const keys = new Set(tx.transaction.message.accountKeys.map((k) => k.pubkey?.toString?.() ?? k));
+  for (const b of [...(tx.meta?.postTokenBalances || []), ...(tx.meta?.preTokenBalances || [])]) keys.add(b.mint);
+  const logs = (tx.meta?.logMessages || []).join('\n');
+  if (!/Instruction: (Deposit|Swap|SwapV2|SwapV3Dyn|Route)/.test(logs)) return;
+  for (const [mint, c] of Object.entries(state.created)) {
+    if (c.tradeableAt || !keys.has(mint)) continue;
+    c.tradeableAt = Math.floor(Date.now() / 1000); save();
+    const m = await meta(mint);
+    const at = new Date(Date.now() + 79 * 60000).toISOString().slice(11, 16); const at2 = new Date(Date.now() + 86 * 60000).toISOString().slice(11, 16);
+    await alert('NOW TRADEABLE', `$${m.symbol || '?'} (${m.name || ''}) ${mint} just got its first deposit/swap. Buy it now for the snipe. Last two pairings went live 79-86 min after this, so around ${at}-${at2} UTC.`, { mint });
+  }
+}
+// backup: poll Jupiter for created tokens that aren't tradeable yet
+setInterval(async () => {
+  for (const [mint, c] of Object.entries(state.created)) {
+    if (c.tradeableAt || Date.now() / 1000 - c.at > 12 * 3600) continue;
+    const r = await fetch(`https://api.jup.ag/swap/v1/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=${mint}&amount=10000000&slippageBps=300`, { headers: { 'x-api-key': process.env.JUP_API_KEY || '' } }).then((x) => x.json()).catch(() => ({}));
+    if (r.outAmount && Number(r.outAmount) > 0) {
+      c.tradeableAt = Math.floor(Date.now() / 1000); save();
+      const m = await meta(mint);
+      await alert('NOW TRADEABLE', `$${m.symbol || '?'} ${mint} is now buyable on Jupiter (${(r.routePlan || []).map((p) => p.swapInfo.label).join('>')}). Pairings went live 79-86 min after tradeable last two times.`, { mint });
+    }
+  }
+}, 60000);
+
 async function onCreatorTx(tx, sig) {
+  await checkTradeable(tx);
   const pre = new Set((tx.meta?.preTokenBalances || []).map((b) => b.mint));
   const ixs = [...(tx.meta?.logMessages || [])].join('\n');
   if (!/Initialize/.test(ixs)) return;
@@ -115,6 +143,9 @@ function subscribe(name, filter, handler) {
 }
 
 await seed();
+for (const m of (process.env.ALERT_TRACK_MINTS || '6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue').split(',').map((x) => x.trim()).filter(Boolean)) {
+  if (!state.created[m]) { state.created[m] = { at: Math.floor(Date.now() / 1000), manual: true }; save(); log(`tracking ${m} for NOW TRADEABLE`); }
+}
 log(`watching creators: ${CREATORS.join(', ')} | telegram: ${TG_TOKEN && TG_CHAT ? 'ON' : 'off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)'}`);
 subscribe('stonkfun-launches', { accountRequired: [LL.toBase58(), PLATFORM] }, (tx, sig, slot) => onLaunch(tx, slot));
 subscribe('creators', { accountInclude: CREATORS }, onCreatorTx);
