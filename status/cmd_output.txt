@@ -1,34 +1,3 @@
-  Program 11111111111111111111111111111111 invoke [1]
-=== cmd 36 @ 2026-10-20T19:32:04Z ===
-> txinfo 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG
-slot 458982527 err null signer agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
-programs: ComputeBudget111111111111111111111111111111 11111111111111111111111111111111 ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
-  DpWBRuBk owner agiGgE9D mint 7V1evjzU 1412.380775 -> 0 (-1412.3808)
-  9NX6EZjr owner agiGgE9D mint DrBBfrDv 0 -> 189988765.009632 (189988765.0096)
-  CC1ox6PG owner WLHv2UAZ mint DrBBfrDv 697268417.04318 -> 505360573.599107 (-191907843.4441)
-  3erKebh7 owner WLHv2UAZ mint 7V1evjzU 1188.939675 -> 2587.196642 (1398.2570)
-  GEGqdy1H owner 56XVRVAs mint 7V1evjzU 112.325915 -> 126.449723 (14.1238)
-tx fee (base+priority): 0.005005 SOL  CU used 74299
-  CU limit 153000
-  CU price 32679738 microLamports
-  TRANSFER 0.400000 SOL -> DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL
-  TRANSFER 0.001000 SOL -> 2nyhqdwKcJZR2vcqCyrYsaPVdAnFoJjiksCXJ7hfEYgD
-  TRANSFER 0.001000 SOL -> nozNVWs5N8mgzuD3qigrCG2UoKxZttxzZ85pvAQVrbP
-  TRANSFER 0.001000 SOL -> astrazznxsGUhWShqgNtAdfrzP2G83DzcWVJDxwV9bF
-SOL change signer: -0.4105
-  Program ComputeBudget111111111111111111111111111111 invoke [1]
-  Program ComputeBudget111111111111111111111111111111 invoke [1]
-  Program 11111111111111111111111111111111 invoke [1]
-  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
-  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: GetAccountDataSize
-  Program 11111111111111111111111111111111 invoke [2]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeImmutableOwner
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeAccount3
-  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [1]
   Program log: Instruction: BuyExactIn
   Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [2]
   Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
@@ -398,3 +367,34 @@ host metrics | cpu: 13.2% | ram usage: 39.4% | enp1s0: ⇓ 1.343mb/s ⇑ 0.008mb
 [2026-10-20 21:16:08.183]   not a target (or target already taken), ignoring
 [2026-10-20 21:16:11.057] launch [beta] $FAFO (Fuck Around and Find Out) GpZqyKXPf5BVUG7m4vavdcwb85thsm4xhehEMpEPzzhs quote 6s2umN platform 6BwHHD token2022 slot 459375921
 [2026-10-20 21:16:11.057]   not a target (or target already taken), ignoring
+=== cmd 58 @ 2026-10-20T21:17:02Z ===
+> launchinfo BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+token Trump Coin ($TRUMP) BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1
+created 2026-10-20T21:12:10.000Z slot 459374814  (33849 slots / 122.0 min after pair 6s2umN was created)
+#0 slot 459374814 (+0) 4xY9T1 sol -1.014 pair -2032.35 tokens 407990499 | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,BuyExactIn | LanMV9
+   creation programs: LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
+   creation logs: Program 11111111111111111111111111111111 invoke [1] | Program 11111111111111111111111111111111 invoke [1] | Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [1] | Instruction: InitializeWithToken2022 | MetadataPointerInstruction::Initialize | Instruction: InitializeMint2 | TokenMetadataInstruction: Initialize | Instruction: InitializeAccount3 | Instruction: MintTo | Instruction: SetAuthority | Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1] | CreateIdempotent | Instruction: GetAccountDataSize | Initialize the associated token account
+#1 slot 459374814 (+0) pumpSu sol -4.042 pair -2870.00 tokens 225488981 | BuyExactIn | LanMV9
+#2 slot 459374814 (+0) chris1 sol -0.662 pair -1157.54 tokens 51184890 | BuyExactIn | LanMV9
+#3 slot 459374814 (+0) FAIL ENktLy sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#4 slot 459374814 (+0) FAIL 9B2Ffu sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#5 slot 459374814 (+0) FAIL C72LNR sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#6 slot 459374814 (+0) FAIL 6XQbP5 sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#7 slot 459374814 (+0) FAIL AmCW3x sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#8 slot 459374814 (+0) FAIL DAVojv sol -0.999 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#9 slot 459374814 (+0) Bhpewg sol -0.082 pair -144.36 tokens 5495041 | BuyExactIn | LanMV9
+#10 slot 459374814 (+0) FAIL 8aAiR6 sol -0.100 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#11 slot 459374815 (+1) 3zNWpe sol -0.001 pair 0.00 tokens 0 |  | BMofZX
+#12 slot 459374815 (+1) 5irsNq sol -1.652 pair -1847.79 tokens 57831790 | BuyExactIn | LanMV9
+#13 slot 459374815 (+1) agiGgE sol -0.011 pair -879.59 tokens 21315798 | BuyExactIn | LanMV9
+#14 slot 459374815 (+1) FAIL JAL4ec sol -0.150 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#15 slot 459374815 (+1) FAIL NigGaw sol -0.100 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#16 slot 459374815 (+1) FAIL CXo65m sol -0.005 pair 0.00 tokens 0 | BuyExactIn | LanMV9
+#17 slot 459374815 (+1) 3zNWpe sol -0.002 pair 0.00 tokens 0 |  | 
+#18 slot 459374815 (+1) FAIL CuM4Vh sol -0.100 pair 0.00 tokens 0 | Route,Swap,BuyExactIn | JUP6Lk,LanMV9,CAMMCz
+#19 slot 459374815 (+1) RAYpQb sol -0.199 pair 0.00 tokens 0 | MigrateToCpswap,InitializeWithPermission,LockCpLiquidity,SetAuthority | LanMV9,CPMMoo,LockrW,metaqb
+#20 slot 459374815 (+1) HvFdDW sol -0.002 pair 0.00 tokens 0 |  | G2E4eo
+#21 slot 459374815 (+1) FAIL 3zNWpe sol -0.000 pair 0.00 tokens 0 |  | BMofZX
+#22 slot 459374815 (+1) FAIL 3zNWpe sol -0.000 pair 0.00 tokens 0 |  | BMofZX
+#23 slot 459374815 (+1) FAIL 3zNWpe sol -0.000 pair 0.00 tokens 0 |  | BMofZX
+#24 slot 459374816 (+2) FAIL QxickY sol -0.700 pair 0.00 tokens 0 | BuyExactIn | LanMV9
