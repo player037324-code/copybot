@@ -208,20 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:21:07.321] launch [beta] $TAKID (Trump Account Kid) GQzN4wZ6QM1mj7UgSi6R7JwfH5zWmQvEjRdtZsS22WLa quote 6s2umN platform 4E876q token2022 slot 459377294
-[2026-10-20 21:21:07.321]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
-[2026-10-20 21:21:08.093] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 21:21:11.031] launch [beta] $STIMMY (STIMMY) 6Qoj1XmEdqzRaPsTupB6HAtT9mbb2MH96wW3ch4GW6dv quote 6s2umN platform 6BwHHD token2022 slot 459377311
-[2026-10-20 21:21:11.032]   not a target (or target already taken), ignoring
-[2026-10-20 21:21:24.825] launch [beta] $SIGIRL (Super Intelligence Girl) 3swL5YqA4EsvTcvGJwEAveJBxZoQBodut3FGyLst5j2V quote 6s2umN platform 4E876q token2022 slot 459377375
-[2026-10-20 21:21:24.825]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
-[2026-10-20 21:21:32.206] launch [beta] $YUGE (IT'S YUGE) HUo5FnjDGjFCQMLj5ZUSFhP76wC4CqWH5bWv1whj1xr quote 6s2umN platform 6BwHHD token2022 slot 459377408
-[2026-10-20 21:21:32.206]   not a target (or target already taken), ignoring
-[2026-10-20 21:21:33.524] launch [beta] $TRUMPFOLIO (Trumpfolio) MquFQsNALEqorGu1mFbjanXWpUAhrmMfjmSsZwJbdMD quote 6s2umN platform 6BwHHD token2022 slot 459377414
-[2026-10-20 21:21:33.524]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:11.753] launch [beta] $TI (Trump Inu) 3jMxHnpKB1qkFHnBtMDE1mtk23jng54ckmQpxR39MWcs quote 6s2umN platform 6BwHHD token2022 slot 459377592
-[2026-10-20 21:22:11.753]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:14.454] launch [beta] $AMERICAN (AMERICAN) FLDtEjCKULqGTMGGJRfYhJzBQxer2W3hUPhnvYs7PcbG quote 6s2umN platform 6BwHHD token2022 slot 459377603
 [2026-10-20 21:22:14.455]   not a target (or target already taken), ignoring
 [2026-10-20 21:22:45.862] launch [beta] $POTUS (Pepe Of The United States) DTeuSHdgd1HnKmemwwko499nr3PmgoLvSPLBZSt6CnZ7 quote 6s2umN platform 6BwHHD token2022 slot 459377748
 [2026-10-20 21:22:45.862]   not a target (or target already taken), ignoring
@@ -248,6 +234,20 @@
 [2026-10-20 21:23:06.875] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 21:23:06.982] feed beta connected
 [2026-10-20 21:23:07.001] feed mainnet connected
+[2026-10-20 21:23:11.286] launch [beta] $Coke (Diet Coke) 9aCtG75eVWpEyG86LumumLoCRGRTd1mZnt5QBAFgWxCL quote 6s2umN platform 6BwHHD token2022 slot 459377865
+[2026-10-20 21:23:11.286]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:22.426] launch [beta] $TRUMP3 (Official Trump 3) GB9MT1tGmmn5jhuDHkobopMefJk4oBv8fZcBjMJQTPwN quote 6s2umN platform 6BwHHD token2022 slot 459377917
+[2026-10-20 21:23:22.426]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:23.280] launch [beta] $STIMMY (STIMMY) B9ETTKHySRrPVcDjTiAZ6eQ7gxvPb5zsPKNTkT72ksHc quote 6s2umN platform 6BwHHD token2022 slot 459377922
+[2026-10-20 21:23:23.280]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:40.327] launch [beta] $DIVIDEND (The Trump Dividend) 7M92uuF7Uev3XjyP9odjdYD9ggLyCBFvXV5Fp9hCSTNK quote 6s2umN platform 6BwHHD token2022 slot 459378001
+[2026-10-20 21:23:40.327]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:43.466] launch [beta] $MELANIA (Melania Meme) 7PWYpRhDGTfRsm6eKnDSfEQGzabJEASKyToKZy4azuNb quote 6s2umN platform 6BwHHD token2022 slot 459378015
+[2026-10-20 21:23:43.466]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:49.201] launch [beta] $AMERICOIN (AMERICOIN) GpZFrEZLnHTQH2N9PotarLCzdeAU8Saqn8aZpsUQeR2S quote 6s2umN platform 6BwHHD token2022 slot 459378041
+[2026-10-20 21:23:49.202]   not a target (or target already taken), ignoring
+[2026-10-20 21:23:54.615] launch [beta] $Wig (Trump wig) 8RjB5c2FJWuExQkgMTcwKU6HgLHAoQKKKrgAgMi1Y6Xk quote 6s2umN platform 6BwHHD token2022 slot 459378067
+[2026-10-20 21:23:54.615]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
