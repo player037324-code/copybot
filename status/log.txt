@@ -208,28 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:27:35.446] launch [mainnet] $TRUMP3 (Official Trump 3) DGEHx73kR1LNSWELyPnu1e6WYyePZhZesUdXsm9T5nxB quote 6s2umN platform 4E876q token2022 slot 459379089
-[2026-10-20 21:27:35.446]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
-[2026-10-20 21:27:45.941] launch [beta] $TRUMP3 (Official Trump 3) JAac7vuPw3xu9QDMhHXw6LfLp3Unx5Q5jG3VAxiLWDkZ quote 6s2umN platform 6BwHHD token2022 slot 459379137
-[2026-10-20 21:27:45.941]   not a target (or target already taken), ignoring
-[2026-10-20 21:27:59.636] launch [beta] $TRUMP3 (Official Trump 3) 3Fq4R84NjV5GMhC2GmVE9zf3JPm9feczgM9uAjAzRS5e quote 6s2umN platform 6BwHHD token2022 slot 459379200
-[2026-10-20 21:27:59.636]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:09.037] launch [beta] $401k (buy and retire) FbP63SvmXGXAxUZXLqLyi3DkFR6pXUC5EFbZpXaHSTNK quote 6s2umN platform 6BwHHD token2022 slot 459379243
-[2026-10-20 21:28:09.037]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:21.574] launch [beta] $YUGE (Yuge) DzaeyhUQEeDRSx3o5s7DbMBtBw9HAxgxtVu2xLUh6uae quote 6s2umN platform 6BwHHD token2022 slot 459379299
-[2026-10-20 21:28:21.574]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:22.038] launch [beta] $530A (buy and retire) J5wPcdQNxtgPp8RJmdf4MrAE9uq3rUsY2D5kJukkZPT quote 6s2umN platform 6BwHHD token2022 slot 459379301
-[2026-10-20 21:28:22.038]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:24.779] launch [beta] $DJT (DJT) i3hLr9ZfS7pkofq4MaKPBb1m24CacfeEKgWMai1hG26 quote 6s2umN platform 6BwHHD token2022 slot 459379314
-[2026-10-20 21:28:24.779]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:39.461] launch [beta] $SÍ (Súper Inteligente) CnT1YZJx3gKRwSYPKMaDPKuv2iFWaurWK1BZLy5Qwd9Q quote 6s2umN platform 6BwHHD token2022 slot 459379380
-[2026-10-20 21:28:39.461]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:44.287] launch [beta] $TSMI (Truth Social Memecoin Index) Aj6CBZitUqY7bTkQTdZBfa5jAPrCnWuHLkzth6WLS6yM quote 6s2umN platform 6BwHHD token2022 slot 459379402
-[2026-10-20 21:28:44.287]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:54.521] launch [beta] $TI (Trump Intelligence) EzNFDvaSkdieG1pqg5CCa9tHMTYgWnaXRxjQtR2VAG5B quote 6s2umN platform 6BwHHD token2022 slot 459379450
-[2026-10-20 21:28:54.521]   not a target (or target already taken), ignoring
-[2026-10-20 21:28:55.636] launch [beta] $BIGLY (Bigly) 3ea7PhHBaYETYbHz98b777PcAJDy7e79ZeWN1dKFRRf5 quote 6s2umN platform 6BwHHD token2022 slot 459379456
-[2026-10-20 21:28:55.636]   not a target (or target already taken), ignoring
 [2026-10-20 21:29:09.401] launch [beta] $POTUS (President of the United States) 3ruh1w1W6cY5D5rJp76tPF6MLbAfV1Vx3Wvj4Xen9z2W quote 6s2umN platform 6BwHHD token2022 slot 459379522
 [2026-10-20 21:29:09.401]   not a target (or target already taken), ignoring
 [2026-10-20 21:29:12.666] launch [beta] $TSMI (Truth Social Memecoin Index ETF) DQWAYWhMXJQsbiYHDpPdZ3RNYBAMRaYELFE5FJb44pvU quote 6s2umN platform 6BwHHD token2022 slot 459379536
@@ -248,6 +226,28 @@
 [2026-10-20 21:29:54.540]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
 [2026-10-20 21:30:00.645] launch [mainnet] $FIRED (You're Fired) 5YdAwi3hPwLRu3pXuLn23YXvG71m8K7XBrqssicx1GKL quote 6s2umN platform 6BwHHD token2022 slot 459379755
 [2026-10-20 21:30:00.645]   not a target (or target already taken), ignoring
+[2026-10-20 21:30:07.221] alive | pool 6s2umN | $TRUMP done
+[2026-10-20 21:30:14.133] launch [beta] $FRIES (Fries in the Bag) Afr39xjc1BoaxX7st71pzYWskME5oPijVnMZMN56eucC quote 6s2umN platform 6BwHHD token2022 slot 459379817
+[2026-10-20 21:30:14.134]   not a target (or target already taken), ignoring
+[2026-10-20 21:30:28.601] launch [beta] $GARBAGE (Garbage Truck) NBrSasHrprFn6jvmXjquM1HajCtbPLN8fBAoJjPcPhZ quote 6s2umN platform 6BwHHD token2022 slot 459379884
+[2026-10-20 21:30:28.602]   not a target (or target already taken), ignoring
+[2026-10-20 21:30:39.019] launch [beta] $𝕏 (SpaceXTeslaxAIBoringCompanyX) GkqLFtzrmfZzDZo6DKHYrbmmBrgNWMzrtgS32qZJdX2L quote 6s2umN platform 6BwHHD token2022 slot 459379932
+[2026-10-20 21:30:39.019]   not a target (or target already taken), ignoring
+[2026-10-20 21:30:41.735] launch [beta] $FLAGHUG (Flag Hug) EgYJJkZKG8nW1Aa3MEJzZ4q1YGqfkX4WiBEoXNecwRW5 quote 6s2umN platform 6BwHHD token2022 slot 459379944
+[2026-10-20 21:30:41.735]   not a target (or target already taken), ignoring
+[2026-10-20 21:31:05.249] === sniper starting ===
+[2026-10-20 21:31:05.254] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 21:31:05.256] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 21:31:05.256] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-20 21:31:05.257] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-20 21:31:05.303] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 21:31:06.778] warm build time (median of 10): total 22.27ms = accounts 7.83 + compile/sign 14.02 + serialize 0.17
+[2026-10-20 21:31:06.781] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:31:06.781] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 21:31:06.890] feed beta connected
+[2026-10-20 21:31:06.928] feed mainnet connected
+[2026-10-20 21:31:07.405] launch [beta] $SALUTE (The Balcony Salute) EhJfnwJ3oa21Yj9TtapBfnK48WaxWSSGjJgQcsJ3BJPF quote 6s2umN platform 6BwHHD token2022 slot 459380064
+[2026-10-20 21:31:07.418]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -258,6 +258,7 @@
 [2026-10-20 21:16:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:23:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:25:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-20 21:31:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
