@@ -218,6 +218,8 @@
 [2026-10-20 20:43:06.297] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 20:43:06.400] feed beta connected
 [2026-10-20 20:43:06.429] feed mainnet connected
+[2026-10-20 20:44:00.212] launch [beta] $SAMA (Startup Annihilation & Merger AG) HC2zr132Gt5JWKqVssCDVAKaminu66DE3dUCygxiLtZq quote 7V1evj platform 4E876q slot 459367004
+[2026-10-20 20:44:00.212]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
