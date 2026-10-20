@@ -77,6 +77,7 @@ if [ -f control/cmd.txt ]; then
           snipe-start) pm2 describe sniper >/dev/null 2>&1 && pm2 restart sniper || pm2 start src/sniper.js --name sniper; pm2 save >/dev/null; sleep 4; pm2 logs sniper --nostream --lines 15 --raw 2>&1 | tail -15 ;;
           snipe-stop) pm2 stop sniper; pm2 save >/dev/null ;;
           snipe-fund\ *) a=${c#snipe-fund }; [[ "$a" =~ ^[0-9.]+(\ [1-9A-HJ-NP-Za-km-z]{32,44})?(\ --go)?$ ]] && timeout 90 node scripts/snipefund.js $a 2>&1 ;;
+          stonkpools*) a=${c#stonkpools}; a=${a# }; [[ "$a" =~ ^[0-9]*$ ]] && timeout 100 node scripts/stonkpools.js $a 2>&1 ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
           snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;
