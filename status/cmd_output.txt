@@ -1,42 +1,3 @@
-  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
-  Program 11111111111111111111111111111111 invoke [1]
-  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
-  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: GetAccountDataSize
-  Program 11111111111111111111111111111111 invoke [2]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeImmutableOwner
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeAccount3
-  Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]
-  Program log: Instruction: Route
-  Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [2]
-  Program log: Instruction: Swap
-  Program log: Instruction: TransferChecked
-  Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]
-  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
-  Program 11111111111111111111111111111111 invoke [1]
-> race 7Nv7ecyag3Dj7HvddWYVkNHZvP6trrwVY4YT1BPgpump
-1313 successful txs on this coin. Lunar's buy is #964. Showing from #961:
-slot 458568953  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568954  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568954  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 jito  fee 0.00001  progs 1111,HiP3
-slot 458568955 (+0)  LUNAR  sol   -1.014  prio 0.00000 SOL (0uL x 0)  tip 0.0140 other:8GV86M  fee 0.00004  progs FLAS,1111
-slot 458568955 (+0)  Hc1fX  sol    0.055  prio 0.00000 SOL (0uL x 0)  tip 0.0000 other:5L2QKq  fee 0.00001  progs FLAS,1111
-slot 458568955 (+0)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs HiP3
-slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568956 (+1)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568956 (+1)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs HiP3
-slot 458568957 (+2)  AV4Ps  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000   fee 0.00001  progs 1111,6iMV
-slot 458568957 (+2)  Lucky  sol   -0.000  prio 0.00000 SOL (0uL x 0)  tip 0.0000 jito  fee 0.00001  progs 1111,HiP3
-=== cmd 27 @ 2026-10-18T20:38:02Z ===
-> stop
-[PM2] Applying action stopProcessId on app [copybot](ids: [ 0 ])
-[PM2] [copybot](0) ✓
 ┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
 │ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
 ├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
@@ -398,3 +359,42 @@ created 2026-10-16T15:26:05.000Z | scanned 909 txs
 +95.3m  HvFdDW []
 +124.5m  FIRST STONKFUN LAUNCH: $MUSK4
 => tradeable -> pairing live: 79.0 min
+=== cmd 44 @ 2026-10-20T20:01:00Z ===
+> alerts-log
+[TAILING] Tailing last 40 lines for [alerts] process (change the value with --lines option)
+/root/.pm2/logs/alerts-error.log last 40 lines:
+/root/.pm2/logs/alerts-out.log last 40 lines:
+[2026-10-20 19:49:03] seeding known pools from the last 48h of StonkFun launches...
+[2026-10-20 19:51:03] known pools: 107
+[2026-10-20 19:51:03] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 19:51:03] feed stonkfun-launches connected
+[2026-10-20 19:51:03] feed creators connected
+[2026-10-20 19:55:05] known pools: 107
+[2026-10-20 19:55:05] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 19:55:05] feed stonkfun-launches connected
+[2026-10-20 19:55:05] feed creators connected
+[2026-10-20 19:57:04] known pools: 107
+[2026-10-20 19:57:04] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 19:57:05] feed stonkfun-launches connected
+[2026-10-20 19:57:05] feed creators connected
+[2026-10-20 19:59:05] known pools: 107
+[2026-10-20 19:59:05] tracking 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue for NOW TRADEABLE
+[2026-10-20 19:59:05] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
+[2026-10-20 19:59:05] feed stonkfun-launches connected
+[2026-10-20 19:59:05] feed creators connected
+[2026-10-20 19:59:45] 🚨 NOW TRADEABLE: $TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue just got its first deposit/swap. Buy it now for the snipe. Last two pairings went live 79-86 min after this, so around 21:18-21:25 UTC.
+
+> whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+owner program: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  type: mint
+decimals 6 supply 15873.639212 mintAuthority 5c6s8C5SHq7pDR6VcKcrhffCiFAtAXu1Zt2KgGNEiw2y freezeAuthority null
+name: Trump Index  symbol: $TRUMP3  uri: https://assets.diversifi.trade/token_metadata/TRUMP3/f3c4d821-6dd4-45f5-bf9a-df9b4c30b434.json  desc: TRUMP3 index token on DiversiFi.
+created 2026-10-20T19:10:08.000Z (0.8h ago) by H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd  ix: Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
+  same tx also touched mints: EPjFWdd5 6p6xgHyF WLFinEv6 DJTu7vi8
+activity: 30 txs total, latest 2026-10-20T20:00:33.000Z
+  holder 5wcSGFKi 15873.639212
+  holder Fc7iZJqd 0
+  holder JAL4ecPt 0
+  holder GXPFM2ca 0
+  holder 5c6s8C5S 0
+not tradeable on Jupiter yet (Jupiter 400: {"error":"The token 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is)
+StonkFun/LaunchLab launches paired to it (in latest 30 txs): 0
