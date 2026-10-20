@@ -1,18 +1,3 @@
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program 11111111111111111111111111111111 invoke [1]
-Program 11111111111111111111111111111111 success
-> clonetest 3gTwLTKuG8X1VEDL7LHAhfiP8zk58fVg8S5FWGXFAh8Lje3Acm31E9AQuT5xYWRHN2DDKsoPftS3aRbnRBVEHS1t
-Lunar buy: arSAePhmhBnrJ5wrYhbmzULdUAcwZHWrdRQb3n1eZsq 4.015 SOL tokens 13804389356323
-AMM ix: meteora-damm2 disc f8c69e91e17587c8 accts 14 datalen 24
-Lunar top-level programs: 111111,FLASHX,FLASHX,FLASHX,111111
-built in 54ms: {"amm":"meteora-damm2","minOut":"292211433","usesWsol":true} size 775B
-SIM: OK  CU 39869
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG invoke [1]
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
-Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
 Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
 Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success
 Program cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG success
@@ -398,3 +383,18 @@ activity: 9 txs total, latest 2026-10-20T19:44:00.000Z
   holder CzY9GYAG 0
 not tradeable on Jupiter yet (Jupiter 400: {"error":"The token 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is)
 StonkFun/LaunchLab launches paired to it (in latest 9 txs): 0
+=== cmd 40 @ 2026-10-20T19:49:02Z ===
+> alerts-start
+[PM2] Starting /root/copybot/src/alerts.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 723556   │ 0s     │ 0    │ online    │ 0%       │ 20.0mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 0.3% | ram usage: 29.4% | disk: ⇓ 0mb/s ⇑ 1.075mb/s
+[TAILING] Tailing last 15 lines for [alerts] process (change the value with --lines option)
+/root/.pm2/logs/alerts-error.log last 15 lines:
+/root/.pm2/logs/alerts-out.log last 15 lines:
+[2026-10-20 19:49:03] seeding known pools from the last 48h of StonkFun launches...
