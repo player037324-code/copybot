@@ -208,22 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:24:38.222]   not a target (or target already taken), ignoring
-[2026-10-20 21:24:47.867] launch [beta] $TRUMPLY (Trump Family Meme) 8DzKvPCLBxVRGJ85AHEnDi8tuRGeAxz6v4ZcvWkd7XoV quote 6s2umN platform 6BwHHD token2022 slot 459378311
-[2026-10-20 21:24:47.867]   not a target (or target already taken), ignoring
-[2026-10-20 21:24:48.358] launch [beta] $insider (insider) EZF2Zoree2HAYmhf6o4RhB26F2WzUzFh5bwDZ1a2PD2a quote 6s2umN platform 6BwHHD token2022 slot 459378313
-[2026-10-20 21:24:48.358]   not a target (or target already taken), ignoring
-[2026-10-20 21:25:05.463] === sniper starting ===
-[2026-10-20 21:25:05.469] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:25:05.469] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:25:05.474] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 21:25:05.475] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 21:25:05.532] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 21:25:07.164] warm build time (median of 10): total 24.72ms = accounts 4.55 + compile/sign 14.59 + serialize 0.22
-[2026-10-20 21:25:07.172] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:25:07.173] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:25:07.306] feed beta connected
-[2026-10-20 21:25:07.322] feed mainnet connected
 [2026-10-20 21:25:08.236] launch [beta] $Aliens (Illegal Alien) 4LVdiGjNApkMMoTPtoerj4AmriNfwoySyWjyEQW5dJ6t quote 6s2umN platform 6BwHHD token2022 slot 459378408
 [2026-10-20 21:25:08.236]   not a target (or target already taken), ignoring
 [2026-10-20 21:25:19.430] launch [beta] $TI (Trump Intelligence) EsxzvAned9J5gu5N4TbvaFHh8ZwNdBGKQcnrMqGMm7at quote 6s2umN platform 6BwHHD token2022 slot 459378461
@@ -248,6 +232,22 @@
 [2026-10-20 21:27:45.941]   not a target (or target already taken), ignoring
 [2026-10-20 21:27:59.636] launch [beta] $TRUMP3 (Official Trump 3) 3Fq4R84NjV5GMhC2GmVE9zf3JPm9feczgM9uAjAzRS5e quote 6s2umN platform 6BwHHD token2022 slot 459379200
 [2026-10-20 21:27:59.636]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:09.037] launch [beta] $401k (buy and retire) FbP63SvmXGXAxUZXLqLyi3DkFR6pXUC5EFbZpXaHSTNK quote 6s2umN platform 6BwHHD token2022 slot 459379243
+[2026-10-20 21:28:09.037]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:21.574] launch [beta] $YUGE (Yuge) DzaeyhUQEeDRSx3o5s7DbMBtBw9HAxgxtVu2xLUh6uae quote 6s2umN platform 6BwHHD token2022 slot 459379299
+[2026-10-20 21:28:21.574]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:22.038] launch [beta] $530A (buy and retire) J5wPcdQNxtgPp8RJmdf4MrAE9uq3rUsY2D5kJukkZPT quote 6s2umN platform 6BwHHD token2022 slot 459379301
+[2026-10-20 21:28:22.038]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:24.779] launch [beta] $DJT (DJT) i3hLr9ZfS7pkofq4MaKPBb1m24CacfeEKgWMai1hG26 quote 6s2umN platform 6BwHHD token2022 slot 459379314
+[2026-10-20 21:28:24.779]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:39.461] launch [beta] $SÍ (Súper Inteligente) CnT1YZJx3gKRwSYPKMaDPKuv2iFWaurWK1BZLy5Qwd9Q quote 6s2umN platform 6BwHHD token2022 slot 459379380
+[2026-10-20 21:28:39.461]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:44.287] launch [beta] $TSMI (Truth Social Memecoin Index) Aj6CBZitUqY7bTkQTdZBfa5jAPrCnWuHLkzth6WLS6yM quote 6s2umN platform 6BwHHD token2022 slot 459379402
+[2026-10-20 21:28:44.287]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:54.521] launch [beta] $TI (Trump Intelligence) EzNFDvaSkdieG1pqg5CCa9tHMTYgWnaXRxjQtR2VAG5B quote 6s2umN platform 6BwHHD token2022 slot 459379450
+[2026-10-20 21:28:54.521]   not a target (or target already taken), ignoring
+[2026-10-20 21:28:55.636] launch [beta] $BIGLY (Bigly) 3ea7PhHBaYETYbHz98b777PcAJDy7e79ZeWN1dKFRRf5 quote 6s2umN platform 6BwHHD token2022 slot 459379456
+[2026-10-20 21:28:55.636]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
