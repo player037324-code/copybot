@@ -99,21 +99,30 @@ export function parseLaunch(tx) {
 }
 
 // ---------- build our buy (pure local, no RPC) ----------
+// per-pool things that never change between launches are cached (my quote ATA, platform fee vault)
+const cache = new Map();
+const cached = (k, f) => { if (!cache.has(k)) cache.set(k, f()); return cache.get(k); };
 export function buildBuyIxs(L, wallet, amountRaw, minOutRaw) {
   const me = wallet.publicKey;
-  const base = new PublicKey(L.base); const quote = new PublicKey(L.quote);
-  const baseProg = new PublicKey(L.baseProg); const quoteProg = new PublicKey(L.quoteProg);
-  const pool = pda([Buffer.from('pool'), base.toBuffer(), quote.toBuffer()]);
-  const myBase = ata(me, base, baseProg); const myQuote = ata(me, quote, quoteProg);
+  const base = new PublicKey(L.base); const quote = cached(`q${L.quote}`, () => new PublicKey(L.quote));
+  const baseProg = L.baseProg === TOKEN22.toBase58() ? TOKEN22 : new PublicKey(L.baseProg);
+  const quoteProg = cached(`qp${L.quoteProg}`, () => new PublicKey(L.quoteProg));
+  const platform = cached(`p${L.platform}`, () => new PublicKey(L.platform));
+  // pool + vaults come straight from the launch tx (verified identical to the derived PDAs); derive only if missing
+  const pool = L.pool ? new PublicKey(L.pool) : pda([Buffer.from('pool'), base.toBuffer(), quote.toBuffer()]);
+  const baseVault = L.baseVault ? new PublicKey(L.baseVault) : pda([Buffer.from('pool_vault'), pool.toBuffer(), base.toBuffer()]);
+  const quoteVault = L.quoteVault ? new PublicKey(L.quoteVault) : pda([Buffer.from('pool_vault'), pool.toBuffer(), quote.toBuffer()]);
+  const myBase = ata(me, base, baseProg);
+  const myQuote = cached(`mq${me.toBase58()}${L.quote}`, () => ata(me, quote, quoteProg));
+  const platformFee = cached(`pf${L.platform}${L.quote}`, () => pda([platform.toBuffer(), quote.toBuffer()]));
+  const creatorFee = pda([new PublicKey(L.creator).toBuffer(), quote.toBuffer()]);
   const keys = [
-    [me, true, true], [AUTHORITY, false, false], [GLOBAL_CONFIG, false, false], [new PublicKey(L.platform), false, false],
+    [me, true, true], [AUTHORITY, false, false], [GLOBAL_CONFIG, false, false], [platform, false, false],
     [pool, false, true], [myBase, false, true], [myQuote, false, true],
-    [pda([Buffer.from('pool_vault'), pool.toBuffer(), base.toBuffer()]), false, true],
-    [pda([Buffer.from('pool_vault'), pool.toBuffer(), quote.toBuffer()]), false, true],
+    [baseVault, false, true], [quoteVault, false, true],
     [base, false, false], [quote, false, false], [baseProg, false, false], [quoteProg, false, false],
     [EVENT_AUTH, false, false], [LL, false, false], [SystemProgram.programId, false, false],
-    [pda([new PublicKey(L.platform).toBuffer(), quote.toBuffer()]), false, true],
-    [pda([new PublicKey(L.creator).toBuffer(), quote.toBuffer()]), false, true],
+    [platformFee, false, true], [creatorFee, false, true],
   ].map(([pubkey, isSigner, isWritable]) => ({ pubkey, isSigner, isWritable }));
   const data = Buffer.alloc(32);
   BUY_EXACT_IN.copy(data, 0);
@@ -198,8 +207,14 @@ async function main() {
     const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
     Buffer.from(buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize()).toString('base64');
   }
-  { const t = performance.now(); const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
-    buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize(); log(`warm build time: ${(performance.now() - t).toFixed(2)}ms`); }
+  { const times = [];
+    for (let i = 0; i < 10; i++) {
+      const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58(), pool: Keypair.generate().publicKey.toBase58(), baseVault: Keypair.generate().publicKey.toBase58(), quoteVault: Keypair.generate().publicKey.toBase58() };
+      const a = performance.now(); const ixs = buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw); const b = performance.now(); const tx = buildTx(wallet, ixs, bh.blockhash); const c = performance.now(); Buffer.from(tx.serialize()).toString('base64'); const d = performance.now();
+      times.push([b - a, c - b, d - c, d - a]);
+    }
+    const med = (k) => times.map((x) => x[k]).sort((x, y) => x - y)[5].toFixed(2);
+    log(`warm build time (median of 10): total ${med(3)}ms = accounts ${med(0)} + compile/sign ${med(1)} + serialize ${med(2)}`); }
   log(`send paths: Helius Sender x2 + Helius RPC${S.nozomiKey ? ' + Nozomi' : ''}${S.astraKey ? ' + Astralane' : ''} + Jito ${S.jitoUrls.map((u) => u.split('//')[1].split('.')[0]).join(',')}`);
   const extra = (S.nozomiKey ? S.nozomiTipSol : 0) + (S.astraKey ? S.astraTipSol : 0);
   log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender ${S.tipSol} + Nozomi/Astralane ${extra} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol + extra).toFixed(4)} SOL per snipe (tips only paid if it lands)`);
