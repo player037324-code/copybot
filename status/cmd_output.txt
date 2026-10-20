@@ -1,26 +1,3 @@
-LAUNCH slot 458961017 (+3654 slots, +797s) $RCL 3RxjW29mi55UBM6FXzxfLeM932ReywSfAzD2yeyiodt9 by AkKHu7 [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458961068 (+3705 slots, +807s) $RCL 4KqpJe8ZyrBmhiyJYn5ycCuEW3n1xnruMK3fAhriKvEL by B29o2o [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458961700 (+4337 slots, +945s) $RCL H8zJh3NvYsdUrQbY9eJbQQer7fZQWRBPmyYiK37TDiFw by B29o2o [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458974865 (+17502 slots, +3815s) $undefined 5qet8DK4jKhNRcS2jZpVrAYfmewnKKyN8JcxwSAsZErD by ARymmK [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3]
-LAUNCH slot 458976624 (+19261 slots, +4197s) $RCL GqtCkVcLFYVxHBVuAZTaitHFWUFhGcEMGT14zeD1rR2F by FZjG6m [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977036 (+19673 slots, +4287s) $RCL GvwaLyKMgSKqq3s1T4pSq5LCTveDg3qE4pmBDAwH4Ff7 by 9fKiYz [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977198 (+19835 slots, +4323s) $RCL 3gzEJ9EUmpekeRy6FEEQjKermspdJgZ8v2uZ1KGKQnTw by 9fKiYz [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977448 (+20085 slots, +4377s) $RCL hSWumk3xY8prJGudZ1hXyJFM4e3GkD6zffp7dEPDpZb by AkKHu7 [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977449 (+20086 slots, +4378s) $undefined 5RJrsjeBHHgjCU6oJuwfkaXY8PZ5b7NApMUK5mJzBsiC by ARymmK [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3]
-LAUNCH slot 458977470 (+20107 slots, +4383s) $MPN 2YUiXcfiCSYdcLsEiisQ5yejbaiqM7VoUeyUNW6TVh5E by vPczFp [InitializeCustomizablePool,InitializeMintCloseAuthority,InitializeMint2,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977666 (+20303 slots, +4426s) $undefined EHGLtaathYQFv9d8jZZqWmarqTs59yLP25VygNamCkYS by ARymmK [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3]
-LAUNCH slot 458977760 (+20397 slots, +4446s) $MPN BYwrN7Z1k8gUrBiTL7ah2fYzyfqLtruDyp7rkMoBt1ZJ by AkQ4bc [InitializeMintCloseAuthority,InitializeMint2,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977807 (+20444 slots, +4457s) $RCL 2vdMuqjPnj2GyrMT8WShqsXJi8zW8iFh6X63D4GGbTRw by 2DxoMG [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977895 (+20532 slots, +4476s) $MPN ECNjti91NLCN1oXKcLVPkUrfNXkoExVMbeG9sFb9oRAU by 7WUbyv [InitializeMintCloseAuthority,InitializeMint2,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458977947 (+20584 slots, +4487s) $RCL 53V2ezkeE7876eSNRvxizS5AfDV8cm8QcGQsNMvDsFvV by AkKHu7 [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458978086 (+20723 slots, +4519s) $RCL EzBg2VkxgjS5ge7iZXJPSmQX6zNpR4HTjTgANLvZaAzw by AkKHu7 [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458978190 (+20827 slots, +4543s) $MPN NMXUtLZA8absp5hyTi64xfNrefeCioCb8mr3ikSLMt2 by SHAK3H [InitializeMintCloseAuthority,InitializeMint2,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458978335 (+20972 slots, +4575s) $MPN BX4vFA5ABBhNWa9BGHJzuaFABg78JNkCeagJcTjXiLwp by 31E3Us [InitializeMintCloseAuthority,InitializeMint2,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-LAUNCH slot 458978494 (+21131 slots, +4611s) $undefined 2YHh9piqaRWYRnzsysSmSTYjZGa1j2vYBic8GG33Z7pd by MWtiz3 [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3]
-LAUNCH slot 458978693 (+21330 slots, +4654s) $RCL 3FhnAZKmR11XLEsPWKAVuUA48V5MvCvMqcHujPbfzknE by 9fKiYz [InitializeMintCloseAuthority,InitializeMint2,InitializeImmutableOwner,InitializeAccount3,Program log: TokenMetadataInstruction: Initialize]
-programs seen: Tokenkeg:387 ComputeB:329 11111111:301 CAMMCzo5:273 ATokenGP:248 3vyr9DRf:145 JUP6LkbZ:121 TokenzQd:112
-launch txs by program: {"3vyr9DRfMZb2KvUQdnps7YG3PY38XdguLBQaJ2DFkSxk":1,"CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK":16,"JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4+cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG+CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK":1,"cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG":4}
-no $ALTCOIN in first 450
 === cmd 32 @ 2026-10-20T19:17:02Z ===
 > launchinfo DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
 token Alt-coin ($ALTCOIN) DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
@@ -398,3 +375,26 @@ Nozomi: accepted in 28ms, LANDED OK in slot +2 (~563ms) tip 0.001 SOL
 Astralane: accepted in 21ms, LANDED OK in slot +2 (~553ms) tip 0.001 SOL
 Helius Sender: accepted in 21ms, LANDED OK in slot +1 (~295ms) tip 0.001 SOL
 Jito NY: accepted in 34ms, LANDED OK in slot +1 (~565ms) tip 0.0001 SOL
+=== cmd 49 @ 2026-10-20T20:39:02Z ===
+> set SNIPE_DRY_RUN=true
+added SNIPE_DRY_RUN=true
+> set SNIPE_QUOTE_MINT=7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+added SNIPE_QUOTE_MINT=7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+> set SNIPE_TARGETS=*:1
+added SNIPE_TARGETS=*:1
+> snipe-reset
+snipe state cleared
+> snipe-start
+[PM2] Starting /root/copybot/src/sniper.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 735362   │ 58s    │ 8    │ online    │ 0%       │ 89.2mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 735625   │ 0s     │ 0    │ online    │ 0%       │ 22.5mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 2% | ram usage: 32.8% | enp1s0: ⇓ 0.065mb/s ⇑ 0.002mb/s | disk: ⇓ 0mb/s ⇑ 1.176mb/s
+[TAILING] Tailing last 15 lines for [sniper] process (change the value with --lines option)
+/root/.pm2/logs/sniper-out.log last 15 lines:
+/root/.pm2/logs/sniper-error.log last 15 lines:

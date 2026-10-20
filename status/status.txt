@@ -1,6 +1,6 @@
-updated: 2026-10-20T20:38:04Z
+updated: 2026-10-20T20:39:07Z
 deployed: 47563a20d64f34f6429999f63691748586ed6e5a
-pm2: stopped uptime=2881m restarts=14
+pm2: stopped uptime=2882m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -30,6 +30,9 @@ NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
 NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
+SNIPE_DRY_RUN=true
+SNIPE_QUOTE_MINT=7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+SNIPE_TARGETS=*:1
 
 --- stats ---
 Buys: 3   Sells: 0   Open: 1
@@ -43,7 +46,7 @@ Last 10 trades:
 10-18 20:24:47  BUY  7Nv7ecya  4.006 SOL  @ $3152.6K mcap  (+4 slots, 1105ms)
 
 --- sniper ---
-sniper pm2: not started
+sniper pm2: online
 
 --- alerts ---
 alerts pm2: online
