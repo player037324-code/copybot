@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:37:13.150] launch [beta] $STEAK (I Like Steak) 2moVehN1xGeJK8VcuhbmL1SgabtMt86GteEwQXLY79sL quote 6s2umN platform 6BwHHD token2022 slot 459381742
-[2026-10-20 21:37:13.150]   not a target (or target already taken), ignoring
-[2026-10-20 21:37:21.244] launch [beta] $FAKEOUT (The Trump Fakeout) FznDjDanfnjy5cdA61AeM88oQjbpFMFqB756ftugrSdi quote 6s2umN platform 6BwHHD token2022 slot 459381782
-[2026-10-20 21:37:21.245]   not a target (or target already taken), ignoring
 [2026-10-20 21:37:21.246] launch [beta] $FRAUD (Fraud Cat) 5KPWbEkbjRbTnU6qPSPqWToZigxrqdGvHRSEMHCYSTNK quote 6s2umN platform 6BwHHD token2022 slot 459381782
 [2026-10-20 21:37:21.247]   not a target (or target already taken), ignoring
 [2026-10-20 21:37:23.215] launch [beta] $BEAST (The Beast) HkVpdkDVt3oWh9MeKvRYoao4oAvvxdou1aHXPH6r2deG quote 6s2umN platform 6BwHHD token2022 slot 459381791
@@ -248,6 +244,10 @@
 [2026-10-20 21:38:58.641]   not a target (or target already taken), ignoring
 [2026-10-20 21:38:59.523] launch [beta] $ALC (Quality Learing Center) SRcAiBcJH3rxXmmAdgnwMM585uifak21kUMwd2dkSwH quote 6s2umN platform 6BwHHD token2022 slot 459382239
 [2026-10-20 21:38:59.523]   not a target (or target already taken), ignoring
+[2026-10-20 21:39:13.071] launch [beta] $TRUMP3 (BIG 3) 2ThRwsBKa6D9ihMgknVWo8iPTesRGuhWBs73hda128Dm quote 6s2umN platform 6BwHHD token2022 slot 459382303
+[2026-10-20 21:39:13.072]   not a target (or target already taken), ignoring
+[2026-10-20 21:39:46.810] launch [beta] $POTUS (fmnl) GvRByJE9LkbnyjKWut5cqzwRKiqjbA6XXeS6uWyRvHiM quote 6s2umN platform 6BwHHD token2022 slot 459382458
+[2026-10-20 21:39:46.810]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
