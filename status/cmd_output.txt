@@ -1,23 +1,3 @@
-=== cmd 32 @ 2026-10-20T19:17:02Z ===
-> launchinfo DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
-token Alt-coin ($ALTCOIN) DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
-created 2026-10-19T21:29:16.000Z slot 458982526  (25163 slots / 91.5 min after pair 7V1evj was created)
-#0 slot 458982526 (+0) B9Zbs2 sol -0.344 pair -1200.95 tokens 299704267 | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,BuyExactIn | LanMV9
-   creation programs: LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
-   creation logs: Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [1] | Instruction: InitializeWithToken2022 | MetadataPointerInstruction::Initialize | Instruction: InitializeMint2 | TokenMetadataInstruction: Initialize | Instruction: InitializeAccount3 | Instruction: MintTo | Instruction: SetAuthority | Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1] | CreateIdempotent | Instruction: GetAccountDataSize | Initialize the associated token account | Instruction: InitializeImmutableOwner | Instruction: InitializeAccount3
-#1 slot 458982527 (+1) agiGgE sol -0.410 pair -1412.38 tokens 189988765 | BuyExactIn | LanMV9
-#2 slot 458982527 (+1) FAIL B9Zbs2 sol -0.320 pair 0.00 tokens 0 | InitializeWithToken2022 | LanMV9
-#3 slot 458982527 (+1) FAIL B9Zbs2 sol -0.320 pair 0.00 tokens 0 | InitializeWithToken2022 | LanMV9
-#4 slot 458982527 (+1) FAIL B9Zbs2 sol -0.320 pair 0.00 tokens 0 | InitializeWithToken2022 | LanMV9
-#5 slot 458982527 (+1) FAIL B9Zbs2 sol -0.320 pair 0.00 tokens 0 | InitializeWithToken2022 | LanMV9
-#6 slot 458982527 (+1) 3zNWpe sol -0.001 pair 0.00 tokens 0 |  | BMofZX
-#7 slot 458982527 (+1) NigGaw sol -0.502 pair -725.40 tokens 64956140 | BuyExactIn | LanMV9
-#8 slot 458982527 (+1) FAIL B9Zbs2 sol -0.320 pair 0.00 tokens 0 | InitializeWithToken2022 | LanMV9
-#9 slot 458982527 (+1) 5irsNq sol -15.303 pair 73.99 tokens 92958376 | Route,Swap,BuyExactIn | JUP6Lk,LanMV9,CAMMCz
-#10 slot 458982527 (+1) chris1 sol -0.242 pair -575.84 tokens 28415131 | BuyExactIn | LanMV9
-#11 slot 458982527 (+1) Bhpewg sol -0.863 pair 1.47 tokens 3561391 | SwapV2,BuyExactIn | CAMMCz,LanMV9
-#12 slot 458982527 (+1) 3HZKaV sol -12.316 pair 0.00 tokens 47684357 | SwapV2,BuyExactIn | CAMMCz,LanMV9
-#13 slot 458982527 (+1) FAIL agiGgE sol -0.300 pair 0.00 tokens 0 |  | LanMV9
 #14 slot 458982527 (+1) 4T7DAm sol -0.556 pair 0.00 tokens 1730370 | SwapV2,BuyExactIn | CAMMCz,LanMV9
 #15 slot 458982527 (+1) 3zNWpe sol -0.002 pair 0.00 tokens 0 |  | 
 #16 slot 458982528 (+2) 6MM3Sp sol -0.052 pair 29.42 tokens 30297775 | SwapV2,BuyExactIn | CAMMCz,LanMV9
@@ -398,3 +378,23 @@ host metrics | cpu: 2% | ram usage: 32.8% | enp1s0: ⇓ 0.065mb/s ⇑ 0.002mb/s 
 [TAILING] Tailing last 15 lines for [sniper] process (change the value with --lines option)
 /root/.pm2/logs/sniper-out.log last 15 lines:
 /root/.pm2/logs/sniper-error.log last 15 lines:
+=== cmd 50 @ 2026-10-20T20:56:02Z ===
+> snipetest 3LqwqmgN21SzWBnQWRxVsnPs7ZG4xk6tpWPijgeaV8x6hHHEzjcLA4ktDxSWi81pPt4K6t91EH9iWXCQdH9yGXNq
+parsed in 2.65ms: $SI "Sexy Intelligence" base 4xYhZGRFvYHAbCYV3FPzDinH5kzbAcCDPu3yKFiYTahp quote 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ creator 1432eg platform 6BwHHD
+warm build+sign: 3.95ms
+built + signed in 168.08ms, 1023 bytes
+simulate now: ERR {"InstructionError":[3,{"Custom":2506}]} CU 47927
+  Program log: Instruction: BuyExactIn
+  Program log: AnchorError thrown in programs/launchpad/src/instructions/buy_exact_in.rs:136. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.
+  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj failed: custom program error: 0x9ca
+> snipetest 5m8XU9rzAVaBxuB7gkqZx39SK216XDXmXE2Qov4GkYbt3R7NxKZyA6Xe15ntXCRu9xMYEeQ9EUvbjXrXiq1FEvF5 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG 1
+parsed in 2.34ms: $ALTCOIN "Alt-coin" base DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP quote 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ creator B9Zbs2 platform 6BwHHD
+warm build+sign: 6.12ms
+built + signed in 191.73ms, 1023 bytes
+accounts vs real sniper (agiGgE): 18/18 match (user accounts correctly swapped to ours)
+simulate now: ERR {"InstructionError":[3,{"Custom":2506}]} CU 34504
+  Program log: Instruction: BuyExactIn
+  Program log: AnchorError thrown in programs/launchpad/src/instructions/buy_exact_in.rs:136. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.
+  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj failed: custom program error: 0x9ca
+> snipe-reset
+snipe state cleared
