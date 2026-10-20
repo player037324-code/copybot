@@ -1,2 +1,6 @@
-id: 48
-sendertest
+id: 49
+set SNIPE_DRY_RUN=true
+set SNIPE_QUOTE_MINT=7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+set SNIPE_TARGETS=*:1
+snipe-reset
+snipe-start
