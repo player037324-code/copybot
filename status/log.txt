@@ -208,22 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:38:40.755]   not a target (or target already taken), ignoring
-[2026-10-20 21:38:58.640] launch [beta] $FRAUD (Fraud Cat) 4bMECmHrNp9a6L7BYXWUDPegNSQ4cqKxduYT5wAZRCr6 quote 6s2umN platform 6BwHHD token2022 slot 459382235
-[2026-10-20 21:38:58.641]   not a target (or target already taken), ignoring
-[2026-10-20 21:38:59.523] launch [beta] $ALC (Quality Learing Center) SRcAiBcJH3rxXmmAdgnwMM585uifak21kUMwd2dkSwH quote 6s2umN platform 6BwHHD token2022 slot 459382239
-[2026-10-20 21:38:59.523]   not a target (or target already taken), ignoring
-[2026-10-20 21:39:13.071] launch [beta] $TRUMP3 (BIG 3) 2ThRwsBKa6D9ihMgknVWo8iPTesRGuhWBs73hda128Dm quote 6s2umN platform 6BwHHD token2022 slot 459382303
-[2026-10-20 21:39:13.072]   not a target (or target already taken), ignoring
-[2026-10-20 21:39:46.810] launch [beta] $POTUS (fmnl) GvRByJE9LkbnyjKWut5cqzwRKiqjbA6XXeS6uWyRvHiM quote 6s2umN platform 6BwHHD token2022 slot 459382458
-[2026-10-20 21:39:46.810]   not a target (or target already taken), ignoring
-[2026-10-20 21:41:05.389] launch [beta] $SI (Super Intelligence) 2GSULfa44hZkF7ku4wJxk5fTPcEUNCnoTsgxkwAnc3gr quote 6s2umN platform 6BwHHD token2022 slot 459382814
-[2026-10-20 21:41:05.389]   not a target (or target already taken), ignoring
-[2026-10-20 21:41:06.818] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 21:41:38.749] launch [beta] $SAD (Sad!) AgYnYzg4cJcnPvYC86nWp3ce5PAhE4iHzBFxbMfoHQ4S quote 6s2umN platform 6BwHHD token2022 slot 459382970
-[2026-10-20 21:41:38.749]   not a target (or target already taken), ignoring
-[2026-10-20 21:41:49.725] launch [beta] $PEPE (Pepe Trump) CFEV8c3Rj4qyiUk5ARcGnkZ9pwD62Ju7u8tEFvWaJyqo quote 6s2umN platform 6BwHHD token2022 slot 459383023
-[2026-10-20 21:41:49.725]   not a target (or target already taken), ignoring
 [2026-10-20 21:41:58.056] launch [beta] $TRUMP (TRUMP BASKET) FJb1Xf5kNWG3GsEzvEBkL1u3uADk3cnFFCmgGAD8owQD quote 6s2umN platform 6BwHHD token2022 slot 459383061
 [2026-10-20 21:41:58.057]   not a target (or target already taken), ignoring
 [2026-10-20 21:42:01.450] launch [beta] $SWAMP (Drain the Swamp) 8hU23UmEzanKAfPyWHn6J6PSQHf8sjrwJwMj4dcRxUbF quote 6s2umN platform 6BwHHD token2022 slot 459383076
@@ -248,6 +232,22 @@
 [2026-10-20 21:43:46.298]   not a target (or target already taken), ignoring
 [2026-10-20 21:43:56.386] launch [beta] $GULF (Gulf of America) 3t7xPzfRttwBVAUEVHKcCFUML7rGFWyuB2WBnG5iim25 quote 6s2umN platform 6BwHHD token2022 slot 459383604
 [2026-10-20 21:43:56.387]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:06.040] launch [beta] $YUUUGE (YUUUGE) 44Vyyyknrzu1mf3Bj2M9ungFy3ezPVnjWM87kj7CefkF quote 6s2umN platform 6BwHHD token2022 slot 459383648
+[2026-10-20 21:44:06.041]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:07.165] launch [beta] $YUGE (Yuge) 83aEg8GvWcYcg7hys5Yc3gLCHwETT6yYJ68cmFxVJy4w quote 6s2umN platform 6BwHHD token2022 slot 459383653
+[2026-10-20 21:44:07.165]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:09.398] launch [beta] $YUUUGE (YUUUGE) 78YXDPm2Zdty9hRpXWs5NLVLtetyvnMyqSXucuEq8GUb quote 6s2umN platform 6BwHHD token2022 slot 459383663
+[2026-10-20 21:44:09.398]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:15.573] launch [beta] $KING (Long Live the King) 4U7Z2VXUFggiki9vbMPGY5HdiHnUq5cfZcNzTAmybjGc quote 6s2umN platform 6BwHHD token2022 slot 459383691
+[2026-10-20 21:44:15.574]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:19.127] launch [beta] $YMCA (YMCA) 3tJTaQQERRhujAKe3xwhGR1DfXJ5XkFiEnHvjeqhmWPp quote 6s2umN platform 6BwHHD token2022 slot 459383708
+[2026-10-20 21:44:19.127]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:28.725] launch [beta] $BELL (Ringing the Bell) 4Vd5Eyx362mbcUdzVLHWFsM1vihvJx3euuvjMYSJbk9A quote 6s2umN platform 6BwHHD token2022 slot 459383753
+[2026-10-20 21:44:28.725]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:40.923] launch [mainnet] $HOAX (Hoax) FrJksfBJC1uJ13nuu2x5EQFunB8bUnBq7PS5U2nj4vny quote 6s2umN platform 6BwHHD token2022 slot 459383808
+[2026-10-20 21:44:40.924]   not a target (or target already taken), ignoring
+[2026-10-20 21:44:56.507] launch [beta] $REDWAVE (Red Wave) 3fM5FCi7xqWJ859Xgh7Mj1SpFdQmwcTL1nu1HhpHp5dF quote 6s2umN platform 6BwHHD token2022 slot 459383882
+[2026-10-20 21:44:56.507]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
