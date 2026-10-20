@@ -1,4 +1,2 @@
-id: 66
-set SNIPE_CU_LIMIT=100000
-set SNIPE_CU_PRICE=100000000
-snipe-start
+id: 67
+feedrace 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue 120
