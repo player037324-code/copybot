@@ -1,6 +1,6 @@
-updated: 2026-10-20T19:59:04Z
+updated: 2026-10-20T20:00:03Z
 deployed: 50aff3a974f52ae726fe35645ba99eda70fbd6ae
-pm2: stopped uptime=2842m restarts=14
+pm2: stopped uptime=2843m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -43,6 +43,7 @@ sniper pm2: not started
 
 --- alerts ---
 alerts pm2: online
+{"time":"2026-10-20T19:59:45.937Z","kind":"NOW TRADEABLE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue just got its first deposit/swap. Buy it now for the snipe. Last two pairings went live 79-86 min after this, so around 21:18-21:25 UTC.","mint":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue"}
 
 --- positions ---
 {
