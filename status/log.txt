@@ -208,26 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 22:03:54.540]   not a target, ignoring
-[2026-10-20 22:03:54.544] launch [beta] $FRAUDCOIN (FRAUDCOIN) 6kA4F3Gfwc4LvniAaT2D6WJsBq6nCAgfoHN2qvCCbNh7 quote 6s2umN platform 6BwHHD token2022 slot 459389131
-[2026-10-20 22:03:54.544]   not a target, ignoring
-[2026-10-20 22:04:06.735] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 22:05:56.838] launch [pre] $DOLLAR (Trump $1 Coin) 9mdDNJdBvhqfdhYYhDGUTnYUqKZHZBTWxVrZrQusUs6i quote 6s2umN platform 6BwHHD token2022 slot 459389698
-[2026-10-20 22:05:56.838]   not a target, ignoring
-[2026-10-20 22:05:56.843] launch [beta] $DOLLAR (Trump $1 Coin) 9mdDNJdBvhqfdhYYhDGUTnYUqKZHZBTWxVrZrQusUs6i quote 6s2umN platform 6BwHHD token2022 slot 459389698
-[2026-10-20 22:05:56.843]   not a target, ignoring
-[2026-10-20 22:06:07.255] launch [pre] $1 (The $1 Coin) 4G6BWs2FRV2oaDbxjn4As5716HuVFUZCDpgmga1D6vRh quote 6s2umN platform 6BwHHD token2022 slot 459389749
-[2026-10-20 22:06:07.256]   not a target, ignoring
-[2026-10-20 22:06:07.260] launch [beta] $1 (The $1 Coin) 4G6BWs2FRV2oaDbxjn4As5716HuVFUZCDpgmga1D6vRh quote 6s2umN platform 6BwHHD token2022 slot 459389749
-[2026-10-20 22:06:07.260]   not a target, ignoring
-[2026-10-20 22:06:14.849] launch [pre] $TA (Trump Account) BQbXX79k7iFVqamGW5MRRu8rDsMnwGDYGTdfq6S8HGQR quote 6s2umN platform 6BwHHD token2022 slot 459389784
-[2026-10-20 22:06:14.849]   not a target, ignoring
-[2026-10-20 22:06:14.851] launch [beta] $TA (Trump Account) BQbXX79k7iFVqamGW5MRRu8rDsMnwGDYGTdfq6S8HGQR quote 6s2umN platform 6BwHHD token2022 slot 459389784
-[2026-10-20 22:06:14.851]   not a target, ignoring
-[2026-10-20 22:06:21.217] launch [pre] $YUGEST (The Yugest) DWennVZWmQdwJK47tYVhdaLu9Hh7HRSkf3eCxLkmDLod quote 6s2umN platform 6BwHHD token2022 slot 459389814
-[2026-10-20 22:06:21.217]   not a target, ignoring
-[2026-10-20 22:06:21.221] launch [beta] $YUGEST (The Yugest) DWennVZWmQdwJK47tYVhdaLu9Hh7HRSkf3eCxLkmDLod quote 6s2umN platform 6BwHHD token2022 slot 459389814
-[2026-10-20 22:06:21.221]   not a target, ignoring
 [2026-10-20 22:06:26.912] launch [pre] $DREAM (American Dream) FjijGyHjr93h959dV6YLhLEC3KAZyxjDgYNMFTZXhPvf quote 6s2umN platform 6BwHHD token2022 slot 459389840
 [2026-10-20 22:06:26.912]   not a target, ignoring
 [2026-10-20 22:06:26.916] launch [beta] $DREAM (American Dream) FjijGyHjr93h959dV6YLhLEC3KAZyxjDgYNMFTZXhPvf quote 6s2umN platform 6BwHHD token2022 slot 459389840
@@ -248,6 +228,26 @@
 [2026-10-20 22:07:02.859]   not a target, ignoring
 [2026-10-20 22:07:02.867] launch [beta] $FAFO (Fuck Around and Find Out) 8e9mkCdjCnZhiHS82WsGcJfbJjmS6beyFLFWCPhcDaQ3 quote 6s2umN platform 6BwHHD token2022 slot 459390005
 [2026-10-20 22:07:02.867]   not a target, ignoring
+[2026-10-20 22:07:09.329] launch [pre] $USA (USA) 85sQwyewQnhfzorTSRbJBDS1hsF35E9yYsMnBsUTmVy7 quote 6s2umN platform 6BwHHD token2022 slot 459390036
+[2026-10-20 22:07:09.329]   not a target, ignoring
+[2026-10-20 22:07:09.332] launch [beta] $USA (USA) 85sQwyewQnhfzorTSRbJBDS1hsF35E9yYsMnBsUTmVy7 quote 6s2umN platform 6BwHHD token2022 slot 459390036
+[2026-10-20 22:07:09.333]   not a target, ignoring
+[2026-10-20 22:07:15.673] launch [pre] $FIGHT (Fight Fight Fight) 6VENT6pHBqRLzFAZDX8NTggRBqYTWvqXR52WDZCzaJ5v quote 6s2umN platform 6BwHHD token2022 slot 459390065
+[2026-10-20 22:07:15.674]   not a target, ignoring
+[2026-10-20 22:07:15.677] launch [beta] $FIGHT (Fight Fight Fight) 6VENT6pHBqRLzFAZDX8NTggRBqYTWvqXR52WDZCzaJ5v quote 6s2umN platform 6BwHHD token2022 slot 459390065
+[2026-10-20 22:07:15.677]   not a target, ignoring
+[2026-10-20 22:07:22.507] launch [pre] $MUGSHOT (The Mugshot) EFhiSusu1nnJNjXHFreYDDzCMEDoNUMtYyciazqQghEg quote 6s2umN platform 6BwHHD token2022 slot 459390096
+[2026-10-20 22:07:22.507]   not a target, ignoring
+[2026-10-20 22:07:22.513] launch [beta] $MUGSHOT (The Mugshot) EFhiSusu1nnJNjXHFreYDDzCMEDoNUMtYyciazqQghEg quote 6s2umN platform 6BwHHD token2022 slot 459390096
+[2026-10-20 22:07:22.513]   not a target, ignoring
+[2026-10-20 22:07:29.026] launch [pre] $YUUGE (YUUGE) Dk1Xorzmfgmxa7QLBj6AwbPYiZ374KYVkpoYaSER8G3 quote 6s2umN platform 6BwHHD token2022 slot 459390127
+[2026-10-20 22:07:29.026]   not a target, ignoring
+[2026-10-20 22:07:29.030] launch [beta] $YUUGE (YUUGE) Dk1Xorzmfgmxa7QLBj6AwbPYiZ374KYVkpoYaSER8G3 quote 6s2umN platform 6BwHHD token2022 slot 459390127
+[2026-10-20 22:07:29.030]   not a target, ignoring
+[2026-10-20 22:07:39.477] launch [pre] $CHYNA (Chyna) 5QQeUGkkdZcVkWoJwg6pN7CBRYzEmvCqKbpUbhZU8VaX quote 6s2umN platform 6BwHHD token2022 slot 459390177
+[2026-10-20 22:07:39.477]   not a target, ignoring
+[2026-10-20 22:07:39.485] launch [beta] $CHYNA (Chyna) 5QQeUGkkdZcVkWoJwg6pN7CBRYzEmvCqKbpUbhZU8VaX quote 6s2umN platform 6BwHHD token2022 slot 459390177
+[2026-10-20 22:07:39.485]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
