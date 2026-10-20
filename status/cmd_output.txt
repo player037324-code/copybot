@@ -1,79 +1,3 @@
-added SELL_ALL_ON_ANY_SELL=true
-> set MIRROR_SELLS=true
-set MIRROR_SELLS=true
-> set TAKE_PROFIT_PCT=0
-set TAKE_PROFIT_PCT=0
-> set STOP_LOSS_PCT=0
-set STOP_LOSS_PCT=0
-> set SLIPPAGE_BPS=2000
-set SLIPPAGE_BPS=2000
-> set SELL_SLIPPAGE_BPS=3000
-added SELL_SLIPPAGE_BPS=3000
-> papertest
-[2026-10-17 21:14:03] === copybot starting ===
-[2026-10-17 21:14:03] mode: PAPER (no real trades)
-[2026-10-17 21:14:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
-[2026-10-17 21:14:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-[2026-10-17 21:14:03] buy 40% of Lunar's SOL when he spends > 4 SOL | initial buy only: true | max per buy: none
-[2026-10-17 21:14:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
-[2026-10-17 21:14:03] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
-[2026-10-17 21:14:03] open positions: 0
-[2026-10-17 21:14:03] websocket connected: transactionSubscribe (processed)
-=== cmd 12 @ 2026-10-17T21:18:02Z ===
-> papertest
-[2026-10-17 21:18:03] === copybot starting ===
-[2026-10-17 21:18:03] mode: PAPER (no real trades)
-[2026-10-17 21:18:03] copying: GijFWw4oNyh9ko3FaZforNsi3jk6wDovARpkKahPD4o5
-[2026-10-17 21:18:03] our wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-[2026-10-17 21:18:03] buy 40% of Lunar's SOL when he spends > 4 SOL | initial buy only: true | max per buy: none
-[2026-10-17 21:18:03] sell: SELL ALL on any Lunar sell or transfer out | TP off SL off
-[2026-10-17 21:18:03] exec: slippage 20% buy / 30% sell | tip 0.001 SOL | sender http://ewr-sender.helius-rpc.com
-[2026-10-17 21:18:03] open positions: 0
-[2026-10-17 21:18:03] websocket connected: transactionSubscribe (processed)
-[2026-10-17 21:19:03] feed: 186 txs mentioning Lunar, 0 signed by him (last 60s)
-[2026-10-17 21:20:03] feed: 401 txs mentioning Lunar, 0 signed by him (last 60s)
-=== cmd 13 @ 2026-10-17T21:23:01Z ===
-> set PAPER=false
-set PAPER=false
-> reset-positions
-cleared
-> start
-[PM2] Starting /root/copybot/src/bot.js in fork_mode (1 instance)
-[PM2] Done.
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 90227    │ 0s     │ 0    │ online    │ 0%       │ 28.8mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 0.5% | ram usage: 30.9% | disk: ⇓ 0mb/s ⇑ 0.034mb/s
-=== cmd 14 @ 2026-10-17T23:44:02Z ===
-> set SLIPPAGE_BPS=2500
-set SLIPPAGE_BPS=2500
-> restart
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
-[PM2] [copybot](0) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 110864   │ 0s     │ 3    │ online    │ 0%       │ 20.8mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 0.7% | ram usage: 36.4% | enp1s0: ⇓ 0.019mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.005mb/s
-=== cmd 15 @ 2026-10-18T00:58:02Z ===
-> set SLIPPAGE_BPS=6000
-set SLIPPAGE_BPS=6000
-> set SELL_SLIPPAGE_BPS=6000
-set SELL_SLIPPAGE_BPS=6000
-> set BUY_RETRY_SLIPPAGES=6000
-added BUY_RETRY_SLIPPAGES=6000
-> restart
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [copybot](ids: [ 0 ])
-[PM2] [copybot](0) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 121705   │ 0s     │ 5    │ online    │ 0%       │ 21.5mb   │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 0.6% | ram usage: 35.3% | enp1s0: ⇓ 0.012mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.008mb/s
 === cmd 16 @ 2026-10-18T01:03:00Z ===
@@ -398,3 +322,79 @@ created 2026-10-19T21:29:16.000Z slot 458982526  (25163 slots / 91.5 min after p
 #22 slot 458982532 (+6) 6ANGS6 sol -6.168 pair 92.40 tokens 12405861 | SwapV2,BuyExactIn | FLASHX,CAMMCz,LanMV9
 #23 slot 458982532 (+6) RAYpQb sol -0.199 pair 0.00 tokens 0 | MigrateToCpswap,InitializeWithPermission,LockCpLiquidity,SetAuthority | LanMV9,CPMMoo,LockrW,metaqb
 #24 slot 458982532 (+6) HvFdDW sol -0.002 pair 0.00 tokens 0 |  | G2E4eo
+=== cmd 33 @ 2026-10-20T19:24:02Z ===
+> dumpix DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP 2
+
+=== 5m8XU9rzAVaBxuB7gkqZx39SK216XDXmXE2Qov4GkYbt3R7NxKZyA6Xe15ntXCRu9xMYEeQ9EUvbjXrXiq1FEvF5 slot 458982526 signer B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ
+[top] LaunchLab disc 25be7ede2c9aab11 len 134
+   data 25be7ede2c9aab110608000000416c742d636f696e07000000414c54434f494e2400000068747470733a2f2f6170692e6e656d746563682e696f2f6a736f6e2f6331363630623139000080c6a47e8d03000078c5fb51d102000c8f98fd0100000001000000000000000000000000000000000000000000000000000164000080c6a47e8d0300
+    0 SW B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ
+    1 SW B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ
+    2 -- 31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH
+    3 -- 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt
+    4 -- WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh
+    5 -W H3jKGdsD5UcMH52f7SVBESQHpnjhhV6qQRdejjkvJhJ9
+    6 SW DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
+    7 -- 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+    8 -W CC1ox6PG8KsgBGkGjShmvvJ6QJKdJitwZAEFbpiYX8De
+    9 -W 3erKebh7Bp1zB59iLEhUcZr4e8Bsxx7V5VeYR4dJsQxy
+   10 -- TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+   11 -- TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+   12 -- 11111111111111111111111111111111
+   13 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+   14 -- LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
+   15 -- 9qpe3Lvt8bJt8eGJGRR1Kb243kn6sb62TVocg5gFRu4g
+   16 -- DRuT918CuSodmW91kJU7MoB2fHuTeiyj56zMFnumFVf7
+[top] LaunchLab disc faea0d7bd59c13ec len 32
+   data faea0d7bd59c13ecaf0795470000000001000000000000000000000000000000
+    0 SW B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ
+    1 -- WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh
+    2 -- 31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH
+    3 -- 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt
+    4 -W H3jKGdsD5UcMH52f7SVBESQHpnjhhV6qQRdejjkvJhJ9
+    5 -W 7F3a8c1nkE5CACvSra8YkkjvkNCqHLLt1VRxwZXYpPQb
+    6 -W BRoYZTti8g1MDtcfqAheHeAhaMG3sp5UNLjR9yVVbybh
+    7 -W CC1ox6PG8KsgBGkGjShmvvJ6QJKdJitwZAEFbpiYX8De
+    8 -W 3erKebh7Bp1zB59iLEhUcZr4e8Bsxx7V5VeYR4dJsQxy
+    9 SW DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
+   10 -- 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+   11 -- TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+   12 -- TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+   13 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+   14 -- LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
+   15 -- 11111111111111111111111111111111
+   16 -W GEGqdy1HJFyeY7XN3rgWvMHmTCb9aMzNZoa5Wcu2fyXB
+   17 -W HdUYeX6qSLtq46kJkd9tsHhp2aXjTNewCjZKWCorvcfc
+[in0] LaunchLab disc e445a52e51cb9a1d len 227
+   data e445a52e51cb9a1d97d7e20976a173aeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da96c660bd8dfa4f7451ffdc4118f11b5841599435e072283e7732f084557053cd1dd8b38de0f13e31d8621de4256ea67442c30b2e1bfbef716e73d1f19c5fadf60608000000416c742d636f696e07000000414c54434f494e2400000068747470733a2f2f6170692e6e656d746563682e696f2f6a736f6e2f6331363630623139000080c6a47e8d03000078c5fb51d102000c8f98fd010000
+    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+[in0] spl-token initializeMetadataPointer {"metadataAddress":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP"}
+[in0] spl-token initializeTokenMetadata {"metadata":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mintAuthority":"WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh","name":"Alt-coin","symbol
+[in3] LaunchLab disc e445a52e51cb9a1d len 155
+   data e445a52e51cb9a1dbddb7fd34ee661eeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da0078c5fb51d10200acdb0e3ee9cf0300e8ccdcb3000000000000000000000000000000000000000014e576305513010096f7af4600000000af0795470000000014e576305513010005d02d00000000001440b7000000000000000000000000000000000000000000000001
+    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+
+=== 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG slot 458982527 signer agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
+[top] LaunchLab disc faea0d7bd59c13ec len 32
+   data faea0d7bd59c13ec67382f540000000000000000000000000000000000000000
+    0 SW agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
+    1 -- WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh
+    2 -- 31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH
+    3 -- 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt
+    4 -W H3jKGdsD5UcMH52f7SVBESQHpnjhhV6qQRdejjkvJhJ9
+    5 -W 9NX6EZjr7EqAAwruqQx4g4dhuZXmKEZJNTqKPCqQ2xHf
+    6 -W DpWBRuBkTLAukXmYt5W96Y1zLBiDTUj23TxoZxNnnGZR
+    7 -W CC1ox6PG8KsgBGkGjShmvvJ6QJKdJitwZAEFbpiYX8De
+    8 -W 3erKebh7Bp1zB59iLEhUcZr4e8Bsxx7V5VeYR4dJsQxy
+    9 -- DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
+   10 -- 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
+   11 -- TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+   12 -- TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+   13 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
+   14 -- LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
+   15 -- 11111111111111111111111111111111
+   16 -W GEGqdy1HJFyeY7XN3rgWvMHmTCb9aMzNZoa5Wcu2fyXB
+   17 -W HdUYeX6qSLtq46kJkd9tsHhp2aXjTNewCjZKWCorvcfc
+[in5] LaunchLab disc e445a52e51cb9a1d len 155
+   data e445a52e51cb9a1dbddb7fd34ee661eeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da0078c5fb51d10200acdb0e3ee9cf0300e8ccdcb30000000014e576305513010096f7af46000000007d724d37dfc1010015ccd1990000000067382f5400000000698dd6068aae0000c8e03500000000002083d7000000000000000000000000000000000000000000000001
+    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
