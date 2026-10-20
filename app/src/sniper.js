@@ -83,7 +83,10 @@ const ata = (owner, mint, prog) => PublicKey.findProgramAddressSync([owner.toBuf
 function readStr(buf, o) { const n = buf.readUInt32LE(o); return [buf.subarray(o + 4, o + 4 + n).toString('utf8'), o + 4 + n]; }
 export function parseLaunch(tx) {
   const msg = tx.transaction.message;
-  for (const ix of msg.instructions) {
+  // launches can be direct LaunchLab calls OR wrapped by another program (StonkFun's J7pour router) as an inner CPI
+  const all = [...msg.instructions];
+  for (const g of tx.meta?.innerInstructions || []) all.push(...g.instructions);
+  for (const ix of all) {
     if ((ix.programId?.toString?.() ?? ix.programId) !== LL.toBase58() || !ix.data) continue;
     const d = Buffer.from(bs58.decode(ix.data));
     if (!CREATE_DISCS.has(d.subarray(0, 8).toString('hex'))) continue;
