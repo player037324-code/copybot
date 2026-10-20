@@ -1,6 +1,4 @@
-id: 51
-set SNIPE_DRY_RUN=true
-set SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-set SNIPE_TARGETS=*:1,TRUMP:1
-snipe-reset
-snipe-start
+id: 52
+snipe-fund 1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+snipe-fund 12 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
