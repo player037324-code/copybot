@@ -1,4 +1,2 @@
-id: 52
-snipe-fund 1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-snipe-fund 12 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+id: 53
+ladder-start
