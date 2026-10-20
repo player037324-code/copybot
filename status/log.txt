@@ -208,29 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:22:14.455]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:45.862] launch [beta] $POTUS (Pepe Of The United States) DTeuSHdgd1HnKmemwwko499nr3PmgoLvSPLBZSt6CnZ7 quote 6s2umN platform 6BwHHD token2022 slot 459377748
-[2026-10-20 21:22:45.862]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:50.708] launch [beta] $STIMMY (STIMMY) B9brwsXSnPi6VYCy7QPqhiuEr2x5WfjYGxi5AoeQAhsK quote 6s2umN platform 6BwHHD token2022 slot 459377771
-[2026-10-20 21:22:50.708]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:50.999] launch [beta] $BARRON (Barron Coin) GdTSt7LApsNFQBNvV9j1j8nXxZ4cNHg59EahVaQfZMYi quote 6s2umN platform 6BwHHD token2022 slot 459377772
-[2026-10-20 21:22:50.999]   not a target (or target already taken), ignoring
-[2026-10-20 21:22:59.382] launch [beta] $AMERICOIN (MADE IN AMERICA) HkbLRaGkRY2RUFFjvg4rY4FjZvmrHWbkQ9uW4Rf3d3bi quote 6s2umN platform 6BwHHD token2022 slot 459377811
-[2026-10-20 21:22:59.382]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:00.754] launch [beta] $SI (Super Inu) AEay7D8CN4JqtCdAn6x1CP4egbAX2t2G4WsDmNW6vMtm quote 6s2umN platform 6BwHHD token2022 slot 459377817
-[2026-10-20 21:23:00.754]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:02.187] launch [beta] $AMERICA (America Coin) ELHJZf2FhTwki1VaDbS7yoiExkhh84ifueWEikpM3zA8 quote 6s2umN platform 6BwHHD token2022 slot 459377824
-[2026-10-20 21:23:02.188]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:02.266] launch [beta] $TI (Trump Intelligence) 44DYuYJqZ4yF3PjJEFpB3YA6Aa1YnnkPVK7DrdnPS9cg quote 6s2umN platform 6BwHHD token2022 slot 459377824
-[2026-10-20 21:23:02.267]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:05.344] === sniper starting ===
-[2026-10-20 21:23:05.348] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:23:05.348] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:23:05.349] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 21:23:05.349] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 21:23:05.383] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 21:23:06.873] warm build time (median of 10): total 23.06ms = accounts 7.97 + compile/sign 17.58 + serialize 0.19
-[2026-10-20 21:23:06.875] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:23:06.875] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 21:23:06.982] feed beta connected
 [2026-10-20 21:23:07.001] feed mainnet connected
@@ -248,6 +225,29 @@
 [2026-10-20 21:23:49.202]   not a target (or target already taken), ignoring
 [2026-10-20 21:23:54.615] launch [beta] $Wig (Trump wig) 8RjB5c2FJWuExQkgMTcwKU6HgLHAoQKKKrgAgMi1Y6Xk quote 6s2umN platform 6BwHHD token2022 slot 459378067
 [2026-10-20 21:23:54.615]   not a target (or target already taken), ignoring
+[2026-10-20 21:24:14.438] launch [beta] $thinair (thinair) Jhuc6YQLoCeHowtRy6jhNqDNf84B8Ui7MSj5ieeb2ac quote 6s2umN platform 6BwHHD token2022 slot 459378158
+[2026-10-20 21:24:14.438]   not a target (or target already taken), ignoring
+[2026-10-20 21:24:15.288] launch [beta] $AMERICAN (AMERICAN) HufTC2M5f6BhjzkzQjv8MsYvry1KrNba4sDYYuNH2BJx quote 6s2umN platform 6BwHHD token2022 slot 459378162
+[2026-10-20 21:24:15.288]   not a target (or target already taken), ignoring
+[2026-10-20 21:24:38.222] launch [beta] $TRUMP (OFFICIAL TRUMP) 3bJuLpF6dwgwoc1eSZvPSuUR5Emd6QgRV3LsKXwNK7WP quote 6s2umN platform 6BwHHD token2022 slot 459378265
+[2026-10-20 21:24:38.222]   not a target (or target already taken), ignoring
+[2026-10-20 21:24:47.867] launch [beta] $TRUMPLY (Trump Family Meme) 8DzKvPCLBxVRGJ85AHEnDi8tuRGeAxz6v4ZcvWkd7XoV quote 6s2umN platform 6BwHHD token2022 slot 459378311
+[2026-10-20 21:24:47.867]   not a target (or target already taken), ignoring
+[2026-10-20 21:24:48.358] launch [beta] $insider (insider) EZF2Zoree2HAYmhf6o4RhB26F2WzUzFh5bwDZ1a2PD2a quote 6s2umN platform 6BwHHD token2022 slot 459378313
+[2026-10-20 21:24:48.358]   not a target (or target already taken), ignoring
+[2026-10-20 21:25:05.463] === sniper starting ===
+[2026-10-20 21:25:05.469] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 21:25:05.469] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 21:25:05.474] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-20 21:25:05.475] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-20 21:25:05.532] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 21:25:07.164] warm build time (median of 10): total 24.72ms = accounts 4.55 + compile/sign 14.59 + serialize 0.22
+[2026-10-20 21:25:07.172] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:25:07.173] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 21:25:07.306] feed beta connected
+[2026-10-20 21:25:07.322] feed mainnet connected
+[2026-10-20 21:25:08.236] launch [beta] $Aliens (Illegal Alien) 4LVdiGjNApkMMoTPtoerj4AmriNfwoySyWjyEQW5dJ6t quote 6s2umN platform 6BwHHD token2022 slot 459378408
+[2026-10-20 21:25:08.236]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -257,6 +257,7 @@
 [2026-10-20 21:14:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:16:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:23:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-20 21:25:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
