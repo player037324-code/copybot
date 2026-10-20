@@ -1,35 +1,3 @@
-│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 743021   │ 0s     │ 0    │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 742492   │ 118s   │ 6    │ online    │ 0%       │ 98.8mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 0.9% | ram usage: 37.3% | enp1s0: ⇓ 0.026mb/s ⇑ 0.002mb/s | disk: ⇓ 0mb/s ⇑ 0.019mb/s
-[TAILING] Tailing last 8 lines for [ladder] process (change the value with --lines option)
-/root/.pm2/logs/ladder-error.log last 8 lines:
-/root/.pm2/logs/ladder-out.log last 8 lines:
-[2026-10-20 21:09:03] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
-=== cmd 54 @ 2026-10-20T21:10:02Z ===
-> set SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-set SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-> set SNIPE_TARGETS=TRUMP:762
-set SNIPE_TARGETS=TRUMP:762
-> set SNIPE_DRY_RUN=false
-set SNIPE_DRY_RUN=false
-> snipe-reset
-snipe state cleared
-> snipe-start
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
-[PM2] [sniper](2) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 742528   │ 2m     │ 13   │ online    │ 0%       │ 84.5mb   │ root     │ disabled │
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
-│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 743021   │ 60s    │ 0    │ online    │ 0%       │ 89.2mb   │ root     │ disabled │
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 743342   │ 0s     │ 7    │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 6.8% | ram usage: 41.4% | enp1s0: ⇓ 0.036mb/s ⇑ 0.002mb/s | disk: ⇓ 0.011mb/s ⇑ 0.052mb/s
-[2026-10-20 21:07:06.534] warm build time (median of 10): total 12.70ms = accounts 5.17 + compile/sign 7.69 + serialize 0.19
-[2026-10-20 21:07:06.535] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:07:06.536] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 21:07:06.626] feed beta connected
 [2026-10-20 21:07:06.661] feed mainnet connected
@@ -398,3 +366,35 @@ simulate now: ERR {"InstructionError":[3,{"Custom":2506}]} CU 34504
 [2026-10-20 21:31:07] feed creators connected
 [2026-10-20 21:31:07] feed stonkfun-launches connected
 [2026-10-20 21:31:37] selftest on $X (token2022, config 6k9BeZ): OK {"InstructionError":[3,{"Custom":3012}]} Program log: AnchorError caused by account: user_quote_token. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The prog
+=== cmd 66 @ 2026-10-20T22:29:02Z ===
+> set SNIPE_CU_LIMIT=100000
+added SNIPE_CU_LIMIT=100000
+> set SNIPE_CU_PRICE=100000000
+added SNIPE_CU_PRICE=100000000
+> snipe-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
+[PM2] [sniper](2) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 754751   │ 34m    │ 19   │ online    │ 0%       │ 103.5mb  │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 754787   │ 34m    │ 6    │ online    │ 0%       │ 102.4mb  │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 763146   │ 0s     │ 15   │ online    │ 0%       │ 17.7mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 1.8% | ram usage: 47.5% | enp1s0: ⇓ 0.028mb/s ⇑ 0.003mb/s | disk: ⇓ 0mb/s ⇑ 0.041mb/s
+[2026-10-20 22:24:06.735] alive | pool 6s2umN | $TRUMP done
+[2026-10-20 22:29:03.895] === sniper starting ===
+[2026-10-20 22:29:03.897] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 22:29:03.898] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 22:29:03.898] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-20 22:29:03.899] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-20 22:29:03.918] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 22:29:04.221] warm build time (median of 10): total 5.00ms = accounts 0.92 + compile/sign 2.70 + serialize 0.15
+[2026-10-20 22:29:04.222] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 22:29:04.222] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-20 22:29:04.242] feed pre (preprocessed/shreds) connected
+[2026-10-20 22:29:04.243] feed beta connected
+[2026-10-20 22:29:04.246] feed pre subscribed (1)
+[2026-10-20 22:29:04.265] feed mainnet connected
