@@ -231,6 +231,12 @@
 [2026-10-20 20:45:07.630] feed beta connected
 [2026-10-20 20:45:07.683] feed mainnet connected
 [2026-10-20 20:50:07.610] alive | pool 7V1evj | FIRST armed
+[2026-10-20 20:53:07.996] launch [beta] $SI (Sexy Intelligence) 4xYhZGRFvYHAbCYV3FPzDinH5kzbAcCDPu3yKFiYTahp quote 7V1evj platform 6BwHHD slot 459369543
+[2026-10-20 20:53:08.007]   >>> MATCH FIRST LAUNCH: $SI 4xYhZGRFvYHAbCYV3FPzDinH5kzbAcCDPu3yKFiYTahp
+[2026-10-20 20:53:08.026]   DRY RUN: built in 9.49ms (32ms after seeing launch). sim: ERR {"InstructionError":[2,"IncorrectProgramId"]} CU 9312
+[2026-10-20 20:53:08.027]    Program log: Error: IncorrectProgramId
+[2026-10-20 20:53:08.027]    Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: incorrect program id for instruction
+[2026-10-20 20:53:08.027]    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL failed: incorrect program id for instruction
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
