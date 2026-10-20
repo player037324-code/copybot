@@ -1,2 +1,6 @@
-id: 53
-ladder-start
+id: 54
+set SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+set SNIPE_TARGETS=TRUMP:762
+set SNIPE_DRY_RUN=false
+snipe-reset
+snipe-start
