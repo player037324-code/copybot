@@ -1,6 +1,6 @@
-updated: 2026-10-20T21:15:03Z
-deployed: 0e3571f76a7f4f640a319c9f3a91d73ef5a72ea3
-pm2: stopped uptime=2918m restarts=14
+updated: 2026-10-20T21:16:11Z
+deployed: c2c6eb8c39f002f69fa84853a82609915824dd97
+pm2: stopped uptime=2919m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -30,7 +30,7 @@ NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
 NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
-SNIPE_DRY_RUN=false
+SNIPE_DRY_RUN=true
 SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
 SNIPE_TARGETS=TRUMP:762
 

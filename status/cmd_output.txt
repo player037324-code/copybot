@@ -1,33 +1,3 @@
-slot 458982527 err null signer agiGgE9Dt7QhcJJ55PsS8jU57EmYcgFjqJJ1M9zRpu9
-programs: ComputeBudget111111111111111111111111111111 11111111111111111111111111111111 ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
-  DpWBRuBk owner agiGgE9D mint 7V1evjzU 1412.380775 -> 0 (-1412.3808)
-  9NX6EZjr owner agiGgE9D mint DrBBfrDv 0 -> 189988765.009632 (189988765.0096)
-  CC1ox6PG owner WLHv2UAZ mint DrBBfrDv 697268417.04318 -> 505360573.599107 (-191907843.4441)
-  3erKebh7 owner WLHv2UAZ mint 7V1evjzU 1188.939675 -> 2587.196642 (1398.2570)
-  GEGqdy1H owner 56XVRVAs mint 7V1evjzU 112.325915 -> 126.449723 (14.1238)
-SOL change signer: -0.4105
-  Program ComputeBudget111111111111111111111111111111 invoke [1]
-  Program ComputeBudget111111111111111111111111111111 invoke [1]
-  Program 11111111111111111111111111111111 invoke [1]
-  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
-  Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: GetAccountDataSize
-  Program 11111111111111111111111111111111 invoke [2]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeImmutableOwner
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: InitializeAccount3
-  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [1]
-  Program log: Instruction: BuyExactIn
-  Program LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj invoke [2]
-  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
-  Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]
-  Program log: Instruction: TransferChecked
-  Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
-  Program 11111111111111111111111111111111 invoke [1]
-  Program 11111111111111111111111111111111 invoke [1]
-  Program 11111111111111111111111111111111 invoke [1]
   Program 11111111111111111111111111111111 invoke [1]
 === cmd 36 @ 2026-10-20T19:32:04Z ===
 > txinfo 45zsnqU7vX8bLQoGYv1FsLzTKc6pucjeqD8Ymu3Q1ZFrL9QK8dndP4JTxtmbMrgm6EPmnuDFW73W54Gu9UgC8qiG
@@ -398,3 +368,33 @@ host metrics | cpu: 6.8% | ram usage: 41.4% | enp1s0: ⇓ 0.036mb/s ⇑ 0.002mb/
 100 txs in last 30 min touching 6s2umN
 21:14:54 NEW TOKEN $BBC (Big Beautiful Coin) Hw1RRhEaoZQRDxDTnRHyGaX78ms9GVtNLtHhxaEfzdox | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,SplitSupply | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd | signer 5ATz3k
 top-level programs: 11111111:108 FLASHX8D:93 Tokenkeg:67 ATokenGP:59 ComputeB:37 JUP6LkbZ:14 J7pourVw:10 DF1ow4ts:10
+=== cmd 56 @ 2026-10-20T21:16:06Z ===
+> set SNIPE_DRY_RUN=true
+set SNIPE_DRY_RUN=true
+> snipe-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
+[PM2] [sniper](2) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 745053   │ 1s     │ 15   │ online    │ 23.5%    │ 88.0mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 745091   │ 0s     │ 2    │ online    │ 58.8%    │ 76.6mb   │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 745135   │ 0s     │ 10   │ online    │ 0%       │ 19.3mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 13.2% | ram usage: 39.4% | enp1s0: ⇓ 1.343mb/s ⇑ 0.008mb/s | disk: ⇓ 0.186mb/s ⇑ 0.108mb/s
+[2026-10-20 21:16:07.708] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 21:16:07.708] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 21:16:07.709] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-20 21:16:07.709] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-20 21:16:07.728] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 21:16:08.088] warm build time (median of 10): total 4.29ms = accounts 0.92 + compile/sign 2.24 + serialize 0.16
+[2026-10-20 21:16:08.088] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 21:16:08.089] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 21:16:08.104] feed beta connected
+[2026-10-20 21:16:08.134] feed mainnet connected
+[2026-10-20 21:16:08.183] launch [beta] $TA (Trump Accounts) 7rem9toVPc8fBzM6SeX2iJx3EWPR4zdGPopJmpTwaZT2 quote 6s2umN platform 6BwHHD token2022 slot 459375909
+[2026-10-20 21:16:08.183]   not a target (or target already taken), ignoring
+[2026-10-20 21:16:11.057] launch [beta] $FAFO (Fuck Around and Find Out) GpZqyKXPf5BVUG7m4vavdcwb85thsm4xhehEMpEPzzhs quote 6s2umN platform 6BwHHD token2022 slot 459375921
+[2026-10-20 21:16:11.057]   not a target (or target already taken), ignoring
