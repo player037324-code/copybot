@@ -1,6 +1,6 @@
-updated: 2026-10-20T19:27:03Z
+updated: 2026-10-20T19:28:02Z
 deployed: 91045df217477402509cf90a94979adb85705365
-pm2: stopped uptime=2810m restarts=14
+pm2: stopped uptime=2811m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -37,6 +37,9 @@ Last 10 trades:
 10-18 02:03:33  BUY  3ZAnpeVB  4.006 SOL  @ $82.5K mcap  (+1 slots, 435ms)
 10-18 20:24:46  FAIL 7Nv7ecya  tx failed 5CgNEAX6GUdxwUyJBLc3sUQiXkJeS3DrkouEyt8FS2xx14UdMUhMjjMpcGxjiJnHsCncUFnz3LrP5Xms4fskhSFn: {"InstructionError":[6,{"Custom":6040}]}
 10-18 20:24:47  BUY  7Nv7ecya  4.006 SOL  @ $3152.6K mcap  (+4 slots, 1105ms)
+
+--- sniper ---
+sniper pm2: not started
 
 --- positions ---
 {

@@ -203,6 +203,8 @@
 [2026-10-18 20:37:04] open positions: 1
 [2026-10-18 20:37:04] websocket connected: transactionSubscribe (processed)
 
+--- sniper ---
+[TAILING] Tailing last 40 lines for [sniper] process (change the value with --lines option)
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
 [2026-10-17 23:30:11] WARN websocket closed, reconnecting
