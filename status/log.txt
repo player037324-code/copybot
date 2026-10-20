@@ -208,12 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:44:40.924]   not a target (or target already taken), ignoring
-[2026-10-20 21:44:56.507] launch [beta] $REDWAVE (Red Wave) 3fM5FCi7xqWJ859Xgh7Mj1SpFdQmwcTL1nu1HhpHp5dF quote 6s2umN platform 6BwHHD token2022 slot 459383882
-[2026-10-20 21:44:56.507]   not a target (or target already taken), ignoring
-[2026-10-20 21:45:07.996] launch [beta] $TARIFF (Tariff) FFfX1EzJi3U9T6XMVrqhMTcJnp67j3da3FWyJ7gvVVyz quote 6s2umN platform 6BwHHD token2022 slot 459383936
-[2026-10-20 21:45:07.996]   not a target (or target already taken), ignoring
-[2026-10-20 21:45:19.225] launch [beta] $WEAVE (The Weave) 8wEStgKzkBFCVEzsJcpdTKkH4fRnrpKX3fELHh1Vwj22 quote 6s2umN platform 6BwHHD token2022 slot 459383987
 [2026-10-20 21:45:19.225]   not a target (or target already taken), ignoring
 [2026-10-20 21:45:26.293] launch [beta] $FAFO (FAFO) 79ezA5q6JABGzzjuDsVgwR2xBDoRajzy61PA4NG8aJFv quote 6s2umN platform 4E876q token2022 slot 459384016
 [2026-10-20 21:45:26.293]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
@@ -248,6 +242,12 @@
 [2026-10-20 21:47:47.176]   not a target (or target already taken), ignoring
 [2026-10-20 21:47:54.925] launch [beta] $WINNING (Winning) 4DWfz3cENctAQMQehK2qL1vDSSEDAsmN1fveJ9PaV3oA quote 6s2umN platform 6BwHHD token2022 slot 459384704
 [2026-10-20 21:47:54.925]   not a target (or target already taken), ignoring
+[2026-10-20 21:48:11.609] launch [beta] $YMCA (YMCA) GtEK5mqnocvSi2cAWjaAf95DDcrG81dUh4Y1uNeMZCN1 quote 6s2umN platform 6BwHHD token2022 slot 459384783
+[2026-10-20 21:48:11.609]   not a target (or target already taken), ignoring
+[2026-10-20 21:48:31.637] launch [beta] $DEAL (The Art of the Deal) H5Q7HuEZAiYc3LacrP8331J4WuRbvGHt7TkEUBpF8j5T quote 6s2umN platform 6BwHHD token2022 slot 459384872
+[2026-10-20 21:48:31.637]   not a target (or target already taken), ignoring
+[2026-10-20 21:48:42.813] launch [beta] $BALLROOM (The Ballroom) 37SXUBV6ve3QhbNZ35VUELJaDUoELBg4oXQqwfyRFJ2Q quote 6s2umN platform 6BwHHD token2022 slot 459384924
+[2026-10-20 21:48:42.814]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
