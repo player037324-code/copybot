@@ -1,2 +1,2 @@
-id: 31
-stonk 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ ALTCOIN
+id: 32
+launchinfo DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
