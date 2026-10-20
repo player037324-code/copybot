@@ -1,6 +1,6 @@
-updated: 2026-10-20T22:46:02Z
+updated: 2026-10-20T22:47:00Z
 deployed: 8625c892d93510e966b090fe0a1f3286a753dfaf
-pm2: stopped uptime=3009m restarts=14
+pm2: stopped uptime=3010m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -77,6 +77,7 @@ alerts pm2: online
 {"time":"2026-10-20T20:37:30.429Z","kind":"first StonkFun launch on older pool","text":"$Buttcoin (Buttcoin) Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump is now live on StonkFun. First launch: $ASSCATCHUM EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ. Pool token is 284.3d old.","quote":"Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump","firstMint":"EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ","firstTicker":"ASSCATCHUM","isNew":false}
 {"time":"2026-10-20T21:10:55.756Z","kind":"first StonkFun launch on older pool","text":"$COPX (Global X Copper Miners ETF - Backpack Securities) CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5 is now live on StonkFun. First launch: $COPPER 9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ. Pool token is 57.0d old.","quote":"CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5","firstMint":"9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ","firstTicker":"COPPER","isNew":false}
 {"time":"2026-10-20T21:12:11.239Z","kind":"NEW PAIRING LIVE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is now live on StonkFun. First launch: $TRUMP BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1. Pool token is 2.0h old.","quote":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue","firstMint":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","firstTicker":"TRUMP","isNew":true}
+{"time":"2026-10-20T22:46:29.624Z","kind":"first StonkFun launch on older pool","text":"$LLY (Eli Lilly and Company - Backpack Securities) LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD is now live on StonkFun. First launch: $VDPHL01 J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ. Pool token is 65.6d old.","quote":"LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD","firstMint":"J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ","firstTicker":"VDPHL01","isNew":false}
 
 --- positions ---
 {
