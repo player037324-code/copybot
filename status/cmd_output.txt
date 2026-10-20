@@ -1,24 +1,3 @@
-   data faea0d7bd59c13ecaf0795470000000001000000000000000000000000000000
-    0 SW B9Zbs2W9VK22AHnCWiK4PqBueDFzN17RNAFu5uFozLMJ
-    1 -- WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh
-    2 -- 31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH
-    3 -- 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt
-    4 -W H3jKGdsD5UcMH52f7SVBESQHpnjhhV6qQRdejjkvJhJ9
-    5 -W 7F3a8c1nkE5CACvSra8YkkjvkNCqHLLt1VRxwZXYpPQb
-    6 -W BRoYZTti8g1MDtcfqAheHeAhaMG3sp5UNLjR9yVVbybh
-    7 -W CC1ox6PG8KsgBGkGjShmvvJ6QJKdJitwZAEFbpiYX8De
-    8 -W 3erKebh7Bp1zB59iLEhUcZr4e8Bsxx7V5VeYR4dJsQxy
-    9 SW DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP
-   10 -- 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
-   11 -- TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
-   12 -- TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
-   13 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
-   14 -- LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
-   15 -- 11111111111111111111111111111111
-   16 -W GEGqdy1HJFyeY7XN3rgWvMHmTCb9aMzNZoa5Wcu2fyXB
-   17 -W HdUYeX6qSLtq46kJkd9tsHhp2aXjTNewCjZKWCorvcfc
-[in0] LaunchLab disc e445a52e51cb9a1d len 227
-   data e445a52e51cb9a1d97d7e20976a173aeee6dff870fc4e764f487d7e707cc12eb632d656d25f4ea28aea4616f95bd48da96c660bd8dfa4f7451ffdc4118f11b5841599435e072283e7732f084557053cd1dd8b38de0f13e31d8621de4256ea67442c30b2e1bfbef716e73d1f19c5fadf60608000000416c742d636f696e07000000414c54434f494e2400000068747470733a2f2f6170692e6e656d746563682e696f2f6a736f6e2f6331363630623139000080c6a47e8d03000078c5fb51d102000c8f98fd010000
     0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
 [in0] spl-token initializeMetadataPointer {"metadataAddress":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP"}
 [in0] spl-token initializeTokenMetadata {"metadata":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mint":"DrBBfrDvhkTLija1qdk1ea8Fd3JfhERicp1PLVygahEP","mintAuthority":"WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh","name":"Alt-coin","symbol
@@ -398,3 +377,24 @@ host metrics | cpu: 0.8% | ram usage: 36.8% | enp1s0: ⇓ 0.011mb/s ⇑ 0.001mb/
 [2026-10-20 20:57:04.197] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
 [2026-10-20 20:57:04.213] feed beta connected
 [2026-10-20 20:57:04.248] feed mainnet connected
+=== cmd 52 @ 2026-10-20T21:04:02Z ===
+> snipe-fund 1 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+1 SOL -> 102.6276 of 6s2umN | 1.0393 USD each | price impact 0.25% | route Raydium CLMM(100%)
+quote only. Run snipe-fund with --go to buy.
+> snipe-fund 12 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+12 SOL -> 1218.9221 of 6s2umN | 1.0501 USD each | price impact 1.26% | route Raydium CLMM(100%)
+quote only. Run snipe-fund with --go to buy.
+> whatis 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
+owner program: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  type: mint
+decimals 6 supply 110408.575776 mintAuthority 5c6s8C5SHq7pDR6VcKcrhffCiFAtAXu1Zt2KgGNEiw2y freezeAuthority null
+name: Trump Index  symbol: $TRUMP3  uri: https://assets.diversifi.trade/token_metadata/TRUMP3/f3c4d821-6dd4-45f5-bf9a-df9b4c30b434.json  desc: TRUMP3 index token on DiversiFi.
+created 2026-10-20T19:10:08.000Z (1.9h ago) by H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd  ix: Initialize,GetAccountDataSize,InitializeImmutableOwner,InitializeAccount3
+  same tx also touched mints: EPjFWdd5 6p6xgHyF WLFinEv6 DJTu7vi8
+activity: 77 txs total, latest 2026-10-20T21:03:56.000Z
+  holder 7q3HUGf8 49200.925491
+  holder 5wcSGFKi 15342.020518
+  holder FZjG6mfe 12406.602153
+  holder 91Pg4WAe 11816.115458
+  holder 3iBECgTb 9844.004783
+tradeable: 0.1 SOL -> 10.271455 | impact 0.16% | Raydium CLMM
+StonkFun/LaunchLab launches paired to it (in latest 77 txs): 0
