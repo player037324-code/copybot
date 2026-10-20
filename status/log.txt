@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:53:07.062]   not a target (or target already taken), ignoring
-[2026-10-20 21:53:42.325] launch [beta] $DANCE (Dance) 1hmaEcweGCw9nuYxPwxAnRLAsVZtLER4cv9MtALyB1v quote 6s2umN platform 6BwHHD token2022 slot 459386301
-[2026-10-20 21:53:42.326]   not a target (or target already taken), ignoring
-[2026-10-20 21:54:05.256] === sniper starting ===
 [2026-10-20 21:54:05.261] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-20 21:54:05.262] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 21:54:05.262] target: first $TRUMP -> buy 762 [ALREADY DONE]
@@ -248,6 +244,10 @@
 [2026-10-20 21:54:59.381]   not a target, ignoring
 [2026-10-20 21:54:59.385] launch [beta] $AMERICA (America) HUbJRxYRidu3Jrt1bD9owX244291F9vRxjXg83EQP6Hh quote 6s2umN platform 6BwHHD token2022 slot 459386662
 [2026-10-20 21:54:59.386]   not a target, ignoring
+[2026-10-20 21:58:40.204] launch [pre] $BBB (Big Beautiful Basket) BQU6JWfMy5XjommtEk7bQhBVcjxq5xUBhQJd51kaSTNK quote 6s2umN platform 6BwHHD token2022 slot 459387680
+[2026-10-20 21:58:40.204]   not a target, ignoring
+[2026-10-20 21:58:40.206] launch [beta] $BBB (Big Beautiful Basket) BQU6JWfMy5XjommtEk7bQhBVcjxq5xUBhQJd51kaSTNK quote 6s2umN platform 6BwHHD token2022 slot 459387680
+[2026-10-20 21:58:40.206]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
