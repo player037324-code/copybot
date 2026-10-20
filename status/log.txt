@@ -208,16 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:23:43.466]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:49.201] launch [beta] $AMERICOIN (AMERICOIN) GpZFrEZLnHTQH2N9PotarLCzdeAU8Saqn8aZpsUQeR2S quote 6s2umN platform 6BwHHD token2022 slot 459378041
-[2026-10-20 21:23:49.202]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:54.615] launch [beta] $Wig (Trump wig) 8RjB5c2FJWuExQkgMTcwKU6HgLHAoQKKKrgAgMi1Y6Xk quote 6s2umN platform 6BwHHD token2022 slot 459378067
-[2026-10-20 21:23:54.615]   not a target (or target already taken), ignoring
-[2026-10-20 21:24:14.438] launch [beta] $thinair (thinair) Jhuc6YQLoCeHowtRy6jhNqDNf84B8Ui7MSj5ieeb2ac quote 6s2umN platform 6BwHHD token2022 slot 459378158
-[2026-10-20 21:24:14.438]   not a target (or target already taken), ignoring
-[2026-10-20 21:24:15.288] launch [beta] $AMERICAN (AMERICAN) HufTC2M5f6BhjzkzQjv8MsYvry1KrNba4sDYYuNH2BJx quote 6s2umN platform 6BwHHD token2022 slot 459378162
-[2026-10-20 21:24:15.288]   not a target (or target already taken), ignoring
-[2026-10-20 21:24:38.222] launch [beta] $TRUMP (OFFICIAL TRUMP) 3bJuLpF6dwgwoc1eSZvPSuUR5Emd6QgRV3LsKXwNK7WP quote 6s2umN platform 6BwHHD token2022 slot 459378265
 [2026-10-20 21:24:38.222]   not a target (or target already taken), ignoring
 [2026-10-20 21:24:47.867] launch [beta] $TRUMPLY (Trump Family Meme) 8DzKvPCLBxVRGJ85AHEnDi8tuRGeAxz6v4ZcvWkd7XoV quote 6s2umN platform 6BwHHD token2022 slot 459378311
 [2026-10-20 21:24:47.867]   not a target (or target already taken), ignoring
@@ -248,6 +238,16 @@
 [2026-10-20 21:26:24.636]   not a target (or target already taken), ignoring
 [2026-10-20 21:26:42.167] launch [mainnet] $YHP (young, handsome people) BdCztNkbQcrxzV6tCqPzMVXoTqQ11tK3KMPGuB571Ys5 quote 6s2umN platform 6BwHHD token2022 slot 459378840
 [2026-10-20 21:26:42.167]   not a target (or target already taken), ignoring
+[2026-10-20 21:27:13.976] launch [beta] $AIRINU (Air Inu) GdnUs3SEQ739xE4wYnqp8mGjQeaxeGsXMEUeoFNJdvHe quote 6s2umN platform 4E876q token2022 slot 459378989
+[2026-10-20 21:27:13.976]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:27:32.252] launch [beta] $DOLLARKITTY (Dollar Kitty) DQp2JeNgDXmctRDjVVt4VYH3dFM9dL6C67UfC4AcGH7V quote 6s2umN platform 4E876q token2022 slot 459379072
+[2026-10-20 21:27:32.252]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:27:35.446] launch [mainnet] $TRUMP3 (Official Trump 3) DGEHx73kR1LNSWELyPnu1e6WYyePZhZesUdXsm9T5nxB quote 6s2umN platform 4E876q token2022 slot 459379089
+[2026-10-20 21:27:35.446]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:27:45.941] launch [beta] $TRUMP3 (Official Trump 3) JAac7vuPw3xu9QDMhHXw6LfLp3Unx5Q5jG3VAxiLWDkZ quote 6s2umN platform 6BwHHD token2022 slot 459379137
+[2026-10-20 21:27:45.941]   not a target (or target already taken), ignoring
+[2026-10-20 21:27:59.636] launch [beta] $TRUMP3 (Official Trump 3) 3Fq4R84NjV5GMhC2GmVE9zf3JPm9feczgM9uAjAzRS5e quote 6s2umN platform 6BwHHD token2022 slot 459379200
+[2026-10-20 21:27:59.636]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
