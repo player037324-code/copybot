@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 22:07:15.674]   not a target, ignoring
-[2026-10-20 22:07:15.677] launch [beta] $FIGHT (Fight Fight Fight) 6VENT6pHBqRLzFAZDX8NTggRBqYTWvqXR52WDZCzaJ5v quote 6s2umN platform 6BwHHD token2022 slot 459390065
-[2026-10-20 22:07:15.677]   not a target, ignoring
-[2026-10-20 22:07:22.507] launch [pre] $MUGSHOT (The Mugshot) EFhiSusu1nnJNjXHFreYDDzCMEDoNUMtYyciazqQghEg quote 6s2umN platform 6BwHHD token2022 slot 459390096
-[2026-10-20 22:07:22.507]   not a target, ignoring
-[2026-10-20 22:07:22.513] launch [beta] $MUGSHOT (The Mugshot) EFhiSusu1nnJNjXHFreYDDzCMEDoNUMtYyciazqQghEg quote 6s2umN platform 6BwHHD token2022 slot 459390096
-[2026-10-20 22:07:22.513]   not a target, ignoring
-[2026-10-20 22:07:29.026] launch [pre] $YUUGE (YUUGE) Dk1Xorzmfgmxa7QLBj6AwbPYiZ374KYVkpoYaSER8G3 quote 6s2umN platform 6BwHHD token2022 slot 459390127
-[2026-10-20 22:07:29.026]   not a target, ignoring
-[2026-10-20 22:07:29.030] launch [beta] $YUUGE (YUUGE) Dk1Xorzmfgmxa7QLBj6AwbPYiZ374KYVkpoYaSER8G3 quote 6s2umN platform 6BwHHD token2022 slot 459390127
-[2026-10-20 22:07:29.030]   not a target, ignoring
-[2026-10-20 22:07:39.477] launch [pre] $CHYNA (Chyna) 5QQeUGkkdZcVkWoJwg6pN7CBRYzEmvCqKbpUbhZU8VaX quote 6s2umN platform 6BwHHD token2022 slot 459390177
-[2026-10-20 22:07:39.477]   not a target, ignoring
 [2026-10-20 22:07:39.485] launch [beta] $CHYNA (Chyna) 5QQeUGkkdZcVkWoJwg6pN7CBRYzEmvCqKbpUbhZU8VaX quote 6s2umN platform 6BwHHD token2022 slot 459390177
 [2026-10-20 22:07:39.485]   not a target, ignoring
 [2026-10-20 22:09:06.735] alive | pool 6s2umN | $TRUMP done
@@ -248,6 +235,19 @@
 [2026-10-20 22:29:04.243] feed beta connected
 [2026-10-20 22:29:04.246] feed pre subscribed (1)
 [2026-10-20 22:29:04.265] feed mainnet connected
+[2026-10-20 22:30:07.840] === sniper starting ===
+[2026-10-20 22:30:07.846] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 22:30:07.846] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-20 22:30:07.846] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-20 22:30:07.852] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-20 22:30:07.908] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 22:30:09.833] warm build time (median of 10): total 31.67ms = accounts 7.77 + compile/sign 16.97 + serialize 7.58
+[2026-10-20 22:30:09.844] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 22:30:09.844] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-20 22:30:10.043] feed beta connected
+[2026-10-20 22:30:10.047] feed mainnet connected
+[2026-10-20 22:30:10.063] feed pre (preprocessed/shreds) connected
+[2026-10-20 22:30:10.074] feed pre subscribed (1)
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -260,6 +260,7 @@
 [2026-10-20 21:25:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:31:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:54:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-20 22:30:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
