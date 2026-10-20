@@ -20,6 +20,9 @@ const S = {
   quoteMint: env('SNIPE_QUOTE_MINT', ''),
   ticker: env('SNIPE_TICKER', '').replace(/^\$/, '').toUpperCase(),
   amount: Number(env('SNIPE_AMOUNT', '0')), // in quote-token units (e.g. 1400 SAMA4)
+  // SNIPE_TARGETS="*:1000,TRUMP:1000" -> snipe the first launch (any ticker) AND the first $TRUMP.
+  // If one launch matches several targets it is bought once (amount of the first listed target).
+  targetsRaw: env('SNIPE_TARGETS', ''),
   platform: env('SNIPE_PLATFORM', '6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt'), // StonkFun's LaunchLab platform
   minOutRaw: BigInt(env('SNIPE_MIN_OUT_RAW', '0')),
   cuLimit: Number(env('SNIPE_CU_LIMIT', '150000')),
@@ -148,29 +151,35 @@ export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S
 
 // ---------- runtime ----------
 async function main() {
-  const missing = ['heliusKey', 'privateKey', 'quoteMint', 'ticker'].filter((k) => !S[k]);
-  if (missing.length || !(S.amount > 0)) { console.error(`sniper not configured: ${[...missing, ...(S.amount > 0 ? [] : ['amount'])].join(', ')}`); process.exit(1); }
+  const targets = (S.targetsRaw ? S.targetsRaw.split(',') : [`${S.ticker}:${S.amount}`]).map((x) => x.trim()).filter(Boolean).map((x) => {
+    const [t, a] = x.split(':'); return { ticker: (t || '').replace(/^\$/, '').toUpperCase(), amount: Number(a) };
+  });
+  const missing = ['heliusKey', 'privateKey', 'quoteMint'].filter((k) => !S[k]);
+  if (missing.length || !targets.length || targets.some((t) => !t.ticker || !(t.amount > 0))) { console.error(`sniper not configured: ${missing.join(', ')} targets=${JSON.stringify(targets)}`); process.exit(1); }
   const conn = new Connection(RPC, { commitment: 'confirmed' });
   const wallet = Keypair.fromSecretKey(bs58.decode(S.privateKey));
   const quotePk = new PublicKey(S.quoteMint);
   const quoteInfo = await conn.getParsedAccountInfo(quotePk);
   const quoteProg = new PublicKey(quoteInfo.value.owner);
   const decimals = quoteInfo.value.data.parsed.info.decimals;
-  const amountRaw = BigInt(Math.floor(S.amount * 10 ** decimals));
+  for (const t of targets) t.amountRaw = BigInt(Math.floor(t.amount * 10 ** decimals));
+  const amountRaw = targets[0].amountRaw;
+  const totalAmount = targets.reduce((a, t) => a + t.amount, 0);
   const myQuote = ata(wallet.publicKey, quotePk, quoteProg);
   const bal = await conn.getTokenAccountBalance(myQuote).catch(() => null);
   const have = bal ? Number(bal.value.uiAmount) : 0;
 
   let state = {}; try { state = JSON.parse(fs.readFileSync(STATE, 'utf8')); } catch {}
-  const key = `${S.quoteMint}:${S.ticker}`;
+  for (const t of targets) { t.key = `${S.quoteMint}:${t.ticker}`; t.fired = !!state[t.key]; }
   log('=== sniper starting ===');
   log(`mode: ${S.dryRun ? 'DRY RUN (builds + simulates, never sends)' : 'LIVE'}`);
-  log(`target: first ${S.ticker === '*' ? 'launch (ANY ticker)' : '$' + S.ticker} paired to ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
-  log(`wallet ${wallet.publicKey.toBase58()} | buy ${S.amount} quote tokens | holds ${have}`);
+  log(`pool ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
+  for (const t of targets) log(`target: first ${t.ticker === '*' ? 'launch (ANY ticker)' : '$' + t.ticker} -> buy ${t.amount}${t.fired ? ' [ALREADY DONE]' : ''}`);
+  log(`wallet ${wallet.publicKey.toBase58()} | holds ${have} of pool token, targets need up to ${totalAmount}`);
   const solBal = (await conn.getBalance(wallet.publicKey)) / 1e9;
-  if (solBal < S.jitoTipSol + S.tipSol + 0.02) warn(`wallet has ${solBal.toFixed(3)} SOL, needs ~${(S.jitoTipSol + S.tipSol + 0.02).toFixed(3)} for tips/fees/rent`);
-  if (have < S.amount) warn(`wallet holds ${have} of the quote token, needs ${S.amount}. Buy will fail until funded.`);
-  if (state[key]) { log(`already sniped/claimed first $${S.ticker} for this pool (${state[key].mint}). Nothing to do. Clear with snipe-reset.`); }
+  if (solBal < targets.length * (S.jitoTipSol + 0.01) + 0.02) warn(`wallet has ${solBal.toFixed(3)} SOL, needs ~${(targets.length * (S.jitoTipSol + 0.01) + 0.02).toFixed(3)} for ${targets.length} snipes' tips/fees/rent`);
+  if (have < totalAmount) warn(`wallet holds ${have} of the pool token, needs ${totalAmount} for all targets. Buys will fail until funded.`);
+  if (targets.every((t) => t.fired)) log('all targets already done for this pool. Clear with snipe-reset.');
 
   // keep a fresh blockhash + warm connections so the hot path never waits
   let bh = await conn.getLatestBlockhash('confirmed');
@@ -195,7 +204,6 @@ async function main() {
   const extra = (S.nozomiKey ? S.nozomiTipSol : 0) + (S.astraKey ? S.astraTipSol : 0);
   log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender ${S.tipSol} + Nozomi/Astralane ${extra} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol + extra).toFixed(4)} SOL per snipe (tips only paid if it lands)`);
   const seenMints = new Set();
-  let fired = !!state[key];
 
   async function onTx(tx, sig, slot, src, seenAt) {
     const L = parseLaunch(tx);
@@ -203,17 +211,21 @@ async function main() {
     seenMints.add(L.base);
     const sym = L.symbol.replace(/^\$/, '').toUpperCase();
     log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} slot ${slot}`);
-    if (L.quote !== S.quoteMint || (S.ticker !== '*' && sym !== S.ticker)) return;
-    if (L.platform !== S.platform) return log(`  ticker match but other platform (${L.platform}), ignoring`);
-    if (fired) return log(`  $${S.ticker} copy (not first), ignoring`);
-    fired = true; // claim instantly so nothing else can fire
+    if (L.quote !== S.quoteMint) return;
+    if (L.platform !== S.platform) return log(`  our pool but other platform (${L.platform}), ignoring`);
+    const hits = targets.filter((t) => !t.fired && (t.ticker === '*' || t.ticker === sym));
+    if (!hits.length) return log(`  not a target (or target already taken), ignoring`);
+    for (const t of hits) t.fired = true; // claim instantly so nothing else can fire for these targets
+    const buyRaw = hits[0].amountRaw;
+    const label = hits.map((t) => (t.ticker === '*' ? 'FIRST LAUNCH' : '$' + t.ticker)).join(' + ');
     const t0 = performance.now();
-    const ixs = buildBuyIxs(L, wallet, amountRaw, S.minOutRaw);
+    const ixs = buildBuyIxs(L, wallet, buyRaw, S.minOutRaw);
     const ours = buildTx(wallet, ixs, bh.blockhash);
     const raw = Buffer.from(ours.serialize());
     const b64 = raw.toString('base64');
     const buildMs = (performance.now() - t0).toFixed(2);
-    state[key] = { mint: L.base, sig, slot, at: new Date().toISOString() };
+    for (const t of hits) state[t.key] = { mint: L.base, symbol: L.symbol, sig, slot, at: new Date().toISOString(), coveredBy: label };
+    log(`  >>> MATCH ${label}: $${L.symbol} ${L.base}`);
     fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
     if (S.dryRun) {
       const sim = await conn.simulateTransaction(ours, { sigVerify: false, replaceRecentBlockhash: true, commitment: 'processed' });
@@ -225,7 +237,7 @@ async function main() {
     const sendT = Date.now();
     const r = await Promise.allSettled([post(b64), jitoSend(b64), ...(S.nozomiKey ? [nozomiSend(b64)] : []), ...(S.astraKey ? [astraSend(b64)] : []), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
     const ourSig = bs58.encode(ours.signatures[0]);
-    log(`  SENT buy ${S.amount} -> $${S.ticker} | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
+    log(`  SENT buy ${Number(buyRaw) / 10 ** decimals} -> $${L.symbol} [${label}] | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
     r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`));
     for (let i = 0; i < 40; i++) {
       await new Promise((res) => setTimeout(res, 250));
@@ -234,7 +246,7 @@ async function main() {
         const behind = st.slot - slot;
         if (st.err) { warn(`  BUY FAILED (landed +${behind} slots): ${JSON.stringify(st.err)}`); }
         else log(`  BUY LANDED +${behind} slots after launch (slot ${st.slot})`);
-        state[key].ourSig = ourSig; state[key].landedSlot = st.slot; state[key].err = st.err || null;
+        for (const t of hits) { state[t.key].ourSig = ourSig; state[t.key].landedSlot = st.slot; state[t.key].err = st.err || null; }
         fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
         return;
       }
@@ -269,7 +281,7 @@ async function main() {
     };
     connect();
   }
-  setInterval(() => log(`alive | watching $${S.ticker} on ${S.quoteMint.slice(0, 6)} | ${fired ? 'already fired' : 'armed'}`), 300000).unref();
+  setInterval(() => log(`alive | pool ${S.quoteMint.slice(0, 6)} | ${targets.map((t) => (t.ticker === '*' ? 'FIRST' : '$' + t.ticker) + (t.fired ? ' done' : ' armed')).join(', ')}`), 300000).unref();
 }
 
 if (process.argv[1] && process.argv[1].endsWith('sniper.js')) main().catch((e) => { console.error(e); process.exit(1); });
