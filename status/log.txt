@@ -208,12 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 21:23:22.426]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:23.280] launch [beta] $STIMMY (STIMMY) B9ETTKHySRrPVcDjTiAZ6eQ7gxvPb5zsPKNTkT72ksHc quote 6s2umN platform 6BwHHD token2022 slot 459377922
-[2026-10-20 21:23:23.280]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:40.327] launch [beta] $DIVIDEND (The Trump Dividend) 7M92uuF7Uev3XjyP9odjdYD9ggLyCBFvXV5Fp9hCSTNK quote 6s2umN platform 6BwHHD token2022 slot 459378001
-[2026-10-20 21:23:40.327]   not a target (or target already taken), ignoring
-[2026-10-20 21:23:43.466] launch [beta] $MELANIA (Melania Meme) 7PWYpRhDGTfRsm6eKnDSfEQGzabJEASKyToKZy4azuNb quote 6s2umN platform 6BwHHD token2022 slot 459378015
 [2026-10-20 21:23:43.466]   not a target (or target already taken), ignoring
 [2026-10-20 21:23:49.201] launch [beta] $AMERICOIN (AMERICOIN) GpZFrEZLnHTQH2N9PotarLCzdeAU8Saqn8aZpsUQeR2S quote 6s2umN platform 6BwHHD token2022 slot 459378041
 [2026-10-20 21:23:49.202]   not a target (or target already taken), ignoring
@@ -248,6 +242,12 @@
 [2026-10-20 21:25:26.461]   not a target (or target already taken), ignoring
 [2026-10-20 21:25:47.012] launch [beta] $TI (Trump Intelligence) 456S6WzSXxRmXXABKEtcWNnQULdsZnWmZCkDYQp5Mvnr quote 6s2umN platform 6BwHHD token2022 slot 459378586
 [2026-10-20 21:25:47.012]   not a target (or target already taken), ignoring
+[2026-10-20 21:26:19.117] launch [beta] $air (aircoin) ADXaWZh2Lr6LTJapDrxCf9yk8HnLt2wUSXAQaSLKiBHR quote 6s2umN platform 6BwHHD token2022 slot 459378734
+[2026-10-20 21:26:19.118]   not a target (or target already taken), ignoring
+[2026-10-20 21:26:24.636] launch [beta] $AOF (Arsenal of Freedom) BGhgNTdKuSESe6qi5wBG79PeR2hin9psC3qPahxc8ejX quote 6s2umN platform 6BwHHD token2022 slot 459378760
+[2026-10-20 21:26:24.636]   not a target (or target already taken), ignoring
+[2026-10-20 21:26:42.167] launch [mainnet] $YHP (young, handsome people) BdCztNkbQcrxzV6tCqPzMVXoTqQ11tK3KMPGuB571Ys5 quote 6s2umN platform 6BwHHD token2022 slot 459378840
+[2026-10-20 21:26:42.167]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
