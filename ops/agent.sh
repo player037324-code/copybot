@@ -37,7 +37,7 @@ if [ "$HASH" != "$(cat "$APP/.deployed" 2>/dev/null)" ]; then
   chmod 600 "$APP/.env"
   (cd "$APP" && npm install --omit=dev --silent >/dev/null 2>&1)
   # only restart if it was already running; never start a bot the user stopped
-  for p in copybot sniper alerts; do
+  for p in copybot sniper alerts ladder; do
     pm2 jlist 2>/dev/null | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{try{const x=JSON.parse(d).find(z=>z.name==='$p');process.exit(x&&x.pm2_env.status==='online'?0:1)}catch{process.exit(1)}})" && pm2 restart $p >/dev/null 2>&1
   done
   echo "$HASH" > "$APP/.deployed"
@@ -87,6 +87,8 @@ if [ -f control/cmd.txt ]; then
           testtrade\ *) a=${c#testtrade }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}\ [0-9.]+$ ]] && timeout 100 node scripts/testtrade.js $a 2>&1 ;;
           keyprefix) for k in HELIUS_API_KEY JUP_API_KEY NOZOMI_KEY ASTRALANE_KEY; do v=$(grep -E "^$k=" .env | tail -1 | cut -d= -f2-); echo "$k: ${v:0:4}... ($(grep -cE "^$k=" .env) line(s) in .env)"; done ;;
           sendertest) timeout 90 node scripts/sendertest.js 2>&1 ;;
+          ladder-start) pm2 describe ladder >/dev/null 2>&1 && pm2 restart ladder || pm2 start src/ladder.js --name ladder; pm2 save >/dev/null; sleep 5; pm2 logs ladder --nostream --lines 8 --raw 2>&1 | tail -8 ;;
+          ladder-stop) pm2 stop ladder; pm2 save >/dev/null ;;
           snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
           snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;
@@ -143,7 +145,7 @@ mkdir -p status
   echo "--- positions ---"
   cat "$APP/logs/positions.json" 2>/dev/null || echo "{}"
 } 2>&1 | redact > status/status.txt
-{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
+{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- ladder ---"; pm2 logs ladder --nostream --lines 20 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
 cp "$APP/logs/trades.jsonl" status/trades.jsonl 2>/dev/null
 
 git add status
