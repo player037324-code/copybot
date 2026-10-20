@@ -21,7 +21,7 @@ git fetch -q origin main && git reset -q --hard origin/main
 redact() {
   # strip api keys / private key from anything we push
   local s; s=$(cat)
-  for k in HELIUS_API_KEY JUP_API_KEY PRIVATE_KEY; do
+  for k in HELIUS_API_KEY JUP_API_KEY PRIVATE_KEY SNIPE_PRIVATE_KEY; do
     v=$(grep -E "^$k=" "$APP/.env" 2>/dev/null | cut -d= -f2-)
     [ -n "$v" ] && s=${s//"$v"/REDACTED}
   done
@@ -37,7 +37,9 @@ if [ "$HASH" != "$(cat "$APP/.deployed" 2>/dev/null)" ]; then
   chmod 600 "$APP/.env"
   (cd "$APP" && npm install --omit=dev --silent >/dev/null 2>&1)
   # only restart if it was already running; never start a bot the user stopped
-  pm2 jlist 2>/dev/null | grep -q '"name":"copybot".*"status":"online"' && pm2 restart copybot >/dev/null 2>&1
+  for p in copybot sniper; do
+    pm2 jlist 2>/dev/null | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{try{const x=JSON.parse(d).find(z=>z.name==='$p');process.exit(x&&x.pm2_env.status==='online'?0:1)}catch{process.exit(1)}})" && pm2 restart $p >/dev/null 2>&1
+  done
   echo "$HASH" > "$APP/.deployed"
 fi
 
@@ -71,6 +73,11 @@ if [ -f control/cmd.txt ]; then
           inspect)  timeout 120 node scripts/inspect.js 2>&1 ;;
           watch)    timeout 160 node scripts/watch.js 2>&1 ;;
           stats)    npm run -s stats 2>&1 ;;
+          snipetest\ *) a=${c#snipetest }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z\ .0-9]+$ ]] && timeout 60 node scripts/snipetest.js $a 2>&1 ;;
+          snipe-start) pm2 describe sniper >/dev/null 2>&1 && pm2 restart sniper || pm2 start src/sniper.js --name sniper; pm2 save >/dev/null; sleep 4; pm2 logs sniper --nostream --lines 15 --raw 2>&1 | tail -15 ;;
+          snipe-stop) pm2 stop sniper; pm2 save >/dev/null ;;
+          snipe-reset) rm -f logs/snipe-state.json; echo "snipe state cleared" ;;
+          snipe-log) pm2 logs sniper --nostream --lines 40 --raw 2>&1 | tail -40 ;;
           dumpix\ *) a=${c#dumpix }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [0-9])?$ ]] && timeout 60 node scripts/dumpix.js $a 2>&1 ;;
           launchinfo\ *) a=${c#launchinfo }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ [1-9A-HJ-NP-Za-km-z]{32,44})?$ ]] && timeout 90 node scripts/launchinfo.js $a 2>&1 ;;
           stonk\ *) a=${c#stonk }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}(\ \$?[A-Za-z0-9]{1,15})?$ ]] && timeout 100 node scripts/stonk2.js $a 2>&1 ;;
@@ -85,7 +92,7 @@ if [ -f control/cmd.txt ]; then
           reset-positions) cp logs/positions.json "logs/positions.bak.$(date +%s).json" 2>/dev/null; echo '{}' > logs/positions.json; echo cleared ;;
           set\ *)
             kv=${c#set }; k=${kv%%=*}; v=${kv#*=}
-            if [[ "$k" =~ ^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY)$ ]]; then echo "refused: secrets are only edited on the server"
+            if [[ "$k" =~ ^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY)$ ]]; then echo "refused: secrets are only edited on the server"
             elif [[ "$k" =~ ^[A-Z_]+$ ]] && grep -q "^$k=" .env; then sed -i "s|^$k=.*|$k=$v|" .env; echo "set $k=$v"
             elif [[ "$k" =~ ^[A-Z_]+$ ]]; then echo "$k=$v" >> .env; echo "added $k=$v"
             else echo "bad key"; fi ;;
@@ -108,15 +115,19 @@ mkdir -p status
   echo "wallet: $(cd "$APP" && node -e 'import("dotenv/config").then(async()=>{const k=process.env.PRIVATE_KEY;if(!k)return console.log("none");const bs58=(await import("bs58")).default;const {Keypair}=await import("@solana/web3.js");console.log(Keypair.fromSecretKey(bs58.decode(k)).publicKey.toBase58())}).catch(()=>console.log("error"))' 2>/dev/null)"
   echo
   echo "--- settings (secrets hidden) ---"
-  grep -E '^[A-Z_]+=' "$APP/.env" | sed -E 's/^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY)=.+/\1=<set>/'
+  grep -E '^[A-Z_]+=' "$APP/.env" | sed -E 's/^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY)=.+/\1=<set>/'
   echo
   echo "--- stats ---"
   (cd "$APP" && npm run -s stats 2>&1)
   echo
+  echo "--- sniper ---"
+  echo "sniper pm2: $(pm2 jlist 2>/dev/null | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{const p=JSON.parse(d).find(x=>x.name==="sniper");console.log(p?p.pm2_env.status:"not started")}catch{console.log("n/a")}})')"
+  cat "$APP/logs/snipe-state.json" 2>/dev/null
+  echo
   echo "--- positions ---"
   cat "$APP/logs/positions.json" 2>/dev/null || echo "{}"
 } 2>&1 | redact > status/status.txt
-{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
+{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
 cp "$APP/logs/trades.jsonl" status/trades.jsonl 2>/dev/null
 
 git add status

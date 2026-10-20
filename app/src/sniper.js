@@ -1,0 +1,238 @@
+// StonkFun / Raydium LaunchLab sniper.
+// Watches for the FIRST launch paired to SNIPE_QUOTE_MINT with ticker SNIPE_TICKER and buys it
+// in the next block, paying with the quote token the wallet already holds. Zero network calls
+// between seeing the launch and sending the buy.
+import 'dotenv/config';
+import fs from 'fs';
+import crypto from 'crypto';
+import WebSocket from 'ws';
+import bs58 from 'bs58';
+import {
+  Connection, Keypair, PublicKey, TransactionInstruction, TransactionMessage, VersionedTransaction,
+  ComputeBudgetProgram, SystemProgram,
+} from '@solana/web3.js';
+
+// ---------- config ----------
+const env = (k, d) => (process.env[k] === undefined || process.env[k] === '' ? d : process.env[k].trim());
+const S = {
+  heliusKey: env('HELIUS_API_KEY', ''),
+  privateKey: env('SNIPE_PRIVATE_KEY', env('PRIVATE_KEY', '')),
+  quoteMint: env('SNIPE_QUOTE_MINT', ''),
+  ticker: env('SNIPE_TICKER', '').replace(/^\$/, '').toUpperCase(),
+  amount: Number(env('SNIPE_AMOUNT', '0')), // in quote-token units (e.g. 1400 SAMA4)
+  platform: env('SNIPE_PLATFORM', '6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt'), // StonkFun's LaunchLab platform
+  minOutRaw: BigInt(env('SNIPE_MIN_OUT_RAW', '0')),
+  cuLimit: Number(env('SNIPE_CU_LIMIT', '120000')),
+  cuPrice: Number(env('SNIPE_CU_PRICE', '3000000')), // microLamports/CU (120k CU x 3M = 0.00036 SOL)
+  tipSol: Number(env('SNIPE_TIP_SOL', '0.002')),
+  maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
+  dryRun: env('SNIPE_DRY_RUN', 'true').toLowerCase() === 'true',
+  senderUrl: env('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),
+};
+const RPC = `https://mainnet.helius-rpc.com/?api-key=${S.heliusKey}`;
+const WSS = [`wss://mainnet.helius-rpc.com/?api-key=${S.heliusKey}`, `wss://beta.helius-rpc.com/?api-key=${S.heliusKey}`];
+const STATE = 'logs/snipe-state.json';
+fs.mkdirSync('logs', { recursive: true });
+
+const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 23);
+const log = (...a) => console.log(`[${ts()}]`, ...a);
+const warn = (...a) => console.warn(`[${ts()}] WARN`, ...a);
+
+// ---------- LaunchLab constants (verified against the real $ALTCOIN launch) ----------
+export const LL = new PublicKey('LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj');
+const GLOBAL_CONFIG = new PublicKey('31WUZ2UsqHCxDaZTZEX1z9noY5rxGmw6ZyAqmG53rirH');
+const TOKEN = new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA');
+const TOKEN22 = new PublicKey('TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb');
+const ATA_PROGRAM = new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL');
+const pda = (seeds) => PublicKey.findProgramAddressSync(seeds, LL)[0];
+const AUTHORITY = pda([Buffer.from('vault_auth_seed')]);
+const EVENT_AUTH = pda([Buffer.from('__event_authority')]);
+const disc = (n) => crypto.createHash('sha256').update(`global:${n}`).digest().subarray(0, 8);
+const BUY_EXACT_IN = disc('buy_exact_in'); // faea0d7bd59c13ec
+const CREATE_DISCS = new Set(['25be7ede2c9aab11', ...['initialize', 'initialize_v2', 'initialize_with_token_2022'].map((n) => disc(n).toString('hex'))]);
+const TIP_ACCOUNTS = [
+  '4ACfpUFoaSD9bfPdeu6DBt89gB6ENTeHBXCAi87NhDEE', 'D2L6yPZ2FmmmTKPgzaMKdhu6EWZcTpLy1Vhx8uvZe7NZ',
+  '9bnz4RShgq1hAnLnZbP8kbgBg1kEmcJBYQq3gQbmnSta', '5VY91ws6B2hMmBFRsXkoAAdsPHBJwRfBht4DXox3xkwn',
+  '2nyhqdwKcJZR2vcqCyrYsaPVdAnFoJjiksCXJ7hfEYgD', '2q5pghRs6arqVjRvT5gfgWfWcHWmw1ZuCzphgd5KfWGJ',
+  'wyvPkWjVZz1M8fHQnMMCDTQDbkManefNNhweYk5WkcF', '3KCKozbAaF75qEU33jtzozcJ29yJuaLJTy2jFdzUY8bT',
+  '4vieeGHPYPG2MmyPRcYjdiDmmhN3ww7hsFNap8pVN3Ey', '4TQLFNWK8AovT1gFvda5jfw2oJeRMKEmw7aH6MGBJ3or',
+].map((a) => new PublicKey(a));
+
+const ata = (owner, mint, prog) => PublicKey.findProgramAddressSync([owner.toBuffer(), prog.toBuffer(), mint.toBuffer()], ATA_PROGRAM)[0];
+
+// ---------- parse a launch from a LaunchLab create instruction ----------
+function readStr(buf, o) { const n = buf.readUInt32LE(o); return [buf.subarray(o + 4, o + 4 + n).toString('utf8'), o + 4 + n]; }
+export function parseLaunch(tx) {
+  const msg = tx.transaction.message;
+  for (const ix of msg.instructions) {
+    if ((ix.programId?.toString?.() ?? ix.programId) !== LL.toBase58() || !ix.data) continue;
+    const d = Buffer.from(bs58.decode(ix.data));
+    if (!CREATE_DISCS.has(d.subarray(0, 8).toString('hex'))) continue;
+    try {
+      let o = 8; const decimals = d[o]; o += 1;
+      const [name, o2] = readStr(d, o); const [symbol] = readStr(d, o2);
+      const a = ix.accounts.map((k) => k.toString());
+      // create accounts: 0 payer,1 creator,2 global,3 platform,4 authority,5 pool,6 base,7 quote,8 baseVault,9 quoteVault,10 baseProg,11 quoteProg
+      return { name, symbol, decimals, creator: a[1], platform: a[3], pool: a[5], base: a[6], quote: a[7], baseVault: a[8], quoteVault: a[9], baseProg: a[10], quoteProg: a[11] };
+    } catch { return null; }
+  }
+  return null;
+}
+
+// ---------- build our buy (pure local, no RPC) ----------
+export function buildBuyIxs(L, wallet, amountRaw, minOutRaw) {
+  const me = wallet.publicKey;
+  const base = new PublicKey(L.base); const quote = new PublicKey(L.quote);
+  const baseProg = new PublicKey(L.baseProg); const quoteProg = new PublicKey(L.quoteProg);
+  const pool = pda([Buffer.from('pool'), base.toBuffer(), quote.toBuffer()]);
+  const myBase = ata(me, base, baseProg); const myQuote = ata(me, quote, quoteProg);
+  const keys = [
+    [me, true, true], [AUTHORITY, false, false], [GLOBAL_CONFIG, false, false], [new PublicKey(L.platform), false, false],
+    [pool, false, true], [myBase, false, true], [myQuote, false, true],
+    [pda([Buffer.from('pool_vault'), pool.toBuffer(), base.toBuffer()]), false, true],
+    [pda([Buffer.from('pool_vault'), pool.toBuffer(), quote.toBuffer()]), false, true],
+    [base, false, false], [quote, false, false], [baseProg, false, false], [quoteProg, false, false],
+    [EVENT_AUTH, false, false], [LL, false, false], [SystemProgram.programId, false, false],
+    [pda([new PublicKey(L.platform).toBuffer(), quote.toBuffer()]), false, true],
+    [pda([new PublicKey(L.creator).toBuffer(), quote.toBuffer()]), false, true],
+  ].map(([pubkey, isSigner, isWritable]) => ({ pubkey, isSigner, isWritable }));
+  const data = Buffer.alloc(32);
+  BUY_EXACT_IN.copy(data, 0);
+  data.writeBigUInt64LE(BigInt(amountRaw), 8);
+  data.writeBigUInt64LE(BigInt(minOutRaw), 16);
+  data.writeBigUInt64LE(0n, 24); // share_fee_rate
+  const createBaseAta = new TransactionInstruction({
+    programId: ATA_PROGRAM,
+    keys: [
+      { pubkey: me, isSigner: true, isWritable: true }, { pubkey: myBase, isSigner: false, isWritable: true },
+      { pubkey: me, isSigner: false, isWritable: false }, { pubkey: base, isSigner: false, isWritable: false },
+      { pubkey: SystemProgram.programId, isSigner: false, isWritable: false }, { pubkey: baseProg, isSigner: false, isWritable: false },
+    ],
+    data: Buffer.from([1]),
+  });
+  return [createBaseAta, new TransactionInstruction({ programId: LL, keys, data })];
+}
+
+export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S.cuPrice, tipSol = S.tipSol) {
+  const all = [
+    ComputeBudgetProgram.setComputeUnitLimit({ units: cuLimit }),
+    ComputeBudgetProgram.setComputeUnitPrice({ microLamports: cuPrice }),
+    ...ixs,
+    SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: TIP_ACCOUNTS[Math.floor(Math.random() * TIP_ACCOUNTS.length)], lamports: Math.round(tipSol * 1e9) }),
+  ];
+  const msg = new TransactionMessage({ payerKey: wallet.publicKey, recentBlockhash: blockhash, instructions: all }).compileToV0Message();
+  const tx = new VersionedTransaction(msg);
+  tx.sign([wallet]);
+  return tx;
+}
+
+// ---------- runtime ----------
+async function main() {
+  const missing = ['heliusKey', 'privateKey', 'quoteMint', 'ticker'].filter((k) => !S[k]);
+  if (missing.length || !(S.amount > 0)) { console.error(`sniper not configured: ${[...missing, ...(S.amount > 0 ? [] : ['amount'])].join(', ')}`); process.exit(1); }
+  const conn = new Connection(RPC, { commitment: 'confirmed' });
+  const wallet = Keypair.fromSecretKey(bs58.decode(S.privateKey));
+  const quotePk = new PublicKey(S.quoteMint);
+  const quoteInfo = await conn.getParsedAccountInfo(quotePk);
+  const quoteProg = new PublicKey(quoteInfo.value.owner);
+  const decimals = quoteInfo.value.data.parsed.info.decimals;
+  const amountRaw = BigInt(Math.floor(S.amount * 10 ** decimals));
+  const myQuote = ata(wallet.publicKey, quotePk, quoteProg);
+  const bal = await conn.getTokenAccountBalance(myQuote).catch(() => null);
+  const have = bal ? Number(bal.value.uiAmount) : 0;
+
+  let state = {}; try { state = JSON.parse(fs.readFileSync(STATE, 'utf8')); } catch {}
+  const key = `${S.quoteMint}:${S.ticker}`;
+  log('=== sniper starting ===');
+  log(`mode: ${S.dryRun ? 'DRY RUN (builds + simulates, never sends)' : 'LIVE'}`);
+  log(`target: first $${S.ticker} paired to ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
+  log(`wallet ${wallet.publicKey.toBase58()} | buy ${S.amount} quote tokens | holds ${have} | tip ${S.tipSol} SOL | prio ${S.cuPrice} uL x ${S.cuLimit}`);
+  if (have < S.amount) warn(`wallet holds ${have} of the quote token, needs ${S.amount}. Buy will fail until funded.`);
+  if (state[key]) { log(`already sniped/claimed first $${S.ticker} for this pool (${state[key].mint}). Nothing to do. Clear with snipe-reset.`); }
+
+  // keep a fresh blockhash + warm connections so the hot path never waits
+  let bh = await conn.getLatestBlockhash('confirmed');
+  setInterval(async () => { try { bh = await conn.getLatestBlockhash('confirmed'); } catch {} }, 1000);
+  setInterval(() => fetch(`${S.senderUrl}/ping`).catch(() => {}), 4000);
+  // precompute everything that doesn't depend on the new coin
+  const senderSend = `${S.senderUrl}/fast?api-key=${S.heliusKey}`;
+  const post = (b64) => fetch(senderSend, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64', skipPreflight: true, maxRetries: 0 }] }) }).then((r) => r.json());
+  const seenMints = new Set();
+  let fired = !!state[key];
+
+  async function onTx(tx, sig, slot, src, seenAt) {
+    const L = parseLaunch(tx);
+    if (!L || seenMints.has(L.base)) return;
+    seenMints.add(L.base);
+    const sym = L.symbol.replace(/^\$/, '').toUpperCase();
+    log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} slot ${slot}`);
+    if (L.quote !== S.quoteMint || sym !== S.ticker) return;
+    if (L.platform !== S.platform) return log(`  ticker match but other platform (${L.platform}), ignoring`);
+    if (fired) return log(`  $${S.ticker} copy (not first), ignoring`);
+    fired = true; // claim instantly so nothing else can fire
+    const t0 = performance.now();
+    const ixs = buildBuyIxs(L, wallet, amountRaw, S.minOutRaw);
+    const ours = buildTx(wallet, ixs, bh.blockhash);
+    const raw = Buffer.from(ours.serialize());
+    const b64 = raw.toString('base64');
+    const buildMs = (performance.now() - t0).toFixed(2);
+    state[key] = { mint: L.base, sig, slot, at: new Date().toISOString() };
+    fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
+    if (S.dryRun) {
+      const sim = await conn.simulateTransaction(ours, { sigVerify: false, replaceRecentBlockhash: true, commitment: 'processed' });
+      log(`  DRY RUN: built in ${buildMs}ms (${Date.now() - seenAt}ms after seeing launch). sim: ${sim.value.err ? 'ERR ' + JSON.stringify(sim.value.err) : 'OK'} CU ${sim.value.unitsConsumed}`);
+      (sim.value.logs || []).filter((l) => /Error|failed|Instruction: Buy/.test(l)).slice(-4).forEach((l) => log('   ' + l));
+      return;
+    }
+    // fire on every path at once, then keep rebroadcasting until it lands
+    const sendT = Date.now();
+    const r = await Promise.allSettled([post(b64), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
+    const ourSig = bs58.encode(ours.signatures[0]);
+    log(`  SENT buy ${S.amount} -> $${S.ticker} | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
+    r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`));
+    for (let i = 0; i < 40; i++) {
+      await new Promise((res) => setTimeout(res, 250));
+      const st = (await conn.getSignatureStatuses([ourSig]).catch(() => ({ value: [null] }))).value[0];
+      if (st) {
+        const behind = st.slot - slot;
+        if (st.err) { warn(`  BUY FAILED (landed +${behind} slots): ${JSON.stringify(st.err)}`); }
+        else log(`  BUY LANDED +${behind} slots after launch (slot ${st.slot})`);
+        state[key].ourSig = ourSig; state[key].landedSlot = st.slot; state[key].err = st.err || null;
+        fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
+        return;
+      }
+      if (i % 2 === 1 && i < 12) post(b64).catch(() => {});
+    }
+    warn('  buy never landed');
+  }
+
+  // race two independent websocket feeds; whichever sees the launch first wins
+  for (const [i, url] of WSS.entries()) {
+    const src = i === 0 ? 'mainnet' : 'beta';
+    const connect = () => {
+      const ws = new WebSocket(url, { perMessageDeflate: false });
+      let ping;
+      ws.on('open', () => {
+        log(`feed ${src} connected`);
+        ws.send(JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'transactionSubscribe', params: [
+          { accountRequired: [LL.toBase58(), S.quoteMint], failed: false, vote: false },
+          { commitment: 'processed', encoding: 'jsonParsed', transactionDetails: 'full', showRewards: false, maxSupportedTransactionVersion: 1 },
+        ] }));
+        ping = setInterval(() => ws.readyState === 1 && ws.ping(), 15000);
+      });
+      ws.on('message', (data) => {
+        const seenAt = Date.now();
+        let m; try { m = JSON.parse(data); } catch { return; }
+        if (m.error) return warn(`feed ${src}: ${JSON.stringify(m.error).slice(0, 150)}`);
+        const r = m.params?.result;
+        if (r?.transaction) onTx(r.transaction, r.signature, r.slot, src, seenAt).catch((e) => warn(`onTx: ${e.message}`));
+      });
+      ws.on('close', () => { clearInterval(ping); warn(`feed ${src} closed, reconnecting`); setTimeout(connect, 300); });
+      ws.on('error', (e) => warn(`feed ${src} error: ${e.message}`));
+    };
+    connect();
+  }
+  setInterval(() => log(`alive | watching $${S.ticker} on ${S.quoteMint.slice(0, 6)} | ${fired ? 'already fired' : 'armed'}`), 300000).unref();
+}
+
+if (process.argv[1] && process.argv[1].endsWith('sniper.js')) main().catch((e) => { console.error(e); process.exit(1); });
