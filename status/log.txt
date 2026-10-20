@@ -208,46 +208,46 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-20 20:57:03.873] target: first $TRUMP -> buy 1
-[2026-10-20 20:57:03.873] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 2
-[2026-10-20 20:57:04.197] warm build time (median of 10): total 4.86ms = accounts 1.43 + compile/sign 3.09 + serialize 0.18
-[2026-10-20 20:57:04.197] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:57:04.197] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 20:57:04.213] feed beta connected
-[2026-10-20 20:57:04.248] feed mainnet connected
-[2026-10-20 21:02:04.202] alive | pool 6s2umN | FIRST armed, $TRUMP armed
-[2026-10-20 21:06:05.408] === sniper starting ===
-[2026-10-20 21:06:05.416] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:06:05.416] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:06:05.417] target: first launch (ANY ticker) -> buy 1
-[2026-10-20 21:06:05.417] target: first $TRUMP -> buy 1
-[2026-10-20 21:06:05.417] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 2
-[2026-10-20 21:06:06.840] warm build time (median of 10): total 17.42ms = accounts 4.97 + compile/sign 9.60 + serialize 2.84
-[2026-10-20 21:06:06.841] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:06:06.842] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:06:06.873] feed beta connected
-[2026-10-20 21:06:06.903] feed mainnet connected
-[2026-10-20 21:07:05.143] === sniper starting ===
-[2026-10-20 21:07:05.149] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:07:05.152] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:07:05.152] target: first launch (ANY ticker) -> buy 1
-[2026-10-20 21:07:05.153] target: first $TRUMP -> buy 1
-[2026-10-20 21:07:05.153] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 2
-[2026-10-20 21:07:06.534] warm build time (median of 10): total 12.70ms = accounts 5.17 + compile/sign 7.69 + serialize 0.19
-[2026-10-20 21:07:06.535] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:07:06.536] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:07:06.626] feed beta connected
-[2026-10-20 21:07:06.661] feed mainnet connected
-[2026-10-20 21:10:04.113] === sniper starting ===
-[2026-10-20 21:10:04.116] mode: LIVE
-[2026-10-20 21:10:04.116] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:10:04.116] target: first $TRUMP -> buy 762
-[2026-10-20 21:10:04.116] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 812.800771 of pool token, targets need up to 762
-[2026-10-20 21:10:04.575] warm build time (median of 10): total 4.33ms = accounts 0.77 + compile/sign 2.47 + serialize 0.20
-[2026-10-20 21:10:04.576] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 21:10:04.576] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
-[2026-10-20 21:10:04.667] feed mainnet connected
-[2026-10-20 21:10:09.600] feed beta connected
+[2026-10-20 21:12:28.601] launch [beta] $1$ (Trump $1 Coin) 7Z44DXEM9kBfCoxtCTVqsCjSKnoTu9D9APRePYWQD7Dz quote 6s2umN platform 6BwHHD token2022 slot 459374897
+[2026-10-20 21:12:28.601]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:31.490] launch [beta] $Trump Family (The Insiders) 3VhsdBe2rJshrEFQLy4d6rNz9PP681EzEP5VXxu7WzuN quote 6s2umN platform 6BwHHD token2022 slot 459374911
+[2026-10-20 21:12:31.490]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:31.809] launch [beta] $TRUMP (Official Trump) 73hx6KTme5FamZhjQT1rQJPXtCTx35hvnrdoJnwqy1Yc quote 6s2umN platform 6BwHHD token2022 slot 459374913
+[2026-10-20 21:12:31.809]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:32.460] launch [beta] $1 (Trump $1 Coin) BGhtcDRVuU1aFugfJwDDcwcNMEqw8R86vwLK81AASTNK quote 6s2umN platform 4E876q token2022 slot 459374916
+[2026-10-20 21:12:32.460]   our pool but other platform (4E876qZTE9FJMrBzgVtBrSrzz2TLivB5Y5QXPjB4gZL7), ignoring
+[2026-10-20 21:12:33.258] launch [beta] $TRUMP (OFFICIAL TRUMP COIN) 6mxRNb1X3tNoFZvdnwc2qVaqu73ezqDtQevViNktLdsX quote 6s2umN platform 6BwHHD token2022 slot 459374920
+[2026-10-20 21:12:33.258]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:34.700] launch [beta] $TA (Trump Account) B2MhRx1gAtsGPGBaVdT1ZLvJcXSYdVurEpr9gUNCVghC quote 6s2umN platform 6BwHHD token2022 slot 459374928
+[2026-10-20 21:12:34.700]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:36.188] launch [beta] $TRUMPFOLIO (Trumpfolio) 25zCa8QfW9aRCAb599STfYfoUXhm33uzS52JeHwd5hBE quote 6s2umN platform 6BwHHD token2022 slot 459374935
+[2026-10-20 21:12:36.188]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:36.681] launch [beta] $MWG (MEME WAR GENERAL) ES4cUgSzszM9a9c7tKLPFqB3FLx28onPdW2sJMf1vE7k quote 6s2umN platform 6BwHHD token2022 slot 459374937
+[2026-10-20 21:12:36.681]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:43.267] launch [beta] $TRUMPFOLIO (Trumpfolio) 7Df4CbbYhaxo4Jk14ToktYZmNbhAohtYKx4mUYJ136cz quote 6s2umN platform 6BwHHD token2022 slot 459374968
+[2026-10-20 21:12:43.268]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:43.395] launch [beta] $TRUMP2 (Official Trump 2) 3aa7Qdum1ET9Taed2MuDhKY6tm7kYZeud45PXCVxx1LK quote 6s2umN platform 6BwHHD token2022 slot 459374969
+[2026-10-20 21:12:43.395]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:46.208] launch [beta] $tsm6900 (Trumpfolio) GitqnLwoJnorEkNuY6WN2Na86wdkBHvGzNo5nLYs2egN quote 6s2umN platform 6BwHHD token2022 slot 459374982
+[2026-10-20 21:12:46.208]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:49.486] launch [beta] $KAI (OFFICIAL KAI TRUMP) 5uWiWc4Pod2CJ6J22ytyP3uFoWTiuNs1zCanLS9r9Qg8 quote 6s2umN platform 6BwHHD token2022 slot 459374997
+[2026-10-20 21:12:49.486]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:51.753] launch [beta] $$ (Trump $1 Coin) 6YSiQM1sC6k55TEHoXrpYULMywZaj3xQCxNtVGyHFgA1 quote 6s2umN platform 6BwHHD token2022 slot 459375007
+[2026-10-20 21:12:51.754]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:53.330] launch [beta] $MMGA (MAKE MEMES GREAT AGAIN) 8roSu8himvh5KFJJRzxy8Xo2nMuydSaTZiTYyLocUYg2 quote 6s2umN platform 6BwHHD token2022 slot 459375014
+[2026-10-20 21:12:53.331]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:54.950] launch [beta] $TA (Trump Accounts) 5SWejcBKBV6xzagLhdB2yoXnnPLgeRkJrGEF4EsFtXkH quote 6s2umN platform 6BwHHD token2022 slot 459375022
+[2026-10-20 21:12:54.951]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:55.751] launch [beta] $TSM6900 (Trump Stock Market 6900) FzYcRYir8u9nCLLfAybtAvbUSGEjVx9AYyqFQUYvUXbL quote 6s2umN platform 6BwHHD token2022 slot 459375026
+[2026-10-20 21:12:55.751]   not a target (or target already taken), ignoring
+[2026-10-20 21:12:56.394] launch [beta] $PATRIOT (Patriot Token) J8anNFBvWJF6Z2bU5ijoGY4sTnyPX3QNFUjZg48GhvJw quote 6s2umN platform 6BwHHD token2022 slot 459375029
+[2026-10-20 21:12:56.394]   not a target (or target already taken), ignoring
+[2026-10-20 21:13:01.443] launch [beta] $Kimchi (Aura Final Boss) 7ZJ6JtzLLBLETUe68AH8UzycRGbA3TBHYMzZkY7GhPo quote 6s2umN platform 6BwHHD token2022 slot 459375052
+[2026-10-20 21:13:01.444]   not a target (or target already taken), ignoring
+[2026-10-20 21:13:01.856] launch [beta] $TRUMPFOLIO (Trumpfolio) 9PssaDsSEw1dxwcCz7iqQAjAvc442JN5krJGfkFJ6555 quote 6s2umN platform 6BwHHD token2022 slot 459375054
+[2026-10-20 21:13:01.856]   not a target (or target already taken), ignoring
+[2026-10-20 21:13:02.394] launch [beta] $air (aircoin) bJPoCqkGL2Dg2Zo1aLab1nDU9vzDszgf4KxwGEYUnxh quote 6s2umN platform 6BwHHD token2022 slot 459375057
+[2026-10-20 21:13:02.394]   not a target (or target already taken), ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
