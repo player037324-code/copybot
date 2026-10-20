@@ -237,6 +237,17 @@
 [2026-10-20 20:53:08.027]    Program log: Error: IncorrectProgramId
 [2026-10-20 20:53:08.027]    Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: incorrect program id for instruction
 [2026-10-20 20:53:08.027]    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL failed: incorrect program id for instruction
+[2026-10-20 20:55:05.596] === sniper starting ===
+[2026-10-20 20:55:05.597] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-20 20:55:05.597] pool 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ on platform 6BwHHD
+[2026-10-20 20:55:05.597] target: first launch (ANY ticker) -> buy 1 [ALREADY DONE]
+[2026-10-20 20:55:05.597] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 1
+[2026-10-20 20:55:05.646] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-20 20:55:06.999] warm build time (median of 10): total 17.49ms = accounts 7.18 + compile/sign 8.78 + serialize 0.21
+[2026-10-20 20:55:07.001] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-20 20:55:07.001] fees: priority 0.0050 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4580 SOL per snipe (tips only paid if it lands)
+[2026-10-20 20:55:07.113] feed beta connected
+[2026-10-20 20:55:07.117] feed mainnet connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
