@@ -30,6 +30,8 @@ const S = {
   maxLateSlots: Number(env('SNIPE_MAX_LATE_SLOTS', '3')), // don't fire if we saw the launch this late
   dryRun: env('SNIPE_DRY_RUN', 'true').toLowerCase() === 'true',
   senderUrl: env('SENDER_URL', 'http://ewr-sender.helius-rpc.com'),
+  nozomiKey: env('NOZOMI_KEY', ''), nozomiUrl: env('NOZOMI_URL', 'http://ewr1.nozomi.temporal.xyz'), nozomiTipSol: Number(env('SNIPE_NOZOMI_TIP_SOL', '0.001')),
+  astraKey: env('ASTRALANE_KEY', ''), astraUrl: env('ASTRALANE_URL', 'http://ny.gateway.astralane.io'), astraTipSol: Number(env('SNIPE_ASTRALANE_TIP_SOL', '0.001')),
 };
 const RPC = `https://mainnet.helius-rpc.com/?api-key=${S.heliusKey}`;
 const WSS = [`wss://mainnet.helius-rpc.com/?api-key=${S.heliusKey}`, `wss://beta.helius-rpc.com/?api-key=${S.heliusKey}`];
@@ -65,6 +67,12 @@ const JITO_TIP_ACCOUNTS = [
   'DfXygSm4jCyNCybVYYK6DwvWqjKee8pbDmJGcLWNDXjh', 'ADuUkR4vqLUMWXxW9gh6D6L8pMSawimctcNZ5pGwDcEt',
   'DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL', '3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6jT',
 ].map((a) => new PublicKey(a));
+
+export const NOZOMI_TIP_ACCOUNTS = ['TEMPaMeCRFAS9EKF53Jd6KpHxgL47uWLcpFArU1Fanq', 'noz3jAjPiHuBPqiSPkkugaJDkJscPuRhYnSpbi8UvC4', 'noz3str9KXfpKknefHji8L1mPgimezaiUyCHYMDv1GE', 'noz6uoYCDijhu1V7cutCpwxNiSovEwLdRHPwmgCGDNo', 'noz9EPNcT7WH6Sou3sr3GGjHQYVkN3DNirpbvDkv9YJ', 'nozc5yT15LazbLTFVZzoNZCwjh3yUtW86LoUyqsBu4L', 'nozFrhfnNGoyqwVuwPAW4aaGqempx4PU6g6D9CJMv7Z', 'nozievPk7HyK1Rqy1MPJwVQ7qQg2QoJGyP71oeDwbsu', 'noznbgwYnBLDHu8wcQVCEw6kDrXkPdKkydGJGNXGvL7', 'nozNVWs5N8mgzuD3qigrCG2UoKxZttxzZ85pvAQVrbP', 'nozpEGbwx4BcGp6pvEdAh1JoC2CQGZdU6HbNP1v2p6P', 'nozrhjhkCr3zXT3BiT4WCodYCUFeQvcdUkM7MqhKqge', 'nozrwQtWhEdrA6W8dkbt9gnUaMs52PdAv5byipnadq3', 'nozUacTVWub3cL4mJmGCYjKZTnE9RbdY5AP46iQgbPJ', 'nozWCyTPppJjRuw2fpzDhhWbW355fzosWSzrrMYB1Qk', 'nozWNju6dY353eMkMqURqwQEoM3SFgEKC6psLCSfUne', 'nozxNBgWohjR75vdspfxR5H9ceC7XXH99xpxhVGt3Bb'].map((a) => new PublicKey(a));
+export const ASTRA_TIP_ACCOUNTS = ['astrazznxsGUhWShqgNtAdfrzP2G83DzcWVJDxwV9bF', 'astra4uejePWneqNaJKuFFA8oonqCE1sqF6b45kDMZm', 'astra9xWY93QyfG6yM8zwsKsRodscjQ2uU2HKNL5prk', 'astraRVUuTHjpwEVvNBeQEgwYx9w9CFyfxjYoobCZhL', 'astraEJ2fEj8Xmy6KLG7B3VfbKfsHXhHrNdCQx7iGJK', 'astraubkDw81n4LuutzSQ8uzHCv4BhPVhfvTcYv8SKC', 'astraZW5GLFefxNPAatceHhYjfA1ciq9gvfEg2S47xk', 'astrawVNP4xDBKT7rAdxrLYiTSTdqtUr63fSMduivXK'].map((a) => new PublicKey(a));
+export const nozomiSend = (b64) => fetch(`${S.nozomiUrl}/api/sendTransaction2?c=${S.nozomiKey}`, { method: 'POST', headers: { 'content-type': 'text/plain' }, body: b64 }).then(async (r) => (r.ok ? { result: 'ok' } : { error: `nozomi ${r.status} ${(await r.text()).slice(0, 100)}` }));
+export const astraSend = (b64) => fetch(`${S.astraUrl}/iris2?api-key=${S.astraKey}&method=sendTransaction`, { method: 'POST', headers: { 'content-type': 'text/plain' }, body: b64 }).then(async (r) => { const t = await r.text(); try { const j = JSON.parse(t); return j; } catch { return r.ok ? { result: t } : { error: `astralane ${r.status} ${t.slice(0, 100)}` }; } });
+export const SENDERS = S;
 
 const ata = (owner, mint, prog) => PublicKey.findProgramAddressSync([owner.toBuffer(), prog.toBuffer(), mint.toBuffer()], ATA_PROGRAM)[0];
 
@@ -129,6 +137,8 @@ export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S
     ...ixs,
     ...(jitoTipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(JITO_TIP_ACCOUNTS), lamports: Math.round(jitoTipSol * 1e9) })] : []),
     ...(tipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(TIP_ACCOUNTS), lamports: Math.round(tipSol * 1e9) })] : []),
+    ...(S.nozomiKey && S.nozomiTipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(NOZOMI_TIP_ACCOUNTS), lamports: Math.round(S.nozomiTipSol * 1e9) })] : []),
+    ...(S.astraKey && S.astraTipSol > 0 ? [SystemProgram.transfer({ fromPubkey: wallet.publicKey, toPubkey: pick(ASTRA_TIP_ACCOUNTS), lamports: Math.round(S.astraTipSol * 1e9) })] : []),
   ];
   const msg = new TransactionMessage({ payerKey: wallet.publicKey, recentBlockhash: blockhash, instructions: all }).compileToV0Message();
   const tx = new VersionedTransaction(msg);
@@ -166,6 +176,8 @@ async function main() {
   let bh = await conn.getLatestBlockhash('confirmed');
   setInterval(async () => { try { bh = await conn.getLatestBlockhash('confirmed'); } catch {} }, 1000);
   setInterval(() => fetch(`${S.senderUrl}/ping`).catch(() => {}), 4000);
+  if (S.nozomiKey) setInterval(() => fetch(`${S.nozomiUrl}/ping`).catch(() => {}), 30000);
+  if (S.astraKey) setInterval(() => fetch(`${S.astraUrl}/gethealth`).catch(() => {}), 30000);
   // precompute everything that doesn't depend on the new coin
   const senderSend = `${S.senderUrl}/fast?api-key=${S.heliusKey}`;
   const post = (b64) => fetch(senderSend, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sendTransaction', params: [b64, { encoding: 'base64', skipPreflight: true, maxRetries: 0 }] }) }).then((r) => r.json());
@@ -179,8 +191,9 @@ async function main() {
   }
   { const t = performance.now(); const fake = { base: Keypair.generate().publicKey.toBase58(), quote: S.quoteMint, creator: Keypair.generate().publicKey.toBase58(), platform: S.platform, baseProg: TOKEN22.toBase58(), quoteProg: quoteProg.toBase58() };
     buildTx(wallet, buildBuyIxs(fake, wallet, amountRaw, S.minOutRaw), bh.blockhash).serialize(); log(`warm build time: ${(performance.now() - t).toFixed(2)}ms`); }
-  log(`send paths: Helius Sender x2 + Helius RPC + Jito ${S.jitoUrls.map((u) => u.split('//')[1].split('.')[0]).join(',')}`);
-  log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender tip ${S.tipSol} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol).toFixed(4)} SOL per snipe`);
+  log(`send paths: Helius Sender x2 + Helius RPC${S.nozomiKey ? ' + Nozomi' : ''}${S.astraKey ? ' + Astralane' : ''} + Jito ${S.jitoUrls.map((u) => u.split('//')[1].split('.')[0]).join(',')}`);
+  const extra = (S.nozomiKey ? S.nozomiTipSol : 0) + (S.astraKey ? S.astraTipSol : 0);
+  log(`fees: priority ${(S.cuLimit * S.cuPrice / 1e15).toFixed(4)} SOL + Jito tip ${S.jitoTipSol} + Sender ${S.tipSol} + Nozomi/Astralane ${extra} = ${(S.cuLimit * S.cuPrice / 1e15 + S.jitoTipSol + S.tipSol + extra).toFixed(4)} SOL per snipe (tips only paid if it lands)`);
   const seenMints = new Set();
   let fired = !!state[key];
 
@@ -210,7 +223,7 @@ async function main() {
     }
     // fire on every path at once, then keep rebroadcasting until it lands
     const sendT = Date.now();
-    const r = await Promise.allSettled([post(b64), jitoSend(b64), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
+    const r = await Promise.allSettled([post(b64), jitoSend(b64), ...(S.nozomiKey ? [nozomiSend(b64)] : []), ...(S.astraKey ? [astraSend(b64)] : []), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
     const ourSig = bs58.encode(ours.signatures[0]);
     log(`  SENT buy ${S.amount} -> $${S.ticker} | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
     r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`));
@@ -225,7 +238,7 @@ async function main() {
         fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
         return;
       }
-      if (i % 2 === 1 && i < 12) { post(b64).catch(() => {}); jitoSend(b64).catch(() => {}); }
+      if (i % 2 === 1 && i < 12) { post(b64).catch(() => {}); jitoSend(b64).catch(() => {}); if (S.nozomiKey) nozomiSend(b64).catch(() => {}); if (S.astraKey) astraSend(b64).catch(() => {}); }
     }
     warn('  buy never landed');
   }

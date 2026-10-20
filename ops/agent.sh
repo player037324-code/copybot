@@ -21,11 +21,11 @@ git fetch -q origin main && git reset -q --hard origin/main
 redact() {
   # strip api keys / private key from anything we push
   local s; s=$(cat)
-  for k in HELIUS_API_KEY JUP_API_KEY PRIVATE_KEY SNIPE_PRIVATE_KEY TELEGRAM_BOT_TOKEN; do
+  for k in HELIUS_API_KEY JUP_API_KEY PRIVATE_KEY SNIPE_PRIVATE_KEY TELEGRAM_BOT_TOKEN NOZOMI_KEY ASTRALANE_KEY; do
     v=$(grep -E "^$k=" "$APP/.env" 2>/dev/null | cut -d= -f2-)
     [ -n "$v" ] && s=${s//"$v"/REDACTED}
   done
-  printf '%s\n' "$s" | sed -E 's/api-key=[A-Za-z0-9-]+/api-key=REDACTED/g'
+  printf '%s\n' "$s" | sed -E 's/api-key=[A-Za-z0-9-]+/api-key=REDACTED/g; s/[?&]c=[A-Za-z0-9-]+/?c=REDACTED/g'
 }
 
 # ---------- 1. deploy ----------
@@ -101,7 +101,7 @@ if [ -f control/cmd.txt ]; then
           reset-positions) cp logs/positions.json "logs/positions.bak.$(date +%s).json" 2>/dev/null; echo '{}' > logs/positions.json; echo cleared ;;
           set\ *)
             kv=${c#set }; k=${kv%%=*}; v=${kv#*=}
-            if [[ "$k" =~ ^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY|TELEGRAM_BOT_TOKEN)$ ]]; then echo "refused: secrets are only edited on the server"
+            if [[ "$k" =~ ^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY|TELEGRAM_BOT_TOKEN|NOZOMI_KEY|ASTRALANE_KEY)$ ]]; then echo "refused: secrets are only edited on the server"
             elif [[ ! "$v" =~ ^[A-Za-z0-9_.*,:/$-]*$ ]]; then echo "bad value"
             elif [[ "$k" =~ ^[A-Z_]+$ ]] && grep -q "^$k=" .env; then sed -i "s|^$k=.*|$k=$v|" .env; echo "set $k=$v"
             elif [[ "$k" =~ ^[A-Z_]+$ ]]; then echo "$k=$v" >> .env; echo "added $k=$v"
@@ -125,7 +125,7 @@ mkdir -p status
   echo "wallet: $(cd "$APP" && node -e 'import("dotenv/config").then(async()=>{const k=process.env.PRIVATE_KEY;if(!k)return console.log("none");const bs58=(await import("bs58")).default;const {Keypair}=await import("@solana/web3.js");console.log(Keypair.fromSecretKey(bs58.decode(k)).publicKey.toBase58())}).catch(()=>console.log("error"))' 2>/dev/null)"
   echo
   echo "--- settings (secrets hidden) ---"
-  grep -E '^[A-Z_]+=' "$APP/.env" | sed -E 's/^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY|TELEGRAM_BOT_TOKEN)=.+/\1=<set>/'
+  grep -E '^[A-Z_]+=' "$APP/.env" | sed -E 's/^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY|TELEGRAM_BOT_TOKEN|NOZOMI_KEY|ASTRALANE_KEY)=.+/\1=<set>/'
   echo
   echo "--- stats ---"
   (cd "$APP" && npm run -s stats 2>&1)
