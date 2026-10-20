@@ -155,7 +155,7 @@ async function main() {
   const key = `${S.quoteMint}:${S.ticker}`;
   log('=== sniper starting ===');
   log(`mode: ${S.dryRun ? 'DRY RUN (builds + simulates, never sends)' : 'LIVE'}`);
-  log(`target: first $${S.ticker} paired to ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
+  log(`target: first ${S.ticker === '*' ? 'launch (ANY ticker)' : '$' + S.ticker} paired to ${S.quoteMint} on platform ${S.platform.slice(0, 6)}`);
   log(`wallet ${wallet.publicKey.toBase58()} | buy ${S.amount} quote tokens | holds ${have}`);
   const solBal = (await conn.getBalance(wallet.publicKey)) / 1e9;
   if (solBal < S.jitoTipSol + S.tipSol + 0.02) warn(`wallet has ${solBal.toFixed(3)} SOL, needs ~${(S.jitoTipSol + S.tipSol + 0.02).toFixed(3)} for tips/fees/rent`);
@@ -188,7 +188,7 @@ async function main() {
     seenMints.add(L.base);
     const sym = L.symbol.replace(/^\$/, '').toUpperCase();
     log(`launch [${src}] $${L.symbol} (${L.name}) ${L.base} quote ${L.quote.slice(0, 6)} platform ${L.platform.slice(0, 6)} slot ${slot}`);
-    if (L.quote !== S.quoteMint || sym !== S.ticker) return;
+    if (L.quote !== S.quoteMint || (S.ticker !== '*' && sym !== S.ticker)) return;
     if (L.platform !== S.platform) return log(`  ticker match but other platform (${L.platform}), ignoring`);
     if (fired) return log(`  $${S.ticker} copy (not first), ignoring`);
     fired = true; // claim instantly so nothing else can fire

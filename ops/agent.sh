@@ -100,6 +100,7 @@ if [ -f control/cmd.txt ]; then
           set\ *)
             kv=${c#set }; k=${kv%%=*}; v=${kv#*=}
             if [[ "$k" =~ ^(HELIUS_API_KEY|JUP_API_KEY|PRIVATE_KEY|SNIPE_PRIVATE_KEY|TELEGRAM_BOT_TOKEN)$ ]]; then echo "refused: secrets are only edited on the server"
+            elif [[ ! "$v" =~ ^[A-Za-z0-9_.*,:/$-]*$ ]]; then echo "bad value"
             elif [[ "$k" =~ ^[A-Z_]+$ ]] && grep -q "^$k=" .env; then sed -i "s|^$k=.*|$k=$v|" .env; echo "set $k=$v"
             elif [[ "$k" =~ ^[A-Z_]+$ ]]; then echo "$k=$v" >> .env; echo "added $k=$v"
             else echo "bad key"; fi ;;
