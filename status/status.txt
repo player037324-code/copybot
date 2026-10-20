@@ -1,6 +1,6 @@
-updated: 2026-10-20T21:10:08Z
+updated: 2026-10-20T21:11:02Z
 deployed: d45e171373ed12d1473c3821b2e3e61884db3680
-pm2: stopped uptime=2913m restarts=14
+pm2: stopped uptime=2914m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -54,6 +54,7 @@ alerts pm2: online
 {"time":"2026-10-20T20:02:47.637Z","kind":"first StonkFun launch on older pool","text":"$CZ4 (CZ4) DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump is now live on StonkFun. First launch: $s C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r. Pool token is 71.1d old.","quote":"DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump","firstMint":"C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r","firstTicker":"s","isNew":false}
 {"time":"2026-10-20T20:05:00.407Z","kind":"first StonkFun launch on older pool","text":"$CMNS (Commons by Virtuals) AMUgSjmdFsS8Y3JeL32u7A45Fpt8YF9xKaiwW5uGHdXk is now live on StonkFun. First launch: $s 5koP2jMyeCQB1SdU1BatojNEMPFtZhE65CJcLXiWG5Fz. Pool token is 57.2d old.","quote":"AMUgSjmdFsS8Y3JeL32u7A45Fpt8YF9xKaiwW5uGHdXk","firstMint":"5koP2jMyeCQB1SdU1BatojNEMPFtZhE65CJcLXiWG5Fz","firstTicker":"s","isNew":false}
 {"time":"2026-10-20T20:37:30.429Z","kind":"first StonkFun launch on older pool","text":"$Buttcoin (Buttcoin) Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump is now live on StonkFun. First launch: $ASSCATCHUM EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ. Pool token is 284.3d old.","quote":"Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump","firstMint":"EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ","firstTicker":"ASSCATCHUM","isNew":false}
+{"time":"2026-10-20T21:10:55.756Z","kind":"first StonkFun launch on older pool","text":"$COPX (Global X Copper Miners ETF - Backpack Securities) CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5 is now live on StonkFun. First launch: $COPPER 9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ. Pool token is 57.0d old.","quote":"CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5","firstMint":"9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ","firstTicker":"COPPER","isNew":false}
 
 --- positions ---
 {
