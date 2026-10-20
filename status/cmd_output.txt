@@ -1,31 +1,3 @@
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 125203   │ 0s     │ 12   │ online    │ 0%       │ 21.0mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 0.5% | ram usage: 36% | enp1s0: ⇓ 0.036mb/s ⇑ 0.001mb/s | disk: ⇓ 0mb/s ⇑ 0.018mb/s
-=== cmd 22 @ 2026-10-18T02:08:02Z ===
-> errlog
-[2026-10-17 21:53:40] WARN websocket closed, reconnecting
-[2026-10-17 23:30:11] WARN websocket closed, reconnecting
-[2026-10-17 23:40:34] WARN BUY 4h7jHy failed: tx failed 542BufyWJV2ud712ygePJwbSQ32k9Sbw66K7q1RBTegvF1PD7Zb6Xatigcm6dxRoUumNDSJG5g6M84ozt9v7xVVi: {"InstructionError":[6,{"Custom":6001}]}
-[2026-10-18 02:03:32] WARN   3ZAnpe direct swap failed: no supported AMM buy in Lunar tx -> falling back to Jupiter
-total 52
-drwxr-xr-x 2 root root  4096 Oct 17 21:23 .
-drwxr-xr-x 5 root root  4096 Oct 17 21:23 ..
--rw-r--r-- 1 root root   419 Oct 18 02:03 copybot-error.log
--rw-r--r-- 1 root root 36410 Oct 18 02:07 copybot-out.log
-=== cmd 23 @ 2026-10-18T02:09:02Z ===
-> clonetest 28G3EPQ7GuQDzf5A6R6VRZv6V5UXDQSCsx24EH1Pmgk1NYKD5yvbL8X7tMEZuyaq8xrkRBnx6fBE43GdfC33MS6g
-Lunar buy: 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 10.016 SOL tokens 16460357333840
-AMM ix: none found
-Lunar top-level programs: 111111,FLASHX,FLASHX,FLASHX,111111
-  pumpswap ix disc c2ab1c46684d5b2f datalen 24 accts 17
-    accts: 0:6aXb1e 1:GijFWw 2:ADyA8h 3:3ZAnpe 4:So1111 5:F5bQQA 6:rBDMNk 7:DtraCE 8:FgGJ6F 9:Tokenz 10:Tokenk 11:111111 12:F5vXQS 13:5PHirr 14:CASRL2 15:GS4CU5 16:pAMMBa
-    data: c2ab1c46684d5b2f0003164e020000000100000000000000
-  pumpswap ix disc e445a52e51cb9a1d datalen 515 accts 1
-    accts: 0:GS4CU5
-    data: e445a52e51cb9a1d67f4521f2cf57777f428d46a000000005073c079f80e00000003164e0200000000000000000000000003164e020000007fe966358ca4000018f231bc130000000003164e020000001400000000000000a28a2a01000000000500000000000000a9a24a0000000000d84d41480200000036c316470200000052e12f7ba8cbddeccf30376de4e6801267c5135c21e377cac56a442b498c5081e98fe3bd593e82492714a990f8fb0c2ad7555a0defb6d6e9f28d5b4eb2a3605cd130d71dbb8b386d6211a6d6746275f234db2d69a40f0fc579013afde41d64770c9901e969e44dc56a8f6fa90e82472ebe5060c19965b4c22f888be8592a593e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c171a5129e2f623329435810372a71f8f11faec11842689336cd1a9673749fec5f000000000000007f128a05000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000150000006275795f65786163745f71756f74655f696e5f763200000000000000000000000000000000881300000000000054512500000000000679ab0503000000000000000000000001620acbf920780300000000000000000000000000000000008e26749d00000000
 === cmd 24 @ 2026-10-18T02:11:02Z ===
 > clonetest 28G3EPQ7GuQDzf5A6R6VRZv6V5UXDQSCsx24EH1Pmgk1NYKD5yvbL8X7tMEZuyaq8xrkRBnx6fBE43GdfC33MS6g
 Lunar buy: 3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump 10.016 SOL tokens 16460357333840
@@ -398,3 +370,31 @@ simulate now: ERR {"InstructionError":[2,{"Custom":1}]} CU 13079
 > snipe-fund 0.1 7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ
 0.1 SOL -> 10.1020 of 7V1evj | 1.0451 USD each | price impact 0.00% | route Kipseli(100%) > Meteora DLMM(100%)
 quote only. Run snipe-fund with --go to buy.
+=== cmd 38 @ 2026-10-20T19:41:02Z ===
+> stonkpools 24
+scanned 41400 StonkFun txs in 414 pages, back to 2026-10-19T19:59:41.000Z (time limit hit, older ones not scanned)
+NEW $SAMA4    7V1evjzUMFi4QDK7kAntcfdr9MyYC6S5bvsUCtxX1dSJ  pool token created 23.8h ago | 182 launches, first 22.2h ago | $ALTCOINx15 $SCAMx9 $WLDx6 $ALTx6
+    $MUSK4    ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a  pool token created 100.3h ago | 25 launches, first 23.3h ago | $ALTCOINx5 $ENERGYx3 $Protopianx3 $MUSKETx1
+    $FRONTIER 58QyXQ1UDgHh64EiTsCeevVM9cLPqBDNf3qZE6EdfUhZ  pool token created 248.5h ago | 1 launches, first 13.5h ago | $FORKEOx1
+    $VVV      VVV4UdRywr7SLafPHzqXwRCw7myXkmgCtitXUvj8g8c  pool token created 357.5h ago | 1 launches, first 21.7h ago | $DOVEx1
+    $SHIB     shib5gSoVKPjwkXrxRk7SbQFzb2R9rQB3TgQWYX4RwW  pool token created 419.7h ago | 1 launches, first 23.4h ago | $BIKEINUx1
+    $ONDO     ondohH8Vssxiqcy5u6Efi4AYN17KZrzQtv2a91dnrgW  pool token created 506.2h ago | 1 launches, first 13.1h ago | $GTA6STONKx1
+    $SI       DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP  pool token created 700.0h ago | 3 launches, first 7.6h ago | $PIx3
+    $JEANPHIL GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump  pool token created 745.4h ago | 1 launches, first 4.1h ago | $JEANNEx1
+    $PEPE     PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m  pool token created 811.7h ago | 5 launches, first 21.0h ago | $ELITEx1 $PIWx1 $RAREx1 $SPURDOx1
+    $INJ      1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz  pool token created 960.8h ago | 2 launches, first 7.2h ago | $ x1 $AGENTx1
+    $RUSH     SATqS9DYpLQsM2z51P4QCoqJRHa5wboV4qjJerJRUSH  pool token created 962.7h ago | 1 launches, first 21.2h ago | $XXXx1
+    $DJT      DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF  pool token created 999.9h ago | 1 launches, first 22.4h ago | $SWAMPx1
+    $DOGE     DoGEV7LASBkQbibMc5k5vKnTZoMg423GpJ5QtJEGfm7R  pool token created 1053.4h ago | 5 launches, first 20.6h ago | $wDogx1 $NEKOINUx1 $WOWx1 $DOGEMONx1
+    $PTN      PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP  pool token created 1142.6h ago | 1 launches, first 59m ago | $PEPx1
+    $SQQQ     SQQQAa3gUxgnqcEsdjPA4RQNQBgB97TnG2hJhk2WaGE  pool token created 1362.5h ago | 1 launches, first 4.3h ago | $HALOx1
+    $RACE     RACEyWiM2ztEZcJx2AHXU2eWjhxU57x3vXn92b39dLD  pool token created 1365.4h ago | 2 launches, first 6.0h ago | $REVVINUx2
+    $CHWY     CHWYHz2zfKajomqPV9it26n7vu7AgZZfqGHXCWtGWuJg  pool token created 1365.9h ago | 2 launches, first 20.0h ago | $BELLEx1 $SIDEEYEx1
+    $BE       BEBVfXZ8uCxRBuunEbW9wcq9r7W9ySNo14oJBJkDgpZx  pool token created 1366.0h ago | 1 launches, first 10m ago | $ENERGYx1
+    $AMC      AMC1qwR9KhiyrQBRPrxnfo4JfMeMZqEBvt5tgTytNNoc  pool token created 1366.1h ago | 1 launches, first 22.4h ago | $BPx1
+    $ABNB     ABNB56TteaTZG1S3DY2W8VMncQmHMvNCGaZgAba49CLP  pool token created 1366.1h ago | 7 launches, first 23.7h ago | $CRIBx1 $HOMELESSx1 $AIRBNBOBx1 $MADCATx1
+    $STONK    6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx  pool token created 2136.6h ago | 8 launches, first 23.1h ago | $STONKLIFEx2 $PUMPFILESx1 $LDEGx1 $HODLx1
+    $TSLA     TSLAqBbv4CNCnzWFeB7LmydAyEiNMJtve7DYKLpdK4S  pool token created 2985.6h ago | 15 launches, first 35m ago | $RIZOx4 $FTRx3 $TSLAx2 $VTSLAx1
+    $HIMS     HiMSSzzwkZkrXJ4PGVJRdtfLaANeAztjjcgk5Dxe7Lwx  pool token created 2987.3h ago | 1 launches, first 22.9h ago | $PPx1
+    $tOpenAI  oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ  pool token created 3056.0h ago | 4 launches, first 23.1h ago | $BIx1 $Viviennex1 $ALTCOINx1 $FLOORx1
+    $SPCXx    Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8  pool token created 3389.8h ago | 4 launches, first 17.4h ago | $MOONBASEx1 $SMYW2x1 $TMINUSx1 $JARVISx1
