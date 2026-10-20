@@ -1,0 +1,121 @@
+// New-pool alerts for StonkFun sniping. Never trades.
+//  1) NEW INDEX TOKEN: a watched creator wallet (e.g. H1TRD2, who made SAMA4 + TRUMP3) creates a new token
+//  2) PAIRING LIVE:    the first StonkFun launch ever paired to a pool token (the moment to snipe)
+// Alerts go to the log/status, and to Telegram if TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID are set on the server.
+import 'dotenv/config';
+import fs from 'fs';
+import WebSocket from 'ws';
+import { parseLaunch, LL } from './sniper.js';
+
+const env = (k, d) => (process.env[k] === undefined || process.env[k] === '' ? d : process.env[k].trim());
+const KEY = env('HELIUS_API_KEY', '');
+const RPC = `https://mainnet.helius-rpc.com/?api-key=${KEY}`;
+const WSS = `wss://mainnet.helius-rpc.com/?api-key=${KEY}`;
+const PLATFORM = env('SNIPE_PLATFORM', '6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt');
+const CREATORS = env('ALERT_CREATORS', 'H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd').split(',').map((s) => s.trim()).filter(Boolean);
+const NEW_DAYS = Number(env('ALERT_NEW_POOL_DAYS', '7')); // pool tokens younger than this count as "new pools"
+const TG_TOKEN = env('TELEGRAM_BOT_TOKEN', ''); const TG_CHAT = env('TELEGRAM_CHAT_ID', '');
+const STATE = 'logs/alerts-state.json';
+const FEED = 'logs/alerts.jsonl';
+fs.mkdirSync('logs', { recursive: true });
+
+const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 19);
+const log = (...a) => console.log(`[${ts()}]`, ...a);
+const warn = (...a) => console.warn(`[${ts()}] WARN`, ...a);
+
+let state = { quotes: {}, created: {} };
+try { state = { ...state, ...JSON.parse(fs.readFileSync(STATE, 'utf8')) }; } catch {}
+const save = () => fs.writeFileSync(STATE, JSON.stringify(state, null, 2));
+
+const rpc = async (method, params) => (await (await fetch(RPC, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }) })).json());
+const meta = async (id) => (await rpc('getAsset', { id }).catch(() => ({}))).result?.content?.metadata || {};
+const bornAt = async (id) => (await rpc('getTransactionsForAddress', [id, { transactionDetails: 'signatures', sortOrder: 'asc', limit: 1 }]).catch(() => ({}))).result?.data?.[0]?.blockTime;
+
+async function alert(kind, text, extra = {}) {
+  const line = `🚨 ${kind}: ${text}`;
+  log(line);
+  fs.appendFileSync(FEED, JSON.stringify({ time: new Date().toISOString(), kind, text, ...extra }) + '\n');
+  if (TG_TOKEN && TG_CHAT) {
+    fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: TG_CHAT, text: line, disable_web_page_preview: true }) })
+      .then((r) => r.json()).then((j) => { if (!j.ok) warn(`telegram: ${JSON.stringify(j).slice(0, 120)}`); }).catch((e) => warn(`telegram: ${e.message}`));
+  }
+}
+
+// seed: every pool token that already had StonkFun launches counts as known, so only truly new pairings alert
+async function seed() {
+  if (Object.keys(state.quotes).length) return log(`known pools: ${Object.keys(state.quotes).length}`);
+  log('seeding known pools from the last 48h of StonkFun launches...');
+  let token; const since = Math.floor(Date.now() / 1000) - 48 * 3600; const end = Date.now() + 120000;
+  while (Date.now() < end) {
+    const r = await rpc('getTransactionsForAddress', [PLATFORM, { transactionDetails: 'full', encoding: 'jsonParsed', maxSupportedTransactionVersion: 1, sortOrder: 'desc', limit: 100, filters: { status: 'succeeded', blockTime: { gte: since } }, ...(token ? { paginationToken: token } : {}) }]);
+    for (const t of r.result?.data || []) { const L = parseLaunch(t); if (L) state.quotes[L.quote] ||= { firstSeen: t.blockTime, seeded: true }; }
+    token = r.result?.paginationToken; if (!token) break;
+  }
+  save();
+  log(`known pools: ${Object.keys(state.quotes).length}`);
+}
+
+async function onLaunch(tx, slot) {
+  const L = parseLaunch(tx);
+  if (!L || L.platform !== PLATFORM) return;
+  if (state.quotes[L.quote]) return;
+  state.quotes[L.quote] = { firstSeen: Math.floor(Date.now() / 1000), firstTicker: L.symbol, firstMint: L.base, slot };
+  save();
+  const [m, born] = await Promise.all([meta(L.quote), bornAt(L.quote)]);
+  const ageDays = born ? (Date.now() / 1000 - born) / 86400 : null;
+  const isNew = ageDays !== null && ageDays < NEW_DAYS;
+  await alert(isNew ? 'NEW PAIRING LIVE' : 'first StonkFun launch on older pool',
+    `$${m.symbol || '?'} (${m.name || ''}) ${L.quote} is now live on StonkFun. First launch: $${L.symbol} ${L.base}. Pool token is ${ageDays === null ? '?' : ageDays < 1 ? `${(ageDays * 24).toFixed(1)}h` : `${ageDays.toFixed(1)}d`} old.`,
+    { quote: L.quote, firstMint: L.base, firstTicker: L.symbol, isNew });
+}
+
+async function onCreatorTx(tx, sig) {
+  const pre = new Set((tx.meta?.preTokenBalances || []).map((b) => b.mint));
+  const ixs = [...(tx.meta?.logMessages || [])].join('\n');
+  if (!/Initialize/.test(ixs)) return;
+  // new mints show up as accounts the creator just initialized; check each unknown account that is now a mint
+  const cands = new Set();
+  for (const g of tx.meta?.innerInstructions || []) for (const i of g.instructions) if (i.parsed?.type && /^initializeMint/.test(i.parsed.type)) cands.add(i.parsed.info.mint);
+  for (const i of tx.transaction.message.instructions) if (i.parsed?.type && /^initializeMint/.test(i.parsed.type)) cands.add(i.parsed.info.mint);
+  for (const b of tx.meta?.postTokenBalances || []) if (!pre.has(b.mint)) cands.add(b.mint);
+  // also: first-time accounts written in this tx that are mints with 0 supply
+  for (const k of tx.transaction.message.accountKeys) { const a = k.pubkey?.toString?.() ?? k; if (k.writable && !k.signer) cands.add(a); }
+  for (const c of cands) {
+    if (state.created[c]) continue;
+    const r = await rpc('getAccountInfo', [c, { encoding: 'jsonParsed' }]).catch(() => ({}));
+    const v = r.result?.value;
+    if (v?.data?.parsed?.type !== 'mint') continue;
+    const born = await bornAt(c);
+    if (!born || Date.now() / 1000 - born > 3600) continue; // only brand-new mints
+    state.created[c] = { at: born, sig }; save();
+    const m = await meta(c);
+    await alert('NEW INDEX TOKEN', `$${m.symbol || '?'} (${m.name || 'no metadata yet'}) ${c} just created by ${tx.transaction.message.accountKeys[0].pubkey?.toString?.() ?? ''}. Pairing on StonkFun may go live soon (SAMA4 went live ~91 min after creation).`, { mint: c });
+  }
+}
+
+function subscribe(name, filter, handler) {
+  const connect = () => {
+    const ws = new WebSocket(WSS, { perMessageDeflate: false });
+    let ping;
+    ws.on('open', () => {
+      log(`feed ${name} connected`);
+      ws.send(JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'transactionSubscribe', params: [{ ...filter, failed: false, vote: false }, { commitment: 'confirmed', encoding: 'jsonParsed', transactionDetails: 'full', showRewards: false, maxSupportedTransactionVersion: 1 }] }));
+      ping = setInterval(() => ws.readyState === 1 && ws.ping(), 20000);
+    });
+    ws.on('message', (d) => {
+      let m; try { m = JSON.parse(d); } catch { return; }
+      if (m.error) return warn(`${name}: ${JSON.stringify(m.error).slice(0, 150)}`);
+      const r = m.params?.result;
+      if (r?.transaction) handler(r.transaction, r.signature, r.slot).catch((e) => warn(`${name}: ${e.message}`));
+    });
+    ws.on('close', () => { clearInterval(ping); warn(`feed ${name} closed, reconnecting`); setTimeout(connect, 1000); });
+    ws.on('error', (e) => warn(`feed ${name}: ${e.message}`));
+  };
+  connect();
+}
+
+await seed();
+log(`watching creators: ${CREATORS.join(', ')} | telegram: ${TG_TOKEN && TG_CHAT ? 'ON' : 'off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)'}`);
+subscribe('stonkfun-launches', { accountRequired: [LL.toBase58(), PLATFORM] }, (tx, sig, slot) => onLaunch(tx, slot));
+subscribe('creators', { accountInclude: CREATORS }, onCreatorTx);
+setInterval(() => log(`alive | ${Object.keys(state.quotes).length} known pools | ${Object.keys(state.created).length} new tokens seen`), 600000);
