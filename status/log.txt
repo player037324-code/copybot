@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:06:08] stats 44m: trades 1434227 (543/s) | lookups 1291 | profiles 1270 | with X 78 | ALERTS 0 | queue 5104 | rechecking 302 | 429s 13 | dropped 0 | top scans 15 | apps none=1036891,axiom=184033,pump=88051,fomo=63083,gmgn=29952
 [2026-10-21 23:07:08] gift watcher: 747 dev wallets watched | 22408 txs | 22 gifts | 178 MB today (~4k credits)
 [2026-10-21 23:07:08] stats 45m: trades 1468000 (544/s) | lookups 1344 | profiles 1322 | with X 79 | ALERTS 0 | queue 5135 | rechecking 304 | 429s 14 | dropped 0 | top scans 15 | apps none=1062211,axiom=187361,pump=90426,fomo=64676,gmgn=30519
 [2026-10-21 23:07:32] 🎁 dev FCQF3M sent 5.9% of CYBERCATE to GCjYv7hk7s6TGbiysHZVzVCJ72VBiHqysjyKfwwgjcmz
@@ -309,6 +308,7 @@
 [2026-10-21 23:17:08] stats 55m: trades 1847196 (560/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5638 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1350377,axiom=229643,pump=111162,fomo=80280,gmgn=36152
 [2026-10-21 23:17:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:18:08] stats 56m: trades 1878775 (559/s) | lookups 1621 | profiles 1591 | with X 93 | ALERTS 0 | queue 5697 | rechecking 309 | 429s 17 | dropped 0 | top scans 19 | apps none=1373804,axiom=233771,pump=113002,fomo=81470,gmgn=36640
+[2026-10-21 23:19:08] stats 57m: trades 1915379 (560/s) | lookups 1674 | profiles 1643 | with X 99 | ALERTS 0 | queue 5726 | rechecking 310 | 429s 18 | dropped 0 | top scans 19 | apps none=1402364,axiom=237302,pump=114884,fomo=82708,gmgn=37339
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
