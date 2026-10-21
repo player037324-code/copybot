@@ -299,6 +299,9 @@
 [2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:12:04] feed connected
 [2026-10-21 18:13:03] stats 1m: trades 17066 (284/s) | lookups 30 | profiles 30 | with X 2 | ALERTS 0 | queue 317 | rechecking 5 | 429s 0 | dropped 0 | top scans 0 | apps none=13359,axiom=1755,pump=894,fomo=353,gmgn=320 | DRY (no telegram)
+[2026-10-21 18:13:12] top scan: 2001 profiles (first scan, seeding)
+[2026-10-21 18:14:02] 🆕 bankcrouptrader @mas_habib92 followers=277 wallet=CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy
+[2026-10-21 18:14:03] stats 2m: trades 30665 (256/s) | lookups 80 | profiles 80 | with X 7 | ALERTS 1 | queue 505 | rechecking 6 | 429s 0 | dropped 0 | top scans 1 | apps none=23793,axiom=3097,pump=1702,fomo=786,gmgn=588 | DRY (no telegram)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
