@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:20:08] feed connected
 [2026-10-21 20:21:07] stats 1m: trades 16696 (278/s) | lookups 30 | profiles 30 | with X 1 | ALERTS 0 | queue 333 | rechecking 160 | 429s 0 | dropped 0 | top scans 0 | apps none=13425,axiom=1226,pump=969,fomo=530,padre=280
 [2026-10-21 20:21:17] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-21 20:21:48] 🎁 dev 5N5w5R sent 4.9% of eCola to A34ShKJ7MwTgbDENKnUQVKABtq9QN1D5HuB5mnVWfGs5
@@ -309,6 +308,7 @@
 [2026-10-21 20:36:36] 🎁 dev 3SoYUq sent 2.0% of PIMPCHI to Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 20:36:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 20:37:07] stats 17m: trades 275055 (270/s) | lookups 549 | profiles 543 | with X 48 | ALERTS 0 | queue 2288 | rechecking 179 | 429s 4 | dropped 0 | top scans 6 | apps none=211872,axiom=23552,pump=17821,fomo=11465,gmgn=4560
+[2026-10-21 20:38:07] stats 18m: trades 290080 (269/s) | lookups 602 | profiles 595 | with X 49 | ALERTS 0 | queue 2332 | rechecking 181 | 429s 5 | dropped 0 | top scans 6 | apps none=223433,axiom=24925,pump=18793,fomo=12008,gmgn=4845
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
