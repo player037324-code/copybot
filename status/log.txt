@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:34:03] gift watcher: 240 dev wallets watched | 7411 txs | 1 gifts | 27 MB today (~1k credits)
-[2026-10-21 19:34:03] stats 10m: trades 284216 (474/s) | lookups 248 | profiles 244 | with X 18 | ALERTS 0 | queue 2377 | rechecking 94 | 429s 4 | dropped 0 | top scans 3 | apps none=221813,axiom=25470,pump=16703,fomo=10142,gmgn=4426
-[2026-10-21 19:34:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
-[2026-10-21 19:35:01] 🎁 dev DgyL11 sent 3.0% of bridge to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
 [2026-10-21 19:35:03] stats 11m: trades 311760 (472/s) | lookups 273 | profiles 269 | with X 19 | ALERTS 0 | queue 2527 | rechecking 95 | 429s 4 | dropped 0 | top scans 4 | apps none=242952,axiom=28055,pump=18411,fomo=11014,gmgn=5080
 [2026-10-21 19:36:03] stats 12m: trades 339237 (471/s) | lookups 333 | profiles 329 | with X 26 | ALERTS 0 | queue 2595 | rechecking 97 | 429s 4 | dropped 0 | top scans 4 | apps none=264148,axiom=30744,pump=20046,fomo=11877,gmgn=5688
 [2026-10-21 19:36:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-21 19:46:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
 [2026-10-21 19:47:03] stats 23m: trades 600875 (435/s) | lookups 660 | profiles 653 | with X 53 | ALERTS 1 | queue 3460 | rechecking 113 | 429s 7 | dropped 0 | top scans 8 | apps none=463000,axiom=55856,pump=36764,fomo=22888,gmgn=10601
 [2026-10-21 19:48:03] stats 24m: trades 631613 (439/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3515 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=487511,axiom=58400,pump=38406,fomo=23803,gmgn=11171
+[2026-10-21 19:48:21] 🎁 dev AjqiP2 sent 3.4% of KOALACOIN to 5fjZatNnqmWixUtycekodpsaNHCHVe48oBzaLbV4kXRL
+[2026-10-21 19:48:39] 🎁 dev 4LGuyP sent 5.0% of MAL to BvBQYKJzPe3fhffSobmP8VEhfNsvetd4q85YpVtwPAZ4
+[2026-10-21 19:49:03] gift watcher: 503 dev wallets watched | 13617 txs | 8 gifts | 74 MB today (~1k credits)
+[2026-10-21 19:49:03] stats 25m: trades 661431 (441/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3608 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=511359,axiom=61400,pump=39821,fomo=24661,gmgn=11490
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
