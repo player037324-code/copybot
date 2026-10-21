@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:29:08] stats 7m: trades 236146 (562/s) | lookups 215 | profiles 213 | with X 19 | ALERTS 0 | queue 1919 | rechecking 288 | 429s 2 | dropped 0 | top scans 2 | apps none=164807,axiom=37699,pump=13954,fomo=8369,gmgn=5475
 [2026-10-21 22:29:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:30:08] stats 8m: trades 267345 (557/s) | lookups 245 | profiles 243 | with X 21 | ALERTS 0 | queue 2052 | rechecking 288 | 429s 2 | dropped 0 | top scans 3 | apps none=187846,axiom=41860,pump=15532,fomo=9598,gmgn=6018
 [2026-10-21 22:31:08] stats 9m: trades 299142 (554/s) | lookups 298 | profiles 295 | with X 23 | ALERTS 0 | queue 2129 | rechecking 289 | 429s 3 | dropped 0 | top scans 3 | apps none=210002,axiom=47194,pump=17290,fomo=10790,gmgn=6633
@@ -309,6 +308,7 @@
 [2026-10-21 22:44:12] 🎁 dev BAoJmp sent 4.3% of CYBERINU to 2Fn9QTA6sJK5tJmizdL3Hu9KAxV3geqmNwGhGtSqj4EZ
 [2026-10-21 22:44:12] 🎁 dev BAoJmp sent 3.5% of CYBERINU to 6Z67hwhUQB3QoY8YS9mMVtkDAHgkbL1cNTpp2adGWnMx
 [2026-10-21 22:44:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 22:45:08] stats 23m: trades 740459 (537/s) | lookups 657 | profiles 647 | with X 38 | ALERTS 0 | queue 3808 | rechecking 292 | 429s 7 | dropped 0 | top scans 8 | apps none=501589,axiom=118336,pump=47323,fomo=36167,gmgn=18017
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
