@@ -208,11 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 12:14:07.862] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 12:14:45.004] launch [pre] $BLAST (FULL BLAST) 3ubkDaJqwjuNTT4wvFVhT8rX1UZhCRfgtwVDyfYz4mDM quote 6s2umN platform 6BwHHD token2022 slot 459625316
-[2026-10-21 12:14:45.004]   not a target, ignoring
-[2026-10-21 12:14:45.030] launch [beta] $BLAST (FULL BLAST) 3ubkDaJqwjuNTT4wvFVhT8rX1UZhCRfgtwVDyfYz4mDM quote 6s2umN platform 6BwHHD token2022 slot 459625316
-[2026-10-21 12:14:45.030]   not a target, ignoring
 [2026-10-21 12:19:07.864] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 12:24:07.864] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 12:29:07.864] alive | pool 6s2umN | $TRUMP done
@@ -248,6 +243,11 @@
 [2026-10-21 14:13:28.351]   not a target, ignoring
 [2026-10-21 14:13:28.355] launch [beta] $TI (Trump Inu) AdRyaTUZzYvgU2PjMdHmxXWU7FVfRpLtpmZM6FMCpEH8 quote 6s2umN platform 6BwHHD token2022 slot 459658524
 [2026-10-21 14:13:28.355]   not a target, ignoring
+[2026-10-21 14:14:07.872] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 14:14:11.238] launch [pre] $TI (Trump Inu) 36sSJCvimdYPuit64iNFCKJfGAbCeETm2uVaAXm5HEL2 quote 6s2umN platform 6BwHHD token2022 slot 459658727
+[2026-10-21 14:14:11.238]   not a target, ignoring
+[2026-10-21 14:14:11.242] launch [beta] $TI (Trump Inu) 36sSJCvimdYPuit64iNFCKJfGAbCeETm2uVaAXm5HEL2 quote 6s2umN platform 6BwHHD token2022 slot 459658727
+[2026-10-21 14:14:11.242]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
