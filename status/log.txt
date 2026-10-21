@@ -208,52 +208,51 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 19:00:09.061] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 19:00:09.069] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 19:00:09.070] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 19:00:09.146] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 19:00:11.319] warm build time (median of 10): total 37.21ms = accounts 14.22 + compile/sign 19.93 + serialize 0.25
-[2026-10-21 19:00:11.328] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 19:00:11.329] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 19:00:11.551] feed beta connected
-[2026-10-21 19:00:11.565] feed pre (preprocessed/shreds) connected
-[2026-10-21 19:00:11.579] feed pre subscribed (1)
-[2026-10-21 19:00:11.595] feed mainnet connected
-[2026-10-21 19:05:11.387] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:06:06.867] === sniper starting ===
-[2026-10-21 19:06:06.873] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 19:06:06.874] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 19:06:06.874] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 19:06:06.874] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 19:06:06.923] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 19:06:08.603] warm build time (median of 10): total 20.28ms = accounts 4.97 + compile/sign 12.97 + serialize 0.24
-[2026-10-21 19:06:08.603] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 19:06:08.603] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 19:06:08.797] feed beta connected
-[2026-10-21 19:06:08.809] feed pre (preprocessed/shreds) connected
-[2026-10-21 19:06:08.817] feed mainnet connected
-[2026-10-21 19:06:08.834] feed pre subscribed (1)
-[2026-10-21 19:11:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:16:08.647] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:21:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:26:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:31:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:36:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:37:08.291] launch [pre] $PACUS (Presidential Announcement) 8psYDMd1MDMHa7Mk3c5c1kz8RZL2cYvTfV1UYFZvn3jj quote 6s2umN platform 6BwHHD token2022 slot 459749803
-[2026-10-21 19:37:08.292]   not a target, ignoring
-[2026-10-21 19:37:08.298] launch [beta] $PACUS (Presidential Announcement) 8psYDMd1MDMHa7Mk3c5c1kz8RZL2cYvTfV1UYFZvn3jj quote 6s2umN platform 6BwHHD token2022 slot 459749803
-[2026-10-21 19:37:08.299]   not a target, ignoring
-[2026-10-21 19:41:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:46:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:51:08.647] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 19:56:08.648] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 20:01:08.648] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 20:09:28.488]   not a target, ignoring
+[2026-10-21 20:09:28.504]   DRY RUN sim: ERR {"InstructionError":[2,"IncorrectProgramId"]} 
+[2026-10-21 20:09:28.567] launch [pre] $Saylor (The Orange Bull) 9kmuXYvbFfKLat2Us5m93NzBCNrYK8zYuKs9VnNikuLa quote 5MQhtw platform 6BwHHD token2022 slot 459758902
+[2026-10-21 20:09:28.568]   not a target, ignoring
+[2026-10-21 20:09:28.568] launch [beta] $Saylor (The Orange Bull) 9kmuXYvbFfKLat2Us5m93NzBCNrYK8zYuKs9VnNikuLa quote 5MQhtw platform 6BwHHD token2022 slot 459758902
+[2026-10-21 20:09:28.568]   not a target, ignoring
+[2026-10-21 20:09:28.786] launch [pre] $LAURA (Laura) EHWL75N98KJxMeJJkVR3A8h3sBMMQ3bPw9wxxLf9Qr3d quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.786]   not a target, ignoring
+[2026-10-21 20:09:28.789] launch [pre] $Laura (Forever Laura) F6EJ8sfWdr3vMqKLiZiPRWgmaPtWknwjzPpjw7hbuYnJ quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.789]   not a target, ignoring
+[2026-10-21 20:09:28.792] launch [beta] $LAURA (Laura) EHWL75N98KJxMeJJkVR3A8h3sBMMQ3bPw9wxxLf9Qr3d quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.792]   not a target, ignoring
+[2026-10-21 20:09:28.794] launch [beta] $Laura (Forever Laura) F6EJ8sfWdr3vMqKLiZiPRWgmaPtWknwjzPpjw7hbuYnJ quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.794]   not a target, ignoring
+[2026-10-21 20:09:28.832] launch [pre] $Saylor (The Orange Bull) G7E6G8zewhzhaA4ETZzZggfQPiZMfetSVHGkCeb4aoC6 quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.833]   not a target, ignoring
+[2026-10-21 20:09:28.848] launch [beta] $Saylor (The Orange Bull) G7E6G8zewhzhaA4ETZzZggfQPiZMfetSVHGkCeb4aoC6 quote 5MQhtw platform 6BwHHD token2022 slot 459758903
+[2026-10-21 20:09:28.849]   not a target, ignoring
+[2026-10-21 20:09:30.846] launch [beta] $SAYLOR (Michael saylor) B53PRX2WEdeWzYkZx2QGv8Eg73NeyLzpDkiMHKkzdXyp quote 5MQhtw platform 6BwHHD token2022 slot 459758913
+[2026-10-21 20:09:30.847]   not a target, ignoring
+[2026-10-21 20:09:30.851] launch [beta] $SELLOR (Michul Sellor) 5t8SWLjQKcp5zDndmM5k1DVxaUff635ax2UR4vFNR59U quote 5MQhtw platform 6BwHHD token2022 slot 459758913
+[2026-10-21 20:09:30.851]   not a target, ignoring
+[2026-10-21 20:09:30.926] launch [pre] $SAYLOR (Michael saylor) B53PRX2WEdeWzYkZx2QGv8Eg73NeyLzpDkiMHKkzdXyp quote 5MQhtw platform 6BwHHD token2022 slot 459758913
+[2026-10-21 20:09:30.928]   not a target, ignoring
+[2026-10-21 20:09:30.949] launch [pre] $SELLOR (Michul Sellor) 5t8SWLjQKcp5zDndmM5k1DVxaUff635ax2UR4vFNR59U quote 5MQhtw platform 6BwHHD token2022 slot 459758913
+[2026-10-21 20:09:30.949]   not a target, ignoring
+[2026-10-21 20:09:31.325] launch [beta] $SAYLOR (Saylor Moon) H1sgNHHrdLxnyyaDsvZx4JyZ4RNmaKuD7HFsf5EAaWVM quote 5MQhtw platform 6BwHHD token2022 slot 459758915
+[2026-10-21 20:09:31.325]   not a target, ignoring
+[2026-10-21 20:09:31.619] launch [pre] $YO-YO (Quantum Resistant Yoyo Coin) 4EAdBzEkxMyb8gybshjqeBrWRDg2aUVGmyW1giAHTjuf quote 5MQhtw platform 6BwHHD token2022 slot 459758917
+[2026-10-21 20:09:31.621]   not a target, ignoring
+[2026-10-21 20:09:31.635] launch [beta] $YO-YO (Quantum Resistant Yoyo Coin) 4EAdBzEkxMyb8gybshjqeBrWRDg2aUVGmyW1giAHTjuf quote 5MQhtw platform 6BwHHD token2022 slot 459758917
+[2026-10-21 20:09:31.637]   not a target, ignoring
+[2026-10-21 20:09:31.965] launch [pre] $YOYO (Quantum Resistant YoYo Coin) 3STB4psGPPGYFXkN72GfNae4MBxGW1js1vXtKEB9QQCW quote 5MQhtw platform 6BwHHD token2022 slot 459758919
+[2026-10-21 20:09:31.967]   not a target, ignoring
+[2026-10-21 20:09:31.971] launch [beta] $YOYO (Quantum Resistant YoYo Coin) 3STB4psGPPGYFXkN72GfNae4MBxGW1js1vXtKEB9QQCW quote 5MQhtw platform 6BwHHD token2022 slot 459758919
+[2026-10-21 20:09:31.972]   not a target, ignoring
+[2026-10-21 20:09:32.080] launch [pre] $SAYLOR (SAYLOR COIN) 4YewCoErZqhzL9yJPsGtpHX1us61sWWan74qkYgY12CZ quote 5MQhtw platform 6BwHHD token2022 slot 459758919
+[2026-10-21 20:09:32.081]   not a target, ignoring
+[2026-10-21 20:09:32.085] launch [beta] $SAYLOR (SAYLOR COIN) 4YewCoErZqhzL9yJPsGtpHX1us61sWWan74qkYgY12CZ quote 5MQhtw platform 6BwHHD token2022 slot 459758919
+[2026-10-21 20:09:32.085]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-20 22:34:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:17:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:19:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:25:06] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,18 +272,13 @@
 [2026-10-21 18:51:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 19:00:12] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 19:06:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 20:09:25] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:49:03] gift watcher: 503 dev wallets watched | 13617 txs | 8 gifts | 74 MB today (~1k credits)
-[2026-10-21 19:49:03] stats 25m: trades 661431 (441/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3608 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=511359,axiom=61400,pump=39821,fomo=24661,gmgn=11490
-[2026-10-21 19:49:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
-[2026-10-21 19:50:03] stats 26m: trades 695892 (446/s) | lookups 742 | profiles 733 | with X 59 | ALERTS 1 | queue 3690 | rechecking 116 | 429s 8 | dropped 0 | top scans 9 | apps none=539752,axiom=64164,pump=41336,fomo=25573,gmgn=11831
-[2026-10-21 19:51:03] stats 27m: trades 725882 (448/s) | lookups 802 | profiles 793 | with X 61 | ALERTS 1 | queue 3731 | rechecking 117 | 429s 8 | dropped 0 | top scans 9 | apps none=564842,axiom=65839,pump=42926,fomo=26456,gmgn=12161
-[2026-10-21 19:51:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:52:03] stats 28m: trades 759662 (452/s) | lookups 822 | profiles 813 | with X 62 | ALERTS 1 | queue 3808 | rechecking 118 | 429s 8 | dropped 0 | top scans 10 | apps none=593205,axiom=67937,pump=44478,fomo=27436,gmgn=12490
 [2026-10-21 19:53:03] stats 29m: trades 788640 (453/s) | lookups 879 | profiles 869 | with X 70 | ALERTS 1 | queue 3846 | rechecking 120 | 429s 9 | dropped 0 | top scans 10 | apps none=616464,axiom=70068,pump=46089,fomo=28471,gmgn=12942
 [2026-10-21 19:54:03] gift watcher: 578 dev wallets watched | 18416 txs | 8 gifts | 154 MB today (~3k credits)
@@ -309,6 +303,12 @@
 [2026-10-21 20:04:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 20:05:03] stats 41m: trades 1115560 (453/s) | lookups 1212 | profiles 1199 | with X 93 | ALERTS 1 | queue 4536 | rechecking 135 | 429s 12 | dropped 0 | top scans 14 | apps none=875194,axiom=94155,pump=65625,fomo=41082,gmgn=17891
 [2026-10-21 20:06:03] stats 42m: trades 1143082 (454/s) | lookups 1269 | profiles 1255 | with X 100 | ALERTS 1 | queue 4562 | rechecking 136 | 429s 13 | dropped 0 | top scans 14 | apps none=897466,axiom=95957,pump=67184,fomo=42124,gmgn=18198
+[2026-10-21 20:06:37] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 7QaByT2PpNL6yabV6iVmTRTkRpGHM29Cx5vBdtNLACFn
+[2026-10-21 20:07:03] stats 43m: trades 1170669 (454/s) | lookups 1269 | profiles 1255 | with X 100 | ALERTS 1 | queue 4655 | rechecking 136 | 429s 13 | dropped 0 | top scans 14 | apps none=919112,axiom=97886,pump=68975,fomo=43307,gmgn=18658
+[2026-10-21 20:07:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
+[2026-10-21 20:08:03] stats 44m: trades 1199565 (454/s) | lookups 1294 | profiles 1279 | with X 103 | ALERTS 1 | queue 4699 | rechecking 137 | 429s 13 | dropped 0 | top scans 15 | apps none=941306,axiom=100695,pump=70865,fomo=44365,gmgn=19127
+[2026-10-21 20:09:03] gift watcher: 856 dev wallets watched | 27867 txs | 11 gifts | 249 MB today (~5k credits)
+[2026-10-21 20:09:03] stats 45m: trades 1227864 (455/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4728 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=962881,axiom=103481,pump=72853,fomo=45348,gmgn=19483
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

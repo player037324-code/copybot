@@ -1,6 +1,6 @@
-updated: 2026-10-21T20:06:02Z
+updated: 2026-10-21T20:09:30Z
 deployed: e112576b56fb69e0e4b843000b4af59bfaacc2e0
-pm2: stopped uptime=4289m restarts=14
+pm2: stopped uptime=4292m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -31,8 +31,8 @@ ASTRALANE_KEY=<set>
 NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
 SNIPE_DRY_RUN=true
-SNIPE_QUOTE_MINT=6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue
-SNIPE_TARGETS=TRUMP:762
+SNIPE_QUOTE_MINT=5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
+SNIPE_TARGETS=MSTR:1
 SNIPE_CU_LIMIT=100000
 SNIPE_CU_PRICE=100000000
 TELEGRAM_BOT_TOKEN=<set>
@@ -54,28 +54,19 @@ Last 10 trades:
 --- sniper ---
 sniper pm2: online
 {
-  "6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue:TRUMP": {
-    "mint": "BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1",
-    "symbol": "TRUMP",
-    "sig": "3ATeBeXcoPbmv6oYX7UgHs1AgV41ubbXuDVpQPAMLj9zyysCdkiptGDtmkAdLUAfERVd39T8Jxes2bBAqdXQZfCA",
-    "slot": 459374814,
-    "at": "2026-10-20T21:12:10.906Z",
-    "coveredBy": "$TRUMP",
-    "ourSig": "2TMHWuzKLnBQY5Mm5tywDmtnjoE2HMVmNFt1WVef8XRACHuniCJjV45jZowGWjAbz47fDXZT17iBuSdsftgS3pLX",
-    "landedSlot": 459374815,
-    "err": {
-      "InstructionError": [
-        3,
-        {
-          "Custom": 2012
-        }
-      ]
-    }
+  "5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT:MSTR": {
+    "mint": "AfhEg9CepFbJ3JvTugrjTno7Aj9jcdYfjH2n94AgyCcX",
+    "symbol": "MSTR",
+    "createSig": "Dwgq7oJkbDeuMqQDaYcrcAEp7hkE8Fx5CtzzMMLvg3X2hDBzBC5kNaj8oad3KKaVCySFveg59MoH1Ky82SAvsDF",
+    "slot": 459758901,
+    "src": "pre",
+    "at": "2026-10-21T20:09:28.292Z",
+    "coveredBy": "$MSTR",
+    "ourSig": null
   }
 }
 --- alerts ---
 alerts pm2: online
-{"time":"2026-10-20T21:10:55.756Z","kind":"first StonkFun launch on older pool","text":"$COPX (Global X Copper Miners ETF - Backpack Securities) CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5 is now live on StonkFun. First launch: $COPPER 9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ. Pool token is 57.0d old.","quote":"CzLTZppPdZtTjyq3WGpHLstoc3GLhu7zH5Zg6xUa6Gv5","firstMint":"9gmZGnCfPqhQnFiLkBvQdjPMBTymEdoRngJtj2DWFNqQ","firstTicker":"COPPER","isNew":false}
 {"time":"2026-10-20T21:12:11.239Z","kind":"NEW PAIRING LIVE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is now live on StonkFun. First launch: $TRUMP BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1. Pool token is 2.0h old.","quote":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue","firstMint":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","firstTicker":"TRUMP","isNew":true}
 {"time":"2026-10-20T22:46:29.624Z","kind":"first StonkFun launch on older pool","text":"$LLY (Eli Lilly and Company - Backpack Securities) LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD is now live on StonkFun. First launch: $VDPHL01 J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ. Pool token is 65.6d old.","quote":"LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD","firstMint":"J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ","firstTicker":"VDPHL01","isNew":false}
 {"time":"2026-10-21T01:20:14.028Z","kind":"first StonkFun launch on older pool","text":"$TRX (TRON) GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc is now live on StonkFun. First launch: $tcat 2wLhc7bGTYUByoqVyEQiqNQRuW2Ue92VBLhpE9L2Umnq. Pool token is 580.9d old.","quote":"GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc","firstMint":"2wLhc7bGTYUByoqVyEQiqNQRuW2Ue92VBLhpE9L2Umnq","firstTicker":"tcat","isNew":false}
@@ -90,10 +81,11 @@ alerts pm2: online
 {"time":"2026-10-21T15:49:16.578Z","kind":"first StonkFun launch on older pool","text":"$PENGU (Pudgy Penguins) 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv is now live on StonkFun. First launch: $MAFIA 8UeYsNPrEZZPGC22TuwoDcbEBmxRiDpf9JYXvXo3Motq. Pool token is 690.7d old.","quote":"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv","firstMint":"8UeYsNPrEZZPGC22TuwoDcbEBmxRiDpf9JYXvXo3Motq","firstTicker":"MAFIA","isNew":false}
 {"time":"2026-10-21T16:06:23.282Z","kind":"first StonkFun launch on older pool","text":"$META (Meta Platforms - Backpack Securities) METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd is now live on StonkFun. First launch: $ZUCK xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED. Pool token is 125.3d old.","quote":"METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd","firstMint":"xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED","firstTicker":"ZUCK","isNew":false}
 {"time":"2026-10-21T19:45:41.643Z","kind":"NEW PAIRING LIVE","text":"$AMD (Advanced Micro Devices - Backpack Securities) is now live on StonkFun. First coin: $GigaByte giy9TNUMQuvFRK9ZXbZzs9866KHUvoX4noGSqFsSJxh. Pool token is 125.5d old.","quote":"AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES","firstMint":"giy9TNUMQuvFRK9ZXbZzs9866KHUvoX4noGSqFsSJxh","firstTicker":"GigaByte","isNew":false}
+{"time":"2026-10-21T20:09:28.509Z","kind":"NEW PAIRING LIVE","text":"$SAYLOR3 (Saylor Index) is now live on StonkFun. BRAND NEW index token. First coin: $SAYLOR D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2. Pool token is 1.2h old.","quote":"5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT","firstMint":"D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2","firstTicker":"SAYLOR","isNew":true}
 
 --- pfwatch ---
 pfwatch pm2: online restarts=11
-{"apps":{"none":897466,"pump":67184,"bloom":1252,"fomo":42124,"axiom":95957,"gmgn":18198,"padre":15060,"maestro":564,"trojan":2625,"sol_trading_bot":68,"bonk":280,"photon":965,"bullx":90,"phantom":882,"j7":291,"banana":12,"mevx":48,"pepeboost":16},"topScans":14,"trades":1143082,"lookups":1269,"users":1255,"withX":100,"recentX":3,"alerts":1,"r429":13,"err":0,"dropped":0,"since":1792610643706,"coins":1712,"queue":4562,"watch":136,"dry":false,"updated":"2026-10-21T20:06:03.733Z"}
+{"apps":{"none":962881,"pump":72853,"bloom":1346,"fomo":45348,"axiom":103481,"gmgn":19483,"padre":16161,"maestro":603,"trojan":2850,"sol_trading_bot":74,"bonk":297,"photon":1033,"bullx":90,"phantom":971,"j7":313,"banana":12,"mevx":52,"pepeboost":16},"topScans":15,"trades":1227864,"lookups":1351,"users":1335,"withX":104,"recentX":3,"alerts":1,"r429":14,"err":0,"dropped":0,"since":1792610643706,"coins":1839,"queue":4728,"watch":141,"dry":false,"updated":"2026-10-21T20:09:03.733Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
