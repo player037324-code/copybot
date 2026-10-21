@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:42:03] stats 18m: trades 474476 (439/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3023 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=364962,axiom=44460,pump=29056,fomo=17965,gmgn=8462
 [2026-10-21 19:42:30] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to G53uJQrFyWi55eLqEHMfYzBmYUPKfRS5CSZo8nSQo67f
 [2026-10-21 19:43:01] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 9EqvpSDH8YShgkUS8bzNzJ87AWDLp3sGGyHV1GXZCEV3
 [2026-10-21 19:43:03] stats 19m: trades 499800 (438/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3134 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=383879,axiom=47512,pump=30565,fomo=18900,gmgn=8965
@@ -309,6 +308,7 @@
 [2026-10-21 19:54:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:54:46] 🎁 dev BLbAr8 sent 3.6% of TeuTeuf to 2J2rtMBRLxAbFkSLgrsuSNN8N5KMTJVaRTdnGfbZ5Vjw
 [2026-10-21 19:55:03] stats 31m: trades 845016 (454/s) | lookups 904 | profiles 894 | with X 73 | ALERTS 1 | queue 4003 | rechecking 121 | 429s 9 | dropped 0 | top scans 11 | apps none=662316,axiom=73644,pump=49461,fomo=30276,gmgn=13690
+[2026-10-21 19:56:03] stats 32m: trades 877818 (457/s) | lookups 962 | profiles 951 | with X 80 | ALERTS 1 | queue 4038 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=689274,axiom=76177,pump=50971,fomo=31114,gmgn=14103
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
