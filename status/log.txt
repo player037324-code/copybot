@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:31:03] stats 11m: trades 164338 (249/s) | lookups 336 | profiles 331 | with X 31 | ALERTS 1 | queue 1573 | rechecking 41 | 429s 5 | dropped 0 | top scans 1 | apps none=129982,axiom=15999,pump=9803,padre=2645,fomo=2623
 [2026-10-21 18:31:58] 🆕 xcoinxcoin @ZENmemecoin followers=318 wallet=984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV
 [2026-10-21 18:32:03] stats 12m: trades 182064 (253/s) | lookups 396 | profiles 391 | with X 39 | ALERTS 2 | queue 1640 | rechecking 46 | 429s 5 | dropped 0 | top scans 1 | apps none=144799,axiom=17249,pump=10787,padre=2825,fomo=2821
 [2026-10-21 18:33:03] stats 13m: trades 198950 (255/s) | lookups 453 | profiles 447 | with X 45 | ALERTS 2 | queue 1701 | rechecking 49 | 429s 6 | dropped 0 | top scans 1 | apps none=157548,axiom=19282,pump=11827,padre=3238,fomo=3044
@@ -309,6 +308,7 @@
 [2026-10-21 18:46:19] top scan: 2001 profiles, 0 new to the list
 [2026-10-21 18:47:10] stats 2m: trades 56953 (475/s) | lookups 80 | profiles 80 | with X 9 | ALERTS 0 | queue 735 | rechecking 64 | 429s 0 | dropped 0 | top scans 1 | apps none=46394,axiom=4202,pump=3014,fomo=1535,gmgn=781
 [2026-10-21 18:48:10] stats 3m: trades 83186 (462/s) | lookups 140 | profiles 140 | with X 16 | ALERTS 0 | queue 968 | rechecking 65 | 429s 0 | dropped 0 | top scans 1 | apps none=67145,axiom=6475,pump=4620,fomo=2258,padre=1105
+[2026-10-21 18:49:10] stats 4m: trades 111383 (464/s) | lookups 190 | profiles 189 | with X 19 | ALERTS 0 | queue 1157 | rechecking 65 | 429s 1 | dropped 0 | top scans 1 | apps none=90209,axiom=8204,pump=6269,fomo=3037,padre=1508
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
