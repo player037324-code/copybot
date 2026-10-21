@@ -87,6 +87,7 @@ if [ -f control/cmd.txt ]; then
           testtrade\ *) a=${c#testtrade }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}\ [0-9.]+$ ]] && timeout 100 node scripts/testtrade.js $a 2>&1 ;;
           keyprefix) for k in HELIUS_API_KEY JUP_API_KEY NOZOMI_KEY ASTRALANE_KEY TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID; do v=$(grep -E "^$k=" .env | tail -1 | cut -d= -f2-); echo "$k: ${v:0:4}... ($(grep -cE "^$k=" .env) line(s) in .env)"; done ;;
           sendertest) timeout 90 node scripts/sendertest.js 2>&1 ;;
+          pfprobe*) a=${c#pfprobe}; a=${a# }; [[ "$a" =~ ^[0-9]*$ ]] && timeout 150 node scripts/pfprobe.js $a 2>&1 ;;
           ladder-start) pm2 describe ladder >/dev/null 2>&1 && pm2 restart ladder || pm2 start src/ladder.js --name ladder; pm2 save >/dev/null; sleep 5; pm2 logs ladder --nostream --lines 8 --raw 2>&1 | tail -8 ;;
           ladder-stop) pm2 stop ladder; pm2 save >/dev/null ;;
           recent\ *) a=${c#recent }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{32,44}$ ]] && timeout 80 node scripts/recent.js $a 2>&1 ;;
