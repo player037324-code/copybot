@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:25:03] stats 1m: trades 25435 (424/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 574 | rechecking 82 | 429s 1 | dropped 0 | top scans 0 | apps none=18632,axiom=3236,pump=1672,fomo=945,padre=394
-[2026-10-21 19:25:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 65s, 0 new to the list
-[2026-10-21 19:26:03] stats 2m: trades 51957 (433/s) | lookups 26 | profiles 25 | with X 2 | ALERTS 0 | queue 948 | rechecking 82 | 429s 1 | dropped 0 | top scans 1 | apps none=38464,axiom=6141,pump=3459,fomo=1863,padre=880
 [2026-10-21 19:27:03] stats 3m: trades 78210 (434/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1151 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=59063,axiom=8611,pump=5012,fomo=2699,padre=1171
 [2026-10-21 19:28:03] stats 4m: trades 105758 (441/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1377 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=81243,axiom=10698,pump=6495,fomo=3562,padre=1562
 [2026-10-21 19:28:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
@@ -309,6 +306,9 @@
 [2026-10-21 19:41:03] stats 17m: trades 451647 (443/s) | lookups 495 | profiles 490 | with X 42 | ALERTS 0 | queue 2995 | rechecking 105 | 429s 5 | dropped 0 | top scans 6 | apps none=348215,axiom=41678,pump=27545,fomo=17037,gmgn=8059
 [2026-10-21 19:42:02] 🎁 dev 28MJrJ sent 1.5% of BabyKimchi to Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 19:42:03] stats 18m: trades 474476 (439/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3023 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=364962,axiom=44460,pump=29056,fomo=17965,gmgn=8462
+[2026-10-21 19:42:30] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to G53uJQrFyWi55eLqEHMfYzBmYUPKfRS5CSZo8nSQo67f
+[2026-10-21 19:43:01] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 9EqvpSDH8YShgkUS8bzNzJ87AWDLp3sGGyHV1GXZCEV3
+[2026-10-21 19:43:03] stats 19m: trades 499800 (438/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3134 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=383879,axiom=47512,pump=30565,fomo=18900,gmgn=8965
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
