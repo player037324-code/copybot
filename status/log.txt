@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:00:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 20:01:03] stats 37m: trades 1007764 (454/s) | lookups 1069 | profiles 1057 | with X 85 | ALERTS 1 | queue 4386 | rechecking 127 | 429s 11 | dropped 0 | top scans 13 | apps none=790231,axiom=86257,pump=59381,fomo=36353,gmgn=16356
 [2026-10-21 20:02:03] stats 38m: trades 1033340 (453/s) | lookups 1129 | profiles 1117 | with X 86 | ALERTS 1 | queue 4410 | rechecking 129 | 429s 11 | dropped 0 | top scans 13 | apps none=810119,axiom=88154,pump=61030,fomo=37570,gmgn=16786
 [2026-10-21 20:03:03] stats 39m: trades 1061087 (453/s) | lookups 1186 | profiles 1173 | with X 90 | ALERTS 1 | queue 4435 | rechecking 134 | 429s 12 | dropped 0 | top scans 13 | apps none=831683,axiom=90485,pump=62627,fomo=38821,gmgn=17147
 [2026-10-21 20:04:03] gift watcher: 755 dev wallets watched | 23874 txs | 10 gifts | 218 MB today (~4k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 20:17:03] stats 53m: trades 1458178 (459/s) | lookups 1598 | profiles 1581 | with X 122 | ALERTS 1 | queue 5051 | rechecking 150 | 429s 15 | dropped 0 | top scans 18 | apps none=1133923,axiom=130915,pump=87028,fomo=53079,gmgn=24162
 [2026-10-21 20:17:47] 🎁 dev 6zZyan sent 3.2% of CRISSY to 9bmZBYi45rQeBkLryc6e72eQ3bQdQEavRMt1rR6oCtyR
 [2026-10-21 20:18:03] stats 54m: trades 1484620 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5071 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1154592,axiom=132971,pump=88852,fomo=53994,gmgn=24596
+[2026-10-21 20:19:03] gift watcher: 1051 dev wallets watched | 35904 txs | 13 gifts | 295 MB today (~6k credits)
+[2026-10-21 20:19:03] stats 55m: trades 1510389 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5172 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1174517,axiom=135144,pump=90642,fomo=54959,gmgn=25031
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
