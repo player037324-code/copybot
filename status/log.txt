@@ -302,6 +302,7 @@
 [2026-10-21 18:13:12] top scan: 2001 profiles (first scan, seeding)
 [2026-10-21 18:14:02] 🆕 bankcrouptrader @mas_habib92 followers=277 wallet=CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy
 [2026-10-21 18:14:03] stats 2m: trades 30665 (256/s) | lookups 80 | profiles 80 | with X 7 | ALERTS 1 | queue 505 | rechecking 6 | 429s 0 | dropped 0 | top scans 1 | apps none=23793,axiom=3097,pump=1702,fomo=786,gmgn=588 | DRY (no telegram)
+[2026-10-21 18:15:03] stats 3m: trades 43823 (243/s) | lookups 140 | profiles 140 | with X 16 | ALERTS 1 | queue 651 | rechecking 8 | 429s 0 | dropped 0 | top scans 1 | apps none=33934,axiom=4283,pump=2481,fomo=1180,gmgn=889 | DRY (no telegram)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
