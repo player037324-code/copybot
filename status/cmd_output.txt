@@ -1,27 +1,3 @@
-[2026-10-20 21:13:23.063] launch [beta] $AMERICOIN (MADE IN AMERICA) AN3ApQoUQyPrFV2vuF8fwzzuUwFoVPhT9jRbMch9eyBV quote 6s2umN platform 6BwHHD token2022 slot 459375150
-[2026-10-20 21:13:23.064]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:25.148] launch [beta] $Barron (Official Barron Trump) HXgoow3rLNd8FHnUGNXo2GPDksjruwE1a6UWen1r7T9n quote 6s2umN platform 6BwHHD token2022 slot 459375160
-[2026-10-20 21:13:25.148]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:26.522] launch [beta] $TI6900 (Trump Index 6900) HDoVz8gnEnMAKXsVWR5TbZ9woMnyimWoxrJunKEaAcnK quote 6s2umN platform 6BwHHD token2022 slot 459375166
-[2026-10-20 21:13:26.523]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:26.725] launch [beta] $TRUMPFOLIO (Trumpfolio) 4vvYWHuSst7bt9UZDVp5HS1YeBXETCRco8bHSvA8q2H5 quote 6s2umN platform 6BwHHD token2022 slot 459375167
-[2026-10-20 21:13:26.725]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:27.985] launch [beta] $250 (Trump $250 Coin) Dfh7YstnyK2rep7Thd3n2jah95A7gshLAJHo1Kqp9nza quote 6s2umN platform 6BwHHD token2022 slot 459375173
-[2026-10-20 21:13:27.985]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:28.671] launch [beta] $250 (Trump $250 Coin) 4ojxNz85QcCfc7bEoJphxGFx3swfU9WiH6REidDFe99k quote 6s2umN platform 6BwHHD token2022 slot 459375176
-[2026-10-20 21:13:28.671]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:29.366] launch [beta] $BARRON (Official Barron Coin) C8bfm6XM63hvuEKLNupSDkkxJbMvWWxz1VqJbyaaMhVd quote 6s2umN platform 6BwHHD token2022 slot 459375179
-[2026-10-20 21:13:29.367]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:35.945] launch [beta] $530A (Trump Retirement Account) 2i9kA6xp6CzFLX1T8kpPR1YvyZbLiWdMVQxP1ddrjtRf quote 6s2umN platform 6BwHHD token2022 slot 459375209
-[2026-10-20 21:13:35.945]   not a target (or target already taken), ignoring
-[2026-10-20 21:13:42.805] launch [beta] $FAMILY (Official Trump Family Meme) HAQ3W47mkRMmwH4YHp2dPzVdwsG7MYZpTEAeH9Wgjeom quote 6s2umN platform 6BwHHD token2022 slot 459375241
-[2026-10-20 21:13:42.805]   not a target (or target already taken), ignoring
-=== cmd 61 @ 2026-10-20T21:22:02Z ===
-> snipe-events
-[2026-10-20 20:43:06.297] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:45:07.598] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:55:07.001] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 20:57:04.197] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:06:06.841] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:07:06.535] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-20 21:10:04.576] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
@@ -398,3 +374,27 @@ fetched 140 scripts, 73 hits
     s:{default:{http:["https://rpc.monad.xyz","https://rpc1.monad.xyz"],webSocket:["wss://rpc.monad.xyz","wss://rpc1.monad.xyz"]}},blockExplorers:{default:{name:"MonadVision",url:"https://monadvision.com"},monadscan:{name:"Monadscan",url:"https
 * wss://rpc1.monad.xyz
     ps://rpc.monad.xyz","https://rpc1.monad.xyz"],webSocket:["wss://rpc.monad.xyz","wss://rpc1.monad.xyz"]}},blockExplorers:{default:{name:"MonadVision",url:"https://monadvision.com"},monadscan:{name:"Monadscan",url:"https://monadscan.c
+=== cmd 75 @ 2026-10-21T17:42:07Z ===
+> pfnats
+--- realtime host: figs\":{\"ADVANCED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://prod-advanced.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"OktDhmZ2D3CtYUiM\"},\"CORE\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"max
+--- realtime host: D3CtYUiM\"},\"CORE\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://prod-v2.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"lW5a9y20NceF6AE9\"},\"UNIFIED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxRec
+--- realtime host: F6AE9\"},\"UNIFIED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://unified-prod.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"OX745xvUbNQMuFqV\"},\"MULTICHAIN\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,
+--- realtime host: qV\"},\"MULTICHAIN\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://multichain-prod.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"Y0m0U03K057CNaNV\"}},\"instances\":[\"UNIFIED\",\"CORE\"],\"children\":[\"$\",\"$84\",null,{\"fallback\":[\"$\",\"div\",null
+--- realtime host: cribe("ed25519-nkey bearer user JWT; opaque to the client"),expiresAt:n.z.number().describe("Unix seconds"),servers:n.z.string().describe("The CORE cluster websocket URL this token is for, e.g. wss://prod-v2.nats.realtime.pump.fun")}),emits:["NATS_AUTH_DISABLED","NATS_AUTH_USER_SCOPE_REQUIRED"]}})},32587,(e,t,r)=>{"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.packsRoutes=void 0;l
+--- realtime host: =e.i(653805),u=e.i(605587),c=e.i(987425),d=e.i(225233);e.s(["useRealtimeEvmCoinMarketDataBatch",0,function(e,m=!0){let f=(0,o.useCoinMarketDataStore)(e=>e.updateCoin),p=(0,a.useAfterLcp)(),h=!!"wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),g=(0,i.useMemo)(()=>{let t=new Map;for(let r of e){if(!r.mint||!(0,u.isEvmCoin)(r))continue;let e=(0,c.toCaip2ChainId)(r.chainId);if(!e)contin
+--- realtime host: .current=S},d=[S],g[0]=S,g[1]=c,g[2]=d):(c=g[1],d=g[2]),(0,l.useEffect)(c,d),g[3]!==y?(u=(0,a.toCaip2ChainId)(y),g[3]=y,g[4]=u):u=g[4];let A=u;g[5]===Symbol.for("react.memo_cache_sentinel")?(m="wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),g[5]=m):m=g[5];let I=!!m,T=C&&!!A&&I&&!!_;g[6]!==A||g[7]!==y||g[8]!==C||g[9]!==_?(h=()=>{C&&A&&!I&&r.logger.warn("[useMultichainTradeEventSubs
+--- nats config:  NATS_AUTH_DISABLED while OFF or while no signing seed is configured. Any 4xx/5xx = keep using the static subscriber credentials for this connection.",response:n.z.object({jwt:n.z.string().describe("ed25519-nkey bearer user JWT; opaque to the client"),expiresAt:n.z.number().describe("Unix seconds"),servers:n.z.string().describe("The CORE cluster websocket URL this token is for, e.g. wss://prod-v2.nats.realtime.pump.fun")}),emits:["NATS_AUTH_DISABLED","NATS_AUTH_USER_SCOPE_REQUIRED"]}})},32587,(e,t,r)=>{"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.packsRoutes=void 0;let n=e.r
+--- nats config: et r=(0,t.v4)();return c.set(r,e),r},"onNatsAuthEvent",0,function(e){let r=(0,t.v4)();return i.set(r,e),r},"onNatsLifecycleEvent",0,function(e){let r=(0,t.v4)();return s.set(r,e),r},"removeConnectionStatusListener",0,function(e){c.delete(e)},"removeNatsAuthEventListener",0,function(e){i.delete(e)},"setNatsConfigs",0,function(e){n={...n,...e},d&&E({type:"configs",configs:e})},"setNatsInstanceAuth",0,function(e,t){t?a.set(e,t):a.delete(e),d?.postMessage({type:"auth",instance:e,auth:t})},"subscribe",0,function(e,r,n,a=(0,t.v4)(),i){try{var s;let t=b(e,r),u=(s=i?.coalesce,!0===s?"latest":!1===s||v
+--- nats config: r,t))a()},subscribe:e=>(t.add(e),()=>{t.delete(e)})}},c=s(),l=()=>c,d=(0,a.createContext)({instances:[],store:n()}),u=[i.NatsInstance.Advanced,i.NatsInstance.Unified];function m(){}e.s(["NatsProvider",0,function(e){let c,l,k,f,_=(0,r.c)(10),{children:b,configs:p,instances:w}=e,y=void 0===w?u:w;(0,o.setNatsConfigs)(p);let[h]=(0,a.useState)(n);_[0]!==y||_[1]!==h?(c=()=>{let e=[],t=[],r=s();for(let e of y)r[e]=(0,o.getConnectionStatus)(e)===i.ConnectionStatus.CONNECTED;h.set(r);let a=(0,o.onConnectionStatusChange)((e,t)=>{let r=t===i.ConnectionStatus.CONNECTED,a=h.get();a[e]!==r&&h.set({...a,[e]:
+
+urls: ["wss://prod-advanced.nats.realtime.pump.fun\\","wss://prod-v2.nats.realtime.pump.fun\\","wss://unified-prod.nats.realtime.pump.fun\\","wss://multichain-prod.nats.realtime.pump.fun\\","wss://prod-v2.nats.realtime.pump.fun","wss://multichain-prod.nats.realtime.pump.fun"]
+creds found: 0 []
+
+== wss://prod-advanced.nats.realtime.pump.fun\ user=subscriber: 0 msgs, 0.00 MB in 25s -ERR 'Authorization Violation'
+   info: {"server_id":"NCGSCWNXDAP6P4OHPC2UEVM2ECFNBY25VBVQYBJKWY2FUQDZGH3AXFMF","server_name":"nats-56e0fb19","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":524288,"client_id":1083705,"client_ip":"10.0
+
+== wss://prod-advanced.nats.realtime.pump.fun\ user=null: 0 msgs, 0.00 MB in 25s -ERR 'Authorization Violation'
+   info: {"server_id":"NDYOHGWNQNZDKHU5GEAOEQQYI5R2J3RLLWSS6OSV4SPDI5SLCOQNMXMA","server_name":"nats-a1c8c966","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":524288,"client_id":1149269,"client_ip":"10.0
+
+== wss://prod-v2.nats.realtime.pump.fun\ user=subscriber: 0 msgs, 0.00 MB in 25s 
+   info: {"server_id":"NB76LWBYIP4T5XS57SWTYLYKK3L2LFMMRKXKTR7Z6ICX43XLVDXBTSP6","server_name":"nats-afbb894c","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":8192,"client_id":2325144,"client_ip":"10.0.4
