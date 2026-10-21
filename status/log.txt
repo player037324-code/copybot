@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:31:03] stats 7m: trades 196899 (469/s) | lookups 166 | profiles 163 | with X 15 | ALERTS 0 | queue 1929 | rechecking 91 | 429s 3 | dropped 0 | top scans 2 | apps none=153233,axiom=17917,pump=11603,fomo=7076,gmgn=3050
 [2026-10-21 19:31:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
 [2026-10-21 19:32:03] stats 8m: trades 226621 (472/s) | lookups 191 | profiles 188 | with X 15 | ALERTS 0 | queue 2088 | rechecking 92 | 429s 3 | dropped 0 | top scans 3 | apps none=176864,axiom=20184,pump=13397,fomo=8212,gmgn=3407
 [2026-10-21 19:32:03] 🎁 dev DgyL11 sent 3.0% of bridge to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
@@ -309,6 +308,7 @@
 [2026-10-21 19:43:49] skip tagthedoge @TGruber83765: 1293 X followers
 [2026-10-21 19:44:03] gift watcher: 410 dev wallets watched | 10845 txs | 6 gifts | 42 MB today (~1k credits)
 [2026-10-21 19:44:03] stats 20m: trades 524233 (437/s) | lookups 578 | profiles 572 | with X 49 | ALERTS 1 | queue 3206 | rechecking 107 | 429s 6 | dropped 0 | top scans 7 | apps none=402862,axiom=49727,pump=31918,fomo=19958,gmgn=9389
+[2026-10-21 19:45:03] stats 21m: trades 547238 (434/s) | lookups 635 | profiles 628 | with X 52 | ALERTS 1 | queue 3268 | rechecking 111 | 429s 7 | dropped 0 | top scans 7 | apps none=420594,axiom=51400,pump=33567,fomo=20931,gmgn=9874
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
