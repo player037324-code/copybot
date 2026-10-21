@@ -1,6 +1,3 @@
-[2026-10-20 21:16:07.708] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-20 21:16:07.708] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 21:16:07.709] target: first $TRUMP -> buy 762 [ALREADY DONE]
 [2026-10-20 21:16:07.709] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
 [2026-10-20 21:16:07.728] all targets already done for this pool. Clear with snipe-reset.
 [2026-10-20 21:16:08.088] warm build time (median of 10): total 4.29ms = accounts 0.92 + compile/sign 2.24 + serialize 0.16
@@ -398,3 +395,6 @@ TELEGRAM_CHAT_ID: ... (0 line(s) in .env)
 === cmd 71 @ 2026-10-21T17:28:02Z ===
 > alerts-test
 telegram test sent
+=== cmd 72 @ 2026-10-21T17:37:07Z ===
+> pfprobe 45
+unknown command
