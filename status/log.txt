@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:43:20] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 8ZMLeKMVAY5qyKW4tCCpDiD8D2GsYcEkXV497zLWDN5s
-[2026-10-21 19:43:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 19:43:44] 🆕 Kimchi @kimchi1x X followers=183839 wallet=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 19:43:49] skip tagthedoge @TGruber83765: 1293 X followers
 [2026-10-21 19:44:03] gift watcher: 410 dev wallets watched | 10845 txs | 6 gifts | 42 MB today (~1k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 19:57:03] stats 33m: trades 903977 (457/s) | lookups 967 | profiles 956 | with X 80 | ALERTS 1 | queue 4122 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=710071,axiom=78086,pump=52665,fomo=31958,gmgn=14513
 [2026-10-21 19:57:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:58:03] stats 34m: trades 927207 (455/s) | lookups 987 | profiles 976 | with X 82 | ALERTS 1 | queue 4185 | rechecking 122 | 429s 10 | dropped 0 | top scans 12 | apps none=727696,axiom=80178,pump=54346,fomo=32778,gmgn=14914
+[2026-10-21 19:59:03] gift watcher: 660 dev wallets watched | 21046 txs | 9 gifts | 186 MB today (~4k credits)
+[2026-10-21 19:59:03] stats 35m: trades 955728 (455/s) | lookups 1044 | profiles 1032 | with X 84 | ALERTS 1 | queue 4221 | rechecking 127 | 429s 11 | dropped 0 | top scans 12 | apps none=749767,axiom=82391,pump=56101,fomo=34030,gmgn=15390
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
