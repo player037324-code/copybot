@@ -278,8 +278,6 @@
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 17:58:09] feed connected
-[2026-10-21 17:59:08] stats 1m: trades 115 (2/s) | lookups 44 | profiles 7 | with X 0 | ALERTS 0 | queue 66 | rechecking 0 | 429s 4 | dropped 0 | DRY (no telegram)
 [2026-10-21 18:00:08] stats 2m: trades 232 (2/s) | lookups 100 | profiles 26 | with X 1 | ALERTS 0 | queue 125 | rechecking 0 | 429s 7 | dropped 0 | DRY (no telegram)
 [2026-10-21 18:01:08] stats 3m: trades 347 (2/s) | lookups 154 | profiles 42 | with X 1 | ALERTS 0 | queue 172 | rechecking 0 | 429s 9 | dropped 0 | DRY (no telegram)
 [2026-10-21 18:02:08] stats 4m: trades 462 (2/s) | lookups 210 | profiles 63 | with X 2 | ALERTS 0 | queue 217 | rechecking 1 | 429s 11 | dropped 0 | DRY (no telegram)
@@ -308,6 +306,8 @@
 [2026-10-21 18:22:03] stats 2m: trades 25923 (216/s) | lookups 26 | profiles 25 | with X 0 | ALERTS 0 | queue 553 | rechecking 18 | 429s 1 | dropped 0 | top scans 1 | apps none=19892,axiom=2675,pump=1821,fomo=512,gmgn=429
 [2026-10-21 18:23:03] stats 3m: trades 38656 (215/s) | lookups 83 | profiles 81 | with X 7 | ALERTS 0 | queue 697 | rechecking 25 | 429s 2 | dropped 0 | top scans 1 | apps none=29985,axiom=3802,pump=2623,fomo=759,padre=620
 [2026-10-21 18:24:03] stats 4m: trades 52854 (220/s) | lookups 89 | profiles 87 | with X 8 | ALERTS 0 | queue 839 | rechecking 26 | 429s 2 | dropped 0 | top scans 1 | apps none=41073,axiom=5163,pump=3448,fomo=999,padre=956
+[2026-10-21 18:24:09] 🆕 jaytradesss @Jay00818 followers=9 wallet=GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg
+[2026-10-21 18:25:03] stats 5m: trades 65623 (219/s) | lookups 145 | profiles 142 | with X 17 | ALERTS 1 | queue 941 | rechecking 26 | 429s 3 | dropped 0 | top scans 1 | apps none=50568,axiom=6814,pump=4277,fomo=1236,padre=1228
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
