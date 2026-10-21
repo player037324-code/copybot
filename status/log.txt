@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:23:08] stats 1m: trades 37102 (618/s) | lookups 30 | profiles 30 | with X 1 | ALERTS 0 | queue 590 | rechecking 286 | 429s 0 | dropped 0 | top scans 0 | apps none=25778,axiom=6747,pump=1892,gmgn=899,fomo=865
 [2026-10-21 22:23:17] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 22:23:45] 🎁 dev 8RGCrd sent 1.4% of RAILED to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
 [2026-10-21 22:24:08] stats 2m: trades 72765 (606/s) | lookups 80 | profiles 80 | with X 4 | ALERTS 0 | queue 907 | rechecking 288 | 429s 0 | dropped 0 | top scans 1 | apps none=51300,axiom=12279,pump=3839,fomo=1785,gmgn=1756
@@ -309,6 +308,7 @@
 [2026-10-21 22:38:08] stats 16m: trades 532012 (554/s) | lookups 463 | profiles 456 | with X 30 | ALERTS 0 | queue 3135 | rechecking 292 | 429s 5 | dropped 0 | top scans 5 | apps none=364066,axiom=85136,pump=33152,fomo=23759,gmgn=12776
 [2026-10-21 22:38:15] 🎁 dev 8F81d4 sent 2.4% of NOOM to 6jKHXmwuGW29Eoe9K21RjcbGvvgB5zrdRQTrRSWg2bg3
 [2026-10-21 22:38:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 22:39:08] stats 17m: trades 564504 (553/s) | lookups 492 | profiles 485 | with X 30 | ALERTS 0 | queue 3226 | rechecking 292 | 429s 5 | dropped 0 | top scans 6 | apps none=384143,axiom=92174,pump=35171,fomo=25502,gmgn=13507
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
