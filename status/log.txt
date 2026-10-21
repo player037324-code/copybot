@@ -287,6 +287,7 @@
 [2026-10-21 17:58:09] feed connected
 [2026-10-21 17:59:08] stats 1m: trades 115 (2/s) | lookups 44 | profiles 7 | with X 0 | ALERTS 0 | queue 66 | rechecking 0 | 429s 4 | dropped 0 | DRY (no telegram)
 [2026-10-21 18:00:08] stats 2m: trades 232 (2/s) | lookups 100 | profiles 26 | with X 1 | ALERTS 0 | queue 125 | rechecking 0 | 429s 7 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:01:08] stats 3m: trades 347 (2/s) | lookups 154 | profiles 42 | with X 1 | ALERTS 0 | queue 172 | rechecking 0 | 429s 9 | dropped 0 | DRY (no telegram)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

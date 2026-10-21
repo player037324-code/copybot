@@ -1,6 +1,6 @@
-updated: 2026-10-21T18:01:02Z
+updated: 2026-10-21T18:02:02Z
 deployed: b5d9f98984f2a278a7d6e47c9ca5909feea90272
-pm2: stopped uptime=4164m restarts=14
+pm2: stopped uptime=4165m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -92,7 +92,7 @@ alerts pm2: online
 
 --- pfwatch ---
 pfwatch pm2: online restarts=1
-{"trades":232,"lookups":100,"users":26,"withX":1,"recentX":0,"alerts":0,"r429":7,"err":0,"dropped":0,"since":1792605488815,"queue":125,"watch":0,"dry":true,"updated":"2026-10-21T18:00:08.816Z"}
+{"trades":347,"lookups":154,"users":42,"withX":1,"recentX":0,"alerts":0,"r429":9,"err":0,"dropped":0,"since":1792605488815,"queue":172,"watch":0,"dry":true,"updated":"2026-10-21T18:01:08.815Z"}
 
 --- positions ---
 {
