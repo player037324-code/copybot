@@ -1,3 +1,7 @@
-id: 9101
-alerts-log
-stonkpools 24
+id: 9102
+set SNIPE_QUOTE_MINT=5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
+set SNIPE_TARGETS=MSTR:1
+set SNIPE_DRY_RUN=true
+snipe-reset
+snipe-start
+ladder-start
