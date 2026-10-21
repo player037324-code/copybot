@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:17:07] stats 57m: trades 874221 (256/s) | lookups 1844 | profiles 1823 | with X 125 | ALERTS 0 | queue 4065 | rechecking 230 | 429s 15 | dropped 0 | top scans 19 | apps none=683165,axiom=70031,pump=55756,fomo=33148,gmgn=13615
 [2026-10-21 21:17:10] 🎁 dev HfgvoC sent 35.0% of SNTRA to 6i9rRHFNcX6QKywtwVMHGoVnSWrYLBT4sKEjRwwnNkPk
 [2026-10-21 21:18:07] stats 58m: trades 885335 (254/s) | lookups 1844 | profiles 1823 | with X 125 | ALERTS 0 | queue 4111 | rechecking 230 | 429s 15 | dropped 0 | top scans 19 | apps none=691826,axiom=70802,pump=56477,fomo=33635,gmgn=13845
 [2026-10-21 21:18:14] 🎁 dev AMQ6kj sent 1.7% of bbcb to 7RMJ1wnuhry4Ue8ZL9LrDykTtREdUzrhoH4pUG6W11Md
@@ -309,6 +308,7 @@
 [2026-10-21 21:32:07] stats 72m: trades 1073144 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4502 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=838797,axiom=85879,pump=69139,fomo=39569,gmgn=17256
 [2026-10-21 21:33:07] stats 73m: trades 1088269 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4556 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=850603,axiom=87336,pump=70089,fomo=39950,gmgn=17466
 [2026-10-21 21:33:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 21:34:07] stats 74m: trades 1107198 (249/s) | lookups 2343 | profiles 2315 | with X 144 | ALERTS 0 | queue 4604 | rechecking 246 | 429s 19 | dropped 0 | top scans 25 | apps none=866331,axiom=88653,pump=71012,fomo=40445,gmgn=17651
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
