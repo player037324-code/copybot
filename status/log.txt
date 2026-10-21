@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:09:03] stats 45m: trades 1227864 (455/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4728 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=962881,axiom=103481,pump=72853,fomo=45348,gmgn=19483
-[2026-10-21 20:10:03] stats 46m: trades 1260308 (457/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4792 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=985225,axiom=109283,pump=74735,fomo=46440,gmgn=19975
 [2026-10-21 20:10:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 20:11:03] stats 47m: trades 1290548 (458/s) | lookups 1376 | profiles 1360 | with X 104 | ALERTS 1 | queue 4844 | rechecking 142 | 429s 14 | dropped 0 | top scans 16 | apps none=1006688,axiom=114018,pump=76494,fomo=47264,gmgn=20548
 [2026-10-21 20:12:03] stats 48m: trades 1317339 (457/s) | lookups 1436 | profiles 1420 | with X 109 | ALERTS 1 | queue 4843 | rechecking 145 | 429s 14 | dropped 0 | top scans 16 | apps none=1026669,axiom=116916,pump=78107,fomo=48390,gmgn=21063
@@ -309,6 +307,8 @@
 [2026-10-21 20:23:07] stats 3m: trades 45519 (253/s) | lookups 133 | profiles 132 | with X 7 | ALERTS 0 | queue 787 | rechecking 162 | 429s 1 | dropped 0 | top scans 1 | apps none=35266,axiom=3798,pump=3125,fomo=1657,padre=710
 [2026-10-21 20:24:07] stats 4m: trades 63631 (265/s) | lookups 133 | profiles 132 | with X 7 | ALERTS 0 | queue 1001 | rechecking 162 | 429s 1 | dropped 0 | top scans 1 | apps none=50064,axiom=4947,pump=4159,fomo=2220,padre=925
 [2026-10-21 20:24:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 20:25:07] stats 5m: trades 79129 (264/s) | lookups 162 | profiles 161 | with X 8 | ALERTS 0 | queue 1164 | rechecking 162 | 429s 1 | dropped 0 | top scans 2 | apps none=61196,axiom=6851,pump=5209,fomo=2960,padre=1241
+[2026-10-21 20:25:07] gift watcher: 95 dev wallets watched | 912 txs | 1 gifts | 12 MB today (~0k credits)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
