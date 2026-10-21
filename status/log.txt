@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:12:50] 🎁 dev 4BYjXY sent 1.1% of 6GpZ3J to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
-[2026-10-21 21:13:07] stats 53m: trades 820979 (258/s) | lookups 1702 | profiles 1682 | with X 117 | ALERTS 0 | queue 3930 | rechecking 230 | 429s 14 | dropped 0 | top scans 18 | apps none=641747,axiom=65601,pump=52300,fomo=31348,gmgn=12857
 [2026-10-21 21:14:07] stats 54m: trades 836469 (258/s) | lookups 1712 | profiles 1692 | with X 117 | ALERTS 0 | queue 3997 | rechecking 230 | 429s 14 | dropped 0 | top scans 18 | apps none=654083,axiom=66654,pump=53340,fomo=31772,gmgn=13076
 [2026-10-21 21:14:48] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:15:07] gift watcher: 632 dev wallets watched | 26051 txs | 9 gifts | 230 MB today (~5k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 21:28:48] 🎁 dev AqGUrb sent 3.9% of KIMCHIPCS to 99z2LvBqdo9QumkhAZdDVMaKdZvxWkVks1jC8dY4uoLJ
 [2026-10-21 21:29:07] stats 69m: trades 1031608 (249/s) | lookups 2181 | profiles 2155 | with X 139 | ALERTS 0 | queue 4462 | rechecking 242 | 429s 18 | dropped 0 | top scans 23 | apps none=806135,axiom=82461,pump=66305,fomo=38405,gmgn=16557
 [2026-10-21 21:29:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
+[2026-10-21 21:30:07] gift watcher: 680 dev wallets watched | 35312 txs | 12 gifts | 297 MB today (~6k credits)
+[2026-10-21 21:30:07] stats 70m: trades 1045145 (249/s) | lookups 2200 | profiles 2174 | with X 139 | ALERTS 0 | queue 4501 | rechecking 242 | 429s 18 | dropped 0 | top scans 24 | apps none=816510,axiom=83838,pump=67206,fomo=38795,gmgn=16799
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
