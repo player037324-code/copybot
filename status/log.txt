@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:40:08] stats 78m: trades 2545396 (544/s) | lookups 2258 | profiles 2215 | with X 139 | ALERTS 0 | queue 6506 | rechecking 319 | 429s 24 | dropped 0 | top scans 26 | apps none=1884874,axiom=299085,pump=153560,fomo=106095,gmgn=48094
-[2026-10-21 23:40:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 23:41:08] stats 79m: trades 2571997 (543/s) | lookups 2278 | profiles 2235 | with X 140 | ALERTS 0 | queue 6548 | rechecking 320 | 429s 24 | dropped 0 | top scans 27 | apps none=1905438,axiom=301228,pump=155458,fomo=107020,gmgn=48555
 [2026-10-21 23:42:08] gift watcher: 938 dev wallets watched | 44999 txs | 40 gifts | 330 MB today (~7k credits)
 [2026-10-21 23:42:08] stats 80m: trades 2596739 (541/s) | lookups 2337 | profiles 2294 | with X 146 | ALERTS 0 | queue 6569 | rechecking 318 | 429s 24 | dropped 0 | top scans 27 | apps none=1924222,axiom=303195,pump=157368,fomo=108164,gmgn=48934
@@ -309,6 +307,8 @@
 [2026-10-21 23:55:30] 🎁 dev DY1zqU sent 1.5% of H2-X to 6RrqZQ7WSTX3X9JfSw73CoxcKS277dH7C6LCHdgjhZD7
 [2026-10-21 23:56:08] stats 94m: trades 2918993 (518/s) | lookups 2720 | profiles 2670 | with X 160 | ALERTS 0 | queue 6948 | rechecking 329 | 429s 29 | dropped 0 | top scans 31 | apps none=2176860,axiom=328186,pump=179353,fomo=119702,gmgn=54012
 [2026-10-21 23:56:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 23:57:08] gift watcher: 952 dev wallets watched | 55474 txs | 44 gifts | 432 MB today (~9k credits)
+[2026-10-21 23:57:08] stats 95m: trades 2941172 (516/s) | lookups 2749 | profiles 2699 | with X 160 | ALERTS 0 | queue 6981 | rechecking 330 | 429s 29 | dropped 0 | top scans 32 | apps none=2193835,axiom=330247,pump=180872,fomo=120548,gmgn=54390
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
