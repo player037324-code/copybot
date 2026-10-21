@@ -110,8 +110,9 @@ async function onLaunch(tx, slot) {
   const [m, born] = await Promise.all([meta(L.quote), bornAt(L.quote)]);
   const ageDays = born ? (Date.now() / 1000 - born) / 86400 : null;
   const isNew = ageDays !== null && ageDays < NEW_DAYS;
-  await alert(isNew ? 'NEW PAIRING LIVE' : 'first StonkFun launch on older pool',
-    `$${m.symbol || '?'} (${m.name || ''}) ${L.quote} is now live on StonkFun. First launch: $${L.symbol} ${L.base}. Pool token is ${ageDays === null ? '?' : ageDays < 1 ? `${(ageDays * 24).toFixed(1)}h` : `${ageDays.toFixed(1)}d`} old.`,
+  // any pool getting its first-ever StonkFun launch is a new pairing (META, PENGU, GMEx count too), brand-new index tokens get flagged
+  await alert('NEW PAIRING LIVE',
+    `$${m.symbol || '?'} (${m.name || ''}) is now live on StonkFun.${isNew ? ' BRAND NEW index token.' : ''} First coin: $${L.symbol} ${L.base}. Pool token is ${ageDays === null ? '?' : ageDays < 1 ? `${(ageDays * 24).toFixed(1)}h` : `${ageDays.toFixed(1)}d`} old.`,
     { quote: L.quote, firstMint: L.base, firstTicker: L.symbol, isNew });
 }
 
