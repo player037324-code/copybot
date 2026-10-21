@@ -1,10 +1,3 @@
-unknown command
-=== cmd 73 @ 2026-10-21T17:38:02Z ===
-> pfprobe 45
-measuring 45s of each stream in parallel...
-logs pump.fun: 20949 msgs, 32.97 MB, unique traders 832, ~63312 MB/day = ~1266k credits/day 
-logs pumpswap: 21189 msgs, 68.03 MB, unique traders 0, ~130609 MB/day = ~2612k credits/day 
-tx accounts both: 17973 msgs, 156.75 MB, unique traders 6944, ~300959 MB/day = ~6019k credits/day 
 
 profile kimchi: HTTP 200 {"address":"Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX","userId":"ea1951bf-9885-4dca-9f28-82830824ce3c","is_pump_user":true,"is_banned":false,"username":"Kimchi","profile_image":"https://socialimages.pump.fun/profile-images/ea1951bf-9885-4dca-9f28-82830824ce3c/fc78f0fb-4873-418f-bac7-b1766f38f7a6","header_image_url":"https://socialimages.pump.fun/profile-images/ea1951bf-9885-4dca-9f28-82830824ce
 profile lookups: 56 in 327ms, codes {"200":28,"404":28}, with username 28, with X 1
@@ -398,3 +391,10 @@ host metrics | cpu: 3% | ram usage: 45% | enp1s0: ⇓ 0.545mb/s ⇑ 0.012mb/s | 
 unknown command
 > xfol Jay00818
 unknown command
+=== cmd 85 @ 2026-10-21T18:36:02Z ===
+> xfol kimchi1x
+https://api.fxtwitter.com/kimchi1x -> HTTP 404 followers=undefined {"code":404,"message":"User not found"}
+https://api.vxtwitter.com/kimchi1x -> HTTP 200 followers=183839 
+> xfol Jay00818
+https://api.fxtwitter.com/Jay00818 -> HTTP 200 followers=7 
+https://api.vxtwitter.com/Jay00818 -> HTTP 200 followers=7 
