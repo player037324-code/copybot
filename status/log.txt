@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:46:08] stats 24m: trades 770124 (535/s) | lookups 710 | profiles 699 | with X 42 | ALERTS 0 | queue 3860 | rechecking 293 | 429s 8 | dropped 0 | top scans 8 | apps none=524087,axiom=121067,pump=49135,fomo=37500,gmgn=18659
-[2026-10-21 22:47:08] gift watcher: 483 dev wallets watched | 9177 txs | 6 gifts | 88 MB today (~2k credits)
 [2026-10-21 22:47:08] stats 25m: trades 801921 (535/s) | lookups 710 | profiles 699 | with X 42 | ALERTS 0 | queue 3952 | rechecking 293 | 429s 8 | dropped 0 | top scans 8 | apps none=548973,axiom=123686,pump=51037,fomo=38750,gmgn=19300
 [2026-10-21 22:47:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:48:08] stats 26m: trades 833665 (534/s) | lookups 740 | profiles 729 | with X 47 | ALERTS 0 | queue 4023 | rechecking 294 | 429s 8 | dropped 0 | top scans 9 | apps none=572724,axiom=127366,pump=52807,fomo=40074,gmgn=19936
@@ -309,6 +307,8 @@
 [2026-10-21 22:55:30] 🎁 dev 3H4GRC sent 2.9% of CYPURR to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 22:56:08] stats 34m: trades 1108388 (543/s) | lookups 958 | profiles 941 | with X 57 | ALERTS 0 | queue 4563 | rechecking 299 | 429s 11 | dropped 0 | top scans 11 | apps none=786245,axiom=153881,pump=67659,fomo=50319,gmgn=24441
 [2026-10-21 22:56:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
+[2026-10-21 22:57:08] gift watcher: 623 dev wallets watched | 14236 txs | 19 gifts | 130 MB today (~3k credits)
+[2026-10-21 22:57:08] stats 35m: trades 1140904 (543/s) | lookups 987 | profiles 969 | with X 57 | ALERTS 0 | queue 4652 | rechecking 299 | 429s 11 | dropped 0 | top scans 12 | apps none=811801,axiom=156615,pump=69717,fomo=51457,gmgn=24911
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
