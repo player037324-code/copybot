@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:35:10] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:35:10] feed connected
 [2026-10-21 18:36:09] stats 1m: trades 26009 (433/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 544 | rechecking 51 | 429s 1 | dropped 0 | top scans 0 | apps none=20843,axiom=1896,pump=1636,fomo=716,gmgn=447
 [2026-10-21 18:36:36] top scan: 2001 profiles, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-21 18:51:09] feed connected
 [2026-10-21 18:52:09] stats 1m: trades 34427 (574/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 464 | rechecking 65 | 429s 1 | dropped 0 | top scans 0 | apps none=25731,axiom=4895,pump=1374,fomo=855,gmgn=702
 [2026-10-21 18:52:36] top scan: 2001 profiles (cutoff 1042 pump followers) in 57s, 0 new to the list
+[2026-10-21 18:53:09] stats 2m: trades 68000 (567/s) | lookups 33 | profiles 32 | with X 0 | ALERTS 0 | queue 849 | rechecking 63 | 429s 1 | dropped 0 | top scans 1 | apps none=49320,axiom=10547,pump=3115,fomo=1718,gmgn=1549
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
