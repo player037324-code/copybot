@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:00:08] stats 38m: trades 1237200 (543/s) | lookups 1069 | profiles 1050 | with X 62 | ALERTS 0 | queue 4849 | rechecking 300 | 429s 12 | dropped 0 | top scans 13 | apps none=886154,axiom=164969,pump=75693,fomo=55459,gmgn=26568
-[2026-10-21 23:00:41] 🎁 dev 8yk5ng sent 1.3% of Godxi to FgCrVMFibwTcnFS53JggzxttJZjXtTydN3b91Xegsq6o
-[2026-10-21 23:01:08] stats 39m: trades 1268797 (542/s) | lookups 1129 | profiles 1110 | with X 66 | ALERTS 0 | queue 4857 | rechecking 300 | 429s 12 | dropped 0 | top scans 13 | apps none=909761,axiom=168518,pump=77687,fomo=56602,gmgn=27091
 [2026-10-21 23:01:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-21 23:02:08] gift watcher: 696 dev wallets watched | 16635 txs | 20 gifts | 148 MB today (~3k credits)
 [2026-10-21 23:02:08] stats 40m: trades 1303240 (543/s) | lookups 1149 | profiles 1130 | with X 66 | ALERTS 0 | queue 4934 | rechecking 301 | 429s 12 | dropped 0 | top scans 14 | apps none=935456,axiom=172450,pump=79762,fomo=57842,gmgn=27715
@@ -309,6 +306,9 @@
 [2026-10-21 23:12:50] 🎁 dev BAoJmp sent 1.3% of CBI to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-21 23:12:50] 🎁 dev BAoJmp sent 1.6% of CBI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:13:08] stats 51m: trades 1694633 (554/s) | lookups 1509 | profiles 1481 | with X 89 | ALERTS 0 | queue 5437 | rechecking 307 | 429s 16 | dropped 0 | top scans 17 | apps none=1234893,axiom=211194,pump=103059,fomo=74702,gmgn=33831
+[2026-10-21 23:14:08] stats 52m: trades 1730537 (555/s) | lookups 1509 | profiles 1481 | with X 89 | ALERTS 0 | queue 5504 | rechecking 307 | 429s 16 | dropped 0 | top scans 17 | apps none=1262994,axiom=214272,pump=105092,fomo=76314,gmgn=34347
+[2026-10-21 23:14:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 23:15:01] 🎁 dev AoGefn sent 3.0% of CYBERANSEM to GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
