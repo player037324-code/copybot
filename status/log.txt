@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 10:35:15.426] launch [pre] $safecoin (safecoin) 7FWtXvm6Ju375436pe2cxje3Pr1kyE3rfmVjfvuEpLij quote 6s2umN platform 6BwHHD token2022 slot 459597624
 [2026-10-21 10:35:15.427]   not a target, ignoring
 [2026-10-21 10:35:15.431] launch [beta] $safecoin (safecoin) 7FWtXvm6Ju375436pe2cxje3Pr1kyE3rfmVjfvuEpLij quote 6s2umN platform 6BwHHD token2022 slot 459597624
 [2026-10-21 10:35:15.431]   not a target, ignoring
@@ -248,6 +247,7 @@
 [2026-10-21 11:26:07.303] launch [beta] $Gwen (Al Gwen) 7x6X9kg62goXfuPcs3Pj8zKQmH1eRDTLmZnai2v6STNK quote 6s2umN platform 6BwHHD token2022 slot 459611790
 [2026-10-21 11:26:07.303]   not a target, ignoring
 [2026-10-21 11:29:07.858] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 11:34:07.858] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
