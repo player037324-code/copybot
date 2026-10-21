@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 11:12:14.075] feed mainnet connected
 [2026-10-21 11:14:07.858] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 11:19:07.858] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 11:24:07.857] alive | pool 6s2umN | $TRUMP done
@@ -248,6 +247,7 @@
 [2026-10-21 13:34:07.867] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 13:39:07.868] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 13:44:07.869] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 13:49:07.869] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
