@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:23:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:24:08] stats 62m: trades 2069016 (556/s) | lookups 1786 | profiles 1753 | with X 108 | ALERTS 0 | queue 5966 | rechecking 314 | 429s 19 | dropped 0 | top scans 21 | apps none=1519898,axiom=251587,pump=124374,fomo=89544,gmgn=40140
 [2026-10-21 23:25:08] stats 63m: trades 2098565 (555/s) | lookups 1839 | profiles 1804 | with X 110 | ALERTS 0 | queue 5987 | rechecking 314 | 429s 20 | dropped 0 | top scans 21 | apps none=1542772,axiom=254128,pump=126133,fomo=90816,gmgn=40712
 [2026-10-21 23:26:08] stats 64m: trades 2127827 (554/s) | lookups 1839 | profiles 1804 | with X 110 | ALERTS 0 | queue 6040 | rechecking 314 | 429s 20 | dropped 0 | top scans 21 | apps none=1565716,axiom=256707,pump=128013,fomo=91787,gmgn=41108
@@ -309,6 +308,7 @@
 [2026-10-21 23:37:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-21 23:38:08] stats 76m: trades 2494875 (547/s) | lookups 2195 | profiles 2153 | with X 136 | ALERTS 0 | queue 6447 | rechecking 319 | 429s 23 | dropped 0 | top scans 26 | apps none=1846645,axiom=294789,pump=149733,fomo=104226,gmgn=47218
 [2026-10-21 23:38:36] 🎁 dev 5ZuV8e sent 1.7% of C/acc to Fq7jozd5scjoqNx844eRnRqiAfW5fQaRZVPSFFwVwzto
+[2026-10-21 23:39:08] stats 77m: trades 2519197 (545/s) | lookups 2248 | profiles 2205 | with X 139 | ALERTS 0 | queue 6452 | rechecking 319 | 429s 24 | dropped 0 | top scans 26 | apps none=1864484,axiom=297045,pump=151704,fomo=105208,gmgn=47730
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
