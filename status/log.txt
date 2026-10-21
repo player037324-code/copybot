@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:55:07] stats 35m: trades 543355 (259/s) | lookups 1100 | profiles 1086 | with X 84 | ALERTS 0 | queue 3203 | rechecking 211 | 429s 9 | dropped 0 | top scans 12 | apps none=423415,axiom=44116,pump=34489,fomo=21560,gmgn=8466
 [2026-10-21 20:56:07] stats 36m: trades 564756 (261/s) | lookups 1160 | profiles 1146 | with X 86 | ALERTS 0 | queue 3213 | rechecking 213 | 429s 9 | dropped 0 | top scans 12 | apps none=441914,axiom=45092,pump=35394,fomo=22085,gmgn=8717
 [2026-10-21 20:56:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 1 new to the list
 [2026-10-21 20:57:07] stats 37m: trades 580485 (261/s) | lookups 1180 | profiles 1166 | with X 87 | ALERTS 0 | queue 3258 | rechecking 213 | 429s 9 | dropped 0 | top scans 13 | apps none=454292,axiom=46288,pump=36422,fomo=22617,gmgn=8984
@@ -309,6 +308,7 @@
 [2026-10-21 21:11:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:12:07] stats 52m: trades 807353 (259/s) | lookups 1649 | profiles 1630 | with X 113 | ALERTS 0 | queue 3917 | rechecking 228 | 429s 13 | dropped 0 | top scans 18 | apps none=631002,axiom=64555,pump=51401,fomo=30890,gmgn=12669
 [2026-10-21 21:12:50] 🎁 dev 4BYjXY sent 1.1% of 6GpZ3J to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
+[2026-10-21 21:13:07] stats 53m: trades 820979 (258/s) | lookups 1702 | profiles 1682 | with X 117 | ALERTS 0 | queue 3930 | rechecking 230 | 429s 14 | dropped 0 | top scans 18 | apps none=641747,axiom=65601,pump=52300,fomo=31348,gmgn=12857
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
