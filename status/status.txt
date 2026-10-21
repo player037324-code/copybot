@@ -1,6 +1,6 @@
-updated: 2026-10-21T15:10:02Z
+updated: 2026-10-21T15:11:02Z
 deployed: 8625c892d93510e966b090fe0a1f3286a753dfaf
-pm2: stopped uptime=3993m restarts=14
+pm2: stopped uptime=3994m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -71,7 +71,6 @@ sniper pm2: online
 }
 --- alerts ---
 alerts pm2: online
-{"time":"2026-10-20T19:59:45.937Z","kind":"NOW TRADEABLE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue just got its first deposit/swap. Buy it now for the snipe. Last two pairings went live 79-86 min after this, so around 21:18-21:25 UTC.","mint":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue"}
 {"time":"2026-10-20T20:02:47.637Z","kind":"first StonkFun launch on older pool","text":"$CZ4 (CZ4) DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump is now live on StonkFun. First launch: $s C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r. Pool token is 71.1d old.","quote":"DsrbidPN1vEHMTZ5xytoxyCmkXQKmZmaAUyiADFpump","firstMint":"C2uPoNWq3EZuryUtGoaTxmCWNKbEeaVrPSeLhJP9AU1r","firstTicker":"s","isNew":false}
 {"time":"2026-10-20T20:05:00.407Z","kind":"first StonkFun launch on older pool","text":"$CMNS (Commons by Virtuals) AMUgSjmdFsS8Y3JeL32u7A45Fpt8YF9xKaiwW5uGHdXk is now live on StonkFun. First launch: $s 5koP2jMyeCQB1SdU1BatojNEMPFtZhE65CJcLXiWG5Fz. Pool token is 57.2d old.","quote":"AMUgSjmdFsS8Y3JeL32u7A45Fpt8YF9xKaiwW5uGHdXk","firstMint":"5koP2jMyeCQB1SdU1BatojNEMPFtZhE65CJcLXiWG5Fz","firstTicker":"s","isNew":false}
 {"time":"2026-10-20T20:37:30.429Z","kind":"first StonkFun launch on older pool","text":"$Buttcoin (Buttcoin) Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump is now live on StonkFun. First launch: $ASSCATCHUM EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ. Pool token is 284.3d old.","quote":"Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump","firstMint":"EPmaRpfu2eJeYd2M43UjgQenJVgHxKfRuK89iZhM2RVQ","firstTicker":"ASSCATCHUM","isNew":false}
@@ -86,6 +85,7 @@ alerts pm2: online
 {"time":"2026-10-21T11:59:42.547Z","kind":"first StonkFun launch on older pool","text":"$SPYx (SP500 xStock) XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W is now live on StonkFun. First launch: $CHONK 3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX. Pool token is 497.1d old.","quote":"XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W","firstMint":"3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX","firstTicker":"CHONK","isNew":false}
 {"time":"2026-10-21T13:07:33.818Z","kind":"first StonkFun launch on older pool","text":"$AVAX (AVAX) avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D is now live on StonkFun. First launch: $AVXCAT BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j. Pool token is 229.6d old.","quote":"avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D","firstMint":"BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j","firstTicker":"AVXCAT","isNew":false}
 {"time":"2026-10-21T14:55:40.386Z","kind":"first StonkFun launch on older pool","text":"$ENA (Ethena) 72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1 is now live on StonkFun. First launch: $ECAT 7ebdBvGQqVohU354qoKmPdNKTTLGGJWk8WbVeSXSM9zm. Pool token is 816.8d old.","quote":"72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1","firstMint":"7ebdBvGQqVohU354qoKmPdNKTTLGGJWk8WbVeSXSM9zm","firstTicker":"ECAT","isNew":false}
+{"time":"2026-10-21T15:11:01.253Z","kind":"first StonkFun launch on older pool","text":"$GMEx (Gamestop xStock) Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc is now live on StonkFun. First launch: $WALLSTREETBOTS BWZYX9F2Axh8eBn1CdaUjZ6UZuPfc6Cpqjv9haRiCbR. Pool token is 497.2d old.","quote":"Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc","firstMint":"BWZYX9F2Axh8eBn1CdaUjZ6UZuPfc6Cpqjv9haRiCbR","firstTicker":"WALLSTREETBOTS","isNew":false}
 
 --- positions ---
 {
