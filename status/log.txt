@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:35:03] stats 11m: trades 311760 (472/s) | lookups 273 | profiles 269 | with X 19 | ALERTS 0 | queue 2527 | rechecking 95 | 429s 4 | dropped 0 | top scans 4 | apps none=242952,axiom=28055,pump=18411,fomo=11014,gmgn=5080
-[2026-10-21 19:36:03] stats 12m: trades 339237 (471/s) | lookups 333 | profiles 329 | with X 26 | ALERTS 0 | queue 2595 | rechecking 97 | 429s 4 | dropped 0 | top scans 4 | apps none=264148,axiom=30744,pump=20046,fomo=11877,gmgn=5688
 [2026-10-21 19:36:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:37:03] stats 13m: trades 365065 (468/s) | lookups 353 | profiles 349 | with X 30 | ALERTS 0 | queue 2693 | rechecking 99 | 429s 4 | dropped 0 | top scans 5 | apps none=284105,axiom=33246,pump=21585,fomo=12820,gmgn=6098
 [2026-10-21 19:38:03] stats 14m: trades 386039 (460/s) | lookups 410 | profiles 405 | with X 34 | ALERTS 0 | queue 2744 | rechecking 100 | 429s 5 | dropped 0 | top scans 5 | apps none=299495,axiom=35330,pump=23055,fomo=13868,gmgn=6476
@@ -309,6 +307,8 @@
 [2026-10-21 19:48:39] 🎁 dev 4LGuyP sent 5.0% of MAL to BvBQYKJzPe3fhffSobmP8VEhfNsvetd4q85YpVtwPAZ4
 [2026-10-21 19:49:03] gift watcher: 503 dev wallets watched | 13617 txs | 8 gifts | 74 MB today (~1k credits)
 [2026-10-21 19:49:03] stats 25m: trades 661431 (441/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3608 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=511359,axiom=61400,pump=39821,fomo=24661,gmgn=11490
+[2026-10-21 19:49:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
+[2026-10-21 19:50:03] stats 26m: trades 695892 (446/s) | lookups 742 | profiles 733 | with X 59 | ALERTS 1 | queue 3690 | rechecking 116 | 429s 8 | dropped 0 | top scans 9 | apps none=539752,axiom=64164,pump=41336,fomo=25573,gmgn=11831
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
