@@ -1,4 +1,2 @@
-id: 9105
-set SNIPE_TARGETS=MSTR:all
-snipe-start
-snipe-stop
+id: 90
+xfind MustStopMurad 80
