@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:41:07] stats 21m: trades 341891 (271/s) | lookups 685 | profiles 677 | with X 54 | ALERTS 0 | queue 2515 | rechecking 187 | 429s 6 | dropped 0 | top scans 7 | apps none=265120,axiom=28425,pump=21649,fomo=13884,gmgn=5612
 [2026-10-21 20:42:07] stats 22m: trades 359636 (272/s) | lookups 685 | profiles 677 | with X 54 | ALERTS 0 | queue 2596 | rechecking 187 | 429s 6 | dropped 0 | top scans 7 | apps none=279561,axiom=29714,pump=22587,fomo=14513,gmgn=5803
 [2026-10-21 20:42:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 91s, 0 new to the list
 [2026-10-21 20:42:50] 🎁 dev HgAhL3 sent 1.3% of nekinu to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
@@ -309,6 +308,7 @@
 [2026-10-21 20:56:07] stats 36m: trades 564756 (261/s) | lookups 1160 | profiles 1146 | with X 86 | ALERTS 0 | queue 3213 | rechecking 213 | 429s 9 | dropped 0 | top scans 12 | apps none=441914,axiom=45092,pump=35394,fomo=22085,gmgn=8717
 [2026-10-21 20:56:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 1 new to the list
 [2026-10-21 20:57:07] stats 37m: trades 580485 (261/s) | lookups 1180 | profiles 1166 | with X 87 | ALERTS 0 | queue 3258 | rechecking 213 | 429s 9 | dropped 0 | top scans 13 | apps none=454292,axiom=46288,pump=36422,fomo=22617,gmgn=8984
+[2026-10-21 20:58:07] stats 38m: trades 595179 (261/s) | lookups 1233 | profiles 1218 | with X 91 | ALERTS 0 | queue 3285 | rechecking 214 | 429s 10 | dropped 0 | top scans 13 | apps none=465099,axiom=47789,pump=37499,fomo=23224,gmgn=9271
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
