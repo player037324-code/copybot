@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:20:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:21:08] stats 59m: trades 1978667 (559/s) | lookups 1704 | profiles 1673 | with X 102 | ALERTS 0 | queue 5817 | rechecking 311 | 429s 18 | dropped 0 | top scans 20 | apps none=1451342,axiom=243182,pump=118641,fomo=85465,gmgn=38324
 [2026-10-21 23:22:08] gift watcher: 911 dev wallets watched | 31424 txs | 32 gifts | 224 MB today (~4k credits)
 [2026-10-21 23:22:08] stats 60m: trades 2009733 (558/s) | lookups 1757 | profiles 1725 | with X 108 | ALERTS 0 | queue 5831 | rechecking 314 | 429s 19 | dropped 0 | top scans 20 | apps none=1475025,axiom=246294,pump=120475,fomo=86725,gmgn=38967
@@ -309,6 +308,7 @@
 [2026-10-21 23:34:08] stats 72m: trades 2387199 (553/s) | lookups 2093 | profiles 2053 | with X 128 | ALERTS 0 | queue 6286 | rechecking 319 | 429s 22 | dropped 0 | top scans 24 | apps none=1763481,axiom=285252,pump=142299,fomo=100747,gmgn=45523
 [2026-10-21 23:34:19] 🎁 dev HgAhL3 sent 1.3% of Burger to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-21 23:34:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 23:35:08] stats 73m: trades 2417981 (552/s) | lookups 2113 | profiles 2072 | with X 128 | ALERTS 0 | queue 6349 | rechecking 319 | 429s 22 | dropped 0 | top scans 25 | apps none=1787628,axiom=287951,pump=144240,fomo=101753,gmgn=45959
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
