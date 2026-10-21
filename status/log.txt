@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:33:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
-[2026-10-21 21:34:07] stats 74m: trades 1107198 (249/s) | lookups 2343 | profiles 2315 | with X 144 | ALERTS 0 | queue 4604 | rechecking 246 | 429s 19 | dropped 0 | top scans 25 | apps none=866331,axiom=88653,pump=71012,fomo=40445,gmgn=17651
 [2026-10-21 21:35:07] 🎁 dev HgAhL3 sent 1.3% of 7URbDU to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-21 21:35:07] gift watcher: 665 dev wallets watched | 37698 txs | 14 gifts | 320 MB today (~6k credits)
 [2026-10-21 21:35:07] stats 75m: trades 1122102 (249/s) | lookups 2396 | profiles 2367 | with X 149 | ALERTS 0 | queue 4608 | rechecking 248 | 429s 20 | dropped 0 | top scans 25 | apps none=878261,axiom=89723,pump=72001,fomo=40873,gmgn=17881
@@ -309,6 +307,8 @@
 [2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 21:49:45] skip Milisof @NSFWJohnPORC: 44 X followers
+[2026-10-21 21:50:07] gift watcher: 654 dev wallets watched | 44148 txs | 17 gifts | 382 MB today (~8k credits)
+[2026-10-21 21:50:07] stats 90m: trades 1333765 (247/s) | lookups 2865 | profiles 2830 | with X 172 | ALERTS 0 | queue 4987 | rechecking 262 | 429s 24 | dropped 0 | top scans 30 | apps none=1043409,axiom=109131,pump=85247,fomo=47204,gmgn=21575
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
