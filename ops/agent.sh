@@ -88,6 +88,7 @@ if [ -f control/cmd.txt ]; then
           keyprefix) for k in HELIUS_API_KEY JUP_API_KEY NOZOMI_KEY ASTRALANE_KEY TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID; do v=$(grep -E "^$k=" .env | tail -1 | cut -d= -f2-); echo "$k: ${v:0:4}... ($(grep -cE "^$k=" .env) line(s) in .env)"; done ;;
           sendertest) timeout 90 node scripts/sendertest.js 2>&1 ;;
           pffeed) timeout 100 node scripts/pffeed.js 2>&1 | head -c 12000 ;;
+          pfusers*) a=${c#pfusers}; a=${a# }; [[ "$a" =~ ^(https://frontend-api-v3\.pump\.fun/[A-Za-z0-9/?=&_.-]*)?$ ]] && timeout 60 node scripts/pfusers.js $a 2>&1 | head -c 8000 ;;
           pfnats) timeout 100 node scripts/pfnats.js 2>&1 | tail -60 ;;
           pfwatch-start) pm2 describe pfwatch >/dev/null 2>&1 && pm2 restart pfwatch || pm2 start src/pfwatch.js --name pfwatch; pm2 save >/dev/null; sleep 25; pm2 logs pfwatch --nostream --lines 25 --raw 2>&1 | tail -25 ;;
           pfwatch-stop) pm2 stop pfwatch; pm2 save >/dev/null ;;
