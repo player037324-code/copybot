@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:36:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-21 20:37:07] stats 17m: trades 275055 (270/s) | lookups 549 | profiles 543 | with X 48 | ALERTS 0 | queue 2288 | rechecking 179 | 429s 4 | dropped 0 | top scans 6 | apps none=211872,axiom=23552,pump=17821,fomo=11465,gmgn=4560
 [2026-10-21 20:38:07] stats 18m: trades 290080 (269/s) | lookups 602 | profiles 595 | with X 49 | ALERTS 0 | queue 2332 | rechecking 181 | 429s 5 | dropped 0 | top scans 6 | apps none=223433,axiom=24925,pump=18793,fomo=12008,gmgn=4845
 [2026-10-21 20:39:07] stats 19m: trades 306679 (269/s) | lookups 602 | profiles 595 | with X 49 | ALERTS 0 | queue 2415 | rechecking 181 | 429s 5 | dropped 0 | top scans 6 | apps none=237060,axiom=25885,pump=19719,fomo=12560,gmgn=5077
 [2026-10-21 20:39:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-21 20:52:03] skip creatrvertt @shotbyvertt: 487 X followers
 [2026-10-21 20:52:07] stats 32m: trades 499630 (260/s) | lookups 1018 | profiles 1005 | with X 79 | ALERTS 0 | queue 3048 | rechecking 205 | 429s 8 | dropped 0 | top scans 11 | apps none=388704,axiom=41213,pump=31714,fomo=19734,gmgn=7835
 [2026-10-21 20:53:07] stats 33m: trades 513603 (259/s) | lookups 1071 | profiles 1057 | with X 80 | ALERTS 0 | queue 3073 | rechecking 207 | 429s 9 | dropped 0 | top scans 11 | apps none=399953,axiom=42037,pump=32581,fomo=20276,gmgn=8060
+[2026-10-21 20:54:07] stats 34m: trades 528012 (259/s) | lookups 1071 | profiles 1057 | with X 80 | ALERTS 0 | queue 3148 | rechecking 207 | 429s 9 | dropped 0 | top scans 11 | apps none=411267,axiom=42989,pump=33523,fomo=20959,gmgn=8270
+[2026-10-21 20:54:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
