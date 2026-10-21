@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:01:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
-[2026-10-21 23:02:08] gift watcher: 696 dev wallets watched | 16635 txs | 20 gifts | 148 MB today (~3k credits)
-[2026-10-21 23:02:08] stats 40m: trades 1303240 (543/s) | lookups 1149 | profiles 1130 | with X 66 | ALERTS 0 | queue 4934 | rechecking 301 | 429s 12 | dropped 0 | top scans 14 | apps none=935456,axiom=172450,pump=79762,fomo=57842,gmgn=27715
-[2026-10-21 23:03:08] stats 41m: trades 1338406 (544/s) | lookups 1202 | profiles 1182 | with X 74 | ALERTS 0 | queue 4968 | rechecking 302 | 429s 13 | dropped 0 | top scans 14 | apps none=962419,axiom=175611,pump=82077,fomo=59331,gmgn=28326
 [2026-10-21 23:04:08] stats 42m: trades 1371955 (544/s) | lookups 1212 | profiles 1192 | with X 74 | ALERTS 0 | queue 5044 | rechecking 302 | 429s 13 | dropped 0 | top scans 14 | apps none=988448,axiom=178536,pump=84288,fomo=60607,gmgn=28890
 [2026-10-21 23:04:44] 🎁 dev BAoJmp sent 1.4% of CYBERBABY to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:04:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-21 23:14:08] stats 52m: trades 1730537 (555/s) | lookups 1509 | profiles 1481 | with X 89 | ALERTS 0 | queue 5504 | rechecking 307 | 429s 16 | dropped 0 | top scans 17 | apps none=1262994,axiom=214272,pump=105092,fomo=76314,gmgn=34347
 [2026-10-21 23:14:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:15:01] 🎁 dev AoGefn sent 3.0% of CYBERANSEM to GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52
+[2026-10-21 23:15:08] stats 53m: trades 1770308 (557/s) | lookups 1539 | profiles 1511 | with X 91 | ALERTS 0 | queue 5552 | rechecking 307 | 429s 16 | dropped 0 | top scans 18 | apps none=1294384,axiom=217827,pump=107175,fomo=77710,gmgn=35024
+[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.7% of GARRY to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
+[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.6% of GARRY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.5% of GARRY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
