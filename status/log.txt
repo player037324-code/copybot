@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:52:03] skip creatrvertt @shotbyvertt: 487 X followers
-[2026-10-21 20:52:07] stats 32m: trades 499630 (260/s) | lookups 1018 | profiles 1005 | with X 79 | ALERTS 0 | queue 3048 | rechecking 205 | 429s 8 | dropped 0 | top scans 11 | apps none=388704,axiom=41213,pump=31714,fomo=19734,gmgn=7835
 [2026-10-21 20:53:07] stats 33m: trades 513603 (259/s) | lookups 1071 | profiles 1057 | with X 80 | ALERTS 0 | queue 3073 | rechecking 207 | 429s 9 | dropped 0 | top scans 11 | apps none=399953,axiom=42037,pump=32581,fomo=20276,gmgn=8060
 [2026-10-21 20:54:07] stats 34m: trades 528012 (259/s) | lookups 1071 | profiles 1057 | with X 80 | ALERTS 0 | queue 3148 | rechecking 207 | 429s 9 | dropped 0 | top scans 11 | apps none=411267,axiom=42989,pump=33523,fomo=20959,gmgn=8270
 [2026-10-21 20:54:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-21 21:08:07] stats 48m: trades 741788 (258/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3748 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=578684,axiom=59935,pump=47225,fomo=28750,gmgn=11668
 [2026-10-21 21:09:07] stats 49m: trades 756959 (257/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3809 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=590553,axiom=61069,pump=48244,fomo=29309,gmgn=11978
 [2026-10-21 21:09:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 21:10:07] gift watcher: 587 dev wallets watched | 23960 txs | 8 gifts | 218 MB today (~4k credits)
+[2026-10-21 21:10:07] stats 50m: trades 775171 (258/s) | lookups 1569 | profiles 1550 | with X 108 | ALERTS 0 | queue 3862 | rechecking 226 | 429s 13 | dropped 0 | top scans 17 | apps none=605318,axiom=62339,pump=49294,fomo=29865,gmgn=12186
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
