@@ -1,2 +1,3 @@
-id: 88
-pfcoins
+id: 89
+set PF_GIFT_HOURS=1
+pfwatch-start
