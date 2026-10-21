@@ -1,2 +1,4 @@
-id: 86
-pfsignup
+id: 87
+pfusers https://frontend-api-v3.pump.fun/search?query=kimchi1x
+pfusers https://frontend-api-v3.pump.fun/users/search?query=kimchi1x
+pfusers https://frontend-api-v3.pump.fun/search?searchTerm=kimchi1x&type=users
