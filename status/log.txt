@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 19:00:09.060] === sniper starting ===
 [2026-10-21 19:00:09.061] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-21 19:00:09.061] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-21 19:00:09.069] target: first $TRUMP -> buy 762 [ALREADY DONE]
@@ -248,6 +247,7 @@
 [2026-10-21 19:41:08.648] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:46:08.648] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:51:08.647] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 19:56:08.648] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:42:30] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to G53uJQrFyWi55eLqEHMfYzBmYUPKfRS5CSZo8nSQo67f
 [2026-10-21 19:43:01] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 9EqvpSDH8YShgkUS8bzNzJ87AWDLp3sGGyHV1GXZCEV3
 [2026-10-21 19:43:03] stats 19m: trades 499800 (438/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3134 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=383879,axiom=47512,pump=30565,fomo=18900,gmgn=8965
 [2026-10-21 19:43:20] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 8ZMLeKMVAY5qyKW4tCCpDiD8D2GsYcEkXV497zLWDN5s
@@ -309,6 +308,7 @@
 [2026-10-21 19:54:46] 🎁 dev BLbAr8 sent 3.6% of TeuTeuf to 2J2rtMBRLxAbFkSLgrsuSNN8N5KMTJVaRTdnGfbZ5Vjw
 [2026-10-21 19:55:03] stats 31m: trades 845016 (454/s) | lookups 904 | profiles 894 | with X 73 | ALERTS 1 | queue 4003 | rechecking 121 | 429s 9 | dropped 0 | top scans 11 | apps none=662316,axiom=73644,pump=49461,fomo=30276,gmgn=13690
 [2026-10-21 19:56:03] stats 32m: trades 877818 (457/s) | lookups 962 | profiles 951 | with X 80 | ALERTS 1 | queue 4038 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=689274,axiom=76177,pump=50971,fomo=31114,gmgn=14103
+[2026-10-21 19:57:03] stats 33m: trades 903977 (457/s) | lookups 967 | profiles 956 | with X 80 | ALERTS 1 | queue 4122 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=710071,axiom=78086,pump=52665,fomo=31958,gmgn=14513
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
