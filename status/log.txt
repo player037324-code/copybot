@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:15:01] 🎁 dev AoGefn sent 3.0% of CYBERANSEM to GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52
-[2026-10-21 23:15:08] stats 53m: trades 1770308 (557/s) | lookups 1539 | profiles 1511 | with X 91 | ALERTS 0 | queue 5552 | rechecking 307 | 429s 16 | dropped 0 | top scans 18 | apps none=1294384,axiom=217827,pump=107175,fomo=77710,gmgn=35024
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.7% of GARRY to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.6% of GARRY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.5% of GARRY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
@@ -309,6 +307,8 @@
 [2026-10-21 23:28:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-21 23:29:08] stats 67m: trades 2215401 (551/s) | lookups 1948 | profiles 1913 | with X 119 | ALERTS 0 | queue 6135 | rechecking 314 | 429s 20 | dropped 0 | top scans 23 | apps none=1633654,axiom=264963,pump=133280,fomo=94727,gmgn=42561
 [2026-10-21 23:30:08] stats 68m: trades 2244760 (550/s) | lookups 2001 | profiles 1965 | with X 124 | ALERTS 0 | queue 6148 | rechecking 316 | 429s 21 | dropped 0 | top scans 23 | apps none=1655654,axiom=268069,pump=135006,fomo=96158,gmgn=43083
+[2026-10-21 23:31:08] stats 69m: trades 2285053 (552/s) | lookups 2011 | profiles 1975 | with X 124 | ALERTS 0 | queue 6194 | rechecking 316 | 429s 21 | dropped 0 | top scans 23 | apps none=1686940,axiom=272054,pump=137145,fomo=97510,gmgn=43707
+[2026-10-21 23:31:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
