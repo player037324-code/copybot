@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:07:07] stats 47m: trades 726888 (258/s) | lookups 1487 | profiles 1469 | with X 105 | ALERTS 0 | queue 3730 | rechecking 223 | 429s 12 | dropped 0 | top scans 16 | apps none=567039,axiom=58831,pump=46165,fomo=28223,gmgn=11409
-[2026-10-21 21:08:07] stats 48m: trades 741788 (258/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3748 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=578684,axiom=59935,pump=47225,fomo=28750,gmgn=11668
 [2026-10-21 21:09:07] stats 49m: trades 756959 (257/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3809 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=590553,axiom=61069,pump=48244,fomo=29309,gmgn=11978
 [2026-10-21 21:09:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 21:10:07] gift watcher: 587 dev wallets watched | 23960 txs | 8 gifts | 218 MB today (~4k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 21:23:07] stats 63m: trades 946248 (250/s) | lookups 2009 | profiles 1985 | with X 134 | ALERTS 0 | queue 4276 | rechecking 236 | 429s 17 | dropped 0 | top scans 21 | apps none=739082,axiom=75390,pump=60823,fomo=35780,gmgn=15056
 [2026-10-21 21:24:07] stats 64m: trades 961488 (250/s) | lookups 2009 | profiles 1985 | with X 134 | ALERTS 0 | queue 4332 | rechecking 236 | 429s 17 | dropped 0 | top scans 21 | apps none=751091,axiom=76708,pump=61688,fomo=36209,gmgn=15345
 [2026-10-21 21:24:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 21:25:07] gift watcher: 674 dev wallets watched | 32671 txs | 11 gifts | 282 MB today (~6k credits)
+[2026-10-21 21:25:07] stats 65m: trades 975789 (250/s) | lookups 2038 | profiles 2014 | with X 134 | ALERTS 0 | queue 4371 | rechecking 236 | 429s 17 | dropped 0 | top scans 22 | apps none=761883,axiom=78085,pump=62731,fomo=36701,gmgn=15633
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
