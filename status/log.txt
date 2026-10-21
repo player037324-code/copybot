@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:47:28] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 4vSaj1VjQXE4hkmwpb2L9vVjtbFKV7QCyQmwEhNumqAV
-[2026-10-21 20:47:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 20:47:58] 🎁 dev HgAhL3 sent 1.3% of 61MUXz to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
-[2026-10-21 20:48:07] stats 28m: trades 443906 (264/s) | lookups 876 | profiles 864 | with X 67 | ALERTS 0 | queue 2913 | rechecking 193 | 429s 7 | dropped 0 | top scans 10 | apps none=345980,axiom=36094,pump=28087,fomo=17679,gmgn=6984
 [2026-10-21 20:49:07] stats 29m: trades 457843 (263/s) | lookups 929 | profiles 916 | with X 71 | ALERTS 0 | queue 2932 | rechecking 198 | 429s 8 | dropped 0 | top scans 10 | apps none=356397,axiom=37560,pump=29051,fomo=18182,gmgn=7222
 [2026-10-21 20:50:07] gift watcher: 382 dev wallets watched | 13322 txs | 6 gifts | 120 MB today (~2k credits)
 [2026-10-21 20:50:07] stats 30m: trades 471974 (262/s) | lookups 938 | profiles 925 | with X 72 | ALERTS 0 | queue 2990 | rechecking 199 | 429s 8 | dropped 0 | top scans 10 | apps none=367302,axiom=38768,pump=29972,fomo=18702,gmgn=7433
@@ -309,6 +305,10 @@
 [2026-10-21 21:02:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:03:07] stats 43m: trades 666761 (258/s) | lookups 1345 | profiles 1328 | with X 96 | ALERTS 0 | queue 3575 | rechecking 220 | 429s 11 | dropped 0 | top scans 15 | apps none=519806,axiom=54146,pump=42480,fomo=26022,gmgn=10526
 [2026-10-21 21:04:07] stats 44m: trades 681635 (258/s) | lookups 1398 | profiles 1380 | with X 100 | ALERTS 0 | queue 3609 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=531520,axiom=55251,pump=43398,fomo=26561,gmgn=10785
+[2026-10-21 21:05:07] gift watcher: 531 dev wallets watched | 21452 txs | 7 gifts | 191 MB today (~4k credits)
+[2026-10-21 21:05:07] stats 45m: trades 697412 (258/s) | lookups 1408 | profiles 1390 | with X 100 | ALERTS 0 | queue 3670 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=543883,axiom=56622,pump=44278,fomo=27125,gmgn=11016
+[2026-10-21 21:05:36] 🎁 dev GtQjpw sent 3.1% of Fable 5.5 to FzBmm8LnzW1MYRxH2oGKBXMjYvRkqzvCbsMq26rJUpEY
+[2026-10-21 21:05:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
