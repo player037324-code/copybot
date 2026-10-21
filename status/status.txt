@@ -1,6 +1,6 @@
-updated: 2026-10-21T17:56:07Z
+updated: 2026-10-21T17:57:28Z
 deployed: 106049b19e2aaf71f68e891797648afd0f62c93c
-pm2: stopped uptime=4159m restarts=14
+pm2: stopped uptime=4160m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -37,6 +37,7 @@ SNIPE_CU_LIMIT=100000
 SNIPE_CU_PRICE=100000000
 TELEGRAM_BOT_TOKEN=<set>
 TELEGRAM_CHAT_ID=5912765040
+PF_DRY=true
 
 --- stats ---
 Buys: 3   Sells: 0   Open: 1
@@ -88,6 +89,10 @@ alerts pm2: online
 {"time":"2026-10-21T15:11:01.253Z","kind":"first StonkFun launch on older pool","text":"$GMEx (Gamestop xStock) Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc is now live on StonkFun. First launch: $WALLSTREETBOTS BWZYX9F2Axh8eBn1CdaUjZ6UZuPfc6Cpqjv9haRiCbR. Pool token is 497.2d old.","quote":"Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc","firstMint":"BWZYX9F2Axh8eBn1CdaUjZ6UZuPfc6Cpqjv9haRiCbR","firstTicker":"WALLSTREETBOTS","isNew":false}
 {"time":"2026-10-21T15:49:16.578Z","kind":"first StonkFun launch on older pool","text":"$PENGU (Pudgy Penguins) 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv is now live on StonkFun. First launch: $MAFIA 8UeYsNPrEZZPGC22TuwoDcbEBmxRiDpf9JYXvXo3Motq. Pool token is 690.7d old.","quote":"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv","firstMint":"8UeYsNPrEZZPGC22TuwoDcbEBmxRiDpf9JYXvXo3Motq","firstTicker":"MAFIA","isNew":false}
 {"time":"2026-10-21T16:06:23.282Z","kind":"first StonkFun launch on older pool","text":"$META (Meta Platforms - Backpack Securities) METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd is now live on StonkFun. First launch: $ZUCK xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED. Pool token is 125.3d old.","quote":"METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd","firstMint":"xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED","firstTicker":"ZUCK","isNew":false}
+
+--- pfwatch ---
+pfwatch pm2: online restarts=0
+
 
 --- positions ---
 {
