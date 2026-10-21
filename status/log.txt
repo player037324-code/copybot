@@ -279,20 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:48:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
-[2026-10-21 21:49:07] stats 89m: trades 1321546 (247/s) | lookups 2812 | profiles 2779 | with X 167 | ALERTS 0 | queue 5001 | rechecking 258 | 429s 23 | dropped 0 | top scans 30 | apps none=1033716,axiom=108131,pump=84435,fomo=46846,gmgn=21432
-[2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
-[2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
-[2026-10-21 21:49:45] skip Milisof @NSFWJohnPORC: 44 X followers
-[2026-10-21 21:50:07] gift watcher: 654 dev wallets watched | 44148 txs | 17 gifts | 382 MB today (~8k credits)
-[2026-10-21 21:50:07] stats 90m: trades 1333765 (247/s) | lookups 2865 | profiles 2830 | with X 172 | ALERTS 0 | queue 4987 | rechecking 262 | 429s 24 | dropped 0 | top scans 30 | apps none=1043409,axiom=109131,pump=85247,fomo=47204,gmgn=21575
-[2026-10-21 21:51:07] stats 91m: trades 1345964 (247/s) | lookups 2865 | profiles 2830 | with X 172 | ALERTS 0 | queue 5024 | rechecking 262 | 429s 24 | dropped 0 | top scans 30 | apps none=1052582,axiom=110528,pump=86094,fomo=47549,gmgn=21777
-[2026-10-21 21:51:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
-[2026-10-21 21:52:07] stats 92m: trades 1357738 (246/s) | lookups 2894 | profiles 2859 | with X 172 | ALERTS 0 | queue 5050 | rechecking 263 | 429s 24 | dropped 0 | top scans 31 | apps none=1061463,axiom=111814,pump=86921,fomo=47902,gmgn=22045
-[2026-10-21 21:53:07] stats 93m: trades 1370838 (246/s) | lookups 2947 | profiles 2911 | with X 176 | ALERTS 0 | queue 5056 | rechecking 264 | 429s 25 | dropped 0 | top scans 31 | apps none=1071569,axiom=112989,pump=87810,fomo=48287,gmgn=22311
-[2026-10-21 21:54:07] stats 94m: trades 1385363 (246/s) | lookups 2947 | profiles 2911 | with X 176 | ALERTS 0 | queue 5090 | rechecking 264 | 429s 25 | dropped 0 | top scans 31 | apps none=1083318,axiom=114023,pump=88616,fomo=48699,gmgn=22563
-[2026-10-21 21:54:18] 🎁 dev HgAhL3 sent 1.3% of WIN to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
-[2026-10-21 21:54:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
 [2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.2% of ROBONOMICS to 2BEdHEQY2fJNUXyndKZWgJni7uPsLThiFpB1MJ7MEHBs
 [2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.0% of ROBONOMICS to H1Lh1J8PWEqWBYTwqyvzYibRi3oPnvMPeP8Fw7LyjSub
 [2026-10-21 21:55:07] gift watcher: 639 dev wallets watched | 47605 txs | 20 gifts | 418 MB today (~8k credits)
@@ -309,6 +295,20 @@
 [2026-10-21 21:59:07] stats 99m: trades 1474692 (248/s) | lookups 3119 | profiles 3079 | with X 182 | ALERTS 0 | queue 5231 | rechecking 267 | 429s 26 | dropped 0 | top scans 33 | apps none=1156997,axiom=120470,pump=93092,fomo=51051,gmgn=23694
 [2026-10-21 21:59:29] 🎁 dev HgAhL3 sent 1.3% of CTO to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-21 21:59:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
+[2026-10-21 22:00:07] gift watcher: 653 dev wallets watched | 49580 txs | 26 gifts | 435 MB today (~9k credits)
+[2026-10-21 22:00:07] stats 100m: trades 1493983 (249/s) | lookups 3138 | profiles 3097 | with X 182 | ALERTS 0 | queue 5263 | rechecking 267 | 429s 26 | dropped 0 | top scans 34 | apps none=1172558,axiom=122342,pump=93955,fomo=51433,gmgn=23983
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.9% of HallowCate to 8Btbf454cmG2xAktB9ws7Wx5w3WFSXnjsmhQmre9Jycd
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.9% of HallowCate to 8a4ucAkq4B6jxn9CeNEMfSmywzcUgrs4UWgBtXV8bwPo
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.2% of HallowCate to MqfY6TfvRSHqDxZ9u42atuExSPiEphkA3t9qWzB6HFi
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.1% of HallowCate to 2ck1xCgk2PjKfQua1Z1tpFiCCuTdSEtt7RhBrL1yE7BU
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.3% of HallowCate to CP4GcmYcK8zamhr3A7Q9hwojxV85sCct2JNnXZGRfLw2
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.2% of HallowCate to FGKJErvYx32vTh3bzXMEFRNba16PpnjkFJafNn8spRSS
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.5% of HallowCate to 5EpoewM2PYVUBx2WNDUujCREYba4bUCnFsr1KdrhUx7Q
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 4.9% of HallowCate to EoftCaQWVJ4eSCzdYJUTxfG2KQJfdoqwb9upeBdgZZUH
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.8% of HallowCate to EeFDPnS6Y7kocYPtfFmVFjAEJeerxDiJb1Nw5bxTH62f
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.8% of HallowCate to ERakYxvh1Sez41oR4xf66dLKHxXyxgASeX5uHgEJyFkY
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.8% of HallowCate to 5qgSs3o9LTUbYE89vB8D4JU6Cw2DECBL9rEBR3pyuvEP
+[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.4% of HallowCate to 5EpoewM2PYVUBx2WNDUujCREYba4bUCnFsr1KdrhUx7Q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
