@@ -1,6 +1,6 @@
-updated: 2026-10-21T23:11:02Z
+updated: 2026-10-21T23:12:02Z
 deployed: b3c93fcaafd767575be61d4497fcd5a0b6a45b9d
-pm2: stopped uptime=4474m restarts=14
+pm2: stopped uptime=4475m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -67,7 +67,6 @@ sniper pm2: stopped
 }
 --- alerts ---
 alerts pm2: online
-{"time":"2026-10-21T08:31:22.288Z","kind":"first StonkFun launch on older pool","text":"$DARK (DarkSwap) 7KEPApdbBMByrmqihz3bht2uMhFQcatjfSFQCKq66kH3 is now live on StonkFun. First launch: $DINU 9owRh2jVFrzrkvfdwHQNxc2n1GDZufTis2PLkXpEcgxh. Pool token is 19.6d old.","quote":"7KEPApdbBMByrmqihz3bht2uMhFQcatjfSFQCKq66kH3","firstMint":"9owRh2jVFrzrkvfdwHQNxc2n1GDZufTis2PLkXpEcgxh","firstTicker":"DINU","isNew":false}
 {"time":"2026-10-21T10:30:29.479Z","kind":"first StonkFun launch on older pool","text":"$FTX Token (FTT (Wormhole)) EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv is now live on StonkFun. First launch: $SCAMCOIN DFPVkD13srrGYbbnj7EGRornwBoffWuH6nZRp5fuioV5. Pool token is 1862.0d old.","quote":"EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv","firstMint":"DFPVkD13srrGYbbnj7EGRornwBoffWuH6nZRp5fuioV5","firstTicker":"SCAMCOIN","isNew":false}
 {"time":"2026-10-21T11:59:42.547Z","kind":"first StonkFun launch on older pool","text":"$SPYx (SP500 xStock) XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W is now live on StonkFun. First launch: $CHONK 3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX. Pool token is 497.1d old.","quote":"XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W","firstMint":"3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX","firstTicker":"CHONK","isNew":false}
 {"time":"2026-10-21T13:07:33.818Z","kind":"first StonkFun launch on older pool","text":"$AVAX (AVAX) avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D is now live on StonkFun. First launch: $AVXCAT BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j. Pool token is 229.6d old.","quote":"avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D","firstMint":"BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j","firstTicker":"AVXCAT","isNew":false}
@@ -82,10 +81,11 @@ alerts pm2: online
 {"time":"2026-10-21T21:54:29.841Z","kind":"NEW PAIRING LIVE","text":"$SNDK (Sandisk - Backpack Securities) is now live on StonkFun. First coin: $VSNDK 63cBuUDoo87rDi5CKxep81AF1D3sxaDGMLvZhteuctCw. Pool token is 125.5d old.","quote":"SNDKbwMUQvZhnLnxLduradgLHG5KrPuKwpnrkkGRhfH","firstMint":"63cBuUDoo87rDi5CKxep81AF1D3sxaDGMLvZhteuctCw","firstTicker":"VSNDK","isNew":false}
 {"time":"2026-10-21T22:12:30.960Z","kind":"NEW PAIRING LIVE","text":"$wECX (Wrapped ECX) is now live on StonkFun. First coin: $wECX ADYTniJSqgy1A24dnKeQY12azrr9qENact3p7JjLvvcr. Pool token is 9.8d old.","quote":"6ombVv3YMs9qpx1QkycD9XW8HKSfv7vGrCFX3cxCYMVY","firstMint":"ADYTniJSqgy1A24dnKeQY12azrr9qENact3p7JjLvvcr","firstTicker":"wECX","isNew":false}
 {"time":"2026-10-21T22:26:43.457Z","kind":"NEW PAIRING LIVE","text":"$USDT (USDT) is now live on StonkFun. First coin: $CYBERCURRENCY FhwCYSc4PdupoczhxEkX8pwvcTBNyxwSWRwEQ7EXcG4C. Pool token is 2087.2d old.","quote":"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB","firstMint":"FhwCYSc4PdupoczhxEkX8pwvcTBNyxwSWRwEQ7EXcG4C","firstTicker":"CYBERCURRENCY","isNew":false}
+{"time":"2026-10-21T23:12:00.833Z","kind":"NEW PAIRING LIVE","text":"$CYPH (Cypherpunk Technologies - Backpack Securities) is now live on StonkFun. First coin: $#̢̛ͥ̀̽̽ͨ̌̓͆̇̀ 3J6Efnjj21YzaEJrUFNmZrDfKxsZhmPQvLaJrqhUMLwV. Pool token is 37.8d old.","quote":"CYPHuMmCL1GxJWa2tsPhLKykC7GrHJTCHwbXD4g5uawK","firstMint":"3J6Efnjj21YzaEJrUFNmZrDfKxsZhmPQvLaJrqhUMLwV","firstTicker":"#̢̛ͥ̀̽̽ͨ̌̓͆̇̀","isNew":false}
 
 --- pfwatch ---
 pfwatch pm2: online restarts=13
-{"apps":{"none":1144019,"axiom":200545,"pump":96523,"fomo":70643,"padre":25880,"gmgn":32397,"maestro":786,"trojan":3309,"j7":383,"bonk":429,"bloom":1677,"sol_trading_bot":84,"photon":1507,"phantom":1004,"mevx":25,"pepeboost":20,"bullx":2,"banana":12},"topScans":16,"trades":1579245,"lookups":1427,"users":1403,"withX":86,"recentX":1,"alerts":0,"r429":15,"err":0,"dropped":0,"since":1792621327999,"coins":2063,"queue":5286,"watch":305,"dry":false,"updated":"2026-10-21T23:10:08.026Z"}
+{"apps":{"none":1179090,"axiom":204299,"pump":98600,"fomo":72146,"padre":26445,"gmgn":32918,"maestro":810,"trojan":3369,"j7":385,"bonk":451,"bloom":1711,"sol_trading_bot":84,"photon":1525,"phantom":1023,"mevx":25,"pepeboost":22,"bullx":2,"banana":12},"topScans":16,"trades":1622917,"lookups":1427,"users":1403,"withX":86,"recentX":1,"alerts":0,"r429":15,"err":0,"dropped":0,"since":1792621327999,"coins":2103,"queue":5349,"watch":305,"dry":false,"updated":"2026-10-21T23:11:08.026Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
