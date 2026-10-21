@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:50:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 20:51:07] stats 31m: trades 485585 (261/s) | lookups 958 | profiles 945 | with X 74 | ALERTS 0 | queue 3040 | rechecking 202 | 429s 8 | dropped 0 | top scans 11 | apps none=377722,axiom=40053,pump=30853,fomo=19207,gmgn=7631
 [2026-10-21 20:52:03] skip creatrvertt @shotbyvertt: 487 X followers
 [2026-10-21 20:52:07] stats 32m: trades 499630 (260/s) | lookups 1018 | profiles 1005 | with X 79 | ALERTS 0 | queue 3048 | rechecking 205 | 429s 8 | dropped 0 | top scans 11 | apps none=388704,axiom=41213,pump=31714,fomo=19734,gmgn=7835
 [2026-10-21 20:53:07] stats 33m: trades 513603 (259/s) | lookups 1071 | profiles 1057 | with X 80 | ALERTS 0 | queue 3073 | rechecking 207 | 429s 9 | dropped 0 | top scans 11 | apps none=399953,axiom=42037,pump=32581,fomo=20276,gmgn=8060
@@ -309,6 +307,8 @@
 [2026-10-21 21:06:07] stats 46m: trades 712162 (258/s) | lookups 1427 | profiles 1409 | with X 102 | ALERTS 0 | queue 3708 | rechecking 220 | 429s 12 | dropped 0 | top scans 16 | apps none=555666,axiom=57606,pump=45132,fomo=27708,gmgn=11218
 [2026-10-21 21:07:07] stats 47m: trades 726888 (258/s) | lookups 1487 | profiles 1469 | with X 105 | ALERTS 0 | queue 3730 | rechecking 223 | 429s 12 | dropped 0 | top scans 16 | apps none=567039,axiom=58831,pump=46165,fomo=28223,gmgn=11409
 [2026-10-21 21:08:07] stats 48m: trades 741788 (258/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3748 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=578684,axiom=59935,pump=47225,fomo=28750,gmgn=11668
+[2026-10-21 21:09:07] stats 49m: trades 756959 (257/s) | lookups 1540 | profiles 1521 | with X 107 | ALERTS 0 | queue 3809 | rechecking 226 | 429s 13 | dropped 0 | top scans 16 | apps none=590553,axiom=61069,pump=48244,fomo=29309,gmgn=11978
+[2026-10-21 21:09:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
