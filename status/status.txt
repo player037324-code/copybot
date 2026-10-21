@@ -1,6 +1,6 @@
-updated: 2026-10-21T13:07:02Z
+updated: 2026-10-21T13:08:02Z
 deployed: 8625c892d93510e966b090fe0a1f3286a753dfaf
-pm2: stopped uptime=3870m restarts=14
+pm2: stopped uptime=3871m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -84,6 +84,7 @@ alerts pm2: online
 {"time":"2026-10-21T08:31:22.288Z","kind":"first StonkFun launch on older pool","text":"$DARK (DarkSwap) 7KEPApdbBMByrmqihz3bht2uMhFQcatjfSFQCKq66kH3 is now live on StonkFun. First launch: $DINU 9owRh2jVFrzrkvfdwHQNxc2n1GDZufTis2PLkXpEcgxh. Pool token is 19.6d old.","quote":"7KEPApdbBMByrmqihz3bht2uMhFQcatjfSFQCKq66kH3","firstMint":"9owRh2jVFrzrkvfdwHQNxc2n1GDZufTis2PLkXpEcgxh","firstTicker":"DINU","isNew":false}
 {"time":"2026-10-21T10:30:29.479Z","kind":"first StonkFun launch on older pool","text":"$FTX Token (FTT (Wormhole)) EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv is now live on StonkFun. First launch: $SCAMCOIN DFPVkD13srrGYbbnj7EGRornwBoffWuH6nZRp5fuioV5. Pool token is 1862.0d old.","quote":"EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv","firstMint":"DFPVkD13srrGYbbnj7EGRornwBoffWuH6nZRp5fuioV5","firstTicker":"SCAMCOIN","isNew":false}
 {"time":"2026-10-21T11:59:42.547Z","kind":"first StonkFun launch on older pool","text":"$SPYx (SP500 xStock) XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W is now live on StonkFun. First launch: $CHONK 3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX. Pool token is 497.1d old.","quote":"XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W","firstMint":"3HRhVEpF8Z7xPSyR1RP49B74eBioXkjo69AcpU76PmtX","firstTicker":"CHONK","isNew":false}
+{"time":"2026-10-21T13:07:33.818Z","kind":"first StonkFun launch on older pool","text":"$AVAX (AVAX) avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D is now live on StonkFun. First launch: $AVXCAT BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j. Pool token is 229.6d old.","quote":"avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D","firstMint":"BG3N5Pmny7MtVhxMdFg36AAPAnFE4xNTHScW9cLgsS4j","firstTicker":"AVXCAT","isNew":false}
 
 --- positions ---
 {
