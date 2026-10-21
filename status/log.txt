@@ -205,8 +205,6 @@
 
 --- sniper ---
 [TAILING] Tailing last 40 lines for [sniper] process (change the value with --lines option)
-/root/.pm2/logs/sniper-error.log last 40 lines:
-
 /root/.pm2/logs/sniper-out.log last 40 lines:
 [2026-10-21 20:10:28.890]   not a target, ignoring
 [2026-10-21 20:10:31.243] launch [pre] $Saylor (The Orange Bull) C9Jffkba4Fkg6RbrUrgHFaoXy3N6KAnoaVqWATc9ariF quote 5MQhtw platform 6BwHHD token2022 slot 459759202
@@ -249,11 +247,12 @@
 [2026-10-21 20:10:55.502] launch [beta] $Faucet (Bitcoin Faucet) AdbWGwrQSdNuNs6bmX69MqMPXoHYrfSskPfHN1zJ2HgA quote 5MQhtw platform 6BwHHD token2022 slot 459759316
 [2026-10-21 20:10:55.503]   not a target, ignoring
 
+/root/.pm2/logs/sniper-error.log last 40 lines:
+
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-21 17:17:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:19:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:25:06] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:37:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,17 +272,13 @@
 [2026-10-21 19:00:12] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 19:06:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 20:09:25] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 20:20:06] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:02:03] stats 38m: trades 1033340 (453/s) | lookups 1129 | profiles 1117 | with X 86 | ALERTS 1 | queue 4410 | rechecking 129 | 429s 11 | dropped 0 | top scans 13 | apps none=810119,axiom=88154,pump=61030,fomo=37570,gmgn=16786
-[2026-10-21 20:03:03] stats 39m: trades 1061087 (453/s) | lookups 1186 | profiles 1173 | with X 90 | ALERTS 1 | queue 4435 | rechecking 134 | 429s 12 | dropped 0 | top scans 13 | apps none=831683,axiom=90485,pump=62627,fomo=38821,gmgn=17147
-[2026-10-21 20:04:03] gift watcher: 755 dev wallets watched | 23874 txs | 10 gifts | 218 MB today (~4k credits)
-[2026-10-21 20:04:03] stats 40m: trades 1088470 (454/s) | lookups 1186 | profiles 1173 | with X 90 | ALERTS 1 | queue 4496 | rechecking 134 | 429s 12 | dropped 0 | top scans 13 | apps none=853683,axiom=92220,pump=64145,fomo=39904,gmgn=17522
-[2026-10-21 20:04:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 20:05:03] stats 41m: trades 1115560 (453/s) | lookups 1212 | profiles 1199 | with X 93 | ALERTS 1 | queue 4536 | rechecking 135 | 429s 12 | dropped 0 | top scans 14 | apps none=875194,axiom=94155,pump=65625,fomo=41082,gmgn=17891
 [2026-10-21 20:06:03] stats 42m: trades 1143082 (454/s) | lookups 1269 | profiles 1255 | with X 100 | ALERTS 1 | queue 4562 | rechecking 136 | 429s 13 | dropped 0 | top scans 14 | apps none=897466,axiom=95957,pump=67184,fomo=42124,gmgn=18198
 [2026-10-21 20:06:37] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 7QaByT2PpNL6yabV6iVmTRTkRpGHM29Cx5vBdtNLACFn
@@ -309,6 +304,11 @@
 [2026-10-21 20:18:03] stats 54m: trades 1484620 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5071 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1154592,axiom=132971,pump=88852,fomo=53994,gmgn=24596
 [2026-10-21 20:19:03] gift watcher: 1051 dev wallets watched | 35904 txs | 13 gifts | 295 MB today (~6k credits)
 [2026-10-21 20:19:03] stats 55m: trades 1510389 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5172 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1174517,axiom=135144,pump=90642,fomo=54959,gmgn=25031
+[2026-10-21 20:19:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
+[2026-10-21 20:20:03] stats 56m: trades 1533262 (456/s) | lookups 1681 | profiles 1663 | with X 124 | ALERTS 1 | queue 5223 | rechecking 159 | 429s 16 | dropped 0 | top scans 19 | apps none=1191633,axiom=137218,pump=92393,fomo=55957,gmgn=25327
+[2026-10-21 20:20:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-21 20:20:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 20:20:08] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

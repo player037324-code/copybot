@@ -1,6 +1,6 @@
-updated: 2026-10-21T20:19:02Z
-deployed: e112576b56fb69e0e4b843000b4af59bfaacc2e0
-pm2: stopped uptime=4302m restarts=14
+updated: 2026-10-21T20:20:13Z
+deployed: 544b16a85f247a90caff66db2c2a7c0c38d7528a
+pm2: stopped uptime=4303m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -32,7 +32,7 @@ NOZOMI_KEY=<set>
 ASTRALANE_KEY=<set>
 SNIPE_DRY_RUN=true
 SNIPE_QUOTE_MINT=5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
-SNIPE_TARGETS=MSTR:730
+SNIPE_TARGETS=MSTR:all
 SNIPE_CU_LIMIT=100000
 SNIPE_CU_PRICE=100000000
 TELEGRAM_BOT_TOKEN=<set>
@@ -84,8 +84,8 @@ alerts pm2: online
 {"time":"2026-10-21T20:09:28.509Z","kind":"NEW PAIRING LIVE","text":"$SAYLOR3 (Saylor Index) is now live on StonkFun. BRAND NEW index token. First coin: $SAYLOR D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2. Pool token is 1.2h old.","quote":"5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT","firstMint":"D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2","firstTicker":"SAYLOR","isNew":true}
 
 --- pfwatch ---
-pfwatch pm2: online restarts=11
-{"apps":{"none":1174517,"pump":90642,"bloom":1705,"fomo":54959,"axiom":135144,"gmgn":25031,"padre":20708,"maestro":728,"trojan":3455,"sol_trading_bot":86,"bonk":351,"photon":1238,"bullx":114,"phantom":1192,"j7":417,"banana":12,"mevx":60,"pepeboost":30},"topScans":18,"trades":1510389,"lookups":1655,"users":1637,"withX":123,"recentX":3,"alerts":1,"r429":16,"err":0,"dropped":0,"since":1792610643706,"coins":2401,"queue":5172,"watch":157,"dry":false,"updated":"2026-10-21T20:19:03.738Z"}
+pfwatch pm2: online restarts=12
+{"apps":{"none":1191633,"pump":92393,"bloom":1715,"fomo":55957,"axiom":137218,"gmgn":25327,"padre":21178,"maestro":754,"trojan":3504,"sol_trading_bot":86,"bonk":360,"photon":1286,"bullx":114,"phantom":1218,"j7":417,"banana":12,"mevx":60,"pepeboost":30},"topScans":19,"trades":1533262,"lookups":1681,"users":1663,"withX":124,"recentX":3,"alerts":1,"r429":16,"err":0,"dropped":0,"since":1792610643706,"coins":2443,"queue":5223,"watch":159,"dry":false,"updated":"2026-10-21T20:20:03.737Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
