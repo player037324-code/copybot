@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:59:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
-[2026-10-21 22:00:07] gift watcher: 653 dev wallets watched | 49580 txs | 26 gifts | 435 MB today (~9k credits)
 [2026-10-21 22:00:07] stats 100m: trades 1493983 (249/s) | lookups 3138 | profiles 3097 | with X 182 | ALERTS 0 | queue 5263 | rechecking 267 | 429s 26 | dropped 0 | top scans 34 | apps none=1172558,axiom=122342,pump=93955,fomo=51433,gmgn=23983
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.9% of HallowCate to 8Btbf454cmG2xAktB9ws7Wx5w3WFSXnjsmhQmre9Jycd
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.9% of HallowCate to 8a4ucAkq4B6jxn9CeNEMfSmywzcUgrs4UWgBtXV8bwPo
@@ -309,6 +307,8 @@
 [2026-10-21 22:08:45] 🎁 dev HgAhL3 sent 1.8% of 4TZWYd to GBBbnSDGRRf8TPxu2Yxrh7qrxVHZnTte6AijGbigPHRv
 [2026-10-21 22:09:07] stats 109m: trades 1625780 (249/s) | lookups 3416 | profiles 3372 | with X 194 | ALERTS 0 | queue 5452 | rechecking 278 | 429s 29 | dropped 0 | top scans 36 | apps none=1276229,axiom=135384,pump=101259,fomo=54913,gmgn=26019
 [2026-10-21 22:09:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 22:10:07] gift watcher: 648 dev wallets watched | 55311 txs | 40 gifts | 486 MB today (~10k credits)
+[2026-10-21 22:10:07] stats 110m: trades 1639583 (248/s) | lookups 3445 | profiles 3400 | with X 197 | ALERTS 0 | queue 5487 | rechecking 278 | 429s 29 | dropped 0 | top scans 37 | apps none=1286887,axiom=136892,pump=102031,fomo=55299,gmgn=26263
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
