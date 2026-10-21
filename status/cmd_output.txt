@@ -1,47 +1,3 @@
-  Nikkuf4 x=- f=179397 setAt=2026-09-24T21:54:41.020Z CzJveeYmj5Xx9twzfEHFsPEQjqJdEARLiNmi1CtHts9b
-  toqgi x=- f=175109 setAt=2026-08-04T20:30:05.204Z 3pnK38q1NWtEvdQw3xBa7gVwqptDgG6gnd69evyzuNby
-  marcell x=MarcellxMarcell f=168661 setAt=- 6vbrTLsWy76TxDQAUKLqZrPohQuq6EVaJgfGzR82paFa
-  mitch x=- f=168817 setAt=- 4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t
-with X: 37; setAt range: 2026-07-25T23:25:55.182Z .. 2026-10-20T19:10:18.240Z
-
-== https://frontend-api-v3.pump.fun/users?limit=50&offset=0 -> HTTP 200  38274b
-items: 51; keys: address,userId,is_pump_user,is_banned,username,profile_image,header_image_url,avatar_decoration,resolved_avatar_decoration,kind,member_count,last_username_update_timestamp,following,followers,bio,x_username,canonical_svm_wallet,canonical_evm_wallet
-  mso x=- f=1498958 setAt=2026-10-18T07:24:37.596Z Gdvg5kJBhEJXH4WFuEZhF3Mr8iyqKw3cnLrgALkMvr18
-  michealsaylor x=- f=1478343 setAt=2026-08-13T12:06:24.206Z 2XqeFEdY2QK27R9pEX8ieeTVsuFBZn8rnk2scCJFHEsS
-  LaunchSprout x=- f=311887 setAt=2026-10-13T11:52:12.227Z 9D9wozoR6jY6ZPnHPTEX6iC7ioPqLZjMrYPUPc8Mvh59
-  Pcsd x=- f=207175 setAt=2026-09-21T22:02:41.518Z CMxSik1negxei2WxcJwbrZXnb71xQpAdMT1fyshFjWYr
-  J777Crypto x=J777Crypto f=206564 setAt=2026-08-18T16:44:32.270Z 4UrFSCrGxgoCtCUBAEZq7ZmPK3Pczkxx7PwYnkBMi1KR
-  ansemconzimp x=blknoiz06 f=192551 setAt=- GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52
-  gr3gor14n x=gr3gor14n f=191777 setAt=2026-07-28T10:12:00.639Z J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA
-  slingoor x=slingoorio f=180333 setAt=- 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
-  Nikkuf4 x=- f=179397 setAt=2026-09-24T21:54:41.020Z CzJveeYmj5Xx9twzfEHFsPEQjqJdEARLiNmi1CtHts9b
-  toqgi x=- f=175109 setAt=2026-08-04T20:30:05.204Z 3pnK38q1NWtEvdQw3xBa7gVwqptDgG6gnd69evyzuNby
-  marcell x=MarcellxMarcell f=168661 setAt=- 6vbrTLsWy76TxDQAUKLqZrPohQuq6EVaJgfGzR82paFa
-  mitch x=- f=168818 setAt=- 4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t
-with X: 37; setAt range: 2026-07-25T23:25:55.182Z .. 2026-10-20T19:10:18.240Z
-
-== https://frontend-api-v3.pump.fun/users?sortBy=created_timestamp&sortOrder=DESC&limit=50 -> HTTP 200  38274b
-items: 51; keys: address,userId,is_pump_user,is_banned,username,profile_image,header_image_url,avatar_decoration,resolved_avatar_decoration,kind,member_count,last_username_update_timestamp,following,followers,bio,x_username,canonical_svm_wallet,canonical_evm_wallet
-  mso x=- f=1498958 setAt=2026-10-18T07:24:37.596Z Gdvg5kJBhEJXH4WFuEZhF3Mr8iyqKw3cnLrgALkMvr18
-  michealsaylor x=- f=1478343 setAt=2026-08-13T12:06:24.206Z 2XqeFEdY2QK27R9pEX8ieeTVsuFBZn8rnk2scCJFHEsS
-  LaunchSprout x=- f=311887 setAt=2026-10-13T11:52:12.227Z 9D9wozoR6jY6ZPnHPTEX6iC7ioPqLZjMrYPUPc8Mvh59
-  Pcsd x=- f=207175 setAt=2026-09-21T22:02:41.518Z CMxSik1negxei2WxcJwbrZXnb71xQpAdMT1fyshFjWYr
-  J777Crypto x=J777Crypto f=206566 setAt=2026-08-18T16:44:32.270Z 4UrFSCrGxgoCtCUBAEZq7ZmPK3Pczkxx7PwYnkBMi1KR
-  ansemconzimp x=blknoiz06 f=192551 setAt=- GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52
-  gr3gor14n x=gr3gor14n f=191777 setAt=2026-07-28T10:12:00.639Z J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA
-  slingoor x=slingoorio f=180333 setAt=- 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
-  Nikkuf4 x=- f=179397 setAt=2026-09-24T21:54:41.020Z CzJveeYmj5Xx9twzfEHFsPEQjqJdEARLiNmi1CtHts9b
-  toqgi x=- f=175109 setAt=2026-08-04T20:30:05.204Z 3pnK38q1NWtEvdQw3xBa7gVwqptDgG6gnd69evyzuNby
-  marcell x=MarcellxMarcell f=168663 setAt=- 6vbrTLsWy76TxDQAUKLqZrPohQuq6EVaJgfGzR82paFa
-  mitch x=- f=168819 setAt=- 4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t
-with X: 37; setAt range: 2026-07-25T23:25:55.182Z .. 2026-10-20T19:10:18.240Z
-
-== https://frontend-api-v3.pump.fun/users?offset=50&limit=50 -> HTTP 200  39367b
-items: 51; keys: address,userId,is_pump_user,is_banned,username,profile_image,header_image_url,avatar_decoration,resolved_avatar_decoration,kind,member_count,last_username_update_timestamp,following,followers,bio,x_username,canonical_svm_wallet,canonical_evm_wallet
-  archelon x=berdushsol f=99515 setAt=- FNcrF6nt9BXswJrHom4hNmXCeW9no2C8wKh5UqdP8ueu
-  jeets x=ieatjeets f=99217 setAt=- D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t
-  Aurelius x=Aurelius0121 f=98098 setAt=2026-09-29T14:55:41.479Z 9BMzTpSo4URse1oN666pmexhdjpU1vA5p7LtroCFQdLU
-  Yennii56 x=Yennii56 f=96971 setAt=2026-07-22T16:57:05.575Z 5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG
   1000XCryptoD x=CryptoDevinL f=96057 setAt=2026-08-01T04:49:57.477Z 5f1AoBaqeBZ3sQhNVQp7xYANb7ykj4xzYBh8eW5RYyFE
   Nexybtw x=Nexybtw f=95644 setAt=2026-09-06T02:55:31.276Z 24L6uekgvsQRgT41DZRhahEAAVnkseTT7x4qyigC3HvH
   cousin x=cousincrypt0 f=95092 setAt=2026-08-10T17:09:35.053Z 6mrqa4cDaqBCD9UrUiUyoK78e4AJ8XzRaF8uTbcuTVae
@@ -398,3 +354,47 @@ host metrics | cpu: 60.7% | ram usage: 58.6% | enp1s0: ⇓ 3.968mb/s ⇑ 0.061mb
 [2026-10-21 19:00:12] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 19:06:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 20:09:25] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+=== cmd 9103 @ 2026-10-21T20:10:03Z ===
+> set SNIPE_TARGETS=MSTR:730
+set SNIPE_TARGETS=MSTR:730
+> set SNIPE_DRY_RUN=false
+set SNIPE_DRY_RUN=false
+> snipe-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
+[PM2] [sniper](2) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1090372  │ 63m    │ 40   │ online    │ 0%       │ 84.8mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1109305  │ 39s    │ 28   │ online    │ 7.1%     │ 88.4mb   │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1095556  │ 46m    │ 11   │ online    │ 7.1%     │ 112.6mb  │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1109685  │ 0s     │ 38   │ online    │ 0%       │ 21.4mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 52% | ram usage: 49% | enp1s0: ⇓ 3.848mb/s ⇑ 0.042mb/s | disk: ⇓ 0.166mb/s ⇑ 0.411mb/s
+[2026-10-21 20:10:05.053] mode: LIVE
+[2026-10-21 20:10:05.053] pool 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT on platform 6BwHHD
+[2026-10-21 20:10:05.053] target: first $MSTR -> buy 730 [ALREADY DONE]
+[2026-10-21 20:10:05.053] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 732.872363 of pool token, targets need up to 730
+[2026-10-21 20:10:05.122] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 20:10:05.671] warm build time (median of 10): total 5.59ms = accounts 0.98 + compile/sign 3.44 + serialize 0.27
+[2026-10-21 20:10:05.672] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 20:10:05.672] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 20:10:05.700] feed pre (preprocessed/shreds) connected
+[2026-10-21 20:10:05.702] feed beta connected
+[2026-10-21 20:10:05.704] feed pre subscribed (1)
+[2026-10-21 20:10:05.770] feed mainnet connected
+[2026-10-21 20:10:08.691] launch [pre] $  (Saylor) GANjA4McnTXnyMR9V8Ek2qXiF1qz4PVXYYNUoXBdPZKZ quote 5MQhtw platform 4E876q token2022 slot 459759093
+[2026-10-21 20:10:08.691]   our pool but other platform (4E876q), ignoring
+
+> recent 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
+LAUNCH 20:10:01 slot 459759059 $YO-YO (Quantum Resistant Yoyo Coin) 2GeKqDoNAXnXy9so3RSgsh3VEoc9NwNZQey79iFS9zMt platform 6BwHHD top-level LanMV9,J7pour,AToken,J7pour,111111
+LAUNCH 20:10:01 slot 459759061 $SAYLOR (SAYLOR COIN) xWZjEN383F934wnWHTKDbGwHfayKMcqoaPyW99B3C9y platform 6BwHHD top-level LanMV9,J7pour,AToken,J7pour,111111
+LAUNCH 20:10:04 slot 459759074 $Sailor (Michael Sailor) G6LTrQUmZZndSqbFJs7DncjGfGN92cPnrU1BS8pdH459 platform 6BwHHD top-level LanMV9,AToken,AToken,J7pour,111111,111111
+600 txs in last 60 min touching 5MQhtw
+20:10:01 NEW TOKEN $YO-YO (Quantum Resistant Yoyo Coin) 2GeKqDoNAXnXy9so3RSgsh3VEoc9NwNZQey79iFS9zMt | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,SplitSupply | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd | signer FTuqW6
+20:10:01 NEW TOKEN $SAYLOR (SAYLOR COIN) xWZjEN383F934wnWHTKDbGwHfayKMcqoaPyW99B3C9y | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,SplitSupply | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd | signer 7naFFw
+20:10:04 NEW TOKEN $Sailor (Michael Sailor) G6LTrQUmZZndSqbFJs7DncjGfGN92cPnrU1BS8pdH459 | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,Trade | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK | signer 7GsNmZ
+20:10:08 NEW TOKEN $undefined (undefined) 63kqTkprgaQbemkZ5fXabU1gForBfJShW4S2zfX3MTy9 | OpenPositionWithToken22Nft,InitializeMintCloseAuthority,InitializeMint2,MintTo,SetAuthority | programs L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK | signer 3iBECg
+top-level programs: FLASHX8D:646 11111111:554 ComputeB:173 ATokenGP:139 BTNjAFfu:127 Tokenkeg:77 term9YPb:62 HiP3dRdE:57

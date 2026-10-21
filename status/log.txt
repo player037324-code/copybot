@@ -208,46 +208,46 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 20:09:28.488]   not a target, ignoring
-[2026-10-21 20:09:28.504]   DRY RUN sim: ERR {"InstructionError":[2,"IncorrectProgramId"]} 
-[2026-10-21 20:09:28.567] launch [pre] $Saylor (The Orange Bull) 9kmuXYvbFfKLat2Us5m93NzBCNrYK8zYuKs9VnNikuLa quote 5MQhtw platform 6BwHHD token2022 slot 459758902
-[2026-10-21 20:09:28.568]   not a target, ignoring
-[2026-10-21 20:09:28.568] launch [beta] $Saylor (The Orange Bull) 9kmuXYvbFfKLat2Us5m93NzBCNrYK8zYuKs9VnNikuLa quote 5MQhtw platform 6BwHHD token2022 slot 459758902
-[2026-10-21 20:09:28.568]   not a target, ignoring
-[2026-10-21 20:09:28.786] launch [pre] $LAURA (Laura) EHWL75N98KJxMeJJkVR3A8h3sBMMQ3bPw9wxxLf9Qr3d quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.786]   not a target, ignoring
-[2026-10-21 20:09:28.789] launch [pre] $Laura (Forever Laura) F6EJ8sfWdr3vMqKLiZiPRWgmaPtWknwjzPpjw7hbuYnJ quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.789]   not a target, ignoring
-[2026-10-21 20:09:28.792] launch [beta] $LAURA (Laura) EHWL75N98KJxMeJJkVR3A8h3sBMMQ3bPw9wxxLf9Qr3d quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.792]   not a target, ignoring
-[2026-10-21 20:09:28.794] launch [beta] $Laura (Forever Laura) F6EJ8sfWdr3vMqKLiZiPRWgmaPtWknwjzPpjw7hbuYnJ quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.794]   not a target, ignoring
-[2026-10-21 20:09:28.832] launch [pre] $Saylor (The Orange Bull) G7E6G8zewhzhaA4ETZzZggfQPiZMfetSVHGkCeb4aoC6 quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.833]   not a target, ignoring
-[2026-10-21 20:09:28.848] launch [beta] $Saylor (The Orange Bull) G7E6G8zewhzhaA4ETZzZggfQPiZMfetSVHGkCeb4aoC6 quote 5MQhtw platform 6BwHHD token2022 slot 459758903
-[2026-10-21 20:09:28.849]   not a target, ignoring
-[2026-10-21 20:09:30.846] launch [beta] $SAYLOR (Michael saylor) B53PRX2WEdeWzYkZx2QGv8Eg73NeyLzpDkiMHKkzdXyp quote 5MQhtw platform 6BwHHD token2022 slot 459758913
-[2026-10-21 20:09:30.847]   not a target, ignoring
-[2026-10-21 20:09:30.851] launch [beta] $SELLOR (Michul Sellor) 5t8SWLjQKcp5zDndmM5k1DVxaUff635ax2UR4vFNR59U quote 5MQhtw platform 6BwHHD token2022 slot 459758913
-[2026-10-21 20:09:30.851]   not a target, ignoring
-[2026-10-21 20:09:30.926] launch [pre] $SAYLOR (Michael saylor) B53PRX2WEdeWzYkZx2QGv8Eg73NeyLzpDkiMHKkzdXyp quote 5MQhtw platform 6BwHHD token2022 slot 459758913
-[2026-10-21 20:09:30.928]   not a target, ignoring
-[2026-10-21 20:09:30.949] launch [pre] $SELLOR (Michul Sellor) 5t8SWLjQKcp5zDndmM5k1DVxaUff635ax2UR4vFNR59U quote 5MQhtw platform 6BwHHD token2022 slot 459758913
-[2026-10-21 20:09:30.949]   not a target, ignoring
-[2026-10-21 20:09:31.325] launch [beta] $SAYLOR (Saylor Moon) H1sgNHHrdLxnyyaDsvZx4JyZ4RNmaKuD7HFsf5EAaWVM quote 5MQhtw platform 6BwHHD token2022 slot 459758915
-[2026-10-21 20:09:31.325]   not a target, ignoring
-[2026-10-21 20:09:31.619] launch [pre] $YO-YO (Quantum Resistant Yoyo Coin) 4EAdBzEkxMyb8gybshjqeBrWRDg2aUVGmyW1giAHTjuf quote 5MQhtw platform 6BwHHD token2022 slot 459758917
-[2026-10-21 20:09:31.621]   not a target, ignoring
-[2026-10-21 20:09:31.635] launch [beta] $YO-YO (Quantum Resistant Yoyo Coin) 4EAdBzEkxMyb8gybshjqeBrWRDg2aUVGmyW1giAHTjuf quote 5MQhtw platform 6BwHHD token2022 slot 459758917
-[2026-10-21 20:09:31.637]   not a target, ignoring
-[2026-10-21 20:09:31.965] launch [pre] $YOYO (Quantum Resistant YoYo Coin) 3STB4psGPPGYFXkN72GfNae4MBxGW1js1vXtKEB9QQCW quote 5MQhtw platform 6BwHHD token2022 slot 459758919
-[2026-10-21 20:09:31.967]   not a target, ignoring
-[2026-10-21 20:09:31.971] launch [beta] $YOYO (Quantum Resistant YoYo Coin) 3STB4psGPPGYFXkN72GfNae4MBxGW1js1vXtKEB9QQCW quote 5MQhtw platform 6BwHHD token2022 slot 459758919
-[2026-10-21 20:09:31.972]   not a target, ignoring
-[2026-10-21 20:09:32.080] launch [pre] $SAYLOR (SAYLOR COIN) 4YewCoErZqhzL9yJPsGtpHX1us61sWWan74qkYgY12CZ quote 5MQhtw platform 6BwHHD token2022 slot 459758919
-[2026-10-21 20:09:32.081]   not a target, ignoring
-[2026-10-21 20:09:32.085] launch [beta] $SAYLOR (SAYLOR COIN) 4YewCoErZqhzL9yJPsGtpHX1us61sWWan74qkYgY12CZ quote 5MQhtw platform 6BwHHD token2022 slot 459758919
-[2026-10-21 20:09:32.085]   not a target, ignoring
+[2026-10-21 20:09:59.955]   not a target, ignoring
+[2026-10-21 20:10:00.454] launch [pre] $Ponzi (Ponzi coin) i1v2kyVDzQsjrSdDFMGHM9T4EE29LH38HHh1qUEUTDS quote 5MQhtw platform 6BwHHD token2022 slot 459759055
+[2026-10-21 20:10:00.454]   not a target, ignoring
+[2026-10-21 20:10:00.466] launch [mainnet] $Ponzi (Ponzi coin) i1v2kyVDzQsjrSdDFMGHM9T4EE29LH38HHh1qUEUTDS quote 5MQhtw platform 6BwHHD token2022 slot 459759055
+[2026-10-21 20:10:00.466]   not a target, ignoring
+[2026-10-21 20:10:01.334] launch [pre] $YO-YO (Quantum Resistant Yoyo Coin) 2GeKqDoNAXnXy9so3RSgsh3VEoc9NwNZQey79iFS9zMt quote 5MQhtw platform 6BwHHD token2022 slot 459759059
+[2026-10-21 20:10:01.334]   not a target, ignoring
+[2026-10-21 20:10:01.342] launch [beta] $YO-YO (Quantum Resistant Yoyo Coin) 2GeKqDoNAXnXy9so3RSgsh3VEoc9NwNZQey79iFS9zMt quote 5MQhtw platform 6BwHHD token2022 slot 459759059
+[2026-10-21 20:10:01.342]   not a target, ignoring
+[2026-10-21 20:10:01.710] launch [pre] $SAYLOR (SAYLOR COIN) xWZjEN383F934wnWHTKDbGwHfayKMcqoaPyW99B3C9y quote 5MQhtw platform 6BwHHD token2022 slot 459759061
+[2026-10-21 20:10:01.710]   not a target, ignoring
+[2026-10-21 20:10:01.722] launch [beta] $SAYLOR (SAYLOR COIN) xWZjEN383F934wnWHTKDbGwHfayKMcqoaPyW99B3C9y quote 5MQhtw platform 6BwHHD token2022 slot 459759061
+[2026-10-21 20:10:01.722]   not a target, ignoring
+[2026-10-21 20:10:05.049] === sniper starting ===
+[2026-10-21 20:10:05.053] mode: LIVE
+[2026-10-21 20:10:05.053] pool 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT on platform 6BwHHD
+[2026-10-21 20:10:05.053] target: first $MSTR -> buy 730 [ALREADY DONE]
+[2026-10-21 20:10:05.053] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 732.872363 of pool token, targets need up to 730
+[2026-10-21 20:10:05.122] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 20:10:05.671] warm build time (median of 10): total 5.59ms = accounts 0.98 + compile/sign 3.44 + serialize 0.27
+[2026-10-21 20:10:05.672] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 20:10:05.672] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 20:10:05.700] feed pre (preprocessed/shreds) connected
+[2026-10-21 20:10:05.702] feed beta connected
+[2026-10-21 20:10:05.704] feed pre subscribed (1)
+[2026-10-21 20:10:05.770] feed mainnet connected
+[2026-10-21 20:10:08.691] launch [pre] $  (Saylor) GANjA4McnTXnyMR9V8Ek2qXiF1qz4PVXYYNUoXBdPZKZ quote 5MQhtw platform 4E876q token2022 slot 459759093
+[2026-10-21 20:10:08.691]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:10:09.256] launch [pre] $HANK (MicroStrategy Dog) CWf7ajV72giZo4w2hE2SU7sPUDu3MXiik4wrErWNHFYz quote 5MQhtw platform 6BwHHD token2022 slot 459759096
+[2026-10-21 20:10:09.257]   not a target, ignoring
+[2026-10-21 20:10:09.278] launch [mainnet] $HANK (MicroStrategy Dog) CWf7ajV72giZo4w2hE2SU7sPUDu3MXiik4wrErWNHFYz quote 5MQhtw platform 6BwHHD token2022 slot 459759096
+[2026-10-21 20:10:09.280]   not a target, ignoring
+[2026-10-21 20:10:09.938] launch [pre] $YOYO (Quantum Resistant YoYo Coin) D3bPcH5E1dvcvu3pJFvzqweXNPmWgryYj5C4mRZ1sDDs quote 5MQhtw platform 6BwHHD token2022 slot 459759099
+[2026-10-21 20:10:09.938]   not a target, ignoring
+[2026-10-21 20:10:09.989] launch [beta] $YOYO (Quantum Resistant YoYo Coin) D3bPcH5E1dvcvu3pJFvzqweXNPmWgryYj5C4mRZ1sDDs quote 5MQhtw platform 6BwHHD token2022 slot 459759099
+[2026-10-21 20:10:09.990]   not a target, ignoring
+[2026-10-21 20:10:12.385] launch [pre] $Sailor (Michael Sailor) 59pMJb3ERaDqvHyZtcPQmbj17FcT5y7RsJdAadnpqf6i quote 5MQhtw platform 6BwHHD token2022 slot 459759111
+[2026-10-21 20:10:12.387]   not a target, ignoring
+[2026-10-21 20:10:12.400] launch [beta] $Sailor (Michael Sailor) 59pMJb3ERaDqvHyZtcPQmbj17FcT5y7RsJdAadnpqf6i quote 5MQhtw platform 6BwHHD token2022 slot 459759111
+[2026-10-21 20:10:12.403]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:52:03] stats 28m: trades 759662 (452/s) | lookups 822 | profiles 813 | with X 62 | ALERTS 1 | queue 3808 | rechecking 118 | 429s 8 | dropped 0 | top scans 10 | apps none=593205,axiom=67937,pump=44478,fomo=27436,gmgn=12490
 [2026-10-21 19:53:03] stats 29m: trades 788640 (453/s) | lookups 879 | profiles 869 | with X 70 | ALERTS 1 | queue 3846 | rechecking 120 | 429s 9 | dropped 0 | top scans 10 | apps none=616464,axiom=70068,pump=46089,fomo=28471,gmgn=12942
 [2026-10-21 19:54:03] gift watcher: 578 dev wallets watched | 18416 txs | 8 gifts | 154 MB today (~3k credits)
 [2026-10-21 19:54:03] stats 30m: trades 819223 (455/s) | lookups 885 | profiles 875 | with X 71 | ALERTS 1 | queue 3921 | rechecking 121 | 429s 9 | dropped 0 | top scans 10 | apps none=641785,axiom=71779,pump=47816,fomo=29400,gmgn=13289
@@ -309,6 +308,7 @@
 [2026-10-21 20:08:03] stats 44m: trades 1199565 (454/s) | lookups 1294 | profiles 1279 | with X 103 | ALERTS 1 | queue 4699 | rechecking 137 | 429s 13 | dropped 0 | top scans 15 | apps none=941306,axiom=100695,pump=70865,fomo=44365,gmgn=19127
 [2026-10-21 20:09:03] gift watcher: 856 dev wallets watched | 27867 txs | 11 gifts | 249 MB today (~5k credits)
 [2026-10-21 20:09:03] stats 45m: trades 1227864 (455/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4728 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=962881,axiom=103481,pump=72853,fomo=45348,gmgn=19483
+[2026-10-21 20:10:03] stats 46m: trades 1260308 (457/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4792 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=985225,axiom=109283,pump=74735,fomo=46440,gmgn=19975
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
