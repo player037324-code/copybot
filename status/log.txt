@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:49:10] stats 4m: trades 111383 (464/s) | lookups 190 | profiles 189 | with X 19 | ALERTS 0 | queue 1157 | rechecking 65 | 429s 1 | dropped 0 | top scans 1 | apps none=90209,axiom=8204,pump=6269,fomo=3037,padre=1508
-[2026-10-21 18:50:10] stats 5m: trades 139233 (464/s) | lookups 202 | profiles 201 | with X 20 | ALERTS 0 | queue 1383 | rechecking 65 | 429s 1 | dropped 0 | top scans 1 | apps none=112186,axiom=10685,pump=7817,fomo=4045,gmgn=1879
 [2026-10-21 18:51:09] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-21 18:51:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:51:09] feed connected
@@ -309,6 +307,8 @@
 [2026-10-21 19:06:09] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-21 19:06:10] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 19:06:10] feed connected
+[2026-10-21 19:07:09] stats 1m: trades 25458 (424/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 619 | rechecking 63 | 429s 1 | dropped 0 | top scans 0 | apps none=18862,axiom=2679,pump=1787,fomo=957,gmgn=467
+[2026-10-21 19:07:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 58s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
