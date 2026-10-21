@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:29:07] stats 9m: trades 146089 (271/s) | lookups 305 | profiles 302 | with X 22 | ALERTS 0 | queue 1601 | rechecking 170 | 429s 2 | dropped 0 | top scans 3 | apps none=111878,axiom=13656,pump=9268,fomo=5682,gmgn=2444
-[2026-10-21 20:29:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 20:30:07] stats 10m: trades 162537 (271/s) | lookups 324 | profiles 321 | with X 23 | ALERTS 0 | queue 1724 | rechecking 171 | 429s 2 | dropped 0 | top scans 4 | apps none=124672,axiom=14844,pump=10304,fomo=6353,gmgn=2794
-[2026-10-21 20:30:07] gift watcher: 156 dev wallets watched | 2120 txs | 2 gifts | 33 MB today (~1k credits)
 [2026-10-21 20:31:07] stats 11m: trades 179560 (272/s) | lookups 384 | profiles 381 | with X 33 | ALERTS 0 | queue 1775 | rechecking 172 | 429s 2 | dropped 0 | top scans 4 | apps none=138129,axiom=16142,pump=11345,fomo=7011,gmgn=3074
 [2026-10-21 20:32:07] stats 12m: trades 194336 (270/s) | lookups 437 | profiles 432 | with X 37 | ALERTS 0 | queue 1831 | rechecking 175 | 429s 3 | dropped 0 | top scans 4 | apps none=149768,axiom=17136,pump=12312,fomo=7679,gmgn=3277
 [2026-10-21 20:33:07] stats 13m: trades 210119 (269/s) | lookups 437 | profiles 432 | with X 37 | ALERTS 0 | queue 1932 | rechecking 175 | 429s 3 | dropped 0 | top scans 4 | apps none=161967,axiom=18385,pump=13388,fomo=8449,gmgn=3475
@@ -309,6 +305,10 @@
 [2026-10-21 20:45:07] stats 25m: trades 403804 (269/s) | lookups 767 | profiles 757 | with X 60 | ALERTS 0 | queue 2770 | rechecking 191 | 429s 7 | dropped 0 | top scans 8 | apps none=314757,axiom=33090,pump=25224,fomo=16055,gmgn=6389
 [2026-10-21 20:45:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 20:46:07] stats 26m: trades 418550 (268/s) | lookups 796 | profiles 786 | with X 64 | ALERTS 0 | queue 2835 | rechecking 191 | 429s 7 | dropped 0 | top scans 9 | apps none=326228,axiom=34298,pump=26240,fomo=16635,gmgn=6591
+[2026-10-21 20:47:07] stats 27m: trades 432320 (267/s) | lookups 856 | profiles 846 | with X 67 | ALERTS 0 | queue 2860 | rechecking 193 | 429s 7 | dropped 0 | top scans 9 | apps none=336920,axiom=35274,pump=27239,fomo=17229,gmgn=6794
+[2026-10-21 20:47:28] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 4vSaj1VjQXE4hkmwpb2L9vVjtbFKV7QCyQmwEhNumqAV
+[2026-10-21 20:47:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 20:47:58] 🎁 dev HgAhL3 sent 1.3% of 61MUXz to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
