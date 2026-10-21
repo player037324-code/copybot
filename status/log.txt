@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:51:06.759] all targets already done for this pool. Clear with snipe-reset.
 [2026-10-21 18:51:08.399] warm build time (median of 10): total 24.10ms = accounts 7.97 + compile/sign 15.95 + serialize 0.20
 [2026-10-21 18:51:08.406] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
 [2026-10-21 18:51:08.407] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
@@ -248,6 +247,7 @@
 [2026-10-21 19:06:08.809] feed pre (preprocessed/shreds) connected
 [2026-10-21 19:06:08.817] feed mainnet connected
 [2026-10-21 19:06:08.834] feed pre subscribed (1)
+[2026-10-21 19:11:08.648] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:52:36] top scan: 2001 profiles (cutoff 1042 pump followers) in 57s, 0 new to the list
-[2026-10-21 18:53:09] stats 2m: trades 68000 (567/s) | lookups 33 | profiles 32 | with X 0 | ALERTS 0 | queue 849 | rechecking 63 | 429s 1 | dropped 0 | top scans 1 | apps none=49320,axiom=10547,pump=3115,fomo=1718,gmgn=1549
 [2026-10-21 18:54:09] stats 3m: trades 100307 (557/s) | lookups 85 | profiles 83 | with X 5 | ALERTS 0 | queue 1112 | rechecking 64 | 429s 2 | dropped 0 | top scans 1 | apps none=72509,axiom=15277,pump=4891,fomo=2639,gmgn=2265
 [2026-10-21 18:55:09] stats 4m: trades 133272 (555/s) | lookups 85 | profiles 83 | with X 5 | ALERTS 0 | queue 1433 | rechecking 64 | 429s 2 | dropped 0 | top scans 1 | apps none=96538,axiom=19569,pump=7164,fomo=3620,gmgn=2866
 [2026-10-21 18:55:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 89s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-21 19:09:09] stats 3m: trades 76445 (425/s) | lookups 92 | profiles 91 | with X 3 | ALERTS 0 | queue 1258 | rechecking 63 | 429s 1 | dropped 0 | top scans 1 | apps none=56977,axiom=7518,pump=5398,fomo=2879,gmgn=1642
 [2026-10-21 19:09:49] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:10:09] stats 4m: trades 101999 (425/s) | lookups 112 | profiles 111 | with X 3 | ALERTS 0 | queue 1497 | rechecking 66 | 429s 1 | dropped 0 | top scans 2 | apps none=76700,axiom=9818,pump=7134,fomo=3651,gmgn=2047
+[2026-10-21 19:11:09] stats 5m: trades 129315 (431/s) | lookups 163 | profiles 161 | with X 10 | ALERTS 0 | queue 1660 | rechecking 70 | 429s 2 | dropped 0 | top scans 2 | apps none=97780,axiom=12381,pump=8974,fomo=4458,gmgn=2473
+[2026-10-21 19:11:09] gift watcher: 170 dev wallets watched | 779 txs | 0 gifts | 8 MB today (~0k credits)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
