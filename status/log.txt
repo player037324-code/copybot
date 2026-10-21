@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:51:08.634] feed pre (preprocessed/shreds) connected
 [2026-10-21 18:51:08.642] feed beta connected
 [2026-10-21 18:51:08.653] feed pre subscribed (1)
 [2026-10-21 18:51:08.672] feed mainnet connected
@@ -248,6 +247,7 @@
 [2026-10-21 19:16:08.647] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:21:08.648] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:26:08.648] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 19:31:08.648] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:15:09] stats 9m: trades 221806 (411/s) | lookups 305 | profiles 302 | with X 25 | ALERTS 0 | queue 2186 | rechecking 77 | 429s 3 | dropped 0 | top scans 3 | apps none=167696,axiom=21325,pump=15485,fomo=7480,gmgn=4094
-[2026-10-21 19:16:09] stats 10m: trades 249025 (415/s) | lookups 305 | profiles 302 | with X 25 | ALERTS 0 | queue 2337 | rechecking 77 | 429s 3 | dropped 0 | top scans 3 | apps none=187835,axiom=24683,pump=17097,fomo=8359,gmgn=4734
-[2026-10-21 19:16:09] gift watcher: 281 dev wallets watched | 1563 txs | 1 gifts | 14 MB today (~0k credits)
 [2026-10-21 19:16:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
 [2026-10-21 19:17:01] 🎁 dev DLerot sent 2.5% of KRANE to AHmNWaNDcbbMFHzpZJJFS8qo4NXcdeTyzv9bByRPG4ke
 [2026-10-21 19:17:09] stats 11m: trades 273794 (415/s) | lookups 337 | profiles 334 | with X 28 | ALERTS 0 | queue 2464 | rechecking 78 | 429s 3 | dropped 0 | top scans 4 | apps none=206649,axiom=27100,pump=18612,fomo=9240,gmgn=5248
@@ -309,6 +306,9 @@
 [2026-10-21 19:29:03] stats 5m: trades 138596 (462/s) | lookups 109 | profiles 107 | with X 11 | ALERTS 0 | queue 1582 | rechecking 88 | 429s 2 | dropped 0 | top scans 2 | apps none=107588,axiom=13338,pump=8115,fomo=4576,gmgn=2108
 [2026-10-21 19:30:03] stats 6m: trades 167760 (466/s) | lookups 166 | profiles 163 | with X 15 | ALERTS 0 | queue 1730 | rechecking 91 | 429s 3 | dropped 0 | top scans 2 | apps none=130201,axiom=16028,pump=9816,fomo=5643,gmgn=2577
 [2026-10-21 19:31:03] stats 7m: trades 196899 (469/s) | lookups 166 | profiles 163 | with X 15 | ALERTS 0 | queue 1929 | rechecking 91 | 429s 3 | dropped 0 | top scans 2 | apps none=153233,axiom=17917,pump=11603,fomo=7076,gmgn=3050
+[2026-10-21 19:31:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
+[2026-10-21 19:32:03] stats 8m: trades 226621 (472/s) | lookups 191 | profiles 188 | with X 15 | ALERTS 0 | queue 2088 | rechecking 92 | 429s 3 | dropped 0 | top scans 3 | apps none=176864,axiom=20184,pump=13397,fomo=8212,gmgn=3407
+[2026-10-21 19:32:03] 🎁 dev DgyL11 sent 3.0% of bridge to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
