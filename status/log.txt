@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:59:03] stats 35m: trades 955728 (455/s) | lookups 1044 | profiles 1032 | with X 84 | ALERTS 1 | queue 4221 | rechecking 127 | 429s 11 | dropped 0 | top scans 12 | apps none=749767,axiom=82391,pump=56101,fomo=34030,gmgn=15390
-[2026-10-21 19:59:06] 🎁 dev BLbAr8 sent 3.5% of TeuTeuf to 2J2rtMBRLxAbFkSLgrsuSNN8N5KMTJVaRTdnGfbZ5Vjw
-[2026-10-21 20:00:03] stats 36m: trades 979870 (454/s) | lookups 1050 | profiles 1038 | with X 84 | ALERTS 1 | queue 4299 | rechecking 127 | 429s 11 | dropped 0 | top scans 12 | apps none=768729,axiom=84013,pump=57717,fomo=34979,gmgn=15819
 [2026-10-21 20:00:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 20:01:03] stats 37m: trades 1007764 (454/s) | lookups 1069 | profiles 1057 | with X 85 | ALERTS 1 | queue 4386 | rechecking 127 | 429s 11 | dropped 0 | top scans 13 | apps none=790231,axiom=86257,pump=59381,fomo=36353,gmgn=16356
 [2026-10-21 20:02:03] stats 38m: trades 1033340 (453/s) | lookups 1129 | profiles 1117 | with X 86 | ALERTS 1 | queue 4410 | rechecking 129 | 429s 11 | dropped 0 | top scans 13 | apps none=810119,axiom=88154,pump=61030,fomo=37570,gmgn=16786
@@ -309,6 +306,9 @@
 [2026-10-21 20:15:03] stats 51m: trades 1402307 (458/s) | lookups 1519 | profiles 1502 | with X 118 | ALERTS 1 | queue 4968 | rechecking 149 | 429s 15 | dropped 0 | top scans 17 | apps none=1090091,axiom=126465,pump=83427,fomo=51256,gmgn=23027
 [2026-10-21 20:15:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 20:16:03] stats 52m: trades 1427900 (458/s) | lookups 1538 | profiles 1521 | with X 119 | ALERTS 1 | queue 5030 | rechecking 149 | 429s 15 | dropped 0 | top scans 18 | apps none=1109260,axiom=128786,pump=85295,fomo=52190,gmgn=23781
+[2026-10-21 20:17:03] stats 53m: trades 1458178 (459/s) | lookups 1598 | profiles 1581 | with X 122 | ALERTS 1 | queue 5051 | rechecking 150 | 429s 15 | dropped 0 | top scans 18 | apps none=1133923,axiom=130915,pump=87028,fomo=53079,gmgn=24162
+[2026-10-21 20:17:47] 🎁 dev 6zZyan sent 3.2% of CRISSY to 9bmZBYi45rQeBkLryc6e72eQ3bQdQEavRMt1rR6oCtyR
+[2026-10-21 20:18:03] stats 54m: trades 1484620 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5071 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1154592,axiom=132971,pump=88852,fomo=53994,gmgn=24596
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
