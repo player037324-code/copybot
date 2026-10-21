@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 17:47:07.998] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 17:50:07.316] === sniper starting ===
-[2026-10-21 17:50:07.323] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 17:50:07.324] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 17:50:07.324] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 17:50:07.324] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 17:50:07.392] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 17:50:08.930] warm build time (median of 10): total 18.51ms = accounts 5.37 + compile/sign 10.64 + serialize 0.26
-[2026-10-21 17:50:08.930] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 17:50:08.930] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 17:50:09.178] feed pre (preprocessed/shreds) connected
-[2026-10-21 17:50:09.190] feed beta connected
-[2026-10-21 17:50:09.202] feed pre subscribed (1)
 [2026-10-21 17:50:09.238] feed mainnet connected
 [2026-10-21 17:52:06.385] === sniper starting ===
 [2026-10-21 17:52:06.394] mode: DRY RUN (builds + simulates, never sends)
@@ -248,6 +235,19 @@
 [2026-10-21 17:56:08.208] feed beta connected
 [2026-10-21 17:56:08.237] feed pre subscribed (1)
 [2026-10-21 17:56:08.241] feed mainnet connected
+[2026-10-21 17:58:06.568] === sniper starting ===
+[2026-10-21 17:58:06.573] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 17:58:06.573] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-21 17:58:06.573] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-21 17:58:06.573] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-21 17:58:06.620] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 17:58:08.103] warm build time (median of 10): total 32.18ms = accounts 9.04 + compile/sign 12.76 + serialize 0.19
+[2026-10-21 17:58:08.110] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 17:58:08.110] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 17:58:08.180] feed beta connected
+[2026-10-21 17:58:08.212] feed pre (preprocessed/shreds) connected
+[2026-10-21 17:58:08.226] feed pre subscribed (1)
+[2026-10-21 17:58:08.293] feed mainnet connected
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -271,6 +271,7 @@
 [2026-10-21 17:50:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:52:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:56:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 17:58:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
@@ -280,6 +281,10 @@
 [2026-10-21 17:57:03] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
 [2026-10-21 17:57:03] feed connected
 [2026-10-21 17:57:03] feed connected
+[2026-10-21 17:58:03] stats 1m: trades 114 (2/s) | lookups 61 | profiles 21 | with X 2 | ALERTS 0 | queue 47 | rechecking 0 | 429s 1 | dropped 0 | DRY (no telegram)
+[2026-10-21 17:58:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
+[2026-10-21 17:58:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
+[2026-10-21 17:58:09] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
