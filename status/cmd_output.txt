@@ -1,6 +1,3 @@
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 745135   │ 0s     │ 10   │ online    │ 0%       │ 19.3mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 13.2% | ram usage: 39.4% | enp1s0: ⇓ 1.343mb/s ⇑ 0.008mb/s | disk: ⇓ 0.186mb/s ⇑ 0.108mb/s
 [2026-10-20 21:16:07.708] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-20 21:16:07.708] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 21:16:07.709] target: first $TRUMP -> buy 762 [ALREADY DONE]
@@ -398,3 +395,6 @@ NOZOMI_KEY: 1282... (2 line(s) in .env)
 ASTRALANE_KEY: jude... (2 line(s) in .env)
 TELEGRAM_BOT_TOKEN: ... (0 line(s) in .env)
 TELEGRAM_CHAT_ID: ... (0 line(s) in .env)
+=== cmd 71 @ 2026-10-21T17:28:02Z ===
+> alerts-test
+telegram test sent
