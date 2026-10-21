@@ -37,7 +37,7 @@ if [ "$HASH" != "$(cat "$APP/.deployed" 2>/dev/null)" ]; then
   chmod 600 "$APP/.env"
   (cd "$APP" && npm install --omit=dev --silent >/dev/null 2>&1)
   # only restart if it was already running; never start a bot the user stopped
-  for p in copybot sniper alerts ladder; do
+  for p in copybot sniper alerts ladder pfwatch; do
     pm2 jlist 2>/dev/null | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{try{const x=JSON.parse(d).find(z=>z.name==='$p');process.exit(x&&x.pm2_env.status==='online'?0:1)}catch{process.exit(1)}})" && pm2 restart $p >/dev/null 2>&1
   done
   echo "$HASH" > "$APP/.deployed"
@@ -153,10 +153,15 @@ mkdir -p status
   echo "alerts pm2: $(pm2 jlist 2>/dev/null | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{const p=JSON.parse(d).find(x=>x.name==="alerts");console.log(p?p.pm2_env.status:"not started")}catch{console.log("n/a")}})')"
   tail -n 15 "$APP/logs/alerts.jsonl" 2>/dev/null
   echo
+  echo "--- pfwatch ---"
+  echo "pfwatch pm2: $(pm2 jlist 2>/dev/null | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{const p=JSON.parse(d).find(x=>x.name==="pfwatch");console.log(p?`${p.pm2_env.status} restarts=${p.pm2_env.restart_time}`:"not started")}catch{console.log("n/a")}})')"
+  cat "$APP/logs/pfwatch-stats.json" 2>/dev/null; echo
+  tail -n 10 "$APP/logs/pfwatch.jsonl" 2>/dev/null | cut -c1-400
+  echo
   echo "--- positions ---"
   cat "$APP/logs/positions.json" 2>/dev/null || echo "{}"
 } 2>&1 | redact > status/status.txt
-{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- ladder ---"; pm2 logs ladder --nostream --lines 20 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
+{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- ladder ---"; pm2 logs ladder --nostream --lines 20 --raw 2>/dev/null; echo "--- pfwatch ---"; pm2 logs pfwatch --nostream --lines 30 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
 cp "$APP/logs/trades.jsonl" status/trades.jsonl 2>/dev/null
 
 git add status
