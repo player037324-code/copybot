@@ -1,5 +1,4 @@
-id: 9103
-set SNIPE_TARGETS=MSTR:730
-set SNIPE_DRY_RUN=false
-snipe-start
-recent 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
+id: 9104
+set SNIPE_DRY_RUN=true
+snipe-stop
+snipe-grep 20:09
