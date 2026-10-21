@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:17:03] stats 53m: trades 1458178 (459/s) | lookups 1598 | profiles 1581 | with X 122 | ALERTS 1 | queue 5051 | rechecking 150 | 429s 15 | dropped 0 | top scans 18 | apps none=1133923,axiom=130915,pump=87028,fomo=53079,gmgn=24162
-[2026-10-21 20:17:47] 🎁 dev 6zZyan sent 3.2% of CRISSY to 9bmZBYi45rQeBkLryc6e72eQ3bQdQEavRMt1rR6oCtyR
 [2026-10-21 20:18:03] stats 54m: trades 1484620 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5071 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1154592,axiom=132971,pump=88852,fomo=53994,gmgn=24596
 [2026-10-21 20:19:03] gift watcher: 1051 dev wallets watched | 35904 txs | 13 gifts | 295 MB today (~6k credits)
 [2026-10-21 20:19:03] stats 55m: trades 1510389 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5172 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1174517,axiom=135144,pump=90642,fomo=54959,gmgn=25031
@@ -309,6 +307,8 @@
 [2026-10-21 20:30:07] gift watcher: 156 dev wallets watched | 2120 txs | 2 gifts | 33 MB today (~1k credits)
 [2026-10-21 20:31:07] stats 11m: trades 179560 (272/s) | lookups 384 | profiles 381 | with X 33 | ALERTS 0 | queue 1775 | rechecking 172 | 429s 2 | dropped 0 | top scans 4 | apps none=138129,axiom=16142,pump=11345,fomo=7011,gmgn=3074
 [2026-10-21 20:32:07] stats 12m: trades 194336 (270/s) | lookups 437 | profiles 432 | with X 37 | ALERTS 0 | queue 1831 | rechecking 175 | 429s 3 | dropped 0 | top scans 4 | apps none=149768,axiom=17136,pump=12312,fomo=7679,gmgn=3277
+[2026-10-21 20:33:07] stats 13m: trades 210119 (269/s) | lookups 437 | profiles 432 | with X 37 | ALERTS 0 | queue 1932 | rechecking 175 | 429s 3 | dropped 0 | top scans 4 | apps none=161967,axiom=18385,pump=13388,fomo=8449,gmgn=3475
+[2026-10-21 20:33:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
