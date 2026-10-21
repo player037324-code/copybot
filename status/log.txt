@@ -279,11 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:36:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
-[2026-10-21 21:37:07] stats 77m: trades 1149402 (249/s) | lookups 2425 | profiles 2395 | with X 150 | ALERTS 0 | queue 4685 | rechecking 249 | 429s 20 | dropped 0 | top scans 26 | apps none=899762,axiom=91984,pump=73769,fomo=41711,gmgn=18334
-[2026-10-21 21:38:07] stats 78m: trades 1161881 (248/s) | lookups 2478 | profiles 2447 | with X 152 | ALERTS 0 | queue 4691 | rechecking 251 | 429s 21 | dropped 0 | top scans 26 | apps none=909196,axiom=93345,pump=74541,fomo=42147,gmgn=18591
-[2026-10-21 21:39:07] stats 79m: trades 1177725 (248/s) | lookups 2478 | profiles 2447 | with X 152 | ALERTS 0 | queue 4745 | rechecking 251 | 429s 21 | dropped 0 | top scans 26 | apps none=921157,axiom=95365,pump=75464,fomo=42536,gmgn=18859
-[2026-10-21 21:39:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 21:40:07] gift watcher: 637 dev wallets watched | 39979 txs | 14 gifts | 336 MB today (~7k credits)
 [2026-10-21 21:40:07] stats 80m: trades 1194451 (249/s) | lookups 2507 | profiles 2476 | with X 155 | ALERTS 0 | queue 4786 | rechecking 252 | 429s 21 | dropped 0 | top scans 27 | apps none=934219,axiom=97029,pump=76502,fomo=42968,gmgn=19094
 [2026-10-21 21:40:58] 🎁 dev B4Tdqe sent 1.3% of cicibonk to E4DxVgZbWG6QLqhi3AMmLwdLi32EZuAnhDx8KxbXcgiE
@@ -309,6 +304,11 @@
 [2026-10-21 21:51:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
 [2026-10-21 21:52:07] stats 92m: trades 1357738 (246/s) | lookups 2894 | profiles 2859 | with X 172 | ALERTS 0 | queue 5050 | rechecking 263 | 429s 24 | dropped 0 | top scans 31 | apps none=1061463,axiom=111814,pump=86921,fomo=47902,gmgn=22045
 [2026-10-21 21:53:07] stats 93m: trades 1370838 (246/s) | lookups 2947 | profiles 2911 | with X 176 | ALERTS 0 | queue 5056 | rechecking 264 | 429s 25 | dropped 0 | top scans 31 | apps none=1071569,axiom=112989,pump=87810,fomo=48287,gmgn=22311
+[2026-10-21 21:54:07] stats 94m: trades 1385363 (246/s) | lookups 2947 | profiles 2911 | with X 176 | ALERTS 0 | queue 5090 | rechecking 264 | 429s 25 | dropped 0 | top scans 31 | apps none=1083318,axiom=114023,pump=88616,fomo=48699,gmgn=22563
+[2026-10-21 21:54:18] 🎁 dev HgAhL3 sent 1.3% of WIN to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-21 21:54:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
+[2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.2% of ROBONOMICS to 2BEdHEQY2fJNUXyndKZWgJni7uPsLThiFpB1MJ7MEHBs
+[2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.0% of ROBONOMICS to H1Lh1J8PWEqWBYTwqyvzYibRi3oPnvMPeP8Fw7LyjSub
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
