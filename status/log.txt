@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:38:06.663] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 18:38:06.664] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 18:38:06.664] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 18:38:06.664] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
 [2026-10-21 18:38:06.730] all targets already done for this pool. Clear with snipe-reset.
 [2026-10-21 18:38:08.372] warm build time (median of 10): total 26.70ms = accounts 8.09 + compile/sign 15.61 + serialize 0.22
 [2026-10-21 18:38:08.381] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
@@ -248,6 +244,10 @@
 [2026-10-21 18:51:08.642] feed beta connected
 [2026-10-21 18:51:08.653] feed pre subscribed (1)
 [2026-10-21 18:51:08.672] feed mainnet connected
+[2026-10-21 18:54:07.690] launch [pre] $scamcoin (scamcoin) 8Jh4j2S7qwqGLeRHz4BpYVNHhkNttFZbQXR2XWsC5vvB quote 6s2umN platform 6BwHHD token2022 slot 459737733
+[2026-10-21 18:54:07.690]   not a target, ignoring
+[2026-10-21 18:54:07.694] launch [beta] $scamcoin (scamcoin) 8Jh4j2S7qwqGLeRHz4BpYVNHhkNttFZbQXR2XWsC5vvB quote 6s2umN platform 6BwHHD token2022 slot 459737733
+[2026-10-21 18:54:07.695]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:35:10] feed connected
 [2026-10-21 18:36:09] stats 1m: trades 26009 (433/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 544 | rechecking 51 | 429s 1 | dropped 0 | top scans 0 | apps none=20843,axiom=1896,pump=1636,fomo=716,gmgn=447
 [2026-10-21 18:36:36] top scan: 2001 profiles, 0 new to the list
 [2026-10-21 18:37:09] stats 2m: trades 53884 (449/s) | lookups 34 | profiles 33 | with X 2 | ALERTS 0 | queue 875 | rechecking 55 | 429s 1 | dropped 0 | top scans 1 | apps none=42632,axiom=4457,pump=3329,fomo=1694,gmgn=859
@@ -309,6 +308,7 @@
 [2026-10-21 18:52:09] stats 1m: trades 34427 (574/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 464 | rechecking 65 | 429s 1 | dropped 0 | top scans 0 | apps none=25731,axiom=4895,pump=1374,fomo=855,gmgn=702
 [2026-10-21 18:52:36] top scan: 2001 profiles (cutoff 1042 pump followers) in 57s, 0 new to the list
 [2026-10-21 18:53:09] stats 2m: trades 68000 (567/s) | lookups 33 | profiles 32 | with X 0 | ALERTS 0 | queue 849 | rechecking 63 | 429s 1 | dropped 0 | top scans 1 | apps none=49320,axiom=10547,pump=3115,fomo=1718,gmgn=1549
+[2026-10-21 18:54:09] stats 3m: trades 100307 (557/s) | lookups 85 | profiles 83 | with X 5 | ALERTS 0 | queue 1112 | rechecking 64 | 429s 2 | dropped 0 | top scans 1 | apps none=72509,axiom=15277,pump=4891,fomo=2639,gmgn=2265
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
