@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to CKZtNGxgdfBSLP2q7spZRrM2w6Y6GDNA345eVMXqgSPW
 [2026-10-21 22:53:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
 [2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to EZJHuyFQaYqmQoEo5mBG9ShMxftm8ZM6L3dAZKY4ZWQf
 [2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to AGY4SUxwENn52MWkSUjtVhopEA1u7UBdqTuFTBAQTNr2
@@ -309,6 +308,7 @@
 [2026-10-21 23:04:44] 🎁 dev BAoJmp sent 1.4% of CYBERBABY to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:04:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 23:04:51] 🎁 dev 3szfdA sent 4.9% of TOM to 72756wSUNLfPoxQgsB1NeLjmsFkp5qvxUYn5WzJAYJBc
+[2026-10-21 23:05:08] stats 43m: trades 1403556 (544/s) | lookups 1232 | profiles 1211 | with X 75 | ALERTS 0 | queue 5093 | rechecking 302 | 429s 13 | dropped 0 | top scans 15 | apps none=1013522,axiom=181069,pump=86085,fomo=61727,gmgn=29441
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
