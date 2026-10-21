@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:40:03] stats 16m: trades 429906 (448/s) | lookups 435 | profiles 430 | with X 34 | ALERTS 0 | queue 2964 | rechecking 100 | 429s 5 | dropped 0 | top scans 6 | apps none=331618,axiom=39618,pump=26303,fomo=16130,gmgn=7579
-[2026-10-21 19:41:03] stats 17m: trades 451647 (443/s) | lookups 495 | profiles 490 | with X 42 | ALERTS 0 | queue 2995 | rechecking 105 | 429s 5 | dropped 0 | top scans 6 | apps none=348215,axiom=41678,pump=27545,fomo=17037,gmgn=8059
-[2026-10-21 19:42:02] 🎁 dev 28MJrJ sent 1.5% of BabyKimchi to Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 19:42:03] stats 18m: trades 474476 (439/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3023 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=364962,axiom=44460,pump=29056,fomo=17965,gmgn=8462
 [2026-10-21 19:42:30] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to G53uJQrFyWi55eLqEHMfYzBmYUPKfRS5CSZo8nSQo67f
 [2026-10-21 19:43:01] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 9EqvpSDH8YShgkUS8bzNzJ87AWDLp3sGGyHV1GXZCEV3
@@ -309,6 +306,9 @@
 [2026-10-21 19:53:03] stats 29m: trades 788640 (453/s) | lookups 879 | profiles 869 | with X 70 | ALERTS 1 | queue 3846 | rechecking 120 | 429s 9 | dropped 0 | top scans 10 | apps none=616464,axiom=70068,pump=46089,fomo=28471,gmgn=12942
 [2026-10-21 19:54:03] gift watcher: 578 dev wallets watched | 18416 txs | 8 gifts | 154 MB today (~3k credits)
 [2026-10-21 19:54:03] stats 30m: trades 819223 (455/s) | lookups 885 | profiles 875 | with X 71 | ALERTS 1 | queue 3921 | rechecking 121 | 429s 9 | dropped 0 | top scans 10 | apps none=641785,axiom=71779,pump=47816,fomo=29400,gmgn=13289
+[2026-10-21 19:54:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 19:54:46] 🎁 dev BLbAr8 sent 3.6% of TeuTeuf to 2J2rtMBRLxAbFkSLgrsuSNN8N5KMTJVaRTdnGfbZ5Vjw
+[2026-10-21 19:55:03] stats 31m: trades 845016 (454/s) | lookups 904 | profiles 894 | with X 73 | ALERTS 1 | queue 4003 | rechecking 121 | 429s 9 | dropped 0 | top scans 11 | apps none=662316,axiom=73644,pump=49461,fomo=30276,gmgn=13690
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
