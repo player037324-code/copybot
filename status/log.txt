@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:43:07] stats 83m: trades 1243412 (250/s) | lookups 2640 | profiles 2608 | with X 158 | ALERTS 0 | queue 4815 | rechecking 256 | 429s 22 | dropped 0 | top scans 28 | apps none=973453,axiom=101112,pump=79184,fomo=44223,gmgn=19950
-[2026-10-21 21:44:07] stats 84m: trades 1258306 (250/s) | lookups 2649 | profiles 2617 | with X 158 | ALERTS 0 | queue 4868 | rechecking 256 | 429s 22 | dropped 0 | top scans 28 | apps none=984762,axiom=102802,pump=80038,fomo=44663,gmgn=20226
-[2026-10-21 21:44:48] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:45:07] gift watcher: 654 dev wallets watched | 42158 txs | 15 gifts | 356 MB today (~7k credits)
 [2026-10-21 21:45:07] stats 85m: trades 1272829 (250/s) | lookups 2669 | profiles 2637 | with X 158 | ALERTS 0 | queue 4911 | rechecking 256 | 429s 22 | dropped 0 | top scans 29 | apps none=996110,axiom=104107,pump=80977,fomo=45102,gmgn=20463
 [2026-10-21 21:46:07] stats 86m: trades 1285808 (249/s) | lookups 2729 | profiles 2697 | with X 165 | ALERTS 0 | queue 4914 | rechecking 258 | 429s 22 | dropped 0 | top scans 29 | apps none=1006403,axiom=105014,pump=81829,fomo=45532,gmgn=20778
@@ -309,6 +306,9 @@
 [2026-10-21 21:55:25] 🎁 dev 3H4GRC sent 2.0% of ROBONOMICS to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.7% of ROBONOMICS to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
 [2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.8% of ROBONOMICS to Cj7ZjeH5n1BNm2eSc8fowxVkBpaQghryUJzuB2iPyRHG
+[2026-10-21 21:56:07] stats 96m: trades 1417644 (246/s) | lookups 3036 | profiles 2997 | with X 180 | ALERTS 0 | queue 5101 | rechecking 266 | 429s 25 | dropped 0 | top scans 32 | apps none=1109355,axiom=116584,pump=90343,fomo=49727,gmgn=23004
+[2026-10-21 21:56:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
+[2026-10-21 21:56:59] 🎁 dev AgmyPN sent 2.7% of 64bTk9 to DQBStqFW9afWUuGKDkKg3RxhLynTnSK7rDi1THWHTRy8
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
