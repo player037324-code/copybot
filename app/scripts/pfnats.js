@@ -45,7 +45,7 @@ function tryNats(url, user, pass, subject, secs = 30) {
           const p = line.split(' '); const n = Number(p[p.length - 1]);
           if (buf.length < i + 2 + n + 2) break;
           const payload = buf.slice(i + 2, i + 2 + n); buf = buf.slice(i + 2 + n + 2);
-          st.msgs++; st.subj = st.subj || {}; const sj = p[1].split('.').slice(0, 2).join('.'); st.subj[sj] = (st.subj[sj] || 0) + 1; if (st.samples.length < 1) st.samples.push(payload.slice(0, 300));
+          st.msgs++; st.subj = st.subj || {}; const sj = p[1].split('.').slice(0, 2).join('.'); st.subj[sj] = (st.subj[sj] || 0) + 1; st.full = st.full || {}; if (!st.full[p[1].split('.').slice(0,2).join('.')]) st.full[p[1].split('.').slice(0,2).join('.')] = p[1] + ' => ' + payload.slice(0, 2500);
         } else { if (line.startsWith('PING')) ws.send('PONG\r\n'); if (line.startsWith('-ERR')) st.err = line; buf = buf.slice(i + 2); }
       }
     });
@@ -54,11 +54,22 @@ function tryNats(url, user, pass, subject, secs = 30) {
     setTimeout(() => { try { ws.close(); } catch {} res(st); }, secs * 1000);
   });
 }
-const SUBS = [['UNIFIED', '>'], ['UNIFIED', 'unifiedTradeEvent.>'], ['CORE', '>'], ['ADVANCED', '>']];
+const SUBS = [['UNIFIED', 'unifiedTradeEvent.processed.>'], ['UNIFIED', 'unifiedTradeEvent.wallet.>'], ['UNIFIED', 'unifiedTradeEvent.lite.>']];
 await Promise.all(SUBS.map(async ([inst, subj]) => {
   const c = cfg[inst]; if (!c) return;
-  const s = await tryNats(c.url, c.user, c.pass, subj, 25);
-  const top = Object.entries(s.subj || {}).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([k, v]) => `${k}=${v}`).join(' ');
-  console.log(`\n== ${inst} "${subj}": ${s.msgs} msgs ${(s.bytes / 1e6).toFixed(2)} MB/25s ${s.err || ''}\n   subjects: ${top}\n   sample: ${s.samples[0] || ''}`);
+  const s = await tryNats(c.url, c.user, c.pass, subj, 20);
+  console.log(`\n== ${inst} "${subj}": ${s.msgs} msgs (${Math.round(s.msgs / 20)}/s) ${(s.bytes / 1e6).toFixed(2)} MB/20s ${s.err || ''}`);
+  for (const v of Object.values(s.full || {})) console.log('   FULL: ' + v);
 }));
+// profile API rate limit headers
+const H2 = { origin: 'https://pump.fun', referer: 'https://pump.fun/', 'user-agent': H['user-agent'], accept: 'application/json' };
+for (let i = 0; i < 4; i++) {
+  const r = await fetch('https://frontend-api-v3.pump.fun/users/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX', { headers: H2 });
+  const hs = [...r.headers].filter(([k]) => /rate|retry|limit|cf-|cache|age/i.test(k)).map(([k, v]) => `${k}=${v}`).join(' ');
+  console.log(`profile ${i}: HTTP ${r.status} ${hs}`);
+}
+for (const u of ['https://frontend-api-v3.pump.fun/users?addresses=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX', 'https://profile-api.pump.fun/users/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX', 'https://frontend-api-v3.pump.fun/users/batch']) {
+  const r = await fetch(u, { headers: H2 }).catch((e) => ({ status: e.message, text: async () => '' }));
+  console.log(`${u} -> ${r.status} ${(await r.text()).slice(0, 200)}`);
+}
 process.exit(0);

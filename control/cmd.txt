@@ -1,3 +1,2 @@
-id: 78
-set PF_DRY=true
-pfwatch-start
+id: 79
+pfnats
