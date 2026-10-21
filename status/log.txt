@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:00:12] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 19:00:12] feed connected
 [2026-10-21 19:01:11] stats 1m: trades 35671 (595/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 574 | rechecking 63 | 429s 1 | dropped 0 | top scans 0 | apps none=22204,axiom=8578,pump=1726,gmgn=972,fomo=914
 [2026-10-21 19:01:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 57s, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-21 19:16:09] gift watcher: 281 dev wallets watched | 1563 txs | 1 gifts | 14 MB today (~0k credits)
 [2026-10-21 19:16:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
 [2026-10-21 19:17:01] 🎁 dev DLerot sent 2.5% of KRANE to AHmNWaNDcbbMFHzpZJJFS8qo4NXcdeTyzv9bByRPG4ke
+[2026-10-21 19:17:09] stats 11m: trades 273794 (415/s) | lookups 337 | profiles 334 | with X 28 | ALERTS 0 | queue 2464 | rechecking 78 | 429s 3 | dropped 0 | top scans 4 | apps none=206649,axiom=27100,pump=18612,fomo=9240,gmgn=5248
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
