@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:18:08] stats 56m: trades 1878775 (559/s) | lookups 1621 | profiles 1591 | with X 93 | ALERTS 0 | queue 5697 | rechecking 309 | 429s 17 | dropped 0 | top scans 19 | apps none=1373804,axiom=233771,pump=113002,fomo=81470,gmgn=36640
-[2026-10-21 23:19:08] stats 57m: trades 1915379 (560/s) | lookups 1674 | profiles 1643 | with X 99 | ALERTS 0 | queue 5726 | rechecking 310 | 429s 18 | dropped 0 | top scans 19 | apps none=1402364,axiom=237302,pump=114884,fomo=82708,gmgn=37339
-[2026-10-21 23:20:08] stats 58m: trades 1947219 (560/s) | lookups 1674 | profiles 1643 | with X 99 | ALERTS 0 | queue 5781 | rechecking 310 | 429s 18 | dropped 0 | top scans 19 | apps none=1427259,axiom=240190,pump=116708,fomo=84006,gmgn=37816
 [2026-10-21 23:20:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:21:08] stats 59m: trades 1978667 (559/s) | lookups 1704 | profiles 1673 | with X 102 | ALERTS 0 | queue 5817 | rechecking 311 | 429s 18 | dropped 0 | top scans 20 | apps none=1451342,axiom=243182,pump=118641,fomo=85465,gmgn=38324
 [2026-10-21 23:22:08] gift watcher: 911 dev wallets watched | 31424 txs | 32 gifts | 224 MB today (~4k credits)
@@ -309,6 +306,9 @@
 [2026-10-21 23:32:48] 🎁 dev HB3Geb sent 1.8% of BurgerShot to Dec3VwiarqdxkuNUzMyPuUNNcCUGdheEp9N9pTjzTyEF
 [2026-10-21 23:33:08] stats 71m: trades 2352917 (552/s) | lookups 2083 | profiles 2044 | with X 128 | ALERTS 0 | queue 6237 | rechecking 319 | 429s 22 | dropped 0 | top scans 24 | apps none=1737790,axiom=280976,pump=140492,fomo=99704,gmgn=44903
 [2026-10-21 23:33:38] 🎁 dev 3KStwe sent 3.0% of ORION to EfcG1bN67DnRQSF7GFPysAvYXHVfdxEPLuCcLGpF4qVy
+[2026-10-21 23:34:08] stats 72m: trades 2387199 (553/s) | lookups 2093 | profiles 2053 | with X 128 | ALERTS 0 | queue 6286 | rechecking 319 | 429s 22 | dropped 0 | top scans 24 | apps none=1763481,axiom=285252,pump=142299,fomo=100747,gmgn=45523
+[2026-10-21 23:34:19] 🎁 dev HgAhL3 sent 1.3% of Burger to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-21 23:34:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
