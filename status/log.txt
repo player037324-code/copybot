@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:20:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 20:20:08] feed connected
 [2026-10-21 20:21:07] stats 1m: trades 16696 (278/s) | lookups 30 | profiles 30 | with X 1 | ALERTS 0 | queue 333 | rechecking 160 | 429s 0 | dropped 0 | top scans 0 | apps none=13425,axiom=1226,pump=969,fomo=530,padre=280
 [2026-10-21 20:21:17] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-21 20:36:07] stats 16m: trades 260055 (271/s) | lookups 520 | profiles 514 | with X 46 | ALERTS 0 | queue 2221 | rechecking 177 | 429s 4 | dropped 0 | top scans 5 | apps none=200502,axiom=22173,pump=16824,fomo=10737,gmgn=4329
 [2026-10-21 20:36:36] 🎁 dev 3SoYUq sent 2.0% of PIMPCHI to Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 20:36:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 20:37:07] stats 17m: trades 275055 (270/s) | lookups 549 | profiles 543 | with X 48 | ALERTS 0 | queue 2288 | rechecking 179 | 429s 4 | dropped 0 | top scans 6 | apps none=211872,axiom=23552,pump=17821,fomo=11465,gmgn=4560
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
