@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:34:08] stats 12m: trades 397652 (552/s) | lookups 380 | profiles 374 | with X 25 | ALERTS 0 | queue 2577 | rechecking 290 | 429s 4 | dropped 0 | top scans 4 | apps none=279114,axiom=61144,pump=23866,fomo=15189,gmgn=8861
 [2026-10-21 22:35:08] stats 13m: trades 431501 (553/s) | lookups 380 | profiles 374 | with X 25 | ALERTS 0 | queue 2730 | rechecking 290 | 429s 4 | dropped 0 | top scans 4 | apps none=299383,axiom=68052,pump=26403,fomo=17231,gmgn=9903
 [2026-10-21 22:35:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:36:08] stats 14m: trades 467724 (557/s) | lookups 410 | profiles 404 | with X 29 | ALERTS 0 | queue 2878 | rechecking 289 | 429s 4 | dropped 0 | top scans 5 | apps none=323182,axiom=74079,pump=28538,fomo=19434,gmgn=10980
@@ -309,6 +308,7 @@
 [2026-10-21 22:49:14] 🎁 dev C1riAt sent 1.6% of XOGE to 4meALVrGXB7P32TXCZuK5Y5bvE2Y8sx55TEVZRMsbZZ2
 [2026-10-21 22:50:08] stats 28m: trades 908383 (541/s) | lookups 793 | profiles 781 | with X 50 | ALERTS 0 | queue 4165 | rechecking 295 | 429s 9 | dropped 0 | top scans 9 | apps none=631663,axiom=134826,pump=56323,fomo=42472,gmgn=21065
 [2026-10-21 22:50:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 22:51:08] stats 29m: trades 943060 (542/s) | lookups 822 | profiles 809 | with X 52 | ALERTS 0 | queue 4238 | rechecking 295 | 429s 9 | dropped 0 | top scans 10 | apps none=657944,axiom=138706,pump=58258,fomo=43749,gmgn=21677
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
