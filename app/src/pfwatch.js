@@ -14,7 +14,7 @@ const NEW_HOURS = Number(env('PF_NEW_HOURS', '24'));
 const QPS = Number(env('PF_QPS', '1')); // pump.fun's Cloudflare limits bursts hard; stay slow
 const APP_ONLY = env('PF_APP_ONLY', 'true') === 'true'; // only wallets trading inside pump.fun's own app (real pump users, not bots/terminals)
 const TOP = Number(env('PF_TOP', '2000')); // also scan the top N profiles by followers for new entries
-const TOP_MIN = Number(env('PF_TOP_MIN', '15'));
+const TOP_MIN = Number(env('PF_TOP_MIN', '3'));
 const RECHECK_MIN = Number(env('PF_RECHECK_MIN', '30'));
 const SUBJECT = env('PF_SUBJECT', 'unifiedTradeEvent.processed.>');
 const DRY = env('PF_DRY', 'false') === 'true'; // true = log alerts but don't send Telegram
@@ -181,7 +181,7 @@ setInterval(() => {
 async function topScan() {
   if (!TOP) return;
   topBusy = true;
-  const first = !Object.keys(state.top).length; const seenNow = {}; let fresh = 0;
+  const first = !Object.keys(state.top).length; const seenNow = {}; let fresh = 0; let minF = Infinity; const t0 = Date.now();
   try {
     for (let off = 0; off < TOP; off += 50) {
       await waitToken();
@@ -190,14 +190,14 @@ async function topScan() {
       if (!r.ok) break;
       const arr = await r.json(); if (!Array.isArray(arr) || !arr.length) break;
       for (const p of arr) {
-        const w = p.address; if (!w) continue; seenNow[w] = 1;
+        const w = p.address; if (!w) continue; seenNow[w] = 1; minF = Math.min(minF, p.followers || 0);
         if (first || state.top[w]) continue;
         fresh++;
         if (p.x_username && fresh_(p) && !state.alerted[w] && !p.is_banned && (await bigX(w, p))) await alert(w, p, null, false, 'top');
       }
     }
     state.top = { ...state.top, ...seenNow }; stats.topScans++; save();
-    log(`top scan: ${Object.keys(seenNow).length} profiles${first ? ' (first scan, seeding)' : `, ${fresh} new to the list`}`);
+    log(`top scan: ${Object.keys(seenNow).length} profiles (cutoff ${minF} pump followers) in ${Math.round((Date.now() - t0) / 1000)}s${first ? ' (first scan, seeding)' : `, ${fresh} new to the list`}`);
   } catch (e) { warn('top scan', e.message); }
   topBusy = false;
 }
