@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:09:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:10:07] gift watcher: 648 dev wallets watched | 55311 txs | 40 gifts | 486 MB today (~10k credits)
 [2026-10-21 22:10:07] stats 110m: trades 1639583 (248/s) | lookups 3445 | profiles 3400 | with X 197 | ALERTS 0 | queue 5487 | rechecking 278 | 429s 29 | dropped 0 | top scans 37 | apps none=1286887,axiom=136892,pump=102031,fomo=55299,gmgn=26263
 [2026-10-21 22:11:07] stats 111m: trades 1653482 (248/s) | lookups 3505 | profiles 3460 | with X 198 | ALERTS 0 | queue 5494 | rechecking 278 | 429s 29 | dropped 0 | top scans 37 | apps none=1297544,axiom=138420,pump=102829,fomo=55710,gmgn=26467
@@ -309,6 +308,7 @@
 [2026-10-21 22:24:55] skip TheDogGod69 @Agent69420: 273 X followers
 [2026-10-21 22:25:08] stats 3m: trades 103208 (573/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1138 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=72064,axiom=17278,pump=5805,fomo=2796,gmgn=2560
 [2026-10-21 22:26:08] stats 4m: trades 138053 (575/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1374 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=96490,axiom=22806,pump=7818,fomo=3856,gmgn=3326
+[2026-10-21 22:26:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
