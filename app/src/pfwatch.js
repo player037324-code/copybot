@@ -8,6 +8,7 @@
 import 'dotenv/config';
 import fs from 'fs';
 import WebSocket from 'ws';
+import { PublicKey } from '@solana/web3.js';
 
 const env = (k, d) => (process.env[k] === undefined || process.env[k] === '' ? d : process.env[k].trim());
 const NEW_HOURS = Number(env('PF_NEW_HOURS', '24'));
@@ -65,6 +66,7 @@ const markSeen = (w) => { seenA.add(w); if (seenA.size > GEN_MAX) { seenB = seen
 // ---- lookup queue (newest first; old backlog is dropped, wallet gets re-queued next time it trades) ----
 const queue = []; const queued = new Map(); // wallet -> first trade info
 const QMAX = 30000;
+const prio = []; // gift recipients: looked up before anything else, even if seen before
 function enqueue(w, trade) {
   if (isSeen(w) || queued.has(w) || state.alerted[w]) return;
   queued.set(w, trade); queue.push(w);
@@ -90,7 +92,7 @@ const esc = (x) => String(x ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').
 async function handle(w, trade, isRecheck = false) {
   let p;
   try { p = await profile(w); }
-  catch (e) { if (e.retry) { if (!isRecheck) { queued.set(w, trade); queue.push(w); } } return; }
+  catch (e) { if (e.retry) { if (trade?.gift) prio.unshift({ w, t: trade }); else if (!isRecheck) { queued.set(w, trade); queue.push(w); } } return; }
   markSeen(w);
   if (!p || !p.username) { delete state.watch[w]; return; }
   stats.users++;
@@ -98,7 +100,7 @@ async function handle(w, trade, isRecheck = false) {
   const recent = fresh_(p);
   if (p.x_username) {
     stats.withX++;
-    if (recent && !state.alerted[w]) { stats.recentX++; delete state.watch[w]; if (await bigX(w, p)) await alert(w, p, trade, isRecheck); }
+    if (recent && !(state.alerted[w] > 0) && !(state.alerted[w] < 0 && !trade?.gift)) { stats.recentX++; delete state.watch[w]; if (await bigX(w, p)) await alert(w, p, trade, isRecheck); }
     else delete state.watch[w];
     return;
   }
@@ -137,9 +139,11 @@ async function alert(w, p, trade, viaRecheck, source = 'trade') {
   if (t.mint && !t.symbol && HELIUS) {
     try { const j = await (await fetch(`https://mainnet.helius-rpc.com/?api-key=${HELIUS}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'getAsset', params: { id: t.mint } }), signal: AbortSignal.timeout(5000) })).json(); t.symbol = j.result?.content?.metadata?.symbol; } catch {}
   }
-  const tradeLine = t.mint ? `First seen: ${t.type === 'sell' ? 'sold' : 'bought'} ${t.symbol ? '$' + esc(t.symbol) : t.mint.slice(0, 6) + '…'} @ ${usd(t.mcap)} mcap${t.usd ? ` (${usd(t.usd)})` : ''}\nCA: <code>${t.mint}</code>` : '';
+  const g = t.gift;
+  const giftLine = g ? `🎁 Just got sent <b>${g.pct.toFixed(1)}%</b> of ${g.symbol ? '$' + esc(g.symbol) : 'a coin'}${g.name ? ' (' + esc(g.name) + ')' : ''}${g.byDev ? ' by its dev' : ''}${nameMatch(g, p) ? '\n🎯 Coin name matches them' : ''}\nCA: <code>${g.mint}</code>` : '';
+  const tradeLine = g ? giftLine : t.mint ? `First seen: ${t.type === 'sell' ? 'sold' : 'bought'} ${t.symbol ? '$' + esc(t.symbol) : t.mint.slice(0, 6) + '…'} @ ${usd(t.mcap)} mcap${t.usd ? ` (${usd(t.usd)})` : ''}\nCA: <code>${t.mint}</code>` : '';
   const head = [
-    `🆕 <b>NEW PUMP PROFILE</b>${viaRecheck ? ' (just linked X)' : source === 'top' ? ' (new on top followers list)' : ''}`,
+    `${g ? '🎁' : '🆕'} <b>NEW PUMP PROFILE</b>${g ? ' (sent supply)' : viaRecheck ? ' (just linked X)' : source === 'top' ? ' (new on top followers list)' : ''}`,
     `<b>${esc(p.username)}</b> · <a href="https://x.com/${esc(p.x_username)}">@${esc(p.x_username)}</a>`,
     `X followers: ${p._x ? p._x.followers.toLocaleString('en-US') : '?'}${p._x?.verified ? ' ✅ verified' : ''} · pump.fun followers: ${(p.followers || 0).toLocaleString('en-US')}`,
     `Profile set: ${p.last_username_update_timestamp ? ago(Number(p.last_username_update_timestamp)) : '?'}`,
@@ -169,6 +173,7 @@ setInterval(() => {
     v.next = now + RECHECK_MIN * 60e3; inflight++;
     handle(w, v.trade, true).finally(() => inflight--);
   }
+  while (prio.length && inflight < 6 && take()) { const { w, t } = prio.shift(); inflight++; handle(w, t).finally(() => inflight--); }
   while (queue.length && inflight < 4 && take()) {
     const w = queue.pop(); const t = queued.get(w); queued.delete(w);
     if (isSeen(w) || state.alerted[w]) { tokens += 1; continue; }
@@ -242,12 +247,12 @@ async function connect() {
         const p = line.split(' '); const total = Number(p[p.length - 1]); const hdr = line.startsWith('HMSG ') ? Number(p[p.length - 2]) : 0;
         if (buf.length < i + 2 + total + 2) break;
         const payload = buf.slice(i + 2 + hdr, i + 2 + total); buf = buf.slice(i + 2 + total + 2);
-        onTrade(payload);
+        if (p[1].startsWith('unifiedCoinCreationEvent')) onCoin(payload); else onTrade(payload);
       } else {
         buf = buf.slice(i + 2);
         if (line.startsWith('INFO ') && !subscribed) {
           subscribed = true;
-          ws.send(`CONNECT ${JSON.stringify({ verbose: false, pedantic: false, lang: 'js', version: '2.0', protocol: 1, headers: true, no_responders: true, user: c.user, pass: c.pass })}\r\nSUB ${SUBJECT} 1\r\nPING\r\n`);
+          ws.send(`CONNECT ${JSON.stringify({ verbose: false, pedantic: false, lang: 'js', version: '2.0', protocol: 1, headers: true, no_responders: true, user: c.user, pass: c.pass })}\r\nSUB ${SUBJECT} 1\r\nSUB unifiedCoinCreationEvent.processed 2\r\nPING\r\n`);
           log('feed connected');
           pinger = setInterval(() => { try { ws.send('PING\r\n'); } catch {} }, 20000);
         } else if (line.startsWith('PING')) ws.send('PONG\r\n');
@@ -269,4 +274,88 @@ setInterval(() => {
 }, 60000);
 
 log(`pfwatch: alert when a new pump.fun profile (set up within ${NEW_HOURS}h) links an X with ${MIN_X}+ followers | lookups ${QPS}/s | ${APP_ONLY ? 'pump app traders only' : 'all traders'} | top ${TOP} scan every ${TOP_MIN}m | recheck every ${RECHECK_MIN}m${DRY ? ' | DRY RUN' : ''}`);
+// ---- gift watcher: devs of fresh coins sending a big chunk of supply to someone (usually the person the coin is named after) ----
+const GIFT_ON = env('PF_GIFT', 'true') === 'true';
+const GIFT_HOURS = Number(env('PF_GIFT_HOURS', '2'));
+const GIFT_MIN_PCT = Number(env('PF_GIFT_MIN_PCT', '1'));
+const GIFT_MB_DAY = Number(env('PF_GIFT_MB_DAY', '2000')); // Helius bills 20 credits/MB -> 2000 MB = 40k credits/day max
+const creators = new Map(); // creator wallet -> { at, coins: Map(mint -> {name, symbol, curve}) }
+const coinInfo = new Map(); // mint -> {name, symbol, creator, curve}
+function onCoin(raw) {
+  let e; try { e = JSON.parse(raw); if (typeof e === 'string') e = JSON.parse(e); } catch { return; }
+  if (!e.mint || !e.creator) return;
+  stats.coins = (stats.coins || 0) + 1;
+  const c = creators.get(e.creator) || { at: 0, coins: new Map() };
+  c.at = Date.now(); c.coins.set(e.mint, true); creators.set(e.creator, c);
+  coinInfo.set(e.mint, { name: e.name, symbol: e.symbol, creator: e.creator, curve: e.bonding_curve });
+  giftDirty = true;
+}
+const norm = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+function nameMatch(g, p) {
+  const coin = [norm(g.name), norm(g.symbol)].filter((x) => x.length >= 3);
+  const who = [norm(p.username), norm(p.x_username), norm(p._x?.name)].filter((x) => x.length >= 3);
+  return coin.some((c) => who.some((w) => c.includes(w) || w.includes(c)));
+}
+const onCurve = (a) => { try { return PublicKey.isOnCurve(new PublicKey(a).toBytes()); } catch { return false; } };
+const gift = { ws: null, subId: null, bytes: 0, day: new Date().toISOString().slice(0, 10), txs: 0, found: 0, paused: false, err: null };
+let giftDirty = false;
+function onGiftTx(res) {
+  gift.txs++;
+  const tx = res.transaction?.transaction; const meta = res.transaction?.meta; if (!tx || !meta) return;
+  const keys = tx.message.accountKeys.map((k) => k.pubkey || k);
+  const signer = keys[0];
+  const ownerOf = {}; // token account -> owner
+  for (const b of [...(meta.preTokenBalances || []), ...(meta.postTokenBalances || [])]) if (b.owner) ownerOf[keys[b.accountIndex]] = b.owner;
+  const ixs = [...tx.message.instructions, ...(meta.innerInstructions || []).flatMap((x) => x.instructions)];
+  for (const ix of ixs) {
+    if (!String(ix.program || '').startsWith('spl-token') || !ix.parsed || !/^transfer/.test(ix.parsed.type)) continue;
+    const info = ix.parsed.info; const auth = info.authority || info.multisigAuthority;
+    if (!auth || !creators.has(auth)) continue; // only the dev sending
+    const mint = info.mint || (meta.postTokenBalances || []).find((b) => keys[b.accountIndex] === info.source)?.mint;
+    if (!mint || !/pump$/.test(mint)) continue;
+    const amt = Number(info.tokenAmount?.uiAmount ?? (Number(info.amount) / 1e6));
+    const pct = (amt / 1e9) * 100;
+    if (!(pct >= GIFT_MIN_PCT)) continue;
+    const to = ownerOf[info.destination];
+    const ci = coinInfo.get(mint) || {};
+    if (!to || to === auth || to === ci.curve || !onCurve(to)) continue; // must be a real wallet, not the curve/pool
+    gift.found++;
+    log(`🎁 dev ${auth.slice(0, 6)} sent ${pct.toFixed(1)}% of ${ci.symbol || mint.slice(0, 6)} to ${to}`);
+    fs.appendFileSync('logs/pfwatch-gifts.jsonl', JSON.stringify({ time: new Date().toISOString(), from: auth, to, mint, pct, name: ci.name, symbol: ci.symbol, sig: res.signature }) + '\n');
+    if (state.alerted[to] > 0 || prio.length > 300 || prio.some((x) => x.w === to)) continue;
+    prio.push({ w: to, t: { gift: { mint, pct, name: ci.name, symbol: ci.symbol, byDev: ci.creator === auth, from: auth, sig: res.signature } } });
+  }
+}
+function giftSubscribe() {
+  if (!GIFT_ON || !HELIUS) return;
+  const today = new Date().toISOString().slice(0, 10);
+  if (today !== gift.day) { gift.day = today; gift.bytes = 0; if (gift.paused) log('gift watcher: new day, resuming'); gift.paused = false; }
+  if (gift.paused) return;
+  const cutoff = Date.now() - GIFT_HOURS * 3600e3;
+  for (const [w, c] of creators) if (c.at < cutoff) { for (const m of c.coins.keys()) coinInfo.delete(m); creators.delete(w); }
+  const list = [...creators.keys()].slice(-40000);
+  if (!list.length) return;
+  if (!gift.ws || gift.ws.readyState !== 1) {
+    gift.ws = new WebSocket(`wss://mainnet.helius-rpc.com/?api-key=${HELIUS}`);
+    gift.ws.on('open', () => { gift.subId = null; giftDirty = true; giftSubscribe(); });
+    gift.ws.on('message', (d) => {
+      gift.bytes += d.length;
+      if (gift.bytes > GIFT_MB_DAY * 1e6 && !gift.paused) { gift.paused = true; warn(`gift watcher hit ${GIFT_MB_DAY} MB today (Helius credit cap), pausing until UTC midnight`); try { gift.ws.close(); } catch {} return; }
+      let m; try { m = JSON.parse(d); } catch { return; }
+      if (m.error) { gift.err = JSON.stringify(m.error).slice(0, 160); warn('gift sub error', gift.err); return; }
+      if (m.id === 'sub' && typeof m.result === 'number') { const old = gift.subId; gift.subId = m.result; if (old !== null) gift.ws.send(JSON.stringify({ jsonrpc: '2.0', id: 'unsub', method: 'transactionUnsubscribe', params: [old] })); return; }
+      if (m.method === 'transactionNotification') onGiftTx(m.params.result);
+    });
+    gift.ws.on('close', () => { gift.ws = null; if (!gift.paused) setTimeout(giftSubscribe, 3000); });
+    gift.ws.on('error', (e) => warn('gift ws', e.message));
+    setInterval(() => { try { gift.ws?.readyState === 1 && gift.ws.ping(); } catch {} }, 30000).unref();
+    return;
+  }
+  if (!giftDirty) return;
+  giftDirty = false;
+  gift.ws.send(JSON.stringify({ jsonrpc: '2.0', id: 'sub', method: 'transactionSubscribe', params: [{ accountInclude: list, failed: false, vote: false }, { commitment: 'confirmed', encoding: 'jsonParsed', transactionDetails: 'full', showRewards: false, maxSupportedTransactionVersion: 0 }] }));
+}
+if (GIFT_ON) { setTimeout(giftSubscribe, 20000); setInterval(giftSubscribe, 90000); }
+setInterval(() => { if (GIFT_ON) log(`gift watcher: ${creators.size} dev wallets watched | ${gift.txs} txs | ${gift.found} gifts | ${(gift.bytes / 1e6).toFixed(0)} MB today (~${Math.round(gift.bytes / 1e6 * 20 / 1000)}k credits)${gift.paused ? ' | PAUSED (cap)' : ''}${gift.err ? ' | err ' + gift.err : ''}`); }, 5 * 60e3);
+
 connect();
