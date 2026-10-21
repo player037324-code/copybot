@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:54:03] stats 30m: trades 819223 (455/s) | lookups 885 | profiles 875 | with X 71 | ALERTS 1 | queue 3921 | rechecking 121 | 429s 9 | dropped 0 | top scans 10 | apps none=641785,axiom=71779,pump=47816,fomo=29400,gmgn=13289
 [2026-10-21 19:54:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:54:46] 🎁 dev BLbAr8 sent 3.6% of TeuTeuf to 2J2rtMBRLxAbFkSLgrsuSNN8N5KMTJVaRTdnGfbZ5Vjw
 [2026-10-21 19:55:03] stats 31m: trades 845016 (454/s) | lookups 904 | profiles 894 | with X 73 | ALERTS 1 | queue 4003 | rechecking 121 | 429s 9 | dropped 0 | top scans 11 | apps none=662316,axiom=73644,pump=49461,fomo=30276,gmgn=13690
@@ -309,6 +308,7 @@
 [2026-10-21 20:10:03] stats 46m: trades 1260308 (457/s) | lookups 1351 | profiles 1335 | with X 104 | ALERTS 1 | queue 4792 | rechecking 141 | 429s 14 | dropped 0 | top scans 15 | apps none=985225,axiom=109283,pump=74735,fomo=46440,gmgn=19975
 [2026-10-21 20:10:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 20:11:03] stats 47m: trades 1290548 (458/s) | lookups 1376 | profiles 1360 | with X 104 | ALERTS 1 | queue 4844 | rechecking 142 | 429s 14 | dropped 0 | top scans 16 | apps none=1006688,axiom=114018,pump=76494,fomo=47264,gmgn=20548
+[2026-10-21 20:12:03] stats 48m: trades 1317339 (457/s) | lookups 1436 | profiles 1420 | with X 109 | ALERTS 1 | queue 4843 | rechecking 145 | 429s 14 | dropped 0 | top scans 16 | apps none=1026669,axiom=116916,pump=78107,fomo=48390,gmgn=21063
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
