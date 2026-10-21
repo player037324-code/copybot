@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:23:45] 🎁 dev 8RGCrd sent 1.4% of RAILED to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
-[2026-10-21 22:24:08] stats 2m: trades 72765 (606/s) | lookups 80 | profiles 80 | with X 4 | ALERTS 0 | queue 907 | rechecking 288 | 429s 0 | dropped 0 | top scans 1 | apps none=51300,axiom=12279,pump=3839,fomo=1785,gmgn=1756
 [2026-10-21 22:24:55] skip TheDogGod69 @Agent69420: 273 X followers
 [2026-10-21 22:25:08] stats 3m: trades 103208 (573/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1138 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=72064,axiom=17278,pump=5805,fomo=2796,gmgn=2560
 [2026-10-21 22:26:08] stats 4m: trades 138053 (575/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1374 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=96490,axiom=22806,pump=7818,fomo=3856,gmgn=3326
@@ -309,6 +307,8 @@
 [2026-10-21 22:38:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:39:08] stats 17m: trades 564504 (553/s) | lookups 492 | profiles 485 | with X 30 | ALERTS 0 | queue 3226 | rechecking 292 | 429s 5 | dropped 0 | top scans 6 | apps none=384143,axiom=92174,pump=35171,fomo=25502,gmgn=13507
 [2026-10-21 22:40:08] stats 18m: trades 595272 (551/s) | lookups 545 | profiles 537 | with X 35 | ALERTS 0 | queue 3292 | rechecking 292 | 429s 6 | dropped 0 | top scans 6 | apps none=404954,axiom=97503,pump=36998,fomo=26981,gmgn=14098
+[2026-10-21 22:41:08] stats 19m: trades 625378 (549/s) | lookups 545 | profiles 537 | with X 35 | ALERTS 0 | queue 3405 | rechecking 292 | 429s 6 | dropped 0 | top scans 6 | apps none=426008,axiom=101810,pump=38921,fomo=28462,gmgn=14762
+[2026-10-21 22:41:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
