@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 17:42:06.443] === sniper starting ===
-[2026-10-21 17:42:06.451] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 17:42:06.451] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 17:42:06.451] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 17:42:06.451] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 17:42:06.506] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 17:42:07.954] warm build time (median of 10): total 23.04ms = accounts 5.50 + compile/sign 12.98 + serialize 0.20
-[2026-10-21 17:42:07.961] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 17:42:07.962] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 17:42:08.078] feed beta connected
-[2026-10-21 17:42:08.091] feed pre (preprocessed/shreds) connected
-[2026-10-21 17:42:08.100] feed pre subscribed (1)
-[2026-10-21 17:42:08.106] feed mainnet connected
 [2026-10-21 17:47:07.998] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 17:50:07.316] === sniper starting ===
 [2026-10-21 17:50:07.323] mode: DRY RUN (builds + simulates, never sends)
@@ -248,6 +235,19 @@
 [2026-10-21 17:52:07.866] feed beta connected
 [2026-10-21 17:52:07.872] feed pre subscribed (1)
 [2026-10-21 17:52:07.937] feed mainnet connected
+[2026-10-21 17:56:06.449] === sniper starting ===
+[2026-10-21 17:56:06.454] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 17:56:06.455] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-21 17:56:06.455] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-21 17:56:06.455] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-21 17:56:06.503] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 17:56:08.026] warm build time (median of 10): total 27.33ms = accounts 11.50 + compile/sign 16.55 + serialize 0.29
+[2026-10-21 17:56:08.026] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 17:56:08.026] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 17:56:08.192] feed pre (preprocessed/shreds) connected
+[2026-10-21 17:56:08.208] feed beta connected
+[2026-10-21 17:56:08.237] feed pre subscribed (1)
+[2026-10-21 17:56:08.241] feed mainnet connected
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -270,6 +270,7 @@
 [2026-10-21 17:42:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:50:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:52:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 17:56:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
