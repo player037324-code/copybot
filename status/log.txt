@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:14:48] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
-[2026-10-21 21:15:07] gift watcher: 632 dev wallets watched | 26051 txs | 9 gifts | 230 MB today (~5k credits)
 [2026-10-21 21:15:07] stats 55m: trades 850503 (258/s) | lookups 1731 | profiles 1711 | with X 118 | ALERTS 0 | queue 4046 | rechecking 229 | 429s 14 | dropped 0 | top scans 19 | apps none=664746,axiom=68035,pump=54186,fomo=32202,gmgn=13334
 [2026-10-21 21:16:07] stats 56m: trades 863304 (257/s) | lookups 1791 | profiles 1771 | with X 120 | ALERTS 0 | queue 4043 | rechecking 229 | 429s 14 | dropped 0 | top scans 19 | apps none=674912,axiom=68964,pump=54991,fomo=32712,gmgn=13472
 [2026-10-21 21:17:07] stats 57m: trades 874221 (256/s) | lookups 1844 | profiles 1823 | with X 125 | ALERTS 0 | queue 4065 | rechecking 230 | 429s 15 | dropped 0 | top scans 19 | apps none=683165,axiom=70031,pump=55756,fomo=33148,gmgn=13615
@@ -309,6 +307,8 @@
 [2026-10-21 21:30:07] gift watcher: 680 dev wallets watched | 35312 txs | 12 gifts | 297 MB today (~6k credits)
 [2026-10-21 21:30:07] stats 70m: trades 1045145 (249/s) | lookups 2200 | profiles 2174 | with X 139 | ALERTS 0 | queue 4501 | rechecking 242 | 429s 18 | dropped 0 | top scans 24 | apps none=816510,axiom=83838,pump=67206,fomo=38795,gmgn=16799
 [2026-10-21 21:31:07] stats 71m: trades 1058258 (248/s) | lookups 2260 | profiles 2234 | with X 143 | ALERTS 0 | queue 4501 | rechecking 243 | 429s 18 | dropped 0 | top scans 24 | apps none=826697,axiom=84930,pump=68142,fomo=39195,gmgn=17046
+[2026-10-21 21:32:07] 🎁 dev HgAhL3 sent 1.3% of Nutless to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-21 21:32:07] stats 72m: trades 1073144 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4502 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=838797,axiom=85879,pump=69139,fomo=39569,gmgn=17256
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
