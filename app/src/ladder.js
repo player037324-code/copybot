@@ -18,6 +18,7 @@ const SLIP = Number(env('LADDER_SLIPPAGE_BPS', '2500'));
 const QUOTE_MINT = env('SNIPE_QUOTE_MINT', '');
 const wallet = Keypair.fromSecretKey(bs58.decode(env('SNIPE_PRIVATE_KEY', env('PRIVATE_KEY', ''))));
 const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 19);
+const tgSend = (text) => { const t = process.env.TELEGRAM_BOT_TOKEN, c = process.env.TELEGRAM_CHAT_ID; if (!t || !c) return; fetch(`https://api.telegram.org/bot${t}/sendMessage`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: c, text, parse_mode: 'HTML', disable_web_page_preview: true }) }).catch(() => {}); };
 const log = (...a) => console.log(`[${ts()}]`, ...a);
 const warn = (...a) => console.warn(`[${ts()}] WARN`, ...a);
 const toIx = (ix) => ({ programId: new PublicKey(ix.programId), keys: ix.accounts.map((a) => ({ pubkey: new PublicKey(a.pubkey), isSigner: a.isSigner, isWritable: a.isWritable })), data: Buffer.from(ix.data, 'base64') });
@@ -67,6 +68,7 @@ async function tick() {
       const r = await sendAndLand(conn, tx);
       for (const k of keys) { st[k].ladderSteps = due; (st[k].ladderSells ||= []).push({ at: new Date().toISOString(), mult: +mult.toFixed(2), steps: n, tokensRaw: amount.toString(), solOut: Number(sq.outAmount) / 1e9, sig: r.sig }); }
       write(st);
+      tgSend(`💰 <b>TAKE PROFIT</b> $${p.symbol} at ${mult.toFixed(2)}x: sold ${n * STEP_SELL * 100}% of original for ~${(Number(sq.outAmount) / 1e9).toFixed(3)} SOL`);
       log(`${p.symbol}: TAKE PROFIT at ${mult.toFixed(2)}x -> sold ${n * STEP_SELL * 100}% of original for ~${(Number(sq.outAmount) / 1e9).toFixed(4)} SOL | ${r.sig}`);
     } catch (e) { warn(`${p.symbol}: ladder sell failed at ${mult.toFixed(2)}x: ${e.message.slice(0, 160)}`); }
   }

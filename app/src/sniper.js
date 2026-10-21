@@ -43,6 +43,7 @@ const STATE = 'logs/snipe-state.json';
 fs.mkdirSync('logs', { recursive: true });
 
 const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 23);
+const tgSend = (text) => { const t = process.env.TELEGRAM_BOT_TOKEN, c = process.env.TELEGRAM_CHAT_ID; if (!t || !c) return; fetch(`https://api.telegram.org/bot${t}/sendMessage`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: c, text, parse_mode: 'HTML', disable_web_page_preview: true }) }).catch(() => {}); };
 const log = (...a) => console.log(`[${ts()}]`, ...a);
 const warn = (...a) => console.warn(`[${ts()}] WARN`, ...a);
 
@@ -257,6 +258,7 @@ async function main() {
       const sendT = Date.now();
       const sends = Promise.allSettled([post(b64), jitoSend(b64), ...(S.nozomiKey ? [nozomiSend(b64)] : []), ...(S.astraKey ? [astraSend(b64)] : []), post(b64), conn.sendRawTransaction(raw, { skipPreflight: true, maxRetries: 0 })]);
       log(`  >>> FIRE ${label} on $${L.symbol} ${L.base} [${src}${why ? ', ' + why : ''}] | build ${buildMs}ms | ${sendT - seenAt}ms after seeing launch | ${ourSig}`);
+      tgSend(`🎯 <b>SNIPE FIRED</b> ${label} on $${L.symbol}\n${Number(buyRaw) / 10 ** decimals} pool tokens | ${sendT - seenAt}ms after launch\nCA: <code>${L.base}</code>`);
       sends.then((r) => r.filter((x) => x.status === 'rejected' || x.value?.error).forEach((x) => warn(`  send path error: ${JSON.stringify(x.reason?.message || x.value?.error).slice(0, 150)}`)));
     } else {
       log(`  >>> DRY RUN would fire ${label} on $${L.symbol} ${L.base} [${src}${why ? ', ' + why : ''}] | build ${buildMs}ms | ${Date.now() - seenAt}ms after seeing launch`);
@@ -274,9 +276,10 @@ async function main() {
       const st = (await conn.getSignatureStatuses([ourSig]).catch(() => ({ value: [null] }))).value[0];
       if (st) {
         const behind = st.slot - slot;
-        if (st.err) { warn(`  BUY FAILED on $${L.symbol} (landed +${behind} slots): ${JSON.stringify(st.err)}`); for (const t of hits) if (t.firedMint === L.base) t.buyState = 'failed'; }
+        if (st.err) { warn(`  BUY FAILED on $${L.symbol} (landed +${behind} slots): ${JSON.stringify(st.err)}`); tgSend(`❌ <b>SNIPE FAILED</b> on $${L.symbol} (landed +${behind} blocks): ${JSON.stringify(st.err)}\n<a href="https://solscan.io/tx/${ourSig}">tx</a>`); for (const t of hits) if (t.firedMint === L.base) t.buyState = 'failed'; }
         else {
           log(`  BUY LANDED on $${L.symbol} +${behind} slots after launch (slot ${st.slot})`);
+          tgSend(`✅ <b>SNIPE LANDED</b> on $${L.symbol}, ${behind} block(s) after launch\n<a href="https://solscan.io/tx/${ourSig}">tx</a> · <a href="https://www.stonkfun.xyz/token/${L.base}">chart</a>`);
           for (const t of hits) if (t.firedMint === L.base) t.buyState = 'done';
           setTimeout(async () => {
             try {

@@ -33,15 +33,30 @@ const rpc = async (method, params) => (await (await fetch(RPC, { method: 'POST',
 const meta = async (id) => (await rpc('getAsset', { id }).catch(() => ({}))).result?.content?.metadata || {};
 const bornAt = async (id) => (await rpc('getTransactionsForAddress', [id, { transactionDetails: 'signatures', sortOrder: 'asc', limit: 1 }]).catch(() => ({}))).result?.data?.[0]?.blockTime;
 
-async function alert(kind, text, extra = {}) {
-  const line = `🚨 ${kind}: ${text}`;
-  log(line);
-  fs.appendFileSync(FEED, JSON.stringify({ time: new Date().toISOString(), kind, text, ...extra }) + '\n');
-  if (TG_TOKEN && TG_CHAT) {
-    fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: TG_CHAT, text: line, disable_web_page_preview: true }) })
-      .then((r) => r.json()).then((j) => { if (!j.ok) warn(`telegram: ${JSON.stringify(j).slice(0, 120)}`); }).catch((e) => warn(`telegram: ${e.message}`));
-  }
+const EMOJI = { 'NEW INDEX TOKEN': '🆕', 'NOW TRADEABLE': '✅', 'NEW PAIRING LIVE': '🚨', 'SNIPER BUY BROKEN': '⚠️', 'SNIPER BUY OK AGAIN': '👍' };
+const TG_ALL = env('ALERT_TG_ALL', 'false') === 'true'; // also send "older pool" alerts to Telegram
+export async function tg(text) {
+  if (!TG_TOKEN || !TG_CHAT) return;
+  try {
+    const j = await (await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'HTML', disable_web_page_preview: true }) })).json();
+    if (!j.ok) warn(`telegram: ${JSON.stringify(j).slice(0, 150)}`);
+  } catch (e) { warn(`telegram: ${e.message}`); }
 }
+const esc = (x) => String(x).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+async function alert(kind, text, extra = {}) {
+  log(`🚨 ${kind}: ${text}`);
+  fs.appendFileSync(FEED, JSON.stringify({ time: new Date().toISOString(), kind, text, ...extra }) + '\n');
+  if (!EMOJI[kind] && !TG_ALL) return; // older-pool noise stays in the log only
+  const mint = extra.quote || extra.mint;
+  const links = [
+    mint ? `<a href="https://solscan.io/token/${mint}">Solscan</a>` : '',
+    extra.firstMint ? `<a href="https://www.stonkfun.xyz/token/${extra.firstMint}">first coin on StonkFun</a>` : '',
+    mint ? `<a href="https://jup.ag/swap/SOL-${mint}">Buy on Jupiter</a>` : '',
+  ].filter(Boolean).join(' · ');
+  const ca = mint ? `\nCA: <code>${mint}</code>` : '';
+  await tg(`${EMOJI[kind] || '•'} <b>${esc(kind)}</b>\n${esc(text)}${ca}${links ? '\n' + links : ''}`);
+}
+setTimeout(() => tg(`🟢 <b>Stonk alerts online</b>\nWatching creator ${esc(CREATORS.map((c) => c.slice(0, 6)).join(', '))} for new index tokens + every StonkFun launch for new pairings.`), 15000);
 
 // seed: every pool token that already had StonkFun launches counts as known, so only truly new pairings alert
 async function seed() {
