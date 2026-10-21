@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:33:08] stats 71m: trades 2352917 (552/s) | lookups 2083 | profiles 2044 | with X 128 | ALERTS 0 | queue 6237 | rechecking 319 | 429s 22 | dropped 0 | top scans 24 | apps none=1737790,axiom=280976,pump=140492,fomo=99704,gmgn=44903
 [2026-10-21 23:33:38] 🎁 dev 3KStwe sent 3.0% of ORION to EfcG1bN67DnRQSF7GFPysAvYXHVfdxEPLuCcLGpF4qVy
 [2026-10-21 23:34:08] stats 72m: trades 2387199 (553/s) | lookups 2093 | profiles 2053 | with X 128 | ALERTS 0 | queue 6286 | rechecking 319 | 429s 22 | dropped 0 | top scans 24 | apps none=1763481,axiom=285252,pump=142299,fomo=100747,gmgn=45523
 [2026-10-21 23:34:19] 🎁 dev HgAhL3 sent 1.3% of Burger to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
@@ -309,6 +308,7 @@
 [2026-10-21 23:48:08] stats 86m: trades 2746263 (532/s) | lookups 2502 | profiles 2457 | with X 153 | ALERTS 0 | queue 6740 | rechecking 326 | 429s 26 | dropped 0 | top scans 29 | apps none=2042192,axiom=314113,pump=167741,fomo=113380,gmgn=51275
 [2026-10-21 23:48:37] 🎁 dev BAoJmp sent 2.5% of CBTC to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:48:37] 🎁 dev BAoJmp sent 2.1% of CBTC to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-21 23:49:08] stats 87m: trades 2764704 (530/s) | lookups 2555 | profiles 2507 | with X 156 | ALERTS 0 | queue 6750 | rechecking 327 | 429s 27 | dropped 0 | top scans 29 | apps none=2056926,axiom=315376,pump=168983,fomo=114071,gmgn=51490
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
