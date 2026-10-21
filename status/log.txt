@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.2% of ROBONOMICS to 2BEdHEQY2fJNUXyndKZWgJni7uPsLThiFpB1MJ7MEHBs
-[2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.0% of ROBONOMICS to H1Lh1J8PWEqWBYTwqyvzYibRi3oPnvMPeP8Fw7LyjSub
 [2026-10-21 21:55:07] gift watcher: 639 dev wallets watched | 47605 txs | 20 gifts | 418 MB today (~8k credits)
 [2026-10-21 21:55:07] stats 95m: trades 1401284 (246/s) | lookups 2976 | profiles 2939 | with X 176 | ALERTS 0 | queue 5110 | rechecking 263 | 429s 25 | dropped 0 | top scans 32 | apps none=1096050,axiom=115302,pump=89565,fomo=49213,gmgn=22761
 [2026-10-21 21:55:25] 🎁 dev 3H4GRC sent 1.9% of ROBONOMICS to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
@@ -309,6 +307,8 @@
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.8% of HallowCate to ERakYxvh1Sez41oR4xf66dLKHxXyxgASeX5uHgEJyFkY
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.8% of HallowCate to 5qgSs3o9LTUbYE89vB8D4JU6Cw2DECBL9rEBR3pyuvEP
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.4% of HallowCate to 5EpoewM2PYVUBx2WNDUujCREYba4bUCnFsr1KdrhUx7Q
+[2026-10-21 22:01:07] stats 101m: trades 1510585 (249/s) | lookups 3198 | profiles 3157 | with X 183 | ALERTS 0 | queue 5266 | rechecking 270 | 429s 26 | dropped 0 | top scans 34 | apps none=1185901,axiom=123888,pump=94731,fomo=51883,gmgn=24217
+[2026-10-21 22:01:25] 🎁 dev AqGUrb sent 1.3% of HallowCate to 8a4ucAkq4B6jxn9CeNEMfSmywzcUgrs4UWgBtXV8bwPo
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
