@@ -295,6 +295,9 @@
 [2026-10-21 18:04:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
 [2026-10-21 18:04:12] feed connected
 [2026-10-21 18:05:08] stats 1m: trades 106 (2/s) | lookups 65 | profiles 19 | with X 0 | ALERTS 0 | queue 37 | rechecking 2 | 429s 3 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:12:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m | DRY RUN
+[2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 18:12:04] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

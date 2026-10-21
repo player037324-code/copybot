@@ -1,41 +1,3 @@
-[2026-10-20 21:16:06] known pools: 112
-[2026-10-20 21:16:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 21:16:06] feed stonkfun-launches connected
-[2026-10-20 21:16:06] feed creators connected
-[2026-10-20 21:23:06] known pools: 112
-[2026-10-20 21:23:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 21:23:06] feed stonkfun-launches connected
-[2026-10-20 21:23:06] feed creators connected
-[2026-10-20 21:25:06] known pools: 112
-[2026-10-20 21:25:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 21:25:07] feed creators connected
-[2026-10-20 21:25:07] feed stonkfun-launches connected
-[2026-10-20 21:31:06] known pools: 112
-[2026-10-20 21:31:06] watching creators: H1TRD2XtpMy5RJurDNtboDAUuvfzUCUZn8d82oBW3FZd | telegram: off (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID on the server)
-[2026-10-20 21:31:07] feed creators connected
-[2026-10-20 21:31:07] feed stonkfun-launches connected
-[2026-10-20 21:31:37] selftest on $X (token2022, config 6k9BeZ): OK {"InstructionError":[3,{"Custom":3012}]} Program log: AnchorError caused by account: user_quote_token. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The prog
-=== cmd 66 @ 2026-10-20T22:29:02Z ===
-> set SNIPE_CU_LIMIT=100000
-added SNIPE_CU_LIMIT=100000
-> set SNIPE_CU_PRICE=100000000
-added SNIPE_CU_PRICE=100000000
-> snipe-start
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [sniper](ids: [ 2 ])
-[PM2] [sniper](2) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 754751   │ 34m    │ 19   │ online    │ 0%       │ 103.5mb  │ root     │ disabled │
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
-│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 754787   │ 34m    │ 6    │ online    │ 0%       │ 102.4mb  │ root     │ disabled │
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 763146   │ 0s     │ 15   │ online    │ 0%       │ 17.7mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 1.8% | ram usage: 47.5% | enp1s0: ⇓ 0.028mb/s ⇑ 0.003mb/s | disk: ⇓ 0mb/s ⇑ 0.041mb/s
-[2026-10-20 22:24:06.735] alive | pool 6s2umN | $TRUMP done
-[2026-10-20 22:29:03.895] === sniper starting ===
-[2026-10-20 22:29:03.897] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-20 22:29:03.898] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
 [2026-10-20 22:29:03.898] target: first $TRUMP -> buy 762 [ALREADY DONE]
 [2026-10-20 22:29:03.899] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
@@ -398,3 +360,41 @@ items: 51; keys: address,userId,is_pump_user,is_banned,username,profile_image,he
   thedetective x=MemeRetire f=91180 setAt=- 6qudAN2kV8mtCcYJxb5QQ6Vr15itdHHdeVbYm99NKMhy
   runitbackghost x=runitbackghost f=91685 setAt=2026-08-24T14:43:08.588Z ApRnQN2HkbCn7W2WWiT2FEKvuKJp9LugRyAE1a9Hdz1
 with X: 46; setAt range: 2026-07-22T16:57:05.575Z .. 2026-10-21T11:34:33.566Z
+=== cmd 82 @ 2026-10-21T18:12:02Z ===
+> pfwatch-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
+[PM2] [pfwatch](4) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1073346  │ 56s    │ 34   │ online    │ 0%       │ 89.4mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1073382  │ 56s    │ 21   │ online    │ 0%       │ 89.0mb   │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1073715  │ 0s     │ 3    │ online    │ 0%       │ 16.6mb   │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1073310  │ 57s    │ 30   │ online    │ 0%       │ 94.8mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 8.2% | ram usage: 37.3% | enp1s0: ⇓ 0.007mb/s ⇑ 0.003mb/s | disk: ⇓ 0.032mb/s ⇑ 0.676mb/s
+[TAILING] Tailing last 25 lines for [pfwatch] process (change the value with --lines option)
+/root/.pm2/logs/pfwatch-error.log last 25 lines:
+/root/.pm2/logs/pfwatch-out.log last 25 lines:
+[2026-10-21 17:57:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
+[2026-10-21 17:57:03] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
+[2026-10-21 17:57:03] feed connected
+[2026-10-21 17:57:03] feed connected
+[2026-10-21 17:58:03] stats 1m: trades 114 (2/s) | lookups 61 | profiles 21 | with X 2 | ALERTS 0 | queue 47 | rechecking 0 | 429s 1 | dropped 0 | DRY (no telegram)
+[2026-10-21 17:58:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
+[2026-10-21 17:58:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
+[2026-10-21 17:58:09] feed connected
+[2026-10-21 17:59:08] stats 1m: trades 115 (2/s) | lookups 44 | profiles 7 | with X 0 | ALERTS 0 | queue 66 | rechecking 0 | 429s 4 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:00:08] stats 2m: trades 232 (2/s) | lookups 100 | profiles 26 | with X 1 | ALERTS 0 | queue 125 | rechecking 0 | 429s 7 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:01:08] stats 3m: trades 347 (2/s) | lookups 154 | profiles 42 | with X 1 | ALERTS 0 | queue 172 | rechecking 0 | 429s 9 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:02:08] stats 4m: trades 462 (2/s) | lookups 210 | profiles 63 | with X 2 | ALERTS 0 | queue 217 | rechecking 1 | 429s 11 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:03:08] stats 5m: trades 578 (2/s) | lookups 268 | profiles 75 | with X 2 | ALERTS 0 | queue 260 | rechecking 2 | 429s 13 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:04:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
+[2026-10-21 18:04:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
+[2026-10-21 18:04:12] feed connected
+[2026-10-21 18:05:08] stats 1m: trades 106 (2/s) | lookups 65 | profiles 19 | with X 0 | ALERTS 0 | queue 37 | rechecking 2 | 429s 3 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:12:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m | DRY RUN
+[2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 18:12:04] feed connected
