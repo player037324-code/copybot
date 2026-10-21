@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:56:03] stats 32m: trades 877818 (457/s) | lookups 962 | profiles 951 | with X 80 | ALERTS 1 | queue 4038 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=689274,axiom=76177,pump=50971,fomo=31114,gmgn=14103
-[2026-10-21 19:57:03] stats 33m: trades 903977 (457/s) | lookups 967 | profiles 956 | with X 80 | ALERTS 1 | queue 4122 | rechecking 121 | 429s 10 | dropped 0 | top scans 11 | apps none=710071,axiom=78086,pump=52665,fomo=31958,gmgn=14513
 [2026-10-21 19:57:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:58:03] stats 34m: trades 927207 (455/s) | lookups 987 | profiles 976 | with X 82 | ALERTS 1 | queue 4185 | rechecking 122 | 429s 10 | dropped 0 | top scans 12 | apps none=727696,axiom=80178,pump=54346,fomo=32778,gmgn=14914
 [2026-10-21 19:59:03] gift watcher: 660 dev wallets watched | 21046 txs | 9 gifts | 186 MB today (~4k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 20:12:42] 🎁 dev 7dyDM3 sent 1.7% of Desk to 35CC8MYCGX3nG2Ga1UYRmHaZBwGMR7JhdZgCVtduD83a
 [2026-10-21 20:12:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 20:13:03] stats 49m: trades 1346734 (458/s) | lookups 1456 | profiles 1440 | with X 110 | ALERTS 1 | queue 4888 | rechecking 146 | 429s 14 | dropped 0 | top scans 17 | apps none=1047886,axiom=120884,pump=79825,fomo=49523,gmgn=21719
+[2026-10-21 20:14:03] gift watcher: 973 dev wallets watched | 31250 txs | 12 gifts | 272 MB today (~5k credits)
+[2026-10-21 20:14:03] stats 50m: trades 1374728 (458/s) | lookups 1513 | profiles 1496 | with X 118 | ALERTS 1 | queue 4907 | rechecking 149 | 429s 15 | dropped 0 | top scans 17 | apps none=1069426,axiom=123574,pump=81617,fomo=50338,gmgn=22355
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
