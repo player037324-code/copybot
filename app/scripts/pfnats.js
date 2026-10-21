@@ -19,14 +19,13 @@ show('realtime host', /[a-z0-9-]+\.nats\.realtime\.pump\.fun|realtime\.pump\.fun
 show('nats config', /setNatsConfigs|NatsInstance\.Unified\]\s*:\s*\{|servers\s*:/g, 300);
 show('creds', /\b(?:user|username)\s*:\s*["'`][A-Za-z0-9_-]{3,40}["'`]\s*,\s*(?:pass|password)\s*:/g, 200);
 
-// collect candidates
-const all = bodies.join('\n');
-const urls = [...new Set([...all.matchAll(/wss:\/\/[a-z0-9-]+\.nats\.realtime\.pump\.fun[^"'`\s,)]*/g)].map((m) => m[0]))];
-const creds = [...new Set([...all.matchAll(/\b(?:user|username)\s*:\s*["'`]([A-Za-z0-9_-]{3,40})["'`]\s*,\s*(?:pass|password)\s*:\s*["'`]([^"'`]{3,80})["'`]/g)].map((m) => m[1] + '\u0000' + m[2]))].map((s) => s.split('\u0000'));
-console.log(`\nurls: ${JSON.stringify(urls)}\ncreds found: ${creds.length} ${JSON.stringify(creds.map((c) => c[0]))}`);
-if (!urls.length) urls.push('wss://unified-prod.nats.realtime.pump.fun', 'wss://prod-v2.nats.realtime.pump.fun');
-if (!creds.length) creds.push(['subscriber', 'lW5a9y20NceF6AE9'], [null, null]);
-
+// collect candidates (config is embedded as escaped JSON in the page)
+const all = bodies.join('\n').replace(/\\"/g, '"');
+const cfg = {};
+for (const m of all.matchAll(/"(ADVANCED|CORE|UNIFIED|MULTICHAIN)":\{[^}]*?"servers":"([^"]+)","user":"([^"]+)","pass":"([^"]+)"/g)) cfg[m[1]] = { url: m[2], user: m[3], pass: m[4] };
+console.log('\nconfigs: ' + JSON.stringify(Object.fromEntries(Object.entries(cfg).map(([k, v]) => [k, v.url]))));
+const tries = [];
+if (cfg.UNIFIED) tries.push([cfg.UNIFIED.url, cfg.UNIFIED.user, cfg.UNIFIED.pass]);
 function tryNats(url, user, pass, subject, secs = 30) {
   return new Promise((res) => {
     const st = { url, user, subject, bytes: 0, msgs: 0, err: null, info: null, samples: [] };
@@ -55,10 +54,9 @@ function tryNats(url, user, pass, subject, secs = 30) {
     setTimeout(() => { try { ws.close(); } catch {} res(st); }, secs * 1000);
   });
 }
-for (const url of urls.slice(0, 4)) for (const [u, p] of creds.slice(0, 3)) {
+for (const [url, u, p] of tries) {
   const s = await tryNats(url, u, p, 'unifiedTradeEvent.processed', 25);
-  console.log(`\n== ${url} user=${u}: ${s.msgs} msgs, ${(s.bytes / 1e6).toFixed(2)} MB in 25s ${s.err || ''}\n   info: ${s.info}`);
+  console.log(`\n== ${url}: ${s.msgs} msgs, ${(s.bytes / 1e6).toFixed(2)} MB in 25s (~${Math.round(s.msgs / 25)}/s, ~${(s.bytes / 1e6 * 86400 / 25 / 1000).toFixed(1)} GB/day) ${s.err || ''}`);
   s.samples.forEach((x) => console.log('   sample: ' + x));
-  if (s.msgs) { console.log(`WORKS -> url=${url} user=${u}`); process.exit(0); }
 }
 process.exit(0);
