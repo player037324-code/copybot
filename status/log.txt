@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:49:07] stats 29m: trades 457843 (263/s) | lookups 929 | profiles 916 | with X 71 | ALERTS 0 | queue 2932 | rechecking 198 | 429s 8 | dropped 0 | top scans 10 | apps none=356397,axiom=37560,pump=29051,fomo=18182,gmgn=7222
 [2026-10-21 20:50:07] gift watcher: 382 dev wallets watched | 13322 txs | 6 gifts | 120 MB today (~2k credits)
 [2026-10-21 20:50:07] stats 30m: trades 471974 (262/s) | lookups 938 | profiles 925 | with X 72 | ALERTS 0 | queue 2990 | rechecking 199 | 429s 8 | dropped 0 | top scans 10 | apps none=367302,axiom=38768,pump=29972,fomo=18702,gmgn=7433
 [2026-10-21 20:50:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-21 21:05:07] stats 45m: trades 697412 (258/s) | lookups 1408 | profiles 1390 | with X 100 | ALERTS 0 | queue 3670 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=543883,axiom=56622,pump=44278,fomo=27125,gmgn=11016
 [2026-10-21 21:05:36] 🎁 dev GtQjpw sent 3.1% of Fable 5.5 to FzBmm8LnzW1MYRxH2oGKBXMjYvRkqzvCbsMq26rJUpEY
 [2026-10-21 21:05:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 21:06:07] stats 46m: trades 712162 (258/s) | lookups 1427 | profiles 1409 | with X 102 | ALERTS 0 | queue 3708 | rechecking 220 | 429s 12 | dropped 0 | top scans 16 | apps none=555666,axiom=57606,pump=45132,fomo=27708,gmgn=11218
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
