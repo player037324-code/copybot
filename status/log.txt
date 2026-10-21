@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:52:21] 🎁 dev 2VHc4n sent 1.7% of CI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
-[2026-10-21 22:52:30] 🎁 dev 2VHc4n sent 1.2% of CI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
-[2026-10-21 22:53:08] stats 31m: trades 1007868 (542/s) | lookups 875 | profiles 861 | with X 52 | ALERTS 0 | queue 4371 | rechecking 297 | 429s 10 | dropped 0 | top scans 10 | apps none=706414,axiom=145680,pump=62166,fomo=46599,gmgn=22860
-[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to 72DyU16g7bkpYtbqc6L1Y5iMPtCrz5d1Vx2vjspXFkAB
 [2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to CKZtNGxgdfBSLP2q7spZRrM2w6Y6GDNA345eVMXqgSPW
 [2026-10-21 22:53:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
 [2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to EZJHuyFQaYqmQoEo5mBG9ShMxftm8ZM6L3dAZKY4ZWQf
@@ -309,6 +305,10 @@
 [2026-10-21 23:02:08] gift watcher: 696 dev wallets watched | 16635 txs | 20 gifts | 148 MB today (~3k credits)
 [2026-10-21 23:02:08] stats 40m: trades 1303240 (543/s) | lookups 1149 | profiles 1130 | with X 66 | ALERTS 0 | queue 4934 | rechecking 301 | 429s 12 | dropped 0 | top scans 14 | apps none=935456,axiom=172450,pump=79762,fomo=57842,gmgn=27715
 [2026-10-21 23:03:08] stats 41m: trades 1338406 (544/s) | lookups 1202 | profiles 1182 | with X 74 | ALERTS 0 | queue 4968 | rechecking 302 | 429s 13 | dropped 0 | top scans 14 | apps none=962419,axiom=175611,pump=82077,fomo=59331,gmgn=28326
+[2026-10-21 23:04:08] stats 42m: trades 1371955 (544/s) | lookups 1212 | profiles 1192 | with X 74 | ALERTS 0 | queue 5044 | rechecking 302 | 429s 13 | dropped 0 | top scans 14 | apps none=988448,axiom=178536,pump=84288,fomo=60607,gmgn=28890
+[2026-10-21 23:04:44] 🎁 dev BAoJmp sent 1.4% of CYBERBABY to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-21 23:04:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 23:04:51] 🎁 dev 3szfdA sent 4.9% of TOM to 72756wSUNLfPoxQgsB1NeLjmsFkp5qvxUYn5WzJAYJBc
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
