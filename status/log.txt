@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:06:10] feed connected
-[2026-10-21 19:07:09] stats 1m: trades 25458 (424/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 619 | rechecking 63 | 429s 1 | dropped 0 | top scans 0 | apps none=18862,axiom=2679,pump=1787,fomo=957,gmgn=467
-[2026-10-21 19:07:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 58s, 0 new to the list
-[2026-10-21 19:08:09] stats 2m: trades 50837 (424/s) | lookups 32 | profiles 31 | with X 0 | ALERTS 0 | queue 1011 | rechecking 62 | 429s 1 | dropped 0 | top scans 1 | apps none=37941,axiom=5036,pump=3556,fomo=1937,gmgn=1005
 [2026-10-21 19:09:09] stats 3m: trades 76445 (425/s) | lookups 92 | profiles 91 | with X 3 | ALERTS 0 | queue 1258 | rechecking 63 | 429s 1 | dropped 0 | top scans 1 | apps none=56977,axiom=7518,pump=5398,fomo=2879,gmgn=1642
 [2026-10-21 19:09:49] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 19:10:09] stats 4m: trades 101999 (425/s) | lookups 112 | profiles 111 | with X 3 | ALERTS 0 | queue 1497 | rechecking 66 | 429s 1 | dropped 0 | top scans 2 | apps none=76700,axiom=9818,pump=7134,fomo=3651,gmgn=2047
@@ -309,6 +305,10 @@
 [2026-10-21 19:21:58] 🎁 dev DgyL11 sent 2.9% of pvnrt to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
 [2026-10-21 19:22:09] stats 16m: trades 403278 (420/s) | lookups 470 | profiles 464 | with X 41 | ALERTS 0 | queue 2929 | rechecking 83 | 429s 5 | dropped 0 | top scans 5 | apps none=304653,axiom=41138,pump=26493,fomo=13585,gmgn=7451
 [2026-10-21 19:22:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
+[2026-10-21 19:23:09] stats 17m: trades 430767 (422/s) | lookups 502 | profiles 496 | with X 42 | ALERTS 0 | queue 3029 | rechecking 82 | 429s 5 | dropped 0 | top scans 6 | apps none=326099,axiom=43437,pump=28355,fomo=14521,gmgn=7788
+[2026-10-21 19:24:03] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-21 19:24:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 19:24:04] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

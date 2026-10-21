@@ -1,44 +1,3 @@
---- nats config: et r=(0,t.v4)();return c.set(r,e),r},"onNatsAuthEvent",0,function(e){let r=(0,t.v4)();return i.set(r,e),r},"onNatsLifecycleEvent",0,function(e){let r=(0,t.v4)();return s.set(r,e),r},"removeConnectionStatusListener",0,function(e){c.delete(e)},"removeNatsAuthEventListener",0,function(e){i.delete(e)},"setNatsConfigs",0,function(e){n={...n,...e},d&&E({type:"configs",configs:e})},"setNatsInstanceAuth",0,function(e,t){t?a.set(e,t):a.delete(e),d?.postMessage({type:"auth",instance:e,auth:t})},"subscribe",0,function(e,r,n,a=(0,t.v4)(),i){try{var s;let t=b(e,r),u=(s=i?.coalesce,!0===s?"latest":!1===s||v
---- nats config: r,t))a()},subscribe:e=>(t.add(e),()=>{t.delete(e)})}},c=s(),l=()=>c,d=(0,a.createContext)({instances:[],store:n()}),u=[i.NatsInstance.Advanced,i.NatsInstance.Unified];function m(){}e.s(["NatsProvider",0,function(e){let c,l,k,f,_=(0,r.c)(10),{children:b,configs:p,instances:w}=e,y=void 0===w?u:w;(0,o.setNatsConfigs)(p);let[h]=(0,a.useState)(n);_[0]!==y||_[1]!==h?(c=()=>{let e=[],t=[],r=s();for(let e of y)r[e]=(0,o.getConnectionStatus)(e)===i.ConnectionStatus.CONNECTED;h.set(r);let a=(0,o.onConnectionStatusChange)((e,t)=>{let r=t===i.ConnectionStatus.CONNECTED,a=h.get();a[e]!==r&&h.set({...a,[e]:
-
-configs: {"ADVANCED":"wss://prod-advanced.nats.realtime.pump.fun","CORE":"wss://prod-v2.nats.realtime.pump.fun","UNIFIED":"wss://unified-prod.nats.realtime.pump.fun","MULTICHAIN":"wss://multichain-prod.nats.realtime.pump.fun"}
-
-== UNIFIED ">": 42831 msgs 97.35 MB/25s 
-   subjects: unifiedTradeEvent.processed=10727 unifiedTradeEvent.lite=8226 unifiedTradeEvent.wallet=6357 unifiedTradeEvent=6205 unifiedTradeEvent.liteBin=4532 unifiedTradeEvent.E7iyjoUegGg4zVu7pVvkbpWvDYjAes1sX5LyXMvwpump=817 unifiedTradeEvent.8rEbz9YpfJQV2ap153GFVj8LGg3Pcq8DvzYREtw3x31u=270 unifiedTradeEvent.CnBntmvyzW8zV2gYnjmjnCCTWkft5vAUMtwitzK9pump=249 unifiedTradeEvent.9PdHt2Do9UMgBBjwjeUAQuYorupbWVMGLvin86ycpump=232 unifiedTradeEvent.9askTPDEKmYBsiwwoUmPf3mBwXqkxj9yB5UNtmD7pump=220 unifiedTradeEvent.BYbbYQ6biqJmB7o8tw3otsz2BSZFMDuZPozm68CSpump=206 unifiedTradeEvent.79kGTphyW7RtUzSrDaZprmFUiADAbhuSav73UHY3gc7=204 unifiedTradeEvent.92mLnXGzT89NE8fwvCoeazBMLPgaU63Y3HxdEgdD7VBt=162 unifiedTradeEvent.HYgZeYJnKiNCupzTkXtPiG16tTiiuEmwsUNAYFuJpump=158 unifiedTradeEvent.2VhD6xfGpTr6KJUXAtdaZeKZpwuATdfTXDyFQZDcpump=156
-   sample: "{\"mint\":\"BL9XzjUPA2NRL9fzYVNqu2mxLVUJNDzQcenh5YJZpump\",\"tx\":\"3BT8SQomFGiUccF9nvZrhq1zKVg9UQGDhbue8fuNQ6h91spTvqS8KgrVu6SzCAGd2ETEsX9SrSpxnkUaCUjbtR9y\",\"slotIndexId\":\"00045972025800019100000301\",\"userAddress\":\"HvuphGmz1zy9zdFni5Lk8iGPLEhd84v8hndD9DoWpqpq\",\"type\":\"sell\",\"baseAmou
-
-== UNIFIED "unifiedTradeEvent.>": 35890 msgs 79.64 MB/25s 
-   subjects: unifiedTradeEvent.processed=10586 unifiedTradeEvent.lite=8285 unifiedTradeEvent.wallet=6305 unifiedTradeEvent.liteBin=4532 unifiedTradeEvent.E7iyjoUegGg4zVu7pVvkbpWvDYjAes1sX5LyXMvwpump=800 unifiedTradeEvent.8rEbz9YpfJQV2ap153GFVj8LGg3Pcq8DvzYREtw3x31u=261 unifiedTradeEvent.CnBntmvyzW8zV2gYnjmjnCCTWkft5vAUMtwitzK9pump=243 unifiedTradeEvent.9PdHt2Do9UMgBBjwjeUAQuYorupbWVMGLvin86ycpump=228 unifiedTradeEvent.9askTPDEKmYBsiwwoUmPf3mBwXqkxj9yB5UNtmD7pump=214 unifiedTradeEvent.BYbbYQ6biqJmB7o8tw3otsz2BSZFMDuZPozm68CSpump=197 unifiedTradeEvent.79kGTphyW7RtUzSrDaZprmFUiADAbhuSav73UHY3gc7=195 unifiedTradeEvent.92mLnXGzT89NE8fwvCoeazBMLPgaU63Y3HxdEgdD7VBt=159 unifiedTradeEvent.HYgZeYJnKiNCupzTkXtPiG16tTiiuEmwsUNAYFuJpump=155 unifiedTradeEvent.2VhD6xfGpTr6KJUXAtdaZeKZpwuATdfTXDyFQZDcpump=153 unifiedTradeEvent.AbZ2W1XECBJYigC5ytBrHipEAob5WbNbGvncCwaDpump=151
-   sample: "{\"slotIndexId\":\"00045972025800014500000201\",\"tx\":\"3JB5PCWuze3ZHYKYQHFjrrZQqRuWxBDoVvEHrKaiqyKtxhZ67KtqPxNZzQZJ1Q9ja9voRZNEXhcDzSWQYBvzH948\",\"timestamp\":\"2026-10-21T17:52:09+00:00\",\"program\":\"pump_amm\",\"isBondingCurve\":false,\"mintAddress\":\"3wzpc6Cd5X4E11mnY4GqQzWXrZEYYWQ8zoD5eFz
-
-== CORE ">": 202475 msgs 211.74 MB/25s 
-   subjects: followingFeed.user=112390 shadow.positions=16007 alertsFeed.user=3697 multichain.coin-lifecycle=1643 price.1399811149=1318 account_balance_change.62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV=1099 account_balance_change.A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW=946 account_balance_change.5YxQFdt3Tr9zJLvkFccqXVUwhdTWJQc1fFg2YPbxvxeD=765 account_balance_change.HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC=533 account_balance_change.FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz=372 account_balance_change.BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s=283 price.56=197 account_balance_change.3BpXnfJaUTiwXnJNe7Ej1rcbzqTTQUvLShZaWazebsVR=192 positions.BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s=186 account_balance_change.EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL=180
-   sample: {"mint":"DPMwVtL8rxuqcn12ntT2zbhkXXSexqAuSoJfKzHiXof5","eventType":"COIN_LIFECYCLE_EVENT_TYPE_COIN_SECURITY_VERDICT_UPDATED","after":{"mint":"DPMwVtL8rxuqcn12ntT2zbhkXXSexqAuSoJfKzHiXof5","name":"Eric Cryptoman","symbol":"ERICCRYPTO","description":"Crypto OG & Shitcoin connoisseur  3x bear market su
-
-== ADVANCED ">": 7589 msgs 11.15 MB/25s 
-   subjects: token.holder=1482 chartLine.E7iyjoUegGg4zVu7pVvkbpWvDYjAes1sX5LyXMvwpump=124 pumpSwapTrade.8rEbz9YpfJQV2ap153GFVj8LGg3Pcq8DvzYREtw3x31u=92 chartLine.CnBntmvyzW8zV2gYnjmjnCCTWkft5vAUMtwitzK9pump=85 pumpSwapTrade.79kGTphyW7RtUzSrDaZprmFUiADAbhuSav73UHY3gc7=84 chartLine.8rEbz9YpfJQV2ap153GFVj8LGg3Pcq8DvzYREtw3x31u=84 pumpSwapTrade.9askTPDEKmYBsiwwoUmPf3mBwXqkxj9yB5UNtmD7pump=80 chartLine.BYbbYQ6biqJmB7o8tw3otsz2BSZFMDuZPozm68CSpump=79 chartLine.79kGTphyW7RtUzSrDaZprmFUiADAbhuSav73UHY3gc7=79 advancedTrade.9PdHt2Do9UMgBBjwjeUAQuYorupbWVMGLvin86ycpump=79 chartLine.9askTPDEKmYBsiwwoUmPf3mBwXqkxj9yB5UNtmD7pump=73 chartLine.9PdHt2Do9UMgBBjwjeUAQuYorupbWVMGLvin86ycpump=72 pumpSwapTrade.rW2oa8ojhmRB7FxvNirNPBQ7FJnuV7QbJxc29Axpump=61 chartLine.92mLnXGzT89NE8fwvCoeazBMLPgaU63Y3HxdEgdD7VBt=60 pumpSwapTrade.92mLnXGzT89NE8fwvCoeazBMLPgaU63Y3HxdEgdD7VBt=60
-   sample: {"events":[{"mintId":"823J7GbbLg9CMc8cd4NEdd4vXe8VWPrYVazyph859sLf","devHoldingAmount":"3024182.619242","topTenHoldersOwnedAmount":"160561357.39499","numHolders":"827","snipersOwnedAmount":"0","bundlersOwnedAmount":"0"},{"mintId":"v26v7UraZ2x8ibahDiutqbFCrfJCqVzeQTGC2KL6MFm","devHoldingAmount":"0","
-=== cmd 78 @ 2026-10-21T17:57:02Z ===
-> set PF_DRY=true
-added PF_DRY=true
-> pfwatch-start
-[PM2] Starting /root/copybot/src/pfwatch.js in fork_mode (1 instance)
-[PM2] Done.
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1068330  │ 56s    │ 30   │ online    │ 0%       │ 95.9mb   │ root     │ disabled │
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
-│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1068366  │ 55s    │ 17   │ online    │ 0%       │ 89.1mb   │ root     │ disabled │
-│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1068652  │ 0s     │ 0    │ online    │ 0%       │ 21.4mb   │ root     │ disabled │
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1068294  │ 57s    │ 26   │ online    │ 0%       │ 95.8mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 7.2% | ram usage: 37.8% | enp1s0: ⇓ 0.014mb/s ⇑ 0.003mb/s | disk: ⇓ 0.113mb/s ⇑ 0.222mb/s
-[TAILING] Tailing last 25 lines for [pfwatch] process (change the value with --lines option)
-/root/.pm2/logs/pfwatch-error.log last 25 lines:
-/root/.pm2/logs/pfwatch-out.log last 25 lines:
-[2026-10-21 17:57:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
-[2026-10-21 17:57:03] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
 [2026-10-21 17:57:03] feed connected
 [2026-10-21 17:57:03] feed connected
 === cmd 79 @ 2026-10-21T18:04:08Z ===
@@ -398,3 +357,44 @@ unifiedCoinCreationEvent.processed:
 {"slot_index_id":"00045973997300065800000002","tx":"4LrqQAjR28xX942Nfssj1vcwDAFfdxWruoqY4Tx95UEsCa2dKLC64mniGe7XwJUYWs2VHizHjyh7k325PzDz6W97","mint":"BfDtZ79jV77FfGwVnAtGAUKxRiAKpm8Rs3ZdZ8Uipump","name":"grokbot","symbol":"sol","description":null,"metadata_uri":"https://ipfs.io/ipfs/QmcmyuALjx3ZsXrhU8L7o4ZKDpNCYWLMsGdjUDjeAg66eN","bonding_curve":"5KP88oBte1TiXovRgDrhXxWpPrHrYaLgU27KvxdkHeum","creator":"AWkpMPQ3uahR8BznTnmZozfjC2YBAipTbFDTvzQ9uDTa","created_timestamp":"2026-10-21T19:02:09+00:00","complete":false,"supply":1000000000000000,"show_name":true,"market_cap":"27.958993476234855545200372787","initialized":true,"is_banned":false,"program":"pump","platform":null,"virtual_sol_reserves":30000000000,"virtual_quote_reserves":30000000000,"virtual_token_reserves":1073000000000000,"real_sol_reserves":null,"real_quote_reserves":null,"real_token_reserves":793100000000000,"token_program":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","mayhem_state":"enabled","game_mode":null,"signer":"AWkpMPQ3uahR8BznTnmZozfjC2YBAipTbFDTvzQ9uDTa","quote_mint":"11111111111111111111111111111111","base_decimals":6,"quote_decimals":9,"derived_pool":"7fkMYENkC1APrsSCLBUD1fvPG3JjzStBhBWC7QBsPDFh","is_cashback_enabled":false,"quote_token_program":null,"market_cap_usd":null,"is_holder_reward":false,"transfer_fee_bps":0,"transfer_hook_program":"","depth":0}
 
 23 coins in 40s; fields: {"slot_index_id":23,"tx":23,"mint":23,"name":23,"symbol":23,"description":23,"metadata_uri":23,"bonding_curve":23,"creator":23,"created_timestamp":23,"complete":23,"supply":23,"show_name":23,"market_cap":23,"initialized":23,"is_banned":23,"program":23,"platform":23,"virtual_sol_reserves":23,"virtual_quote_reserves":23,"virtual_token_reserves":23,"real_sol_reserves":23,"real_quote_reserves":23,"real_token_reserves":23,"token_program":23,"mayhem_state":23,"game_mode":23,"signer":23,"quote_mint":23,"base_decimals":23,"quote_decimals":23,"derived_pool":23,"is_cashback_enabled":23,"quote_token_program":23,"market_cap_usd":23,"is_holder_reward":23,"transfer_fee_bps":23,"transfer_hook_program":23,"depth":23}
+=== cmd 89 @ 2026-10-21T19:24:02Z ===
+> set PF_GIFT_HOURS=1
+added PF_GIFT_HOURS=1
+> pfwatch-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
+[PM2] [pfwatch](4) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1090372  │ 17m    │ 40   │ online    │ 0%       │ 99.7mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1090409  │ 17m    │ 27   │ online    │ 0%       │ 101.5mb  │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1095556  │ 0s     │ 11   │ online    │ 0%       │ 21.4mb   │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1090336  │ 17m    │ 36   │ online    │ 0%       │ 106.2mb  │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 6.1% | ram usage: 47.6% | enp1s0: ⇓ 1.864mb/s ⇑ 0.032mb/s | disk: ⇓ 0mb/s ⇑ 0.021mb/s
+[2026-10-21 19:12:49] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 19:13:09] stats 7m: trades 175396 (418/s) | lookups 194 | profiles 192 | with X 14 | ALERTS 0 | queue 1978 | rechecking 70 | 429s 2 | dropped 0 | top scans 3 | apps none=132553,axiom=16965,pump=12337,fomo=5949,gmgn=3187
+[2026-10-21 19:13:15] 🎁 dev DgyL11 sent 2.5% of Cloverbrow to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
+[2026-10-21 19:14:09] stats 8m: trades 198381 (413/s) | lookups 254 | profiles 252 | with X 18 | ALERTS 0 | queue 2081 | rechecking 74 | 429s 2 | dropped 0 | top scans 3 | apps none=150116,axiom=18951,pump=13931,fomo=6644,gmgn=3659
+[2026-10-21 19:15:09] stats 9m: trades 221806 (411/s) | lookups 305 | profiles 302 | with X 25 | ALERTS 0 | queue 2186 | rechecking 77 | 429s 3 | dropped 0 | top scans 3 | apps none=167696,axiom=21325,pump=15485,fomo=7480,gmgn=4094
+[2026-10-21 19:16:09] stats 10m: trades 249025 (415/s) | lookups 305 | profiles 302 | with X 25 | ALERTS 0 | queue 2337 | rechecking 77 | 429s 3 | dropped 0 | top scans 3 | apps none=187835,axiom=24683,pump=17097,fomo=8359,gmgn=4734
+[2026-10-21 19:16:09] gift watcher: 281 dev wallets watched | 1563 txs | 1 gifts | 14 MB today (~0k credits)
+[2026-10-21 19:16:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
+[2026-10-21 19:17:01] 🎁 dev DLerot sent 2.5% of KRANE to AHmNWaNDcbbMFHzpZJJFS8qo4NXcdeTyzv9bByRPG4ke
+[2026-10-21 19:17:09] stats 11m: trades 273794 (415/s) | lookups 337 | profiles 334 | with X 28 | ALERTS 0 | queue 2464 | rechecking 78 | 429s 3 | dropped 0 | top scans 4 | apps none=206649,axiom=27100,pump=18612,fomo=9240,gmgn=5248
+[2026-10-21 19:18:09] stats 12m: trades 298829 (415/s) | lookups 388 | profiles 384 | with X 31 | ALERTS 0 | queue 2536 | rechecking 80 | 429s 4 | dropped 0 | top scans 4 | apps none=225504,axiom=29808,pump=20106,fomo=10141,gmgn=5739
+[2026-10-21 19:19:09] stats 13m: trades 326286 (418/s) | lookups 388 | profiles 384 | with X 31 | ALERTS 0 | queue 2659 | rechecking 80 | 429s 4 | dropped 0 | top scans 4 | apps none=247448,axiom=32107,pump=21509,fomo=11092,gmgn=6181
+[2026-10-21 19:19:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
+[2026-10-21 19:20:09] stats 14m: trades 350193 (417/s) | lookups 419 | profiles 415 | with X 34 | ALERTS 0 | queue 2764 | rechecking 81 | 429s 4 | dropped 0 | top scans 5 | apps none=265707,axiom=34483,pump=22980,fomo=11902,gmgn=6597
+[2026-10-21 19:20:29] 🎁 dev 9Pmt7F sent 3.0% of SEALBUY to 7UWcVKuoX5Yg61r48uihfeWyqywze8VyiQPtxorM4ZXM
+[2026-10-21 19:21:09] stats 15m: trades 376034 (418/s) | lookups 470 | profiles 464 | with X 41 | ALERTS 0 | queue 2818 | rechecking 83 | 429s 5 | dropped 0 | top scans 5 | apps none=284663,axiom=37901,pump=24584,fomo=12699,gmgn=6962
+[2026-10-21 19:21:09] gift watcher: 362 dev wallets watched | 2729 txs | 3 gifts | 29 MB today (~1k credits)
+[2026-10-21 19:21:58] 🎁 dev DgyL11 sent 2.9% of pvnrt to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
+[2026-10-21 19:22:09] stats 16m: trades 403278 (420/s) | lookups 470 | profiles 464 | with X 41 | ALERTS 0 | queue 2929 | rechecking 83 | 429s 5 | dropped 0 | top scans 5 | apps none=304653,axiom=41138,pump=26493,fomo=13585,gmgn=7451
+[2026-10-21 19:22:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
+[2026-10-21 19:23:09] stats 17m: trades 430767 (422/s) | lookups 502 | profiles 496 | with X 42 | ALERTS 0 | queue 3029 | rechecking 82 | 429s 5 | dropped 0 | top scans 6 | apps none=326099,axiom=43437,pump=28355,fomo=14521,gmgn=7788
+[2026-10-21 19:24:03] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-21 19:24:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 19:24:04] feed connected
