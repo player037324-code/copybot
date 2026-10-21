@@ -279,12 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:40:07] gift watcher: 637 dev wallets watched | 39979 txs | 14 gifts | 336 MB today (~7k credits)
-[2026-10-21 21:40:07] stats 80m: trades 1194451 (249/s) | lookups 2507 | profiles 2476 | with X 155 | ALERTS 0 | queue 4786 | rechecking 252 | 429s 21 | dropped 0 | top scans 27 | apps none=934219,axiom=97029,pump=76502,fomo=42968,gmgn=19094
-[2026-10-21 21:40:58] 🎁 dev B4Tdqe sent 1.3% of cicibonk to E4DxVgZbWG6QLqhi3AMmLwdLi32EZuAnhDx8KxbXcgiE
-[2026-10-21 21:41:07] stats 81m: trades 1210654 (249/s) | lookups 2567 | profiles 2536 | with X 157 | ALERTS 0 | queue 4789 | rechecking 254 | 429s 21 | dropped 0 | top scans 27 | apps none=947156,axiom=98483,pump=77409,fomo=43373,gmgn=19304
-[2026-10-21 21:41:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
-[2026-10-21 21:42:07] stats 82m: trades 1227183 (249/s) | lookups 2587 | profiles 2556 | with X 157 | ALERTS 0 | queue 4828 | rechecking 255 | 429s 21 | dropped 0 | top scans 28 | apps none=959998,axiom=100135,pump=78338,fomo=43843,gmgn=19652
 [2026-10-21 21:43:07] stats 83m: trades 1243412 (250/s) | lookups 2640 | profiles 2608 | with X 158 | ALERTS 0 | queue 4815 | rechecking 256 | 429s 22 | dropped 0 | top scans 28 | apps none=973453,axiom=101112,pump=79184,fomo=44223,gmgn=19950
 [2026-10-21 21:44:07] stats 84m: trades 1258306 (250/s) | lookups 2649 | profiles 2617 | with X 158 | ALERTS 0 | queue 4868 | rechecking 256 | 429s 22 | dropped 0 | top scans 28 | apps none=984762,axiom=102802,pump=80038,fomo=44663,gmgn=20226
 [2026-10-21 21:44:48] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
@@ -309,6 +303,12 @@
 [2026-10-21 21:54:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
 [2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.2% of ROBONOMICS to 2BEdHEQY2fJNUXyndKZWgJni7uPsLThiFpB1MJ7MEHBs
 [2026-10-21 21:54:49] 🎁 dev 7Y7bE5 sent 2.0% of ROBONOMICS to H1Lh1J8PWEqWBYTwqyvzYibRi3oPnvMPeP8Fw7LyjSub
+[2026-10-21 21:55:07] gift watcher: 639 dev wallets watched | 47605 txs | 20 gifts | 418 MB today (~8k credits)
+[2026-10-21 21:55:07] stats 95m: trades 1401284 (246/s) | lookups 2976 | profiles 2939 | with X 176 | ALERTS 0 | queue 5110 | rechecking 263 | 429s 25 | dropped 0 | top scans 32 | apps none=1096050,axiom=115302,pump=89565,fomo=49213,gmgn=22761
+[2026-10-21 21:55:25] 🎁 dev 3H4GRC sent 1.9% of ROBONOMICS to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-21 21:55:25] 🎁 dev 3H4GRC sent 2.0% of ROBONOMICS to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.7% of ROBONOMICS to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
+[2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.8% of ROBONOMICS to Cj7ZjeH5n1BNm2eSc8fowxVkBpaQghryUJzuB2iPyRHG
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
