@@ -1,44 +1,3 @@
-[2026-10-20 22:29:03.898] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-20 22:29:03.898] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-20 22:29:03.899] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-20 22:29:03.918] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-20 22:29:04.221] warm build time (median of 10): total 5.00ms = accounts 0.92 + compile/sign 2.70 + serialize 0.15
-[2026-10-20 22:29:04.222] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-20 22:29:04.222] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-20 22:29:04.242] feed pre (preprocessed/shreds) connected
-[2026-10-20 22:29:04.243] feed beta connected
-[2026-10-20 22:29:04.246] feed pre subscribed (1)
-[2026-10-20 22:29:04.265] feed mainnet connected
-=== cmd 67 @ 2026-10-20T22:31:02Z ===
-> feedrace 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue 120
-grpc connect failed: Cannot read properties of undefined (reading 'PROCESSED')
-grpc error: subscribe stream receive failed
-txs seen: helius 22, orbit 0, both 0, only-helius 22, only-orbit 0
-orbit sent nothing (IP not whitelisted? wrong endpoint?)
-=== cmd 68 @ 2026-10-20T22:34:07Z ===
-> feedrace 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue 120
-grpc subscribed to http://ny.rpc.orbitflare.com:10000
-grpc error: subscribe stream receive failed code GenericFailure
-txs seen: helius 12, orbit 0, both 0, only-helius 12, only-orbit 0
-orbit sent nothing (IP not whitelisted? wrong endpoint?)
-=== cmd 69 @ 2026-10-20T22:38:02Z ===
-> orbitcheck
-server ip: 108.61.155.146
-rpc getSlot:
-{"jsonrpc":"2.0","error":{"code":-32401,"message":"missing API key"}}
-
-ws upgrade:
-HTTP/1.1 401 Unauthorized
-Date: Tue, 20 Oct 2026 22:38:02 GMT
-Content-Type: application/json
-=== cmd 70 @ 2026-10-21T17:18:02Z ===
-> keyprefix
-HELIUS_API_KEY: 4374... (1 line(s) in .env)
-JUP_API_KEY: jup_... (1 line(s) in .env)
-NOZOMI_KEY: 1282... (2 line(s) in .env)
-ASTRALANE_KEY: jude... (2 line(s) in .env)
-TELEGRAM_BOT_TOKEN: ... (0 line(s) in .env)
-TELEGRAM_CHAT_ID: ... (0 line(s) in .env)
 === cmd 71 @ 2026-10-21T17:28:02Z ===
 > alerts-test
 telegram test sent
@@ -398,3 +357,44 @@ host metrics | cpu: 8.2% | ram usage: 37.3% | enp1s0: ⇓ 0.007mb/s ⇑ 0.003mb/
 [2026-10-21 18:12:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m | DRY RUN
 [2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:12:04] feed connected
+=== cmd 83 @ 2026-10-21T18:20:02Z ===
+> set PF_DRY=false
+set PF_DRY=false
+> pfwatch-start
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
+[PM2] [pfwatch](4) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1073346  │ 8m     │ 34   │ online    │ 0%       │ 92.3mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1073382  │ 8m     │ 21   │ online    │ 0%       │ 99.2mb   │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1076034  │ 0s     │ 4    │ online    │ 0%       │ 21.4mb   │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1073310  │ 8m     │ 30   │ online    │ 0%       │ 104.6mb  │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 3% | ram usage: 45% | enp1s0: ⇓ 0.545mb/s ⇑ 0.012mb/s | disk: ⇓ 0mb/s ⇑ 0.032mb/s
+[2026-10-21 17:59:08] stats 1m: trades 115 (2/s) | lookups 44 | profiles 7 | with X 0 | ALERTS 0 | queue 66 | rechecking 0 | 429s 4 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:00:08] stats 2m: trades 232 (2/s) | lookups 100 | profiles 26 | with X 1 | ALERTS 0 | queue 125 | rechecking 0 | 429s 7 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:01:08] stats 3m: trades 347 (2/s) | lookups 154 | profiles 42 | with X 1 | ALERTS 0 | queue 172 | rechecking 0 | 429s 9 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:02:08] stats 4m: trades 462 (2/s) | lookups 210 | profiles 63 | with X 2 | ALERTS 0 | queue 217 | rechecking 1 | 429s 11 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:03:08] stats 5m: trades 578 (2/s) | lookups 268 | profiles 75 | with X 2 | ALERTS 0 | queue 260 | rechecking 2 | 429s 13 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:04:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
+[2026-10-21 18:04:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
+[2026-10-21 18:04:12] feed connected
+[2026-10-21 18:05:08] stats 1m: trades 106 (2/s) | lookups 65 | profiles 19 | with X 0 | ALERTS 0 | queue 37 | rechecking 2 | 429s 3 | dropped 0 | DRY (no telegram)
+[2026-10-21 18:12:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m | DRY RUN
+[2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 18:12:04] feed connected
+[2026-10-21 18:13:03] stats 1m: trades 17066 (284/s) | lookups 30 | profiles 30 | with X 2 | ALERTS 0 | queue 317 | rechecking 5 | 429s 0 | dropped 0 | top scans 0 | apps none=13359,axiom=1755,pump=894,fomo=353,gmgn=320 | DRY (no telegram)
+[2026-10-21 18:13:12] top scan: 2001 profiles (first scan, seeding)
+[2026-10-21 18:14:02] 🆕 bankcrouptrader @mas_habib92 followers=277 wallet=CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy
+[2026-10-21 18:14:03] stats 2m: trades 30665 (256/s) | lookups 80 | profiles 80 | with X 7 | ALERTS 1 | queue 505 | rechecking 6 | 429s 0 | dropped 0 | top scans 1 | apps none=23793,axiom=3097,pump=1702,fomo=786,gmgn=588 | DRY (no telegram)
+[2026-10-21 18:15:03] stats 3m: trades 43823 (243/s) | lookups 140 | profiles 140 | with X 16 | ALERTS 1 | queue 651 | rechecking 8 | 429s 0 | dropped 0 | top scans 1 | apps none=33934,axiom=4283,pump=2481,fomo=1180,gmgn=889 | DRY (no telegram)
+[2026-10-21 18:16:03] stats 4m: trades 56506 (235/s) | lookups 197 | profiles 196 | with X 27 | ALERTS 1 | queue 750 | rechecking 12 | 429s 1 | dropped 0 | top scans 1 | apps none=44102,axiom=5223,pump=3200,fomo=1567,gmgn=1117 | DRY (no telegram)
+[2026-10-21 18:17:03] stats 5m: trades 68937 (230/s) | lookups 202 | profiles 201 | with X 27 | ALERTS 1 | queue 903 | rechecking 13 | 429s 1 | dropped 0 | top scans 1 | apps none=53845,axiom=6308,pump=3971,fomo=1887,gmgn=1334 | DRY (no telegram)
+[2026-10-21 18:18:03] stats 6m: trades 80401 (223/s) | lookups 258 | profiles 256 | with X 31 | ALERTS 1 | queue 1007 | rechecking 15 | 429s 2 | dropped 0 | top scans 1 | apps none=62493,axiom=7468,pump=4744,fomo=2197,gmgn=1644 | DRY (no telegram)
+[2026-10-21 18:19:03] stats 7m: trades 91527 (218/s) | lookups 265 | profiles 263 | with X 31 | ALERTS 1 | queue 1106 | rechecking 15 | 429s 2 | dropped 0 | top scans 1 | apps none=71243,axiom=8434,pump=5424,fomo=2527,gmgn=1793 | DRY (no telegram)
+[2026-10-21 18:20:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
+[2026-10-21 18:20:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 18:20:04] feed connected
