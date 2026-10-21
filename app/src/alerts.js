@@ -46,7 +46,9 @@ const esc = (x) => String(x).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 async function alert(kind, text, extra = {}) {
   log(`🚨 ${kind}: ${text}`);
   fs.appendFileSync(FEED, JSON.stringify({ time: new Date().toISOString(), kind, text, ...extra }) + '\n');
-  if (!EMOJI[kind] && !TG_ALL) return; // older-pool noise stays in the log only
+  // Telegram only gets new pairings (James asked: no other stonk alerts). Everything else stays in the log.
+  const TG_KINDS = env('ALERT_TG_KINDS', 'NEW PAIRING LIVE').split(',').map((x) => x.trim());
+  if (!TG_KINDS.includes(kind) && !TG_ALL) return;
   const mint = extra.quote || extra.mint;
   const links = [
     mint ? `<a href="https://solscan.io/token/${mint}">Solscan</a>` : '',
@@ -56,7 +58,7 @@ async function alert(kind, text, extra = {}) {
   const ca = mint ? `\nCA: <code>${mint}</code>` : '';
   await tg(`${EMOJI[kind] || '•'} <b>${esc(kind)}</b>\n${esc(text)}${ca}${links ? '\n' + links : ''}`);
 }
-setTimeout(() => tg(`🟢 <b>Stonk alerts online</b>\nWatching creator ${esc(CREATORS.map((c) => c.slice(0, 6)).join(', '))} for new index tokens + every StonkFun launch for new pairings.`), 15000);
+// no startup message: every restart/redeploy was pinging Telegram
 
 // seed: every pool token that already had StonkFun launches counts as known, so only truly new pairings alert
 async function seed() {

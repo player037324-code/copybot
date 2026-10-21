@@ -10,7 +10,7 @@ import fs from 'fs';
 import WebSocket from 'ws';
 
 const env = (k, d) => (process.env[k] === undefined || process.env[k] === '' ? d : process.env[k].trim());
-const NEW_HOURS = Number(env('PF_NEW_HOURS', '48'));
+const NEW_HOURS = Number(env('PF_NEW_HOURS', '24'));
 const QPS = Number(env('PF_QPS', '1')); // pump.fun's Cloudflare limits bursts hard; stay slow
 const APP_ONLY = env('PF_APP_ONLY', 'true') === 'true'; // only wallets trading inside pump.fun's own app (real pump users, not bots/terminals)
 const TOP = Number(env('PF_TOP', '2000')); // also scan the top N profiles by followers for new entries
@@ -18,7 +18,25 @@ const TOP_MIN = Number(env('PF_TOP_MIN', '15'));
 const RECHECK_MIN = Number(env('PF_RECHECK_MIN', '30'));
 const SUBJECT = env('PF_SUBJECT', 'unifiedTradeEvent.processed.>');
 const DRY = env('PF_DRY', 'false') === 'true'; // true = log alerts but don't send Telegram
-const MIN_FOLLOWERS = Number(env('PF_MIN_FOLLOWERS', '0'));
+const MIN_X = Number(env('PF_MIN_X_FOLLOWERS', '2000')); // X followers (not pump.fun followers)
+// X follower count via free public mirrors; cached so each handle is fetched once per few hours
+const xCache = new Map();
+async function xInfo(handle) {
+  const k = handle.toLowerCase(); const c = xCache.get(k);
+  if (c && Date.now() - c.at < 6 * 3600e3) return c;
+  for (const u of [`https://api.vxtwitter.com/${handle}`, `https://api.fxtwitter.com/${handle}`]) {
+    try {
+      const r = await fetch(u, { headers: { 'user-agent': 'pfwatch/1.0' }, signal: AbortSignal.timeout(8000) });
+      if (!r.ok) continue;
+      const j = await r.json(); const user = j.user || j;
+      const followers = Number(user.followers ?? user.followers_count);
+      if (!isFinite(followers)) continue;
+      const v = { followers, verified: !!(user.verification?.verified ?? user.verified ?? user.is_blue_verified), name: user.name, at: Date.now() };
+      xCache.set(k, v); return v;
+    } catch {}
+  }
+  return null;
+}
 const TG_TOKEN = env('TELEGRAM_BOT_TOKEN', ''); const TG_CHAT = env('PF_TELEGRAM_CHAT_ID', env('TELEGRAM_CHAT_ID', ''));
 const HELIUS = env('HELIUS_API_KEY', '');
 const API = 'https://frontend-api-v3.pump.fun/users/';
@@ -80,7 +98,7 @@ async function handle(w, trade, isRecheck = false) {
   const recent = fresh_(p);
   if (p.x_username) {
     stats.withX++;
-    if (recent && (p.followers || 0) >= MIN_FOLLOWERS && !state.alerted[w]) { stats.recentX++; delete state.watch[w]; await alert(w, p, trade, isRecheck); }
+    if (recent && !state.alerted[w]) { stats.recentX++; delete state.watch[w]; if (await bigX(w, p)) await alert(w, p, trade, isRecheck); }
     else delete state.watch[w];
     return;
   }
@@ -102,11 +120,19 @@ async function send(text, photo) {
   } catch (e) { warn('telegram:', e.message); }
 }
 
+// gate: linked X must have > MIN_X followers. Small accounts are logged and never rechecked.
+async function bigX(w, p) {
+  const x = await xInfo(p.x_username);
+  if (!x) { warn(`couldn't read X followers for @${p.x_username}, skipping`); return false; }
+  p._x = x;
+  if (x.followers < MIN_X) { state.alerted[w] = -x.followers; log(`skip ${p.username} @${p.x_username}: ${x.followers} X followers`); return false; }
+  return true;
+}
 async function alert(w, p, trade, viaRecheck, source = 'trade') {
   state.alerted[w] = Date.now(); stats.alerts++; save();
-  const rec = { time: new Date().toISOString(), wallet: w, username: p.username, x: p.x_username, followers: p.followers, following: p.following, setAt: p.last_username_update_timestamp, evm: p.canonical_evm_wallet, bio: p.bio, trade, viaRecheck, source };
+  const rec = { time: new Date().toISOString(), wallet: w, username: p.username, x: p.x_username, followers: p.followers, xFollowers: p._x?.followers, xVerified: p._x?.verified, following: p.following, setAt: p.last_username_update_timestamp, evm: p.canonical_evm_wallet, bio: p.bio, trade, viaRecheck, source };
   fs.appendFileSync(FEED, JSON.stringify(rec) + '\n');
-  log(`🆕 ${p.username} @${p.x_username} followers=${p.followers} wallet=${w}${viaRecheck ? ' (linked X after first trade)' : ''}`);
+  log(`🆕 ${p.username} @${p.x_username} X followers=${p._x?.followers} wallet=${w}${viaRecheck ? ' (linked X after first trade)' : ''}`);
   const t = trade || {};
   if (t.mint && !t.symbol && HELIUS) {
     try { const j = await (await fetch(`https://mainnet.helius-rpc.com/?api-key=${HELIUS}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'getAsset', params: { id: t.mint } }), signal: AbortSignal.timeout(5000) })).json(); t.symbol = j.result?.content?.metadata?.symbol; } catch {}
@@ -115,7 +141,7 @@ async function alert(w, p, trade, viaRecheck, source = 'trade') {
   const head = [
     `🆕 <b>NEW PUMP PROFILE</b>${viaRecheck ? ' (just linked X)' : source === 'top' ? ' (new on top followers list)' : ''}`,
     `<b>${esc(p.username)}</b> · <a href="https://x.com/${esc(p.x_username)}">@${esc(p.x_username)}</a>`,
-    `Followers: ${(p.followers || 0).toLocaleString('en-US')} · Following: ${(p.following || 0).toLocaleString('en-US')}`,
+    `X followers: ${p._x ? p._x.followers.toLocaleString('en-US') : '?'}${p._x?.verified ? ' ✅ verified' : ''} · pump.fun followers: ${(p.followers || 0).toLocaleString('en-US')}`,
     `Profile set: ${p.last_username_update_timestamp ? ago(Number(p.last_username_update_timestamp)) : '?'}`,
     tradeLine,
     p.bio ? `Bio: ${esc(String(p.bio).slice(0, 160))}` : '',
@@ -167,7 +193,7 @@ async function topScan() {
         const w = p.address; if (!w) continue; seenNow[w] = 1;
         if (first || state.top[w]) continue;
         fresh++;
-        if (p.x_username && fresh_(p) && !state.alerted[w] && !p.is_banned) await alert(w, p, null, false, 'top');
+        if (p.x_username && fresh_(p) && !state.alerted[w] && !p.is_banned && (await bigX(w, p))) await alert(w, p, null, false, 'top');
       }
     }
     state.top = { ...state.top, ...seenNow }; stats.topScans++; save();
@@ -242,6 +268,5 @@ setInterval(() => {
   fs.writeFileSync('logs/pfwatch-stats.json', JSON.stringify({ ...stats, queue: queue.length, watch: Object.keys(state.watch).length, dry: DRY, updated: new Date().toISOString() }));
 }, 60000);
 
-log(`pfwatch: alert when a trader has linked X and set their profile within ${NEW_HOURS}h | lookups ${QPS}/s | ${APP_ONLY ? 'pump app traders only' : 'all traders'} | top ${TOP} scan every ${TOP_MIN}m | recheck every ${RECHECK_MIN}m${DRY ? ' | DRY RUN' : ''}`);
-setTimeout(() => send(`🟢 <b>Pump profile watcher online</b>\nAlerting new pump.fun profiles with a linked X (set up in the last ${NEW_HOURS}h).`), 5000);
+log(`pfwatch: alert when a new pump.fun profile (set up within ${NEW_HOURS}h) links an X with ${MIN_X}+ followers | lookups ${QPS}/s | ${APP_ONLY ? 'pump app traders only' : 'all traders'} | top ${TOP} scan every ${TOP_MIN}m | recheck every ${RECHECK_MIN}m${DRY ? ' | DRY RUN' : ''}`);
 connect();
