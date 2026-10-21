@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:31:07] stats 71m: trades 1058258 (248/s) | lookups 2260 | profiles 2234 | with X 143 | ALERTS 0 | queue 4501 | rechecking 243 | 429s 18 | dropped 0 | top scans 24 | apps none=826697,axiom=84930,pump=68142,fomo=39195,gmgn=17046
-[2026-10-21 21:32:07] 🎁 dev HgAhL3 sent 1.3% of Nutless to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
-[2026-10-21 21:32:07] stats 72m: trades 1073144 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4502 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=838797,axiom=85879,pump=69139,fomo=39569,gmgn=17256
-[2026-10-21 21:33:07] stats 73m: trades 1088269 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4556 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=850603,axiom=87336,pump=70089,fomo=39950,gmgn=17466
 [2026-10-21 21:33:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 21:34:07] stats 74m: trades 1107198 (249/s) | lookups 2343 | profiles 2315 | with X 144 | ALERTS 0 | queue 4604 | rechecking 246 | 429s 19 | dropped 0 | top scans 25 | apps none=866331,axiom=88653,pump=71012,fomo=40445,gmgn=17651
 [2026-10-21 21:35:07] 🎁 dev HgAhL3 sent 1.3% of 7URbDU to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
@@ -309,6 +305,10 @@
 [2026-10-21 21:47:07] stats 87m: trades 1297733 (249/s) | lookups 2782 | profiles 2749 | with X 167 | ALERTS 0 | queue 4920 | rechecking 258 | 429s 23 | dropped 0 | top scans 29 | apps none=1015727,axiom=105929,pump=82673,fomo=45958,gmgn=20955
 [2026-10-21 21:48:07] stats 88m: trades 1310365 (248/s) | lookups 2782 | profiles 2749 | with X 167 | ALERTS 0 | queue 4960 | rechecking 258 | 429s 23 | dropped 0 | top scans 29 | apps none=1025516,axiom=106912,pump=83549,fomo=46428,gmgn=21208
 [2026-10-21 21:48:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 21:49:07] stats 89m: trades 1321546 (247/s) | lookups 2812 | profiles 2779 | with X 167 | ALERTS 0 | queue 5001 | rechecking 258 | 429s 23 | dropped 0 | top scans 30 | apps none=1033716,axiom=108131,pump=84435,fomo=46846,gmgn=21432
+[2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-21 21:49:38] 🎁 dev 3H4GRC sent 1.6% of 2VuJzk to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-21 21:49:45] skip Milisof @NSFWJohnPORC: 44 X followers
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
