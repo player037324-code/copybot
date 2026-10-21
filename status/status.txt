@@ -1,6 +1,6 @@
-updated: 2026-10-21T18:03:02Z
-deployed: b5d9f98984f2a278a7d6e47c9ca5909feea90272
-pm2: stopped uptime=4166m restarts=14
+updated: 2026-10-21T18:04:32Z
+deployed: c69ca3ead6c690cfad75b34e9750d9e8397066ad
+pm2: stopped uptime=4167m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -91,8 +91,8 @@ alerts pm2: online
 {"time":"2026-10-21T16:06:23.282Z","kind":"first StonkFun launch on older pool","text":"$META (Meta Platforms - Backpack Securities) METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd is now live on StonkFun. First launch: $ZUCK xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED. Pool token is 125.3d old.","quote":"METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd","firstMint":"xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED","firstTicker":"ZUCK","isNew":false}
 
 --- pfwatch ---
-pfwatch pm2: online restarts=1
-{"trades":462,"lookups":210,"users":63,"withX":2,"recentX":0,"alerts":0,"r429":11,"err":0,"dropped":0,"since":1792605488815,"queue":217,"watch":1,"dry":true,"updated":"2026-10-21T18:02:08.815Z"}
+pfwatch pm2: online restarts=2
+{"trades":578,"lookups":268,"users":75,"withX":2,"recentX":0,"alerts":0,"r429":13,"err":0,"dropped":0,"since":1792605488815,"queue":260,"watch":2,"dry":true,"updated":"2026-10-21T18:03:08.816Z"}
 
 --- positions ---
 {
