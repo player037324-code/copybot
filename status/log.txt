@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:35:07] stats 15m: trades 243672 (271/s) | lookups 520 | profiles 514 | with X 46 | ALERTS 0 | queue 2105 | rechecking 177 | 429s 4 | dropped 0 | top scans 5 | apps none=188272,axiom=20751,pump=15592,fomo=9966,gmgn=3999
-[2026-10-21 20:35:07] gift watcher: 230 dev wallets watched | 3100 txs | 2 gifts | 39 MB today (~1k credits)
 [2026-10-21 20:36:07] stats 16m: trades 260055 (271/s) | lookups 520 | profiles 514 | with X 46 | ALERTS 0 | queue 2221 | rechecking 177 | 429s 4 | dropped 0 | top scans 5 | apps none=200502,axiom=22173,pump=16824,fomo=10737,gmgn=4329
 [2026-10-21 20:36:36] 🎁 dev 3SoYUq sent 2.0% of PIMPCHI to Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
 [2026-10-21 20:36:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-21 20:50:07] gift watcher: 382 dev wallets watched | 13322 txs | 6 gifts | 120 MB today (~2k credits)
 [2026-10-21 20:50:07] stats 30m: trades 471974 (262/s) | lookups 938 | profiles 925 | with X 72 | ALERTS 0 | queue 2990 | rechecking 199 | 429s 8 | dropped 0 | top scans 10 | apps none=367302,axiom=38768,pump=29972,fomo=18702,gmgn=7433
 [2026-10-21 20:50:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 20:51:07] stats 31m: trades 485585 (261/s) | lookups 958 | profiles 945 | with X 74 | ALERTS 0 | queue 3040 | rechecking 202 | 429s 8 | dropped 0 | top scans 11 | apps none=377722,axiom=40053,pump=30853,fomo=19207,gmgn=7631
+[2026-10-21 20:52:03] skip creatrvertt @shotbyvertt: 487 X followers
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
