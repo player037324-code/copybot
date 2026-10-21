@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:38:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
-[2026-10-21 18:38:09] feed connected
 [2026-10-21 18:39:08] stats 1m: trades 29991 (500/s) | lookups 30 | profiles 30 | with X 3 | ALERTS 0 | queue 467 | rechecking 57 | 429s 0 | dropped 0 | top scans 0 | apps none=25295,axiom=1605,pump=1429,fomo=898,gmgn=360
 [2026-10-21 18:39:18] top scan: 2001 profiles, 0 new to the list
 [2026-10-21 18:40:08] stats 2m: trades 61009 (508/s) | lookups 80 | profiles 80 | with X 8 | ALERTS 0 | queue 800 | rechecking 60 | 429s 0 | dropped 0 | top scans 1 | apps none=49367,axiom=4702,pump=3034,fomo=1976,gmgn=1003
@@ -309,6 +307,8 @@
 [2026-10-21 18:55:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 89s, 0 new to the list
 [2026-10-21 18:56:09] stats 5m: trades 164990 (550/s) | lookups 116 | profiles 114 | with X 7 | ALERTS 0 | queue 1632 | rechecking 64 | 429s 2 | dropped 0 | top scans 2 | apps none=120290,axiom=23083,pump=8978,fomo=4759,gmgn=3553
 [2026-10-21 18:57:09] stats 6m: trades 197915 (550/s) | lookups 168 | profiles 165 | with X 9 | ALERTS 0 | queue 1782 | rechecking 65 | 429s 3 | dropped 0 | top scans 2 | apps none=144905,axiom=27053,pump=10960,fomo=5848,gmgn=4094
+[2026-10-21 18:58:09] stats 7m: trades 228823 (545/s) | lookups 168 | profiles 165 | with X 9 | ALERTS 0 | queue 1970 | rechecking 65 | 429s 3 | dropped 0 | top scans 2 | apps none=169016,axiom=29853,pump=12829,fomo=6902,gmgn=4498
+[2026-10-21 18:58:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 89s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
