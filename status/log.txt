@@ -208,20 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:45:07.914] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 18:45:09.938] warm build time (median of 10): total 31.94ms = accounts 11.74 + compile/sign 15.68 + serialize 0.22
-[2026-10-21 18:45:09.938] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 18:45:09.939] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 18:45:10.097] feed beta connected
-[2026-10-21 18:45:10.162] feed pre (preprocessed/shreds) connected
-[2026-10-21 18:45:10.168] feed mainnet connected
-[2026-10-21 18:45:10.178] feed pre subscribed (1)
-[2026-10-21 18:50:09.997] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 18:51:06.711] === sniper starting ===
-[2026-10-21 18:51:06.716] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 18:51:06.717] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 18:51:06.717] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 18:51:06.717] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
 [2026-10-21 18:51:06.759] all targets already done for this pool. Clear with snipe-reset.
 [2026-10-21 18:51:08.399] warm build time (median of 10): total 24.10ms = accounts 7.97 + compile/sign 15.95 + serialize 0.20
 [2026-10-21 18:51:08.406] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
@@ -248,12 +234,25 @@
 [2026-10-21 19:00:11.565] feed pre (preprocessed/shreds) connected
 [2026-10-21 19:00:11.579] feed pre subscribed (1)
 [2026-10-21 19:00:11.595] feed mainnet connected
+[2026-10-21 19:05:11.387] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 19:06:06.867] === sniper starting ===
+[2026-10-21 19:06:06.873] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 19:06:06.874] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-21 19:06:06.874] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-21 19:06:06.874] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-21 19:06:06.923] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 19:06:08.603] warm build time (median of 10): total 20.28ms = accounts 4.97 + compile/sign 12.97 + serialize 0.24
+[2026-10-21 19:06:08.603] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 19:06:08.603] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 19:06:08.797] feed beta connected
+[2026-10-21 19:06:08.809] feed pre (preprocessed/shreds) connected
+[2026-10-21 19:06:08.817] feed mainnet connected
+[2026-10-21 19:06:08.834] feed pre subscribed (1)
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-20 22:30:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 22:34:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:17:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:19:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,16 +272,13 @@
 [2026-10-21 18:45:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 18:51:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 19:00:12] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 19:06:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:46:10] stats 1m: trades 26638 (444/s) | lookups 30 | profiles 30 | with X 3 | ALERTS 0 | queue 414 | rechecking 65 | 429s 0 | dropped 0 | top scans 0 | apps none=21572,axiom=2169,pump=1309,fomo=733,gmgn=374
-[2026-10-21 18:46:19] top scan: 2001 profiles, 0 new to the list
-[2026-10-21 18:47:10] stats 2m: trades 56953 (475/s) | lookups 80 | profiles 80 | with X 9 | ALERTS 0 | queue 735 | rechecking 64 | 429s 0 | dropped 0 | top scans 1 | apps none=46394,axiom=4202,pump=3014,fomo=1535,gmgn=781
-[2026-10-21 18:48:10] stats 3m: trades 83186 (462/s) | lookups 140 | profiles 140 | with X 16 | ALERTS 0 | queue 968 | rechecking 65 | 429s 0 | dropped 0 | top scans 1 | apps none=67145,axiom=6475,pump=4620,fomo=2258,padre=1105
 [2026-10-21 18:49:10] stats 4m: trades 111383 (464/s) | lookups 190 | profiles 189 | with X 19 | ALERTS 0 | queue 1157 | rechecking 65 | 429s 1 | dropped 0 | top scans 1 | apps none=90209,axiom=8204,pump=6269,fomo=3037,padre=1508
 [2026-10-21 18:50:10] stats 5m: trades 139233 (464/s) | lookups 202 | profiles 201 | with X 20 | ALERTS 0 | queue 1383 | rechecking 65 | 429s 1 | dropped 0 | top scans 1 | apps none=112186,axiom=10685,pump=7817,fomo=4045,gmgn=1879
 [2026-10-21 18:51:09] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
@@ -309,6 +305,10 @@
 [2026-10-21 19:03:11] stats 3m: trades 92032 (511/s) | lookups 83 | profiles 81 | with X 3 | ALERTS 0 | queue 1213 | rechecking 62 | 429s 2 | dropped 0 | top scans 1 | apps none=62563,axiom=16298,pump=5134,fomo=2857,gmgn=2175
 [2026-10-21 19:04:11] stats 4m: trades 117261 (489/s) | lookups 83 | profiles 81 | with X 3 | ALERTS 0 | queue 1458 | rechecking 62 | 429s 2 | dropped 0 | top scans 1 | apps none=81990,axiom=18820,pump=6609,fomo=3791,gmgn=2558
 [2026-10-21 19:04:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 86s, 0 new to the list
+[2026-10-21 19:05:11] stats 5m: trades 143268 (478/s) | lookups 116 | profiles 114 | with X 4 | ALERTS 0 | queue 1661 | rechecking 63 | 429s 2 | dropped 0 | top scans 2 | apps none=101276,axiom=22033,pump=8329,fomo=4657,gmgn=2948
+[2026-10-21 19:06:09] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-21 19:06:10] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 19:06:10] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
