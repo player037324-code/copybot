@@ -279,12 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:27:03] stats 3m: trades 78210 (434/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1151 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=59063,axiom=8611,pump=5012,fomo=2699,padre=1171
-[2026-10-21 19:28:03] stats 4m: trades 105758 (441/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1377 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=81243,axiom=10698,pump=6495,fomo=3562,padre=1562
-[2026-10-21 19:28:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
-[2026-10-21 19:29:03] gift watcher: 132 dev wallets watched | 1460 txs | 0 gifts | 3 MB today (~0k credits)
-[2026-10-21 19:29:03] stats 5m: trades 138596 (462/s) | lookups 109 | profiles 107 | with X 11 | ALERTS 0 | queue 1582 | rechecking 88 | 429s 2 | dropped 0 | top scans 2 | apps none=107588,axiom=13338,pump=8115,fomo=4576,gmgn=2108
-[2026-10-21 19:30:03] stats 6m: trades 167760 (466/s) | lookups 166 | profiles 163 | with X 15 | ALERTS 0 | queue 1730 | rechecking 91 | 429s 3 | dropped 0 | top scans 2 | apps none=130201,axiom=16028,pump=9816,fomo=5643,gmgn=2577
 [2026-10-21 19:31:03] stats 7m: trades 196899 (469/s) | lookups 166 | profiles 163 | with X 15 | ALERTS 0 | queue 1929 | rechecking 91 | 429s 3 | dropped 0 | top scans 2 | apps none=153233,axiom=17917,pump=11603,fomo=7076,gmgn=3050
 [2026-10-21 19:31:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
 [2026-10-21 19:32:03] stats 8m: trades 226621 (472/s) | lookups 191 | profiles 188 | with X 15 | ALERTS 0 | queue 2088 | rechecking 92 | 429s 3 | dropped 0 | top scans 3 | apps none=176864,axiom=20184,pump=13397,fomo=8212,gmgn=3407
@@ -309,6 +303,12 @@
 [2026-10-21 19:42:30] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to G53uJQrFyWi55eLqEHMfYzBmYUPKfRS5CSZo8nSQo67f
 [2026-10-21 19:43:01] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 9EqvpSDH8YShgkUS8bzNzJ87AWDLp3sGGyHV1GXZCEV3
 [2026-10-21 19:43:03] stats 19m: trades 499800 (438/s) | lookups 552 | profiles 546 | with X 45 | ALERTS 0 | queue 3134 | rechecking 106 | 429s 6 | dropped 0 | top scans 6 | apps none=383879,axiom=47512,pump=30565,fomo=18900,gmgn=8965
+[2026-10-21 19:43:20] 🎁 dev 28MJrJ sent 1.0% of BabyKimchi to 8ZMLeKMVAY5qyKW4tCCpDiD8D2GsYcEkXV497zLWDN5s
+[2026-10-21 19:43:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
+[2026-10-21 19:43:44] 🆕 Kimchi @kimchi1x X followers=183839 wallet=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX
+[2026-10-21 19:43:49] skip tagthedoge @TGruber83765: 1293 X followers
+[2026-10-21 19:44:03] gift watcher: 410 dev wallets watched | 10845 txs | 6 gifts | 42 MB today (~1k credits)
+[2026-10-21 19:44:03] stats 20m: trades 524233 (437/s) | lookups 578 | profiles 572 | with X 49 | ALERTS 1 | queue 3206 | rechecking 107 | 429s 6 | dropped 0 | top scans 7 | apps none=402862,axiom=49727,pump=31918,fomo=19958,gmgn=9389
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
