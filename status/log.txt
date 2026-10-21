@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:59:07] stats 99m: trades 1474692 (248/s) | lookups 3119 | profiles 3079 | with X 182 | ALERTS 0 | queue 5231 | rechecking 267 | 429s 26 | dropped 0 | top scans 33 | apps none=1156997,axiom=120470,pump=93092,fomo=51051,gmgn=23694
-[2026-10-21 21:59:29] 🎁 dev HgAhL3 sent 1.3% of CTO to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-21 21:59:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 22:00:07] gift watcher: 653 dev wallets watched | 49580 txs | 26 gifts | 435 MB today (~9k credits)
 [2026-10-21 22:00:07] stats 100m: trades 1493983 (249/s) | lookups 3138 | profiles 3097 | with X 182 | ALERTS 0 | queue 5263 | rechecking 267 | 429s 26 | dropped 0 | top scans 34 | apps none=1172558,axiom=122342,pump=93955,fomo=51433,gmgn=23983
@@ -309,6 +307,8 @@
 [2026-10-21 22:07:07] stats 107m: trades 1600008 (249/s) | lookups 3363 | profiles 3320 | with X 192 | ALERTS 0 | queue 5411 | rechecking 275 | 429s 28 | dropped 0 | top scans 36 | apps none=1256929,axiom=132077,pump=99781,fomo=54146,gmgn=25604
 [2026-10-21 22:08:07] stats 108m: trades 1612226 (249/s) | lookups 3416 | profiles 3372 | with X 194 | ALERTS 0 | queue 5404 | rechecking 278 | 429s 29 | dropped 0 | top scans 36 | apps none=1266105,axiom=133588,pump=100527,fomo=54501,gmgn=25787
 [2026-10-21 22:08:45] 🎁 dev HgAhL3 sent 1.8% of 4TZWYd to GBBbnSDGRRf8TPxu2Yxrh7qrxVHZnTte6AijGbigPHRv
+[2026-10-21 22:09:07] stats 109m: trades 1625780 (249/s) | lookups 3416 | profiles 3372 | with X 194 | ALERTS 0 | queue 5452 | rechecking 278 | 429s 29 | dropped 0 | top scans 36 | apps none=1276229,axiom=135384,pump=101259,fomo=54913,gmgn=26019
+[2026-10-21 22:09:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
