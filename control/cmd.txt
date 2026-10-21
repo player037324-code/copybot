@@ -1,7 +1,5 @@
-id: 9102
-set SNIPE_QUOTE_MINT=5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
-set SNIPE_TARGETS=MSTR:1
-set SNIPE_DRY_RUN=true
-snipe-reset
+id: 9103
+set SNIPE_TARGETS=MSTR:730
+set SNIPE_DRY_RUN=false
 snipe-start
-ladder-start
+recent 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT
