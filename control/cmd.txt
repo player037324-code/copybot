@@ -1,2 +1,2 @@
-id: 70
-keyprefix
+id: 71
+alerts-test
