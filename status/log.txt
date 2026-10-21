@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:08:08] stats 46m: trades 1502828 (544/s) | lookups 1344 | profiles 1322 | with X 79 | ALERTS 0 | queue 5206 | rechecking 304 | 429s 14 | dropped 0 | top scans 15 | apps none=1087660,axiom=191510,pump=92390,fomo=66604,gmgn=31172
-[2026-10-21 23:08:22] 🎁 dev 3H4GRC sent 1.9% of CYBR to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
-[2026-10-21 23:08:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-21 23:09:08] stats 47m: trades 1540664 (546/s) | lookups 1374 | profiles 1351 | with X 80 | ALERTS 0 | queue 5256 | rechecking 304 | 429s 14 | dropped 0 | top scans 16 | apps none=1114930,axiom=196380,pump=94350,fomo=68923,gmgn=31842
 [2026-10-21 23:10:08] stats 48m: trades 1579245 (548/s) | lookups 1427 | profiles 1403 | with X 86 | ALERTS 0 | queue 5286 | rechecking 305 | 429s 15 | dropped 0 | top scans 16 | apps none=1144019,axiom=200545,pump=96523,fomo=70643,gmgn=32397
 [2026-10-21 23:10:15] 🎁 dev 25jZ7E sent 1.1% of CC to 329eSGppiXXDYjuM1YEjjTwNbKfvtT4ofJ3xYzaA57e2
 [2026-10-21 23:11:08] stats 49m: trades 1622917 (552/s) | lookups 1427 | profiles 1403 | with X 86 | ALERTS 0 | queue 5349 | rechecking 305 | 429s 15 | dropped 0 | top scans 16 | apps none=1179090,axiom=204299,pump=98600,fomo=72146,gmgn=32918
@@ -309,6 +305,10 @@
 [2026-10-21 23:20:08] stats 58m: trades 1947219 (560/s) | lookups 1674 | profiles 1643 | with X 99 | ALERTS 0 | queue 5781 | rechecking 310 | 429s 18 | dropped 0 | top scans 19 | apps none=1427259,axiom=240190,pump=116708,fomo=84006,gmgn=37816
 [2026-10-21 23:20:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:21:08] stats 59m: trades 1978667 (559/s) | lookups 1704 | profiles 1673 | with X 102 | ALERTS 0 | queue 5817 | rechecking 311 | 429s 18 | dropped 0 | top scans 20 | apps none=1451342,axiom=243182,pump=118641,fomo=85465,gmgn=38324
+[2026-10-21 23:22:08] gift watcher: 911 dev wallets watched | 31424 txs | 32 gifts | 224 MB today (~4k credits)
+[2026-10-21 23:22:08] stats 60m: trades 2009733 (558/s) | lookups 1757 | profiles 1725 | with X 108 | ALERTS 0 | queue 5831 | rechecking 314 | 429s 19 | dropped 0 | top scans 20 | apps none=1475025,axiom=246294,pump=120475,fomo=86725,gmgn=38967
+[2026-10-21 23:22:28] 🎁 dev BAoJmp sent 3.7% of CT to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-21 23:22:28] 🎁 dev BAoJmp sent 3.1% of CT to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
