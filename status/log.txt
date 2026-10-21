@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:21:07] stats 121m: trades 1798478 (248/s) | lookups 3803 | profiles 3755 | with X 217 | ALERTS 0 | queue 5705 | rechecking 286 | 429s 32 | dropped 0 | top scans 40 | apps none=1406232,axiom=154867,pump=111934,fomo=60332,gmgn=29456
-[2026-10-21 22:21:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
 [2026-10-21 22:22:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-21 22:22:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 22:22:08] feed connected
@@ -309,6 +307,8 @@
 [2026-10-21 22:35:08] stats 13m: trades 431501 (553/s) | lookups 380 | profiles 374 | with X 25 | ALERTS 0 | queue 2730 | rechecking 290 | 429s 4 | dropped 0 | top scans 4 | apps none=299383,axiom=68052,pump=26403,fomo=17231,gmgn=9903
 [2026-10-21 22:35:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:36:08] stats 14m: trades 467724 (557/s) | lookups 410 | profiles 404 | with X 29 | ALERTS 0 | queue 2878 | rechecking 289 | 429s 4 | dropped 0 | top scans 5 | apps none=323182,axiom=74079,pump=28538,fomo=19434,gmgn=10980
+[2026-10-21 22:37:08] gift watcher: 319 dev wallets watched | 5274 txs | 3 gifts | 57 MB today (~1k credits)
+[2026-10-21 22:37:08] stats 15m: trades 500394 (556/s) | lookups 463 | profiles 456 | with X 30 | ALERTS 0 | queue 2967 | rechecking 292 | 429s 5 | dropped 0 | top scans 5 | apps none=343953,axiom=79336,pump=30806,fomo=21903,gmgn=12059
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
