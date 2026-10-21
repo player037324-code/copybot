@@ -1,12 +1,3 @@
-SUBJECT constants in site code (8):
-  MAYHEM_STATE_SUBJECT = mayhemState
-  MAYHEM_TRADE_EVENT_SUBJECT = mayhemTradeEvent
-  MAYHEM_TRADE_EVENT_SUBJECT_PREFIX = mayhemTradeEvent
-  MAYHEM_TRIGGER_SUBJECT_PREFIX = mayhemTrigger
-  MULTICHAIN_TRADE_SUBJECT_PREFIX = multichain.trade
-  UNIFIED_COIN_CREATION_SUBJECT = unifiedCoinCreationEvent
-  UNIFIED_TRADE_LITE_SUBJECT_PREFIX = unifiedTradeEvent.lite
-  UNIFIED_TRADE_PROCESSED_SUBJECT = unifiedTradeEvent.processed
 
 user/profile event-ish names (12): userCreatedCoins, ensureUserEventsSDK, recordUserEvent, setUserEventsSDK, fetchUserCreatedCoins, useQueryUserCreatedCoins, xProfileWithLinkedSocial, CloseUserVolumeAccumulatorEvent, InitUserVolumeAccumulatorEvent, SyncUserVolumeAccumulatorEvent, useInfiniteQueryUserCreatedCoins, userCreatedCoinsInfinite
 
@@ -398,3 +389,12 @@ sniper: "all" target but wallet holds 0 of the pool token
 │ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 44   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
 └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
 host metrics | cpu: 27% | ram usage: 39.7% | enp1s0: ⇓ 1.582mb/s ⇑ 0.022mb/s | disk: ⇓ 5.835mb/s ⇑ 3.815mb/s
+=== cmd 90 @ 2026-10-21T22:24:02Z ===
+> xfind MustStopMurad 80
+search-ish paths in site code: 
+scanned 50, smallest so far 99798 pump followers
+scanned 1050, smallest so far 2379 pump followers
+scanned 2050, smallest so far 1021 pump followers
+FOUND Murad_786 x=@- pumpFollowers=831 setAt=2026-09-12T07:37:58.190Z wallet=6qRKSej5HTH5PLBi2cEwz8q6kSJu725RKiFnPWaQ4Vha
+scanned 3050, smallest so far 713 pump followers
+done, 1 match(es)

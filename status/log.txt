@@ -279,13 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:05:07] stats 105m: trades 1570565 (249/s) | lookups 3334 | profiles 3291 | with X 192 | ALERTS 0 | queue 5355 | rechecking 274 | 429s 28 | dropped 0 | top scans 35 | apps none=1233526,axiom=129158,pump=98211,fomo=53461,gmgn=25239
-[2026-10-21 22:06:07] stats 106m: trades 1585046 (249/s) | lookups 3334 | profiles 3291 | with X 192 | ALERTS 0 | queue 5386 | rechecking 274 | 429s 28 | dropped 0 | top scans 35 | apps none=1244957,axiom=130630,pump=99001,fomo=53810,gmgn=25408
-[2026-10-21 22:06:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
-[2026-10-21 22:07:07] stats 107m: trades 1600008 (249/s) | lookups 3363 | profiles 3320 | with X 192 | ALERTS 0 | queue 5411 | rechecking 275 | 429s 28 | dropped 0 | top scans 36 | apps none=1256929,axiom=132077,pump=99781,fomo=54146,gmgn=25604
-[2026-10-21 22:08:07] stats 108m: trades 1612226 (249/s) | lookups 3416 | profiles 3372 | with X 194 | ALERTS 0 | queue 5404 | rechecking 278 | 429s 29 | dropped 0 | top scans 36 | apps none=1266105,axiom=133588,pump=100527,fomo=54501,gmgn=25787
-[2026-10-21 22:08:45] 🎁 dev HgAhL3 sent 1.8% of 4TZWYd to GBBbnSDGRRf8TPxu2Yxrh7qrxVHZnTte6AijGbigPHRv
-[2026-10-21 22:09:07] stats 109m: trades 1625780 (249/s) | lookups 3416 | profiles 3372 | with X 194 | ALERTS 0 | queue 5452 | rechecking 278 | 429s 29 | dropped 0 | top scans 36 | apps none=1276229,axiom=135384,pump=101259,fomo=54913,gmgn=26019
 [2026-10-21 22:09:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:10:07] gift watcher: 648 dev wallets watched | 55311 txs | 40 gifts | 486 MB today (~10k credits)
 [2026-10-21 22:10:07] stats 110m: trades 1639583 (248/s) | lookups 3445 | profiles 3400 | with X 197 | ALERTS 0 | queue 5487 | rechecking 278 | 429s 29 | dropped 0 | top scans 37 | apps none=1286887,axiom=136892,pump=102031,fomo=55299,gmgn=26263
@@ -309,6 +302,13 @@
 [2026-10-21 22:22:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-21 22:22:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 22:22:08] feed connected
+[2026-10-21 22:23:08] stats 1m: trades 37102 (618/s) | lookups 30 | profiles 30 | with X 1 | ALERTS 0 | queue 590 | rechecking 286 | 429s 0 | dropped 0 | top scans 0 | apps none=25778,axiom=6747,pump=1892,gmgn=899,fomo=865
+[2026-10-21 22:23:17] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
+[2026-10-21 22:23:45] 🎁 dev 8RGCrd sent 1.4% of RAILED to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
+[2026-10-21 22:24:08] stats 2m: trades 72765 (606/s) | lookups 80 | profiles 80 | with X 4 | ALERTS 0 | queue 907 | rechecking 288 | 429s 0 | dropped 0 | top scans 1 | apps none=51300,axiom=12279,pump=3839,fomo=1785,gmgn=1756
+[2026-10-21 22:24:55] skip TheDogGod69 @Agent69420: 273 X followers
+[2026-10-21 22:25:08] stats 3m: trades 103208 (573/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1138 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=72064,axiom=17278,pump=5805,fomo=2796,gmgn=2560
+[2026-10-21 22:26:08] stats 4m: trades 138053 (575/s) | lookups 133 | profiles 132 | with X 12 | ALERTS 0 | queue 1374 | rechecking 289 | 429s 1 | dropped 0 | top scans 1 | apps none=96490,axiom=22806,pump=7818,fomo=3856,gmgn=3326
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
