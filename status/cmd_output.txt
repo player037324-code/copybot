@@ -1,60 +1,3 @@
-  1000XCryptoD x=CryptoDevinL f=96057 setAt=2026-08-01T04:49:57.477Z 5f1AoBaqeBZ3sQhNVQp7xYANb7ykj4xzYBh8eW5RYyFE
-  Nexybtw x=Nexybtw f=95644 setAt=2026-09-06T02:55:31.276Z 24L6uekgvsQRgT41DZRhahEAAVnkseTT7x4qyigC3HvH
-  cousin x=cousincrypt0 f=95092 setAt=2026-08-10T17:09:35.053Z 6mrqa4cDaqBCD9UrUiUyoK78e4AJ8XzRaF8uTbcuTVae
-  SoloFNF x=SoloFNF f=93132 setAt=2026-07-31T19:01:37.776Z GccvEcZqMrcNdp3CarCasGdN5dUfdQ4wZ6iQsk5myRzX
-  hashbergers x=Hashbergers f=92706 setAt=- DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj
-  goyim x=goyimpnl f=92348 setAt=- G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS
-  thedetective x=MemeRetire f=91180 setAt=- 6qudAN2kV8mtCcYJxb5QQ6Vr15itdHHdeVbYm99NKMhy
-  runitbackghost x=runitbackghost f=91685 setAt=2026-08-24T14:43:08.588Z ApRnQN2HkbCn7W2WWiT2FEKvuKJp9LugRyAE1a9Hdz1
-with X: 46; setAt range: 2026-07-22T16:57:05.575Z .. 2026-10-21T11:34:33.566Z
-=== cmd 82 @ 2026-10-21T18:12:02Z ===
-> pfwatch-start
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
-[PM2] [pfwatch](4) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1073346  │ 56s    │ 34   │ online    │ 0%       │ 89.4mb   │ root     │ disabled │
-│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
-│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1073382  │ 56s    │ 21   │ online    │ 0%       │ 89.0mb   │ root     │ disabled │
-│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1073715  │ 0s     │ 3    │ online    │ 0%       │ 16.6mb   │ root     │ disabled │
-│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1073310  │ 57s    │ 30   │ online    │ 0%       │ 94.8mb   │ root     │ disabled │
-└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
-host metrics | cpu: 8.2% | ram usage: 37.3% | enp1s0: ⇓ 0.007mb/s ⇑ 0.003mb/s | disk: ⇓ 0.032mb/s ⇑ 0.676mb/s
-[TAILING] Tailing last 25 lines for [pfwatch] process (change the value with --lines option)
-/root/.pm2/logs/pfwatch-error.log last 25 lines:
-/root/.pm2/logs/pfwatch-out.log last 25 lines:
-[2026-10-21 17:57:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
-[2026-10-21 17:57:03] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
-[2026-10-21 17:57:03] feed connected
-[2026-10-21 17:57:03] feed connected
-[2026-10-21 17:58:03] stats 1m: trades 114 (2/s) | lookups 61 | profiles 21 | with X 2 | ALERTS 0 | queue 47 | rechecking 0 | 429s 1 | dropped 0 | DRY (no telegram)
-[2026-10-21 17:58:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
-[2026-10-21 17:58:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
-[2026-10-21 17:58:09] feed connected
-[2026-10-21 17:59:08] stats 1m: trades 115 (2/s) | lookups 44 | profiles 7 | with X 0 | ALERTS 0 | queue 66 | rechecking 0 | 429s 4 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:00:08] stats 2m: trades 232 (2/s) | lookups 100 | profiles 26 | with X 1 | ALERTS 0 | queue 125 | rechecking 0 | 429s 7 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:01:08] stats 3m: trades 347 (2/s) | lookups 154 | profiles 42 | with X 1 | ALERTS 0 | queue 172 | rechecking 0 | 429s 9 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:02:08] stats 4m: trades 462 (2/s) | lookups 210 | profiles 63 | with X 2 | ALERTS 0 | queue 217 | rechecking 1 | 429s 11 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:03:08] stats 5m: trades 578 (2/s) | lookups 268 | profiles 75 | with X 2 | ALERTS 0 | queue 260 | rechecking 2 | 429s 13 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:04:08] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 20/s | recheck every 30m | DRY RUN
-[2026-10-21 18:04:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed
-[2026-10-21 18:04:12] feed connected
-[2026-10-21 18:05:08] stats 1m: trades 106 (2/s) | lookups 65 | profiles 19 | with X 0 | ALERTS 0 | queue 37 | rechecking 2 | 429s 3 | dropped 0 | DRY (no telegram)
-[2026-10-21 18:12:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m | DRY RUN
-[2026-10-21 18:12:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
-[2026-10-21 18:12:04] feed connected
-=== cmd 83 @ 2026-10-21T18:20:02Z ===
-> set PF_DRY=false
-set PF_DRY=false
-> pfwatch-start
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
-[PM2] [pfwatch](4) ✓
-┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
-│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
-├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
 │ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1073346  │ 8m     │ 34   │ online    │ 0%       │ 92.3mb   │ root     │ disabled │
 │ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
 │ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1073382  │ 8m     │ 21   │ online    │ 0%       │ 99.2mb   │ root     │ disabled │
@@ -398,3 +341,60 @@ LAUNCH 20:10:04 slot 459759074 $Sailor (Michael Sailor) G6LTrQUmZZndSqbFJs7DncjG
 20:10:04 NEW TOKEN $Sailor (Michael Sailor) G6LTrQUmZZndSqbFJs7DncjGfGN92cPnrU1BS8pdH459 | InitializeWithToken2022,InitializeMint2,Initialize,MintTo,SetAuthority,Trade | programs LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj J7pourVwqP1VtRNBiFNqbdGxwkx7ta2LHAURURRRJqmd CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK | signer 7GsNmZ
 20:10:08 NEW TOKEN $undefined (undefined) 63kqTkprgaQbemkZ5fXabU1gForBfJShW4S2zfX3MTy9 | OpenPositionWithToken22Nft,InitializeMintCloseAuthority,InitializeMint2,MintTo,SetAuthority | programs L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK | signer 3iBECg
 top-level programs: FLASHX8D:646 11111111:554 ComputeB:173 ATokenGP:139 BTNjAFfu:127 Tokenkeg:77 term9YPb:62 HiP3dRdE:57
+=== cmd 9104 @ 2026-10-21T20:11:02Z ===
+> set SNIPE_DRY_RUN=true
+set SNIPE_DRY_RUN=true
+> snipe-stop
+[PM2] Applying action stopProcessId on app [sniper](ids: [ 2 ])
+[PM2] [sniper](2) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1090372  │ 64m    │ 40   │ online    │ 0%       │ 84.8mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1109305  │ 98s    │ 28   │ online    │ 0%       │ 90.1mb   │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 1095556  │ 46m    │ 11   │ online    │ 9.1%     │ 112.6mb  │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 38   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 45.4% | ram usage: 49.8% | enp1s0: ⇓ 4.597mb/s ⇑ 0.047mb/s | disk: ⇓ 0.005mb/s ⇑ 0.098mb/s
+> snipe-grep 20:09
+[2026-10-21 20:09:20.061] === sniper starting ===
+[2026-10-21 20:09:20.064] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 20:09:20.064] pool 5MQhtwFmgwZugLUaA7JRzGptrdCURormQLERHo7Av3JT on platform 6BwHHD
+[2026-10-21 20:09:20.064] target: first $MSTR -> buy 1
+[2026-10-21 20:09:20.064] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 732.872363 of pool token, targets need up to 1
+[2026-10-21 20:09:20.432] warm build time (median of 10): total 4.59ms = accounts 1.30 + compile/sign 2.86 + serialize 0.15
+[2026-10-21 20:09:20.432] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 20:09:20.432] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 20:09:20.451] feed beta connected
+[2026-10-21 20:09:20.453] feed pre (preprocessed/shreds) connected
+[2026-10-21 20:09:20.456] feed pre subscribed (1)
+[2026-10-21 20:09:20.638] launch [pre] $SAYLOR (Saylorcoin) 7Fypts8DLoesPb5NxVw3ge954Kp6y9eGnP3gqoHxj59V quote 5MQhtw platform 6BwHHD token2022 slot 459758864
+[2026-10-21 20:09:20.640]   not a target, ignoring
+[2026-10-21 20:09:20.759] feed mainnet connected
+[2026-10-21 20:09:28.153] launch [pre] $SAYLOR (The Orange ₿ull) D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2 quote 5MQhtw platform 6BwHHD token2022 slot 459758900
+[2026-10-21 20:09:28.153]   not a target, ignoring
+[2026-10-21 20:09:28.156] launch [beta] $SAYLOR (The Orange ₿ull) D179Dig6FnYcSFZhpgkJTBExUcsLFFD9bBv2Ggszy9p2 quote 5MQhtw platform 6BwHHD token2022 slot 459758900
+[2026-10-21 20:09:28.157]   not a target, ignoring
+[2026-10-21 20:09:28.278] launch [pre] $FCKED (FCKED) H46uEhxrJAktCh5sVeXGiajNxKNz9HrxiPpAsntkkDm1 quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.278]   not a target, ignoring
+[2026-10-21 20:09:28.279] launch [pre] $MSTR (MicroStrategy) 3Pvw3PQxa9ci7f9oDHjgr52Z7XyAidoJjhLa56btMEU5 quote 5MQhtw platform 4E876q token2022 slot 459758901
+[2026-10-21 20:09:28.279]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:09:28.280] launch [pre] $Sellor (Michael Sellor) A6STDtVRCWJB7nBkb1nvAsEiQmAchg43rovtw6YaGfKq quote 5MQhtw platform 4E876q token2022 slot 459758901
+[2026-10-21 20:09:28.280]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:09:28.281] launch [pre] $SAYLOR (SAYLOR COIN) DYggUJsiJgRvDBspNsVQovS1HHBxD2UYeq6Y3cHkpu9m quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.281]   not a target, ignoring
+[2026-10-21 20:09:28.282] launch [pre] $HODL (HODL) DaPKYnnF2QoPFzzXqnxubqu3NJy4GQ65fY6YDJXztBZZ quote 5MQhtw platform 4E876q token2022 slot 459758901
+[2026-10-21 20:09:28.283]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:09:28.283] launch [pre] $SELLUR (Michul Sellur) 3nDrLGubyESZwr2fhQPq8dz6g6NnaQvdnbycnwhWTh8U quote 5MQhtw platform 4E876q token2022 slot 459758901
+[2026-10-21 20:09:28.283]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:09:28.286] launch [pre] $SAYLOR3 (Saylor Index) HT3m4rUnuSnvcSfoiNKuYp9MvVeJmzrQDUJfYKBsiira quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.286]   not a target, ignoring
+[2026-10-21 20:09:28.288] launch [pre] $MSTR (microstrategy) AfhEg9CepFbJ3JvTugrjTno7Aj9jcdYfjH2n94AgyCcX quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.292]   >>> DRY RUN would fire $MSTR on $MSTR AfhEg9CepFbJ3JvTugrjTno7Aj9jcdYfjH2n94AgyCcX [pre, early] | build 2.67ms | 5ms after seeing launch
+[2026-10-21 20:09:28.295] launch [beta] $MSTR (MicroStrategy) 3Pvw3PQxa9ci7f9oDHjgr52Z7XyAidoJjhLa56btMEU5 quote 5MQhtw platform 4E876q token2022 slot 459758901
+[2026-10-21 20:09:28.295]   our pool but other platform (4E876q), ignoring
+[2026-10-21 20:09:28.296] launch [beta] $FCKED (FCKED) H46uEhxrJAktCh5sVeXGiajNxKNz9HrxiPpAsntkkDm1 quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.296]   not a target, ignoring
+[2026-10-21 20:09:28.298] launch [pre] $MSTR (micro strategy) C7hHn984qQf8jeeu9WmQaNkmVXZjuYWfAG7BL83HnoAp quote 5MQhtw platform 6BwHHD token2022 slot 459758901
+[2026-10-21 20:09:28.298]   already fired/settled for this target, ignoring
