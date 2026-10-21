@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:05:07] stats 45m: trades 697412 (258/s) | lookups 1408 | profiles 1390 | with X 100 | ALERTS 0 | queue 3670 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=543883,axiom=56622,pump=44278,fomo=27125,gmgn=11016
 [2026-10-21 21:05:36] 🎁 dev GtQjpw sent 3.1% of Fable 5.5 to FzBmm8LnzW1MYRxH2oGKBXMjYvRkqzvCbsMq26rJUpEY
 [2026-10-21 21:05:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:06:07] stats 46m: trades 712162 (258/s) | lookups 1427 | profiles 1409 | with X 102 | ALERTS 0 | queue 3708 | rechecking 220 | 429s 12 | dropped 0 | top scans 16 | apps none=555666,axiom=57606,pump=45132,fomo=27708,gmgn=11218
@@ -309,6 +308,7 @@
 [2026-10-21 21:20:07] stats 60m: trades 910289 (253/s) | lookups 1927 | profiles 1904 | with X 128 | ALERTS 0 | queue 4162 | rechecking 232 | 429s 16 | dropped 0 | top scans 20 | apps none=711229,axiom=72533,pump=58342,fomo=34590,gmgn=14245
 [2026-10-21 21:21:07] stats 61m: trades 921791 (252/s) | lookups 1927 | profiles 1904 | with X 128 | ALERTS 0 | queue 4211 | rechecking 232 | 429s 16 | dropped 0 | top scans 20 | apps none=720121,axiom=73420,pump=59148,fomo=34963,gmgn=14541
 [2026-10-21 21:21:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 91s, 0 new to the list
+[2026-10-21 21:22:07] stats 62m: trades 933674 (251/s) | lookups 1956 | profiles 1933 | with X 128 | ALERTS 0 | queue 4258 | rechecking 235 | 429s 16 | dropped 0 | top scans 21 | apps none=729326,axiom=74322,pump=60029,fomo=35361,gmgn=14740
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
