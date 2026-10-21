@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:56:08.484] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:00:09.060] === sniper starting ===
 [2026-10-21 19:00:09.061] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-21 19:00:09.061] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
@@ -248,6 +247,7 @@
 [2026-10-21 19:37:08.299]   not a target, ignoring
 [2026-10-21 19:41:08.648] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 19:46:08.648] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 19:51:08.647] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:37:03] stats 13m: trades 365065 (468/s) | lookups 353 | profiles 349 | with X 30 | ALERTS 0 | queue 2693 | rechecking 99 | 429s 4 | dropped 0 | top scans 5 | apps none=284105,axiom=33246,pump=21585,fomo=12820,gmgn=6098
 [2026-10-21 19:38:03] stats 14m: trades 386039 (460/s) | lookups 410 | profiles 405 | with X 34 | ALERTS 0 | queue 2744 | rechecking 100 | 429s 5 | dropped 0 | top scans 5 | apps none=299495,axiom=35330,pump=23055,fomo=13868,gmgn=6476
 [2026-10-21 19:39:03] gift watcher: 333 dev wallets watched | 9459 txs | 2 gifts | 35 MB today (~1k credits)
 [2026-10-21 19:39:03] stats 15m: trades 408801 (454/s) | lookups 416 | profiles 411 | with X 34 | ALERTS 0 | queue 2870 | rechecking 100 | 429s 5 | dropped 0 | top scans 5 | apps none=315621,axiom=38023,pump=24719,fomo=15122,gmgn=7060
@@ -309,6 +308,7 @@
 [2026-10-21 19:49:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
 [2026-10-21 19:50:03] stats 26m: trades 695892 (446/s) | lookups 742 | profiles 733 | with X 59 | ALERTS 1 | queue 3690 | rechecking 116 | 429s 8 | dropped 0 | top scans 9 | apps none=539752,axiom=64164,pump=41336,fomo=25573,gmgn=11831
 [2026-10-21 19:51:03] stats 27m: trades 725882 (448/s) | lookups 802 | profiles 793 | with X 61 | ALERTS 1 | queue 3731 | rechecking 117 | 429s 8 | dropped 0 | top scans 9 | apps none=564842,axiom=65839,pump=42926,fomo=26456,gmgn=12161
+[2026-10-21 19:51:43] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
