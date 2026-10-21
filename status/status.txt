@@ -1,6 +1,6 @@
-updated: 2026-10-21T18:21:02Z
+updated: 2026-10-21T18:22:02Z
 deployed: af18c9f14625113c66a75f8f2d1e2079e9f1a11b
-pm2: stopped uptime=4184m restarts=14
+pm2: stopped uptime=4185m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -92,7 +92,7 @@ alerts pm2: online
 
 --- pfwatch ---
 pfwatch pm2: online restarts=4
-{"apps":{"none":9623,"axiom":1428,"padre":201,"gmgn":229,"fomo":246,"pump":855,"photon":10,"maestro":6,"trojan":37,"bloom":18,"phantom":4,"j7":2},"topScans":0,"trades":12659,"lookups":1,"users":0,"withX":0,"recentX":0,"alerts":0,"r429":1,"err":0,"dropped":0,"since":1792606803943,"queue":311,"watch":15,"dry":false,"updated":"2026-10-21T18:21:03.944Z"}
+{"apps":{"none":19892,"axiom":2675,"padre":423,"gmgn":429,"fomo":512,"pump":1821,"photon":26,"maestro":22,"trojan":79,"bloom":24,"phantom":12,"j7":4,"bonk":2,"mevx":2},"topScans":1,"trades":25923,"lookups":26,"users":25,"withX":0,"recentX":0,"alerts":0,"r429":1,"err":0,"dropped":0,"since":1792606803943,"queue":553,"watch":18,"dry":false,"updated":"2026-10-21T18:22:03.945Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 
 --- positions ---
