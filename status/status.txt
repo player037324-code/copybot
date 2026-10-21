@@ -1,6 +1,6 @@
-updated: 2026-10-21T18:27:02Z
+updated: 2026-10-21T18:28:02Z
 deployed: af18c9f14625113c66a75f8f2d1e2079e9f1a11b
-pm2: stopped uptime=4190m restarts=14
+pm2: stopped uptime=4191m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -92,7 +92,7 @@ alerts pm2: online
 
 --- pfwatch ---
 pfwatch pm2: online restarts=4
-{"apps":{"none":71361,"axiom":10014,"padre":1754,"gmgn":1486,"fomo":1667,"pump":5961,"photon":94,"maestro":42,"trojan":241,"bloom":86,"phantom":83,"j7":28,"bonk":31,"mevx":12},"topScans":1,"trades":92860,"lookups":211,"users":208,"withX":22,"recentX":1,"alerts":1,"r429":3,"err":0,"dropped":0,"since":1792606803943,"queue":1165,"watch":32,"dry":false,"updated":"2026-10-21T18:27:03.947Z"}
+{"apps":{"none":84567,"axiom":11952,"padre":2022,"gmgn":1745,"fomo":1925,"pump":6906,"photon":100,"maestro":54,"trojan":272,"bloom":124,"phantom":93,"j7":30,"bonk":32,"mevx":12,"sol_trading_bot":2},"topScans":1,"trades":109836,"lookups":268,"users":264,"withX":25,"recentX":1,"alerts":1,"r429":4,"err":0,"dropped":0,"since":1792606803943,"queue":1256,"watch":37,"dry":false,"updated":"2026-10-21T18:28:03.947Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 
