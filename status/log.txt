@@ -278,8 +278,6 @@
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:20:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
-[2026-10-21 18:20:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:20:04] feed connected
 [2026-10-21 18:21:03] stats 1m: trades 12659 (211/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 311 | rechecking 15 | 429s 1 | dropped 0 | top scans 0 | apps none=9623,axiom=1428,pump=855,fomo=246,gmgn=229
 [2026-10-21 18:21:38] top scan: 2001 profiles, 0 new to the list
@@ -308,6 +306,8 @@
 [2026-10-21 18:38:08] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
 [2026-10-21 18:38:09] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:38:09] feed connected
+[2026-10-21 18:39:08] stats 1m: trades 29991 (500/s) | lookups 30 | profiles 30 | with X 3 | ALERTS 0 | queue 467 | rechecking 57 | 429s 0 | dropped 0 | top scans 0 | apps none=25295,axiom=1605,pump=1429,fomo=898,gmgn=360
+[2026-10-21 18:39:18] top scan: 2001 profiles, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
