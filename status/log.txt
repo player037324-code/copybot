@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:17:10] 🎁 dev HfgvoC sent 35.0% of SNTRA to 6i9rRHFNcX6QKywtwVMHGoVnSWrYLBT4sKEjRwwnNkPk
-[2026-10-21 21:18:07] stats 58m: trades 885335 (254/s) | lookups 1844 | profiles 1823 | with X 125 | ALERTS 0 | queue 4111 | rechecking 230 | 429s 15 | dropped 0 | top scans 19 | apps none=691826,axiom=70802,pump=56477,fomo=33635,gmgn=13845
-[2026-10-21 21:18:14] 🎁 dev AMQ6kj sent 1.7% of bbcb to 7RMJ1wnuhry4Ue8ZL9LrDykTtREdUzrhoH4pUG6W11Md
 [2026-10-21 21:18:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 21:19:07] stats 59m: trades 899866 (254/s) | lookups 1874 | profiles 1852 | with X 126 | ALERTS 0 | queue 4164 | rechecking 231 | 429s 15 | dropped 0 | top scans 20 | apps none=703599,axiom=71680,pump=57416,fomo=34067,gmgn=14069
 [2026-10-21 21:20:07] gift watcher: 674 dev wallets watched | 29778 txs | 11 gifts | 259 MB today (~5k credits)
@@ -309,6 +306,9 @@
 [2026-10-21 21:33:07] stats 73m: trades 1088269 (248/s) | lookups 2313 | profiles 2286 | with X 144 | ALERTS 0 | queue 4556 | rechecking 245 | 429s 19 | dropped 0 | top scans 24 | apps none=850603,axiom=87336,pump=70089,fomo=39950,gmgn=17466
 [2026-10-21 21:33:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 21:34:07] stats 74m: trades 1107198 (249/s) | lookups 2343 | profiles 2315 | with X 144 | ALERTS 0 | queue 4604 | rechecking 246 | 429s 19 | dropped 0 | top scans 25 | apps none=866331,axiom=88653,pump=71012,fomo=40445,gmgn=17651
+[2026-10-21 21:35:07] 🎁 dev HgAhL3 sent 1.3% of 7URbDU to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-21 21:35:07] gift watcher: 665 dev wallets watched | 37698 txs | 14 gifts | 320 MB today (~6k credits)
+[2026-10-21 21:35:07] stats 75m: trades 1122102 (249/s) | lookups 2396 | profiles 2367 | with X 149 | ALERTS 0 | queue 4608 | rechecking 248 | 429s 20 | dropped 0 | top scans 25 | apps none=878261,axiom=89723,pump=72001,fomo=40873,gmgn=17881
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
