@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:05:03] stats 41m: trades 1115560 (453/s) | lookups 1212 | profiles 1199 | with X 93 | ALERTS 1 | queue 4536 | rechecking 135 | 429s 12 | dropped 0 | top scans 14 | apps none=875194,axiom=94155,pump=65625,fomo=41082,gmgn=17891
-[2026-10-21 20:06:03] stats 42m: trades 1143082 (454/s) | lookups 1269 | profiles 1255 | with X 100 | ALERTS 1 | queue 4562 | rechecking 136 | 429s 13 | dropped 0 | top scans 14 | apps none=897466,axiom=95957,pump=67184,fomo=42124,gmgn=18198
-[2026-10-21 20:06:37] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 7QaByT2PpNL6yabV6iVmTRTkRpGHM29Cx5vBdtNLACFn
 [2026-10-21 20:07:03] stats 43m: trades 1170669 (454/s) | lookups 1269 | profiles 1255 | with X 100 | ALERTS 1 | queue 4655 | rechecking 136 | 429s 13 | dropped 0 | top scans 14 | apps none=919112,axiom=97886,pump=68975,fomo=43307,gmgn=18658
 [2026-10-21 20:07:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 95s, 0 new to the list
 [2026-10-21 20:08:03] stats 44m: trades 1199565 (454/s) | lookups 1294 | profiles 1279 | with X 103 | ALERTS 1 | queue 4699 | rechecking 137 | 429s 13 | dropped 0 | top scans 15 | apps none=941306,axiom=100695,pump=70865,fomo=44365,gmgn=19127
@@ -309,6 +306,9 @@
 [2026-10-21 20:20:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-21 20:20:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 20:20:08] feed connected
+[2026-10-21 20:21:07] stats 1m: trades 16696 (278/s) | lookups 30 | profiles 30 | with X 1 | ALERTS 0 | queue 333 | rechecking 160 | 429s 0 | dropped 0 | top scans 0 | apps none=13425,axiom=1226,pump=969,fomo=530,padre=280
+[2026-10-21 20:21:17] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
+[2026-10-21 20:21:48] 🎁 dev 5N5w5R sent 4.9% of eCola to A34ShKJ7MwTgbDENKnUQVKABtq9QN1D5HuB5mnVWfGs5
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
