@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:04:08] stats 42m: trades 1371955 (544/s) | lookups 1212 | profiles 1192 | with X 74 | ALERTS 0 | queue 5044 | rechecking 302 | 429s 13 | dropped 0 | top scans 14 | apps none=988448,axiom=178536,pump=84288,fomo=60607,gmgn=28890
 [2026-10-21 23:04:44] 🎁 dev BAoJmp sent 1.4% of CYBERBABY to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:04:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 23:04:51] 🎁 dev 3szfdA sent 4.9% of TOM to 72756wSUNLfPoxQgsB1NeLjmsFkp5qvxUYn5WzJAYJBc
@@ -309,6 +308,7 @@
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.7% of GARRY to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.6% of GARRY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.5% of GARRY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-21 23:16:08] stats 54m: trades 1810071 (559/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5582 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1323356,axiom=223884,pump=109212,fomo=79039,gmgn=35605
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
