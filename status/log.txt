@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:31:08] stats 69m: trades 2285053 (552/s) | lookups 2011 | profiles 1975 | with X 124 | ALERTS 0 | queue 6194 | rechecking 316 | 429s 21 | dropped 0 | top scans 23 | apps none=1686940,axiom=272054,pump=137145,fomo=97510,gmgn=43707
-[2026-10-21 23:31:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 23:32:08] gift watcher: 932 dev wallets watched | 39042 txs | 34 gifts | 284 MB today (~6k credits)
-[2026-10-21 23:32:08] stats 70m: trades 2317945 (552/s) | lookups 2030 | profiles 1994 | with X 125 | ALERTS 0 | queue 6228 | rechecking 317 | 429s 21 | dropped 0 | top scans 24 | apps none=1711999,axiom=275790,pump=138883,fomo=98686,gmgn=44265
 [2026-10-21 23:32:39] 🎁 dev 3H4GRC sent 2.3% of 4vqhH6 to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 23:32:39] 🎁 dev 3H4GRC sent 1.9% of 4vqhH6 to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 23:32:48] 🎁 dev HB3Geb sent 1.8% of BurgerShot to Dec3VwiarqdxkuNUzMyPuUNNcCUGdheEp9N9pTjzTyEF
@@ -309,6 +305,10 @@
 [2026-10-21 23:44:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 1 new to the list
 [2026-10-21 23:45:08] stats 83m: trades 2672337 (537/s) | lookups 2420 | profiles 2376 | with X 149 | ALERTS 0 | queue 6668 | rechecking 321 | 429s 25 | dropped 0 | top scans 28 | apps none=1981879,axiom=309569,pump=163083,fomo=111047,gmgn=50318
 [2026-10-21 23:46:08] stats 84m: trades 2694631 (535/s) | lookups 2473 | profiles 2428 | with X 152 | ALERTS 0 | queue 6672 | rechecking 326 | 429s 26 | dropped 0 | top scans 28 | apps none=1999244,axiom=311303,pump=164776,fomo=111781,gmgn=50682
+[2026-10-21 23:47:08] gift watcher: 933 dev wallets watched | 48074 txs | 40 gifts | 356 MB today (~7k credits)
+[2026-10-21 23:47:08] stats 85m: trades 2719353 (533/s) | lookups 2473 | profiles 2428 | with X 152 | ALERTS 0 | queue 6711 | rechecking 326 | 429s 26 | dropped 0 | top scans 28 | apps none=2019636,axiom=312695,pump=166339,fomo=112564,gmgn=50920
+[2026-10-21 23:47:37] 🎁 dev 5ZuV8e sent 1.1% of 2sWirx to Fq7jozd5scjoqNx844eRnRqiAfW5fQaRZVPSFFwVwzto
+[2026-10-21 23:47:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
