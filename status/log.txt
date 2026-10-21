@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:10:07] stats 50m: trades 775171 (258/s) | lookups 1569 | profiles 1550 | with X 108 | ALERTS 0 | queue 3862 | rechecking 226 | 429s 13 | dropped 0 | top scans 17 | apps none=605318,axiom=62339,pump=49294,fomo=29865,gmgn=12186
-[2026-10-21 21:11:07] stats 51m: trades 792142 (259/s) | lookups 1629 | profiles 1610 | with X 113 | ALERTS 0 | queue 3877 | rechecking 227 | 429s 13 | dropped 0 | top scans 17 | apps none=618824,axiom=63622,pump=50314,fomo=30440,gmgn=12392
 [2026-10-21 21:11:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:12:07] stats 52m: trades 807353 (259/s) | lookups 1649 | profiles 1630 | with X 113 | ALERTS 0 | queue 3917 | rechecking 228 | 429s 13 | dropped 0 | top scans 18 | apps none=631002,axiom=64555,pump=51401,fomo=30890,gmgn=12669
 [2026-10-21 21:12:50] 🎁 dev 4BYjXY sent 1.1% of 6GpZ3J to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
@@ -309,6 +307,8 @@
 [2026-10-21 21:26:07] stats 66m: trades 989832 (250/s) | lookups 2098 | profiles 2074 | with X 137 | ALERTS 0 | queue 4370 | rechecking 238 | 429s 17 | dropped 0 | top scans 22 | apps none=772731,axiom=79416,pump=63609,fomo=37155,gmgn=15909
 [2026-10-21 21:26:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:27:07] stats 67m: trades 1003571 (250/s) | lookups 2118 | profiles 2094 | with X 137 | ALERTS 0 | queue 4407 | rechecking 240 | 429s 17 | dropped 0 | top scans 23 | apps none=783821,axiom=80375,pump=64421,fomo=37567,gmgn=16135
+[2026-10-21 21:28:07] stats 68m: trades 1017983 (250/s) | lookups 2171 | profiles 2146 | with X 138 | ALERTS 0 | queue 4420 | rechecking 242 | 429s 18 | dropped 0 | top scans 23 | apps none=795283,axiom=81462,pump=65409,fomo=38011,gmgn=16361
+[2026-10-21 21:28:48] 🎁 dev AqGUrb sent 3.9% of KIMCHIPCS to 99z2LvBqdo9QumkhAZdDVMaKdZvxWkVks1jC8dY4uoLJ
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
