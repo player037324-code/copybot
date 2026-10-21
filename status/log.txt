@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:48:03] stats 24m: trades 631613 (439/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3515 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=487511,axiom=58400,pump=38406,fomo=23803,gmgn=11171
-[2026-10-21 19:48:21] 🎁 dev AjqiP2 sent 3.4% of KOALACOIN to 5fjZatNnqmWixUtycekodpsaNHCHVe48oBzaLbV4kXRL
 [2026-10-21 19:48:39] 🎁 dev 4LGuyP sent 5.0% of MAL to BvBQYKJzPe3fhffSobmP8VEhfNsvetd4q85YpVtwPAZ4
 [2026-10-21 19:49:03] gift watcher: 503 dev wallets watched | 13617 txs | 8 gifts | 74 MB today (~1k credits)
 [2026-10-21 19:49:03] stats 25m: trades 661431 (441/s) | lookups 717 | profiles 709 | with X 58 | ALERTS 1 | queue 3608 | rechecking 114 | 429s 8 | dropped 0 | top scans 8 | apps none=511359,axiom=61400,pump=39821,fomo=24661,gmgn=11490
@@ -309,6 +307,8 @@
 [2026-10-21 20:03:03] stats 39m: trades 1061087 (453/s) | lookups 1186 | profiles 1173 | with X 90 | ALERTS 1 | queue 4435 | rechecking 134 | 429s 12 | dropped 0 | top scans 13 | apps none=831683,axiom=90485,pump=62627,fomo=38821,gmgn=17147
 [2026-10-21 20:04:03] gift watcher: 755 dev wallets watched | 23874 txs | 10 gifts | 218 MB today (~4k credits)
 [2026-10-21 20:04:03] stats 40m: trades 1088470 (454/s) | lookups 1186 | profiles 1173 | with X 90 | ALERTS 1 | queue 4496 | rechecking 134 | 429s 12 | dropped 0 | top scans 13 | apps none=853683,axiom=92220,pump=64145,fomo=39904,gmgn=17522
+[2026-10-21 20:04:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
+[2026-10-21 20:05:03] stats 41m: trades 1115560 (453/s) | lookups 1212 | profiles 1199 | with X 93 | ALERTS 1 | queue 4536 | rechecking 135 | 429s 12 | dropped 0 | top scans 14 | apps none=875194,axiom=94155,pump=65625,fomo=41082,gmgn=17891
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
