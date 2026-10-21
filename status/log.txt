@@ -208,10 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 10:22:54.461]   not a target, ignoring
-[2026-10-21 10:22:54.465] launch [mainnet] $scamcoin (scamcoin) AYW3zXYAuk61dTe5nznhdeXTBA8QG6j8XxKP25SjtC3q quote 6s2umN platform 6BwHHD token2022 slot 459594188
-[2026-10-21 10:22:54.465]   not a target, ignoring
-[2026-10-21 10:24:07.854] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 10:26:17.295] feed mainnet connected
 [2026-10-21 10:27:56.833] launch [pre] $SI (Safe Inu) GdRQnHEFCoEqGVtiPyUrHox211XMK5WWBkYqX3FKh8gG quote 6s2umN platform 6BwHHD token2022 slot 459595568
 [2026-10-21 10:27:56.834]   not a target, ignoring
@@ -248,6 +244,10 @@
 [2026-10-21 10:40:55.112]   not a target, ignoring
 [2026-10-21 10:40:55.117] launch [beta] $PBC (Pig Butchering Coin) 2E9h3oA9Tjg6R4GUxJKP7Dma2iLGQvdjKcxvEdMmYrXm quote 6s2umN platform 6BwHHD token2022 slot 459599210
 [2026-10-21 10:40:55.118]   not a target, ignoring
+[2026-10-21 10:41:37.648] launch [pre] $Truth (Truth Token) 1XessLVtnB3kg2SWBXwaNXTzeqNcRaU17Hs94LZ648s quote 6s2umN platform 6BwHHD token2022 slot 459599410
+[2026-10-21 10:41:37.648]   not a target, ignoring
+[2026-10-21 10:41:37.652] launch [beta] $Truth (Truth Token) 1XessLVtnB3kg2SWBXwaNXTzeqNcRaU17Hs94LZ648s quote 6s2umN platform 6BwHHD token2022 slot 459599410
+[2026-10-21 10:41:37.652]   not a target, ignoring
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
