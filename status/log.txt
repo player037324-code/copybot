@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:57:08] gift watcher: 623 dev wallets watched | 14236 txs | 19 gifts | 130 MB today (~3k credits)
-[2026-10-21 22:57:08] stats 35m: trades 1140904 (543/s) | lookups 987 | profiles 969 | with X 57 | ALERTS 0 | queue 4652 | rechecking 299 | 429s 11 | dropped 0 | top scans 12 | apps none=811801,axiom=156615,pump=69717,fomo=51457,gmgn=24911
-[2026-10-21 22:58:08] stats 36m: trades 1174701 (544/s) | lookups 1040 | profiles 1021 | with X 59 | ALERTS 0 | queue 4699 | rechecking 301 | 429s 12 | dropped 0 | top scans 12 | apps none=837922,axiom=159328,pump=71948,fomo=52926,gmgn=25540
-[2026-10-21 22:59:08] stats 37m: trades 1204696 (543/s) | lookups 1040 | profiles 1021 | with X 59 | ALERTS 0 | queue 4780 | rechecking 301 | 429s 12 | dropped 0 | top scans 12 | apps none=861541,axiom=161654,pump=73796,fomo=54165,gmgn=25982
 [2026-10-21 22:59:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:00:08] stats 38m: trades 1237200 (543/s) | lookups 1069 | profiles 1050 | with X 62 | ALERTS 0 | queue 4849 | rechecking 300 | 429s 12 | dropped 0 | top scans 13 | apps none=886154,axiom=164969,pump=75693,fomo=55459,gmgn=26568
 [2026-10-21 23:00:41] 🎁 dev 8yk5ng sent 1.3% of Godxi to FgCrVMFibwTcnFS53JggzxttJZjXtTydN3b91Xegsq6o
@@ -309,6 +305,10 @@
 [2026-10-21 23:11:08] stats 49m: trades 1622917 (552/s) | lookups 1427 | profiles 1403 | with X 86 | ALERTS 0 | queue 5349 | rechecking 305 | 429s 15 | dropped 0 | top scans 16 | apps none=1179090,axiom=204299,pump=98600,fomo=72146,gmgn=32918
 [2026-10-21 23:11:13] 🎁 dev 3H4GRC sent 1.3% of CYBR to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 23:11:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 23:12:08] gift watcher: 799 dev wallets watched | 25716 txs | 26 gifts | 194 MB today (~4k credits)
+[2026-10-21 23:12:08] stats 50m: trades 1658500 (553/s) | lookups 1456 | profiles 1431 | with X 86 | ALERTS 0 | queue 5393 | rechecking 305 | 429s 15 | dropped 0 | top scans 17 | apps none=1206907,axiom=207605,pump=100595,fomo=73538,gmgn=33463
+[2026-10-21 23:12:50] 🎁 dev BAoJmp sent 1.3% of CBI to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-21 23:12:50] 🎁 dev BAoJmp sent 1.6% of CBI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
