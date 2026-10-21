@@ -1,17 +1,3 @@
-   14 -- LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj
-   15 -- 11111111111111111111111111111111
-   16 -W ExSdBV4pznMEthsFknz167P6KjMmr3Egd9k11Xo9gYMe
-   17 -W 14SW73yyNdtyn8ya1Gj4h7xrxTSVvnTaBhckunrjrySh
-[in2] LaunchLab disc e445a52e51cb9a1d len 274
-   data e445a52e51cb9a1d97d7e20976a173ae2f5290902091a775bae3a8625b777c53746b46cec831d073a81ee2008e54b6073acd38c7423dee8b4a737a5e531c32a52d7248436258022e81f2bf532b142d7947c964216ad86afe877c4c081975d16dcb5c30fc4a9126a8c83994d2e4fbf8e8060a0000005472756d7020436f696e050000005452554d505300000068747470733a2f2f697066732e6c61756e6368626c69747a2e61692f6173796e632f42594754787752727a4d766e516f763852486647343531727561
-    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
-[in2] spl-token initializeMetadataPointer {"metadataAddress":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","mint":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1"}
-[in2] spl-token initializeTokenMetadata {"metadata":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","mint":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","mintAuthority":"WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh","name":"Trump Coin","symb
-[in5] LaunchLab disc e445a52e51cb9a1d len 155
-   data e445a52e51cb9a1dbddb7fd34ee661ee2f5290902091a775bae3a8625b777c53746b46cec831d073a81ee2008e54b6070078c5fb51d10200c8b80e3ee9cf03002df28cb9000000000000000000000000000000000000000061dfda9b8a7e01008d8a9f7700000000552e23790000000061dfda9b8a7e010028874d0000000000a01c36010000000000000000000000000000000000000000000001
-    0 -- 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr
-
-=== 5nVC7pqpXu2XHivdoWueA26xetaRMKSSQiBqKnD1FLtMQnyCiScSsT7UCGYhGDRLZesptcRYYg7AUBEiJ94wfDHG slot 459374814 signer pumpSuAxFePbNXz2CbmfJfrWNCgb4LbxafWRGYFhAfQ
 [top] LaunchLab disc faea0d7bd59c13ec len 32
    data faea0d7bd59c13ec80b910ab0000000001000000000000000000000000000000
     0 SW pumpSuAxFePbNXz2CbmfJfrWNCgb4LbxafWRGYFhAfQ
@@ -398,3 +384,17 @@ profile 3: HTTP 429 cache-control=private, max-age=0, no-store, no-cache, must-r
 https://frontend-api-v3.pump.fun/users?addresses=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 200 [{"address":"Gdvg5kJBhEJXH4WFuEZhF3Mr8iyqKw3cnLrgALkMvr18","userId":"3049aecd-3132-48d9-8f06-43ddad9fec0a","is_pump_user":true,"is_banned":false,"username":"mso","profile_image":"https://socialimages.
 https://profile-api.pump.fun/users/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 429 {"type":"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1015/","title":"Error 1015: You are being rate limited","status":429,"detail":"You are
 https://frontend-api-v3.pump.fun/users/batch -> 429 {"type":"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1015/","title":"Error 1015: You are being rate limited","status":429,"detail":"You are
+=== cmd 80 @ 2026-10-21T18:06:05Z ===
+> pfwatch-stop
+[PM2] Applying action stopProcessId on app [pfwatch](ids: [ 4 ])
+[PM2] [pfwatch](4) ✓
+┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 1  │ alerts     │ default     │ 1.0.0   │ fork    │ 1071690  │ 2s     │ 33   │ online    │ 0%       │ 93.5mb   │ root     │ disabled │
+│ 0  │ copybot    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 14   │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 3  │ ladder     │ default     │ 1.0.0   │ fork    │ 1071726  │ 1s     │ 20   │ online    │ 78.6%    │ 85.0mb   │ root     │ disabled │
+│ 4  │ pfwatch    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 3    │ stopped   │ 0%       │ 0b       │ root     │ disabled │
+│ 2  │ sniper     │ default     │ 1.0.0   │ fork    │ 1071654  │ 2s     │ 29   │ online    │ 0%       │ 98.8mb   │ root     │ disabled │
+└────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 1.7% | ram usage: 42.2% | enp1s0: ⇓ 0.034mb/s ⇑ 0.002mb/s | disk: ⇓ 0.432mb/s ⇑ 0.048mb/s
