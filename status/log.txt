@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:16:03] stats 52m: trades 1427900 (458/s) | lookups 1538 | profiles 1521 | with X 119 | ALERTS 1 | queue 5030 | rechecking 149 | 429s 15 | dropped 0 | top scans 18 | apps none=1109260,axiom=128786,pump=85295,fomo=52190,gmgn=23781
 [2026-10-21 20:17:03] stats 53m: trades 1458178 (459/s) | lookups 1598 | profiles 1581 | with X 122 | ALERTS 1 | queue 5051 | rechecking 150 | 429s 15 | dropped 0 | top scans 18 | apps none=1133923,axiom=130915,pump=87028,fomo=53079,gmgn=24162
 [2026-10-21 20:17:47] 🎁 dev 6zZyan sent 3.2% of CRISSY to 9bmZBYi45rQeBkLryc6e72eQ3bQdQEavRMt1rR6oCtyR
 [2026-10-21 20:18:03] stats 54m: trades 1484620 (458/s) | lookups 1655 | profiles 1637 | with X 123 | ALERTS 1 | queue 5071 | rechecking 157 | 429s 16 | dropped 0 | top scans 18 | apps none=1154592,axiom=132971,pump=88852,fomo=53994,gmgn=24596
@@ -309,6 +308,7 @@
 [2026-10-21 20:30:07] stats 10m: trades 162537 (271/s) | lookups 324 | profiles 321 | with X 23 | ALERTS 0 | queue 1724 | rechecking 171 | 429s 2 | dropped 0 | top scans 4 | apps none=124672,axiom=14844,pump=10304,fomo=6353,gmgn=2794
 [2026-10-21 20:30:07] gift watcher: 156 dev wallets watched | 2120 txs | 2 gifts | 33 MB today (~1k credits)
 [2026-10-21 20:31:07] stats 11m: trades 179560 (272/s) | lookups 384 | profiles 381 | with X 33 | ALERTS 0 | queue 1775 | rechecking 172 | 429s 2 | dropped 0 | top scans 4 | apps none=138129,axiom=16142,pump=11345,fomo=7011,gmgn=3074
+[2026-10-21 20:32:07] stats 12m: trades 194336 (270/s) | lookups 437 | profiles 432 | with X 37 | ALERTS 0 | queue 1831 | rechecking 175 | 429s 3 | dropped 0 | top scans 4 | apps none=149768,axiom=17136,pump=12312,fomo=7679,gmgn=3277
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
