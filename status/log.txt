@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:00:12] feed connected
 [2026-10-21 19:01:11] stats 1m: trades 35671 (595/s) | lookups 1 | profiles 0 | with X 0 | ALERTS 0 | queue 574 | rechecking 63 | 429s 1 | dropped 0 | top scans 0 | apps none=22204,axiom=8578,pump=1726,gmgn=972,fomo=914
 [2026-10-21 19:01:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 57s, 0 new to the list
 [2026-10-21 19:02:11] stats 2m: trades 65941 (550/s) | lookups 34 | profiles 33 | with X 1 | ALERTS 0 | queue 951 | rechecking 61 | 429s 1 | dropped 0 | top scans 1 | apps none=43021,axiom=13728,pump=3524,fomo=1828,gmgn=1631
@@ -309,6 +308,7 @@
 [2026-10-21 19:16:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
 [2026-10-21 19:17:01] 🎁 dev DLerot sent 2.5% of KRANE to AHmNWaNDcbbMFHzpZJJFS8qo4NXcdeTyzv9bByRPG4ke
 [2026-10-21 19:17:09] stats 11m: trades 273794 (415/s) | lookups 337 | profiles 334 | with X 28 | ALERTS 0 | queue 2464 | rechecking 78 | 429s 3 | dropped 0 | top scans 4 | apps none=206649,axiom=27100,pump=18612,fomo=9240,gmgn=5248
+[2026-10-21 19:18:09] stats 12m: trades 298829 (415/s) | lookups 388 | profiles 384 | with X 31 | ALERTS 0 | queue 2536 | rechecking 80 | 429s 4 | dropped 0 | top scans 4 | apps none=225504,axiom=29808,pump=20106,fomo=10141,gmgn=5739
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
