@@ -171,7 +171,7 @@ async function connect() {
   const c = await natsConfig();
   log(`feed: ${c.url} subject ${SUBJECT}`);
   const ws = new WebSocket(c.url, { headers: { origin: 'https://pump.fun', 'user-agent': UA } });
-  let buf = ''; let pinger;
+  let buf = ''; let pinger; let subscribed = false;
   ws.on('open', () => { lastMsg = Date.now(); });
   ws.on('message', (d) => {
     lastMsg = Date.now(); buf += d.toString();
@@ -185,7 +185,8 @@ async function connect() {
         onTrade(payload);
       } else {
         buf = buf.slice(i + 2);
-        if (line.startsWith('INFO ')) {
+        if (line.startsWith('INFO ') && !subscribed) {
+          subscribed = true;
           ws.send(`CONNECT ${JSON.stringify({ verbose: false, pedantic: false, lang: 'js', version: '2.0', protocol: 1, headers: true, no_responders: true, user: c.user, pass: c.pass })}\r\nSUB ${SUBJECT} 1\r\nPING\r\n`);
           log('feed connected');
           pinger = setInterval(() => { try { ws.send('PING\r\n'); } catch {} }, 20000);
