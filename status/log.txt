@@ -279,15 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:37:08] stats 15m: trades 500394 (556/s) | lookups 463 | profiles 456 | with X 30 | ALERTS 0 | queue 2967 | rechecking 292 | 429s 5 | dropped 0 | top scans 5 | apps none=343953,axiom=79336,pump=30806,fomo=21903,gmgn=12059
-[2026-10-21 22:38:08] stats 16m: trades 532012 (554/s) | lookups 463 | profiles 456 | with X 30 | ALERTS 0 | queue 3135 | rechecking 292 | 429s 5 | dropped 0 | top scans 5 | apps none=364066,axiom=85136,pump=33152,fomo=23759,gmgn=12776
-[2026-10-21 22:38:15] 🎁 dev 8F81d4 sent 2.4% of NOOM to 6jKHXmwuGW29Eoe9K21RjcbGvvgB5zrdRQTrRSWg2bg3
-[2026-10-21 22:38:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
-[2026-10-21 22:39:08] stats 17m: trades 564504 (553/s) | lookups 492 | profiles 485 | with X 30 | ALERTS 0 | queue 3226 | rechecking 292 | 429s 5 | dropped 0 | top scans 6 | apps none=384143,axiom=92174,pump=35171,fomo=25502,gmgn=13507
-[2026-10-21 22:40:08] stats 18m: trades 595272 (551/s) | lookups 545 | profiles 537 | with X 35 | ALERTS 0 | queue 3292 | rechecking 292 | 429s 6 | dropped 0 | top scans 6 | apps none=404954,axiom=97503,pump=36998,fomo=26981,gmgn=14098
-[2026-10-21 22:41:08] stats 19m: trades 625378 (549/s) | lookups 545 | profiles 537 | with X 35 | ALERTS 0 | queue 3405 | rechecking 292 | 429s 6 | dropped 0 | top scans 6 | apps none=426008,axiom=101810,pump=38921,fomo=28462,gmgn=14762
-[2026-10-21 22:41:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
-[2026-10-21 22:42:08] gift watcher: 406 dev wallets watched | 7091 txs | 4 gifts | 72 MB today (~1k credits)
 [2026-10-21 22:42:08] stats 20m: trades 651492 (543/s) | lookups 575 | profiles 567 | with X 35 | ALERTS 0 | queue 3506 | rechecking 290 | 429s 6 | dropped 0 | top scans 7 | apps none=441831,axiom=106419,pump=40803,fomo=30431,gmgn=15657
 [2026-10-21 22:43:08] stats 21m: trades 679724 (539/s) | lookups 628 | profiles 619 | with X 38 | ALERTS 0 | queue 3595 | rechecking 290 | 429s 7 | dropped 0 | top scans 7 | apps none=457874,axiom=111953,pump=43110,fomo=32791,gmgn=16596
 [2026-10-21 22:44:08] stats 22m: trades 711316 (539/s) | lookups 628 | profiles 619 | with X 38 | ALERTS 0 | queue 3698 | rechecking 290 | 429s 7 | dropped 0 | top scans 7 | apps none=480312,axiom=115271,pump=45442,fomo=34771,gmgn=17264
@@ -309,6 +300,15 @@
 [2026-10-21 22:52:08] stats 30m: trades 975297 (542/s) | lookups 875 | profiles 861 | with X 52 | ALERTS 0 | queue 4280 | rechecking 297 | 429s 10 | dropped 0 | top scans 10 | apps none=682056,axiom=142355,pump=60168,fomo=45055,gmgn=22224
 [2026-10-21 22:52:21] 🎁 dev 2VHc4n sent 1.7% of CI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-21 22:52:30] 🎁 dev 2VHc4n sent 1.2% of CI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
+[2026-10-21 22:53:08] stats 31m: trades 1007868 (542/s) | lookups 875 | profiles 861 | with X 52 | ALERTS 0 | queue 4371 | rechecking 297 | 429s 10 | dropped 0 | top scans 10 | apps none=706414,axiom=145680,pump=62166,fomo=46599,gmgn=22860
+[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to 72DyU16g7bkpYtbqc6L1Y5iMPtCrz5d1Vx2vjspXFkAB
+[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to CKZtNGxgdfBSLP2q7spZRrM2w6Y6GDNA345eVMXqgSPW
+[2026-10-21 22:53:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 1 new to the list
+[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to EZJHuyFQaYqmQoEo5mBG9ShMxftm8ZM6L3dAZKY4ZWQf
+[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to AGY4SUxwENn52MWkSUjtVhopEA1u7UBdqTuFTBAQTNr2
+[2026-10-21 22:53:37] 🎁 dev 97K6ns sent 2.4% of CI to 9Ueuf9LUaAy4kNTVNe7XMb3kq7mHTkp5UaSYeaa2X8zY
+[2026-10-21 22:54:04] 🎁 dev BAoJmp sent 1.1% of CYBERGUY to 6Z67hwhUQB3QoY8YS9mMVtkDAHgkbL1cNTpp2adGWnMx
+[2026-10-21 22:54:04] 🎁 dev BAoJmp sent 1.3% of CYBERGUY to 6Ze3VZNCSDpxqwuxbBPQETiMgVpzCNPXUWhtqnHjTYDh
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
