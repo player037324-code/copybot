@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 17:58:06.568] === sniper starting ===
-[2026-10-21 17:58:06.573] mode: DRY RUN (builds + simulates, never sends)
-[2026-10-21 17:58:06.573] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
-[2026-10-21 17:58:06.573] target: first $TRUMP -> buy 762 [ALREADY DONE]
-[2026-10-21 17:58:06.573] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 17:58:06.620] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 17:58:08.103] warm build time (median of 10): total 32.18ms = accounts 9.04 + compile/sign 12.76 + serialize 0.19
-[2026-10-21 17:58:08.110] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 17:58:08.110] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 17:58:08.180] feed beta connected
-[2026-10-21 17:58:08.212] feed pre (preprocessed/shreds) connected
-[2026-10-21 17:58:08.226] feed pre subscribed (1)
-[2026-10-21 17:58:08.293] feed mainnet connected
 [2026-10-21 18:03:08.135] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 18:04:06.484] === sniper starting ===
 [2026-10-21 18:04:06.492] mode: DRY RUN (builds + simulates, never sends)
@@ -248,12 +235,24 @@
 [2026-10-21 18:06:05.869] feed beta connected
 [2026-10-21 18:06:05.871] feed pre subscribed (1)
 [2026-10-21 18:06:05.941] feed mainnet connected
+[2026-10-21 18:11:06.274] === sniper starting ===
+[2026-10-21 18:11:06.281] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 18:11:06.281] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-21 18:11:06.282] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-21 18:11:06.282] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-21 18:11:06.325] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 18:11:07.889] warm build time (median of 10): total 31.53ms = accounts 8.26 + compile/sign 16.25 + serialize 5.33
+[2026-10-21 18:11:07.898] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 18:11:07.899] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 18:11:08.074] feed pre (preprocessed/shreds) connected
+[2026-10-21 18:11:08.085] feed mainnet connected
+[2026-10-21 18:11:08.093] feed pre subscribed (1)
+[2026-10-21 18:11:08.098] feed beta connected
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-20 21:14:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:16:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:23:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:25:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,6 +272,7 @@
 [2026-10-21 17:58:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 18:04:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 18:06:06] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 18:11:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
