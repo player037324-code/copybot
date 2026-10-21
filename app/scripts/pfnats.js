@@ -45,7 +45,7 @@ function tryNats(url, user, pass, subject, secs = 30) {
           const p = line.split(' '); const n = Number(p[p.length - 1]);
           if (buf.length < i + 2 + n + 2) break;
           const payload = buf.slice(i + 2, i + 2 + n); buf = buf.slice(i + 2 + n + 2);
-          st.msgs++; if (st.samples.length < 2) st.samples.push(payload.slice(0, 900));
+          st.msgs++; st.subj = st.subj || {}; const sj = p[1].split('.').slice(0, 2).join('.'); st.subj[sj] = (st.subj[sj] || 0) + 1; if (st.samples.length < 1) st.samples.push(payload.slice(0, 300));
         } else { if (line.startsWith('PING')) ws.send('PONG\r\n'); if (line.startsWith('-ERR')) st.err = line; buf = buf.slice(i + 2); }
       }
     });
@@ -54,9 +54,11 @@ function tryNats(url, user, pass, subject, secs = 30) {
     setTimeout(() => { try { ws.close(); } catch {} res(st); }, secs * 1000);
   });
 }
-for (const [url, u, p] of tries) {
-  const s = await tryNats(url, u, p, 'unifiedTradeEvent.processed', 25);
-  console.log(`\n== ${url}: ${s.msgs} msgs, ${(s.bytes / 1e6).toFixed(2)} MB in 25s (~${Math.round(s.msgs / 25)}/s, ~${(s.bytes / 1e6 * 86400 / 25 / 1000).toFixed(1)} GB/day) ${s.err || ''}`);
-  s.samples.forEach((x) => console.log('   sample: ' + x));
-}
+const SUBS = [['UNIFIED', '>'], ['UNIFIED', 'unifiedTradeEvent.>'], ['CORE', '>'], ['ADVANCED', '>']];
+await Promise.all(SUBS.map(async ([inst, subj]) => {
+  const c = cfg[inst]; if (!c) return;
+  const s = await tryNats(c.url, c.user, c.pass, subj, 25);
+  const top = Object.entries(s.subj || {}).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([k, v]) => `${k}=${v}`).join(' ');
+  console.log(`\n== ${inst} "${subj}": ${s.msgs} msgs ${(s.bytes / 1e6).toFixed(2)} MB/25s ${s.err || ''}\n   subjects: ${top}\n   sample: ${s.samples[0] || ''}`);
+}));
 process.exit(0);
