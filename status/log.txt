@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:17:01] 🎁 dev DLerot sent 2.5% of KRANE to AHmNWaNDcbbMFHzpZJJFS8qo4NXcdeTyzv9bByRPG4ke
-[2026-10-21 19:17:09] stats 11m: trades 273794 (415/s) | lookups 337 | profiles 334 | with X 28 | ALERTS 0 | queue 2464 | rechecking 78 | 429s 3 | dropped 0 | top scans 4 | apps none=206649,axiom=27100,pump=18612,fomo=9240,gmgn=5248
 [2026-10-21 19:18:09] stats 12m: trades 298829 (415/s) | lookups 388 | profiles 384 | with X 31 | ALERTS 0 | queue 2536 | rechecking 80 | 429s 4 | dropped 0 | top scans 4 | apps none=225504,axiom=29808,pump=20106,fomo=10141,gmgn=5739
 [2026-10-21 19:19:09] stats 13m: trades 326286 (418/s) | lookups 388 | profiles 384 | with X 31 | ALERTS 0 | queue 2659 | rechecking 80 | 429s 4 | dropped 0 | top scans 4 | apps none=247448,axiom=32107,pump=21509,fomo=11092,gmgn=6181
 [2026-10-21 19:19:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 88s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-21 19:32:03] stats 8m: trades 226621 (472/s) | lookups 191 | profiles 188 | with X 15 | ALERTS 0 | queue 2088 | rechecking 92 | 429s 3 | dropped 0 | top scans 3 | apps none=176864,axiom=20184,pump=13397,fomo=8212,gmgn=3407
 [2026-10-21 19:32:03] 🎁 dev DgyL11 sent 3.0% of bridge to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
 [2026-10-21 19:33:03] stats 9m: trades 255720 (474/s) | lookups 248 | profiles 244 | with X 18 | ALERTS 0 | queue 2207 | rechecking 94 | 429s 4 | dropped 0 | top scans 3 | apps none=199485,axiom=22913,pump=15060,fomo=9204,gmgn=3926
+[2026-10-21 19:34:03] gift watcher: 240 dev wallets watched | 7411 txs | 1 gifts | 27 MB today (~1k credits)
+[2026-10-21 19:34:03] stats 10m: trades 284216 (474/s) | lookups 248 | profiles 244 | with X 18 | ALERTS 0 | queue 2377 | rechecking 94 | 429s 4 | dropped 0 | top scans 3 | apps none=221813,axiom=25470,pump=16703,fomo=10142,gmgn=4426
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
