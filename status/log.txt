@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:11:06.282] target: first $TRUMP -> buy 762 [ALREADY DONE]
 [2026-10-21 18:11:06.282] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
 [2026-10-21 18:11:06.325] all targets already done for this pool. Clear with snipe-reset.
 [2026-10-21 18:11:07.889] warm build time (median of 10): total 31.53ms = accounts 8.26 + compile/sign 16.25 + serialize 5.33
@@ -248,6 +247,7 @@
 [2026-10-21 18:38:08.527] feed pre (preprocessed/shreds) connected
 [2026-10-21 18:38:08.542] feed pre subscribed (1)
 [2026-10-21 18:38:08.550] feed mainnet connected
+[2026-10-21 18:43:08.427] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
@@ -278,7 +278,6 @@
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:22:03] stats 2m: trades 25923 (216/s) | lookups 26 | profiles 25 | with X 0 | ALERTS 0 | queue 553 | rechecking 18 | 429s 1 | dropped 0 | top scans 1 | apps none=19892,axiom=2675,pump=1821,fomo=512,gmgn=429
 [2026-10-21 18:23:03] stats 3m: trades 38656 (215/s) | lookups 83 | profiles 81 | with X 7 | ALERTS 0 | queue 697 | rechecking 25 | 429s 2 | dropped 0 | top scans 1 | apps none=29985,axiom=3802,pump=2623,fomo=759,padre=620
 [2026-10-21 18:24:03] stats 4m: trades 52854 (220/s) | lookups 89 | profiles 87 | with X 8 | ALERTS 0 | queue 839 | rechecking 26 | 429s 2 | dropped 0 | top scans 1 | apps none=41073,axiom=5163,pump=3448,fomo=999,padre=956
 [2026-10-21 18:24:09] 🆕 jaytradesss @Jay00818 followers=9 wallet=GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg
@@ -308,6 +307,7 @@
 [2026-10-21 18:40:08] stats 2m: trades 61009 (508/s) | lookups 80 | profiles 80 | with X 8 | ALERTS 0 | queue 800 | rechecking 60 | 429s 0 | dropped 0 | top scans 1 | apps none=49367,axiom=4702,pump=3034,fomo=1976,gmgn=1003
 [2026-10-21 18:41:08] stats 3m: trades 90357 (502/s) | lookups 132 | profiles 131 | with X 12 | ALERTS 0 | queue 1058 | rechecking 60 | 429s 1 | dropped 0 | top scans 1 | apps none=72611,axiom=7311,pump=4643,fomo=2918,gmgn=1444
 [2026-10-21 18:42:08] stats 4m: trades 116278 (484/s) | lookups 143 | profiles 142 | with X 12 | ALERTS 0 | queue 1300 | rechecking 60 | 429s 1 | dropped 0 | top scans 1 | apps none=92473,axiom=10017,pump=6420,fomo=3606,gmgn=1884
+[2026-10-21 18:43:08] stats 5m: trades 141197 (471/s) | lookups 194 | profiles 192 | with X 14 | ALERTS 0 | queue 1467 | rechecking 60 | 429s 2 | dropped 0 | top scans 1 | apps none=112546,axiom=11728,pump=7958,fomo=4444,gmgn=2198
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
