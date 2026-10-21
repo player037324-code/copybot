@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 19:12:09] stats 6m: trades 152017 (422/s) | lookups 175 | profiles 173 | with X 13 | ALERTS 0 | queue 1847 | rechecking 70 | 429s 2 | dropped 0 | top scans 2 | apps none=114432,axiom=14949,pump=10798,fomo=5144,gmgn=2830
-[2026-10-21 19:12:49] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 19:13:09] stats 7m: trades 175396 (418/s) | lookups 194 | profiles 192 | with X 14 | ALERTS 0 | queue 1978 | rechecking 70 | 429s 2 | dropped 0 | top scans 3 | apps none=132553,axiom=16965,pump=12337,fomo=5949,gmgn=3187
 [2026-10-21 19:13:15] 🎁 dev DgyL11 sent 2.5% of Cloverbrow to HVBjiSvQr2m9m79xDruwW64aBjZQoTdqiSxptvAxr85r
 [2026-10-21 19:14:09] stats 8m: trades 198381 (413/s) | lookups 254 | profiles 252 | with X 18 | ALERTS 0 | queue 2081 | rechecking 74 | 429s 2 | dropped 0 | top scans 3 | apps none=150116,axiom=18951,pump=13931,fomo=6644,gmgn=3659
 [2026-10-21 19:15:09] stats 9m: trades 221806 (411/s) | lookups 305 | profiles 302 | with X 25 | ALERTS 0 | queue 2186 | rechecking 77 | 429s 3 | dropped 0 | top scans 3 | apps none=167696,axiom=21325,pump=15485,fomo=7480,gmgn=4094
@@ -309,6 +306,9 @@
 [2026-10-21 19:26:03] stats 2m: trades 51957 (433/s) | lookups 26 | profiles 25 | with X 2 | ALERTS 0 | queue 948 | rechecking 82 | 429s 1 | dropped 0 | top scans 1 | apps none=38464,axiom=6141,pump=3459,fomo=1863,padre=880
 [2026-10-21 19:27:03] stats 3m: trades 78210 (434/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1151 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=59063,axiom=8611,pump=5012,fomo=2699,padre=1171
 [2026-10-21 19:28:03] stats 4m: trades 105758 (441/s) | lookups 83 | profiles 81 | with X 8 | ALERTS 0 | queue 1377 | rechecking 86 | 429s 2 | dropped 0 | top scans 1 | apps none=81243,axiom=10698,pump=6495,fomo=3562,padre=1562
+[2026-10-21 19:28:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 94s, 0 new to the list
+[2026-10-21 19:29:03] gift watcher: 132 dev wallets watched | 1460 txs | 0 gifts | 3 MB today (~0k credits)
+[2026-10-21 19:29:03] stats 5m: trades 138596 (462/s) | lookups 109 | profiles 107 | with X 11 | ALERTS 0 | queue 1582 | rechecking 88 | 429s 2 | dropped 0 | top scans 2 | apps none=107588,axiom=13338,pump=8115,fomo=4576,gmgn=2108
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
