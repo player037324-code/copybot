@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:49:08] stats 27m: trades 865153 (534/s) | lookups 793 | profiles 781 | with X 50 | ALERTS 0 | queue 4078 | rechecking 295 | 429s 9 | dropped 0 | top scans 9 | apps none=596129,axiom=131227,pump=54634,fomo=41260,gmgn=20491
-[2026-10-21 22:49:14] 🎁 dev C1riAt sent 1.6% of XOGE to 4meALVrGXB7P32TXCZuK5Y5bvE2Y8sx55TEVZRMsbZZ2
 [2026-10-21 22:50:08] stats 28m: trades 908383 (541/s) | lookups 793 | profiles 781 | with X 50 | ALERTS 0 | queue 4165 | rechecking 295 | 429s 9 | dropped 0 | top scans 9 | apps none=631663,axiom=134826,pump=56323,fomo=42472,gmgn=21065
 [2026-10-21 22:50:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:51:08] stats 29m: trades 943060 (542/s) | lookups 822 | profiles 809 | with X 52 | ALERTS 0 | queue 4238 | rechecking 295 | 429s 9 | dropped 0 | top scans 10 | apps none=657944,axiom=138706,pump=58258,fomo=43749,gmgn=21677
@@ -309,6 +307,8 @@
 [2026-10-21 22:58:08] stats 36m: trades 1174701 (544/s) | lookups 1040 | profiles 1021 | with X 59 | ALERTS 0 | queue 4699 | rechecking 301 | 429s 12 | dropped 0 | top scans 12 | apps none=837922,axiom=159328,pump=71948,fomo=52926,gmgn=25540
 [2026-10-21 22:59:08] stats 37m: trades 1204696 (543/s) | lookups 1040 | profiles 1021 | with X 59 | ALERTS 0 | queue 4780 | rechecking 301 | 429s 12 | dropped 0 | top scans 12 | apps none=861541,axiom=161654,pump=73796,fomo=54165,gmgn=25982
 [2026-10-21 22:59:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 23:00:08] stats 38m: trades 1237200 (543/s) | lookups 1069 | profiles 1050 | with X 62 | ALERTS 0 | queue 4849 | rechecking 300 | 429s 12 | dropped 0 | top scans 13 | apps none=886154,axiom=164969,pump=75693,fomo=55459,gmgn=26568
+[2026-10-21 23:00:41] 🎁 dev 8yk5ng sent 1.3% of Godxi to FgCrVMFibwTcnFS53JggzxttJZjXtTydN3b91Xegsq6o
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
