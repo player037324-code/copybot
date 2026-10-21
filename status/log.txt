@@ -306,6 +306,7 @@
 [2026-10-21 18:16:03] stats 4m: trades 56506 (235/s) | lookups 197 | profiles 196 | with X 27 | ALERTS 1 | queue 750 | rechecking 12 | 429s 1 | dropped 0 | top scans 1 | apps none=44102,axiom=5223,pump=3200,fomo=1567,gmgn=1117 | DRY (no telegram)
 [2026-10-21 18:17:03] stats 5m: trades 68937 (230/s) | lookups 202 | profiles 201 | with X 27 | ALERTS 1 | queue 903 | rechecking 13 | 429s 1 | dropped 0 | top scans 1 | apps none=53845,axiom=6308,pump=3971,fomo=1887,gmgn=1334 | DRY (no telegram)
 [2026-10-21 18:18:03] stats 6m: trades 80401 (223/s) | lookups 258 | profiles 256 | with X 31 | ALERTS 1 | queue 1007 | rechecking 15 | 429s 2 | dropped 0 | top scans 1 | apps none=62493,axiom=7468,pump=4744,fomo=2197,gmgn=1644 | DRY (no telegram)
+[2026-10-21 18:19:03] stats 7m: trades 91527 (218/s) | lookups 265 | profiles 263 | with X 31 | ALERTS 1 | queue 1106 | rechecking 15 | 429s 2 | dropped 0 | top scans 1 | apps none=71243,axiom=8434,pump=5424,fomo=2527,gmgn=1793 | DRY (no telegram)
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
