@@ -1,6 +1,6 @@
-updated: 2026-10-21T05:02:02Z
+updated: 2026-10-21T05:03:02Z
 deployed: 8625c892d93510e966b090fe0a1f3286a753dfaf
-pm2: stopped uptime=3385m restarts=14
+pm2: stopped uptime=3386m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -79,6 +79,7 @@ alerts pm2: online
 {"time":"2026-10-20T21:12:11.239Z","kind":"NEW PAIRING LIVE","text":"$TRUMP3 (Trump Index) 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue is now live on StonkFun. First launch: $TRUMP BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1. Pool token is 2.0h old.","quote":"6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue","firstMint":"BYGTxwRrzMvnQov8RHfG451ruaySvBUjEWJwU74L3Lc1","firstTicker":"TRUMP","isNew":true}
 {"time":"2026-10-20T22:46:29.624Z","kind":"first StonkFun launch on older pool","text":"$LLY (Eli Lilly and Company - Backpack Securities) LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD is now live on StonkFun. First launch: $VDPHL01 J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ. Pool token is 65.6d old.","quote":"LLYuwZ33keFihgwoxXsBawy31AiRFLFSva32TYq5TvD","firstMint":"J329KATAN5BEreckmuRRGF4S1NbrboxN7RGR7VjvZfWJ","firstTicker":"VDPHL01","isNew":false}
 {"time":"2026-10-21T01:20:14.028Z","kind":"first StonkFun launch on older pool","text":"$TRX (TRON) GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc is now live on StonkFun. First launch: $tcat 2wLhc7bGTYUByoqVyEQiqNQRuW2Ue92VBLhpE9L2Umnq. Pool token is 580.9d old.","quote":"GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc","firstMint":"2wLhc7bGTYUByoqVyEQiqNQRuW2Ue92VBLhpE9L2Umnq","firstTicker":"tcat","isNew":false}
+{"time":"2026-10-21T05:02:36.877Z","kind":"first StonkFun launch on older pool","text":"$RAY (Raydium) 4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R is now live on StonkFun. First launch: $Aurora 9s5KrducHLEZiucPd78TkcK7acm4zUmbCC9gHvoX18rw. Pool token is 2081.0d old.","quote":"4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R","firstMint":"9s5KrducHLEZiucPd78TkcK7acm4zUmbCC9gHvoX18rw","firstTicker":"Aurora","isNew":false}
 
 --- positions ---
 {
