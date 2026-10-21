@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:18:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:19:07] stats 119m: trades 1770306 (248/s) | lookups 3750 | profiles 3703 | with X 210 | ALERTS 0 | queue 5662 | rechecking 284 | 429s 31 | dropped 0 | top scans 40 | apps none=1384690,axiom=152084,pump=109940,fomo=59538,gmgn=28951
 [2026-10-21 22:20:07] gift watcher: 659 dev wallets watched | 59450 txs | 40 gifts | 528 MB today (~11k credits)
 [2026-10-21 22:20:07] stats 120m: trades 1784678 (248/s) | lookups 3803 | profiles 3755 | with X 217 | ALERTS 0 | queue 5657 | rechecking 286 | 429s 32 | dropped 0 | top scans 40 | apps none=1395579,axiom=153596,pump=110867,fomo=59994,gmgn=29251
@@ -309,6 +308,7 @@
 [2026-10-21 22:32:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:32:59] 🎁 dev Dkyrfp sent 2.2% of CYBER to 6D4wiZtM5Cgqsyk8sHnv9PZTQXh1nbnCMm6LL1zxgun7
 [2026-10-21 22:33:08] stats 11m: trades 363890 (551/s) | lookups 327 | profiles 322 | with X 24 | ALERTS 0 | queue 2473 | rechecking 291 | 429s 3 | dropped 0 | top scans 4 | apps none=254096,axiom=57210,pump=21917,fomo=13830,gmgn=8131
+[2026-10-21 22:34:08] stats 12m: trades 397652 (552/s) | lookups 380 | profiles 374 | with X 25 | ALERTS 0 | queue 2577 | rechecking 290 | 429s 4 | dropped 0 | top scans 4 | apps none=279114,axiom=61144,pump=23866,fomo=15189,gmgn=8861
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
