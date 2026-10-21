@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.8% of HallowCate to EeFDPnS6Y7kocYPtfFmVFjAEJeerxDiJb1Nw5bxTH62f
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.8% of HallowCate to ERakYxvh1Sez41oR4xf66dLKHxXyxgASeX5uHgEJyFkY
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 5.8% of HallowCate to 5qgSs3o9LTUbYE89vB8D4JU6Cw2DECBL9rEBR3pyuvEP
 [2026-10-21 22:00:12] 🎁 dev AqGUrb sent 6.4% of HallowCate to 5EpoewM2PYVUBx2WNDUujCREYba4bUCnFsr1KdrhUx7Q
@@ -309,6 +308,7 @@
 [2026-10-21 22:15:07] gift watcher: 660 dev wallets watched | 57384 txs | 40 gifts | 509 MB today (~10k credits)
 [2026-10-21 22:15:07] stats 115m: trades 1708114 (248/s) | lookups 3607 | profiles 3561 | with X 200 | ALERTS 0 | queue 5586 | rechecking 281 | 429s 30 | dropped 0 | top scans 39 | apps none=1338537,axiom=144585,pump=106090,fomo=57519,gmgn=27675
 [2026-10-21 22:16:07] stats 116m: trades 1721298 (247/s) | lookups 3667 | profiles 3621 | with X 207 | ALERTS 0 | queue 5575 | rechecking 285 | 429s 30 | dropped 0 | top scans 39 | apps none=1348342,axiom=146083,pump=106958,fomo=57935,gmgn=27964
+[2026-10-21 22:17:07] stats 117m: trades 1737000 (247/s) | lookups 3720 | profiles 3673 | with X 209 | ALERTS 0 | queue 5584 | rechecking 285 | 429s 31 | dropped 0 | top scans 39 | apps none=1359911,axiom=147890,pump=108004,fomo=58483,gmgn=28312
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
