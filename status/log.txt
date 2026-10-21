@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:02:07] stats 42m: trades 652332 (259/s) | lookups 1325 | profiles 1309 | with X 96 | ALERTS 0 | queue 3527 | rechecking 217 | 429s 11 | dropped 0 | top scans 14 | apps none=508770,axiom=52922,pump=41529,fomo=25428,gmgn=10254
 [2026-10-21 21:02:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:03:07] stats 43m: trades 666761 (258/s) | lookups 1345 | profiles 1328 | with X 96 | ALERTS 0 | queue 3575 | rechecking 220 | 429s 11 | dropped 0 | top scans 15 | apps none=519806,axiom=54146,pump=42480,fomo=26022,gmgn=10526
 [2026-10-21 21:04:07] stats 44m: trades 681635 (258/s) | lookups 1398 | profiles 1380 | with X 100 | ALERTS 0 | queue 3609 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=531520,axiom=55251,pump=43398,fomo=26561,gmgn=10785
@@ -309,6 +308,7 @@
 [2026-10-21 21:18:07] stats 58m: trades 885335 (254/s) | lookups 1844 | profiles 1823 | with X 125 | ALERTS 0 | queue 4111 | rechecking 230 | 429s 15 | dropped 0 | top scans 19 | apps none=691826,axiom=70802,pump=56477,fomo=33635,gmgn=13845
 [2026-10-21 21:18:14] 🎁 dev AMQ6kj sent 1.7% of bbcb to 7RMJ1wnuhry4Ue8ZL9LrDykTtREdUzrhoH4pUG6W11Md
 [2026-10-21 21:18:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
+[2026-10-21 21:19:07] stats 59m: trades 899866 (254/s) | lookups 1874 | profiles 1852 | with X 126 | ALERTS 0 | queue 4164 | rechecking 231 | 429s 15 | dropped 0 | top scans 20 | apps none=703599,axiom=71680,pump=57416,fomo=34067,gmgn=14069
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
