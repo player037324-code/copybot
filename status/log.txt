@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.7% of ROBONOMICS to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
-[2026-10-21 21:55:33] 🎁 dev 3H4GRC sent 1.8% of ROBONOMICS to Cj7ZjeH5n1BNm2eSc8fowxVkBpaQghryUJzuB2iPyRHG
 [2026-10-21 21:56:07] stats 96m: trades 1417644 (246/s) | lookups 3036 | profiles 2997 | with X 180 | ALERTS 0 | queue 5101 | rechecking 266 | 429s 25 | dropped 0 | top scans 32 | apps none=1109355,axiom=116584,pump=90343,fomo=49727,gmgn=23004
 [2026-10-21 21:56:47] top scan: 2001 profiles (cutoff 1042 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:56:59] 🎁 dev AgmyPN sent 2.7% of 64bTk9 to DQBStqFW9afWUuGKDkKg3RxhLynTnSK7rDi1THWHTRy8
@@ -309,6 +307,8 @@
 [2026-10-21 22:03:07] stats 103m: trades 1541011 (249/s) | lookups 3251 | profiles 3209 | with X 189 | ALERTS 0 | queue 5317 | rechecking 271 | 429s 27 | dropped 0 | top scans 34 | apps none=1210274,axiom=126480,pump=96465,fomo=52626,gmgn=24701
 [2026-10-21 22:03:37] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:04:07] stats 104m: trades 1555985 (249/s) | lookups 3280 | profiles 3238 | with X 189 | ALERTS 0 | queue 5356 | rechecking 271 | 429s 27 | dropped 0 | top scans 35 | apps none=1222104,axiom=127836,pump=97323,fomo=53033,gmgn=24983
+[2026-10-21 22:05:07] gift watcher: 668 dev wallets watched | 52578 txs | 39 gifts | 458 MB today (~9k credits)
+[2026-10-21 22:05:07] stats 105m: trades 1570565 (249/s) | lookups 3334 | profiles 3291 | with X 192 | ALERTS 0 | queue 5355 | rechecking 274 | 429s 28 | dropped 0 | top scans 35 | apps none=1233526,axiom=129158,pump=98211,fomo=53461,gmgn=25239
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
