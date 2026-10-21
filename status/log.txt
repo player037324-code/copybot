@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:04:44] 🎁 dev BAoJmp sent 1.4% of CYBERBABY to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
-[2026-10-21 23:04:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-21 23:04:51] 🎁 dev 3szfdA sent 4.9% of TOM to 72756wSUNLfPoxQgsB1NeLjmsFkp5qvxUYn5WzJAYJBc
 [2026-10-21 23:05:08] stats 43m: trades 1403556 (544/s) | lookups 1232 | profiles 1211 | with X 75 | ALERTS 0 | queue 5093 | rechecking 302 | 429s 13 | dropped 0 | top scans 15 | apps none=1013522,axiom=181069,pump=86085,fomo=61727,gmgn=29441
 [2026-10-21 23:06:08] stats 44m: trades 1434227 (543/s) | lookups 1291 | profiles 1270 | with X 78 | ALERTS 0 | queue 5104 | rechecking 302 | 429s 13 | dropped 0 | top scans 15 | apps none=1036891,axiom=184033,pump=88051,fomo=63083,gmgn=29952
 [2026-10-21 23:07:08] gift watcher: 747 dev wallets watched | 22408 txs | 22 gifts | 178 MB today (~4k credits)
@@ -309,6 +306,9 @@
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.6% of GARRY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.5% of GARRY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-21 23:16:08] stats 54m: trades 1810071 (559/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5582 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1323356,axiom=223884,pump=109212,fomo=79039,gmgn=35605
+[2026-10-21 23:17:08] gift watcher: 856 dev wallets watched | 28066 txs | 32 gifts | 209 MB today (~4k credits)
+[2026-10-21 23:17:08] stats 55m: trades 1847196 (560/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5638 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1350377,axiom=229643,pump=111162,fomo=80280,gmgn=36152
+[2026-10-21 23:17:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
