@@ -174,7 +174,7 @@ export function buildTx(wallet, ixs, blockhash, cuLimit = S.cuLimit, cuPrice = S
 // ---------- runtime ----------
 async function main() {
   const targets = (S.targetsRaw ? S.targetsRaw.split(',') : [`${S.ticker}:${S.amount}`]).map((x) => x.trim()).filter(Boolean).map((x) => {
-    const [t, a] = x.split(':'); return { ticker: (t || '').replace(/^\$/, '').toUpperCase(), amount: Number(a) };
+    const [t, a] = x.split(':'); const all = /^all$/i.test((a || '').trim()); return { ticker: (t || '').replace(/^\$/, '').toUpperCase(), amount: all ? 1 : Number(a), all };
   });
   const missing = ['heliusKey', 'privateKey', 'quoteMint'].filter((k) => !S[k]);
   if (missing.length || !targets.length || targets.some((t) => !t.ticker || !(t.amount > 0))) { console.error(`sniper not configured: ${missing.join(', ')} targets=${JSON.stringify(targets)}`); process.exit(1); }
@@ -184,12 +184,14 @@ async function main() {
   const quoteInfo = await conn.getParsedAccountInfo(quotePk);
   const quoteProg = new PublicKey(quoteInfo.value.owner);
   const decimals = quoteInfo.value.data.parsed.info.decimals;
-  for (const t of targets) t.amountRaw = BigInt(Math.floor(t.amount * 10 ** decimals));
-  const amountRaw = targets[0].amountRaw;
-  const totalAmount = targets.reduce((a, t) => a + t.amount, 0);
   const myQuote = ata(wallet.publicKey, quotePk, quoteProg);
   const bal = await conn.getTokenAccountBalance(myQuote).catch(() => null);
   const have = bal ? Number(bal.value.uiAmount) : 0;
+  // TICKER:all -> spend the whole pool token balance (raw, exact)
+  for (const t of targets) { if (t.all) { t.amountRaw = bal ? BigInt(bal.value.amount) : 0n; t.amount = have; } else t.amountRaw = BigInt(Math.floor(t.amount * 10 ** decimals)); }
+  if (targets.some((t) => t.amountRaw <= 0n)) { console.error('sniper: "all" target but wallet holds 0 of the pool token'); process.exit(1); }
+  const amountRaw = targets[0].amountRaw;
+  const totalAmount = targets.reduce((a, t) => a + t.amount, 0);
 
   let state = {}; try { state = JSON.parse(fs.readFileSync(STATE, 'utf8')); } catch {}
   for (const t of targets) t.key = `${S.quoteMint}:${t.ticker}`;

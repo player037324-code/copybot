@@ -1,4 +1,4 @@
-id: 9104
-set SNIPE_DRY_RUN=true
+id: 9105
+set SNIPE_TARGETS=MSTR:all
+snipe-start
 snipe-stop
-snipe-grep 20:09
