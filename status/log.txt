@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:47:07] stats 27m: trades 432320 (267/s) | lookups 856 | profiles 846 | with X 67 | ALERTS 0 | queue 2860 | rechecking 193 | 429s 7 | dropped 0 | top scans 9 | apps none=336920,axiom=35274,pump=27239,fomo=17229,gmgn=6794
 [2026-10-21 20:47:28] 🎁 dev 9MF5V1 sent 1.4% of VetPad to 4vSaj1VjQXE4hkmwpb2L9vVjtbFKV7QCyQmwEhNumqAV
 [2026-10-21 20:47:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 20:47:58] 🎁 dev HgAhL3 sent 1.3% of 61MUXz to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
@@ -309,6 +308,7 @@
 [2026-10-21 21:02:07] stats 42m: trades 652332 (259/s) | lookups 1325 | profiles 1309 | with X 96 | ALERTS 0 | queue 3527 | rechecking 217 | 429s 11 | dropped 0 | top scans 14 | apps none=508770,axiom=52922,pump=41529,fomo=25428,gmgn=10254
 [2026-10-21 21:02:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-21 21:03:07] stats 43m: trades 666761 (258/s) | lookups 1345 | profiles 1328 | with X 96 | ALERTS 0 | queue 3575 | rechecking 220 | 429s 11 | dropped 0 | top scans 15 | apps none=519806,axiom=54146,pump=42480,fomo=26022,gmgn=10526
+[2026-10-21 21:04:07] stats 44m: trades 681635 (258/s) | lookups 1398 | profiles 1380 | with X 100 | ALERTS 0 | queue 3609 | rechecking 221 | 429s 12 | dropped 0 | top scans 15 | apps none=531520,axiom=55251,pump=43398,fomo=26561,gmgn=10785
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
