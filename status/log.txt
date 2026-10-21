@@ -208,19 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 18:11:06.282] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
-[2026-10-21 18:11:06.325] all targets already done for this pool. Clear with snipe-reset.
-[2026-10-21 18:11:07.889] warm build time (median of 10): total 31.53ms = accounts 8.26 + compile/sign 16.25 + serialize 5.33
-[2026-10-21 18:11:07.898] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
-[2026-10-21 18:11:07.899] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
-[2026-10-21 18:11:08.074] feed pre (preprocessed/shreds) connected
-[2026-10-21 18:11:08.085] feed mainnet connected
-[2026-10-21 18:11:08.093] feed pre subscribed (1)
-[2026-10-21 18:11:08.098] feed beta connected
-[2026-10-21 18:16:07.935] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 18:21:07.936] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 18:26:07.936] alive | pool 6s2umN | $TRUMP done
-[2026-10-21 18:31:07.937] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 18:35:07.169] === sniper starting ===
 [2026-10-21 18:35:07.179] mode: DRY RUN (builds + simulates, never sends)
 [2026-10-21 18:35:07.179] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
@@ -248,12 +235,24 @@
 [2026-10-21 18:38:08.542] feed pre subscribed (1)
 [2026-10-21 18:38:08.550] feed mainnet connected
 [2026-10-21 18:43:08.427] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 18:45:07.847] === sniper starting ===
+[2026-10-21 18:45:07.855] mode: DRY RUN (builds + simulates, never sends)
+[2026-10-21 18:45:07.855] pool 6s2umN1sqM8mS8ERRmt9cqcFwAoWu5ofma7DN3KfFiue on platform 6BwHHD
+[2026-10-21 18:45:07.856] target: first $TRUMP -> buy 762 [ALREADY DONE]
+[2026-10-21 18:45:07.856] wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr | holds 0 of pool token, targets need up to 762
+[2026-10-21 18:45:07.914] all targets already done for this pool. Clear with snipe-reset.
+[2026-10-21 18:45:09.938] warm build time (median of 10): total 31.94ms = accounts 11.74 + compile/sign 15.68 + serialize 0.22
+[2026-10-21 18:45:09.938] send paths: Helius Sender x2 + Helius RPC + Nozomi + Astralane + Jito ny,mainnet,slc,frankfurt
+[2026-10-21 18:45:09.939] fees: priority 0.0100 SOL + Jito tip 0.45 + Sender 0.001 + Nozomi/Astralane 0.002 = 0.4630 SOL per snipe (tips only paid if it lands)
+[2026-10-21 18:45:10.097] feed beta connected
+[2026-10-21 18:45:10.162] feed pre (preprocessed/shreds) connected
+[2026-10-21 18:45:10.168] feed mainnet connected
+[2026-10-21 18:45:10.178] feed pre subscribed (1)
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-20 21:25:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:31:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 21:54:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-20 22:30:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,16 +272,13 @@
 [2026-10-21 18:11:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 18:35:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 18:38:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-21 18:45:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
+
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:23:03] stats 3m: trades 38656 (215/s) | lookups 83 | profiles 81 | with X 7 | ALERTS 0 | queue 697 | rechecking 25 | 429s 2 | dropped 0 | top scans 1 | apps none=29985,axiom=3802,pump=2623,fomo=759,padre=620
-[2026-10-21 18:24:03] stats 4m: trades 52854 (220/s) | lookups 89 | profiles 87 | with X 8 | ALERTS 0 | queue 839 | rechecking 26 | 429s 2 | dropped 0 | top scans 1 | apps none=41073,axiom=5163,pump=3448,fomo=999,padre=956
-[2026-10-21 18:24:09] 🆕 jaytradesss @Jay00818 followers=9 wallet=GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg
-[2026-10-21 18:25:03] stats 5m: trades 65623 (219/s) | lookups 145 | profiles 142 | with X 17 | ALERTS 1 | queue 941 | rechecking 26 | 429s 3 | dropped 0 | top scans 1 | apps none=50568,axiom=6814,pump=4277,fomo=1236,padre=1228
-[2026-10-21 18:26:03] stats 6m: trades 78557 (218/s) | lookups 151 | profiles 148 | with X 17 | ALERTS 1 | queue 1080 | rechecking 27 | 429s 3 | dropped 0 | top scans 1 | apps none=60569,axiom=8214,pump=5101,padre=1454,fomo=1443
 [2026-10-21 18:27:03] stats 7m: trades 92860 (221/s) | lookups 211 | profiles 208 | with X 22 | ALERTS 1 | queue 1165 | rechecking 32 | 429s 3 | dropped 0 | top scans 1 | apps none=71361,axiom=10014,pump=5961,padre=1754,fomo=1667
 [2026-10-21 18:28:03] stats 8m: trades 109836 (229/s) | lookups 268 | profiles 264 | with X 25 | ALERTS 1 | queue 1256 | rechecking 37 | 429s 4 | dropped 0 | top scans 1 | apps none=84567,axiom=11952,pump=6906,padre=2022,fomo=1925
 [2026-10-21 18:29:03] stats 9m: trades 127632 (236/s) | lookups 274 | profiles 270 | with X 25 | ALERTS 1 | queue 1382 | rechecking 38 | 429s 4 | dropped 0 | top scans 1 | apps none=98780,axiom=13837,pump=7853,padre=2260,fomo=2165
@@ -308,6 +304,11 @@
 [2026-10-21 18:41:08] stats 3m: trades 90357 (502/s) | lookups 132 | profiles 131 | with X 12 | ALERTS 0 | queue 1058 | rechecking 60 | 429s 1 | dropped 0 | top scans 1 | apps none=72611,axiom=7311,pump=4643,fomo=2918,gmgn=1444
 [2026-10-21 18:42:08] stats 4m: trades 116278 (484/s) | lookups 143 | profiles 142 | with X 12 | ALERTS 0 | queue 1300 | rechecking 60 | 429s 1 | dropped 0 | top scans 1 | apps none=92473,axiom=10017,pump=6420,fomo=3606,gmgn=1884
 [2026-10-21 18:43:08] stats 5m: trades 141197 (471/s) | lookups 194 | profiles 192 | with X 14 | ALERTS 0 | queue 1467 | rechecking 60 | 429s 2 | dropped 0 | top scans 1 | apps none=112546,axiom=11728,pump=7958,fomo=4444,gmgn=2198
+[2026-10-21 18:44:08] stats 6m: trades 167378 (465/s) | lookups 205 | profiles 203 | with X 15 | ALERTS 0 | queue 1619 | rechecking 61 | 429s 2 | dropped 0 | top scans 1 | apps none=133292,axiom=13780,pump=9444,fomo=5375,gmgn=2585
+[2026-10-21 18:45:08] stats 7m: trades 196269 (467/s) | lookups 265 | profiles 263 | with X 27 | ALERTS 0 | queue 1728 | rechecking 62 | 429s 2 | dropped 0 | top scans 1 | apps none=156940,axiom=15722,pump=10994,fomo=6244,gmgn=2922
+[2026-10-21 18:45:10] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
+[2026-10-21 18:45:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-21 18:45:11] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

@@ -1,6 +1,6 @@
-updated: 2026-10-21T18:44:02Z
-deployed: a258e3537541e057f131b6415b430ae469cb46c8
-pm2: stopped uptime=4207m restarts=14
+updated: 2026-10-21T18:45:09Z
+deployed: e00fd028b91b06a49024ca22505d12515726a5bb
+pm2: stopped uptime=4208m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -91,8 +91,8 @@ alerts pm2: online
 {"time":"2026-10-21T16:06:23.282Z","kind":"first StonkFun launch on older pool","text":"$META (Meta Platforms - Backpack Securities) METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd is now live on StonkFun. First launch: $ZUCK xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED. Pool token is 125.3d old.","quote":"METAaH6MMZZgy2CTEJq3QdNi7AFVTV3NxHFBfFgLEDd","firstMint":"xwLgNvcRBnbRDNts4kcuza8QpDTanxypmKEVDx7EKED","firstTicker":"ZUCK","isNew":false}
 
 --- pfwatch ---
-pfwatch pm2: online restarts=6
-{"apps":{"none":112546,"axiom":11728,"padre":1528,"gmgn":2198,"fomo":4444,"trojan":261,"pump":7958,"phantom":109,"maestro":101,"bloom":114,"mevx":12,"photon":130,"j7":32,"bonk":28,"sol_trading_bot":8},"topScans":1,"trades":141197,"lookups":194,"users":192,"withX":14,"recentX":0,"alerts":0,"r429":2,"err":0,"dropped":0,"since":1792607888811,"queue":1467,"watch":60,"dry":false,"updated":"2026-10-21T18:43:08.816Z"}
+pfwatch pm2: online restarts=7
+{"apps":{"none":156940,"axiom":15722,"padre":2299,"gmgn":2922,"fomo":6244,"trojan":374,"pump":10994,"phantom":146,"maestro":136,"bloom":212,"mevx":12,"photon":180,"j7":42,"bonk":38,"sol_trading_bot":8},"topScans":1,"trades":196269,"lookups":265,"users":263,"withX":27,"recentX":1,"alerts":0,"r429":2,"err":0,"dropped":0,"since":1792607888811,"queue":1728,"watch":62,"dry":false,"updated":"2026-10-21T18:45:08.825Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
