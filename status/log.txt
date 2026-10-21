@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:43:08] stats 21m: trades 679724 (539/s) | lookups 628 | profiles 619 | with X 38 | ALERTS 0 | queue 3595 | rechecking 290 | 429s 7 | dropped 0 | top scans 7 | apps none=457874,axiom=111953,pump=43110,fomo=32791,gmgn=16596
-[2026-10-21 22:44:08] stats 22m: trades 711316 (539/s) | lookups 628 | profiles 619 | with X 38 | ALERTS 0 | queue 3698 | rechecking 290 | 429s 7 | dropped 0 | top scans 7 | apps none=480312,axiom=115271,pump=45442,fomo=34771,gmgn=17264
-[2026-10-21 22:44:12] 🎁 dev BAoJmp sent 4.3% of CYBERINU to 2Fn9QTA6sJK5tJmizdL3Hu9KAxV3geqmNwGhGtSqj4EZ
-[2026-10-21 22:44:12] 🎁 dev BAoJmp sent 3.5% of CYBERINU to 6Z67hwhUQB3QoY8YS9mMVtkDAHgkbL1cNTpp2adGWnMx
 [2026-10-21 22:44:38] top scan: 2001 profiles (cutoff 1042 pump followers) in 90s, 0 new to the list
 [2026-10-21 22:45:08] stats 23m: trades 740459 (537/s) | lookups 657 | profiles 647 | with X 38 | ALERTS 0 | queue 3808 | rechecking 292 | 429s 7 | dropped 0 | top scans 8 | apps none=501589,axiom=118336,pump=47323,fomo=36167,gmgn=18017
 [2026-10-21 22:46:08] stats 24m: trades 770124 (535/s) | lookups 710 | profiles 699 | with X 42 | ALERTS 0 | queue 3860 | rechecking 293 | 429s 8 | dropped 0 | top scans 8 | apps none=524087,axiom=121067,pump=49135,fomo=37500,gmgn=18659
@@ -309,6 +305,10 @@
 [2026-10-21 22:54:04] 🎁 dev BAoJmp sent 1.1% of CYBERGUY to 6Z67hwhUQB3QoY8YS9mMVtkDAHgkbL1cNTpp2adGWnMx
 [2026-10-21 22:54:04] 🎁 dev BAoJmp sent 1.3% of CYBERGUY to 6Ze3VZNCSDpxqwuxbBPQETiMgVpzCNPXUWhtqnHjTYDh
 [2026-10-21 22:54:08] stats 32m: trades 1046833 (545/s) | lookups 905 | profiles 891 | with X 52 | ALERTS 0 | queue 4462 | rechecking 297 | 429s 10 | dropped 0 | top scans 11 | apps none=738266,axiom=148474,pump=64149,fomo=47876,gmgn=23359
+[2026-10-21 22:55:08] stats 33m: trades 1077475 (544/s) | lookups 958 | profiles 941 | with X 57 | ALERTS 0 | queue 4493 | rechecking 299 | 429s 11 | dropped 0 | top scans 11 | apps none=762394,axiom=150872,pump=65869,fomo=49217,gmgn=23913
+[2026-10-21 22:55:24] 🎁 dev 3H4GRC sent 2.2% of CYPURR to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-21 22:55:30] 🎁 dev 3H4GRC sent 3.0% of CYPURR to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
+[2026-10-21 22:55:30] 🎁 dev 3H4GRC sent 2.9% of CYPURR to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
