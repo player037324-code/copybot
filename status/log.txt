@@ -279,11 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.7% of GARRY to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
-[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.6% of GARRY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
-[2026-10-21 23:15:42] 🎁 dev 3H4GRC sent 1.5% of GARRY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
-[2026-10-21 23:16:08] stats 54m: trades 1810071 (559/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5582 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1323356,axiom=223884,pump=109212,fomo=79039,gmgn=35605
-[2026-10-21 23:17:08] gift watcher: 856 dev wallets watched | 28066 txs | 32 gifts | 209 MB today (~4k credits)
 [2026-10-21 23:17:08] stats 55m: trades 1847196 (560/s) | lookups 1592 | profiles 1562 | with X 92 | ALERTS 0 | queue 5638 | rechecking 309 | 429s 17 | dropped 0 | top scans 18 | apps none=1350377,axiom=229643,pump=111162,fomo=80280,gmgn=36152
 [2026-10-21 23:17:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:18:08] stats 56m: trades 1878775 (559/s) | lookups 1621 | profiles 1591 | with X 93 | ALERTS 0 | queue 5697 | rechecking 309 | 429s 17 | dropped 0 | top scans 19 | apps none=1373804,axiom=233771,pump=113002,fomo=81470,gmgn=36640
@@ -309,6 +304,11 @@
 [2026-10-21 23:30:08] stats 68m: trades 2244760 (550/s) | lookups 2001 | profiles 1965 | with X 124 | ALERTS 0 | queue 6148 | rechecking 316 | 429s 21 | dropped 0 | top scans 23 | apps none=1655654,axiom=268069,pump=135006,fomo=96158,gmgn=43083
 [2026-10-21 23:31:08] stats 69m: trades 2285053 (552/s) | lookups 2011 | profiles 1975 | with X 124 | ALERTS 0 | queue 6194 | rechecking 316 | 429s 21 | dropped 0 | top scans 23 | apps none=1686940,axiom=272054,pump=137145,fomo=97510,gmgn=43707
 [2026-10-21 23:31:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-21 23:32:08] gift watcher: 932 dev wallets watched | 39042 txs | 34 gifts | 284 MB today (~6k credits)
+[2026-10-21 23:32:08] stats 70m: trades 2317945 (552/s) | lookups 2030 | profiles 1994 | with X 125 | ALERTS 0 | queue 6228 | rechecking 317 | 429s 21 | dropped 0 | top scans 24 | apps none=1711999,axiom=275790,pump=138883,fomo=98686,gmgn=44265
+[2026-10-21 23:32:39] 🎁 dev 3H4GRC sent 2.3% of 4vqhH6 to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-21 23:32:39] 🎁 dev 3H4GRC sent 1.9% of 4vqhH6 to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-21 23:32:48] 🎁 dev HB3Geb sent 1.8% of BurgerShot to Dec3VwiarqdxkuNUzMyPuUNNcCUGdheEp9N9pTjzTyEF
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
