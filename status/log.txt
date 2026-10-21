@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 20:24:07] stats 4m: trades 63631 (265/s) | lookups 133 | profiles 132 | with X 7 | ALERTS 0 | queue 1001 | rechecking 162 | 429s 1 | dropped 0 | top scans 1 | apps none=50064,axiom=4947,pump=4159,fomo=2220,padre=925
-[2026-10-21 20:24:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-21 20:25:07] stats 5m: trades 79129 (264/s) | lookups 162 | profiles 161 | with X 8 | ALERTS 0 | queue 1164 | rechecking 162 | 429s 1 | dropped 0 | top scans 2 | apps none=61196,axiom=6851,pump=5209,fomo=2960,padre=1241
 [2026-10-21 20:25:07] gift watcher: 95 dev wallets watched | 912 txs | 1 gifts | 12 MB today (~0k credits)
 [2026-10-21 20:26:07] stats 6m: trades 98886 (275/s) | lookups 222 | profiles 221 | with X 14 | ALERTS 0 | queue 1291 | rechecking 165 | 429s 1 | dropped 0 | top scans 2 | apps none=76113,axiom=8943,pump=6328,fomo=3857,padre=1581
 [2026-10-21 20:26:43] 🎁 dev 8wvJGn sent 6.3% of AHHHHHH to 533HxAJMt6RYmUF8hJQo1623JP2Ub5FgKCNR1yi2YVWz
@@ -309,6 +306,9 @@
 [2026-10-21 20:40:07] gift watcher: 289 dev wallets watched | 6058 txs | 3 gifts | 63 MB today (~1k credits)
 [2026-10-21 20:40:07] stats 20m: trades 324339 (270/s) | lookups 632 | profiles 625 | with X 50 | ALERTS 0 | queue 2468 | rechecking 183 | 429s 5 | dropped 0 | top scans 7 | apps none=251300,axiom=26988,pump=20667,fomo=13216,gmgn=5347
 [2026-10-21 20:41:07] stats 21m: trades 341891 (271/s) | lookups 685 | profiles 677 | with X 54 | ALERTS 0 | queue 2515 | rechecking 187 | 429s 6 | dropped 0 | top scans 7 | apps none=265120,axiom=28425,pump=21649,fomo=13884,gmgn=5612
+[2026-10-21 20:42:07] stats 22m: trades 359636 (272/s) | lookups 685 | profiles 677 | with X 54 | ALERTS 0 | queue 2596 | rechecking 187 | 429s 6 | dropped 0 | top scans 7 | apps none=279561,axiom=29714,pump=22587,fomo=14513,gmgn=5803
+[2026-10-21 20:42:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 91s, 0 new to the list
+[2026-10-21 20:42:50] 🎁 dev HgAhL3 sent 1.3% of nekinu to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
