@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 18:27:03] stats 7m: trades 92860 (221/s) | lookups 211 | profiles 208 | with X 22 | ALERTS 1 | queue 1165 | rechecking 32 | 429s 3 | dropped 0 | top scans 1 | apps none=71361,axiom=10014,pump=5961,padre=1754,fomo=1667
-[2026-10-21 18:28:03] stats 8m: trades 109836 (229/s) | lookups 268 | profiles 264 | with X 25 | ALERTS 1 | queue 1256 | rechecking 37 | 429s 4 | dropped 0 | top scans 1 | apps none=84567,axiom=11952,pump=6906,padre=2022,fomo=1925
-[2026-10-21 18:29:03] stats 9m: trades 127632 (236/s) | lookups 274 | profiles 270 | with X 25 | ALERTS 1 | queue 1382 | rechecking 38 | 429s 4 | dropped 0 | top scans 1 | apps none=98780,axiom=13837,pump=7853,padre=2260,fomo=2165
 [2026-10-21 18:30:03] stats 10m: trades 146557 (244/s) | lookups 329 | profiles 324 | with X 31 | ALERTS 1 | queue 1453 | rechecking 41 | 429s 5 | dropped 0 | top scans 1 | apps none=114870,axiom=14927,pump=8913,padre=2456,fomo=2386
 [2026-10-21 18:31:03] stats 11m: trades 164338 (249/s) | lookups 336 | profiles 331 | with X 31 | ALERTS 1 | queue 1573 | rechecking 41 | 429s 5 | dropped 0 | top scans 1 | apps none=129982,axiom=15999,pump=9803,padre=2645,fomo=2623
 [2026-10-21 18:31:58] 🆕 xcoinxcoin @ZENmemecoin followers=318 wallet=984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV
@@ -309,6 +306,9 @@
 [2026-10-21 18:45:10] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
 [2026-10-21 18:45:11] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:45:11] feed connected
+[2026-10-21 18:46:10] stats 1m: trades 26638 (444/s) | lookups 30 | profiles 30 | with X 3 | ALERTS 0 | queue 414 | rechecking 65 | 429s 0 | dropped 0 | top scans 0 | apps none=21572,axiom=2169,pump=1309,fomo=733,gmgn=374
+[2026-10-21 18:46:19] top scan: 2001 profiles, 0 new to the list
+[2026-10-21 18:47:10] stats 2m: trades 56953 (475/s) | lookups 80 | profiles 80 | with X 9 | ALERTS 0 | queue 735 | rechecking 64 | 429s 0 | dropped 0 | top scans 1 | apps none=46394,axiom=4202,pump=3014,fomo=1535,gmgn=781
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting

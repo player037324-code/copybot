@@ -1,130 +1,3 @@
-
-profile kimchi: HTTP 200 {"address":"Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX","userId":"ea1951bf-9885-4dca-9f28-82830824ce3c","is_pump_user":true,"is_banned":false,"username":"Kimchi","profile_image":"https://socialimages.pump.fun/profile-images/ea1951bf-9885-4dca-9f28-82830824ce3c/fc78f0fb-4873-418f-bac7-b1766f38f7a6","header_image_url":"https://socialimages.pump.fun/profile-images/ea1951bf-9885-4dca-9f28-82830824ce
-profile lookups: 56 in 327ms, codes {"200":28,"404":28}, with username 28, with X 1
-  {"address":"FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT","userId":"9e3a9401-65cd-4c24-b692-7a2b088088b1","is_pump_user":false,"is_banned":false,"username":"sanitarycrab313","profile_image":null,"header_image_url":null,"avatar_decoration":null,"resol
-  {"address":"6temWfhr4eRvRycBDgqxcbZGUYJ3rwLsgEvaTVhgiCXM","userId":"fd4d3012-6399-497b-9144-83cce8da1663","is_pump_user":true,"is_banned":false,"username":"BoomingOilTree","profile_image":"https://socialimages.pump.fun/profile-images/pumpatar/2/Indig
-  404: {"statusCode":404,"timestamp":"2026-10-21T17:38:48.152Z","path":"/users/A7jLFe9o9xNKzijNbGbuck5KHJHNvEm55vPZ9JsLzYKm","message":"User not found","erro ratelimit=29 retry=
-  404: {"statusCode":404,"timestamp":"2026-10-21T17:38:48.159Z","path":"/users/34hLDpLAFX7KGF8XxGvPHGrh6LbwSUSWtrVphMTvMCX6","message":"User not found","erro ratelimit=29 retry=
-  404: {"statusCode":404,"timestamp":"2026-10-21T17:38:48.183Z","path":"/users/CLKgysNY9JXmwPscXNGFjavo2wDjrrNWwuY7NhjAswQn","message":"User not found","erro ratelimit=29 retry=
-  404: {"statusCode":404,"timestamp":"2026-10-21T17:38:48.200Z","path":"/users/FBC796RnayiENcQx3pqBeALSbm1vJrRcjUZ7NfWHMAFj","message":"User not found","erro ratelimit=29 retry=
-=== cmd 74 @ 2026-10-21T17:41:02Z ===
-> pffeed
-https://pump.fun/ HTTP 200 2088000b
-https://pump.fun/board HTTP 200 2088000b
-https://pump.fun/profile/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX HTTP 200 2310218b
-scripts: 140
-fetched 140 scripts, 73 hits
-* wss://solana-mainnet.pump.fun/2ba533b3-1d80-4fa8-8879-404ea05e068f
-    s://solana-mainnet.pump.fun/f15623a5-2536-4b47-9641-8abc239413ba",c=()=>{var e="wss://solana-mainnet.pump.fun/2ba533b3-1d80-4fa8-8879-404ea05e068f";try{let t=new URL(e);if("ws:"===t.protocol||"wss:"===t.protocol)return e;if("https:"===t.pro
-* NATS_PER_USER_AUTH
-    LOWER_GATE="bountyPumpFollowerGate",t.WEB_DIRECT_MESSAGES="webDirectMessages",t.NATS_PER_USER_AUTH="natsPerUserAuth",t.WEB_SQUADS="webSquads",t.WEB_COIN_TERMINAL_FRAME="webCoinTerminalFrame",t.WEB_BLOCKCHAIN_LIMIT_ORDERS="webBlockchainLimit
-* natsPerUserAuth
-    mpFollowerGate",t.WEB_DIRECT_MESSAGES="webDirectMessages",t.NATS_PER_USER_AUTH="natsPerUserAuth",t.WEB_SQUADS="webSquads",t.WEB_COIN_TERMINAL_FRAME="webCoinTerminalFrame",t.WEB_BLOCKCHAIN_LIMIT_ORDERS="webBlockchainLimitOrders",t.WEB_PROFIL
-* natsPerUserAuth:
-    7"},webDirectMessages:{kind:"rollout",owner:"lukes-baton",created:"2026-08-27"},natsPerUserAuth:{kind:"rollout",owner:"naveen-baton",created:"2026-09-28"},webSquads:{kind:"rollout",owner:"lukes-baton",created:"2026-08-27"},webCoinTerminalFr
-* NATS:1
-    3,UNMUTE:4,ARCHIVE:5,UNARCHIVE:6},"DmDeliveryChannel",0,{UNSPECIFIED:0,REALTIME_NATS:1,INBOX_POLL:2,FOREGROUND_REFETCH:3,SEND_ECHO:4},"DmEmbedType",0,{UNSPECIFIED:0,COIN:1,PROFILE:2,CALLOUT:3},"DmEntryPoint",0,{UNSPECIFIED:0,OWN_PROFILE_BUT
-* NatsInstance.Advanced
-    (917649),r=e.i(940660),a=e.i(304366),o=e.i(755793),i=e.i(358615);let s=()=>({[i.NatsInstance.Advanced]:!1,[i.NatsInstance.Core]:!1,[i.NatsInstance.Unified]:!1,[i.NatsInstance.Multichain]:!1}),n=()=>{let e=s(),t=new Set;return{get:()=>e,set:
-* NatsInstance.Core
-    304366),o=e.i(755793),i=e.i(358615);let s=()=>({[i.NatsInstance.Advanced]:!1,[i.NatsInstance.Core]:!1,[i.NatsInstance.Unified]:!1,[i.NatsInstance.Multichain]:!1}),n=()=>{let e=s(),t=new Set;return{get:()=>e,set:r=>{let a;if(a=e,!Object.valu
-* NatsInstance.Unified
-    .i(358615);let s=()=>({[i.NatsInstance.Advanced]:!1,[i.NatsInstance.Core]:!1,[i.NatsInstance.Unified]:!1,[i.NatsInstance.Multichain]:!1}),n=()=>{let e=s(),t=new Set;return{get:()=>e,set:r=>{let a;if(a=e,!Object.values(i.NatsInstance).every(
-* NatsInstance.Multichain
-    tsInstance.Advanced]:!1,[i.NatsInstance.Core]:!1,[i.NatsInstance.Unified]:!1,[i.NatsInstance.Multichain]:!1}),n=()=>{let e=s(),t=new Set;return{get:()=>e,set:r=>{let a;if(a=e,!Object.values(i.NatsInstance).every(e=>a[e]===r[e]))for(let a of
-* NatsInstance
-    ()=>{let e=s(),t=new Set;return{get:()=>e,set:r=>{let a;if(a=e,!Object.values(i.NatsInstance).every(e=>a[e]===r[e]))for(let a of(e=r,t))a()},subscribe:e=>(t.add(e),()=>{t.delete(e)})}},c=s(),l=()=>c,d=(0,a.createContext)({instances:[],store
-* NatsProvider
-    re:n()}),u=[i.NatsInstance.Advanced,i.NatsInstance.Unified];function m(){}e.s(["NatsProvider",0,function(e){let c,l,k,f,_=(0,r.c)(10),{children:b,configs:p,instances:w}=e,y=void 0===w?u:w;(0,o.setNatsConfigs)(p);let[h]=(0,a.useState)(n);_[0
-* NatsConfigs
-    k,f,_=(0,r.c)(10),{children:b,configs:p,instances:w}=e,y=void 0===w?u:w;(0,o.setNatsConfigs)(p);let[h]=(0,a.useState)(n);_[0]!==y||_[1]!==h?(c=()=>{let e=[],t=[],r=s();for(let e of y)r[e]=(0,o.getConnectionStatus)(e)===i.ConnectionStatus.CO
-* Nats
-    =(0,t.jsx)(d.Provider,{value:E,children:b}),_[7]=b,_[8]=E,_[9]=f):f=_[9],f},"useNats",0,()=>{let e,t,i,s,n=(0,r.c)(13),{instances:c,store:u}=(0,a.use)(d),m=(0,a.useSyncExternalStore)(u.subscribe,u.get,l);n[0]!==m?(e=e=>m[e]||!1,n[0]=m,n[1]=
-* natsId
-    e.i(237237);let i=new Map;function s(e,t,r){if(0===t.listeners.size){if(null!=t.natsId)try{r.unsubscribe(a.NatsInstance.Unified,t.natsId)}catch{}i.delete(e);return}let s=function(e){for(let t of e.listeners.values())if("none"===t)return"non
-* natsId:null
-    eturn()=>{};let n=a.coalesce??"none",c=i.get(o);return c||(c={listeners:new Map,natsId:null,subscribedMode:null},i.set(o,c)),c.listeners.set(t,n),s(o,c,r),()=>{let e=i.get(o);!e||e.listeners.delete(t)&&s(o,e,r)}}(e,p,{subscribe:d,unsubscrib
-* "mayhemTradeEvent"
-    ict";e.s(["MAYHEM_STATE_SUBJECT",0,"mayhemState","MAYHEM_TRADE_EVENT_SUBJECT",0,"mayhemTradeEvent","MAYHEM_TRADE_EVENT_SUBJECT_PREFIX",0,"mayhemTradeEvent","MAYHEM_TRIGGER_SUBJECT_PREFIX",0,"mayhemTrigger","MULTICHAIN_TRADE_SUBJECT_PREFIX",
-* "unifiedTradeEvent.lite"
-    ION_SUBJECT",0,"unifiedCoinCreationEvent","UNIFIED_TRADE_LITE_SUBJECT_PREFIX",0,"unifiedTradeEvent.lite","UNIFIED_TRADE_PROCESSED_SUBJECT",0,"unifiedTradeEvent.processed"])},915631,949629,e=>{"use strict";var t=e.i(254667),r=e.i(304366),a=e
-* "unifiedTradeEvent.processed"
-    _SUBJECT_PREFIX",0,"unifiedTradeEvent.lite","UNIFIED_TRADE_PROCESSED_SUBJECT",0,"unifiedTradeEvent.processed"])},915631,949629,e=>{"use strict";var t=e.i(254667),r=e.i(304366),a=e.i(358615),o=e.i(237237);let i=new Map;function s(e,t,r){if(0
-* "unifiedCoinCreationEvent"
-    IN_TRADE_SUBJECT_PREFIX",0,"multichain.trade","UNIFIED_COIN_CREATION_SUBJECT",0,"unifiedCoinCreationEvent","UNIFIED_TRADE_LITE_SUBJECT_PREFIX",0,"unifiedTradeEvent.lite","UNIFIED_TRADE_PROCESSED_SUBJECT",0,"unifiedTradeEvent.processed"])},9
-* NatsSubscriptionHandler
-    ,573525,e=>{"use strict";var t=e.i(940660),r=e.i(304366),n=e.i(390065);e.s(["useNatsSubscriptionHandler",0,function(e){let i,s,o,a,l,u,c,d,m=(0,t.c)(19),{type:f,subject:h,enabled:p,onEvent:g,throttleMs:y,coalesce:b}=e,w=void 0===p||p,v=void
-* NATS
-    void 0,{coalesce:x}),T.current=f}catch(e){console.error(`Failed to subscribe to NATS subject: ${h}`,e)}return k},u=[w,f,h,P,_,k,x],m[7]=k,m[8]=x,m[9]=w,m[10]=h,m[11]=_,m[12]=P,m[13]=f,m[14]=l,m[15]=u):(l=m[14],u=m[15]),(0,r.useEffect)(l,u),
-* nats
-    =e.i(358615),n=e.i(755793);class i extends Error{reason;constructor(e,t){super(`nats token mint failed: ${e}`,{cause:t}),this.reason=e,this.name="NatsTokenMintError"}}let s=async e=>{let t=e.response;if("function"!=typeof t?.clone)return;le
-* NatsTokenMintError
-    r(e,t){super(`nats token mint failed: ${e}`,{cause:t}),this.reason=e,this.name="NatsTokenMintError"}}let s=async e=>{let t=e.response;if("function"!=typeof t?.clone)return;let r=await t.clone().json().catch(()=>void 0);if(!r||"object"!=type
-* NATS_AUTH_USER_SCOPE_REQUIRED
-     r=await s(e);return 404===t?{reason:"mint_disabled",status:t,code:r}:403===t&&"NATS_AUTH_USER_SCOPE_REQUIRED"===r?{reason:"mint_forbidden_scope",status:t,code:r}:401===t||403===t?{reason:"mint_unauthorized",status:t,code:r}:{reason:"mint_h
-* nats/token
-    ==e.reason?1/0:429===e.status?6e4:3e4;async function l(e,t){let r=await e.post("nats/token",{timeout:1e4,retry:0,signal:t}).json();if(!(e=>{if(!e||"object"!=typeof e)return!1;let{jwt:t,expiresAt:r}=e;return"string"==typeof t&&t.length>0&&"n
-* NatsInstanceAuth
-    .random();u.retryTimer=setTimeout(()=>{u.retryTimer=null,y()},n+i)})(e),(0,n.setNatsInstanceAuth)(r.NatsInstance.Core,null),t.logger.warn("nats_auth.fallback",{reason:o,trigger:i,status:l,code:c,error:void 0===s?void 0:String(s)})},p=e=>{if
-* nats_auth.fallback
-    )},n+i)})(e),(0,n.setNatsInstanceAuth)(r.NatsInstance.Core,null),t.logger.warn("nats_auth.fallback",{reason:o,trigger:i,status:l,code:c,error:void 0===s?void 0:String(s)})},p=e=>{if(e.instance===r.NatsInstance.Core){if("auth_error"===e.type
-* nats_auth.stale_auth_error_ignored
-    return e.jwt&&u.active&&null!==u.jwt?e.rejectedJwt!==u.jwt?void t.logger.debug("nats_auth.stale_auth_error_ignored",{message:e.message}):void h({reason:"connect_auth_error"},"connect",e.expired?`expired: ${e.message}`:e.message):void 0;if("
-* nats_auth.subscription_limit
-    `:e.message):void 0;if("subscription_limit"===e.type)return void t.logger.warn("nats_auth.subscription_limit",{message:e.message});t.logger.warn("nats_auth.permissions_violation",{subject:e.subject,message:e.message})}},g=e=>{if(u.inFlight)
-* nats_auth.permissions_violation
-    .logger.warn("nats_auth.subscription_limit",{message:e.message});t.logger.warn("nats_auth.permissions_violation",{subject:e.subject,message:e.message})}},g=e=>{if(u.inFlight)return u.inFlight;let i=u.generation,s=new AbortController;u.abort
-* nats_auth.jwt_applied
-    ===i?1e3*p-Date.now():(p-i)*1e3)-3e5))<=0?3e5:Math.max(3e4,o))),t.logger.debug("nats_auth.jwt_applied",{trigger:e,expiresAt:p})}catch(r){let t=await o(r);if(a())return;h(t,e,r)}finally{u.generation===i&&(u.inFlight=null,u.abort=null)}})();r
-* NatsPerUserJwt
-    llbackReason||Date.now()<u.retryNotBefore?Promise.resolve():g("retry")}e.s(["hasNatsPerUserJwt",0,()=>null!==u.jwt,"retryNatsPerUserAuth",0,y,"startNatsPerUserAuth",0,function(e){return u.active?u.inFlight??Promise.resolve():(u.active=!0,u.
-* NatsPerUserAuth
-    ?Promise.resolve():g("retry")}e.s(["hasNatsPerUserJwt",0,()=>null!==u.jwt,"retryNatsPerUserAuth",0,y,"startNatsPerUserAuth",0,function(e){return u.active?u.inFlight??Promise.resolve():(u.active=!0,u.generation+=1,u.minter=e,u.fallbackReason
-* NatsAuthEvent
-    fallbackReason=null,u.retryNotBefore=0,u.retryAttempt=0,u.authListenerId=(0,n.onNatsAuthEvent)(p),g("login"))},"stopNatsPerUserAuth",0,function(){u.active&&(u.active=!1,u.generation+=1,u.minter=null,u.abort?.abort(),u.abort=null,u.inFlight=
-* NatsAuthEventListener
-    l,u.inFlight=null,m(),f(),u.retryAttempt=0,null!==u.authListenerId&&((0,n.removeNatsAuthEventListener)(u.authListenerId),u.authListenerId=null),d(null),u.fallbackReason=null,u.retryNotBefore=0,(0,n.setNatsInstanceAuth)(r.NatsInstance.Core,n
-* NatsPerUserSubjectsAvailable
-    r t=e.i(322315),r=e.i(254010),n=e.i(304366),i=e.i(768276);let s=()=>!1;e.s(["useNatsPerUserSubjectsAvailable",0,()=>{let e=(0,r.useLaunchDarklyFlag)(t.LaunchDarklyFlag.NATS_PER_USER_AUTH),o=(0,n.useSyncExternalStore)(i.subscribeNatsPerUserJ
-* wss://multichain-prod.nats.realtime.pump.fun
-    [3]=S,_[4]=u):u=_[4];let E=u;_[5]===Symbol.for("react.memo_cache_sentinel")?(m="wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),_[5]=m):m=_[5];let T=!!m,C=A&&!!E&&T&&!!h;_[6]!==E||_[7]!==S||_[8]!==A||_[9]!==h?(b=()=>{A&&E&&!
-* nats.realtime.pump.fun
-    et E=u;_[5]===Symbol.for("react.memo_cache_sentinel")?(m="wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),_[5]=m):m=_[5];let T=!!m,C=A&&!!E&&T&&!!h;_[6]!==E||_[7]!==S||_[8]!==A||_[9]!==h?(b=()=>{A&&E&&!T&&r.logger.warn("[use
-* NATS_URL
-    !T&&r.logger.warn("[useMultichainTradeEventSubscription] NEXT_PUBLIC_MULTICHAIN_NATS_URL is unset — live EVM trades are disabled for this page",{mint:h,chainId:S})},f=[A,E,T,h,S],_[6]=E,_[7]=S,_[8]=A,_[9]=h,_[10]=b,_[11]=f):(b=_[10],f=_[11]
-* "useMultichainTradeEventSubscription"
-    615),l=e.i(755793),i=e.i(304366),s=e.i(237237),n=e.i(987425),o=e.i(225233);e.s(["useMultichainTradeEventSubscription",0,function(e){let d,c,u,m,b,f,x,y,p,_=(0,t.c)(18),{mint:h,chainId:S,onTrade:g,isEnabled:v}=e,A=void 0===v||v,N=(0,i.useRef
-* wss://rpc-gel.inkonchain.com
-    ["https://rpc-gel.inkonchain.com","https://rpc-qnd.inkonchain.com"],webSocket:["wss://rpc-gel.inkonchain.com","wss://rpc-qnd.inkonchain.com"]}},blockExplorers:{default:{name:"Blockscout",url:"https://explorer.inkonchain.com",apiUrl:"https:/
-* wss://rpc-qnd.inkonchain.com
-    m","https://rpc-qnd.inkonchain.com"],webSocket:["wss://rpc-gel.inkonchain.com","wss://rpc-qnd.inkonchain.com"]}},blockExplorers:{default:{name:"Blockscout",url:"https://explorer.inkonchain.com",apiUrl:"https://explorer.inkonchain.com/api/v2
-* wss://rpc.monad.xyz
-    s:{default:{http:["https://rpc.monad.xyz","https://rpc1.monad.xyz"],webSocket:["wss://rpc.monad.xyz","wss://rpc1.monad.xyz"]}},blockExplorers:{default:{name:"MonadVision",url:"https://monadvision.com"},monadscan:{name:"Monadscan",url:"https
-* wss://rpc1.monad.xyz
-    ps://rpc.monad.xyz","https://rpc1.monad.xyz"],webSocket:["wss://rpc.monad.xyz","wss://rpc1.monad.xyz"]}},blockExplorers:{default:{name:"MonadVision",url:"https://monadvision.com"},monadscan:{name:"Monadscan",url:"https://monadscan.c
-=== cmd 75 @ 2026-10-21T17:42:07Z ===
-> pfnats
---- realtime host: figs\":{\"ADVANCED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://prod-advanced.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"OktDhmZ2D3CtYUiM\"},\"CORE\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"max
---- realtime host: D3CtYUiM\"},\"CORE\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://prod-v2.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"lW5a9y20NceF6AE9\"},\"UNIFIED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxRec
---- realtime host: F6AE9\"},\"UNIFIED\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://unified-prod.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"OX745xvUbNQMuFqV\"},\"MULTICHAIN\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,
---- realtime host: qV\"},\"MULTICHAIN\":{\"timeout\":5000,\"waitOnFirstConnect\":true,\"reconnect\":true,\"reconnectTimeWait\":1000,\"maxReconnectAttempts\":-1,\"pingInterval\":5000,\"maxPingOut\":2,\"servers\":\"wss://multichain-prod.nats.realtime.pump.fun\",\"user\":\"subscriber\",\"pass\":\"Y0m0U03K057CNaNV\"}},\"instances\":[\"UNIFIED\",\"CORE\"],\"children\":[\"$\",\"$84\",null,{\"fallback\":[\"$\",\"div\",null
---- realtime host: cribe("ed25519-nkey bearer user JWT; opaque to the client"),expiresAt:n.z.number().describe("Unix seconds"),servers:n.z.string().describe("The CORE cluster websocket URL this token is for, e.g. wss://prod-v2.nats.realtime.pump.fun")}),emits:["NATS_AUTH_DISABLED","NATS_AUTH_USER_SCOPE_REQUIRED"]}})},32587,(e,t,r)=>{"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.packsRoutes=void 0;l
---- realtime host: =e.i(653805),u=e.i(605587),c=e.i(987425),d=e.i(225233);e.s(["useRealtimeEvmCoinMarketDataBatch",0,function(e,m=!0){let f=(0,o.useCoinMarketDataStore)(e=>e.updateCoin),p=(0,a.useAfterLcp)(),h=!!"wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),g=(0,i.useMemo)(()=>{let t=new Map;for(let r of e){if(!r.mint||!(0,u.isEvmCoin)(r))continue;let e=(0,c.toCaip2ChainId)(r.chainId);if(!e)contin
---- realtime host: .current=S},d=[S],g[0]=S,g[1]=c,g[2]=d):(c=g[1],d=g[2]),(0,l.useEffect)(c,d),g[3]!==y?(u=(0,a.toCaip2ChainId)(y),g[3]=y,g[4]=u):u=g[4];let A=u;g[5]===Symbol.for("react.memo_cache_sentinel")?(m="wss://multichain-prod.nats.realtime.pump.fun".startsWith("wss"),g[5]=m):m=g[5];let I=!!m,T=C&&!!A&&I&&!!_;g[6]!==A||g[7]!==y||g[8]!==C||g[9]!==_?(h=()=>{C&&A&&!I&&r.logger.warn("[useMultichainTradeEventSubs
---- nats config:  NATS_AUTH_DISABLED while OFF or while no signing seed is configured. Any 4xx/5xx = keep using the static subscriber credentials for this connection.",response:n.z.object({jwt:n.z.string().describe("ed25519-nkey bearer user JWT; opaque to the client"),expiresAt:n.z.number().describe("Unix seconds"),servers:n.z.string().describe("The CORE cluster websocket URL this token is for, e.g. wss://prod-v2.nats.realtime.pump.fun")}),emits:["NATS_AUTH_DISABLED","NATS_AUTH_USER_SCOPE_REQUIRED"]}})},32587,(e,t,r)=>{"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.packsRoutes=void 0;let n=e.r
---- nats config: et r=(0,t.v4)();return c.set(r,e),r},"onNatsAuthEvent",0,function(e){let r=(0,t.v4)();return i.set(r,e),r},"onNatsLifecycleEvent",0,function(e){let r=(0,t.v4)();return s.set(r,e),r},"removeConnectionStatusListener",0,function(e){c.delete(e)},"removeNatsAuthEventListener",0,function(e){i.delete(e)},"setNatsConfigs",0,function(e){n={...n,...e},d&&E({type:"configs",configs:e})},"setNatsInstanceAuth",0,function(e,t){t?a.set(e,t):a.delete(e),d?.postMessage({type:"auth",instance:e,auth:t})},"subscribe",0,function(e,r,n,a=(0,t.v4)(),i){try{var s;let t=b(e,r),u=(s=i?.coalesce,!0===s?"latest":!1===s||v
---- nats config: r,t))a()},subscribe:e=>(t.add(e),()=>{t.delete(e)})}},c=s(),l=()=>c,d=(0,a.createContext)({instances:[],store:n()}),u=[i.NatsInstance.Advanced,i.NatsInstance.Unified];function m(){}e.s(["NatsProvider",0,function(e){let c,l,k,f,_=(0,r.c)(10),{children:b,configs:p,instances:w}=e,y=void 0===w?u:w;(0,o.setNatsConfigs)(p);let[h]=(0,a.useState)(n);_[0]!==y||_[1]!==h?(c=()=>{let e=[],t=[],r=s();for(let e of y)r[e]=(0,o.getConnectionStatus)(e)===i.ConnectionStatus.CONNECTED;h.set(r);let a=(0,o.onConnectionStatusChange)((e,t)=>{let r=t===i.ConnectionStatus.CONNECTED,a=h.get();a[e]!==r&&h.set({...a,[e]:
-
-urls: ["wss://prod-advanced.nats.realtime.pump.fun\\","wss://prod-v2.nats.realtime.pump.fun\\","wss://unified-prod.nats.realtime.pump.fun\\","wss://multichain-prod.nats.realtime.pump.fun\\","wss://prod-v2.nats.realtime.pump.fun","wss://multichain-prod.nats.realtime.pump.fun"]
-creds found: 0 []
-
-== wss://prod-advanced.nats.realtime.pump.fun\ user=subscriber: 0 msgs, 0.00 MB in 25s -ERR 'Authorization Violation'
-   info: {"server_id":"NCGSCWNXDAP6P4OHPC2UEVM2ECFNBY25VBVQYBJKWY2FUQDZGH3AXFMF","server_name":"nats-56e0fb19","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":524288,"client_id":1083705,"client_ip":"10.0
-
-== wss://prod-advanced.nats.realtime.pump.fun\ user=null: 0 msgs, 0.00 MB in 25s -ERR 'Authorization Violation'
-   info: {"server_id":"NDYOHGWNQNZDKHU5GEAOEQQYI5R2J3RLLWSS6OSV4SPDI5SLCOQNMXMA","server_name":"nats-a1c8c966","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":524288,"client_id":1149269,"client_ip":"10.0
-
-== wss://prod-v2.nats.realtime.pump.fun\ user=subscriber: 0 msgs, 0.00 MB in 25s 
    info: {"server_id":"NB76LWBYIP4T5XS57SWTYLYKK3L2LFMMRKXKTR7Z6ICX43XLVDXBTSP6","server_name":"nats-afbb894c","version":"2.12.15","proto":1,"git_commit":"8460a42","go":"go1.25.12","host":"0.0.0.0","port":9222,"headers":true,"auth_required":true,"max_payload":8192,"client_id":2325144,"client_ip":"10.0.4
 === cmd 76 @ 2026-10-21T17:50:08Z ===
 > pfnats
@@ -398,3 +271,130 @@ https://api.vxtwitter.com/kimchi1x -> HTTP 200 followers=183839
 > xfol Jay00818
 https://api.fxtwitter.com/Jay00818 -> HTTP 200 followers=7 
 https://api.vxtwitter.com/Jay00818 -> HTTP 200 followers=7 
+=== cmd 86 @ 2026-10-21T18:47:02Z ===
+> pfsignup
+SUBJECT constants in site code (8):
+  MAYHEM_STATE_SUBJECT = mayhemState
+  MAYHEM_TRADE_EVENT_SUBJECT = mayhemTradeEvent
+  MAYHEM_TRADE_EVENT_SUBJECT_PREFIX = mayhemTradeEvent
+  MAYHEM_TRIGGER_SUBJECT_PREFIX = mayhemTrigger
+  MULTICHAIN_TRADE_SUBJECT_PREFIX = multichain.trade
+  UNIFIED_COIN_CREATION_SUBJECT = unifiedCoinCreationEvent
+  UNIFIED_TRADE_LITE_SUBJECT_PREFIX = unifiedTradeEvent.lite
+  UNIFIED_TRADE_PROCESSED_SUBJECT = unifiedTradeEvent.processed
+
+user/profile event-ish names (12): userCreatedCoins, ensureUserEventsSDK, recordUserEvent, setUserEventsSDK, fetchUserCreatedCoins, useQueryUserCreatedCoins, xProfileWithLinkedSocial, CloseUserVolumeAccumulatorEvent, InitUserVolumeAccumulatorEvent, SyncUserVolumeAccumulatorEvent, useInfiniteQueryUserCreatedCoins, userCreatedCoinsInfinite
+
+== ADVANCED: 18 subject types in 60s
+    chartLine.<id> = 7716
+    advancedTrade.<id> = 3341
+    token.holder.update = 3188
+    pumpSwapTrade.<id> = 2845
+    advancedNewCoinCreated = 29
+    chartLine.EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs = 8
+    chartLine.EQAmaMdwCmpZNJSRfvbNZDu1HkjFbw2VtvvI1FDKvLJMgyXE = 3
+    chartLine.EQDj-zlSvj4Au154XjsU7ATzt13p8JjYEs0weVv1rVbCJSn0 = 2
+    solPriceUpdated = 2
+    chartLine.EQANcW45W0Tp91bzvHayaPO6-6hf1Lm4XlWZ4rN6L5ofPWdb = 2
+    chartLine.EQCM4DEzDVFLq7kaSodQX-8-u_aF9M9DDe1EePWsuMozqGkt = 1
+    chartLine.EQAunJ_g3aswhm4WKrVxLT3zUHoZtg1koB58w5zMQTFVMi64 = 1
+    chartLine.EQBKMfjX_a_dsOLm-juxyVZytFP7_KKnzGv6J01kGc72gVBp = 1
+    chartLine.EQAVfEY2iKSpEkUhgFLFWAgHeSz2NH2XV-MvDuiKF5plSbsU = 1
+    chartLine.EQACLXDwit01stiqK9FvYiJo15luVzfD5zU8uwDSq6JXxbP8 = 1
+    chartLine.EQClb4h8Wnqx-X_sKMFExqxcQusCktlMHxYZ2M80A_WnnFUe = 1
+    chartLine.EQDsjxmRt6uL0wc5PzEQDy-Q5wFOqV5ZP86l3Cy1mLjiqyJE = 1
+    chartLine.EQBaCgUwOoc6gHCNln_oJzb0mVs79YG7wYoavh-o1ItaneLA = 1
+
+== CORE: 4 subject types in 60s
+  * followingFeed.user.<id> = 733
+      {"type":"position","walletAddress":"97K6nsFhBWDKwQf6heDDhDtsCRC4779LPHSFZkc2zqK4","coinMint":"QWs56mokAnSks59iou4io1WrndozDZBATKSUvWYpump","chainId":1399811149,"coinSymbol":"titcoin","coinImageUri":"https://ipfs.io/ipfs/QmVAjrxbo22uBmx76txxj28quWXwpAn7sik8hWHZANakZx","userId":"1a3e6283-4480-482b-8299-c3ae048b560e","isExited":false,"amountHeld":8968
+    price.<id>.<id> = 19
+    multichain.coin-lifecycle.prod = 2
+    shadow.positions.<id> = 2
+
+== UNIFIED: 45 subject types in 60s
+  * unifiedTradeEvent.wallet.<id> = 13928
+      "{\"slotIndexId\":\"00045973575400000000000004\",\"tx\":\"59Nu9x82zn2m2aimzq17P6avhFRjJS59mniMoLGmrsnq3USn4BYgS5hQRxijRZjM4rCdnXKevARcKS1b7kSwMoHK\",\"timestamp\":\"2026-10-21T18:47:04+00:00\",\"program\":\"pump\",\"isBondingCurve\":true,\"mintAddress\":\"FZvCHBEqSoD1DwhyJQox9NjQgHPNYJinjEyWryhKZoRV\",\"quoteMintAddress\":\"111111111111111111111111
+    unifiedTradeEvent.<id> = 13282
+  * unifiedTradeEvent.processed.wallet.<id> = 13180
+      "{\"slotIndexId\":\"00045973575500079000000003\",\"tx\":\"5zAzXVA6xkHntdZaUH8hdzXSuHqpSkR1TzV8GFUq5Tbb45cnVTzUVsiA7edyJThHJ7k2yaZFzKXGBEo8kD8oHj4q\",\"timestamp\":\"2026-10-21T18:47:04+00:00\",\"program\":\"raydium_clmm\",\"isBondingCurve\":false,\"mintAddress\":\"CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp\",\"quoteMintAddress\":\"EPjFWdd5AufqSSq
+    unifiedTradeEvent = 13046
+    unifiedTradeEvent.liteBin.processed.<id> = 10435
+    unifiedTradeEvent.lite.<id> = 9742
+    unifiedTradeEvent.processed.<id> = 9613
+    unifiedTradeEvent.lite.processed.<id> = 8750
+    mayhemTradeEvent.<id> = 539
+    mayhemTradeEvent = 218
+    mcapTicker.v1 = 87
+    unifiedTradeEvent.processed = 86
+    unifiedCoinCreationEvent = 45
+    unifiedCoinCreationEvent.<id> = 43
+    unifiedCoinCreationEvent.processed.<id> = 41
+    mayhemState.<id> = 40
+    unifiedCoinCreationEvent.processed = 29
+    mayhemState = 28
+    mayhem.command.<id> = 27
+    _INBOX.F5AW7KR03MRSGJFD2XN2RD.F5AW7KR03MRSGJFD2XN2Z3 = 1
+    _INBOX.8DRYSEGQBEAQDF06Y22FOI.8DRYSEGQBEAQDF06Y22FSU = 1
+    _INBOX.RCWJFYBJG9YAS7O8BRMRJD.RCWJFYBJG9YAS7O8BRMRFD = 1
+    _INBOX.4Y2UE1O61Z1M8JTLDP2WGB.4Y2UE1O61Z1M8JTLDP2WYJ = 1
+    _INBOX.1AJVBS66166S802TEW130Q.1AJVBS66166S802TEW132S = 1
+    _INBOX.LO1REPPVAAP43IPRXIIPUJ.LO1REPPVAAP43IPRXIIPWG = 1
+    _INBOX.GPBFZVA0VMKOOFTF9T3DMI.GPBFZVA0VMKOOFTF9T3DEZ = 1
+    _INBOX.KSP9E9WICKUDPC54OEPLJP.KSP9E9WICKUDPC54OEPLHU = 1
+    _INBOX.H0HBJWT0VJOH0NLJALRR82.H0HBJWT0VJOH0NLJALRRL0 = 1
+    _INBOX.KSVP9K83JTWUEVM1IR08EO.KSVP9K83JTWUEVM1IR08U0 = 1
+    _INBOX.WXALLDFP05JDQ5M893I5BB.WXALLDFP05JDQ5M893I5F6 = 1
+    _INBOX.FTE4XK5VQJ073QWODQDT87.FTE4XK5VQJ073QWODQDTB9 = 1
+    _INBOX.CJ2TZMN9NWUZXCAFEK06JM.CJ2TZMN9NWUZXCAFEK06SG = 1
+    _INBOX.AATEK21R238NJHQY3XT7VJ.AATEK21R238NJHQY3XT7ZY = 1
+    _INBOX.RSPIIW6C8ID8J4YRKRI1YD.RSPIIW6C8ID8J4YRKRI1TM = 1
+    _INBOX.Y2221BBCSZDXAAYJ128WRR.Y2221BBCSZDXAAYJ128WUK = 1
+    _INBOX.JF50T01TS12WOFDL6RC7NU.JF50T01TS12WOFDL6RC7VR = 1
+    _INBOX.SZX2QCBB6F3M1RV7O7B2IK.SZX2QCBB6F3M1RV7O7B300 = 1
+    _INBOX.N83V3Q3QR4LRJQX9HDJLW8.N83V3Q3QR4LRJQX9HDJM0Q = 1
+    _INBOX.SL4M1VFMMW1PL9J2H5RZ76.SL4M1VFMMW1PL9J2H5RZCI = 1
+    _INBOX.WIHC8FWOJLE5KR1YIL3MDQ.WIHC8FWOJLE5KR1YIL3MAT = 1
+    _INBOX.Y3B09YICI9TVLYOKY86OY8.Y3B09YICI9TVLYOKY86P6E = 1
+    _INBOX.VFRUQCAHG6P388RRNVOXKA.VFRUQCAHG6P388RRNVOY46 = 1
+    _INBOX.FFA6BNPN5WWQVU9CZO43JV.FFA6BNPN5WWQVU9CZO43L7 = 1
+    _INBOX.YB86BZSRKU6RWJETHG4FMT.YB86BZSRKU6RWJETHG4FLR = 1
+    _INBOX.PEXCCQ6MSIBH3UQQ6YHHDR.PEXCCQ6MSIBH3UQQ6YHHNL = 1
+
+== MULTICHAIN: 36 subject types in 60s
+    multichain.tradeLite.eip155:4663.<id> = 1142
+    multichain.tradeLite.eip155:8453.<id> = 1062
+    multichain.trade.eip155:4663.<id> = 704
+    multichain.trade.eip155:8453.<id> = 665
+    multichain.liquidity.eip155:8453.<id> = 609
+    multichain.liquidity.eip155:4663.<id> = 299
+    multichain.tradeLite.eip155:56.<id> = 197
+    multichain.trade.eip155:56.<id> = 140
+    multichain.tradeLite.eip155:1.<id> = 139
+    multichain.trade.eip155:1.<id> = 96
+    multichain.tradeLite.eip155:196.<id> = 94
+    multichain.tradeLite.eip155:137.<id> = 83
+    multichain.tradeLite.eip155:5042.<id> = 71
+    multichain.trade.eip155:137.<id> = 53
+    multichain.trade.eip155:196.<id> = 49
+    multichain.trade.eip155:5042.<id> = 36
+    multichain.tradeLite.eip155:999.<id> = 24
+    multichain.pool.eip155:4663.<id> = 20
+    multichain.tradeLite.eip155:57073.<id> = 17
+    multichain.tradeLite.eip155:143.<id> = 17
+    multichain.trade.eip155:999.<id> = 15
+    multichain.coin.eip155:4663.<id> = 11
+    multichain.trade.eip155:143.<id> = 10
+    multichain.pool.eip155:8453.<id> = 8
+    multichain.liquidity.eip155:57073.<id> = 7
+    multichain.trade.eip155:57073.<id> = 7
+    multichain.liquidity.eip155:999.<id> = 5
+    multichain.coin.eip155:8453.<id> = 4
+    multichain.pool.eip155:56.<id> = 3
+    multichain.tradeLite.eip155:4326.<id> = 2
+    multichain.liquidity.eip155:137.<id> = 1
+    multichain.coin.eip155:56.<id> = 1
+    multichain.trade.eip155:4326.<id> = 1
+    multichain.liquidity.eip155:1.<id> = 1
+    multichain.liquidity.eip155:196.<id> = 1
+    multichain.liquidity.eip155:56.<id> = 1
