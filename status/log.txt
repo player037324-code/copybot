@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 22:55:08] stats 33m: trades 1077475 (544/s) | lookups 958 | profiles 941 | with X 57 | ALERTS 0 | queue 4493 | rechecking 299 | 429s 11 | dropped 0 | top scans 11 | apps none=762394,axiom=150872,pump=65869,fomo=49217,gmgn=23913
 [2026-10-21 22:55:24] 🎁 dev 3H4GRC sent 2.2% of CYPURR to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 22:55:30] 🎁 dev 3H4GRC sent 3.0% of CYPURR to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
 [2026-10-21 22:55:30] 🎁 dev 3H4GRC sent 2.9% of CYPURR to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
@@ -309,6 +308,7 @@
 [2026-10-21 23:08:08] stats 46m: trades 1502828 (544/s) | lookups 1344 | profiles 1322 | with X 79 | ALERTS 0 | queue 5206 | rechecking 304 | 429s 14 | dropped 0 | top scans 15 | apps none=1087660,axiom=191510,pump=92390,fomo=66604,gmgn=31172
 [2026-10-21 23:08:22] 🎁 dev 3H4GRC sent 1.9% of CYBR to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-21 23:08:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-21 23:09:08] stats 47m: trades 1540664 (546/s) | lookups 1374 | profiles 1351 | with X 80 | ALERTS 0 | queue 5256 | rechecking 304 | 429s 14 | dropped 0 | top scans 16 | apps none=1114930,axiom=196380,pump=94350,fomo=68923,gmgn=31842
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
