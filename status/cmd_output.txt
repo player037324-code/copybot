@@ -1,8 +1,3 @@
-=== cmd 71 @ 2026-10-21T17:28:02Z ===
-> alerts-test
-telegram test sent
-=== cmd 72 @ 2026-10-21T17:37:07Z ===
-> pfprobe 45
 unknown command
 === cmd 73 @ 2026-10-21T17:38:02Z ===
 > pfprobe 45
@@ -398,3 +393,8 @@ host metrics | cpu: 3% | ram usage: 45% | enp1s0: ⇓ 0.545mb/s ⇑ 0.012mb/s | 
 [2026-10-21 18:20:03] pfwatch: alert when a trader has linked X and set their profile within 48h | lookups 1/s | pump app traders only | top 2000 scan every 15m | recheck every 30m
 [2026-10-21 18:20:04] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-21 18:20:04] feed connected
+=== cmd 84 @ 2026-10-21T18:35:08Z ===
+> xfol kimchi1x
+unknown command
+> xfol Jay00818
+unknown command
