@@ -208,7 +208,6 @@
 /root/.pm2/logs/sniper-error.log last 40 lines:
 
 /root/.pm2/logs/sniper-out.log last 40 lines:
-[2026-10-21 13:49:07.869] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 13:54:07.868] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 13:59:07.869] alive | pool 6s2umN | $TRUMP done
 [2026-10-21 14:04:07.870] alive | pool 6s2umN | $TRUMP done
@@ -248,6 +247,7 @@
 [2026-10-21 15:04:03.200] launch [beta] $Groyper (Groyper) FVQvBzzkduTdaF3RNS1yEb4PGbmJbiK276mjEg4jRHJW quote 6s2umN platform 6BwHHD token2022 slot 459672850
 [2026-10-21 15:04:03.201]   not a target, ignoring
 [2026-10-21 15:04:07.881] alive | pool 6s2umN | $TRUMP done
+[2026-10-21 15:09:07.882] alive | pool 6s2umN | $TRUMP done
 
 --- ladder ---
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
