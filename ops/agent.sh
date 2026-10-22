@@ -94,6 +94,7 @@ if [ -f control/cmd.txt ]; then
           pfcoins) timeout 60 node scripts/pfcoins.js 40 2>&1 | head -c 12000 ;;
           xfind\ *) a=${c#xfind }; [[ "$a" =~ ^[A-Za-z0-9_]{1,15}(\ [0-9]{1,3})?$ ]] && timeout 280 node scripts/xfind.js $a 2>&1 | head -c 8000 ;;
           pfcallout*) a=${c#pfcallout}; a=${a# }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{0,44}$ ]] && timeout 120 node scripts/pfcallout.js $a 2>&1 | head -c 16000 ;;
+          pffollow) timeout 130 node scripts/pffollow.js 100 2>&1 | head -c 14000 ;;
           pfnats) timeout 100 node scripts/pfnats.js 2>&1 | tail -60 ;;
           pfwatch-start) pm2 describe pfwatch >/dev/null 2>&1 && pm2 restart pfwatch || pm2 start src/pfwatch.js --name pfwatch; pm2 save >/dev/null; sleep 25; pm2 logs pfwatch --nostream --lines 25 --raw 2>&1 | tail -25 ;;
           pfwatch-stop) pm2 stop pfwatch; pm2 save >/dev/null ;;
