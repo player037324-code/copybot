@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-8] stats 437m: trades 10225421 (390/s) | lookups 13227 | profiles 12968 | with X 512 | ALERTS 0 | queue 11957 | rechecking 486 | 429s 124 | dropped 0 | top scans 146 | apps none=7704459,axiom=1047761,pump=666302,fomo=417556,gmgn=193053
-[2026-10-22 05:40:08] stats 438m: trades 10240436 (390/s) | lookups 13279 | profiles 13019 | with X 513 | ALERTS 0 | queue 11962 | rechecking 486 | 429s 125 | dropped 0 | top scans 146 | apps none=7716324,axiom=1048810,pump=667286,fomo=418099,gmgn=193385
 [2026-10-22 05:41:08] stats 439m: trades 10255914 (389/s) | lookups 13279 | profiles 13019 | with X 513 | ALERTS 0 | queue 11986 | rechecking 486 | 429s 125 | dropped 0 | top scans 146 | apps none=7728505,axiom=1049932,pump=668331,fomo=418670,gmgn=193658
 [2026-10-22 05:41:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 05:42:08] gift watcher: 550 dev wallets watched | 261617 txs | 224 gifts | 1862 MB today (~37k credits)
@@ -309,6 +307,8 @@
 [2026-10-22 05:56:08] stats 454m: trades 10499509 (385/s) | lookups 13718 | profiles 13453 | with X 528 | ALERTS 0 | queue 12142 | rechecking 487 | 429s 129 | dropped 0 | top scans 152 | apps none=7916936,axiom=1070982,pump=684418,fomo=427838,gmgn=198340
 [2026-10-22 05:57:08] gift watcher: 547 dev wallets watched | 268364 txs | 225 gifts | 1931 MB today (~39k credits)
 [2026-10-22 05:57:08] stats 455m: trades 10514729 (385/s) | lookups 13771 | profiles 13505 | with X 529 | ALERTS 0 | queue 12122 | rechecking 488 | 429s 130 | dropped 0 | top scans 152 | apps none=7928923,axiom=1072237,pump=685406,fomo=428386,gmgn=198551
+[2026-10-22 05:58:08] stats 456m: trades 10530983 (385/s) | lookups 13781 | profiles 13515 | with X 529 | ALERTS 0 | queue 12143 | rechecking 488 | 429s 130 | dropped 0 | top scans 152 | apps none=7941891,axiom=1073490,pump=686389,fomo=428949,gmgn=198778
+[2026-10-22 05:58:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
