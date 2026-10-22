@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 06:14:08] stats 472m: trades 10812323 (382/s) | lookups 14300 | profiles 14028 | with X 541 | ALERTS 0 | queue 12309 | rechecking 486 | 429s 134 | dropped 0 | top scans 157 | apps none=8169126,axiom=1091658,pump=703173,fomo=438774,gmgn=203667
 [2026-10-22 06:14:19] 🎁 dev 5bcCCc sent 1.5% of AB to BXWjqcsvunjpqTdVRT6ReC5rHjGPnVNqX9E8KviqHyVK
 [2026-10-22 06:14:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 06:15:08] stats 473m: trades 10828023 (382/s) | lookups 14329 | profiles 14055 | with X 541 | ALERTS 0 | queue 12328 | rechecking 484 | 429s 134 | dropped 0 | top scans 158 | apps none=8181841,axiom=1092563,pump=704134,fomo=439390,gmgn=203918
@@ -309,6 +308,7 @@
 [2026-10-22 06:28:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 [2026-10-22 06:29:08] stats 487m: trades 11088926 (379/s) | lookups 14739 | profiles 14460 | with X 554 | ALERTS 0 | queue 12451 | rechecking 492 | 429s 138 | dropped 0 | top scans 163 | apps none=8392773,axiom=1112117,pump=717351,fomo=447788,gmgn=208576
 [2026-10-22 06:30:08] stats 488m: trades 11108900 (379/s) | lookups 14799 | profiles 14519 | with X 556 | ALERTS 0 | queue 12451 | rechecking 492 | 429s 138 | dropped 0 | top scans 163 | apps none=8408700,axiom=1113588,pump=718401,fomo=448618,gmgn=208964
+[2026-10-22 06:31:08] stats 489m: trades 11128827 (379/s) | lookups 14851 | profiles 14571 | with X 559 | ALERTS 0 | queue 12447 | rechecking 492 | 429s 139 | dropped 0 | top scans 163 | apps none=8425197,axiom=1114770,pump=719469,fomo=449160,gmgn=209249
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
