@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:47:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:48:08] stats 266m: trades 6845897 (429/s) | lookups 8073 | profiles 7899 | with X 368 | ALERTS 0 | queue 10033 | rechecking 421 | 429s 75 | dropped 0 | top scans 89 | apps none=5110782,axiom=744525,pump=436397,fomo=283277,gmgn=129885
 [2026-10-22 02:49:08] stats 267m: trades 6865885 (429/s) | lookups 8126 | profiles 7951 | with X 370 | ALERTS 0 | queue 10032 | rechecking 422 | 429s 76 | dropped 0 | top scans 89 | apps none=5124424,axiom=747907,pump=437921,fomo=284115,gmgn=130207
 [2026-10-22 02:50:08] stats 268m: trades 6891497 (429/s) | lookups 8126 | profiles 7951 | with X 370 | ALERTS 0 | queue 10065 | rechecking 422 | 429s 76 | dropped 0 | top scans 89 | apps none=5143322,axiom=751427,pump=439485,fomo=284909,gmgn=130591
 [2026-10-22 02:50:11] 🎁 dev BAoJmp sent 3.9% of Au to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
@@ -309,6 +307,8 @@
 [2026-10-22 03:02:23] 🎁 dev 84oW5H sent 1.5% of sol to B6Rzcn9RXJ68SQ2Tt3XXqM6QQPMor3V6EkfAHaBjxFxH
 [2026-10-22 03:02:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:03:08] stats 281m: trades 7164010 (425/s) | lookups 8542 | profiles 8361 | with X 388 | ALERTS 0 | queue 10201 | rechecking 430 | 429s 79 | dropped 0 | top scans 94 | apps none=5344453,axiom=780782,pump=461226,fomo=296029,gmgn=135435
+[2026-10-22 03:04:08] stats 282m: trades 7185210 (425/s) | lookups 8595 | profiles 8413 | with X 390 | ALERTS 0 | queue 10193 | rechecking 433 | 429s 80 | dropped 0 | top scans 94 | apps none=5360642,axiom=782601,pump=462696,fomo=297028,gmgn=135787
+[2026-10-22 03:04:36] 🎁 dev 84oW5H sent 1.5% of sol to 6Gkdher7v7Mn5Gxg8BhQPCWT5ena26FMAeD792YDZcCq
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
