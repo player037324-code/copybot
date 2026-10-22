@@ -1,6 +1,6 @@
-updated: 2026-10-22T20:29:02Z
-deployed: 3c197129b4aee4b49708ffa770030ec29452d5ee
-pm2: stopped uptime=5752m restarts=14
+updated: 2026-10-22T20:30:07Z
+deployed: a8dfae1cd835a4fe30005c9c80952d224b09deb3
+pm2: stopped uptime=5753m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -92,8 +92,8 @@ pfwatch pm2: stopped restarts=18
 {"time":"2026-10-21T19:43:44.673Z","wallet":"Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX","username":"Kimchi","x":"kimchi1x","followers":29609,"xFollowers":183839,"xVerified":false,"following":0,"setAt":1792537047436,"evm":"0xab45fc2501c15778cca32d879dbfa77516336f15","bio":"https://www.youtube.com/watch?v=si9ybOOHoE8","trade":{"gift":{"mint":"8PdrbUMXULuPjSgcdJHLwphQeSmPXYdneWtFF8i6pump","pct":1.
 
 --- callouts ---
-callouts pm2: online restarts=0
-
+callouts pm2: online restarts=1
+{"msgs":247,"callouts":217,"hits":0,"since":1792700704514,"watch":["Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX","ea1951bf-9885-4dca-9f28-82830824ce3c"],"updated":"2026-10-22T20:30:04.514Z"}
 
 --- positions ---
 {
