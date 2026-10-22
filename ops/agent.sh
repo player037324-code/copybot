@@ -37,7 +37,7 @@ if [ "$HASH" != "$(cat "$APP/.deployed" 2>/dev/null)" ]; then
   chmod 600 "$APP/.env"
   (cd "$APP" && npm install --omit=dev --silent >/dev/null 2>&1)
   # only restart if it was already running; never start a bot the user stopped
-  for p in copybot sniper alerts ladder pfwatch; do
+  for p in copybot sniper alerts ladder pfwatch callouts; do
     pm2 jlist 2>/dev/null | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{try{const x=JSON.parse(d).find(z=>z.name==='$p');process.exit(x&&x.pm2_env.status==='online'?0:1)}catch{process.exit(1)}})" && pm2 restart $p >/dev/null 2>&1
   done
   echo "$HASH" > "$APP/.deployed"
@@ -95,6 +95,11 @@ if [ -f control/cmd.txt ]; then
           xfind\ *) a=${c#xfind }; [[ "$a" =~ ^[A-Za-z0-9_]{1,15}(\ [0-9]{1,3})?$ ]] && timeout 280 node scripts/xfind.js $a 2>&1 | head -c 8000 ;;
           pfcallout*) a=${c#pfcallout}; a=${a# }; [[ "$a" =~ ^[1-9A-HJ-NP-Za-km-z]{0,44}$ ]] && timeout 120 node scripts/pfcallout.js $a 2>&1 | head -c 16000 ;;
           pffollow) timeout 130 node scripts/pffollow.js 100 2>&1 | head -c 14000 ;;
+          callouts-start) pm2 describe callouts >/dev/null 2>&1 && pm2 restart callouts || pm2 start src/callouts.js --name callouts; pm2 save >/dev/null; sleep 8; pm2 logs callouts --nostream --lines 10 --raw 2>&1 | tail -10 ;;
+          callouts-stop) pm2 stop callouts; pm2 save >/dev/null ;;
+          callouts-log) pm2 logs callouts --nostream --lines 40 --raw 2>&1 | tail -40 ;;
+          callouts-test) timeout 30 node src/callouts.js --test 2>&1 ;;
+          callouts-sample) timeout 110 node src/callouts.js --sample 3 2>&1 | head -c 10000 ;;
           pfnats) timeout 100 node scripts/pfnats.js 2>&1 | tail -60 ;;
           pfwatch-start) pm2 describe pfwatch >/dev/null 2>&1 && pm2 restart pfwatch || pm2 start src/pfwatch.js --name pfwatch; pm2 save >/dev/null; sleep 25; pm2 logs pfwatch --nostream --lines 25 --raw 2>&1 | tail -25 ;;
           pfwatch-stop) pm2 stop pfwatch; pm2 save >/dev/null ;;
@@ -165,10 +170,15 @@ mkdir -p status
   cat "$APP/logs/pfwatch-stats.json" 2>/dev/null; echo
   tail -n 10 "$APP/logs/pfwatch.jsonl" 2>/dev/null | cut -c1-400
   echo
+  echo "--- callouts ---"
+  echo "callouts pm2: $(pm2 jlist 2>/dev/null | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{const p=JSON.parse(d).find(x=>x.name==="callouts");console.log(p?`${p.pm2_env.status} restarts=${p.pm2_env.restart_time}`:"not started")}catch{console.log("n/a")}})')"
+  cat "$APP/logs/callouts-stats.json" 2>/dev/null; echo
+  tail -n 5 "$APP/logs/callouts.jsonl" 2>/dev/null | cut -c1-300
+  echo
   echo "--- positions ---"
   cat "$APP/logs/positions.json" 2>/dev/null || echo "{}"
 } 2>&1 | redact > status/status.txt
-{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- ladder ---"; pm2 logs ladder --nostream --lines 20 --raw 2>/dev/null; echo "--- pfwatch ---"; pm2 logs pfwatch --nostream --lines 30 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
+{ pm2 logs copybot --nostream --lines 200 --raw 2>/dev/null; echo "--- sniper ---"; pm2 logs sniper --nostream --lines 40 --raw 2>/dev/null; echo "--- ladder ---"; pm2 logs ladder --nostream --lines 20 --raw 2>/dev/null; echo "--- pfwatch ---"; pm2 logs pfwatch --nostream --lines 30 --raw 2>/dev/null; echo "--- callouts ---"; pm2 logs callouts --nostream --lines 20 --raw 2>/dev/null; echo "--- errors ---"; tail -n 40 /root/.pm2/logs/copybot-error.log 2>/dev/null; } | redact > status/log.txt
 cp "$APP/logs/trades.jsonl" status/trades.jsonl 2>/dev/null
 
 git add status
