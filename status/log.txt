@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:28:08] stats 306m: trades 7747130 (422/s) | lookups 9261 | profiles 9062 | with X 405 | ALERTS 0 | queue 10538 | rechecking 442 | 429s 87 | dropped 0 | top scans 102 | apps none=5800479,axiom=828437,pump=497918,fomo=319644,gmgn=145710
-[2026-10-22 03:28:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 03:29:08] stats 307m: trades 7768414 (422/s) | lookups 9281 | profiles 9082 | with X 407 | ALERTS 0 | queue 10555 | rechecking 443 | 429s 87 | dropped 0 | top scans 103 | apps none=5816607,axiom=830382,pump=499465,fomo=320515,gmgn=146194
 [2026-10-22 03:29:56] 🎁 dev 8RGCrd sent 1.7% of SPLINTER to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
 [2026-10-22 03:30:08] stats 308m: trades 7788729 (421/s) | lookups 9334 | profiles 9134 | with X 409 | ALERTS 0 | queue 10546 | rechecking 444 | 429s 88 | dropped 0 | top scans 103 | apps none=5831814,axiom=832188,pump=501172,fomo=321329,gmgn=146675
@@ -309,6 +307,8 @@
 [2026-10-22 03:43:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 [2026-10-22 03:44:08] stats 322m: trades 8067237 (418/s) | lookups 9750 | profiles 9545 | with X 425 | ALERTS 0 | queue 10693 | rechecking 444 | 429s 91 | dropped 0 | top scans 108 | apps none=6039744,axiom=857553,pump=523010,fomo=334189,gmgn=152966
 [2026-10-22 03:45:08] stats 323m: trades 8094354 (418/s) | lookups 9803 | profiles 9597 | with X 426 | ALERTS 0 | queue 10689 | rechecking 444 | 429s 92 | dropped 0 | top scans 108 | apps none=6060338,axiom=860464,pump=524570,fomo=335410,gmgn=153320
+[2026-10-22 03:46:08] stats 324m: trades 8119019 (418/s) | lookups 9813 | profiles 9607 | with X 426 | ALERTS 0 | queue 10726 | rechecking 444 | 429s 92 | dropped 0 | top scans 108 | apps none=6079001,axiom=863250,pump=525990,fomo=336393,gmgn=153723
+[2026-10-22 03:46:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
