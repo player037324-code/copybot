@@ -279,13 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:45:08] stats 83m: trades 2672337 (537/s) | lookups 2420 | profiles 2376 | with X 149 | ALERTS 0 | queue 6668 | rechecking 321 | 429s 25 | dropped 0 | top scans 28 | apps none=1981879,axiom=309569,pump=163083,fomo=111047,gmgn=50318
-[2026-10-21 23:46:08] stats 84m: trades 2694631 (535/s) | lookups 2473 | profiles 2428 | with X 152 | ALERTS 0 | queue 6672 | rechecking 326 | 429s 26 | dropped 0 | top scans 28 | apps none=1999244,axiom=311303,pump=164776,fomo=111781,gmgn=50682
-[2026-10-21 23:47:08] gift watcher: 933 dev wallets watched | 48074 txs | 40 gifts | 356 MB today (~7k credits)
-[2026-10-21 23:47:08] stats 85m: trades 2719353 (533/s) | lookups 2473 | profiles 2428 | with X 152 | ALERTS 0 | queue 6711 | rechecking 326 | 429s 26 | dropped 0 | top scans 28 | apps none=2019636,axiom=312695,pump=166339,fomo=112564,gmgn=50920
-[2026-10-21 23:47:37] 🎁 dev 5ZuV8e sent 1.1% of 2sWirx to Fq7jozd5scjoqNx844eRnRqiAfW5fQaRZVPSFFwVwzto
-[2026-10-21 23:47:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-21 23:48:08] stats 86m: trades 2746263 (532/s) | lookups 2502 | profiles 2457 | with X 153 | ALERTS 0 | queue 6740 | rechecking 326 | 429s 26 | dropped 0 | top scans 29 | apps none=2042192,axiom=314113,pump=167741,fomo=113380,gmgn=51275
 [2026-10-21 23:48:37] 🎁 dev BAoJmp sent 2.5% of CBTC to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-21 23:48:37] 🎁 dev BAoJmp sent 2.1% of CBTC to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-21 23:49:08] stats 87m: trades 2764704 (530/s) | lookups 2555 | profiles 2507 | with X 156 | ALERTS 0 | queue 6750 | rechecking 327 | 429s 27 | dropped 0 | top scans 29 | apps none=2056926,axiom=315376,pump=168983,fomo=114071,gmgn=51490
@@ -309,6 +302,13 @@
 [2026-10-22 00:00:08] stats 98m: trades 2996983 (510/s) | lookups 2882 | profiles 2831 | with X 166 | ALERTS 0 | queue 7010 | rechecking 335 | 429s 30 | dropped 0 | top scans 33 | apps none=2234337,axiom=336118,pump=185547,fomo=122911,gmgn=55475
 [2026-10-22 00:00:28] 🎁 dev BAoJmp sent 2.9% of CYBERJEW to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:00:28] 🎁 dev BAoJmp sent 2.7% of CYBERJEW to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 00:01:08] stats 99m: trades 3016309 (508/s) | lookups 2892 | profiles 2839 | with X 166 | ALERTS 0 | queue 7039 | rechecking 334 | 429s 30 | dropped 0 | top scans 33 | apps none=2249348,axiom=337495,pump=186990,fomo=123759,gmgn=55777
+[2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to AGY4SUxwENn52MWkSUjtVhopEA1u7UBdqTuFTBAQTNr2
+[2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to 9Ueuf9LUaAy4kNTVNe7XMb3kq7mHTkp5UaSYeaa2X8zY
+[2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to Gm3Aab4uNkrYyH72Ewc1iDUvkEhc9i2o3uvNFZX7Vdwu
+[2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to EZJHuyFQaYqmQoEo5mBG9ShMxftm8ZM6L3dAZKY4ZWQf
+[2026-10-22 00:01:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-22 00:01:54] 🎁 dev Agenta sent 1.0% of Cybermint to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
