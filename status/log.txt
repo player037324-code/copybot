@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:56:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 00:57:08] gift watcher: 743 dev wallets watched | 93706 txs | 76 gifts | 299 MB today (~6k credits)
 [2026-10-22 00:57:08] stats 155m: trades 4250154 (457/s) | lookups 4625 | profiles 4539 | with X 239 | ALERTS 0 | queue 8293 | rechecking 370 | 429s 45 | dropped 0 | top scans 52 | apps none=3173957,axiom=459098,pump=267502,fomo=183991,gmgn=77328
 [2026-10-22 00:57:55] 🎁 dev 2VHc4n sent 1.8% of TCAT to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 00:58:08] stats 156m: trades 4267037 (456/s) | lookups 4684 | profiles 4598 | with X 241 | ALERTS 0 | queue 8292 | rechecking 374 | 429s 45 | dropped 0 | top scans 52 | apps none=3186509,axiom=460661,pump=268840,fomo=184770,gmgn=77633
@@ -309,6 +307,8 @@
 [2026-10-22 01:07:08] stats 165m: trades 4488636 (453/s) | lookups 4982 | profiles 4889 | with X 255 | ALERTS 0 | queue 8446 | rechecking 387 | 429s 48 | dropped 0 | top scans 55 | apps none=3345570,axiom=491425,pump=282682,fomo=192886,gmgn=81397
 [2026-10-22 01:07:19] 🎁 dev BAoJmp sent 4.0% of CyberGato to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:07:19] 🎁 dev BAoJmp sent 5.1% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 01:08:08] stats 166m: trades 4526909 (455/s) | lookups 4982 | profiles 4889 | with X 255 | ALERTS 0 | queue 8487 | rechecking 387 | 429s 48 | dropped 0 | top scans 55 | apps none=3369808,axiom=500555,pump=284295,fomo=194125,gmgn=82239
+[2026-10-22 01:08:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
