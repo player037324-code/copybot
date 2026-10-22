@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:13:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 1 new to the list
-[2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 5.6% of MCT to 6V5AaaMH2hMSRUCXkPwWEgDzGYGVjVDvvdq8urVRZaae
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.9% of MCT to HkipUGMN7zBwCb74wYbM66r55DvvhmCAfbxoRCgA9bDn
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.1% of MCT to QNFQSu4GFJQhBFKmLLsRbLgu72LjZGEs86xZJ4C1ZCw
 [2026-10-22 01:14:08] stats 172m: trades 4700921 (456/s) | lookups 5174 | profiles 5076 | with X 261 | ALERTS 0 | queue 8625 | rechecking 390 | 429s 49 | dropped 0 | top scans 58 | apps none=3487854,axiom=530307,pump=293863,fomo=201836,gmgn=86510
@@ -309,6 +307,8 @@
 [2026-10-22 01:26:08] stats 184m: trades 4991217 (452/s) | lookups 5590 | profiles 5484 | with X 280 | ALERTS 0 | queue 8760 | rechecking 391 | 429s 52 | dropped 0 | top scans 61 | apps none=3704331,axiom=561434,pump=311850,fomo=213987,gmgn=93274
 [2026-10-22 01:26:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 01:27:01] 🎁 dev 6PPVnD sent 2.3% of Marathon to CtutmUFJFpDHTrBTDCLwizoJj3m961SCHunnnL69R4To
+[2026-10-22 01:27:08] gift watcher: 700 dev wallets watched | 117694 txs | 97 gifts | 501 MB today (~10k credits)
+[2026-10-22 01:27:08] stats 185m: trades 5012697 (452/s) | lookups 5620 | profiles 5514 | with X 280 | ALERTS 0 | queue 8804 | rechecking 392 | 429s 52 | dropped 0 | top scans 62 | apps none=3720167,axiom=563516,pump=313592,fomo=214870,gmgn=93753
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
