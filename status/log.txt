@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:02:50] 🎁 dev HgAhL3 sent 1.3% of IM to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 04:03:08] stats 341m: trades 8492327 (415/s) | lookups 10361 | profiles 10149 | with X 443 | ALERTS 0 | queue 10912 | rechecking 454 | 429s 96 | dropped 0 | top scans 114 | apps none=6371018,axiom=894655,pump=549700,fomo=350743,gmgn=160127
 [2026-10-22 04:03:10] 🎁 dev 4Nj5cg sent 3.4% of Scarlett to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
 [2026-10-22 04:04:08] stats 342m: trades 8512891 (415/s) | lookups 10414 | profiles 10200 | with X 444 | ALERTS 0 | queue 10913 | rechecking 456 | 429s 97 | dropped 0 | top scans 114 | apps none=6387529,axiom=896207,pump=550979,fomo=351383,gmgn=160451
@@ -309,6 +308,7 @@
 [2026-10-22 04:13:08] stats 351m: trades 8699039 (413/s) | lookups 10668 | profiles 10445 | with X 447 | ALERTS 0 | queue 10997 | rechecking 461 | 429s 99 | dropped 0 | top scans 117 | apps none=6534544,axiom=911362,pump=563218,fomo=357419,gmgn=163283
 [2026-10-22 04:13:27] 🎁 dev FAHMvD sent 1.2% of HUMAN to 9PDFBkM2JjnLuuEhQVi5oPv5jVJ4wV3LA2PAfLXNijLb
 [2026-10-22 04:13:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
+[2026-10-22 04:14:08] stats 352m: trades 8717757 (413/s) | lookups 10688 | profiles 10465 | with X 449 | ALERTS 0 | queue 11006 | rechecking 461 | 429s 99 | dropped 0 | top scans 118 | apps none=6549047,axiom=912828,pump=564609,fomo=358127,gmgn=163629
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
