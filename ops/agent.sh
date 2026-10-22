@@ -98,6 +98,7 @@ if [ -f control/cmd.txt ]; then
           callouts-start) pm2 describe callouts >/dev/null 2>&1 && pm2 restart callouts || pm2 start src/callouts.js --name callouts; pm2 save >/dev/null; sleep 8; pm2 logs callouts --nostream --lines 10 --raw 2>&1 | tail -10 ;;
           callouts-stop) pm2 stop callouts; pm2 save >/dev/null ;;
           callouts-log) pm2 logs callouts --nostream --lines 40 --raw 2>&1 | tail -40 ;;
+          callouts-livetest) timeout 120 node src/callouts.js --live-test 2>&1 | tail -6 ;;
           callouts-test) timeout 30 node src/callouts.js --test 2>&1 ;;
           callouts-sample) timeout 110 node src/callouts.js --sample 3 2>&1 | head -c 10000 ;;
           pfnats) timeout 100 node scripts/pfnats.js 2>&1 | tail -60 ;;

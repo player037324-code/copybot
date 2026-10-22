@@ -10,6 +10,7 @@ const WATCH = new Set(env('CALLOUT_WATCH', 'Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZD
 const TG_TOKEN = env('TELEGRAM_BOT_TOKEN', ''); const TG_CHAT = env('CALLOUT_TELEGRAM_CHAT_ID', env('TELEGRAM_CHAT_ID', ''));
 const CORE = { url: env('CALLOUT_NATS_URL', 'wss://prod-v2.nats.realtime.pump.fun'), user: env('CALLOUT_NATS_USER', 'subscriber'), pass: env('CALLOUT_NATS_PASS', 'lW5a9y20NceF6AE9') };
 const SUBJECT = 'calloutCreated';
+const LIVE_TEST = process.argv[2] === '--live-test';
 fs.mkdirSync('logs', { recursive: true });
 const FEED = 'logs/callouts.jsonl';
 const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 19);
@@ -46,7 +47,7 @@ let onCallout = async function (raw) {
   let e; try { e = JSON.parse(raw); if (typeof e === 'string') e = JSON.parse(e); } catch { return; }
   stats.callouts++;
   const a = e.author || {};
-  if (!(WATCH.has(a.walletAddress) || WATCH.has(a.userId))) return;
+  if (!LIVE_TEST && !(WATCH.has(a.walletAddress) || WATCH.has(a.userId))) return;
   if (sent.has(e.id)) return; sent.add(e.id);
   stats.hits++;
   const coin = e.coin || {}; const c = e.callout || {};
@@ -57,7 +58,7 @@ let onCallout = async function (raw) {
   const mc = co.calloutMarketCap || (mint && !String(mint).startsWith('0x') ? await mcap(mint) : null);
   const text = co.thesis || c.text || c.message || c.content || c.body || c.comment || e.text || e.message || '';
   const lines = [
-    `📣 <b>CALLOUT: ${esc(a.userName || 'watched user')}</b>`,
+    LIVE_TEST ? `🧪 <b>LIVE TEST</b> (real callout by ${esc(a.userName)}, NOT Kimchi, don't ape)` : `📣 <b>CALLOUT: ${esc(a.userName || 'watched user')}</b>`,
     `<b>$${esc(coin.symbol || '?')}</b>${mc ? ` @ ${usd(mc)} mcap` : ''}`,
     text ? `"${esc(String(text).slice(0, 300))}"` : '',
     c.costBasisUsd ? `Their bag: ${usd(c.costBasisUsd)}${c.costBasisSol ? ` (${Number(c.costBasisSol).toFixed(2)} SOL)` : ''}${c.isExited ? ' (exited)' : ''}` : '',
@@ -67,6 +68,7 @@ let onCallout = async function (raw) {
     `<a href="https://pump.fun/coin/${mint}">pump.fun</a> · <a href="https://dexscreener.com/solana/${mint}">Dex</a> · <a href="https://axiom.trade/t/${mint}">Axiom</a> · <a href="https://gmgn.ai/sol/token/${mint}">GMGN</a> · <a href="https://pump.fun/profile/${a.walletAddress}">profile</a>`,
   ];
   await tg(lines.join('\n').replace(/\n{3,}/g, '\n\n'), ipfs(coin.imageUri));
+  if (LIVE_TEST) { log('live test alert sent'); process.exit(0); }
 };
 
 let lastMsg = Date.now();
