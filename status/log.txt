@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-ueue 15589 | rechecking 590 | 429s 236 | dropped 0 | top scans 279 | apps none=13727036,axiom=1584508,pump=1077480,fomo=613943,gmgn=319270
-[2026-10-22 12:20:08] stats 838m: trades 17661587 (351/s) | lookups 25494 | profiles 25117 | with X 766 | ALERTS 0 | queue 15603 | rechecking 590 | 429s 236 | dropped 0 | top scans 279 | apps none=13747963,axiom=1585695,pump=1078563,fomo=614263,gmgn=319559
+ueue 15603 | rechecking 590 | 429s 236 | dropped 0 | top scans 279 | apps none=13747963,axiom=1585695,pump=1078563,fomo=614263,gmgn=319559
 [2026-10-22 12:20:38] top scan: 2001 profiles (cutoff 1088 pump followers) in 90s, 0 new to the list
 [2026-10-22 12:21:08] stats 839m: trades 17684174 (351/s) | lookups 25524 | profiles 25147 | with X 766 | ALERTS 0 | queue 15619 | rechecking 588 | 429s 236 | dropped 0 | top scans 280 | apps none=13767311,axiom=1586738,pump=1079703,fomo=614697,gmgn=319899
 [2026-10-22 12:22:08] gift watcher: 2915 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
@@ -309,6 +308,7 @@ ueue 15589 | rechecking 590 | 429s 236 | dropped 0 | top scans 279 | apps none=1
 [2026-10-22 12:37:08] gift watcher: 3016 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 12:37:08] stats 855m: trades 18012617 (351/s) | lookups 26053 | profiles 25672 | with X 775 | ALERTS 0 | queue 15775 | rechecking 594 | 429s 240 | dropped 0 | top scans 285 | apps none=14028364,axiom=1614810,pump=1098572,fomo=621964,gmgn=325971
 [2026-10-22 12:37:48] top scan: 2001 profiles (cutoff 1088 pump followers) in 40s, 0 new to the list
+[2026-10-22 12:38:08] stats 856m: trades 18035285 (351/s) | lookups 26073 | profiles 25692 | with X 776 | ALERTS 0 | queue 15795 | rechecking 595 | 429s 240 | dropped 0 | top scans 286 | apps none=14046242,axiom=1616937,pump=1099938,fomo=622544,gmgn=326342
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
