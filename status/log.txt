@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:32:08] gift watcher: 872 dev wallets watched | 80310 txs | 64 gifts | 165 MB today (~3k credits)
-[2026-10-22 00:32:08] stats 130m: trades 3750674 (481/s) | lookups 3849 | profiles 3778 | with X 216 | ALERTS 0 | queue 7765 | rechecking 354 | 429s 38 | dropped 0 | top scans 44 | apps none=2801008,axiom=409945,pump=231757,fomo=161539,gmgn=69123
-[2026-10-22 00:33:08] stats 131m: trades 3771690 (480/s) | lookups 3908 | profiles 3837 | with X 219 | ALERTS 0 | queue 7757 | rechecking 357 | 429s 38 | dropped 0 | top scans 44 | apps none=2816707,axiom=411753,pump=233299,fomo=162676,gmgn=69525
 [2026-10-22 00:34:08] stats 132m: trades 3794622 (479/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7747 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2833644,axiom=413964,pump=235037,fomo=163782,gmgn=69954
 [2026-10-22 00:34:12] 🎁 dev 2VHc4n sent 3.5% of pump.kin to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 00:35:08] stats 133m: trades 3815785 (478/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7786 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2850511,axiom=415324,pump=236446,fomo=164708,gmgn=70195
@@ -309,6 +306,9 @@
 [2026-10-22 00:43:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 00:44:08] stats 142m: trades 4009980 (471/s) | lookups 4235 | profiles 4155 | with X 228 | ALERTS 0 | queue 8027 | rechecking 363 | 429s 41 | dropped 0 | top scans 48 | apps none=2999463,axiom=431746,pump=249957,fomo=173320,gmgn=73239
 [2026-10-22 00:44:10] 🎁 dev 97K6ns sent 1.2% of POINTLESS to Gm3Aab4uNkrYyH72Ewc1iDUvkEhc9i2o3uvNFZX7Vdwu
+[2026-10-22 00:45:08] stats 143m: trades 4029982 (470/s) | lookups 4288 | profiles 4207 | with X 229 | ALERTS 0 | queue 8025 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3013400,axiom=434741,pump=251394,fomo=174020,gmgn=73556
+[2026-10-22 00:45:36] 🎁 dev BAoJmp sent 3.0% of LARPLESS to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 00:45:36] 🎁 dev BAoJmp sent 2.7% of LARPLESS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
