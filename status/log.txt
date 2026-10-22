@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:07:08] gift watcher: 649 dev wallets watched | 206730 txs | 191 gifts | 1403 MB today (~28k credits)
-[2026-10-22 04:07:08] stats 345m: trades 8575575 (414/s) | lookups 10497 | profiles 10280 | with X 446 | ALERTS 0 | queue 10932 | rechecking 457 | 429s 98 | dropped 0 | top scans 115 | apps none=6438001,axiom=901059,pump=554633,fomo=353354,gmgn=161289
 [2026-10-22 04:08:08] stats 346m: trades 8599277 (414/s) | lookups 10497 | profiles 10280 | with X 446 | ALERTS 0 | queue 10965 | rechecking 457 | 429s 98 | dropped 0 | top scans 115 | apps none=6456405,axiom=903244,pump=556190,fomo=354178,gmgn=161633
 [2026-10-22 04:08:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:09:08] stats 347m: trades 8620007 (414/s) | lookups 10526 | profiles 10309 | with X 446 | ALERTS 0 | queue 10977 | rechecking 457 | 429s 98 | dropped 0 | top scans 116 | apps none=6472468,axiom=905119,pump=557675,fomo=354758,gmgn=161975
@@ -309,6 +307,8 @@
 [2026-10-22 04:18:06] 🎁 dev HgAhL3 sent 1.3% of grass to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 04:18:08] stats 356m: trades 8799296 (412/s) | lookups 10830 | profiles 10606 | with X 454 | ALERTS 0 | queue 11030 | rechecking 463 | 429s 100 | dropped 0 | top scans 119 | apps none=6609962,axiom=921197,pump=570681,fomo=361301,gmgn=165136
 [2026-10-22 04:19:08] stats 357m: trades 8816935 (412/s) | lookups 10883 | profiles 10657 | with X 456 | ALERTS 0 | queue 11019 | rechecking 463 | 429s 101 | dropped 0 | top scans 119 | apps none=6623466,axiom=922590,pump=571978,fomo=362111,gmgn=165431
+[2026-10-22 04:20:08] stats 358m: trades 8840558 (412/s) | lookups 10883 | profiles 10657 | with X 456 | ALERTS 0 | queue 11037 | rechecking 463 | 429s 101 | dropped 0 | top scans 119 | apps none=6639719,axiom=926134,pump=573485,fomo=363076,gmgn=166328
+[2026-10-22 04:20:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
