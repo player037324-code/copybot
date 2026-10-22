@@ -1,19 +1,3 @@
-
-user/profile event-ish names (12): userCreatedCoins, ensureUserEventsSDK, recordUserEvent, setUserEventsSDK, fetchUserCreatedCoins, useQueryUserCreatedCoins, xProfileWithLinkedSocial, CloseUserVolumeAccumulatorEvent, InitUserVolumeAccumulatorEvent, SyncUserVolumeAccumulatorEvent, useInfiniteQueryUserCreatedCoins, userCreatedCoinsInfinite
-
-== ADVANCED: 18 subject types in 60s
-    chartLine.<id> = 7716
-    advancedTrade.<id> = 3341
-    token.holder.update = 3188
-    pumpSwapTrade.<id> = 2845
-    advancedNewCoinCreated = 29
-    chartLine.EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs = 8
-    chartLine.EQAmaMdwCmpZNJSRfvbNZDu1HkjFbw2VtvvI1FDKvLJMgyXE = 3
-    chartLine.EQDj-zlSvj4Au154XjsU7ATzt13p8JjYEs0weVv1rVbCJSn0 = 2
-    solPriceUpdated = 2
-    chartLine.EQANcW45W0Tp91bzvHayaPO6-6hf1Lm4XlWZ4rN6L5ofPWdb = 2
-    chartLine.EQCM4DEzDVFLq7kaSodQX-8-u_aF9M9DDe1EePWsuMozqGkt = 1
-    chartLine.EQAunJ_g3aswhm4WKrVxLT3zUHoZtg1koB58w5zMQTFVMi64 = 1
     chartLine.EQBKMfjX_a_dsOLm-juxyVZytFP7_KKnzGv6J01kGc72gVBp = 1
     chartLine.EQAVfEY2iKSpEkUhgFLFWAgHeSz2NH2XV-MvDuiKF5plSbsU = 1
     chartLine.EQACLXDwit01stiqK9FvYiJo15luVzfD5zU8uwDSq6JXxbP8 = 1
@@ -398,3 +382,19 @@ scanned 2050, smallest so far 1021 pump followers
 FOUND Murad_786 x=@- pumpFollowers=831 setAt=2026-09-12T07:37:58.190Z wallet=6qRKSej5HTH5PLBi2cEwz8q6kSJu725RKiFnPWaQ4Vha
 scanned 3050, smallest so far 713 pump followers
 done, 1 match(es)
+=== cmd 91 @ 2026-10-22T20:10:02Z ===
+> pfcallout
+
+callout strings: 
+https://frontend-api-v3.pump.fun/callouts/user/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/callouts/user/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://frontend-api-v3.pump.fun/callouts/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/callouts/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://frontend-api-v3.pump.fun/users/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX/callouts -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/users/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX/callouts -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://frontend-api-v3.pump.fun/callouts?address=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/callouts?address=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://frontend-api-v3.pump.fun/callouts?user=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/callouts?user=Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://frontend-api-v3.pump.fun/v1/callouts/user/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+https://profile-api.pump.fun/v1/callouts/user/Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX -> 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
