@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to DcSZCeZUgqCGQTcDe8fzp6r3E3zCw4xgTGpYZDKtSx5o
-[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.1% of WOFI to BwjQUhv8FzabAYuEte2N1vrXJnRnF6pCRR2jMt1dtmAQ
 [2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to CAZjRRvrS2SWPrwLHax1pAMbWzXHfxH8UaqSHwX2am3K
 [2026-10-22 02:37:21] 🎁 dev ExfWiN sent 1.1% of WOFI to B3ekcBSS5hYzpXMaWqHj2HSSmRB3cDkNwM98VfQAQEAr
 [2026-10-22 02:37:22] 🎁 dev ExfWiN sent 1.1% of WOFI to 7sFMZQtZJGfG8ZgeaUmW6JSjT646KR9XcEvGb2dd8veD
@@ -309,6 +307,8 @@
 [2026-10-22 02:42:08] stats 260m: trades 6725658 (431/s) | lookups 7901 | profiles 7731 | with X 363 | ALERTS 0 | queue 9949 | rechecking 424 | 429s 74 | dropped 0 | top scans 87 | apps none=5021445,axiom=732884,pump=426880,fomo=278127,gmgn=127715
 [2026-10-22 02:42:40] 🎁 dev BAoJmp sent 2.4% of AUINU to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 02:42:40] 🎁 dev BAoJmp sent 3.4% of AUINU to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 02:43:08] stats 261m: trades 6742683 (431/s) | lookups 7911 | profiles 7739 | with X 363 | ALERTS 0 | queue 9974 | rechecking 422 | 429s 74 | dropped 0 | top scans 87 | apps none=5034063,axiom=734421,pump=428332,fomo=278921,gmgn=128015
+[2026-10-22 02:43:48] top scan: 2001 profiles (cutoff 1041 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
