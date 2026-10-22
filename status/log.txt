@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:18:08] stats 116m: trades 3444895 (495/s) | lookups 3440 | profiles 3377 | with X 194 | ALERTS 0 | queue 7478 | rechecking 343 | 429s 34 | dropped 0 | top scans 39 | apps none=2570001,axiom=382083,pump=211369,fomo=146210,gmgn=63879
-[2026-10-22 00:19:08] stats 117m: trades 3472288 (495/s) | lookups 3493 | profiles 3429 | with X 195 | ALERTS 0 | queue 7482 | rechecking 346 | 429s 35 | dropped 0 | top scans 39 | apps none=2592084,axiom=383956,pump=212806,fomo=147318,gmgn=64329
 [2026-10-22 00:20:00] 🎁 dev BAoJmp sent 1.8% of CYBERKIMCHI to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:20:00] 🎁 dev BAoJmp sent 2.1% of CYBERKIMCHI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:20:08] stats 118m: trades 3494888 (494/s) | lookups 3493 | profiles 3429 | with X 195 | ALERTS 0 | queue 7519 | rechecking 346 | 429s 35 | dropped 0 | top scans 39 | apps none=2609207,axiom=386072,pump=214111,fomo=148599,gmgn=64645
@@ -309,6 +307,8 @@
 [2026-10-22 00:32:08] gift watcher: 872 dev wallets watched | 80310 txs | 64 gifts | 165 MB today (~3k credits)
 [2026-10-22 00:32:08] stats 130m: trades 3750674 (481/s) | lookups 3849 | profiles 3778 | with X 216 | ALERTS 0 | queue 7765 | rechecking 354 | 429s 38 | dropped 0 | top scans 44 | apps none=2801008,axiom=409945,pump=231757,fomo=161539,gmgn=69123
 [2026-10-22 00:33:08] stats 131m: trades 3771690 (480/s) | lookups 3908 | profiles 3837 | with X 219 | ALERTS 0 | queue 7757 | rechecking 357 | 429s 38 | dropped 0 | top scans 44 | apps none=2816707,axiom=411753,pump=233299,fomo=162676,gmgn=69525
+[2026-10-22 00:34:08] stats 132m: trades 3794622 (479/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7747 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2833644,axiom=413964,pump=235037,fomo=163782,gmgn=69954
+[2026-10-22 00:34:12] 🎁 dev 2VHc4n sent 3.5% of pump.kin to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
