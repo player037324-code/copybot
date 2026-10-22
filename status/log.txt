@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:11:08] stats 169m: trades 4618450 (455/s) | lookups 5091 | profiles 4996 | with X 258 | ALERTS 0 | queue 8536 | rechecking 388 | 429s 48 | dropped 0 | top scans 57 | apps none=3430258,axiom=518409,pump=288873,fomo=197862,gmgn=84518
 [2026-10-22 01:12:08] gift watcher: 725 dev wallets watched | 105745 txs | 87 gifts | 433 MB today (~9k credits)
 [2026-10-22 01:12:08] stats 170m: trades 4648408 (456/s) | lookups 5144 | profiles 5048 | with X 261 | ALERTS 0 | queue 8552 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3451498,axiom=522517,pump=290484,fomo=199402,gmgn=85183
 [2026-10-22 01:13:08] stats 171m: trades 4675818 (456/s) | lookups 5154 | profiles 5058 | with X 261 | ALERTS 0 | queue 8583 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3469394,axiom=527454,pump=292227,fomo=200857,gmgn=85889
@@ -309,6 +308,7 @@
 [2026-10-22 01:23:56] 🎁 dev AspnoD sent 1.9% of COOK to FrHs3JV6sv4WQzsXWcq1xT3yhnQPjJubB4WeazRSMe8D
 [2026-10-22 01:24:01] 🎁 dev 8PftG1 sent 4.0% of sendr to kBC2F6Hs8wuVVDM2KaUXTMv2yxSZi5WuohwyLZAzDVE
 [2026-10-22 01:24:08] stats 182m: trades 4940129 (452/s) | lookups 5537 | profiles 5433 | with X 279 | ALERTS 0 | queue 8720 | rechecking 391 | 429s 51 | dropped 0 | top scans 61 | apps none=3666185,axiom=555968,pump=308848,fomo=211983,gmgn=91864
+[2026-10-22 01:25:08] stats 183m: trades 4966893 (452/s) | lookups 5590 | profiles 5484 | with X 280 | ALERTS 0 | queue 8723 | rechecking 391 | 429s 52 | dropped 0 | top scans 61 | apps none=3686239,axiom=558829,pump=310466,fomo=212916,gmgn=92599
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
