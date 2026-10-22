@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:23:56] 🎁 dev AspnoD sent 1.9% of COOK to FrHs3JV6sv4WQzsXWcq1xT3yhnQPjJubB4WeazRSMe8D
 [2026-10-22 01:24:01] 🎁 dev 8PftG1 sent 4.0% of sendr to kBC2F6Hs8wuVVDM2KaUXTMv2yxSZi5WuohwyLZAzDVE
 [2026-10-22 01:24:08] stats 182m: trades 4940129 (452/s) | lookups 5537 | profiles 5433 | with X 279 | ALERTS 0 | queue 8720 | rechecking 391 | 429s 51 | dropped 0 | top scans 61 | apps none=3666185,axiom=555968,pump=308848,fomo=211983,gmgn=91864
 [2026-10-22 01:25:08] stats 183m: trades 4966893 (452/s) | lookups 5590 | profiles 5484 | with X 280 | ALERTS 0 | queue 8723 | rechecking 391 | 429s 52 | dropped 0 | top scans 61 | apps none=3686239,axiom=558829,pump=310466,fomo=212916,gmgn=92599
@@ -309,6 +308,7 @@
 [2026-10-22 01:37:10] 🎁 dev Dkyrfp sent 2.3% of Au to Bd1xWHLQbQMhVCqxjtLm3D3RDWXMc9ysCbq2o54sZuiH
 [2026-10-22 01:38:08] stats 196m: trades 5309812 (452/s) | lookups 5920 | profiles 5807 | with X 294 | ALERTS 0 | queue 9011 | rechecking 398 | 429s 56 | dropped 0 | top scans 65 | apps none=3950758,axiom=593398,pump=330328,fomo=223730,gmgn=99670
 [2026-10-22 01:38:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 01:39:08] stats 197m: trades 5341053 (452/s) | lookups 5950 | profiles 5836 | with X 294 | ALERTS 0 | queue 9046 | rechecking 397 | 429s 56 | dropped 0 | top scans 66 | apps none=3974620,axiom=597157,pump=331717,fomo=224802,gmgn=100275
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
