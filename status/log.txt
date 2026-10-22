@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:58:49] skip jzr77 @YousifA84157316: 1 X followers
-[2026-10-22 03:58:53] 🎁 dev 8RGCrd sent 1.4% of 1021 to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
-[2026-10-22 03:59:08] stats 337m: trades 8407072 (416/s) | lookups 10219 | profiles 10009 | with X 441 | ALERTS 0 | queue 10865 | rechecking 455 | 429s 95 | dropped 0 | top scans 113 | apps none=6302527,axiom=888105,pump=544628,fomo=348057,gmgn=158804
 [2026-10-22 04:00:08] stats 338m: trades 8430826 (416/s) | lookups 10272 | profiles 10061 | with X 443 | ALERTS 0 | queue 10861 | rechecking 456 | 429s 96 | dropped 0 | top scans 113 | apps none=6321808,axiom=889900,pump=545918,fomo=348737,gmgn=159195
 [2026-10-22 04:01:08] stats 339m: trades 8450547 (415/s) | lookups 10282 | profiles 10071 | with X 443 | ALERTS 0 | queue 10892 | rechecking 456 | 429s 96 | dropped 0 | top scans 113 | apps none=6337707,axiom=891214,pump=547165,fomo=349396,gmgn=159536
 [2026-10-22 04:01:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
@@ -309,6 +306,9 @@
 [2026-10-22 04:10:45] 🎁 dev 3Zh3sh sent 1.3% of 404cat to 9vw1cEQNSbX4oUPKu9JdS77P4ACCSMUYC3BKbxnkSoyQ
 [2026-10-22 04:10:45] 🎁 dev 3Zh3sh sent 2.0% of 404cat to 7m2QRJTwXa3swMBcNaq8ZpA9nPhMWuyFguYrEr1m37ED
 [2026-10-22 04:10:46] 🎁 dev 3Zh3sh sent 1.4% of 404cat to 7m2QRJTwXa3swMBcNaq8ZpA9nPhMWuyFguYrEr1m37ED
+[2026-10-22 04:11:08] stats 349m: trades 8662176 (414/s) | lookups 10579 | profiles 10361 | with X 447 | ALERTS 0 | queue 10998 | rechecking 459 | 429s 99 | dropped 0 | top scans 116 | apps none=6506114,axiom=908407,pump=560373,fomo=356042,gmgn=162610
+[2026-10-22 04:11:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 04:11:50] 🎁 dev HgAhL3 sent 1.3% of human to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
