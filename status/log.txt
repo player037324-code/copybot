@@ -279,11 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:00:08] stats 158m: trades 4304951 (454/s) | lookups 4757 | profiles 4669 | with X 247 | ALERTS 0 | queue 8312 | rechecking 377 | 429s 46 | dropped 0 | top scans 53 | apps none=3215277,axiom=463813,pump=271763,fomo=186414,gmgn=78218
-[2026-10-22 01:01:08] stats 159m: trades 4326897 (454/s) | lookups 4767 | profiles 4679 | with X 247 | ALERTS 0 | queue 8345 | rechecking 377 | 429s 46 | dropped 0 | top scans 53 | apps none=3231854,axiom=465631,pump=273356,fomo=187376,gmgn=78641
-[2026-10-22 01:01:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-22 01:01:49] 🎁 dev 2VHc4n sent 2.9% of TI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
-[2026-10-22 01:01:53] 🎁 dev 2VHc4n sent 1.1% of TI to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
 [2026-10-22 01:02:08] gift watcher: 730 dev wallets watched | 98335 txs | 80 gifts | 368 MB today (~7k credits)
 [2026-10-22 01:02:08] stats 160m: trades 4351574 (453/s) | lookups 4787 | profiles 4699 | with X 247 | ALERTS 0 | queue 8369 | rechecking 377 | 429s 46 | dropped 0 | top scans 54 | apps none=3251578,axiom=467397,pump=274892,fomo=188254,gmgn=78937
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 4.2% of CyberGato to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
@@ -309,6 +304,11 @@
 [2026-10-22 01:11:08] stats 169m: trades 4618450 (455/s) | lookups 5091 | profiles 4996 | with X 258 | ALERTS 0 | queue 8536 | rechecking 388 | 429s 48 | dropped 0 | top scans 57 | apps none=3430258,axiom=518409,pump=288873,fomo=197862,gmgn=84518
 [2026-10-22 01:12:08] gift watcher: 725 dev wallets watched | 105745 txs | 87 gifts | 433 MB today (~9k credits)
 [2026-10-22 01:12:08] stats 170m: trades 4648408 (456/s) | lookups 5144 | profiles 5048 | with X 261 | ALERTS 0 | queue 8552 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3451498,axiom=522517,pump=290484,fomo=199402,gmgn=85183
+[2026-10-22 01:13:08] stats 171m: trades 4675818 (456/s) | lookups 5154 | profiles 5058 | with X 261 | ALERTS 0 | queue 8583 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3469394,axiom=527454,pump=292227,fomo=200857,gmgn=85889
+[2026-10-22 01:13:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 1 new to the list
+[2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 5.6% of MCT to 6V5AaaMH2hMSRUCXkPwWEgDzGYGVjVDvvdq8urVRZaae
+[2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.9% of MCT to HkipUGMN7zBwCb74wYbM66r55DvvhmCAfbxoRCgA9bDn
+[2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.1% of MCT to QNFQSu4GFJQhBFKmLLsRbLgu72LjZGEs86xZJ4C1ZCw
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
