@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:14:08] stats 352m: trades 8717757 (413/s) | lookups 10688 | profiles 10465 | with X 449 | ALERTS 0 | queue 11006 | rechecking 461 | 429s 99 | dropped 0 | top scans 118 | apps none=6549047,axiom=912828,pump=564609,fomo=358127,gmgn=163629
-[2026-10-22 04:15:08] stats 353m: trades 8738075 (413/s) | lookups 10741 | profiles 10517 | with X 450 | ALERTS 0 | queue 10998 | rechecking 463 | 429s 100 | dropped 0 | top scans 118 | apps none=6563710,axiom=915121,pump=566239,fomo=358989,gmgn=164107
-[2026-10-22 04:16:08] stats 354m: trades 8758505 (412/s) | lookups 10751 | profiles 10527 | with X 450 | ALERTS 0 | queue 11014 | rechecking 463 | 429s 100 | dropped 0 | top scans 118 | apps none=6578672,axiom=917331,pump=567865,fomo=359806,gmgn=164484
 [2026-10-22 04:16:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 1 new to the list
 [2026-10-22 04:17:08] gift watcher: 660 dev wallets watched | 212941 txs | 200 gifts | 1456 MB today (~29k credits)
 [2026-10-22 04:17:08] stats 355m: trades 8779139 (412/s) | lookups 10771 | profiles 10547 | with X 450 | ALERTS 0 | queue 11041 | rechecking 463 | 429s 100 | dropped 0 | top scans 119 | apps none=6594390,axiom=919337,pump=569323,fomo=360534,gmgn=164833
@@ -309,6 +306,9 @@
 [2026-10-22 04:27:08] stats 365m: trades 8978594 (410/s) | lookups 11128 | profiles 10898 | with X 470 | ALERTS 0 | queue 11082 | rechecking 468 | 429s 103 | dropped 0 | top scans 122 | apps none=6740361,axiom=941391,pump=583509,fomo=369721,gmgn=169321
 [2026-10-22 04:28:08] stats 366m: trades 8998417 (410/s) | lookups 11137 | profiles 10907 | with X 470 | ALERTS 0 | queue 11118 | rechecking 468 | 429s 103 | dropped 0 | top scans 122 | apps none=6755204,axiom=943741,pump=584849,fomo=370265,gmgn=169643
 [2026-10-22 04:28:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
+[2026-10-22 04:29:08] stats 367m: trades 9017042 (409/s) | lookups 11157 | profiles 10927 | with X 470 | ALERTS 0 | queue 11123 | rechecking 468 | 429s 103 | dropped 0 | top scans 123 | apps none=6769736,axiom=945290,pump=586082,fomo=370862,gmgn=169979
+[2026-10-22 04:29:31] 🎁 dev Dde9n8 sent 1.4% of PauseAI to DJQwtiowTJmAvAu4vhCaFgPiS3nnKD5r5agZgBQEdHK2
+[2026-10-22 04:29:36] 🎁 dev DJQwti sent 1.3% of PauseAI to Dde9n8s2NPiL9Wd99NftqDtbwRrsPkyxxKDAJeRhCXoJ
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
