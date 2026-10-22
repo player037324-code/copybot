@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:52:08] gift watcher: 698 dev wallets watched | 133354 txs | 110 gifts | 645 MB today (~13k credits)
-[2026-10-22 01:52:08] stats 210m: trades 5657771 (449/s) | lookups 6389 | profiles 6265 | with X 314 | ALERTS 0 | queue 9184 | rechecking 399 | 429s 60 | dropped 0 | top scans 70 | apps none=4218431,axiom=629775,pump=349963,fomo=234445,gmgn=106742
 [2026-10-22 01:52:14] 🎁 dev BAoJmp sent 1.7% of AU to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:52:14] 🎁 dev BAoJmp sent 2.0% of AU to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:53:08] stats 211m: trades 5681742 (449/s) | lookups 6389 | profiles 6265 | with X 314 | ALERTS 0 | queue 9224 | rechecking 399 | 429s 60 | dropped 0 | top scans 70 | apps none=4236173,axiom=632889,pump=351410,fomo=235149,gmgn=107206
@@ -309,6 +307,8 @@
 [2026-10-22 02:04:25] 🎁 dev CkSAPd sent 2.4% of ZIZAI to DhnpBBvgjyUzE1BcE1bwGsSPnQzao4DVDKX314rHdywp
 [2026-10-22 02:04:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 39s, 0 new to the list
 [2026-10-22 02:05:08] stats 223m: trades 5945781 (444/s) | lookups 6802 | profiles 6673 | with X 328 | ALERTS 0 | queue 9334 | rechecking 406 | 429s 62 | dropped 0 | top scans 75 | apps none=4437795,axiom=659469,pump=368477,fomo=243625,gmgn=113035
+[2026-10-22 02:06:08] stats 224m: trades 5965674 (444/s) | lookups 6855 | profiles 6725 | with X 330 | ALERTS 0 | queue 9333 | rechecking 407 | 429s 63 | dropped 0 | top scans 75 | apps none=4453460,axiom=661015,pump=369768,fomo=244204,gmgn=113486
+[2026-10-22 02:06:11] 🎁 dev r7wiQQ sent 3.6% of ZIZAI to AjZ2fHJYHXovgwukg5GCi1Gcw54xDTY4dcR1Lm8tZDMN
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
