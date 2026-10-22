@@ -1,6 +1,6 @@
-updated: 2026-10-22T20:21:06Z
+updated: 2026-10-22T20:22:02Z
 deployed: 36ae765b7bad5d93af98d6ea401246000d96ef8e
-pm2: stopped uptime=5744m restarts=14
+pm2: stopped uptime=5745m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -90,6 +90,10 @@ pfwatch pm2: online restarts=17
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
 {"time":"2026-10-21T19:43:44.673Z","wallet":"Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX","username":"Kimchi","x":"kimchi1x","followers":29609,"xFollowers":183839,"xVerified":false,"following":0,"setAt":1792537047436,"evm":"0xab45fc2501c15778cca32d879dbfa77516336f15","bio":"https://www.youtube.com/watch?v=si9ybOOHoE8","trade":{"gift":{"mint":"8PdrbUMXULuPjSgcdJHLwphQeSmPXYdneWtFF8i6pump","pct":1.
+
+--- callouts ---
+callouts pm2: not started
+
 
 --- positions ---
 {
