@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 2.0% of 2s7UAe to Cj7ZjeH5n1BNm2eSc8fowxVkBpaQghryUJzuB2iPyRHG
 [2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 1.7% of 2s7UAe to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 1.8% of 2s7UAe to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 2.2% of 2s7UAe to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
@@ -309,6 +308,7 @@
 [2026-10-22 04:22:08] gift watcher: 672 dev wallets watched | 214429 txs | 201 gifts | 1465 MB today (~29k credits)
 [2026-10-22 04:22:08] stats 360m: trades 8884354 (411/s) | lookups 10973 | profiles 10747 | with X 463 | ALERTS 0 | queue 11039 | rechecking 464 | 429s 101 | dropped 0 | top scans 120 | apps none=6670973,axiom=931418,pump=576632,fomo=365293,gmgn=167416
 [2026-10-22 04:22:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
+[2026-10-22 04:23:08] stats 361m: trades 8905136 (411/s) | lookups 10992 | profiles 10766 | with X 466 | ALERTS 0 | queue 11039 | rechecking 464 | 429s 101 | dropped 0 | top scans 121 | apps none=6686531,axiom=933311,pump=578096,fomo=366384,gmgn=167814
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
