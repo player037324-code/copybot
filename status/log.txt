@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 06:05:14] 🎁 dev 3Fzjh5 sent 1.5% of JUMPDOG to BCnuCeCaZjke1zheXUujxijVwvidHobwYN79FaxtKZvA
 [2026-10-22 06:05:40] 🎁 dev 5bcCCc sent 1.0% of AB to 2c5ZDkdReTL7AhTxPnc4BCNP6se5AoCnHQ61bt1bTgRh
 [2026-10-22 06:06:08] stats 464m: trades 10664306 (383/s) | lookups 14075 | profiles 13806 | with X 533 | ALERTS 0 | queue 12196 | rechecking 485 | 429s 132 | dropped 0 | top scans 155 | apps none=8047631,axiom=1083179,pump=694564,fomo=433926,gmgn=201165
 [2026-10-22 06:07:08] gift watcher: 553 dev wallets watched | 272782 txs | 227 gifts | 1971 MB today (~39k credits)
@@ -309,6 +308,7 @@
 [2026-10-22 06:17:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 06:17:56] 🎁 dev 7pa9H6 sent 1.2% of TIC to tqVvFiW1UcMzx1rknDzd4BUTPyLmC9wxK36o5KSrTXw
 [2026-10-22 06:17:56] 🎁 dev 7pa9H6 sent 1.6% of TIC to D4m5kk6R7M6Nfp7dtSasvHRvLH1NWGjXukpyDAiGPVkb
+[2026-10-22 06:18:08] stats 476m: trades 10876148 (381/s) | lookups 14412 | profiles 14137 | with X 543 | ALERTS 0 | queue 12357 | rechecking 485 | 429s 135 | dropped 0 | top scans 159 | apps none=8220271,axiom=1095887,pump=707161,fomo=441153,gmgn=204779
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
