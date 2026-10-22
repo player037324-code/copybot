@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
--10-22 18:13:08] stats 1191m: trades 27161007 (380/s) | lookups 36190 | profiles 35711 | with X 946 | ALERTS 0 | queue 20130 | rechecking 549 | 429s 337 | dropped 0 | top scans 397 | apps none=21219205,axiom=2391922,pump=1627191,fomo=884561,gmgn=524654
-[2026-10-22 18:14:08] stats 1192m: trades 27199636 (380/s) | lookups 36190 | profiles 35711 | with X 946 | ALERTS 0 | queue 20150 | rechecking 549 | 429s 337 | dropped 0 | top scans 397 | apps none=21248021,axiom=2396771,pump=1629375,fomo=885899,gmgn=525276
+cking 549 | 429s 337 | dropped 0 | top scans 397 | apps none=21248021,axiom=2396771,pump=1629375,fomo=885899,gmgn=525276
 [2026-10-22 18:14:38] top scan: 2001 profiles (cutoff 1096 pump followers) in 90s, 0 new to the list
 [2026-10-22 18:15:08] stats 1193m: trades 27233033 (380/s) | lookups 36220 | profiles 35741 | with X 946 | ALERTS 0 | queue 20169 | rechecking 548 | 429s 337 | dropped 0 | top scans 398 | apps none=21273948,axiom=2399794,pump=1631559,fomo=887001,gmgn=525817
 [2026-10-22 18:16:08] stats 1194m: trades 27268380 (381/s) | lookups 36272 | profiles 35792 | with X 948 | ALERTS 0 | queue 20160 | rechecking 547 | 429s 338 | dropped 0 | top scans 398 | apps none=21301442,axiom=2403139,pump=1633643,fomo=888143,gmgn=526394
@@ -308,6 +307,8 @@
 [2026-10-22 18:30:08] stats 1208m: trades 27713987 (382/s) | lookups 36682 | profiles 36198 | with X 955 | ALERTS 0 | queue 20327 | rechecking 543 | 429s 342 | dropped 0 | top scans 403 | apps none=21655006,axiom=2432611,pump=1663897,fomo=904464,gmgn=533719
 [2026-10-22 18:31:08] stats 1209m: trades 27740874 (382/s) | lookups 36691 | profiles 36207 | with X 955 | ALERTS 0 | queue 20359 | rechecking 543 | 429s 342 | dropped 0 | top scans 403 | apps none=21676434,axiom=2434294,pump=1665714,fomo=905526,gmgn=534174
 [2026-10-22 18:31:47] top scan: 2001 profiles (cutoff 1096 pump followers) in 39s, 0 new to the list
+[2026-10-22 18:32:08] gift watcher: 7074 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
+[2026-10-22 18:32:08] stats 1210m: trades 27772299 (383/s) | lookups 36711 | profiles 36227 | with X 955 | ALERTS 0 | queue 20375 | rechecking 543 | 429s 342 | dropped 0 | top scans 404 | apps none=21701629,axiom=2436631,pump=1667768,fomo=906545,gmgn=534516
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
