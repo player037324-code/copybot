@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-:08] stats 829m: trades 17492345 (352/s) | lookups 25217 | profiles 24843 | with X 761 | ALERTS 0 | queue 15543 | rechecking 585 | 429s 233 | dropped 0 | top scans 277 | apps none=13607237,axiom=1575779,pump=1069300,fomo=610415,gmgn=316708
-[2026-10-22 12:12:08] gift watcher: 2836 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
+:08] gift watcher: 2836 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 12:12:08] stats 830m: trades 17507648 (352/s) | lookups 25277 | profiles 24903 | with X 761 | ALERTS 0 | queue 15558 | rechecking 585 | 429s 233 | dropped 0 | top scans 277 | apps none=13619598,axiom=1576854,pump=1070198,fomo=610872,gmgn=316974
 [2026-10-22 12:13:08] stats 831m: trades 17523420 (351/s) | lookups 25329 | profiles 24954 | with X 764 | ALERTS 0 | queue 15522 | rechecking 588 | 429s 234 | dropped 0 | top scans 277 | apps none=13632245,axiom=1578027,pump=1071100,fomo=611361,gmgn=317260
 [2026-10-22 12:14:08] stats 832m: trades 17541786 (351/s) | lookups 25329 | profiles 24954 | with X 764 | ALERTS 0 | queue 15539 | rechecking 588 | 429s 234 | dropped 0 | top scans 277 | apps none=13647053,axiom=1579189,pump=1072199,fomo=611936,gmgn=317648
@@ -308,6 +307,7 @@
 [2026-10-22 12:28:08] stats 846m: trades 17828889 (351/s) | lookups 25798 | profiles 25419 | with X 771 | ALERTS 0 | queue 15636 | rechecking 596 | 429s 238 | dropped 0 | top scans 282 | apps none=13885710,axiom=1597212,pump=1087697,fomo=617587,gmgn=322101
 [2026-10-22 12:29:08] stats 847m: trades 17850037 (351/s) | lookups 25798 | profiles 25419 | with X 771 | ALERTS 0 | queue 15654 | rechecking 596 | 429s 238 | dropped 0 | top scans 282 | apps none=13901323,axiom=1599865,pump=1088964,fomo=618051,gmgn=322516
 [2026-10-22 12:29:37] top scan: 1998 profiles (cutoff 1088 pump followers) in 90s, 0 new to the list
+[2026-10-22 12:30:08] stats 848m: trades 17868775 (351/s) | lookups 25828 | profiles 25449 | with X 771 | ALERTS 0 | queue 15672 | rechecking 596 | 429s 238 | dropped 0 | top scans 283 | apps none=13915765,axiom=1601688,pump=1090124,fomo=618523,gmgn=322919
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
