@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:35:08] stats 373m: trades 9116995 (407/s) | lookups 11352 | profiles 11118 | with X 473 | ALERTS 0 | queue 11185 | rechecking 471 | 429s 105 | dropped 0 | top scans 124 | apps none=6842974,axiom=955520,pump=593912,fomo=375508,gmgn=172005
-[2026-10-22 04:35:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
 [2026-10-22 04:36:08] stats 374m: trades 9132718 (407/s) | lookups 11382 | profiles 11147 | with X 473 | ALERTS 0 | queue 11199 | rechecking 470 | 429s 105 | dropped 0 | top scans 125 | apps none=6854199,axiom=957153,pump=595276,fomo=376236,gmgn=172430
 [2026-10-22 04:37:08] gift watcher: 649 dev wallets watched | 222743 txs | 213 gifts | 1547 MB today (~31k credits)
 [2026-10-22 04:37:08] stats 375m: trades 9149972 (407/s) | lookups 11435 | profiles 11199 | with X 475 | ALERTS 0 | queue 11175 | rechecking 472 | 429s 106 | dropped 0 | top scans 125 | apps none=6866412,axiom=959328,pump=596661,fomo=376898,gmgn=172827
@@ -309,6 +307,8 @@
 [2026-10-22 04:50:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
 [2026-10-22 04:51:08] stats 389m: trades 9376758 (402/s) | lookups 11794 | profiles 11553 | with X 479 | ALERTS 0 | queue 11368 | rechecking 472 | 429s 110 | dropped 0 | top scans 130 | apps none=7031656,axiom=983130,pump=613947,fomo=387440,gmgn=178045
 [2026-10-22 04:51:13] 🎁 dev D8LzpP sent 4.3% of Si to 2h49osyS4nJE3RUDYxAPHwocVo8QmAcJXDkdVm8Hs6Dw
+[2026-10-22 04:52:08] gift watcher: 640 dev wallets watched | 230796 txs | 217 gifts | 1629 MB today (~33k credits)
+[2026-10-22 04:52:08] stats 390m: trades 9399647 (402/s) | lookups 11847 | profiles 11604 | with X 480 | ALERTS 0 | queue 11360 | rechecking 470 | 429s 111 | dropped 0 | top scans 130 | apps none=7050331,axiom=984372,pump=615202,fomo=388321,gmgn=178373
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
