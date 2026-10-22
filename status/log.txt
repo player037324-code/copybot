@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:03:08] stats 221m: trades 5902513 (445/s) | lookups 6723 | profiles 6595 | with X 325 | ALERTS 0 | queue 9352 | rechecking 404 | 429s 62 | dropped 0 | top scans 74 | apps none=4403908,axiom=655883,pump=365410,fomo=242347,gmgn=112245
 [2026-10-22 02:04:08] stats 222m: trades 5922677 (445/s) | lookups 6782 | profiles 6654 | with X 327 | ALERTS 0 | queue 9337 | rechecking 405 | 429s 62 | dropped 0 | top scans 74 | apps none=4419420,axiom=657723,pump=366873,fomo=243026,gmgn=112553
 [2026-10-22 02:04:25] 🎁 dev CkSAPd sent 2.4% of ZIZAI to DhnpBBvgjyUzE1BcE1bwGsSPnQzao4DVDKX314rHdywp
 [2026-10-22 02:04:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 39s, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-22 02:17:09] 🎁 dev 4BYjXY sent 1.6% of WTG to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
 [2026-10-22 02:17:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:18:08] stats 236m: trades 6216761 (439/s) | lookups 7192 | profiles 7058 | with X 347 | ALERTS 0 | queue 9497 | rechecking 413 | 429s 66 | dropped 0 | top scans 79 | apps none=4636677,axiom=689578,pump=389646,fomo=253815,gmgn=118223
+[2026-10-22 02:19:08] stats 237m: trades 6236717 (439/s) | lookups 7245 | profiles 7110 | with X 348 | ALERTS 0 | queue 9490 | rechecking 417 | 429s 67 | dropped 0 | top scans 79 | apps none=4650491,axiom=691948,pump=391189,fomo=254864,gmgn=118804
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
