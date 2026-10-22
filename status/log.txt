@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:47:40] 🎁 dev 6Ds4ts sent 1.0% of php to 5UguhD4hLy2a7rHhybW8LrwNEUNrTcwYmLHmFCgb9yeo
 [2026-10-22 04:48:08] stats 386m: trades 9320675 (402/s) | lookups 11712 | profiles 11473 | with X 479 | ALERTS 0 | queue 11312 | rechecking 473 | 429s 109 | dropped 0 | top scans 129 | apps none=6990028,axiom=977653,pump=610083,fomo=384850,gmgn=176663
 [2026-10-22 04:49:08] stats 387m: trades 9340408 (402/s) | lookups 11764 | profiles 11523 | with X 479 | ALERTS 0 | queue 11327 | rechecking 472 | 429s 110 | dropped 0 | top scans 129 | apps none=7004697,axiom=979705,pump=611432,fomo=385741,gmgn=177065
 [2026-10-22 04:49:31] 🎁 dev F5XvCe sent 10.0% of SAINDRA to 8rCjoeuCkxZ7tT3dSJ1F8pRKZMaokKTY6gqRTCfdN3VG
@@ -309,6 +308,7 @@
 [2026-10-22 05:02:08] gift watcher: 606 dev wallets watched | 236605 txs | 220 gifts | 1668 MB today (~33k credits)
 [2026-10-22 05:02:08] stats 400m: trades 9590314 (400/s) | lookups 12121 | profiles 11874 | with X 486 | ALERTS 0 | queue 11518 | rechecking 471 | 429s 113 | dropped 0 | top scans 134 | apps none=7201022,axiom=999125,pump=627498,fomo=395045,gmgn=181453
 [2026-10-22 05:03:08] stats 401m: trades 9608891 (399/s) | lookups 12181 | profiles 11934 | with X 489 | ALERTS 0 | queue 11510 | rechecking 471 | 429s 113 | dropped 0 | top scans 134 | apps none=7216181,axiom=1000432,pump=628436,fomo=395553,gmgn=181755
+[2026-10-22 05:04:08] stats 402m: trades 9625911 (399/s) | lookups 12233 | profiles 11985 | with X 490 | ALERTS 0 | queue 11511 | rechecking 471 | 429s 114 | dropped 0 | top scans 134 | apps none=7229374,axiom=1001829,pump=629624,fomo=396115,gmgn=182087
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
