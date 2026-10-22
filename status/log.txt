@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:12:08] stats 110m: trades 3279798 (497/s) | lookups 3218 | profiles 3159 | with X 180 | ALERTS 0 | queue 7389 | rechecking 337 | 429s 33 | dropped 0 | top scans 37 | apps none=2445501,axiom=365679,pump=203111,fomo=136622,gmgn=60780
-[2026-10-22 00:13:08] stats 111m: trades 3307092 (497/s) | lookups 3278 | profiles 3219 | with X 185 | ALERTS 0 | queue 7378 | rechecking 339 | 429s 33 | dropped 0 | top scans 37 | apps none=2467001,axiom=368066,pump=204379,fomo=137895,gmgn=61186
-[2026-10-22 00:13:30] 🎁 dev BAoJmp sent 3.2% of LARPMAXXING to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:13:30] 🎁 dev BAoJmp sent 2.7% of LARPMAXXING to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:13:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:14:08] stats 112m: trades 3333544 (496/s) | lookups 3298 | profiles 3237 | with X 187 | ALERTS 0 | queue 7397 | rechecking 340 | 429s 33 | dropped 0 | top scans 38 | apps none=2487506,axiom=370332,pump=205697,fomo=139365,gmgn=61627
@@ -309,6 +306,9 @@
 [2026-10-22 00:25:08] stats 123m: trades 3597243 (487/s) | lookups 3657 | profiles 3587 | with X 208 | ALERTS 0 | queue 7609 | rechecking 350 | 429s 37 | dropped 0 | top scans 41 | apps none=2686358,axiom=395259,pump=221093,fomo=153785,gmgn=66430
 [2026-10-22 00:26:08] stats 124m: trades 3616716 (486/s) | lookups 3657 | profiles 3587 | with X 208 | ALERTS 0 | queue 7648 | rechecking 350 | 429s 37 | dropped 0 | top scans 41 | apps none=2701605,axiom=396473,pump=222532,fomo=154781,gmgn=66671
 [2026-10-22 00:26:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 00:27:08] gift watcher: 906 dev wallets watched | 77795 txs | 63 gifts | 147 MB today (~3k credits)
+[2026-10-22 00:27:08] stats 125m: trades 3640013 (485/s) | lookups 3687 | profiles 3617 | with X 208 | ALERTS 0 | queue 7672 | rechecking 351 | 429s 37 | dropped 0 | top scans 42 | apps none=2719427,axiom=398915,pump=223831,fomo=155835,gmgn=67061
+[2026-10-22 00:27:31] 🎁 dev 3wPoE1 sent 3.6% of POKEBREED to DGb1ouFKY5364YATwYozJPMy226jYpKVZh787ore3GeK
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
