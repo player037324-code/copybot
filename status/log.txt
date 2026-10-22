@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:29:08] stats 127m: trades 3683244 (483/s) | lookups 3766 | profiles 3696 | with X 212 | ALERTS 0 | queue 7697 | rechecking 352 | 429s 37 | dropped 0 | top scans 43 | apps none=2751362,axiom=403057,pump=227055,fomo=158153,gmgn=67892
-[2026-10-22 00:30:08] stats 128m: trades 3705609 (482/s) | lookups 3819 | profiles 3748 | with X 215 | ALERTS 0 | queue 7700 | rechecking 353 | 429s 38 | dropped 0 | top scans 43 | apps none=2768409,axiom=405052,pump=228565,fomo=159206,gmgn=68260
 [2026-10-22 00:31:08] stats 129m: trades 3730136 (482/s) | lookups 3829 | profiles 3758 | with X 215 | ALERTS 0 | queue 7737 | rechecking 353 | 429s 38 | dropped 0 | top scans 43 | apps none=2786527,axiom=407609,pump=230129,fomo=160375,gmgn=68757
 [2026-10-22 00:31:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:32:08] gift watcher: 872 dev wallets watched | 80310 txs | 64 gifts | 165 MB today (~3k credits)
@@ -309,6 +307,8 @@
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.7% of PERRO to 5Z8aytx5vFYHqy2WT6zdVJdGfjF4LadHw3ofjuhiBCAw
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 2.0% of PERRO to X6Dr2Fxs1ebqiiTmDLKocDNZPBriLrFNRRjHmy1Pmwy
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.9% of PERRO to 3WngPZ36AvRNnAn2WZNEECVtDaZazyShFLFZezWgvN9k
+[2026-10-22 00:43:08] stats 141m: trades 3991161 (472/s) | lookups 4215 | profiles 4135 | with X 226 | ALERTS 0 | queue 8008 | rechecking 363 | 429s 41 | dropped 0 | top scans 47 | apps none=2985701,axiom=429860,pump=248402,fomo=172489,gmgn=72885
+[2026-10-22 00:43:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
