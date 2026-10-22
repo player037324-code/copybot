@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.7% of Boobies to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
-[2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.6% of Boobies to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
-[2026-10-22 02:46:08] stats 264m: trades 6803613 (430/s) | lookups 8043 | profiles 7869 | with X 368 | ALERTS 0 | queue 9984 | rechecking 422 | 429s 75 | dropped 0 | top scans 88 | apps none=5080037,axiom=739819,pump=432922,fomo=281424,gmgn=129113
-[2026-10-22 02:47:08] gift watcher: 692 dev wallets watched | 165200 txs | 161 gifts | 1001 MB today (~20k credits)
 [2026-10-22 02:47:08] stats 265m: trades 6826594 (429/s) | lookups 8043 | profiles 7869 | with X 368 | ALERTS 0 | queue 10012 | rechecking 422 | 429s 75 | dropped 0 | top scans 88 | apps none=5096906,axiom=742182,pump=434799,fomo=282465,gmgn=129538
 [2026-10-22 02:47:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:48:08] stats 266m: trades 6845897 (429/s) | lookups 8073 | profiles 7899 | with X 368 | ALERTS 0 | queue 10033 | rechecking 421 | 429s 75 | dropped 0 | top scans 89 | apps none=5110782,axiom=744525,pump=436397,fomo=283277,gmgn=129885
@@ -309,6 +305,10 @@
 [2026-10-22 02:59:40] 🎁 dev B38M33 sent 2.0% of UBER to DuARUpsEzdVbVpSnbGipLJvWxaXUCPLDJDjNov6Rc6s6
 [2026-10-22 03:00:08] stats 278m: trades 7099328 (426/s) | lookups 8459 | profiles 8279 | with X 384 | ALERTS 0 | queue 10151 | rechecking 428 | 429s 78 | dropped 0 | top scans 93 | apps none=5294514,axiom=774976,pump=456723,fomo=293600,gmgn=134372
 [2026-10-22 03:01:08] stats 279m: trades 7121934 (425/s) | lookups 8512 | profiles 8331 | with X 386 | ALERTS 0 | queue 10159 | rechecking 430 | 429s 79 | dropped 0 | top scans 93 | apps none=5311489,axiom=777335,pump=458439,fomo=294503,gmgn=134684
+[2026-10-22 03:02:08] gift watcher: 717 dev wallets watched | 175575 txs | 165 gifts | 1126 MB today (~23k credits)
+[2026-10-22 03:02:08] stats 280m: trades 7142585 (425/s) | lookups 8512 | profiles 8331 | with X 386 | ALERTS 0 | queue 10184 | rechecking 430 | 429s 79 | dropped 0 | top scans 93 | apps none=5327699,axiom=778964,pump=459809,fomo=295286,gmgn=135038
+[2026-10-22 03:02:23] 🎁 dev 84oW5H sent 1.5% of sol to B6Rzcn9RXJ68SQ2Tt3XXqM6QQPMor3V6EkfAHaBjxFxH
+[2026-10-22 03:02:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
