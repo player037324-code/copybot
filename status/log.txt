@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:18:06] 🎁 dev HgAhL3 sent 1.3% of grass to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
-[2026-10-22 04:18:08] stats 356m: trades 8799296 (412/s) | lookups 10830 | profiles 10606 | with X 454 | ALERTS 0 | queue 11030 | rechecking 463 | 429s 100 | dropped 0 | top scans 119 | apps none=6609962,axiom=921197,pump=570681,fomo=361301,gmgn=165136
-[2026-10-22 04:19:08] stats 357m: trades 8816935 (412/s) | lookups 10883 | profiles 10657 | with X 456 | ALERTS 0 | queue 11019 | rechecking 463 | 429s 101 | dropped 0 | top scans 119 | apps none=6623466,axiom=922590,pump=571978,fomo=362111,gmgn=165431
-[2026-10-22 04:20:08] stats 358m: trades 8840558 (412/s) | lookups 10883 | profiles 10657 | with X 456 | ALERTS 0 | queue 11037 | rechecking 463 | 429s 101 | dropped 0 | top scans 119 | apps none=6639719,axiom=926134,pump=573485,fomo=363076,gmgn=166328
 [2026-10-22 04:20:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:21:08] stats 359m: trades 8863501 (411/s) | lookups 10913 | profiles 10687 | with X 457 | ALERTS 0 | queue 11061 | rechecking 463 | 429s 101 | dropped 0 | top scans 120 | apps none=6655247,axiom=929453,pump=575152,fomo=364314,gmgn=167034
 [2026-10-22 04:22:08] gift watcher: 672 dev wallets watched | 214429 txs | 201 gifts | 1465 MB today (~29k credits)
@@ -309,6 +305,10 @@
 [2026-10-22 04:30:08] stats 368m: trades 9034711 (409/s) | lookups 11210 | profiles 10979 | with X 471 | ALERTS 0 | queue 11123 | rechecking 468 | 429s 104 | dropped 0 | top scans 123 | apps none=6782677,axiom=947113,pump=587379,fomo=371716,gmgn=170337
 [2026-10-22 04:31:08] stats 369m: trades 9055068 (409/s) | lookups 11220 | profiles 10989 | with X 471 | ALERTS 0 | queue 11137 | rechecking 468 | 429s 104 | dropped 0 | top scans 123 | apps none=6799404,axiom=948250,pump=588578,fomo=372476,gmgn=170603
 [2026-10-22 04:31:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
+[2026-10-22 04:32:08] gift watcher: 649 dev wallets watched | 219732 txs | 209 gifts | 1517 MB today (~30k credits)
+[2026-10-22 04:32:08] stats 370m: trades 9071636 (409/s) | lookups 11240 | profiles 11009 | with X 471 | ALERTS 0 | queue 11150 | rechecking 467 | 429s 104 | dropped 0 | top scans 124 | apps none=6811676,axiom=949966,pump=589792,fomo=373171,gmgn=170979
+[2026-10-22 04:32:55] 🎁 dev BAoJmp sent 3.4% of RASMUS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 04:32:55] 🎁 dev BAoJmp sent 3.4% of RASMUS to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
