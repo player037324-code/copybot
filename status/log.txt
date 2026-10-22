@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:36:08] stats 314m: trades 7902396 (419/s) | lookups 9506 | profiles 9303 | with X 413 | ALERTS 0 | queue 10618 | rechecking 445 | 429s 89 | dropped 0 | top scans 105 | apps none=5915924,axiom=842615,pump=510628,fomo=326385,gmgn=149414
 [2026-10-22 03:37:08] gift watcher: 689 dev wallets watched | 195384 txs | 183 gifts | 1307 MB today (~26k credits)
 [2026-10-22 03:37:08] stats 315m: trades 7921120 (419/s) | lookups 9559 | profiles 9355 | with X 419 | ALERTS 0 | queue 10601 | rechecking 446 | 429s 90 | dropped 0 | top scans 105 | apps none=5929117,axiom=844724,pump=512070,fomo=327443,gmgn=149972
 [2026-10-22 03:38:08] stats 316m: trades 7942157 (419/s) | lookups 9559 | profiles 9355 | with X 419 | ALERTS 0 | queue 10632 | rechecking 446 | 429s 90 | dropped 0 | top scans 105 | apps none=5944004,axiom=847076,pump=513819,fomo=328611,gmgn=150546
@@ -309,6 +308,7 @@
 [2026-10-22 03:52:13] 🎁 dev F2dWzX sent 5.0% of SPLnet to GTB7tdAbwAG9iNAnGNVi2gS7Xp5nZbwtnk7uUBRrnMRZ
 [2026-10-22 03:53:08] stats 331m: trades 8266917 (416/s) | lookups 10028 | profiles 9820 | with X 431 | ALERTS 0 | queue 10796 | rechecking 451 | 429s 94 | dropped 0 | top scans 110 | apps none=6190756,axiom=877068,pump=536356,fomo=343328,gmgn=156362
 [2026-10-22 03:53:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 03:54:08] stats 332m: trades 8287590 (416/s) | lookups 10057 | profiles 9848 | with X 431 | ALERTS 0 | queue 10828 | rechecking 451 | 429s 94 | dropped 0 | top scans 111 | apps none=6206609,axiom=878866,pump=537863,fomo=344174,gmgn=156756
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
