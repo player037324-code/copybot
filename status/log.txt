@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:26:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
-[2026-10-22 03:27:08] gift watcher: 717 dev wallets watched | 190480 txs | 179 gifts | 1259 MB today (~25k credits)
 [2026-10-22 03:27:08] stats 305m: trades 7721299 (422/s) | lookups 9202 | profiles 9004 | with X 404 | ALERTS 0 | queue 10562 | rechecking 440 | 429s 87 | dropped 0 | top scans 102 | apps none=5780693,axiom=825955,pump=496357,fomo=318743,gmgn=145142
 [2026-10-22 03:27:26] 🎁 dev HgAhL3 sent 1.3% of NUT to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 03:28:08] stats 306m: trades 7747130 (422/s) | lookups 9261 | profiles 9062 | with X 405 | ALERTS 0 | queue 10538 | rechecking 442 | 429s 87 | dropped 0 | top scans 102 | apps none=5800479,axiom=828437,pump=497918,fomo=319644,gmgn=145710
@@ -309,6 +307,8 @@
 [2026-10-22 03:41:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:42:08] gift watcher: 677 dev wallets watched | 196932 txs | 183 gifts | 1322 MB today (~26k credits)
 [2026-10-22 03:42:08] stats 320m: trades 8025058 (418/s) | lookups 9671 | profiles 9466 | with X 421 | ALERTS 0 | queue 10714 | rechecking 443 | 429s 91 | dropped 0 | top scans 107 | apps none=6008044,axiom=853519,pump=520070,fomo=332162,gmgn=152130
+[2026-10-22 03:43:08] stats 321m: trades 8044879 (418/s) | lookups 9730 | profiles 9525 | with X 425 | ALERTS 0 | queue 10684 | rechecking 444 | 429s 91 | dropped 0 | top scans 107 | apps none=6022933,axiom=855383,pump=521478,fomo=333077,gmgn=152578
+[2026-10-22 03:43:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
