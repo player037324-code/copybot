@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:00:08] stats 218m: trades 5838135 (446/s) | lookups 6640 | profiles 6513 | with X 320 | ALERTS 0 | queue 9318 | rechecking 401 | 429s 61 | dropped 0 | top scans 73 | apps none=4355390,axiom=648733,pump=361241,fomo=240289,gmgn=110792
 [2026-10-22 02:00:17] 🎁 dev AoGefn sent 2.1% of SHART to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
 [2026-10-22 02:01:08] stats 219m: trades 5857293 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9293 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4369458,axiom=651113,pump=362573,fomo=240878,gmgn=111303
 [2026-10-22 02:01:13] 🎁 dev 7rAuHA sent 1.2% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
@@ -309,6 +308,7 @@
 [2026-10-22 02:13:08] stats 231m: trades 6106829 (441/s) | lookups 7080 | profiles 6947 | with X 344 | ALERTS 0 | queue 9388 | rechecking 412 | 429s 65 | dropped 0 | top scans 77 | apps none=4559774,axiom=675419,pump=380497,fomo=248851,gmgn=115953
 [2026-10-22 02:14:08] stats 232m: trades 6132511 (441/s) | lookups 7080 | profiles 6947 | with X 344 | ALERTS 0 | queue 9412 | rechecking 412 | 429s 65 | dropped 0 | top scans 77 | apps none=4578202,axiom=678474,pump=382446,fomo=250005,gmgn=116553
 [2026-10-22 02:14:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
+[2026-10-22 02:15:08] stats 233m: trades 6153042 (440/s) | lookups 7109 | profiles 6976 | with X 344 | ALERTS 0 | queue 9445 | rechecking 412 | 429s 65 | dropped 0 | top scans 78 | apps none=4591642,axiom=681980,pump=384155,fomo=250977,gmgn=117024
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
