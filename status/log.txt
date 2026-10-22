@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:37:27] 🎁 dev ExfWiN sent 1.1% of WOFI to GjS8D77rSUbYVWwryxTM2cYQM29rcC6ZdRb9J9HuVnfn
-[2026-10-22 02:38:08] stats 256m: trades 6648600 (433/s) | lookups 7739 | profiles 7598 | with X 359 | ALERTS 0 | queue 9871 | rechecking 421 | 429s 73 | dropped 0 | top scans 85 | apps none=4964806,axiom=726374,pump=420443,fomo=273898,gmgn=126149
 [2026-10-22 02:38:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:39:08] stats 257m: trades 6667395 (432/s) | lookups 7769 | profiles 7628 | with X 359 | ALERTS 0 | queue 9905 | rechecking 421 | 429s 73 | dropped 0 | top scans 86 | apps none=4977924,axiom=728393,pump=422079,fomo=274969,gmgn=126612
 [2026-10-22 02:40:08] stats 258m: trades 6685894 (432/s) | lookups 7828 | profiles 7661 | with X 359 | ALERTS 0 | queue 9936 | rechecking 421 | 429s 73 | dropped 0 | top scans 86 | apps none=4990973,axiom=729920,pump=423838,fomo=276212,gmgn=127057
@@ -309,6 +307,8 @@
 [2026-10-22 02:50:11] 🎁 dev BAoJmp sent 3.5% of Au to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 02:50:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:51:08] stats 269m: trades 6915506 (428/s) | lookups 8155 | profiles 7978 | with X 370 | ALERTS 0 | queue 10094 | rechecking 421 | 429s 76 | dropped 0 | top scans 90 | apps none=5161692,axiom=753962,pump=441114,fomo=285677,gmgn=130932
+[2026-10-22 02:52:08] gift watcher: 709 dev wallets watched | 168680 txs | 163 gifts | 1040 MB today (~21k credits)
+[2026-10-22 02:52:08] stats 270m: trades 6936326 (428/s) | lookups 8208 | profiles 8030 | with X 373 | ALERTS 0 | queue 10083 | rechecking 421 | 429s 77 | dropped 0 | top scans 90 | apps none=5177196,axiom=756157,pump=442698,fomo=286491,gmgn=131321
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
