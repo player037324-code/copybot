@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:58:08] stats 276m: trades 7058824 (426/s) | lookups 8380 | profiles 8200 | with X 380 | ALERTS 0 | queue 10165 | rechecking 423 | 429s 78 | dropped 0 | top scans 92 | apps none=5265384,axiom=769974,pump=453313,fomo=291823,gmgn=133778
-[2026-10-22 02:58:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 1 new to the list
-[2026-10-22 02:59:08] stats 277m: trades 7078603 (426/s) | lookups 8400 | profiles 8220 | with X 381 | ALERTS 0 | queue 10166 | rechecking 425 | 429s 78 | dropped 0 | top scans 93 | apps none=5279457,axiom=772655,pump=454932,fomo=292638,gmgn=134074
-[2026-10-22 02:59:40] 🎁 dev B38M33 sent 2.0% of UBER to DuARUpsEzdVbVpSnbGipLJvWxaXUCPLDJDjNov6Rc6s6
 [2026-10-22 03:00:08] stats 278m: trades 7099328 (426/s) | lookups 8459 | profiles 8279 | with X 384 | ALERTS 0 | queue 10151 | rechecking 428 | 429s 78 | dropped 0 | top scans 93 | apps none=5294514,axiom=774976,pump=456723,fomo=293600,gmgn=134372
 [2026-10-22 03:01:08] stats 279m: trades 7121934 (425/s) | lookups 8512 | profiles 8331 | with X 386 | ALERTS 0 | queue 10159 | rechecking 430 | 429s 79 | dropped 0 | top scans 93 | apps none=5311489,axiom=777335,pump=458439,fomo=294503,gmgn=134684
 [2026-10-22 03:02:08] gift watcher: 717 dev wallets watched | 175575 txs | 165 gifts | 1126 MB today (~23k credits)
@@ -309,6 +305,10 @@
 [2026-10-22 03:12:08] gift watcher: 710 dev wallets watched | 184125 txs | 170 gifts | 1191 MB today (~24k credits)
 [2026-10-22 03:12:08] stats 290m: trades 7360508 (423/s) | lookups 8789 | profiles 8603 | with X 394 | ALERTS 0 | queue 10316 | rechecking 434 | 429s 82 | dropped 0 | top scans 97 | apps none=5499378,axiom=795011,pump=474843,fomo=304155,gmgn=138356
 [2026-10-22 03:12:34] 🎁 dev HgAhL3 sent 1.3% of Nekinu to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-22 03:13:08] stats 291m: trades 7389169 (423/s) | lookups 8842 | profiles 8654 | with X 397 | ALERTS 0 | queue 10288 | rechecking 435 | 429s 83 | dropped 0 | top scans 97 | apps none=5523474,axiom=796634,pump=476153,fomo=305168,gmgn=138737
+[2026-10-22 03:13:10] 🎁 dev BAoJmp sent 3.1% of AG to EbtJmofjmuvjReHnWvnM2ZHApbTQB9P96gfhFiP3v9mf
+[2026-10-22 03:13:10] 🎁 dev BAoJmp sent 3.6% of AG to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 03:13:10] 🎁 dev BAoJmp sent 3.9% of AG to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
