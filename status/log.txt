@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to Gm3Aab4uNkrYyH72Ewc1iDUvkEhc9i2o3uvNFZX7Vdwu
 [2026-10-22 00:01:20] 🎁 dev 97K6ns sent 1.7% of NEURANEKO to EZJHuyFQaYqmQoEo5mBG9ShMxftm8ZM6L3dAZKY4ZWQf
 [2026-10-22 00:01:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:01:54] 🎁 dev Agenta sent 1.0% of Cybermint to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
@@ -309,6 +308,7 @@
 [2026-10-22 00:13:30] 🎁 dev BAoJmp sent 3.2% of LARPMAXXING to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:13:30] 🎁 dev BAoJmp sent 2.7% of LARPMAXXING to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:13:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-22 00:14:08] stats 112m: trades 3333544 (496/s) | lookups 3298 | profiles 3237 | with X 187 | ALERTS 0 | queue 7397 | rechecking 340 | 429s 33 | dropped 0 | top scans 38 | apps none=2487506,axiom=370332,pump=205697,fomo=139365,gmgn=61627
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
