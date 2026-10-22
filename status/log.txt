@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:49:08] stats 147m: trades 4104813 (465/s) | lookups 4380 | profiles 4296 | with X 232 | ALERTS 0 | queue 8156 | rechecking 367 | 429s 43 | dropped 0 | top scans 49 | apps none=3066917,axiom=444328,pump=256801,fomo=177134,gmgn=74870
-[2026-10-22 00:49:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-22 00:50:08] stats 148m: trades 4122026 (464/s) | lookups 4400 | profiles 4316 | with X 232 | ALERTS 0 | queue 8186 | rechecking 367 | 429s 43 | dropped 0 | top scans 50 | apps none=3079271,axiom=446379,pump=258086,fomo=177893,gmgn=75208
-[2026-10-22 00:51:08] stats 149m: trades 4138674 (463/s) | lookups 4453 | profiles 4368 | with X 235 | ALERTS 0 | queue 8178 | rechecking 371 | 429s 44 | dropped 0 | top scans 50 | apps none=3091926,axiom=447671,pump=259361,fomo=178736,gmgn=75449
 [2026-10-22 00:52:08] gift watcher: 777 dev wallets watched | 90521 txs | 76 gifts | 248 MB today (~5k credits)
 [2026-10-22 00:52:08] stats 150m: trades 4156289 (462/s) | lookups 4463 | profiles 4378 | with X 235 | ALERTS 0 | queue 8204 | rechecking 371 | 429s 44 | dropped 0 | top scans 50 | apps none=3105142,axiom=449202,pump=260689,fomo=179620,gmgn=75721
 [2026-10-22 00:52:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 3.6% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:03:08] stats 161m: trades 4373591 (453/s) | lookups 4846 | profiles 4756 | with X 251 | ALERTS 0 | queue 8378 | rechecking 381 | 429s 46 | dropped 0 | top scans 54 | apps none=3268686,axiom=469116,pump=276519,fomo=189124,gmgn=79242
 [2026-10-22 01:03:54] skip speedkillz @N0ZEbeers: 1038 X followers
+[2026-10-22 01:04:08] stats 162m: trades 4393188 (452/s) | lookups 4899 | profiles 4808 | with X 255 | ALERTS 0 | queue 8367 | rechecking 383 | 429s 47 | dropped 0 | top scans 54 | apps none=3283934,axiom=470641,pump=277981,fomo=189866,gmgn=79498
+[2026-10-22 01:04:50] 🎁 dev 3H4GRC sent 1.7% of MERCURY to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
+[2026-10-22 01:04:50] 🎁 dev 3H4GRC sent 2.0% of MERCURY to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-22 01:04:50] 🎁 dev 3H4GRC sent 1.7% of MERCURY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
