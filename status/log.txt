@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:14:08] stats 292m: trades 7415680 (423/s) | lookups 8842 | profiles 8654 | with X 397 | ALERTS 0 | queue 10308 | rechecking 435 | 429s 83 | dropped 0 | top scans 97 | apps none=5545489,axiom=798147,pump=477566,fomo=306141,gmgn=139122
-[2026-10-22 03:14:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:15:08] stats 293m: trades 7443491 (423/s) | lookups 8872 | profiles 8684 | with X 397 | ALERTS 0 | queue 10336 | rechecking 435 | 429s 83 | dropped 0 | top scans 98 | apps none=5567922,axiom=800631,pump=478905,fomo=307010,gmgn=139472
 [2026-10-22 03:16:08] stats 294m: trades 7466110 (423/s) | lookups 8925 | profiles 8733 | with X 398 | ALERTS 0 | queue 10339 | rechecking 436 | 429s 84 | dropped 0 | top scans 98 | apps none=5586414,axiom=801946,pump=480362,fomo=307876,gmgn=139697
 [2026-10-22 03:16:59] 🎁 dev 9cjKnS sent 1.0% of Cybermint to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
@@ -309,6 +307,8 @@
 [2026-10-22 03:27:26] 🎁 dev HgAhL3 sent 1.3% of NUT to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 03:28:08] stats 306m: trades 7747130 (422/s) | lookups 9261 | profiles 9062 | with X 405 | ALERTS 0 | queue 10538 | rechecking 442 | 429s 87 | dropped 0 | top scans 102 | apps none=5800479,axiom=828437,pump=497918,fomo=319644,gmgn=145710
 [2026-10-22 03:28:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
+[2026-10-22 03:29:08] stats 307m: trades 7768414 (422/s) | lookups 9281 | profiles 9082 | with X 407 | ALERTS 0 | queue 10555 | rechecking 443 | 429s 87 | dropped 0 | top scans 103 | apps none=5816607,axiom=830382,pump=499465,fomo=320515,gmgn=146194
+[2026-10-22 03:29:56] 🎁 dev 8RGCrd sent 1.7% of SPLINTER to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
