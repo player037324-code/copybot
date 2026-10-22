@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:40:08] stats 378m: trades 9193780 (405/s) | lookups 11517 | profiles 11280 | with X 475 | ALERTS 0 | queue 11235 | rechecking 471 | 429s 107 | dropped 0 | top scans 126 | apps none=6897416,axiom=964367,pump=600541,fomo=378861,gmgn=173836
-[2026-10-22 04:40:42] 🎁 dev Fo1JZ7 sent 3.7% of Chaos  to Ff96djxHE9m546qHJ7HJRCRTdStfMk4gNc4bbkzmxneR
-[2026-10-22 04:41:08] stats 379m: trades 9207682 (405/s) | lookups 11517 | profiles 11280 | with X 475 | ALERTS 0 | queue 11261 | rechecking 471 | 429s 107 | dropped 0 | top scans 126 | apps none=6907161,axiom=966025,pump=601663,fomo=379599,gmgn=174176
 [2026-10-22 04:41:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:42:08] gift watcher: 648 dev wallets watched | 225744 txs | 214 gifts | 1580 MB today (~32k credits)
 [2026-10-22 04:42:08] stats 380m: trades 9222430 (404/s) | lookups 11547 | profiles 11310 | with X 475 | ALERTS 0 | queue 11283 | rechecking 470 | 429s 107 | dropped 0 | top scans 127 | apps none=6917829,axiom=967689,pump=602813,fomo=380261,gmgn=174501
@@ -309,6 +306,9 @@
 [2026-10-22 04:53:50] 🎁 dev 3Zh3sh sent 1.3% of Art to BCw5wmLTykEQxoPhuUDMQ6CnEpBzTiVurA8vSxLJD4Ku
 [2026-10-22 04:54:08] stats 392m: trades 9443661 (402/s) | lookups 11876 | profiles 11631 | with X 481 | ALERTS 0 | queue 11411 | rechecking 470 | 429s 111 | dropped 0 | top scans 131 | apps none=7085664,axiom=987804,pump=617529,fomo=389960,gmgn=179120
 [2026-10-22 04:55:08] stats 393m: trades 9462049 (401/s) | lookups 11929 | profiles 11683 | with X 482 | ALERTS 0 | queue 11380 | rechecking 470 | 429s 112 | dropped 0 | top scans 131 | apps none=7099610,axiom=989598,pump=618828,fomo=390681,gmgn=179431
+[2026-10-22 04:56:08] stats 394m: trades 9480594 (401/s) | lookups 11929 | profiles 11683 | with X 482 | ALERTS 0 | queue 11405 | rechecking 470 | 429s 112 | dropped 0 | top scans 131 | apps none=7113822,axiom=991311,pump=620068,fomo=391367,gmgn=179735
+[2026-10-22 04:56:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 04:56:52] 🎁 dev HZRo1d sent 4.3% of TUNNEL to 7MxmPPV4LY8tMu1rJ3PMFBuECPGhGpUcmr835meXcytz
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
