@@ -279,11 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:07:19] 🎁 dev BAoJmp sent 5.1% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
-[2026-10-22 01:08:08] stats 166m: trades 4526909 (455/s) | lookups 4982 | profiles 4889 | with X 255 | ALERTS 0 | queue 8487 | rechecking 387 | 429s 48 | dropped 0 | top scans 55 | apps none=3369808,axiom=500555,pump=284295,fomo=194125,gmgn=82239
-[2026-10-22 01:08:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 01:09:08] stats 167m: trades 4560569 (455/s) | lookups 5012 | profiles 4918 | with X 255 | ALERTS 0 | queue 8525 | rechecking 387 | 429s 48 | dropped 0 | top scans 56 | apps none=3388687,axiom=510058,pump=285959,fomo=195596,gmgn=83164
-[2026-10-22 01:10:08] stats 168m: trades 4589211 (455/s) | lookups 5071 | profiles 4976 | with X 257 | ALERTS 0 | queue 8525 | rechecking 387 | 429s 48 | dropped 0 | top scans 56 | apps none=3409207,axiom=514066,pump=287445,fomo=196708,gmgn=83855
 [2026-10-22 01:10:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 01:11:08] stats 169m: trades 4618450 (455/s) | lookups 5091 | profiles 4996 | with X 258 | ALERTS 0 | queue 8536 | rechecking 388 | 429s 48 | dropped 0 | top scans 57 | apps none=3430258,axiom=518409,pump=288873,fomo=197862,gmgn=84518
 [2026-10-22 01:12:08] gift watcher: 725 dev wallets watched | 105745 txs | 87 gifts | 433 MB today (~9k credits)
@@ -309,6 +304,11 @@
 [2026-10-22 01:22:08] gift watcher: 710 dev wallets watched | 112658 txs | 92 gifts | 476 MB today (~10k credits)
 [2026-10-22 01:22:08] stats 180m: trades 4894554 (453/s) | lookups 5458 | profiles 5356 | with X 276 | ALERTS 0 | queue 8708 | rechecking 392 | 429s 51 | dropped 0 | top scans 60 | apps none=3632302,axiom=550884,pump=305930,fomo=210341,gmgn=90758
 [2026-10-22 01:22:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-22 01:23:08] stats 181m: trades 4917477 (453/s) | lookups 5478 | profiles 5376 | with X 277 | ALERTS 0 | queue 8718 | rechecking 392 | 429s 51 | dropped 0 | top scans 61 | apps none=3649380,axiom=553566,pump=307349,fomo=211145,gmgn=91230
+[2026-10-22 01:23:35] 🎁 dev BAoJmp sent 2.9% of MERCURYCAT to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 01:23:35] 🎁 dev BAoJmp sent 2.6% of MERCURYCAT to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 01:23:56] 🎁 dev AspnoD sent 1.9% of COOK to FrHs3JV6sv4WQzsXWcq1xT3yhnQPjJubB4WeazRSMe8D
+[2026-10-22 01:24:01] 🎁 dev 8PftG1 sent 4.0% of sendr to kBC2F6Hs8wuVVDM2KaUXTMv2yxSZi5WuohwyLZAzDVE
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
