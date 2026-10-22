@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:52:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:53:08] stats 151m: trades 4177347 (461/s) | lookups 4483 | profiles 4398 | with X 236 | ALERTS 0 | queue 8218 | rechecking 369 | 429s 44 | dropped 0 | top scans 51 | apps none=3121520,axiom=451077,pump=262006,fomo=180485,gmgn=75924
 [2026-10-22 00:54:08] stats 152m: trades 4197863 (460/s) | lookups 4542 | profiles 4457 | with X 236 | ALERTS 0 | queue 8229 | rechecking 367 | 429s 44 | dropped 0 | top scans 51 | apps none=3136221,axiom=453619,pump=263498,fomo=181311,gmgn=76310
 [2026-10-22 00:55:08] stats 153m: trades 4214490 (459/s) | lookups 4595 | profiles 4509 | with X 238 | ALERTS 0 | queue 8229 | rechecking 368 | 429s 45 | dropped 0 | top scans 51 | apps none=3147951,axiom=455510,pump=264842,fomo=182212,gmgn=76586
@@ -309,6 +308,7 @@
 [2026-10-22 01:04:50] 🎁 dev 3H4GRC sent 1.7% of MERCURY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-22 01:05:08] stats 163m: trades 4420111 (452/s) | lookups 4899 | profiles 4808 | with X 255 | ALERTS 0 | queue 8409 | rechecking 383 | 429s 47 | dropped 0 | top scans 54 | apps none=3303627,axiom=474266,pump=279535,fomo=190748,gmgn=79921
 [2026-10-22 01:05:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 01:06:08] stats 164m: trades 4453825 (453/s) | lookups 4929 | profiles 4837 | with X 255 | ALERTS 0 | queue 8448 | rechecking 383 | 429s 47 | dropped 0 | top scans 55 | apps none=3324831,axiom=482286,pump=281151,fomo=191650,gmgn=80711
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
