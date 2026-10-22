@@ -53,13 +53,14 @@ let onCallout = async function (raw) {
   const mint = coin.mint || c.coinMint;
   fs.appendFileSync(FEED, JSON.stringify({ seenAt: new Date().toISOString(), ...e }) + '\n');
   log(`📣 CALLOUT by ${a.userName}: $${coin.symbol} ${mint} (${c.type || e.kind})`);
-  const mc = mint && !String(mint).startsWith('0x') ? await mcap(mint) : null;
-  const text = c.text || c.message || c.content || c.body || c.comment || e.text || e.message || '';
+  const co = c.callout || {};
+  const mc = co.calloutMarketCap || (mint && !String(mint).startsWith('0x') ? await mcap(mint) : null);
+  const text = co.thesis || c.text || c.message || c.content || c.body || c.comment || e.text || e.message || '';
   const lines = [
     `📣 <b>CALLOUT: ${esc(a.userName || 'watched user')}</b>`,
     `<b>$${esc(coin.symbol || '?')}</b>${mc ? ` @ ${usd(mc)} mcap` : ''}`,
     text ? `"${esc(String(text).slice(0, 300))}"` : '',
-    c.costBasisUsd ? `Their position: ${usd(c.costBasisUsd)} in${c.isExited ? ' (exited)' : ''}` : '',
+    c.costBasisUsd ? `Their bag: ${usd(c.costBasisUsd)}${c.costBasisSol ? ` (${Number(c.costBasisSol).toFixed(2)} SOL)` : ''}${c.isExited ? ' (exited)' : ''}` : '',
     '',
     `CA:\n<code>${esc(mint)}</code>`,
     '',
