@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 19:57:08] gift watcher: 8133 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
-[2026-10-22 19:57:08] stats 1295m: trades 30727338 (395/s) | lookups 40145 | profiles 38024 | with X 988 | ALERTS 0 | queue 20998 | rechecking 512 | 429s 358 | dropped 0 | top scans 432 | apps none=23991656,axiom=2698830,pump=1836557,fomo=1003836,gmgn=613920
-[2026-10-22 19:58:08] stats 1296m: trades 30763303 (396/s) | lookups 40204 | profiles 38024 | with X 988 | ALERTS 0 | queue 21002 | rechecking 512 | 429s 358 | dropped 0 | top scans 432 | apps none=24021720,axiom=2700816,pump=1838533,fomo=1004940,gmgn=614263
-[2026-10-22 19:58:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
 [2026-10-22 19:59:08] stats 1297m: trades 30788588 (396/s) | lookups 40263 | profiles 38024 | with X 988 | ALERTS 0 | queue 21002 | rechecking 511 | 429s 358 | dropped 0 | top scans 433 | apps none=24041636,axiom=2702444,pump=1840394,fomo=1005855,gmgn=614755
 [2026-10-22 20:00:08] stats 1298m: trades 30816251 (396/s) | lookups 40323 | profiles 38024 | with X 988 | ALERTS 0 | queue 21009 | rechecking 510 | 429s 358 | dropped 0 | top scans 433 | apps none=24062783,axiom=2704472,pump=1842689,fomo=1006948,gmgn=615347
 [2026-10-22 20:01:08] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-22 20:12:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-22 20:12:08] feed connected
 [2026-10-22 20:12:38] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
+[2026-10-22 20:13:07] stats 1m: trades 24879 (415/s) | lookups 59 | profiles 0 | with X 0 | ALERTS 0 | queue 528 | rechecking 506 | 429s 0 | dropped 0 | top scans 1 | apps none=19168,axiom=2058,pump=1651,fomo=924,gmgn=488
+[2026-10-22 20:14:07] stats 2m: trades 47175 (393/s) | lookups 119 | profiles 0 | with X 0 | ALERTS 0 | queue 827 | rechecking 506 | 429s 0 | dropped 0 | top scans 1 | apps none=35055,axiom=4588,pump=3468,fomo=1778,gmgn=1014
+[2026-10-22 20:15:07] stats 3m: trades 72799 (404/s) | lookups 179 | profiles 0 | with X 0 | ALERTS 0 | queue 1109 | rechecking 505 | 429s 0 | dropped 0 | top scans 1 | apps none=52133,axiom=8951,pump=5396,fomo=2681,gmgn=1622
+[2026-10-22 20:15:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
