@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:43:08] stats 321m: trades 8044879 (418/s) | lookups 9730 | profiles 9525 | with X 425 | ALERTS 0 | queue 10684 | rechecking 444 | 429s 91 | dropped 0 | top scans 107 | apps none=6022933,axiom=855383,pump=521478,fomo=333077,gmgn=152578
 [2026-10-22 03:43:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 [2026-10-22 03:44:08] stats 322m: trades 8067237 (418/s) | lookups 9750 | profiles 9545 | with X 425 | ALERTS 0 | queue 10693 | rechecking 444 | 429s 91 | dropped 0 | top scans 108 | apps none=6039744,axiom=857553,pump=523010,fomo=334189,gmgn=152966
 [2026-10-22 03:45:08] stats 323m: trades 8094354 (418/s) | lookups 9803 | profiles 9597 | with X 426 | ALERTS 0 | queue 10689 | rechecking 444 | 429s 92 | dropped 0 | top scans 108 | apps none=6060338,axiom=860464,pump=524570,fomo=335410,gmgn=153320
@@ -309,6 +308,7 @@
 [2026-10-22 03:58:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 03:58:49] skip jzr77 @YousifA84157316: 1 X followers
 [2026-10-22 03:58:53] 🎁 dev 8RGCrd sent 1.4% of 1021 to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
+[2026-10-22 03:59:08] stats 337m: trades 8407072 (416/s) | lookups 10219 | profiles 10009 | with X 441 | ALERTS 0 | queue 10865 | rechecking 455 | 429s 95 | dropped 0 | top scans 113 | apps none=6302527,axiom=888105,pump=544628,fomo=348057,gmgn=158804
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
