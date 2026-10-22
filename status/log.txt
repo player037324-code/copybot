@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:34:08] stats 132m: trades 3794622 (479/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7747 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2833644,axiom=413964,pump=235037,fomo=163782,gmgn=69954
-[2026-10-22 00:34:12] 🎁 dev 2VHc4n sent 3.5% of pump.kin to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 00:35:08] stats 133m: trades 3815785 (478/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7786 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2850511,axiom=415324,pump=236446,fomo=164708,gmgn=70195
 [2026-10-22 00:35:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 00:35:44] 🎁 dev 9ReiU3 sent 1.7% of Penguin to 85W2GM8nRj6hfREc47iy2zPXUfHny3HqGSHHKf2mB6bw
@@ -309,6 +307,8 @@
 [2026-10-22 00:45:08] stats 143m: trades 4029982 (470/s) | lookups 4288 | profiles 4207 | with X 229 | ALERTS 0 | queue 8025 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3013400,axiom=434741,pump=251394,fomo=174020,gmgn=73556
 [2026-10-22 00:45:36] 🎁 dev BAoJmp sent 3.0% of LARPLESS to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:45:36] 🎁 dev BAoJmp sent 2.7% of LARPLESS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 00:46:08] stats 144m: trades 4051340 (469/s) | lookups 4298 | profiles 4215 | with X 229 | ALERTS 0 | queue 8072 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3028983,axiom=437387,pump=252844,fomo=174828,gmgn=73920
+[2026-10-22 00:46:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
