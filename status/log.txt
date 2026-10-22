@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-gifts | 2000 MB today (~40k credits) | PAUSED (cap)
-[2026-10-22 07:52:08] stats 570m: trades 12646876 (370/s) | lookups 17368 | profiles 17067 | with X 622 | ALERTS 0 | queue 13055 | rechecking 522 | 429s 160 | dropped 0 | top scans 190 | apps none=9671753,axiom=1215591,pump=799692,fomo=492479,gmgn=233151
+3,axiom=1215591,pump=799692,fomo=492479,gmgn=233151
 [2026-10-22 07:52:47] top scan: 2001 profiles (cutoff 1051 pump followers) in 40s, 0 new to the list
 [2026-10-22 07:53:08] stats 571m: trades 12665379 (370/s) | lookups 17388 | profiles 17087 | with X 622 | ALERTS 0 | queue 13083 | rechecking 522 | 429s 160 | dropped 0 | top scans 191 | apps none=9687462,axiom=1216634,pump=800539,fomo=492873,gmgn=233434
 [2026-10-22 07:54:08] stats 572m: trades 12683841 (370/s) | lookups 17448 | profiles 17147 | with X 623 | ALERTS 0 | queue 13091 | rechecking 522 | 429s 160 | dropped 0 | top scans 191 | apps none=9703058,axiom=1217595,pump=801422,fomo=493263,gmgn=233790
@@ -309,6 +308,7 @@ gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 08:09:08] stats 587m: trades 12978459 (368/s) | lookups 17860 | profiles 17554 | with X 627 | ALERTS 0 | queue 13269 | rechecking 529 | 429s 165 | dropped 0 | top scans 196 | apps none=9949967,axiom=1235126,pump=816087,fomo=500557,gmgn=238479
 [2026-10-22 08:10:08] stats 588m: trades 12998800 (368/s) | lookups 17919 | profiles 17613 | with X 628 | ALERTS 0 | queue 13286 | rechecking 529 | 429s 165 | dropped 0 | top scans 196 | apps none=9967134,axiom=1236249,pump=816986,fomo=501081,gmgn=238755
 [2026-10-22 08:10:47] top scan: 2001 profiles (cutoff 1051 pump followers) in 39s, 0 new to the list
+[2026-10-22 08:11:08] stats 589m: trades 13020488 (368/s) | lookups 17939 | profiles 17633 | with X 631 | ALERTS 0 | queue 13285 | rechecking 530 | 429s 165 | dropped 0 | top scans 197 | apps none=9985615,axiom=1237506,pump=817860,fomo=501549,gmgn=239037
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
