@@ -1,11 +1,3 @@
-with X: 0; setAt range: -
-> pfusers https://frontend-api-v3.pump.fun/search?searchTerm=kimchi1x&type=users
-
-== https://frontend-api-v3.pump.fun/search?searchTerm=kimchi1x&type=users -> HTTP 404  187b
-items: 0; keys: statusCode,timestamp,path,message,error
-with X: 0; setAt range: -
-=== cmd 88 @ 2026-10-21T19:02:02Z ===
-> pfcoins
 
 unifiedCoinCreationEvent.processed:
 {"slot_index_id":"00045973995200086500000003","tx":"5zCZ8rJwa6JpjB5RQFetLQ5y7bFRBoesSsTCe3XQLXtzVbRN2i1siSTU7vPHv4WnJn2SnSnN98AbmQYtGeatw8Ti","mint":"4ERAHcqALNztXvx7JMQu38BHxmd64pbcpxMA53nbpump","name":"FTFS","symbol":"FTFS","description":null,"metadata_uri":"https://ipfs.io/ipfs/bafkreib2eepsnparc3raeouqkevbpieax3imjgiian2h3e2e5nmhkndez4","bonding_curve":"4syfUTzN6cdHU6QEgYimhqZEDtYVVj8xGQ738y1yqz1k","creator":"FuFnzjxKK8uBxEEeMsXon5EsjKv3UBGReVgFkAY5Bnup","created_timestamp":"2026-10-21T19:02:04+00:00","complete":false,"supply":1000000000000000,"show_name":true,"market_cap":"27.958993476234855545200372787","initialized":true,"is_banned":false,"program":"pump","platform":null,"virtual_sol_reserves":30000000000,"virtual_quote_reserves":30000000000,"virtual_token_reserves":1073000000000000,"real_sol_reserves":null,"real_quote_reserves":null,"real_token_reserves":793100000000000,"token_program":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","mayhem_state":null,"game_mode":null,"signer":"FuFnzjxKK8uBxEEeMsXon5EsjKv3UBGReVgFkAY5Bnup","quote_mint":"11111111111111111111111111111111","base_decimals":6,"quote_decimals":9,"derived_pool":"7NiYiaBg1pctNv7187Z8JwrecPrMgQy6EPsAhrcwud9H","is_cashback_enabled":false,"quote_token_program":null,"market_cap_usd":null,"is_holder_reward":false,"transfer_fee_bps":0,"transfer_hook_program":"","depth":0}
@@ -398,3 +390,11 @@ host metrics | cpu: 8.5% | ram usage: 38.4% | enp1s0: ⇓ 1.375mb/s ⇑ 0.026mb/
 [2026-10-22 20:25:04] feed connected
 
 > callouts-test
+=== cmd 96 @ 2026-10-22T20:32:02Z ===
+> callouts-livetest
+[2026-10-22 20:32:02] feed connected
+[2026-10-22 20:32:05] 📣 CALLOUT by BlueLydianTalon: $DOGE GMxaQ99W49B3PT1Gc94MVPtmirejuZpAYkbw1TiSpump (position)
+[2026-10-22 20:32:05] 📣 CALLOUT by hunteris: $B FSdYehMUE1uS9S9Ju6a6HgLnGcKdyDp9mrB7xzRJpump (position)
+[2026-10-22 20:32:05] WARN photo failed: {"ok":false,"error_code":400,"description":"Bad Request: failed to get HTTP URL content"}
+[2026-10-22 20:32:06] WARN photo failed: {"ok":false,"error_code":400,"description":"Bad Request: failed to get HTTP URL content"}
+[2026-10-22 20:32:06] live test alert sent
