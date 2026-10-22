@@ -279,9 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-5365 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
-[2026-10-22 16:22:08] stats 1080m: trades 23777687 (367/s) | lookups 32855 | profiles 32409 | with X 881 | ALERTS 0 | queue 18923 | rechecking 572 | 429s 305 | dropped 0 | top scans 360 | apps none=18558419,axiom=2099846,pump=1430510,fomo=789001,gmgn=455841
-[2026-10-22 16:23:08] stats 1081m: trades 23803464 (367/s) | lookups 32855 | profiles 32409 | with X 881 | ALERTS 0 | queue 18963 | rechecking 572 | 429s 305 | dropped 0 | top scans 360 | apps none=18578121,axiom=2102180,pump=1432452,fomo=789687,gmgn=456452
+-10-22 16:23:08] stats 1081m: trades 23803464 (367/s) | lookups 32855 | profiles 32409 | with X 881 | ALERTS 0 | queue 18963 | rechecking 572 | 429s 305 | dropped 0 | top scans 360 | apps none=18578121,axiom=2102180,pump=1432452,fomo=789687,gmgn=456452
 [2026-10-22 16:23:38] top scan: 2001 profiles (cutoff 1092 pump followers) in 90s, 0 new to the list
 [2026-10-22 16:24:08] stats 1082m: trades 23829328 (367/s) | lookups 32885 | profiles 32439 | with X 881 | ALERTS 0 | queue 18989 | rechecking 570 | 429s 305 | dropped 0 | top scans 361 | apps none=18597957,axiom=2104524,pump=1434234,fomo=790383,gmgn=457114
 [2026-10-22 16:25:08] stats 1083m: trades 23857750 (367/s) | lookups 32937 | profiles 32490 | with X 882 | ALERTS 0 | queue 18978 | rechecking 568 | 429s 306 | dropped 0 | top scans 361 | apps none=18619547,axiom=2107585,pump=1435866,fomo=791158,gmgn=457813
@@ -308,6 +306,8 @@
 [2026-10-22 16:38:08] stats 1096m: trades 24199816 (368/s) | lookups 33294 | profiles 32844 | with X 886 | ALERTS 0 | queue 19179 | rechecking 568 | 429s 309 | dropped 0 | top scans 366 | apps none=18893033,axiom=2134804,pump=1455905,fomo=800385,gmgn=463437
 [2026-10-22 16:39:08] stats 1097m: trades 24230850 (368/s) | lookups 33354 | profiles 32904 | with X 888 | ALERTS 0 | queue 19176 | rechecking 569 | 429s 309 | dropped 0 | top scans 366 | apps none=18919047,axiom=2136793,pump=1457487,fomo=800900,gmgn=463784
 [2026-10-22 16:40:08] stats 1098m: trades 24257746 (368/s) | lookups 33406 | profiles 32955 | with X 892 | ALERTS 0 | queue 19140 | rechecking 571 | 429s 310 | dropped 0 | top scans 366 | apps none=18939918,axiom=2139266,pump=1459219,fomo=801524,gmgn=464312
+[2026-10-22 16:41:08] stats 1099m: trades 24282881 (368/s) | lookups 33406 | profiles 32955 | with X 892 | ALERTS 0 | queue 19161 | rechecking 571 | 429s 310 | dropped 0 | top scans 366 | apps none=18959497,axiom=2141464,pump=1460823,fomo=802084,gmgn=464934
+[2026-10-22 16:41:37] top scan: 2001 profiles (cutoff 1093 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
