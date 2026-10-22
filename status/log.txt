@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:12:08] stats 350m: trades 8682201 (413/s) | lookups 10609 | profiles 10388 | with X 447 | ALERTS 0 | queue 11022 | rechecking 458 | 429s 99 | dropped 0 | top scans 117 | apps none=6521996,axiom=909999,pump=561681,fomo=356718,gmgn=162897
-[2026-10-22 04:13:08] stats 351m: trades 8699039 (413/s) | lookups 10668 | profiles 10445 | with X 447 | ALERTS 0 | queue 10997 | rechecking 461 | 429s 99 | dropped 0 | top scans 117 | apps none=6534544,axiom=911362,pump=563218,fomo=357419,gmgn=163283
 [2026-10-22 04:13:27] 🎁 dev FAHMvD sent 1.2% of HUMAN to 9PDFBkM2JjnLuuEhQVi5oPv5jVJ4wV3LA2PAfLXNijLb
 [2026-10-22 04:13:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 04:14:08] stats 352m: trades 8717757 (413/s) | lookups 10688 | profiles 10465 | with X 449 | ALERTS 0 | queue 11006 | rechecking 461 | 429s 99 | dropped 0 | top scans 118 | apps none=6549047,axiom=912828,pump=564609,fomo=358127,gmgn=163629
@@ -309,6 +307,8 @@
 [2026-10-22 04:26:35] 🎁 dev 3H4GRC sent 3.5% of APES to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-22 04:26:48] 🎁 dev ASMm2g sent 53.8% of PATCHED to F73mDXjXpfZAN4TQMAEXym6s71iD1KUboyXobDs2SrMf
 [2026-10-22 04:26:57] 🎁 dev 29yFze sent 4.9% of PATCHED to F73mDXjXpfZAN4TQMAEXym6s71iD1KUboyXobDs2SrMf
+[2026-10-22 04:27:08] gift watcher: 637 dev wallets watched | 217209 txs | 207 gifts | 1492 MB today (~30k credits)
+[2026-10-22 04:27:08] stats 365m: trades 8978594 (410/s) | lookups 11128 | profiles 10898 | with X 470 | ALERTS 0 | queue 11082 | rechecking 468 | 429s 103 | dropped 0 | top scans 122 | apps none=6740361,axiom=941391,pump=583509,fomo=369721,gmgn=169321
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
