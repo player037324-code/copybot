@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:15:29] 🎁 dev ASZhH7 sent 2.6% of D7ueXz to GZVSEAajExLJEvACHHQcujBw7nJq98GWUEZtood9LM9b
 [2026-10-22 05:15:33] 🎁 dev ASZhH7 sent 3.0% of 5egSVN to GZVSEAajExLJEvACHHQcujBw7nJq98GWUEZtood9LM9b
 [2026-10-22 05:15:40] 🎁 dev D9gQ6R sent 2.1% of 57p314 to GZVSEAajExLJEvACHHQcujBw7nJq98GWUEZtood9LM9b
 [2026-10-22 05:16:08] stats 414m: trades 9861239 (397/s) | lookups 12570 | profiles 12318 | with X 498 | ALERTS 0 | queue 11653 | rechecking 478 | 429s 117 | dropped 0 | top scans 138 | apps none=7417646,axiom=1020025,pump=642686,fomo=403976,gmgn=186147
@@ -309,6 +308,7 @@
 [2026-10-22 05:32:08] gift watcher: 556 dev wallets watched | 256047 txs | 224 gifts | 1814 MB today (~36k credits)
 [2026-10-22 05:32:08] stats 430m: trades 10119936 (392/s) | lookups 13032 | profiles 12775 | with X 509 | ALERTS 0 | queue 11823 | rechecking 488 | 429s 122 | dropped 0 | top scans 143 | apps none=7622958,axiom=1038592,pump=659038,fomo=413475,gmgn=191137
 [2026-10-22 05:32:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 05:33:08] stats 431m: trades 10134303 (392/s) | lookups 13062 | profiles 12805 | with X 509 | ALERTS 0 | queue 11853 | rechecking 488 | 429s 122 | dropped 0 | top scans 144 | apps none=7633755,axiom=1039908,pump=660118,fomo=414072,gmgn=191454
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
