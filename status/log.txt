@@ -279,14 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:55:08] stats 333m: trades 8310762 (416/s) | lookups 10110 | profiles 9900 | with X 432 | ALERTS 0 | queue 10827 | rechecking 451 | 429s 95 | dropped 0 | top scans 111 | apps none=6225192,axiom=880524,pump=539268,fomo=345096,gmgn=157076
-[2026-10-22 03:56:08] stats 334m: trades 8334046 (416/s) | lookups 10110 | profiles 9900 | with X 432 | ALERTS 0 | queue 10856 | rechecking 451 | 429s 95 | dropped 0 | top scans 111 | apps none=6244111,axiom=882198,pump=540545,fomo=345793,gmgn=157477
-[2026-10-22 03:56:35] 🎁 dev 3H4GRC sent 2.0% of Ge4YFv to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
-[2026-10-22 03:56:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
-[2026-10-22 03:57:08] gift watcher: 654 dev wallets watched | 202320 txs | 186 gifts | 1365 MB today (~27k credits)
-[2026-10-22 03:57:08] stats 335m: trades 8363676 (416/s) | lookups 10140 | profiles 9930 | with X 432 | ALERTS 0 | queue 10878 | rechecking 451 | 429s 95 | dropped 0 | top scans 112 | apps none=6268598,axiom=884333,pump=541919,fomo=346569,gmgn=157983
-[2026-10-22 03:58:08] stats 336m: trades 8385201 (416/s) | lookups 10199 | profiles 9989 | with X 437 | ALERTS 0 | queue 10857 | rechecking 454 | 429s 95 | dropped 0 | top scans 112 | apps none=6285100,axiom=886307,pump=543277,fomo=347408,gmgn=158456
-[2026-10-22 03:58:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 03:58:49] skip jzr77 @YousifA84157316: 1 X followers
 [2026-10-22 03:58:53] 🎁 dev 8RGCrd sent 1.4% of 1021 to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
 [2026-10-22 03:59:08] stats 337m: trades 8407072 (416/s) | lookups 10219 | profiles 10009 | with X 441 | ALERTS 0 | queue 10865 | rechecking 455 | 429s 95 | dropped 0 | top scans 113 | apps none=6302527,axiom=888105,pump=544628,fomo=348057,gmgn=158804
@@ -309,6 +301,14 @@
 [2026-10-22 04:08:08] stats 346m: trades 8599277 (414/s) | lookups 10497 | profiles 10280 | with X 446 | ALERTS 0 | queue 10965 | rechecking 457 | 429s 98 | dropped 0 | top scans 115 | apps none=6456405,axiom=903244,pump=556190,fomo=354178,gmgn=161633
 [2026-10-22 04:08:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:09:08] stats 347m: trades 8620007 (414/s) | lookups 10526 | profiles 10309 | with X 446 | ALERTS 0 | queue 10977 | rechecking 457 | 429s 98 | dropped 0 | top scans 116 | apps none=6472468,axiom=905119,pump=557675,fomo=354758,gmgn=161975
+[2026-10-22 04:10:08] stats 348m: trades 8638553 (414/s) | lookups 10579 | profiles 10361 | with X 447 | ALERTS 0 | queue 10973 | rechecking 459 | 429s 99 | dropped 0 | top scans 116 | apps none=6486961,axiom=906584,pump=558897,fomo=355467,gmgn=162278
+[2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 2.0% of 2s7UAe to Cj7ZjeH5n1BNm2eSc8fowxVkBpaQghryUJzuB2iPyRHG
+[2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 1.7% of 2s7UAe to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 1.8% of 2s7UAe to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
+[2026-10-22 04:10:22] 🎁 dev 3H4GRC sent 2.2% of 2s7UAe to JAQZkUqCfWjXu2jKVDbBp4LD2SbYcRHMN1RN9N8uWiBn
+[2026-10-22 04:10:45] 🎁 dev 3Zh3sh sent 1.3% of 404cat to 9vw1cEQNSbX4oUPKu9JdS77P4ACCSMUYC3BKbxnkSoyQ
+[2026-10-22 04:10:45] 🎁 dev 3Zh3sh sent 2.0% of 404cat to 7m2QRJTwXa3swMBcNaq8ZpA9nPhMWuyFguYrEr1m37ED
+[2026-10-22 04:10:46] 🎁 dev 3Zh3sh sent 1.4% of 404cat to 7m2QRJTwXa3swMBcNaq8ZpA9nPhMWuyFguYrEr1m37ED
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
