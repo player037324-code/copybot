@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-B today (~40k credits) | PAUSED (cap)
-[2026-10-22 08:07:08] stats 585m: trades 12941180 (369/s) | lookups 17830 | profiles 17524 | with X 627 | ALERTS 0 | queue 13230 | rechecking 529 | 429s 165 | dropped 0 | top scans 195 | apps none=9918479,axiom=1233258,pump=814196,fomo=499664,gmgn=237865
+,pump=814196,fomo=499664,gmgn=237865
 [2026-10-22 08:08:08] stats 586m: trades 12959952 (369/s) | lookups 17830 | profiles 17524 | with X 627 | ALERTS 0 | queue 13251 | rechecking 529 | 429s 165 | dropped 0 | top scans 195 | apps none=9934223,axiom=1234383,pump=815122,fomo=500075,gmgn=238178
 [2026-10-22 08:08:37] top scan: 2001 profiles (cutoff 1051 pump followers) in 90s, 0 new to the list
 [2026-10-22 08:09:08] stats 587m: trades 12978459 (368/s) | lookups 17860 | profiles 17554 | with X 627 | ALERTS 0 | queue 13269 | rechecking 529 | 429s 165 | dropped 0 | top scans 196 | apps none=9949967,axiom=1235126,pump=816087,fomo=500557,gmgn=238479
@@ -309,6 +308,7 @@ B today (~40k credits) | PAUSED (cap)
 [2026-10-22 08:24:08] stats 602m: trades 13237232 (366/s) | lookups 18329 | profiles 18019 | with X 641 | ALERTS 0 | queue 13327 | rechecking 532 | 429s 169 | dropped 0 | top scans 201 | apps none=10161143,axiom=1252996,pump=830233,fomo=507012,gmgn=243242
 [2026-10-22 08:25:08] stats 603m: trades 13256371 (366/s) | lookups 18389 | profiles 18079 | with X 641 | ALERTS 0 | queue 13341 | rechecking 531 | 429s 169 | dropped 0 | top scans 201 | apps none=10176942,axiom=1254310,pump=831157,fomo=507382,gmgn=243546
 [2026-10-22 08:25:48] top scan: 2001 profiles (cutoff 1051 pump followers) in 40s, 0 new to the list
+[2026-10-22 08:26:08] stats 604m: trades 13277088 (366/s) | lookups 18409 | profiles 18099 | with X 641 | ALERTS 0 | queue 13344 | rechecking 532 | 429s 169 | dropped 0 | top scans 202 | apps none=10194520,axiom=1255328,pump=832178,fomo=507740,gmgn=243904
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
