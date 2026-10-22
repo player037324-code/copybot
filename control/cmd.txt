@@ -1,5 +1,2 @@
-id: 95
-alerts-stop
-pfwatch-stop
-callouts-start
-callouts-test
+id: 96
+callouts-livetest
