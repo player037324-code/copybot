@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:37:15] 🎁 dev ExfWiN sent 1.1% of WOFI to 9qvwi2Fz4sNxn5QGmSwZayTBwHxM6ADLqbaYB4jGHD4M
 [2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.0% of WOFI to E8hT3uWzbEPo6Cb3KRvyTSyCbrnqVagN6LjYUG5BKqGa
 [2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.1% of WOFI to 6B5vf23qQZFenq1yyV6WA3eW8xGatn5tnwday2CnZaGT
 [2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.0% of WOFI to 6oXsZUAnu9LXWi8wYMs4QLg8ajHGKEWzLAfvWbp7Q7WS
@@ -309,6 +308,7 @@
 [2026-10-22 02:37:27] 🎁 dev ExfWiN sent 1.1% of WOFI to GjS8D77rSUbYVWwryxTM2cYQM29rcC6ZdRb9J9HuVnfn
 [2026-10-22 02:38:08] stats 256m: trades 6648600 (433/s) | lookups 7739 | profiles 7598 | with X 359 | ALERTS 0 | queue 9871 | rechecking 421 | 429s 73 | dropped 0 | top scans 85 | apps none=4964806,axiom=726374,pump=420443,fomo=273898,gmgn=126149
 [2026-10-22 02:38:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
+[2026-10-22 02:39:08] stats 257m: trades 6667395 (432/s) | lookups 7769 | profiles 7628 | with X 359 | ALERTS 0 | queue 9905 | rechecking 421 | 429s 73 | dropped 0 | top scans 86 | apps none=4977924,axiom=728393,pump=422079,fomo=274969,gmgn=126612
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
