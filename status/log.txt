@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:20:08] stats 298m: trades 7561621 (423/s) | lookups 9007 | profiles 8813 | with X 399 | ALERTS 0 | queue 10421 | rechecking 437 | 429s 85 | dropped 0 | top scans 99 | apps none=5662533,axiom=809204,pump=485702,fomo=311506,gmgn=141369
-[2026-10-22 03:20:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:21:08] stats 299m: trades 7582311 (423/s) | lookups 9037 | profiles 8843 | with X 399 | ALERTS 0 | queue 10462 | rechecking 435 | 429s 85 | dropped 0 | top scans 100 | apps none=5677684,axiom=811218,pump=487298,fomo=312498,gmgn=141955
 [2026-10-22 03:21:13] 🎁 dev BAoJmp sent 3.1% of SOL to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 03:21:13] 🎁 dev BAoJmp sent 3.7% of SOL to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
@@ -309,6 +307,8 @@
 [2026-10-22 03:34:03] 🎁 dev BAoJmp sent 2.7% of GTC to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 03:34:03] 🎁 dev BAoJmp sent 2.8% of GTC to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 03:34:08] stats 312m: trades 7865312 (420/s) | lookups 9476 | profiles 9275 | with X 413 | ALERTS 0 | queue 10581 | rechecking 445 | 429s 89 | dropped 0 | top scans 104 | apps none=5888993,axiom=838896,pump=507546,fomo=324799,gmgn=148252
+[2026-10-22 03:35:08] stats 313m: trades 7884025 (420/s) | lookups 9476 | profiles 9275 | with X 413 | ALERTS 0 | queue 10601 | rechecking 445 | 429s 89 | dropped 0 | top scans 104 | apps none=5902839,axiom=840786,pump=508927,fomo=325612,gmgn=148733
+[2026-10-22 03:35:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
