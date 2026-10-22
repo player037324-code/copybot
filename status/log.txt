@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:34:03] 🎁 dev BAoJmp sent 2.7% of GTC to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
-[2026-10-22 03:34:03] 🎁 dev BAoJmp sent 2.8% of GTC to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
-[2026-10-22 03:34:08] stats 312m: trades 7865312 (420/s) | lookups 9476 | profiles 9275 | with X 413 | ALERTS 0 | queue 10581 | rechecking 445 | 429s 89 | dropped 0 | top scans 104 | apps none=5888993,axiom=838896,pump=507546,fomo=324799,gmgn=148252
 [2026-10-22 03:35:08] stats 313m: trades 7884025 (420/s) | lookups 9476 | profiles 9275 | with X 413 | ALERTS 0 | queue 10601 | rechecking 445 | 429s 89 | dropped 0 | top scans 104 | apps none=5902839,axiom=840786,pump=508927,fomo=325612,gmgn=148733
 [2026-10-22 03:35:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:36:08] stats 314m: trades 7902396 (419/s) | lookups 9506 | profiles 9303 | with X 413 | ALERTS 0 | queue 10618 | rechecking 445 | 429s 89 | dropped 0 | top scans 105 | apps none=5915924,axiom=842615,pump=510628,fomo=326385,gmgn=149414
@@ -309,6 +306,9 @@
 [2026-10-22 03:50:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:51:08] stats 329m: trades 8225121 (417/s) | lookups 9975 | profiles 9768 | with X 431 | ALERTS 0 | queue 10767 | rechecking 448 | 429s 93 | dropped 0 | top scans 110 | apps none=6158677,axiom=873543,pump=533331,fomo=341392,gmgn=155689
 [2026-10-22 03:52:00] 🎁 dev HgAhL3 sent 1.3% of Hackoor to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
+[2026-10-22 03:52:08] gift watcher: 673 dev wallets watched | 200535 txs | 184 gifts | 1350 MB today (~27k credits)
+[2026-10-22 03:52:08] stats 330m: trades 8245183 (416/s) | lookups 10028 | profiles 9820 | with X 431 | ALERTS 0 | queue 10762 | rechecking 451 | 429s 94 | dropped 0 | top scans 110 | apps none=6173995,axiom=875137,pump=534931,fomo=342305,gmgn=156056
+[2026-10-22 03:52:13] 🎁 dev F2dWzX sent 5.0% of SPLnet to GTB7tdAbwAG9iNAnGNVi2gS7Xp5nZbwtnk7uUBRrnMRZ
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
