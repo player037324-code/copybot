@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:53:08] stats 91m: trades 2860794 (524/s) | lookups 2638 | profiles 2589 | with X 160 | ALERTS 0 | queue 6850 | rechecking 328 | 429s 28 | dropped 0 | top scans 30 | apps none=2132531,axiom=323072,pump=175057,fomo=117455,gmgn=52883
-[2026-10-21 23:53:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-21 23:54:08] stats 92m: trades 2880675 (522/s) | lookups 2667 | profiles 2618 | with X 160 | ALERTS 0 | queue 6885 | rechecking 328 | 429s 28 | dropped 0 | top scans 31 | apps none=2147938,axiom=324708,pump=176364,fomo=118266,gmgn=53229
 [2026-10-21 23:55:08] stats 93m: trades 2900615 (520/s) | lookups 2720 | profiles 2670 | with X 160 | ALERTS 0 | queue 6894 | rechecking 329 | 429s 29 | dropped 0 | top scans 31 | apps none=2163674,axiom=326260,pump=177694,fomo=118897,gmgn=53626
 [2026-10-21 23:55:30] 🎁 dev DY1zqU sent 1.5% of H2-X to 6RrqZQ7WSTX3X9JfSw73CoxcKS277dH7C6LCHdgjhZD7
@@ -309,6 +307,8 @@
 [2026-10-22 00:04:10] 🎁 dev 8sZCez sent 3.0% of uwunald to Fc2u9c7A6bTtgAwvfdcDxM4kdxaubcPGEwXePimj24aQ
 [2026-10-22 00:04:10] 🎁 dev 8sZCez sent 2.5% of uwunald to 5Z8aytx5vFYHqy2WT6zdVJdGfjF4LadHw3ofjuhiBCAw
 [2026-10-22 00:04:10] 🎁 dev 8sZCez sent 2.6% of uwunald to X6Dr2Fxs1ebqiiTmDLKocDNZPBriLrFNRRjHmy1Pmwy
+[2026-10-22 00:05:08] stats 103m: trades 3104867 (502/s) | lookups 3024 | profiles 2969 | with X 174 | ALERTS 0 | queue 7140 | rechecking 340 | 429s 31 | dropped 0 | top scans 34 | apps none=2311855,axiom=348948,pump=193139,fomo=128262,gmgn=57573
+[2026-10-22 00:05:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
