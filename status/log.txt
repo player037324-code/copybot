@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:51:08] stats 269m: trades 6915506 (428/s) | lookups 8155 | profiles 7978 | with X 370 | ALERTS 0 | queue 10094 | rechecking 421 | 429s 76 | dropped 0 | top scans 90 | apps none=5161692,axiom=753962,pump=441114,fomo=285677,gmgn=130932
-[2026-10-22 02:52:08] gift watcher: 709 dev wallets watched | 168680 txs | 163 gifts | 1040 MB today (~21k credits)
 [2026-10-22 02:52:08] stats 270m: trades 6936326 (428/s) | lookups 8208 | profiles 8030 | with X 373 | ALERTS 0 | queue 10083 | rechecking 421 | 429s 77 | dropped 0 | top scans 90 | apps none=5177196,axiom=756157,pump=442698,fomo=286491,gmgn=131321
 [2026-10-22 02:53:08] stats 271m: trades 6957270 (428/s) | lookups 8208 | profiles 8030 | with X 373 | ALERTS 0 | queue 10113 | rechecking 421 | 429s 77 | dropped 0 | top scans 90 | apps none=5192294,axiom=758622,pump=444399,fomo=287408,gmgn=131734
 [2026-10-22 02:53:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-22 03:06:08] stats 284m: trades 7229345 (424/s) | lookups 8624 | profiles 8442 | with X 390 | ALERTS 0 | queue 10235 | rechecking 431 | 429s 80 | dropped 0 | top scans 95 | apps none=5395766,axiom=785489,pump=465593,fomo=298888,gmgn=136591
 [2026-10-22 03:07:08] gift watcher: 718 dev wallets watched | 182079 txs | 167 gifts | 1175 MB today (~23k credits)
 [2026-10-22 03:07:08] stats 285m: trades 7249893 (424/s) | lookups 8677 | profiles 8494 | with X 393 | ALERTS 0 | queue 10207 | rechecking 435 | 429s 81 | dropped 0 | top scans 95 | apps none=5411648,axiom=787106,pump=467083,fomo=299781,gmgn=136934
+[2026-10-22 03:08:08] stats 286m: trades 7270962 (424/s) | lookups 8677 | profiles 8494 | with X 393 | ALERTS 0 | queue 10238 | rechecking 435 | 429s 81 | dropped 0 | top scans 95 | apps none=5427822,axiom=788990,pump=468719,fomo=300660,gmgn=137167
+[2026-10-22 03:08:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
