@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:06:11] 🎁 dev r7wiQQ sent 3.6% of ZIZAI to AjZ2fHJYHXovgwukg5GCi1Gcw54xDTY4dcR1Lm8tZDMN
-[2026-10-22 02:07:08] gift watcher: 725 dev wallets watched | 140996 txs | 119 gifts | 738 MB today (~15k credits)
-[2026-10-22 02:07:08] stats 225m: trades 5986403 (443/s) | lookups 6865 | profiles 6735 | with X 330 | ALERTS 0 | queue 9351 | rechecking 407 | 429s 63 | dropped 0 | top scans 75 | apps none=4469172,axiom=662945,pump=371324,fomo=244907,gmgn=113961
-[2026-10-22 02:07:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 40s, 1 new to the list
 [2026-10-22 02:08:08] stats 226m: trades 6005332 (443/s) | lookups 6885 | profiles 6754 | with X 331 | ALERTS 0 | queue 9365 | rechecking 407 | 429s 63 | dropped 0 | top scans 76 | apps none=4483593,axiom=664959,pump=372760,fomo=245476,gmgn=114179
 [2026-10-22 02:09:08] stats 227m: trades 6025768 (442/s) | lookups 6944 | profiles 6813 | with X 336 | ALERTS 0 | queue 9365 | rechecking 409 | 429s 63 | dropped 0 | top scans 76 | apps none=4498924,axiom=667139,pump=374306,fomo=246088,gmgn=114563
 [2026-10-22 02:10:08] stats 228m: trades 6046262 (442/s) | lookups 6997 | profiles 6865 | with X 340 | ALERTS 0 | queue 9355 | rechecking 410 | 429s 64 | dropped 0 | top scans 76 | apps none=4513847,axiom=669634,pump=375926,fomo=246779,gmgn=114912
@@ -309,6 +305,10 @@
 [2026-10-22 02:21:08] stats 239m: trades 6282517 (438/s) | lookups 7274 | profiles 7139 | with X 348 | ALERTS 0 | queue 9565 | rechecking 416 | 429s 67 | dropped 0 | top scans 80 | apps none=4684859,axiom=696599,pump=394497,fomo=256787,gmgn=119506
 [2026-10-22 02:22:08] gift watcher: 687 dev wallets watched | 151570 txs | 123 gifts | 842 MB today (~17k credits)
 [2026-10-22 02:22:08] stats 240m: trades 6300965 (438/s) | lookups 7327 | profiles 7191 | with X 350 | ALERTS 0 | queue 9550 | rechecking 416 | 429s 68 | dropped 0 | top scans 80 | apps none=4698081,axiom=698661,pump=396048,fomo=257663,gmgn=119847
+[2026-10-22 02:23:08] stats 241m: trades 6320052 (437/s) | lookups 7327 | profiles 7191 | with X 350 | ALERTS 0 | queue 9579 | rechecking 416 | 429s 68 | dropped 0 | top scans 80 | apps none=4712243,axiom=700707,pump=397359,fomo=258531,gmgn=120195
+[2026-10-22 02:23:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
+[2026-10-22 02:23:53] 🎁 dev AzAEWh sent 1.3% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
+[2026-10-22 02:23:57] 🎁 dev AzAEWh sent 1.7% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
