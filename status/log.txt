@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:45:36] 🎁 dev BAoJmp sent 2.7% of LARPLESS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
-[2026-10-22 00:46:08] stats 144m: trades 4051340 (469/s) | lookups 4298 | profiles 4215 | with X 229 | ALERTS 0 | queue 8072 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3028983,axiom=437387,pump=252844,fomo=174828,gmgn=73920
-[2026-10-22 00:46:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-22 00:47:08] gift watcher: 819 dev wallets watched | 88135 txs | 76 gifts | 232 MB today (~5k credits)
 [2026-10-22 00:47:08] stats 145m: trades 4068923 (468/s) | lookups 4318 | profiles 4235 | with X 229 | ALERTS 0 | queue 8103 | rechecking 364 | 429s 42 | dropped 0 | top scans 49 | apps none=3041453,axiom=439654,pump=254122,fomo=175611,gmgn=74272
 [2026-10-22 00:48:08] stats 146m: trades 4087186 (467/s) | lookups 4371 | profiles 4287 | with X 232 | ALERTS 0 | queue 8108 | rechecking 367 | 429s 43 | dropped 0 | top scans 49 | apps none=3054376,axiom=442063,pump=255461,fomo=176390,gmgn=74564
 [2026-10-22 00:49:08] stats 147m: trades 4104813 (465/s) | lookups 4380 | profiles 4296 | with X 232 | ALERTS 0 | queue 8156 | rechecking 367 | 429s 43 | dropped 0 | top scans 49 | apps none=3066917,axiom=444328,pump=256801,fomo=177134,gmgn=74870
@@ -309,6 +305,10 @@
 [2026-10-22 01:01:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 01:01:49] 🎁 dev 2VHc4n sent 2.9% of TI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 01:01:53] 🎁 dev 2VHc4n sent 1.1% of TI to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
+[2026-10-22 01:02:08] gift watcher: 730 dev wallets watched | 98335 txs | 80 gifts | 368 MB today (~7k credits)
+[2026-10-22 01:02:08] stats 160m: trades 4351574 (453/s) | lookups 4787 | profiles 4699 | with X 247 | ALERTS 0 | queue 8369 | rechecking 377 | 429s 46 | dropped 0 | top scans 54 | apps none=3251578,axiom=467397,pump=274892,fomo=188254,gmgn=78937
+[2026-10-22 01:02:19] 🎁 dev BAoJmp sent 4.2% of CyberGato to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 01:02:19] 🎁 dev BAoJmp sent 3.6% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
