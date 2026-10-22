@@ -331,6 +331,7 @@
 [2026-10-22 21:13:06] stats 40m: 1877 callouts seen on pump.fun | 0 from watchlist
 [2026-10-22 21:18:06] stats 45m: 2106 callouts seen on pump.fun | 0 from watchlist
 [2026-10-22 21:23:06] stats 50m: 2348 callouts seen on pump.fun | 0 from watchlist
+[2026-10-22 21:28:06] stats 55m: 2564 callouts seen on pump.fun | 0 from watchlist
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
