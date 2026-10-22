@@ -14,10 +14,10 @@ ws.on('message', (d) => {
       const p = line.split(' '); const len = Number(p[p.length - 1]);
       if (buf.length < i + 2 + len + 2) break;
       const pl = buf.slice(i + 2, i + 2 + len); buf = buf.slice(i + 4 + len); n++;
-      const s = p[1].split('.').slice(0, 2).join('.'); subj[s] = (subj[s] || 0) + 1;
+      const s = p[1].split('.')[0]; subj[s] = (subj[s] || 0) + 1;
       let j; try { j = JSON.parse(pl); if (typeof j === 'string') j = JSON.parse(j); } catch { continue; }
       const t = (j.type || j.eventType || j.kind || '?') + ''; types[t] = (types[t] || 0) + 1;
-      if (!samples[t]) samples[t] = `${p[1]} => ${pl.slice(0, 900)}`;
+      const key = p[1].split('.')[0] + ':' + t; if (!samples[key]) samples[key] = `${p[1]} => ${pl.slice(0, 700)}`;
       if (pl.includes(TARGET_ID) || pl.includes(TARGET_W)) { hits++; if (hits <= 5) console.log(`TARGET HIT ${p[1]} => ${pl.slice(0, 1200)}`); }
     } else {
       buf = buf.slice(i + 2);
