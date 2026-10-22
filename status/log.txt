@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:01:15] 🎁 dev 7rAuHA sent 1.5% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
-[2026-10-22 02:02:08] gift watcher: 720 dev wallets watched | 138602 txs | 116 gifts | 714 MB today (~14k credits)
-[2026-10-22 02:02:08] stats 220m: trades 5881999 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9316 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4389012,axiom=653382,pump=363896,fomo=241550,gmgn=111843
-[2026-10-22 02:02:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:02:43] 🎁 dev 2zgcai sent 4.1% of ZERODAY to DGb1ouFKY5364YATwYozJPMy226jYpKVZh787ore3GeK
 [2026-10-22 02:03:08] stats 221m: trades 5902513 (445/s) | lookups 6723 | profiles 6595 | with X 325 | ALERTS 0 | queue 9352 | rechecking 404 | 429s 62 | dropped 0 | top scans 74 | apps none=4403908,axiom=655883,pump=365410,fomo=242347,gmgn=112245
 [2026-10-22 02:04:08] stats 222m: trades 5922677 (445/s) | lookups 6782 | profiles 6654 | with X 327 | ALERTS 0 | queue 9337 | rechecking 405 | 429s 62 | dropped 0 | top scans 74 | apps none=4419420,axiom=657723,pump=366873,fomo=243026,gmgn=112553
@@ -309,6 +305,10 @@
 [2026-10-22 02:16:08] stats 234m: trades 6175578 (440/s) | lookups 7162 | profiles 7028 | with X 345 | ALERTS 0 | queue 9441 | rechecking 414 | 429s 66 | dropped 0 | top scans 78 | apps none=4607228,axiom=685595,pump=385875,fomo=251924,gmgn=117398
 [2026-10-22 02:16:20] 🎁 dev 3At9KL sent 2.1% of Pilly to 6gzhX4M9Si9EaiX7R8vsfoNFFJad2i9ZnrunyRbE2FmQ
 [2026-10-22 02:17:03] 🎁 dev 3At9KL sent 2.3% of Pilly to 6gzhX4M9Si9EaiX7R8vsfoNFFJad2i9ZnrunyRbE2FmQ
+[2026-10-22 02:17:08] gift watcher: 686 dev wallets watched | 148656 txs | 122 gifts | 816 MB today (~16k credits)
+[2026-10-22 02:17:08] stats 235m: trades 6196052 (439/s) | lookups 7162 | profiles 7028 | with X 345 | ALERTS 0 | queue 9471 | rechecking 414 | 429s 66 | dropped 0 | top scans 78 | apps none=4621419,axiom=687944,pump=387512,fomo=252940,gmgn=117833
+[2026-10-22 02:17:09] 🎁 dev 4BYjXY sent 1.6% of WTG to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
+[2026-10-22 02:17:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
