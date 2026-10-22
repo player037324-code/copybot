@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:37:22] 🎁 dev ExfWiN sent 1.1% of WOFI to 8YKXhk27rXELLbNQ3Jn7UD6rt6895W886PqNFt5j6VqD
 [2026-10-22 02:37:23] 🎁 dev ExfWiN sent 1.0% of WOFI to HdNKvJoDqcUkV7bAbEkXQh7SgJePKRM5GSeyMbgQ6S3s
 [2026-10-22 02:37:23] 🎁 dev ExfWiN sent 1.1% of WOFI to BU19zepC8pRpJLy71md5f3krYf1e15XMaG1RALAL8JZH
 [2026-10-22 02:37:24] 🎁 dev ExfWiN sent 1.1% of WOFI to AnC7mZmRTFSoRCYqoM8Z9GGU4LUpbo4MGEaxgKvHx39X
@@ -309,6 +308,7 @@
 [2026-10-22 02:45:08] stats 263m: trades 6783658 (430/s) | lookups 7990 | profiles 7818 | with X 367 | ALERTS 0 | queue 9988 | rechecking 421 | 429s 74 | dropped 0 | top scans 88 | apps none=5065340,axiom=737958,pump=431243,fomo=280517,gmgn=128685
 [2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.7% of Boobies to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.6% of Boobies to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
+[2026-10-22 02:46:08] stats 264m: trades 6803613 (430/s) | lookups 8043 | profiles 7869 | with X 368 | ALERTS 0 | queue 9984 | rechecking 422 | 429s 75 | dropped 0 | top scans 88 | apps none=5080037,axiom=739819,pump=432922,fomo=281424,gmgn=129113
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
