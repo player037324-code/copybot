@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:07:08] stats 285m: trades 7249893 (424/s) | lookups 8677 | profiles 8494 | with X 393 | ALERTS 0 | queue 10207 | rechecking 435 | 429s 81 | dropped 0 | top scans 95 | apps none=5411648,axiom=787106,pump=467083,fomo=299781,gmgn=136934
-[2026-10-22 03:08:08] stats 286m: trades 7270962 (424/s) | lookups 8677 | profiles 8494 | with X 393 | ALERTS 0 | queue 10238 | rechecking 435 | 429s 81 | dropped 0 | top scans 95 | apps none=5427822,axiom=788990,pump=468719,fomo=300660,gmgn=137167
-[2026-10-22 03:08:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:09:08] stats 287m: trades 7292754 (424/s) | lookups 8707 | profiles 8524 | with X 393 | ALERTS 0 | queue 10266 | rechecking 433 | 429s 81 | dropped 0 | top scans 96 | apps none=5444845,axiom=790556,pump=470350,fomo=301592,gmgn=137488
 [2026-10-22 03:09:55] 🎁 dev 8PQxd6 sent 2.4% of COGE to FN5mPgarUr3B87MeGN3mUzn1ZHjGaAuEc1sWHFhNEwGD
 [2026-10-22 03:10:02] 🎁 dev BAoJmp sent 2.6% of SHIT to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
@@ -309,6 +306,9 @@
 [2026-10-22 03:19:14] 🎁 dev FAHMvD sent 2.3% of offchain to 9PDFBkM2JjnLuuEhQVi5oPv5jVJ4wV3LA2PAfLXNijLb
 [2026-10-22 03:20:08] stats 298m: trades 7561621 (423/s) | lookups 9007 | profiles 8813 | with X 399 | ALERTS 0 | queue 10421 | rechecking 437 | 429s 85 | dropped 0 | top scans 99 | apps none=5662533,axiom=809204,pump=485702,fomo=311506,gmgn=141369
 [2026-10-22 03:20:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 03:21:08] stats 299m: trades 7582311 (423/s) | lookups 9037 | profiles 8843 | with X 399 | ALERTS 0 | queue 10462 | rechecking 435 | 429s 85 | dropped 0 | top scans 100 | apps none=5677684,axiom=811218,pump=487298,fomo=312498,gmgn=141955
+[2026-10-22 03:21:13] 🎁 dev BAoJmp sent 3.1% of SOL to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 03:21:13] 🎁 dev BAoJmp sent 3.7% of SOL to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
