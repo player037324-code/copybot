@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:53:08] stats 451m: trades 10450736 (386/s) | lookups 13609 | profiles 13344 | with X 523 | ALERTS 0 | queue 12127 | rechecking 488 | 429s 129 | dropped 0 | top scans 150 | apps none=7879423,axiom=1066653,pump=681205,fomo=425797,gmgn=197446
 [2026-10-22 05:53:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
 [2026-10-22 05:54:08] stats 452m: trades 10467402 (386/s) | lookups 13639 | profiles 13374 | with X 523 | ALERTS 0 | queue 12153 | rechecking 487 | 429s 129 | dropped 0 | top scans 151 | apps none=7892123,axiom=1068239,pump=682322,fomo=426469,gmgn=197766
 [2026-10-22 05:55:08] stats 453m: trades 10484267 (386/s) | lookups 13698 | profiles 13433 | with X 527 | ALERTS 0 | queue 12134 | rechecking 488 | 429s 129 | dropped 0 | top scans 151 | apps none=7905166,axiom=1069703,pump=683412,fomo=427148,gmgn=198096
@@ -309,6 +308,7 @@
 [2026-10-22 06:08:36] 🎁 dev 7pa9H6 sent 1.2% of bearcunt to tqVvFiW1UcMzx1rknDzd4BUTPyLmC9wxK36o5KSrTXw
 [2026-10-22 06:08:36] 🎁 dev 7pa9H6 sent 1.6% of bearcunt to D4m5kk6R7M6Nfp7dtSasvHRvLH1NWGjXukpyDAiGPVkb
 [2026-10-22 06:09:08] stats 467m: trades 10717284 (382/s) | lookups 14165 | profiles 13895 | with X 537 | ALERTS 0 | queue 12241 | rechecking 484 | 429s 132 | dropped 0 | top scans 156 | apps none=8090633,axiom=1086427,pump=697674,fomo=435813,gmgn=202000
+[2026-10-22 06:10:08] stats 468m: trades 10734399 (382/s) | lookups 14217 | profiles 13946 | with X 539 | ALERTS 0 | queue 12254 | rechecking 485 | 429s 133 | dropped 0 | top scans 156 | apps none=8104255,axiom=1087460,pump=698894,fomo=436417,gmgn=202328
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
