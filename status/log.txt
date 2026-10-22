@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:16:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 1 new to the list
 [2026-10-22 04:17:08] gift watcher: 660 dev wallets watched | 212941 txs | 200 gifts | 1456 MB today (~29k credits)
 [2026-10-22 04:17:08] stats 355m: trades 8779139 (412/s) | lookups 10771 | profiles 10547 | with X 450 | ALERTS 0 | queue 11041 | rechecking 463 | 429s 100 | dropped 0 | top scans 119 | apps none=6594390,axiom=919337,pump=569323,fomo=360534,gmgn=164833
 [2026-10-22 04:18:06] 🎁 dev HgAhL3 sent 1.3% of grass to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
@@ -309,6 +308,7 @@
 [2026-10-22 04:29:08] stats 367m: trades 9017042 (409/s) | lookups 11157 | profiles 10927 | with X 470 | ALERTS 0 | queue 11123 | rechecking 468 | 429s 103 | dropped 0 | top scans 123 | apps none=6769736,axiom=945290,pump=586082,fomo=370862,gmgn=169979
 [2026-10-22 04:29:31] 🎁 dev Dde9n8 sent 1.4% of PauseAI to DJQwtiowTJmAvAu4vhCaFgPiS3nnKD5r5agZgBQEdHK2
 [2026-10-22 04:29:36] 🎁 dev DJQwti sent 1.3% of PauseAI to Dde9n8s2NPiL9Wd99NftqDtbwRrsPkyxxKDAJeRhCXoJ
+[2026-10-22 04:30:08] stats 368m: trades 9034711 (409/s) | lookups 11210 | profiles 10979 | with X 471 | ALERTS 0 | queue 11123 | rechecking 468 | 429s 104 | dropped 0 | top scans 123 | apps none=6782677,axiom=947113,pump=587379,fomo=371716,gmgn=170337
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
