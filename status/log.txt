@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:20:00] 🎁 dev BAoJmp sent 1.8% of CYBERKIMCHI to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
-[2026-10-22 00:20:00] 🎁 dev BAoJmp sent 2.1% of CYBERKIMCHI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
-[2026-10-22 00:20:08] stats 118m: trades 3494888 (494/s) | lookups 3493 | profiles 3429 | with X 195 | ALERTS 0 | queue 7519 | rechecking 346 | 429s 35 | dropped 0 | top scans 39 | apps none=2609207,axiom=386072,pump=214111,fomo=148599,gmgn=64645
 [2026-10-22 00:20:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 00:21:08] stats 119m: trades 3515383 (492/s) | lookups 3523 | profiles 3457 | with X 195 | ALERTS 0 | queue 7535 | rechecking 346 | 429s 35 | dropped 0 | top scans 40 | apps none=2624520,axiom=387735,pump=215432,fomo=149858,gmgn=65023
 [2026-10-22 00:21:16] skip Gdawg_burner @gdawg_trader: 25 X followers
@@ -309,6 +306,9 @@
 [2026-10-22 00:33:08] stats 131m: trades 3771690 (480/s) | lookups 3908 | profiles 3837 | with X 219 | ALERTS 0 | queue 7757 | rechecking 357 | 429s 38 | dropped 0 | top scans 44 | apps none=2816707,axiom=411753,pump=233299,fomo=162676,gmgn=69525
 [2026-10-22 00:34:08] stats 132m: trades 3794622 (479/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7747 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2833644,axiom=413964,pump=235037,fomo=163782,gmgn=69954
 [2026-10-22 00:34:12] 🎁 dev 2VHc4n sent 3.5% of pump.kin to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
+[2026-10-22 00:35:08] stats 133m: trades 3815785 (478/s) | lookups 3961 | profiles 3889 | with X 220 | ALERTS 0 | queue 7786 | rechecking 359 | 429s 39 | dropped 0 | top scans 44 | apps none=2850511,axiom=415324,pump=236446,fomo=164708,gmgn=70195
+[2026-10-22 00:35:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 00:35:44] 🎁 dev 9ReiU3 sent 1.7% of Penguin to 85W2GM8nRj6hfREc47iy2zPXUfHny3HqGSHHKf2mB6bw
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
