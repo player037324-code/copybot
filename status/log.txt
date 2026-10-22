@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:27:08] gift watcher: 637 dev wallets watched | 217209 txs | 207 gifts | 1492 MB today (~30k credits)
-[2026-10-22 04:27:08] stats 365m: trades 8978594 (410/s) | lookups 11128 | profiles 10898 | with X 470 | ALERTS 0 | queue 11082 | rechecking 468 | 429s 103 | dropped 0 | top scans 122 | apps none=6740361,axiom=941391,pump=583509,fomo=369721,gmgn=169321
 [2026-10-22 04:28:08] stats 366m: trades 8998417 (410/s) | lookups 11137 | profiles 10907 | with X 470 | ALERTS 0 | queue 11118 | rechecking 468 | 429s 103 | dropped 0 | top scans 122 | apps none=6755204,axiom=943741,pump=584849,fomo=370265,gmgn=169643
 [2026-10-22 04:28:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 04:29:08] stats 367m: trades 9017042 (409/s) | lookups 11157 | profiles 10927 | with X 470 | ALERTS 0 | queue 11123 | rechecking 468 | 429s 103 | dropped 0 | top scans 123 | apps none=6769736,axiom=945290,pump=586082,fomo=370862,gmgn=169979
@@ -309,6 +307,8 @@
 [2026-10-22 04:40:42] 🎁 dev Fo1JZ7 sent 3.7% of Chaos  to Ff96djxHE9m546qHJ7HJRCRTdStfMk4gNc4bbkzmxneR
 [2026-10-22 04:41:08] stats 379m: trades 9207682 (405/s) | lookups 11517 | profiles 11280 | with X 475 | ALERTS 0 | queue 11261 | rechecking 471 | 429s 107 | dropped 0 | top scans 126 | apps none=6907161,axiom=966025,pump=601663,fomo=379599,gmgn=174176
 [2026-10-22 04:41:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 04:42:08] gift watcher: 648 dev wallets watched | 225744 txs | 214 gifts | 1580 MB today (~32k credits)
+[2026-10-22 04:42:08] stats 380m: trades 9222430 (404/s) | lookups 11547 | profiles 11310 | with X 475 | ALERTS 0 | queue 11283 | rechecking 470 | 429s 107 | dropped 0 | top scans 127 | apps none=6917829,axiom=967689,pump=602813,fomo=380261,gmgn=174501
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
