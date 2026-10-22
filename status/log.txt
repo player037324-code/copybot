@@ -253,7 +253,6 @@
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-21 17:42:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:50:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:52:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:56:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,17 +272,13 @@
 [2026-10-22 20:08:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-22 20:12:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-22 20:17:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-22 20:21:06] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 20:04:08] stats 1302m: trades 30923390 (396/s) | lookups 40561 | profiles 38024 | with X 988 | ALERTS 0 | queue 21076 | rechecking 509 | 429s 358 | dropped 0 | top scans 434 | apps none=24142650,axiom=2714809,pump=1851200,fomo=1010980,gmgn=617372
-[2026-10-22 20:04:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
-[2026-10-22 20:05:08] stats 1303m: trades 30949563 (396/s) | lookups 40620 | profiles 38024 | with X 988 | ALERTS 0 | queue 21076 | rechecking 508 | 429s 358 | dropped 0 | top scans 435 | apps none=24162101,axiom=2717181,pump=1853486,fomo=1011914,gmgn=617866
-[2026-10-22 20:06:08] stats 1304m: trades 30976863 (396/s) | lookups 40680 | profiles 38024 | with X 988 | ALERTS 0 | queue 21103 | rechecking 507 | 429s 358 | dropped 0 | top scans 435 | apps none=24182698,axiom=2719733,pump=1855610,fomo=1012869,gmgn=618258
-[2026-10-22 20:07:08] gift watcher: 8232 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 20:07:08] stats 1305m: trades 31007105 (396/s) | lookups 40739 | profiles 38024 | with X 988 | ALERTS 0 | queue 21098 | rechecking 507 | 429s 358 | dropped 0 | top scans 435 | apps none=24206558,axiom=2722048,pump=1857679,fomo=1013765,gmgn=618728
 [2026-10-22 20:07:08] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
 [2026-10-22 20:08:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
@@ -309,6 +304,11 @@
 [2026-10-22 20:17:38] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
 [2026-10-22 20:18:08] stats 1m: trades 29809 (497/s) | lookups 59 | profiles 0 | with X 0 | ALERTS 0 | queue 577 | rechecking 504 | 429s 0 | dropped 0 | top scans 1 | apps none=23532,axiom=2284,pump=1958,fomo=1044,gmgn=512
 [2026-10-22 20:19:08] stats 2m: trades 63723 (531/s) | lookups 119 | profiles 0 | with X 0 | ALERTS 0 | queue 959 | rechecking 504 | 429s 0 | dropped 0 | top scans 1 | apps none=50729,axiom=4581,pump=4175,fomo=2157,gmgn=989
+[2026-10-22 20:20:08] stats 3m: trades 88347 (491/s) | lookups 179 | profiles 0 | with X 0 | ALERTS 0 | queue 1229 | rechecking 501 | 429s 0 | dropped 0 | top scans 1 | apps none=68675,axiom=7035,pump=6196,fomo=3298,gmgn=1452
+[2026-10-22 20:20:09] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
+[2026-10-22 20:21:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-22 20:21:07] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-22 20:21:07] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
