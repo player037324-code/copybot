@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:05:08] stats 403m: trades 9644814 (399/s) | lookups 12233 | profiles 11985 | with X 490 | ALERTS 0 | queue 11540 | rechecking 471 | 429s 114 | dropped 0 | top scans 134 | apps none=7244503,axiom=1003386,pump=630748,fomo=396594,gmgn=182432
-[2026-10-22 05:05:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
-[2026-10-22 05:06:08] stats 404m: trades 9662043 (399/s) | lookups 12263 | profiles 12015 | with X 491 | ALERTS 0 | queue 11565 | rechecking 472 | 429s 114 | dropped 0 | top scans 135 | apps none=7257806,axiom=1005042,pump=631774,fomo=397202,gmgn=182734
 [2026-10-22 05:07:08] gift watcher: 602 dev wallets watched | 240645 txs | 220 gifts | 1692 MB today (~34k credits)
 [2026-10-22 05:07:08] stats 405m: trades 9679693 (398/s) | lookups 12316 | profiles 12067 | with X 492 | ALERTS 0 | queue 11554 | rechecking 474 | 429s 115 | dropped 0 | top scans 135 | apps none=7271773,axiom=1006462,pump=632888,fomo=397813,gmgn=183010
 [2026-10-22 05:08:08] stats 406m: trades 9700007 (398/s) | lookups 12316 | profiles 12067 | with X 492 | ALERTS 0 | queue 11579 | rechecking 474 | 429s 115 | dropped 0 | top scans 135 | apps none=7287433,axiom=1008478,pump=634121,fomo=398478,gmgn=183396
@@ -309,6 +306,9 @@
 [2026-10-22 05:19:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 39s, 0 new to the list
 [2026-10-22 05:20:08] stats 418m: trades 9922345 (396/s) | lookups 12672 | profiles 12419 | with X 500 | ALERTS 0 | queue 11702 | rechecking 480 | 429s 118 | dropped 0 | top scans 140 | apps none=7465030,axiom=1024777,pump=646841,fomo=406280,gmgn=187435
 [2026-10-22 05:21:08] stats 419m: trades 9937232 (395/s) | lookups 12725 | profiles 12471 | with X 500 | ALERTS 0 | queue 11711 | rechecking 483 | 429s 119 | dropped 0 | top scans 140 | apps none=7476678,axiom=1025833,pump=647870,fomo=406945,gmgn=187700
+[2026-10-22 05:22:08] gift watcher: 576 dev wallets watched | 250404 txs | 224 gifts | 1753 MB today (~35k credits)
+[2026-10-22 05:22:08] stats 420m: trades 9951034 (395/s) | lookups 12735 | profiles 12481 | with X 500 | ALERTS 0 | queue 11728 | rechecking 483 | 429s 119 | dropped 0 | top scans 140 | apps none=7487525,axiom=1026715,pump=648877,fomo=407600,gmgn=187943
+[2026-10-22 05:22:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
