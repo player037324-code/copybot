@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:45:08] stats 263m: trades 6783658 (430/s) | lookups 7990 | profiles 7818 | with X 367 | ALERTS 0 | queue 9988 | rechecking 421 | 429s 74 | dropped 0 | top scans 88 | apps none=5065340,axiom=737958,pump=431243,fomo=280517,gmgn=128685
 [2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.7% of Boobies to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
 [2026-10-22 02:45:50] 🎁 dev 3H4GRC sent 1.6% of Boobies to 6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4
 [2026-10-22 02:46:08] stats 264m: trades 6803613 (430/s) | lookups 8043 | profiles 7869 | with X 368 | ALERTS 0 | queue 9984 | rechecking 422 | 429s 75 | dropped 0 | top scans 88 | apps none=5080037,axiom=739819,pump=432922,fomo=281424,gmgn=129113
@@ -309,6 +308,7 @@
 [2026-10-22 02:59:08] stats 277m: trades 7078603 (426/s) | lookups 8400 | profiles 8220 | with X 381 | ALERTS 0 | queue 10166 | rechecking 425 | 429s 78 | dropped 0 | top scans 93 | apps none=5279457,axiom=772655,pump=454932,fomo=292638,gmgn=134074
 [2026-10-22 02:59:40] 🎁 dev B38M33 sent 2.0% of UBER to DuARUpsEzdVbVpSnbGipLJvWxaXUCPLDJDjNov6Rc6s6
 [2026-10-22 03:00:08] stats 278m: trades 7099328 (426/s) | lookups 8459 | profiles 8279 | with X 384 | ALERTS 0 | queue 10151 | rechecking 428 | 429s 78 | dropped 0 | top scans 93 | apps none=5294514,axiom=774976,pump=456723,fomo=293600,gmgn=134372
+[2026-10-22 03:01:08] stats 279m: trades 7121934 (425/s) | lookups 8512 | profiles 8331 | with X 386 | ALERTS 0 | queue 10159 | rechecking 430 | 429s 79 | dropped 0 | top scans 93 | apps none=5311489,axiom=777335,pump=458439,fomo=294503,gmgn=134684
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
