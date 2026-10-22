@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:49:31] 🎁 dev F5XvCe sent 10.0% of SAINDRA to 8rCjoeuCkxZ7tT3dSJ1F8pRKZMaokKTY6gqRTCfdN3VG
 [2026-10-22 04:50:08] stats 388m: trades 9358669 (402/s) | lookups 11764 | profiles 11523 | with X 479 | ALERTS 0 | queue 11350 | rechecking 472 | 429s 110 | dropped 0 | top scans 129 | apps none=7018211,axiom=981702,pump=612721,fomo=386543,gmgn=177364
 [2026-10-22 04:50:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
 [2026-10-22 04:51:08] stats 389m: trades 9376758 (402/s) | lookups 11794 | profiles 11553 | with X 479 | ALERTS 0 | queue 11368 | rechecking 472 | 429s 110 | dropped 0 | top scans 130 | apps none=7031656,axiom=983130,pump=613947,fomo=387440,gmgn=178045
@@ -309,6 +308,7 @@
 [2026-10-22 05:04:08] stats 402m: trades 9625911 (399/s) | lookups 12233 | profiles 11985 | with X 490 | ALERTS 0 | queue 11511 | rechecking 471 | 429s 114 | dropped 0 | top scans 134 | apps none=7229374,axiom=1001829,pump=629624,fomo=396115,gmgn=182087
 [2026-10-22 05:05:08] stats 403m: trades 9644814 (399/s) | lookups 12233 | profiles 11985 | with X 490 | ALERTS 0 | queue 11540 | rechecking 471 | 429s 114 | dropped 0 | top scans 134 | apps none=7244503,axiom=1003386,pump=630748,fomo=396594,gmgn=182432
 [2026-10-22 05:05:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 05:06:08] stats 404m: trades 9662043 (399/s) | lookups 12263 | profiles 12015 | with X 491 | ALERTS 0 | queue 11565 | rechecking 472 | 429s 114 | dropped 0 | top scans 135 | apps none=7257806,axiom=1005042,pump=631774,fomo=397202,gmgn=182734
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
