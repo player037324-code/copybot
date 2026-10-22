@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:40:08] stats 258m: trades 6685894 (432/s) | lookups 7828 | profiles 7661 | with X 359 | ALERTS 0 | queue 9936 | rechecking 421 | 429s 73 | dropped 0 | top scans 86 | apps none=4990973,axiom=729920,pump=423838,fomo=276212,gmgn=127057
 [2026-10-22 02:40:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 39s, 0 new to the list
 [2026-10-22 02:40:52] 🎁 dev 2VHc4n sent 4.0% of ElePHPant to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 02:40:56] 🎁 dev 2VHc4n sent 2.1% of ElePHPant to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
@@ -309,6 +308,7 @@
 [2026-10-22 02:52:08] stats 270m: trades 6936326 (428/s) | lookups 8208 | profiles 8030 | with X 373 | ALERTS 0 | queue 10083 | rechecking 421 | 429s 77 | dropped 0 | top scans 90 | apps none=5177196,axiom=756157,pump=442698,fomo=286491,gmgn=131321
 [2026-10-22 02:53:08] stats 271m: trades 6957270 (428/s) | lookups 8208 | profiles 8030 | with X 373 | ALERTS 0 | queue 10113 | rechecking 421 | 429s 77 | dropped 0 | top scans 90 | apps none=5192294,axiom=758622,pump=444399,fomo=287408,gmgn=131734
 [2026-10-22 02:53:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
+[2026-10-22 02:54:08] stats 272m: trades 6979272 (428/s) | lookups 8238 | profiles 8060 | with X 373 | ALERTS 0 | queue 10130 | rechecking 420 | 429s 77 | dropped 0 | top scans 91 | apps none=5208668,axiom=761076,pump=446046,fomo=288179,gmgn=132121
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
