@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:23:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 00:24:08] stats 122m: trades 3577543 (489/s) | lookups 3604 | profiles 3537 | with X 203 | ALERTS 0 | queue 7604 | rechecking 349 | 429s 36 | dropped 0 | top scans 41 | apps none=2671271,axiom=393691,pump=219634,fomo=152848,gmgn=66128
 [2026-10-22 00:24:32] 🎁 dev BAoJmp sent 3.0% of Zuckerberg to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:24:32] 🎁 dev BAoJmp sent 2.6% of Zuckerberg to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:25:08] stats 123m: trades 3597243 (487/s) | lookups 3657 | profiles 3587 | with X 208 | ALERTS 0 | queue 7609 | rechecking 350 | 429s 37 | dropped 0 | top scans 41 | apps none=2686358,axiom=395259,pump=221093,fomo=153785,gmgn=66430
@@ -309,6 +307,8 @@
 [2026-10-22 00:37:08] gift watcher: 837 dev wallets watched | 83013 txs | 68 gifts | 188 MB today (~4k credits)
 [2026-10-22 00:37:08] stats 135m: trades 3859288 (476/s) | lookups 4044 | profiles 3968 | with X 223 | ALERTS 0 | queue 7830 | rechecking 359 | 429s 40 | dropped 0 | top scans 45 | apps none=2884775,axiom=418403,pump=239248,fomo=166789,gmgn=70826
 [2026-10-22 00:37:50] 🎁 dev HBWhLR sent 3.1% of XRP to 12LfzUpHUPXXc4KK2rVDvPcWoV3JZPEUvnzzi4EqMhbm
+[2026-10-22 00:38:08] stats 136m: trades 3883015 (476/s) | lookups 4044 | profiles 3968 | with X 223 | ALERTS 0 | queue 7880 | rechecking 359 | 429s 40 | dropped 0 | top scans 45 | apps none=2903135,axiom=420072,pump=240880,fomo=168073,gmgn=71231
+[2026-10-22 00:38:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
