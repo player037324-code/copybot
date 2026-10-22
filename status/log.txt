@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:20:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:21:08] stats 359m: trades 8863501 (411/s) | lookups 10913 | profiles 10687 | with X 457 | ALERTS 0 | queue 11061 | rechecking 463 | 429s 101 | dropped 0 | top scans 120 | apps none=6655247,axiom=929453,pump=575152,fomo=364314,gmgn=167034
 [2026-10-22 04:22:08] gift watcher: 672 dev wallets watched | 214429 txs | 201 gifts | 1465 MB today (~29k credits)
 [2026-10-22 04:22:08] stats 360m: trades 8884354 (411/s) | lookups 10973 | profiles 10747 | with X 463 | ALERTS 0 | queue 11039 | rechecking 464 | 429s 101 | dropped 0 | top scans 120 | apps none=6670973,axiom=931418,pump=576632,fomo=365293,gmgn=167416
@@ -309,6 +308,7 @@
 [2026-10-22 04:32:08] stats 370m: trades 9071636 (409/s) | lookups 11240 | profiles 11009 | with X 471 | ALERTS 0 | queue 11150 | rechecking 467 | 429s 104 | dropped 0 | top scans 124 | apps none=6811676,axiom=949966,pump=589792,fomo=373171,gmgn=170979
 [2026-10-22 04:32:55] 🎁 dev BAoJmp sent 3.4% of RASMUS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 04:32:55] 🎁 dev BAoJmp sent 3.4% of RASMUS to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 04:33:08] stats 371m: trades 9084691 (408/s) | lookups 11300 | profiles 11067 | with X 472 | ALERTS 0 | queue 11151 | rechecking 468 | 429s 104 | dropped 0 | top scans 124 | apps none=6820271,axiom=951611,pump=591135,fomo=373945,gmgn=171301
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
