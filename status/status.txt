@@ -1,6 +1,6 @@
-updated: 2026-10-22T16:00:02Z
+updated: 2026-10-22T16:01:02Z
 deployed: b3c93fcaafd767575be61d4497fcd5a0b6a45b9d
-pm2: stopped uptime=5483m restarts=14
+pm2: stopped uptime=5484m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -67,7 +67,6 @@ sniper pm2: stopped
 }
 --- alerts ---
 alerts pm2: online
-{"time":"2026-10-22T02:36:34.735Z","kind":"NEW PAIRING LIVE","text":"$COINx (Coinbase xStock) is now live on StonkFun. First coin: $mandu 3mxphC5zeiNM9USLjAU2cNSKzWUXP25HaRLNFW7xyi2g. Pool token is 497.7d old.","quote":"Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu","firstMint":"3mxphC5zeiNM9USLjAU2cNSKzWUXP25HaRLNFW7xyi2g","firstTicker":"mandu","isNew":false}
 {"time":"2026-10-22T03:37:23.789Z","kind":"NEW PAIRING LIVE","text":"$SPHR (Sphere Entertainment Co. - Backpack Securities) is now live on StonkFun. First coin: $zzzz ACVHX6ndaqP3vx8D4mXkWGGN51cmw78t763Rv2aZF44R. Pool token is 58.1d old.","quote":"SPHRp8cZaSQBTp1KMNP4V1X821SXhXWt4Q2yLdyHzju","firstMint":"ACVHX6ndaqP3vx8D4mXkWGGN51cmw78t763Rv2aZF44R","firstTicker":"zzzz","isNew":false}
 {"time":"2026-10-22T03:51:11.451Z","kind":"NEW PAIRING LIVE","text":"$RKLB (Rocket Lab - Backpack Securities) is now live on StonkFun. First coin: $zzzz B4JFhawdQLBxAYV2cA4Jtqjkpj3Ao4UGtxP8DwtLctwQ. Pool token is 125.8d old.","quote":"RKLBnAXGqv31iZomqsuAWkQm1aqC7JwwvbCfzGdqAhz","firstMint":"B4JFhawdQLBxAYV2cA4Jtqjkpj3Ao4UGtxP8DwtLctwQ","firstTicker":"zzzz","isNew":false}
 {"time":"2026-10-22T04:58:29.096Z","kind":"NEW PAIRING LIVE","text":"$RBLX (Roblox - Backpack Securities) is now live on StonkFun. First coin: $BANNACAT AEegNP6fFP6PSTkyQSnwgUSZQLjD6UzTWhRiPu8bWdwx. Pool token is 58.2d old.","quote":"RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE","firstMint":"AEegNP6fFP6PSTkyQSnwgUSZQLjD6UzTWhRiPu8bWdwx","firstTicker":"BANNACAT","isNew":false}
@@ -82,10 +81,11 @@ alerts pm2: online
 {"time":"2026-10-22T14:54:32.951Z","kind":"NEW PAIRING LIVE","text":"$QUBT (Quantum Computing - Backpack Securities) is now live on StonkFun. First coin: $qGLOW BtiiaNvswBHrRmJj3Fpstky9vcDxFNZ1tfj33xLWBj4Y. Pool token is 58.7d old.","quote":"QUBTAD8C9bMU9LvmMNgKPhrmBGbHvxpu6vfWQtThxxw","firstMint":"BtiiaNvswBHrRmJj3Fpstky9vcDxFNZ1tfj33xLWBj4Y","firstTicker":"qGLOW","isNew":false}
 {"time":"2026-10-22T14:57:37.662Z","kind":"NEW PAIRING LIVE","text":"$RKC (Red Kitten Crew) is now live on StonkFun. First coin: $RKC-BP 6V3eQDao3QUqjhgL8oqzhzVxH7weZyxVAMNhKJpn2Cjj. Pool token is 163.7d old.","quote":"7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump","firstMint":"6V3eQDao3QUqjhgL8oqzhzVxH7weZyxVAMNhKJpn2Cjj","firstTicker":"RKC-BP","isNew":false}
 {"time":"2026-10-22T15:34:44.470Z","kind":"NEW PAIRING LIVE","text":"$MET (Meteora) is now live on StonkFun. First coin: $METCHAN 5haqZkiPLEbNYk1HFrz5CvP9VZuUrj5MS46i3Aoy9frd. Pool token is 407.0d old.","quote":"METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL","firstMint":"5haqZkiPLEbNYk1HFrz5CvP9VZuUrj5MS46i3Aoy9frd","firstTicker":"METCHAN","isNew":false}
+{"time":"2026-10-22T16:00:34.020Z","kind":"NEW PAIRING LIVE","text":"$ai16z (ai16z) is now live on StonkFun. First coin: $A16Z 7YTKQwMrhhwwC2QLTpDBzWJraRAwg4PcvhFMZGQ52k6E. Pool token is 727.6d old.","quote":"HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC","firstMint":"7YTKQwMrhhwwC2QLTpDBzWJraRAwg4PcvhFMZGQ52k6E","firstTicker":"A16Z","isNew":false}
 
 --- pfwatch ---
 pfwatch pm2: online restarts=13
-{"apps":{"none":18063652,"axiom":2041010,"pump":1392377,"fomo":771216,"padre":283968,"gmgn":442477,"maestro":11069,"trojan":48427,"j7":6923,"bonk":5368,"bloom":28574,"sol_trading_bot":6848,"photon":15880,"phantom":17040,"mevx":1180,"pepeboost":473,"bullx":5018,"banana":172},"topScans":352,"trades":23141672,"lookups":32138,"users":31699,"withX":868,"recentX":6,"alerts":0,"r429":298,"err":0,"dropped":0,"since":1792621327999,"coins":31785,"queue":18549,"watch":578,"dry":false,"updated":"2026-10-22T15:59:08.406Z"}
+{"apps":{"none":18083544,"axiom":2045169,"pump":1394130,"fomo":771945,"padre":284495,"gmgn":443223,"maestro":11085,"trojan":48507,"j7":6931,"bonk":5380,"bloom":28600,"sol_trading_bot":6850,"photon":15892,"phantom":17052,"mevx":1182,"pepeboost":475,"bullx":5018,"banana":172},"topScans":353,"trades":23169650,"lookups":32168,"users":31729,"withX":868,"recentX":6,"alerts":0,"r429":298,"err":0,"dropped":0,"since":1792621327999,"coins":31839,"queue":18583,"watch":577,"dry":false,"updated":"2026-10-22T16:00:08.406Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
