@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:42:08] stats 200m: trades 5413877 (451/s) | lookups 6082 | profiles 5965 | with X 297 | ALERTS 0 | queue 9045 | rechecking 400 | 429s 57 | dropped 0 | top scans 67 | apps none=4028653,axiom=605953,pump=335937,fomo=227447,gmgn=101839
-[2026-10-22 01:43:08] stats 201m: trades 5439892 (451/s) | lookups 6092 | profiles 5974 | with X 297 | ALERTS 0 | queue 9089 | rechecking 400 | 429s 57 | dropped 0 | top scans 67 | apps none=4049191,axiom=608354,pump=337347,fomo=228251,gmgn=102322
 [2026-10-22 01:43:14] 🎁 dev 2VHc4n sent 2.6% of Hg to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 01:43:17] 🎁 dev 2VHc4n sent 1.9% of Hg to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
 [2026-10-22 01:43:48] top scan: 2001 profiles (cutoff 1041 pump followers) in 40s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-22 01:55:32] 🎁 dev 8RGCrd sent 1.3% of Au to 5mYiNZW9T3tqQpKvcqupK1tc82HheaeujSVefbryREDw
 [2026-10-22 01:55:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 39s, 0 new to the list
 [2026-10-22 01:56:08] stats 214m: trades 5755524 (448/s) | lookups 6498 | profiles 6372 | with X 315 | ALERTS 0 | queue 9258 | rechecking 399 | 429s 60 | dropped 0 | top scans 72 | apps none=4294794,axiom=639410,pump=355452,fomo=237360,gmgn=108425
+[2026-10-22 01:57:08] gift watcher: 687 dev wallets watched | 135337 txs | 113 gifts | 661 MB today (~13k credits)
+[2026-10-22 01:57:08] stats 215m: trades 5777121 (448/s) | lookups 6551 | profiles 6424 | with X 319 | ALERTS 0 | queue 9250 | rechecking 400 | 429s 61 | dropped 0 | top scans 72 | apps none=4311298,axiom=641516,pump=356859,fomo=238039,gmgn=108894
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
