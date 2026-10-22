@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:00:08] stats 398m: trades 9556156 (400/s) | lookups 12091 | profiles 11844 | with X 486 | ALERTS 0 | queue 11469 | rechecking 472 | 429s 113 | dropped 0 | top scans 133 | apps none=7174367,axiom=996362,pump=625229,fomo=393810,gmgn=180807
-[2026-10-22 05:01:08] stats 399m: trades 9573769 (400/s) | lookups 12101 | profiles 11854 | with X 486 | ALERTS 0 | queue 11489 | rechecking 471 | 429s 113 | dropped 0 | top scans 133 | apps none=7188021,axiom=997988,pump=626384,fomo=394400,gmgn=181110
 [2026-10-22 05:01:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 [2026-10-22 05:02:08] gift watcher: 606 dev wallets watched | 236605 txs | 220 gifts | 1668 MB today (~33k credits)
 [2026-10-22 05:02:08] stats 400m: trades 9590314 (400/s) | lookups 12121 | profiles 11874 | with X 486 | ALERTS 0 | queue 11518 | rechecking 471 | 429s 113 | dropped 0 | top scans 134 | apps none=7201022,axiom=999125,pump=627498,fomo=395045,gmgn=181453
@@ -309,6 +307,8 @@
 [2026-10-22 05:15:40] 🎁 dev D9gQ6R sent 2.1% of 57p314 to GZVSEAajExLJEvACHHQcujBw7nJq98GWUEZtood9LM9b
 [2026-10-22 05:16:08] stats 414m: trades 9861239 (397/s) | lookups 12570 | profiles 12318 | with X 498 | ALERTS 0 | queue 11653 | rechecking 478 | 429s 117 | dropped 0 | top scans 138 | apps none=7417646,axiom=1020025,pump=642686,fomo=403976,gmgn=186147
 [2026-10-22 05:16:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
+[2026-10-22 05:17:08] gift watcher: 589 dev wallets watched | 247765 txs | 224 gifts | 1730 MB today (~35k credits)
+[2026-10-22 05:17:08] stats 415m: trades 9877953 (397/s) | lookups 12590 | profiles 12338 | with X 498 | ALERTS 0 | queue 11654 | rechecking 480 | 429s 117 | dropped 0 | top scans 139 | apps none=7430399,axiom=1021571,pump=643796,fomo=404562,gmgn=186517
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
