@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 20:09:07] stats 1m: trades 24071 (401/s) | lookups 59 | profiles 0 | with X 0 | ALERTS 0 | queue 615 | rechecking 507 | 429s 0 | dropped 0 | top scans 1 | apps none=17714,axiom=2362,pump=1935,fomo=948,gmgn=556
 [2026-10-22 20:10:07] stats 2m: trades 47984 (400/s) | lookups 119 | profiles 0 | with X 0 | ALERTS 0 | queue 945 | rechecking 507 | 429s 0 | dropped 0 | top scans 1 | apps none=35836,axiom=4786,pump=3636,fomo=1772,gmgn=938
 [2026-10-22 20:11:07] stats 3m: trades 70922 (394/s) | lookups 179 | profiles 0 | with X 0 | ALERTS 0 | queue 1218 | rechecking 506 | 429s 0 | dropped 0 | top scans 1 | apps none=52451,axiom=7238,pump=5640,fomo=2626,gmgn=1426
 [2026-10-22 20:11:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
@@ -309,9 +308,15 @@
 [2026-10-22 20:24:08] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-22 20:24:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-22 20:24:08] feed connected
+[2026-10-22 20:24:38] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
 
 --- callouts ---
 [TAILING] Tailing last 20 lines for [callouts] process (change the value with --lines option)
+/root/.pm2/logs/callouts-error.log last 20 lines:
+/root/.pm2/logs/callouts-out.log last 20 lines:
+[2026-10-22 20:25:04] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-22 20:25:04] feed connected
+
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
 [2026-10-17 23:30:11] WARN websocket closed, reconnecting
