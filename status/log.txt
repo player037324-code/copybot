@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:00:17] 🎁 dev AoGefn sent 2.1% of SHART to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
-[2026-10-22 02:01:08] stats 219m: trades 5857293 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9293 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4369458,axiom=651113,pump=362573,fomo=240878,gmgn=111303
-[2026-10-22 02:01:13] 🎁 dev 7rAuHA sent 1.2% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 [2026-10-22 02:01:15] 🎁 dev 7rAuHA sent 1.5% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 [2026-10-22 02:02:08] gift watcher: 720 dev wallets watched | 138602 txs | 116 gifts | 714 MB today (~14k credits)
 [2026-10-22 02:02:08] stats 220m: trades 5881999 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9316 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4389012,axiom=653382,pump=363896,fomo=241550,gmgn=111843
@@ -309,6 +306,9 @@
 [2026-10-22 02:14:08] stats 232m: trades 6132511 (441/s) | lookups 7080 | profiles 6947 | with X 344 | ALERTS 0 | queue 9412 | rechecking 412 | 429s 65 | dropped 0 | top scans 77 | apps none=4578202,axiom=678474,pump=382446,fomo=250005,gmgn=116553
 [2026-10-22 02:14:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:15:08] stats 233m: trades 6153042 (440/s) | lookups 7109 | profiles 6976 | with X 344 | ALERTS 0 | queue 9445 | rechecking 412 | 429s 65 | dropped 0 | top scans 78 | apps none=4591642,axiom=681980,pump=384155,fomo=250977,gmgn=117024
+[2026-10-22 02:16:08] stats 234m: trades 6175578 (440/s) | lookups 7162 | profiles 7028 | with X 345 | ALERTS 0 | queue 9441 | rechecking 414 | 429s 66 | dropped 0 | top scans 78 | apps none=4607228,axiom=685595,pump=385875,fomo=251924,gmgn=117398
+[2026-10-22 02:16:20] 🎁 dev 3At9KL sent 2.1% of Pilly to 6gzhX4M9Si9EaiX7R8vsfoNFFJad2i9ZnrunyRbE2FmQ
+[2026-10-22 02:17:03] 🎁 dev 3At9KL sent 2.3% of Pilly to 6gzhX4M9Si9EaiX7R8vsfoNFFJad2i9ZnrunyRbE2FmQ
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
