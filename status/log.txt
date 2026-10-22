@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:09:08] stats 227m: trades 6025768 (442/s) | lookups 6944 | profiles 6813 | with X 336 | ALERTS 0 | queue 9365 | rechecking 409 | 429s 63 | dropped 0 | top scans 76 | apps none=4498924,axiom=667139,pump=374306,fomo=246088,gmgn=114563
 [2026-10-22 02:10:08] stats 228m: trades 6046262 (442/s) | lookups 6997 | profiles 6865 | with X 340 | ALERTS 0 | queue 9355 | rechecking 410 | 429s 64 | dropped 0 | top scans 76 | apps none=4513847,axiom=669634,pump=375926,fomo=246779,gmgn=114912
 [2026-10-22 02:10:44] 🎁 dev 6qJNaZ sent 3.5% of Packs to 94QiKdJrFEoYTcXqYFX1HQ3DzgZNDREtYBETm5rj4Bm8
 [2026-10-22 02:11:08] stats 229m: trades 6065737 (441/s) | lookups 6997 | profiles 6865 | with X 340 | ALERTS 0 | queue 9380 | rechecking 410 | 429s 64 | dropped 0 | top scans 76 | apps none=4528604,axiom=671437,pump=377459,fomo=247406,gmgn=115297
@@ -309,6 +308,7 @@
 [2026-10-22 02:23:53] 🎁 dev AzAEWh sent 1.3% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 [2026-10-22 02:23:57] 🎁 dev AzAEWh sent 1.7% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 [2026-10-22 02:24:08] stats 242m: trades 6338762 (437/s) | lookups 7357 | profiles 7221 | with X 350 | ALERTS 0 | queue 9613 | rechecking 416 | 429s 68 | dropped 0 | top scans 81 | apps none=4726360,axiom=702465,pump=398651,fomo=259392,gmgn=120579
+[2026-10-22 02:25:08] stats 243m: trades 6359428 (436/s) | lookups 7409 | profiles 7272 | with X 351 | ALERTS 0 | queue 9620 | rechecking 416 | 429s 69 | dropped 0 | top scans 81 | apps none=4742355,axiom=704025,pump=400142,fomo=260338,gmgn=120933
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
