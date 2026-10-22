@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:44:08] stats 82m: trades 2648819 (538/s) | lookups 2390 | profiles 2346 | with X 148 | ALERTS 0 | queue 6631 | rechecking 320 | 429s 25 | dropped 0 | top scans 27 | apps none=1964299,axiom=307131,pump=161244,fomo=110263,gmgn=49874
-[2026-10-21 23:44:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 1 new to the list
 [2026-10-21 23:45:08] stats 83m: trades 2672337 (537/s) | lookups 2420 | profiles 2376 | with X 149 | ALERTS 0 | queue 6668 | rechecking 321 | 429s 25 | dropped 0 | top scans 28 | apps none=1981879,axiom=309569,pump=163083,fomo=111047,gmgn=50318
 [2026-10-21 23:46:08] stats 84m: trades 2694631 (535/s) | lookups 2473 | profiles 2428 | with X 152 | ALERTS 0 | queue 6672 | rechecking 326 | 429s 26 | dropped 0 | top scans 28 | apps none=1999244,axiom=311303,pump=164776,fomo=111781,gmgn=50682
 [2026-10-21 23:47:08] gift watcher: 933 dev wallets watched | 48074 txs | 40 gifts | 356 MB today (~7k credits)
@@ -309,6 +307,8 @@
 [2026-10-21 23:58:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-21 23:59:08] stats 97m: trades 2978293 (512/s) | lookups 2829 | profiles 2779 | with X 164 | ALERTS 0 | queue 7001 | rechecking 334 | 429s 29 | dropped 0 | top scans 33 | apps none=2220570,axiom=334397,pump=183978,fomo=122106,gmgn=55140
 [2026-10-22 00:00:08] stats 98m: trades 2996983 (510/s) | lookups 2882 | profiles 2831 | with X 166 | ALERTS 0 | queue 7010 | rechecking 335 | 429s 30 | dropped 0 | top scans 33 | apps none=2234337,axiom=336118,pump=185547,fomo=122911,gmgn=55475
+[2026-10-22 00:00:28] 🎁 dev BAoJmp sent 2.9% of CYBERJEW to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 00:00:28] 🎁 dev BAoJmp sent 2.7% of CYBERJEW to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
