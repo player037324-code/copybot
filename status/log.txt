@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:05:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 00:06:08] stats 104m: trades 3128711 (501/s) | lookups 3054 | profiles 2999 | with X 174 | ALERTS 0 | queue 7189 | rechecking 340 | 429s 31 | dropped 0 | top scans 35 | apps none=2329205,axiom=351815,pump=194580,fomo=129376,gmgn=58205
 [2026-10-22 00:07:08] gift watcher: 955 dev wallets watched | 62406 txs | 55 gifts | 40 MB today (~1k credits)
 [2026-10-22 00:07:08] stats 105m: trades 3153926 (501/s) | lookups 3107 | profiles 3049 | with X 179 | ALERTS 0 | queue 7188 | rechecking 340 | 429s 32 | dropped 0 | top scans 35 | apps none=2348761,axiom=354001,pump=196098,fomo=130496,gmgn=58654
 [2026-10-22 00:08:08] stats 106m: trades 3177439 (500/s) | lookups 3107 | profiles 3049 | with X 179 | ALERTS 0 | queue 7241 | rechecking 340 | 429s 32 | dropped 0 | top scans 35 | apps none=2366632,axiom=356196,pump=197554,fomo=131604,gmgn=59039
@@ -309,6 +307,8 @@
 [2026-10-22 00:20:00] 🎁 dev BAoJmp sent 2.1% of CYBERKIMCHI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:20:08] stats 118m: trades 3494888 (494/s) | lookups 3493 | profiles 3429 | with X 195 | ALERTS 0 | queue 7519 | rechecking 346 | 429s 35 | dropped 0 | top scans 39 | apps none=2609207,axiom=386072,pump=214111,fomo=148599,gmgn=64645
 [2026-10-22 00:20:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 00:21:08] stats 119m: trades 3515383 (492/s) | lookups 3523 | profiles 3457 | with X 195 | ALERTS 0 | queue 7535 | rechecking 346 | 429s 35 | dropped 0 | top scans 40 | apps none=2624520,axiom=387735,pump=215432,fomo=149858,gmgn=65023
+[2026-10-22 00:21:16] skip Gdawg_burner @gdawg_trader: 25 X followers
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
