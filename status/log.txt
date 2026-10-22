@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:26:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 01:27:01] 🎁 dev 6PPVnD sent 2.3% of Marathon to CtutmUFJFpDHTrBTDCLwizoJj3m961SCHunnnL69R4To
-[2026-10-22 01:27:08] gift watcher: 700 dev wallets watched | 117694 txs | 97 gifts | 501 MB today (~10k credits)
 [2026-10-22 01:27:08] stats 185m: trades 5012697 (452/s) | lookups 5620 | profiles 5514 | with X 280 | ALERTS 0 | queue 8804 | rechecking 392 | 429s 52 | dropped 0 | top scans 62 | apps none=3720167,axiom=563516,pump=313592,fomo=214870,gmgn=93753
 [2026-10-22 01:28:08] stats 186m: trades 5040267 (452/s) | lookups 5673 | profiles 5566 | with X 287 | ALERTS 0 | queue 8818 | rechecking 392 | 429s 53 | dropped 0 | top scans 62 | apps none=3741874,axiom=565841,pump=315321,fomo=215751,gmgn=94263
 [2026-10-22 01:29:08] stats 187m: trades 5066137 (452/s) | lookups 5673 | profiles 5566 | with X 287 | ALERTS 0 | queue 8864 | rechecking 392 | 429s 53 | dropped 0 | top scans 62 | apps none=3761394,axiom=568713,pump=316887,fomo=216619,gmgn=94878
@@ -309,6 +306,9 @@
 [2026-10-22 01:40:08] stats 198m: trades 5368564 (452/s) | lookups 6009 | profiles 5895 | with X 294 | ALERTS 0 | queue 9046 | rechecking 400 | 429s 56 | dropped 0 | top scans 66 | apps none=3994455,axiom=601169,pump=333317,fomo=225837,gmgn=100766
 [2026-10-22 01:40:11] 🎁 dev 3aL27k sent 1.7% of gold-197 to 3gSH3M5zY5Bd8hZ8Ddo2bkkw5QSxUeUBTAdjEtzsB4mn
 [2026-10-22 01:40:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
+[2026-10-22 01:41:08] stats 199m: trades 5392321 (452/s) | lookups 6029 | profiles 5914 | with X 295 | ALERTS 0 | queue 9046 | rechecking 400 | 429s 56 | dropped 0 | top scans 67 | apps none=4012322,axiom=603580,pump=334706,fomo=226698,gmgn=101357
+[2026-10-22 01:41:45] 🎁 dev FqcQzH sent 3.0% of Vyre to HjeesUxcNBuHGWPorN6u8dBkvCGK7t3gwk7CCt8WuxdN
+[2026-10-22 01:41:59] 🎁 dev 6nU2L7 sent 1.0% of Au to AtrzYKsp1iTonH7VKDx4ZDztStrxdnmp2hALofpbq3yL
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
