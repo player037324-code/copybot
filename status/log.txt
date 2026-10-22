@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:42:08] gift watcher: 826 dev wallets watched | 86013 txs | 69 gifts | 215 MB today (~4k credits)
-[2026-10-22 00:42:08] stats 140m: trades 3971438 (473/s) | lookups 4156 | profiles 4078 | with X 225 | ALERTS 0 | queue 8006 | rechecking 360 | 429s 41 | dropped 0 | top scans 47 | apps none=2972037,axiom=427020,pump=246937,fomo=171686,gmgn=72451
-[2026-10-22 00:42:34] 🎁 dev 8sZCez sent 2.2% of PERRO to Fc2u9c7A6bTtgAwvfdcDxM4kdxaubcPGEwXePimj24aQ
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.7% of PERRO to 5Z8aytx5vFYHqy2WT6zdVJdGfjF4LadHw3ofjuhiBCAw
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 2.0% of PERRO to X6Dr2Fxs1ebqiiTmDLKocDNZPBriLrFNRRjHmy1Pmwy
 [2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.9% of PERRO to 3WngPZ36AvRNnAn2WZNEECVtDaZazyShFLFZezWgvN9k
@@ -309,6 +306,9 @@
 [2026-10-22 00:55:08] stats 153m: trades 4214490 (459/s) | lookups 4595 | profiles 4509 | with X 238 | ALERTS 0 | queue 8229 | rechecking 368 | 429s 45 | dropped 0 | top scans 51 | apps none=3147951,axiom=455510,pump=264842,fomo=182212,gmgn=76586
 [2026-10-22 00:56:08] stats 154m: trades 4231603 (458/s) | lookups 4595 | profiles 4509 | with X 238 | ALERTS 0 | queue 8273 | rechecking 368 | 429s 45 | dropped 0 | top scans 51 | apps none=3160540,axiom=457109,pump=266153,fomo=183074,gmgn=76944
 [2026-10-22 00:56:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 00:57:08] gift watcher: 743 dev wallets watched | 93706 txs | 76 gifts | 299 MB today (~6k credits)
+[2026-10-22 00:57:08] stats 155m: trades 4250154 (457/s) | lookups 4625 | profiles 4539 | with X 239 | ALERTS 0 | queue 8293 | rechecking 370 | 429s 45 | dropped 0 | top scans 52 | apps none=3173957,axiom=459098,pump=267502,fomo=183991,gmgn=77328
+[2026-10-22 00:57:55] 🎁 dev 2VHc4n sent 1.8% of TCAT to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
