@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-s, 0 new to the list
-[2026-10-22 07:50:08] stats 568m: trades 12611743 (370/s) | lookups 17305 | profiles 17005 | with X 621 | ALERTS 0 | queue 13045 | rechecking 520 | 429s 159 | dropped 0 | top scans 190 | apps none=9642766,axiom=1213389,pump=797779,fomo=491550,gmgn=232510
+o=491550,gmgn=232510
 [2026-10-22 07:51:08] stats 569m: trades 12629364 (370/s) | lookups 17358 | profiles 17057 | with X 622 | ALERTS 0 | queue 13035 | rechecking 523 | 429s 160 | dropped 0 | top scans 190 | apps none=9657106,axiom=1214596,pump=798808,fomo=492061,gmgn=232852
 [2026-10-22 07:52:08] gift watcher: 1111 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 07:52:08] stats 570m: trades 12646876 (370/s) | lookups 17368 | profiles 17067 | with X 622 | ALERTS 0 | queue 13055 | rechecking 522 | 429s 160 | dropped 0 | top scans 190 | apps none=9671753,axiom=1215591,pump=799692,fomo=492479,gmgn=233151
@@ -309,6 +308,7 @@ s, 0 new to the list
 [2026-10-22 08:07:08] stats 585m: trades 12941180 (369/s) | lookups 17830 | profiles 17524 | with X 627 | ALERTS 0 | queue 13230 | rechecking 529 | 429s 165 | dropped 0 | top scans 195 | apps none=9918479,axiom=1233258,pump=814196,fomo=499664,gmgn=237865
 [2026-10-22 08:08:08] stats 586m: trades 12959952 (369/s) | lookups 17830 | profiles 17524 | with X 627 | ALERTS 0 | queue 13251 | rechecking 529 | 429s 165 | dropped 0 | top scans 195 | apps none=9934223,axiom=1234383,pump=815122,fomo=500075,gmgn=238178
 [2026-10-22 08:08:37] top scan: 2001 profiles (cutoff 1051 pump followers) in 90s, 0 new to the list
+[2026-10-22 08:09:08] stats 587m: trades 12978459 (368/s) | lookups 17860 | profiles 17554 | with X 627 | ALERTS 0 | queue 13269 | rechecking 529 | 429s 165 | dropped 0 | top scans 196 | apps none=9949967,axiom=1235126,pump=816087,fomo=500557,gmgn=238479
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
