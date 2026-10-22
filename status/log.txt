@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
--10-22 17:17:08] stats 1135m: trades 25399036 (373/s) | lookups 34509 | profiles 34048 | with X 916 | ALERTS 0 | queue 19589 | rechecking 548 | 429s 320 | dropped 0 | top scans 378 | apps none=19839540,axiom=2245757,pump=1519819,fomo=830446,gmgn=486579
-[2026-10-22 17:17:37] top scan: 2001 profiles (cutoff 1093 pump followers) in 89s, 0 new to the list
+-10-22 17:17:37] top scan: 2001 profiles (cutoff 1093 pump followers) in 89s, 0 new to the list
 [2026-10-22 17:18:08] stats 1136m: trades 25431365 (373/s) | lookups 34539 | profiles 34078 | with X 916 | ALERTS 0 | queue 19603 | rechecking 548 | 429s 320 | dropped 0 | top scans 379 | apps none=19865659,axiom=2248393,pump=1521564,fomo=831215,gmgn=487093
 [2026-10-22 17:19:08] stats 1137m: trades 25462953 (373/s) | lookups 34592 | profiles 34130 | with X 916 | ALERTS 0 | queue 19580 | rechecking 547 | 429s 321 | dropped 0 | top scans 379 | apps none=19891334,axiom=2250558,pump=1523442,fomo=831997,gmgn=487615
 [2026-10-22 17:20:08] stats 1138m: trades 25491517 (373/s) | lookups 34592 | profiles 34130 | with X 916 | ALERTS 0 | queue 19595 | rechecking 547 | 429s 321 | dropped 0 | top scans 379 | apps none=19914130,axiom=2252633,pump=1525373,fomo=832770,gmgn=488113
@@ -308,6 +307,7 @@
 [2026-10-22 17:34:08] stats 1152m: trades 25946144 (375/s) | lookups 35011 | profiles 34545 | with X 923 | ALERTS 0 | queue 19751 | rechecking 547 | 429s 325 | dropped 0 | top scans 384 | apps none=20271196,axiom=2292049,pump=1551172,fomo=845438,gmgn=498246
 [2026-10-22 17:34:47] top scan: 2001 profiles (cutoff 1093 pump followers) in 40s, 0 new to the list
 [2026-10-22 17:35:08] stats 1153m: trades 25978001 (376/s) | lookups 35031 | profiles 34565 | with X 923 | ALERTS 0 | queue 19772 | rechecking 547 | 429s 325 | dropped 0 | top scans 385 | apps none=20296223,axiom=2294580,pump=1553028,fomo=846366,gmgn=499127
+[2026-10-22 17:36:08] stats 1154m: trades 26011057 (376/s) | lookups 35084 | profiles 34617 | with X 923 | ALERTS 0 | queue 19795 | rechecking 547 | 429s 326 | dropped 0 | top scans 385 | apps none=20321656,axiom=2297574,pump=1555151,fomo=847288,gmgn=499975
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
