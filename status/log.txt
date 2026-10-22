@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:45:43] 🎁 dev AqsW2q sent 5.0% of zCloud to Dh5mfdLZTDmJLcERCQB4sjKbzjpYvqEFbujZqFo2SNLh
-[2026-10-22 01:46:08] stats 204m: trades 5519364 (451/s) | lookups 6224 | profiles 6104 | with X 311 | ALERTS 0 | queue 9095 | rechecking 399 | 429s 58 | dropped 0 | top scans 68 | apps none=4112913,axiom=614759,pump=341552,fomo=230465,gmgn=103769
-[2026-10-22 01:46:31] 🎁 dev BAoJmp sent 3.2% of Ng to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:46:31] 🎁 dev BAoJmp sent 3.2% of Ng to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:47:08] gift watcher: 701 dev wallets watched | 130416 txs | 110 gifts | 605 MB today (~12k credits)
 [2026-10-22 01:47:08] stats 205m: trades 5543834 (451/s) | lookups 6224 | profiles 6104 | with X 311 | ALERTS 0 | queue 9122 | rechecking 399 | 429s 58 | dropped 0 | top scans 68 | apps none=4131971,axiom=617304,pump=342983,fomo=231148,gmgn=104113
@@ -309,6 +306,9 @@
 [2026-10-22 01:59:08] stats 217m: trades 5817876 (447/s) | lookups 6581 | profiles 6454 | with X 319 | ALERTS 0 | queue 9319 | rechecking 400 | 429s 61 | dropped 0 | top scans 73 | apps none=4340796,axiom=646169,pump=359844,fomo=239571,gmgn=110194
 [2026-10-22 02:00:08] stats 218m: trades 5838135 (446/s) | lookups 6640 | profiles 6513 | with X 320 | ALERTS 0 | queue 9318 | rechecking 401 | 429s 61 | dropped 0 | top scans 73 | apps none=4355390,axiom=648733,pump=361241,fomo=240289,gmgn=110792
 [2026-10-22 02:00:17] 🎁 dev AoGefn sent 2.1% of SHART to 5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij
+[2026-10-22 02:01:08] stats 219m: trades 5857293 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9293 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4369458,axiom=651113,pump=362573,fomo=240878,gmgn=111303
+[2026-10-22 02:01:13] 🎁 dev 7rAuHA sent 1.2% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
+[2026-10-22 02:01:15] 🎁 dev 7rAuHA sent 1.5% of gldfish to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
