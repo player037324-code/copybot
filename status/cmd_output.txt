@@ -1,20 +1,3 @@
-
-unifiedCoinCreationEvent.processed:
-{"slot_index_id":"00045973995200086500000003","tx":"5zCZ8rJwa6JpjB5RQFetLQ5y7bFRBoesSsTCe3XQLXtzVbRN2i1siSTU7vPHv4WnJn2SnSnN98AbmQYtGeatw8Ti","mint":"4ERAHcqALNztXvx7JMQu38BHxmd64pbcpxMA53nbpump","name":"FTFS","symbol":"FTFS","description":null,"metadata_uri":"https://ipfs.io/ipfs/bafkreib2eepsnparc3raeouqkevbpieax3imjgiian2h3e2e5nmhkndez4","bonding_curve":"4syfUTzN6cdHU6QEgYimhqZEDtYVVj8xGQ738y1yqz1k","creator":"FuFnzjxKK8uBxEEeMsXon5EsjKv3UBGReVgFkAY5Bnup","created_timestamp":"2026-10-21T19:02:04+00:00","complete":false,"supply":1000000000000000,"show_name":true,"market_cap":"27.958993476234855545200372787","initialized":true,"is_banned":false,"program":"pump","platform":null,"virtual_sol_reserves":30000000000,"virtual_quote_reserves":30000000000,"virtual_token_reserves":1073000000000000,"real_sol_reserves":null,"real_quote_reserves":null,"real_token_reserves":793100000000000,"token_program":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","mayhem_state":null,"game_mode":null,"signer":"FuFnzjxKK8uBxEEeMsXon5EsjKv3UBGReVgFkAY5Bnup","quote_mint":"11111111111111111111111111111111","base_decimals":6,"quote_decimals":9,"derived_pool":"7NiYiaBg1pctNv7187Z8JwrecPrMgQy6EPsAhrcwud9H","is_cashback_enabled":false,"quote_token_program":null,"market_cap_usd":null,"is_holder_reward":false,"transfer_fee_bps":0,"transfer_hook_program":"","depth":0}
-
-unifiedCoinCreationEvent.processed:
-{"slot_index_id":"00045973996700028100000002","tx":"RStJEFMEAjo7WtAEVAuMjw8v93bqnYR9xC3eeRNRFiFhSbnZoJkWnU85CmF5va6XCdvwxutcXkiHBgaL1zKHCpR","mint":"4wrMUhsq21p8SaVrjL6YjLWaBRZ94zNAVKjWcLBdpump","name":"The Yellow Bull","symbol":"Kimchi","description":null,"metadata_uri":"https://ipfs.io/ipfs/QmaVdGebBHp64KFBABdyyHEFEzo9gQ6u3MLL1sTiX8CW5p","bonding_curve":"5Gpf87Ho4Gh6NGxSaNVgDxXggepLDdudFDMs2Qf9M39D","creator":"He1JGT3XXtYGiaXDfNseVeKH552ja3f32vUM1NBAU3H","created_timestamp":"2026-10-21T19:02:07+00:00","complete":false,"supply":1000000000000000,"show_name":true,"market_cap":"27.958993476234855545200372787","initialized":true,"is_banned":false,"program":"pump","platform":null,"virtual_sol_reserves":30000000000,"virtual_quote_reserves":30000000000,"virtual_token_reserves":1073000000000000,"real_sol_reserves":null,"real_quote_reserves":null,"real_token_reserves":793100000000000,"token_program":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","mayhem_state":"enabled","game_mode":null,"signer":"He1JGT3XXtYGiaXDfNseVeKH552ja3f32vUM1NBAU3H","quote_mint":"11111111111111111111111111111111","base_decimals":6,"quote_decimals":9,"derived_pool":"9Sxfu3BkTHuqLySfRMbFfxwqu9mw7hpfXFzefohaLDjc","is_cashback_enabled":false,"quote_token_program":null,"market_cap_usd":null,"is_holder_reward":false,"transfer_fee_bps":0,"transfer_hook_program":"","depth":0}
-
-unifiedCoinCreationEvent.processed:
-{"slot_index_id":"00045973997300065800000002","tx":"4LrqQAjR28xX942Nfssj1vcwDAFfdxWruoqY4Tx95UEsCa2dKLC64mniGe7XwJUYWs2VHizHjyh7k325PzDz6W97","mint":"BfDtZ79jV77FfGwVnAtGAUKxRiAKpm8Rs3ZdZ8Uipump","name":"grokbot","symbol":"sol","description":null,"metadata_uri":"https://ipfs.io/ipfs/QmcmyuALjx3ZsXrhU8L7o4ZKDpNCYWLMsGdjUDjeAg66eN","bonding_curve":"5KP88oBte1TiXovRgDrhXxWpPrHrYaLgU27KvxdkHeum","creator":"AWkpMPQ3uahR8BznTnmZozfjC2YBAipTbFDTvzQ9uDTa","created_timestamp":"2026-10-21T19:02:09+00:00","complete":false,"supply":1000000000000000,"show_name":true,"market_cap":"27.958993476234855545200372787","initialized":true,"is_banned":false,"program":"pump","platform":null,"virtual_sol_reserves":30000000000,"virtual_quote_reserves":30000000000,"virtual_token_reserves":1073000000000000,"real_sol_reserves":null,"real_quote_reserves":null,"real_token_reserves":793100000000000,"token_program":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","mayhem_state":"enabled","game_mode":null,"signer":"AWkpMPQ3uahR8BznTnmZozfjC2YBAipTbFDTvzQ9uDTa","quote_mint":"11111111111111111111111111111111","base_decimals":6,"quote_decimals":9,"derived_pool":"7fkMYENkC1APrsSCLBUD1fvPG3JjzStBhBWC7QBsPDFh","is_cashback_enabled":false,"quote_token_program":null,"market_cap_usd":null,"is_holder_reward":false,"transfer_fee_bps":0,"transfer_hook_program":"","depth":0}
-
-23 coins in 40s; fields: {"slot_index_id":23,"tx":23,"mint":23,"name":23,"symbol":23,"description":23,"metadata_uri":23,"bonding_curve":23,"creator":23,"created_timestamp":23,"complete":23,"supply":23,"show_name":23,"market_cap":23,"initialized":23,"is_banned":23,"program":23,"platform":23,"virtual_sol_reserves":23,"virtual_quote_reserves":23,"virtual_token_reserves":23,"real_sol_reserves":23,"real_quote_reserves":23,"real_token_reserves":23,"token_program":23,"mayhem_state":23,"game_mode":23,"signer":23,"quote_mint":23,"base_decimals":23,"quote_decimals":23,"derived_pool":23,"is_cashback_enabled":23,"quote_token_program":23,"market_cap_usd":23,"is_holder_reward":23,"transfer_fee_bps":23,"transfer_hook_program":23,"depth":23}
-=== cmd 89 @ 2026-10-21T19:24:02Z ===
-> set PF_GIFT_HOURS=1
-added PF_GIFT_HOURS=1
-> pfwatch-start
-Use --update-env to update environment variables
-[PM2] Applying action restartProcessId on app [pfwatch](ids: [ 4 ])
 [PM2] [pfwatch](4) ✓
 ┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
 │ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
@@ -398,3 +381,20 @@ host metrics | cpu: 8.5% | ram usage: 38.4% | enp1s0: ⇓ 1.375mb/s ⇑ 0.026mb/
 [2026-10-22 20:32:05] WARN photo failed: {"ok":false,"error_code":400,"description":"Bad Request: failed to get HTTP URL content"}
 [2026-10-22 20:32:06] WARN photo failed: {"ok":false,"error_code":400,"description":"Bad Request: failed to get HTTP URL content"}
 [2026-10-22 20:32:06] live test alert sent
+=== cmd 97 @ 2026-10-22T20:34:02Z ===
+> callouts-livetest
+[2026-10-22 20:34:02] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-22 20:34:03] feed connected
+[2026-10-22 20:34:03] 📣 CALLOUT by TheGOATTTTT: $kimchi B1Y2fJW8rtirrBuUcda14pSaeiASHaGqTxQdxU8Mpump (position)
+[2026-10-22 20:34:04] live test alert sent
+> callouts-log
+[TAILING] Tailing last 40 lines for [callouts] process (change the value with --lines option)
+/root/.pm2/logs/callouts-error.log last 40 lines:
+/root/.pm2/logs/callouts-out.log last 40 lines:
+[2026-10-22 20:25:04] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-22 20:25:04] feed connected
+[2026-10-22 20:30:04] stats 5m: 217 callouts seen on pump.fun | 0 from watchlist
+[2026-10-22 20:30:07] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-22 20:30:07] feed connected
+[2026-10-22 20:33:06] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-22 20:33:06] feed connected
