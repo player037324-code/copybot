@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:48:08] stats 446m: trades 10366446 (387/s) | lookups 13474 | profiles 13212 | with X 522 | ALERTS 0 | queue 12057 | rechecking 485 | 429s 127 | dropped 0 | top scans 149 | apps none=7814331,axiom=1059708,pump=675569,fomo=422500,gmgn=195700
 [2026-10-22 05:49:08] stats 447m: trades 10383530 (387/s) | lookups 13527 | profiles 13264 | with X 522 | ALERTS 0 | queue 12053 | rechecking 489 | 429s 128 | dropped 0 | top scans 149 | apps none=7827256,axiom=1061231,pump=676790,fomo=423175,gmgn=196058
 [2026-10-22 05:49:27] 🎁 dev 3Fzjh5 sent 3.2% of BUCK to BCnuCeCaZjke1zheXUujxijVwvidHobwYN79FaxtKZvA
 [2026-10-22 05:50:08] stats 448m: trades 10400798 (387/s) | lookups 13527 | profiles 13264 | with X 522 | ALERTS 0 | queue 12078 | rechecking 489 | 429s 128 | dropped 0 | top scans 149 | apps none=7840226,axiom=1062900,pump=677958,fomo=423979,gmgn=196410
@@ -309,6 +308,7 @@
 [2026-10-22 06:05:08] stats 463m: trades 10646020 (383/s) | lookups 14022 | profiles 13755 | with X 533 | ALERTS 0 | queue 12203 | rechecking 488 | 429s 131 | dropped 0 | top scans 155 | apps none=8032767,axiom=1082021,pump=693504,fomo=433344,gmgn=200853
 [2026-10-22 06:05:14] 🎁 dev 3Fzjh5 sent 1.5% of JUMPDOG to BCnuCeCaZjke1zheXUujxijVwvidHobwYN79FaxtKZvA
 [2026-10-22 06:05:40] 🎁 dev 5bcCCc sent 1.0% of AB to 2c5ZDkdReTL7AhTxPnc4BCNP6se5AoCnHQ61bt1bTgRh
+[2026-10-22 06:06:08] stats 464m: trades 10664306 (383/s) | lookups 14075 | profiles 13806 | with X 533 | ALERTS 0 | queue 12196 | rechecking 485 | 429s 132 | dropped 0 | top scans 155 | apps none=8047631,axiom=1083179,pump=694564,fomo=433926,gmgn=201165
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
