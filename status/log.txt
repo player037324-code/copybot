@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:51:08] stats 209m: trades 5636924 (450/s) | lookups 6336 | profiles 6213 | with X 313 | ALERTS 0 | queue 9196 | rechecking 399 | 429s 59 | dropped 0 | top scans 70 | apps none=4202623,axiom=627636,pump=348589,fomo=233678,gmgn=106368
 [2026-10-22 01:52:08] gift watcher: 698 dev wallets watched | 133354 txs | 110 gifts | 645 MB today (~13k credits)
 [2026-10-22 01:52:08] stats 210m: trades 5657771 (449/s) | lookups 6389 | profiles 6265 | with X 314 | ALERTS 0 | queue 9184 | rechecking 399 | 429s 60 | dropped 0 | top scans 70 | apps none=4218431,axiom=629775,pump=349963,fomo=234445,gmgn=106742
 [2026-10-22 01:52:14] 🎁 dev BAoJmp sent 1.7% of AU to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
@@ -309,6 +308,7 @@
 [2026-10-22 02:04:08] stats 222m: trades 5922677 (445/s) | lookups 6782 | profiles 6654 | with X 327 | ALERTS 0 | queue 9337 | rechecking 405 | 429s 62 | dropped 0 | top scans 74 | apps none=4419420,axiom=657723,pump=366873,fomo=243026,gmgn=112553
 [2026-10-22 02:04:25] 🎁 dev CkSAPd sent 2.4% of ZIZAI to DhnpBBvgjyUzE1BcE1bwGsSPnQzao4DVDKX314rHdywp
 [2026-10-22 02:04:47] top scan: 2001 profiles (cutoff 1041 pump followers) in 39s, 0 new to the list
+[2026-10-22 02:05:08] stats 223m: trades 5945781 (444/s) | lookups 6802 | profiles 6673 | with X 328 | ALERTS 0 | queue 9334 | rechecking 406 | 429s 62 | dropped 0 | top scans 75 | apps none=4437795,axiom=659469,pump=368477,fomo=243625,gmgn=113035
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
