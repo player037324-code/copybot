@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:16:08] stats 174m: trades 4746706 (455/s) | lookups 5286 | profiles 5187 | with X 266 | ALERTS 0 | queue 8593 | rechecking 392 | 429s 50 | dropped 0 | top scans 58 | apps none=3521676,axiom=535513,pump=296852,fomo=203716,gmgn=87546
-[2026-10-22 01:16:28] 🎁 dev BAoJmp sent 2.6% of Hg to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
-[2026-10-22 01:16:28] 🎁 dev BAoJmp sent 3.2% of Hg to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:17:08] gift watcher: 716 dev wallets watched | 108231 txs | 92 gifts | 455 MB today (~9k credits)
 [2026-10-22 01:17:08] stats 175m: trades 4769345 (454/s) | lookups 5286 | profiles 5187 | with X 266 | ALERTS 0 | queue 8630 | rechecking 392 | 429s 50 | dropped 0 | top scans 58 | apps none=3537882,axiom=538277,pump=298502,fomo=204802,gmgn=87985
 [2026-10-22 01:17:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
@@ -309,6 +306,9 @@
 [2026-10-22 01:29:08] stats 187m: trades 5066137 (452/s) | lookups 5673 | profiles 5566 | with X 287 | ALERTS 0 | queue 8864 | rechecking 392 | 429s 53 | dropped 0 | top scans 62 | apps none=3761394,axiom=568713,pump=316887,fomo=216619,gmgn=94878
 [2026-10-22 01:29:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 01:30:08] stats 188m: trades 5090161 (451/s) | lookups 5702 | profiles 5595 | with X 287 | ALERTS 0 | queue 8886 | rechecking 392 | 429s 53 | dropped 0 | top scans 63 | apps none=3779961,axiom=571001,pump=318395,fomo=217324,gmgn=95394
+[2026-10-22 01:31:08] stats 189m: trades 5118527 (451/s) | lookups 5755 | profiles 5647 | with X 291 | ALERTS 0 | queue 8868 | rechecking 394 | 429s 54 | dropped 0 | top scans 63 | apps none=3801407,axiom=574763,pump=319851,fomo=218149,gmgn=95793
+[2026-10-22 01:31:43] 🎁 dev BAoJmp sent 3.1% of fAuInu to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 01:31:43] 🎁 dev BAoJmp sent 2.7% of fAuInu to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
