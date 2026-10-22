@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
--10-22 16:32:08] stats 1090m: trades 24042550 (368/s) | lookups 33102 | profiles 32653 | with X 883 | ALERTS 0 | queue 19106 | rechecking 566 | 429s 308 | dropped 0 | top scans 363 | apps none=18765672,axiom=2123335,pump=1446753,fomo=796350,gmgn=460890
-[2026-10-22 16:32:37] top scan: 2001 profiles (cutoff 1093 pump followers) in 90s, 1 new to the list
+-10-22 16:32:37] top scan: 2001 profiles (cutoff 1093 pump followers) in 90s, 1 new to the list
 [2026-10-22 16:33:08] stats 1091m: trades 24065777 (368/s) | lookups 33132 | profiles 32683 | with X 883 | ALERTS 0 | queue 19129 | rechecking 567 | 429s 308 | dropped 0 | top scans 364 | apps none=18784142,axiom=2125153,pump=1448184,fomo=797083,gmgn=461283
 [2026-10-22 16:34:08] stats 1092m: trades 24090563 (368/s) | lookups 33192 | profiles 32743 | with X 883 | ALERTS 0 | queue 19149 | rechecking 566 | 429s 308 | dropped 0 | top scans 364 | apps none=18804009,axiom=2126855,pump=1449826,fomo=797797,gmgn=461711
 [2026-10-22 16:34:48] top scan: 2001 profiles (cutoff 1093 pump followers) in 40s, 0 new to the list
@@ -308,6 +307,7 @@
 [2026-10-22 16:49:08] stats 1107m: trades 24525822 (369/s) | lookups 33661 | profiles 33208 | with X 896 | ALERTS 0 | queue 19251 | rechecking 567 | 429s 312 | dropped 0 | top scans 369 | apps none=19136724,axiom=2177136,pump=1473645,fomo=807474,gmgn=469714
 [2026-10-22 16:49:48] top scan: 2001 profiles (cutoff 1093 pump followers) in 40s, 0 new to the list
 [2026-10-22 16:50:08] stats 1108m: trades 24548717 (369/s) | lookups 33681 | profiles 33228 | with X 896 | ALERTS 0 | queue 19255 | rechecking 565 | 429s 312 | dropped 0 | top scans 370 | apps none=19154253,axiom=2179538,pump=1474910,fomo=808122,gmgn=470161
+[2026-10-22 16:51:08] stats 1109m: trades 24575505 (369/s) | lookups 33733 | profiles 33279 | with X 896 | ALERTS 0 | queue 19246 | rechecking 565 | 429s 313 | dropped 0 | top scans 370 | apps none=19175184,axiom=2182090,pump=1476337,fomo=808888,gmgn=470646
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
