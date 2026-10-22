@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 03:50:08] stats 328m: trades 8203872 (417/s) | lookups 9945 | profiles 9738 | with X 430 | ALERTS 0 | queue 10753 | rechecking 448 | 429s 93 | dropped 0 | top scans 109 | apps none=6142653,axiom=871552,pump=531746,fomo=340475,gmgn=155319
-[2026-10-22 03:50:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 03:51:08] stats 329m: trades 8225121 (417/s) | lookups 9975 | profiles 9768 | with X 431 | ALERTS 0 | queue 10767 | rechecking 448 | 429s 93 | dropped 0 | top scans 110 | apps none=6158677,axiom=873543,pump=533331,fomo=341392,gmgn=155689
 [2026-10-22 03:52:00] 🎁 dev HgAhL3 sent 1.3% of Hackoor to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 03:52:08] gift watcher: 673 dev wallets watched | 200535 txs | 184 gifts | 1350 MB today (~27k credits)
@@ -309,6 +307,8 @@
 [2026-10-22 04:03:08] stats 341m: trades 8492327 (415/s) | lookups 10361 | profiles 10149 | with X 443 | ALERTS 0 | queue 10912 | rechecking 454 | 429s 96 | dropped 0 | top scans 114 | apps none=6371018,axiom=894655,pump=549700,fomo=350743,gmgn=160127
 [2026-10-22 04:03:10] 🎁 dev 4Nj5cg sent 3.4% of Scarlett to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
 [2026-10-22 04:04:08] stats 342m: trades 8512891 (415/s) | lookups 10414 | profiles 10200 | with X 444 | ALERTS 0 | queue 10913 | rechecking 456 | 429s 97 | dropped 0 | top scans 114 | apps none=6387529,axiom=896207,pump=550979,fomo=351383,gmgn=160451
+[2026-10-22 04:05:08] stats 343m: trades 8533948 (415/s) | lookups 10414 | profiles 10200 | with X 444 | ALERTS 0 | queue 10933 | rechecking 456 | 429s 97 | dropped 0 | top scans 114 | apps none=6404012,axiom=898093,pump=552358,fomo=352087,gmgn=160783
+[2026-10-22 04:05:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
