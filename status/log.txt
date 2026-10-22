@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-:08] gift watcher: 2364 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
-[2026-10-22 11:12:08] stats 770m: trades 16374544 (354/s) | lookups 23457 | profiles 23100 | with X 726 | ALERTS 0 | queue 14935 | rechecking 583 | 429s 216 | dropped 0 | top scans 257 | apps none=12707683,axiom=1492923,pump=1001940,fomo=581769,gmgn=297214
+583 | 429s 216 | dropped 0 | top scans 257 | apps none=12707683,axiom=1492923,pump=1001940,fomo=581769,gmgn=297214
 [2026-10-22 11:13:08] stats 771m: trades 16393248 (354/s) | lookups 23510 | profiles 23152 | with X 727 | ALERTS 0 | queue 14957 | rechecking 582 | 429s 217 | dropped 0 | top scans 257 | apps none=12721784,axiom=1494757,pump=1003175,fomo=582507,gmgn=297590
 [2026-10-22 11:14:08] stats 772m: trades 16413402 (354/s) | lookups 23510 | profiles 23152 | with X 727 | ALERTS 0 | queue 14982 | rechecking 582 | 429s 217 | dropped 0 | top scans 257 | apps none=12737649,axiom=1496239,pump=1004550,fomo=583225,gmgn=297972
 [2026-10-22 11:14:38] top scan: 2001 profiles (cutoff 1057 pump followers) in 90s, 0 new to the list
@@ -308,6 +307,7 @@
 [2026-10-22 11:28:47] top scan: 2001 profiles (cutoff 1057 pump followers) in 40s, 0 new to the list
 [2026-10-22 11:29:08] stats 787m: trades 16692472 (354/s) | lookups 23949 | profiles 23587 | with X 740 | ALERTS 0 | queue 15108 | rechecking 581 | 429s 221 | dropped 0 | top scans 263 | apps none=12965139,axiom=1514973,pump=1020714,fomo=590787,gmgn=302453
 [2026-10-22 11:30:08] stats 788m: trades 16709119 (353/s) | lookups 24009 | profiles 23647 | with X 740 | ALERTS 0 | queue 15122 | rechecking 580 | 429s 221 | dropped 0 | top scans 263 | apps none=12978250,axiom=1516263,pump=1021873,fomo=591233,gmgn=302723
+[2026-10-22 11:31:08] stats 789m: trades 16726366 (353/s) | lookups 24061 | profiles 23698 | with X 741 | ALERTS 0 | queue 15112 | rechecking 581 | 429s 222 | dropped 0 | top scans 263 | apps none=12991521,axiom=1517841,pump=1023172,fomo=591662,gmgn=302976
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
