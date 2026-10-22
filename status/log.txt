@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:56:38] 🎁 dev HgAhL3 sent 1.3% of Coin to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
-[2026-10-22 02:57:08] gift watcher: 713 dev wallets watched | 172182 txs | 164 gifts | 1087 MB today (~22k credits)
-[2026-10-22 02:57:08] stats 275m: trades 7039480 (427/s) | lookups 8370 | profiles 8190 | with X 379 | ALERTS 0 | queue 10135 | rechecking 422 | 429s 78 | dropped 0 | top scans 92 | apps none=5251521,axiom=767969,pump=451435,fomo=290938,gmgn=133359
 [2026-10-22 02:58:08] stats 276m: trades 7058824 (426/s) | lookups 8380 | profiles 8200 | with X 380 | ALERTS 0 | queue 10165 | rechecking 423 | 429s 78 | dropped 0 | top scans 92 | apps none=5265384,axiom=769974,pump=453313,fomo=291823,gmgn=133778
 [2026-10-22 02:58:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 1 new to the list
 [2026-10-22 02:59:08] stats 277m: trades 7078603 (426/s) | lookups 8400 | profiles 8220 | with X 381 | ALERTS 0 | queue 10166 | rechecking 425 | 429s 78 | dropped 0 | top scans 93 | apps none=5279457,axiom=772655,pump=454932,fomo=292638,gmgn=134074
@@ -309,6 +306,9 @@
 [2026-10-22 03:10:08] stats 288m: trades 7314725 (423/s) | lookups 8760 | profiles 8576 | with X 393 | ALERTS 0 | queue 10262 | rechecking 434 | 429s 82 | dropped 0 | top scans 96 | apps none=5461945,axiom=792289,pump=471912,fomo=302514,gmgn=137793
 [2026-10-22 03:11:08] stats 289m: trades 7335741 (423/s) | lookups 8760 | profiles 8576 | with X 393 | ALERTS 0 | queue 10286 | rechecking 434 | 429s 82 | dropped 0 | top scans 96 | apps none=5478947,axiom=793528,pump=473426,fomo=303273,gmgn=138082
 [2026-10-22 03:11:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 03:12:08] gift watcher: 710 dev wallets watched | 184125 txs | 170 gifts | 1191 MB today (~24k credits)
+[2026-10-22 03:12:08] stats 290m: trades 7360508 (423/s) | lookups 8789 | profiles 8603 | with X 394 | ALERTS 0 | queue 10316 | rechecking 434 | 429s 82 | dropped 0 | top scans 97 | apps none=5499378,axiom=795011,pump=474843,fomo=304155,gmgn=138356
+[2026-10-22 03:12:34] 🎁 dev HgAhL3 sent 1.3% of Nekinu to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
