@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:12:08] gift watcher: 725 dev wallets watched | 105745 txs | 87 gifts | 433 MB today (~9k credits)
-[2026-10-22 01:12:08] stats 170m: trades 4648408 (456/s) | lookups 5144 | profiles 5048 | with X 261 | ALERTS 0 | queue 8552 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3451498,axiom=522517,pump=290484,fomo=199402,gmgn=85183
-[2026-10-22 01:13:08] stats 171m: trades 4675818 (456/s) | lookups 5154 | profiles 5058 | with X 261 | ALERTS 0 | queue 8583 | rechecking 391 | 429s 49 | dropped 0 | top scans 57 | apps none=3469394,axiom=527454,pump=292227,fomo=200857,gmgn=85889
 [2026-10-22 01:13:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 1 new to the list
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 5.6% of MCT to 6V5AaaMH2hMSRUCXkPwWEgDzGYGVjVDvvdq8urVRZaae
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.9% of MCT to HkipUGMN7zBwCb74wYbM66r55DvvhmCAfbxoRCgA9bDn
@@ -309,6 +306,9 @@
 [2026-10-22 01:24:01] 🎁 dev 8PftG1 sent 4.0% of sendr to kBC2F6Hs8wuVVDM2KaUXTMv2yxSZi5WuohwyLZAzDVE
 [2026-10-22 01:24:08] stats 182m: trades 4940129 (452/s) | lookups 5537 | profiles 5433 | with X 279 | ALERTS 0 | queue 8720 | rechecking 391 | 429s 51 | dropped 0 | top scans 61 | apps none=3666185,axiom=555968,pump=308848,fomo=211983,gmgn=91864
 [2026-10-22 01:25:08] stats 183m: trades 4966893 (452/s) | lookups 5590 | profiles 5484 | with X 280 | ALERTS 0 | queue 8723 | rechecking 391 | 429s 52 | dropped 0 | top scans 61 | apps none=3686239,axiom=558829,pump=310466,fomo=212916,gmgn=92599
+[2026-10-22 01:26:08] stats 184m: trades 4991217 (452/s) | lookups 5590 | profiles 5484 | with X 280 | ALERTS 0 | queue 8760 | rechecking 391 | 429s 52 | dropped 0 | top scans 61 | apps none=3704331,axiom=561434,pump=311850,fomo=213987,gmgn=93274
+[2026-10-22 01:26:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
+[2026-10-22 01:27:01] 🎁 dev 6PPVnD sent 2.3% of Marathon to CtutmUFJFpDHTrBTDCLwizoJj3m961SCHunnnL69R4To
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
