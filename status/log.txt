@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:11:40] 🎁 dev 2StnHj sent 5.3% of UBER to 7sq9NtRguQXbEHZpVaZobWJsTSfeZsWsb6LAvNdDRqnM
-[2026-10-22 00:12:08] gift watcher: 921 dev wallets watched | 65244 txs | 56 gifts | 73 MB today (~1k credits)
 [2026-10-22 00:12:08] stats 110m: trades 3279798 (497/s) | lookups 3218 | profiles 3159 | with X 180 | ALERTS 0 | queue 7389 | rechecking 337 | 429s 33 | dropped 0 | top scans 37 | apps none=2445501,axiom=365679,pump=203111,fomo=136622,gmgn=60780
 [2026-10-22 00:13:08] stats 111m: trades 3307092 (497/s) | lookups 3278 | profiles 3219 | with X 185 | ALERTS 0 | queue 7378 | rechecking 339 | 429s 33 | dropped 0 | top scans 37 | apps none=2467001,axiom=368066,pump=204379,fomo=137895,gmgn=61186
 [2026-10-22 00:13:30] 🎁 dev BAoJmp sent 3.2% of LARPMAXXING to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
@@ -309,6 +307,8 @@
 [2026-10-22 00:24:32] 🎁 dev BAoJmp sent 3.0% of Zuckerberg to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:24:32] 🎁 dev BAoJmp sent 2.6% of Zuckerberg to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:25:08] stats 123m: trades 3597243 (487/s) | lookups 3657 | profiles 3587 | with X 208 | ALERTS 0 | queue 7609 | rechecking 350 | 429s 37 | dropped 0 | top scans 41 | apps none=2686358,axiom=395259,pump=221093,fomo=153785,gmgn=66430
+[2026-10-22 00:26:08] stats 124m: trades 3616716 (486/s) | lookups 3657 | profiles 3587 | with X 208 | ALERTS 0 | queue 7648 | rechecking 350 | 429s 37 | dropped 0 | top scans 41 | apps none=2701605,axiom=396473,pump=222532,fomo=154781,gmgn=66671
+[2026-10-22 00:26:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
