@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:04:50] 🎁 dev 3H4GRC sent 1.7% of MERCURY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
-[2026-10-22 01:05:08] stats 163m: trades 4420111 (452/s) | lookups 4899 | profiles 4808 | with X 255 | ALERTS 0 | queue 8409 | rechecking 383 | 429s 47 | dropped 0 | top scans 54 | apps none=3303627,axiom=474266,pump=279535,fomo=190748,gmgn=79921
 [2026-10-22 01:05:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 01:06:08] stats 164m: trades 4453825 (453/s) | lookups 4929 | profiles 4837 | with X 255 | ALERTS 0 | queue 8448 | rechecking 383 | 429s 47 | dropped 0 | top scans 55 | apps none=3324831,axiom=482286,pump=281151,fomo=191650,gmgn=80711
 [2026-10-22 01:07:08] gift watcher: 727 dev wallets watched | 101652 txs | 85 gifts | 394 MB today (~8k credits)
@@ -309,6 +307,8 @@
 [2026-10-22 01:17:08] stats 175m: trades 4769345 (454/s) | lookups 5286 | profiles 5187 | with X 266 | ALERTS 0 | queue 8630 | rechecking 392 | 429s 50 | dropped 0 | top scans 58 | apps none=3537882,axiom=538277,pump=298502,fomo=204802,gmgn=87985
 [2026-10-22 01:17:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
 [2026-10-22 01:18:08] stats 176m: trades 4791872 (454/s) | lookups 5316 | profiles 5217 | with X 266 | ALERTS 0 | queue 8675 | rechecking 392 | 429s 50 | dropped 0 | top scans 59 | apps none=3554260,axiom=540716,pump=300071,fomo=205876,gmgn=88545
+[2026-10-22 01:19:08] stats 177m: trades 4816425 (454/s) | lookups 5375 | profiles 5274 | with X 271 | ALERTS 0 | queue 8669 | rechecking 391 | 429s 50 | dropped 0 | top scans 59 | apps none=3571665,axiom=543658,pump=301673,fomo=207205,gmgn=89239
+[2026-10-22 01:19:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
