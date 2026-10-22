@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:48:08] stats 206m: trades 5566244 (450/s) | lookups 6254 | profiles 6132 | with X 311 | ALERTS 0 | queue 9149 | rechecking 398 | 429s 58 | dropped 0 | top scans 69 | apps none=4149156,axiom=619284,pump=344534,fomo=231859,gmgn=104703
 [2026-10-22 01:49:08] stats 207m: trades 5588099 (450/s) | lookups 6307 | profiles 6184 | with X 313 | ALERTS 0 | queue 9135 | rechecking 399 | 429s 59 | dropped 0 | top scans 69 | apps none=4165953,axiom=621538,pump=345843,fomo=232389,gmgn=105314
 [2026-10-22 01:50:08] stats 208m: trades 5616027 (450/s) | lookups 6307 | profiles 6184 | with X 313 | ALERTS 0 | queue 9164 | rechecking 399 | 429s 59 | dropped 0 | top scans 69 | apps none=4187557,axiom=624746,pump=347166,fomo=233025,gmgn=105934
 [2026-10-22 01:50:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
@@ -309,6 +308,7 @@
 [2026-10-22 02:02:08] stats 220m: trades 5881999 (446/s) | lookups 6693 | profiles 6565 | with X 325 | ALERTS 0 | queue 9316 | rechecking 405 | 429s 62 | dropped 0 | top scans 73 | apps none=4389012,axiom=653382,pump=363896,fomo=241550,gmgn=111843
 [2026-10-22 02:02:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:02:43] 🎁 dev 2zgcai sent 4.1% of ZERODAY to DGb1ouFKY5364YATwYozJPMy226jYpKVZh787ore3GeK
+[2026-10-22 02:03:08] stats 221m: trades 5902513 (445/s) | lookups 6723 | profiles 6595 | with X 325 | ALERTS 0 | queue 9352 | rechecking 404 | 429s 62 | dropped 0 | top scans 74 | apps none=4403908,axiom=655883,pump=365410,fomo=242347,gmgn=112245
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
