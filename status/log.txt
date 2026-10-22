@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:29:08] stats 187m: trades 5066137 (452/s) | lookups 5673 | profiles 5566 | with X 287 | ALERTS 0 | queue 8864 | rechecking 392 | 429s 53 | dropped 0 | top scans 62 | apps none=3761394,axiom=568713,pump=316887,fomo=216619,gmgn=94878
-[2026-10-22 01:29:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 01:30:08] stats 188m: trades 5090161 (451/s) | lookups 5702 | profiles 5595 | with X 287 | ALERTS 0 | queue 8886 | rechecking 392 | 429s 53 | dropped 0 | top scans 63 | apps none=3779961,axiom=571001,pump=318395,fomo=217324,gmgn=95394
-[2026-10-22 01:31:08] stats 189m: trades 5118527 (451/s) | lookups 5755 | profiles 5647 | with X 291 | ALERTS 0 | queue 8868 | rechecking 394 | 429s 54 | dropped 0 | top scans 63 | apps none=3801407,axiom=574763,pump=319851,fomo=218149,gmgn=95793
 [2026-10-22 01:31:43] 🎁 dev BAoJmp sent 3.1% of fAuInu to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:31:43] 🎁 dev BAoJmp sent 2.7% of fAuInu to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:32:08] gift watcher: 707 dev wallets watched | 120788 txs | 99 gifts | 536 MB today (~11k credits)
@@ -309,6 +305,10 @@
 [2026-10-22 01:41:59] 🎁 dev 6nU2L7 sent 1.0% of Au to AtrzYKsp1iTonH7VKDx4ZDztStrxdnmp2hALofpbq3yL
 [2026-10-22 01:42:08] gift watcher: 693 dev wallets watched | 127522 txs | 105 gifts | 583 MB today (~12k credits)
 [2026-10-22 01:42:08] stats 200m: trades 5413877 (451/s) | lookups 6082 | profiles 5965 | with X 297 | ALERTS 0 | queue 9045 | rechecking 400 | 429s 57 | dropped 0 | top scans 67 | apps none=4028653,axiom=605953,pump=335937,fomo=227447,gmgn=101839
+[2026-10-22 01:43:08] stats 201m: trades 5439892 (451/s) | lookups 6092 | profiles 5974 | with X 297 | ALERTS 0 | queue 9089 | rechecking 400 | 429s 57 | dropped 0 | top scans 67 | apps none=4049191,axiom=608354,pump=337347,fomo=228251,gmgn=102322
+[2026-10-22 01:43:14] 🎁 dev 2VHc4n sent 2.6% of Hg to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
+[2026-10-22 01:43:17] 🎁 dev 2VHc4n sent 1.9% of Hg to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
+[2026-10-22 01:43:48] top scan: 2001 profiles (cutoff 1041 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
