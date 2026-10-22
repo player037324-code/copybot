@@ -279,9 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-8] stats 429m: trades 10104269 (393/s) | lookups 13032 | profiles 12775 | with X 509 | ALERTS 0 | queue 11797 | rechecking 488 | 429s 122 | dropped 0 | top scans 143 | apps none=7610812,axiom=1037289,pump=657992,fomo=412843,gmgn=190877
-[2026-10-22 05:32:08] gift watcher: 556 dev wallets watched | 256047 txs | 224 gifts | 1814 MB today (~36k credits)
-[2026-10-22 05:32:08] stats 430m: trades 10119936 (392/s) | lookups 13032 | profiles 12775 | with X 509 | ALERTS 0 | queue 11823 | rechecking 488 | 429s 122 | dropped 0 | top scans 143 | apps none=7622958,axiom=1038592,pump=659038,fomo=413475,gmgn=191137
+6-10-22 05:32:08] stats 430m: trades 10119936 (392/s) | lookups 13032 | profiles 12775 | with X 509 | ALERTS 0 | queue 11823 | rechecking 488 | 429s 122 | dropped 0 | top scans 143 | apps none=7622958,axiom=1038592,pump=659038,fomo=413475,gmgn=191137
 [2026-10-22 05:32:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 05:33:08] stats 431m: trades 10134303 (392/s) | lookups 13062 | profiles 12805 | with X 509 | ALERTS 0 | queue 11853 | rechecking 488 | 429s 122 | dropped 0 | top scans 144 | apps none=7633755,axiom=1039908,pump=660118,fomo=414072,gmgn=191454
 [2026-10-22 05:34:08] stats 432m: trades 10148958 (392/s) | lookups 13115 | profiles 12857 | with X 509 | ALERTS 0 | queue 11879 | rechecking 488 | 429s 123 | dropped 0 | top scans 144 | apps none=7644882,axiom=1041229,pump=661113,fomo=414762,gmgn=191745
@@ -309,6 +307,8 @@
 [2026-10-22 05:48:08] stats 446m: trades 10366446 (387/s) | lookups 13474 | profiles 13212 | with X 522 | ALERTS 0 | queue 12057 | rechecking 485 | 429s 127 | dropped 0 | top scans 149 | apps none=7814331,axiom=1059708,pump=675569,fomo=422500,gmgn=195700
 [2026-10-22 05:49:08] stats 447m: trades 10383530 (387/s) | lookups 13527 | profiles 13264 | with X 522 | ALERTS 0 | queue 12053 | rechecking 489 | 429s 128 | dropped 0 | top scans 149 | apps none=7827256,axiom=1061231,pump=676790,fomo=423175,gmgn=196058
 [2026-10-22 05:49:27] 🎁 dev 3Fzjh5 sent 3.2% of BUCK to BCnuCeCaZjke1zheXUujxijVwvidHobwYN79FaxtKZvA
+[2026-10-22 05:50:08] stats 448m: trades 10400798 (387/s) | lookups 13527 | profiles 13264 | with X 522 | ALERTS 0 | queue 12078 | rechecking 489 | 429s 128 | dropped 0 | top scans 149 | apps none=7840226,axiom=1062900,pump=677958,fomo=423979,gmgn=196410
+[2026-10-22 05:50:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
