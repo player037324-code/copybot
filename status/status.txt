@@ -1,6 +1,6 @@
-updated: 2026-10-22T11:48:02Z
+updated: 2026-10-22T11:49:02Z
 deployed: b3c93fcaafd767575be61d4497fcd5a0b6a45b9d
-pm2: stopped uptime=5231m restarts=14
+pm2: stopped uptime=5232m restarts=14
 wallet: CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- settings (secrets hidden) ---
@@ -85,7 +85,7 @@ alerts pm2: online
 
 --- pfwatch ---
 pfwatch pm2: online restarts=13
-{"apps":{"none":13232766,"axiom":1545627,"pump":1043226,"fomo":598732,"padre":202660,"gmgn":308883,"maestro":7774,"trojan":34000,"j7":4767,"bonk":3763,"bloom":21206,"sol_trading_bot":3411,"photon":11284,"phantom":12156,"mevx":913,"pepeboost":339,"bullx":2681,"banana":126},"topScans":269,"trades":17034314,"lookups":24500,"users":24133,"withX":754,"recentX":5,"alerts":0,"r429":226,"err":0,"dropped":0,"since":1792621327999,"coins":23013,"queue":15315,"watch":575,"dry":false,"updated":"2026-10-22T11:47:08.313Z"}
+{"apps":{"none":13249818,"axiom":1546736,"pump":1044339,"fomo":599130,"padre":202781,"gmgn":309239,"maestro":7780,"trojan":34048,"j7":4767,"bonk":3771,"bloom":21228,"sol_trading_bot":3413,"photon":11298,"phantom":12176,"mevx":915,"pepeboost":339,"bullx":2681,"banana":126},"topScans":269,"trades":17054585,"lookups":24553,"users":24185,"withX":755,"recentX":5,"alerts":0,"r429":227,"err":0,"dropped":0,"since":1792621327999,"coins":23035,"queue":15312,"watch":576,"dry":false,"updated":"2026-10-22T11:48:08.313Z"}
 {"time":"2026-10-21T18:14:02.874Z","wallet":"CwYRHhHQnR1C1ciiwrNEJBL2TkQNPnE9HyhEeBLPpVPy","username":"bankcrouptrader","x":"mas_habib92","followers":277,"following":7,"setAt":1792497290201,"evm":"0x367dd9c054d7708cd8c192515438891a50f105de","bio":"😊","trade":{"mint":"FUTRABtJ2JzE9zb3nGuDayqYahy7kRzaE6B6nmDDpump","symbol":"smol guy","name":"the smol guy","type":"buy","mcap":10981.640984160113,"sol"
 {"time":"2026-10-21T18:24:09.630Z","wallet":"GP78kbHp969SZ1jrCGkhfDPrA77WXYmm8GDH6oQm6qPg","username":"jaytradesss","x":"Jay00818","followers":9,"following":2,"setAt":1792536289648,"evm":"0xd55012da03e2d90f918929ef578052e70b8926e9","bio":null,"trade":{"mint":"AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump","symbol":"Macca","name":"Macca The Gator","type":"sell","mcap":1112257.428451478,"sol":0.21040
 {"time":"2026-10-21T18:31:58.178Z","wallet":"984y3p3nCardSJGGSudLpn8PKiiVRWEKthNi2tcME7qV","username":"xcoinxcoin","x":"ZENmemecoin","followers":318,"following":32,"setAt":1792604691019,"evm":"0xa26cef50d8c166a85ac070c77a3257cac2759a99","bio":null,"trade":{"mint":"CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump","symbol":"Kimchi","name":"Aura Final Boss","type":"sell","mcap":37038735.22846529,"sol":0
