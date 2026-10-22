@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:22:08] stats 180m: trades 4894554 (453/s) | lookups 5458 | profiles 5356 | with X 276 | ALERTS 0 | queue 8708 | rechecking 392 | 429s 51 | dropped 0 | top scans 60 | apps none=3632302,axiom=550884,pump=305930,fomo=210341,gmgn=90758
-[2026-10-22 01:22:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
-[2026-10-22 01:23:08] stats 181m: trades 4917477 (453/s) | lookups 5478 | profiles 5376 | with X 277 | ALERTS 0 | queue 8718 | rechecking 392 | 429s 51 | dropped 0 | top scans 61 | apps none=3649380,axiom=553566,pump=307349,fomo=211145,gmgn=91230
 [2026-10-22 01:23:35] 🎁 dev BAoJmp sent 2.9% of MERCURYCAT to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:23:35] 🎁 dev BAoJmp sent 2.6% of MERCURYCAT to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:23:56] 🎁 dev AspnoD sent 1.9% of COOK to FrHs3JV6sv4WQzsXWcq1xT3yhnQPjJubB4WeazRSMe8D
@@ -309,6 +306,9 @@
 [2026-10-22 01:35:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 91s, 0 new to the list
 [2026-10-22 01:36:08] stats 194m: trades 5251674 (451/s) | lookups 5867 | profiles 5756 | with X 292 | ALERTS 0 | queue 8979 | rechecking 396 | 429s 55 | dropped 0 | top scans 65 | apps none=3907446,axiom=586094,pump=327107,fomo=222018,gmgn=98269
 [2026-10-22 01:36:32] 🎁 dev HBWhLR sent 2.3% of pve to 12LfzUpHUPXXc4KK2rVDvPcWoV3JZPEUvnzzi4EqMhbm
+[2026-10-22 01:37:08] gift watcher: 711 dev wallets watched | 124248 txs | 100 gifts | 556 MB today (~11k credits)
+[2026-10-22 01:37:08] stats 195m: trades 5281547 (451/s) | lookups 5920 | profiles 5807 | with X 294 | ALERTS 0 | queue 8980 | rechecking 398 | 429s 56 | dropped 0 | top scans 65 | apps none=3929178,axiom=590039,pump=328804,fomo=222961,gmgn=99097
+[2026-10-22 01:37:10] 🎁 dev Dkyrfp sent 2.3% of Au to Bd1xWHLQbQMhVCqxjtLm3D3RDWXMc9ysCbq2o54sZuiH
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
