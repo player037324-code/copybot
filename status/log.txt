@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:04:10] 🎁 dev 8sZCez sent 3.5% of uwunald to 3WngPZ36AvRNnAn2WZNEECVtDaZazyShFLFZezWgvN9k
-[2026-10-22 00:04:10] 🎁 dev 8sZCez sent 3.0% of uwunald to Fc2u9c7A6bTtgAwvfdcDxM4kdxaubcPGEwXePimj24aQ
-[2026-10-22 00:04:10] 🎁 dev 8sZCez sent 2.5% of uwunald to 5Z8aytx5vFYHqy2WT6zdVJdGfjF4LadHw3ofjuhiBCAw
 [2026-10-22 00:04:10] 🎁 dev 8sZCez sent 2.6% of uwunald to X6Dr2Fxs1ebqiiTmDLKocDNZPBriLrFNRRjHmy1Pmwy
 [2026-10-22 00:05:08] stats 103m: trades 3104867 (502/s) | lookups 3024 | profiles 2969 | with X 174 | ALERTS 0 | queue 7140 | rechecking 340 | 429s 31 | dropped 0 | top scans 34 | apps none=2311855,axiom=348948,pump=193139,fomo=128262,gmgn=57573
 [2026-10-22 00:05:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
@@ -309,6 +306,9 @@
 [2026-10-22 00:17:08] gift watcher: 922 dev wallets watched | 67459 txs | 59 gifts | 90 MB today (~2k credits)
 [2026-10-22 00:17:08] stats 115m: trades 3417420 (495/s) | lookups 3381 | profiles 3318 | with X 188 | ALERTS 0 | queue 7473 | rechecking 341 | 429s 34 | dropped 0 | top scans 39 | apps none=2548615,axiom=380151,pump=209873,fomo=144425,gmgn=63443
 [2026-10-22 00:18:08] stats 116m: trades 3444895 (495/s) | lookups 3440 | profiles 3377 | with X 194 | ALERTS 0 | queue 7478 | rechecking 343 | 429s 34 | dropped 0 | top scans 39 | apps none=2570001,axiom=382083,pump=211369,fomo=146210,gmgn=63879
+[2026-10-22 00:19:08] stats 117m: trades 3472288 (495/s) | lookups 3493 | profiles 3429 | with X 195 | ALERTS 0 | queue 7482 | rechecking 346 | 429s 35 | dropped 0 | top scans 39 | apps none=2592084,axiom=383956,pump=212806,fomo=147318,gmgn=64329
+[2026-10-22 00:20:00] 🎁 dev BAoJmp sent 1.8% of CYBERKIMCHI to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 00:20:00] 🎁 dev BAoJmp sent 2.1% of CYBERKIMCHI to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
