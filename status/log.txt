@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:02:08] stats 160m: trades 4351574 (453/s) | lookups 4787 | profiles 4699 | with X 247 | ALERTS 0 | queue 8369 | rechecking 377 | 429s 46 | dropped 0 | top scans 54 | apps none=3251578,axiom=467397,pump=274892,fomo=188254,gmgn=78937
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 4.2% of CyberGato to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 3.6% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 01:03:08] stats 161m: trades 4373591 (453/s) | lookups 4846 | profiles 4756 | with X 251 | ALERTS 0 | queue 8378 | rechecking 381 | 429s 46 | dropped 0 | top scans 54 | apps none=3268686,axiom=469116,pump=276519,fomo=189124,gmgn=79242
@@ -309,6 +308,7 @@
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.9% of MCT to HkipUGMN7zBwCb74wYbM66r55DvvhmCAfbxoRCgA9bDn
 [2026-10-22 01:13:59] 🎁 dev 7QBQLN sent 4.1% of MCT to QNFQSu4GFJQhBFKmLLsRbLgu72LjZGEs86xZJ4C1ZCw
 [2026-10-22 01:14:08] stats 172m: trades 4700921 (456/s) | lookups 5174 | profiles 5076 | with X 261 | ALERTS 0 | queue 8625 | rechecking 390 | 429s 49 | dropped 0 | top scans 58 | apps none=3487854,axiom=530307,pump=293863,fomo=201836,gmgn=86510
+[2026-10-22 01:15:08] stats 173m: trades 4724584 (455/s) | lookups 5233 | profiles 5135 | with X 263 | ALERTS 0 | queue 8617 | rechecking 389 | 429s 49 | dropped 0 | top scans 58 | apps none=3505742,axiom=532674,pump=295436,fomo=202728,gmgn=87044
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
