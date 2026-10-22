@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:43:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 00:44:08] stats 142m: trades 4009980 (471/s) | lookups 4235 | profiles 4155 | with X 228 | ALERTS 0 | queue 8027 | rechecking 363 | 429s 41 | dropped 0 | top scans 48 | apps none=2999463,axiom=431746,pump=249957,fomo=173320,gmgn=73239
 [2026-10-22 00:44:10] 🎁 dev 97K6ns sent 1.2% of POINTLESS to Gm3Aab4uNkrYyH72Ewc1iDUvkEhc9i2o3uvNFZX7Vdwu
 [2026-10-22 00:45:08] stats 143m: trades 4029982 (470/s) | lookups 4288 | profiles 4207 | with X 229 | ALERTS 0 | queue 8025 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3013400,axiom=434741,pump=251394,fomo=174020,gmgn=73556
@@ -309,6 +308,7 @@
 [2026-10-22 00:58:37] 🎁 dev BnJ571 sent 1.8% of FF to 6SV55Muh9Yy8o5EEtcMp9Yg6dKm9T8VRBNEk23ZTtke8
 [2026-10-22 00:58:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 00:59:08] stats 157m: trades 4284597 (455/s) | lookups 4704 | profiles 4617 | with X 244 | ALERTS 0 | queue 8304 | rechecking 374 | 429s 45 | dropped 0 | top scans 53 | apps none=3199947,axiom=461896,pump=270212,fomo=185582,gmgn=77929
+[2026-10-22 01:00:08] stats 158m: trades 4304951 (454/s) | lookups 4757 | profiles 4669 | with X 247 | ALERTS 0 | queue 8312 | rechecking 377 | 429s 46 | dropped 0 | top scans 53 | apps none=3215277,axiom=463813,pump=271763,fomo=186414,gmgn=78218
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
