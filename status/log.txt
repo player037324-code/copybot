@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:05:08] stats 223m: trades 5945781 (444/s) | lookups 6802 | profiles 6673 | with X 328 | ALERTS 0 | queue 9334 | rechecking 406 | 429s 62 | dropped 0 | top scans 75 | apps none=4437795,axiom=659469,pump=368477,fomo=243625,gmgn=113035
-[2026-10-22 02:06:08] stats 224m: trades 5965674 (444/s) | lookups 6855 | profiles 6725 | with X 330 | ALERTS 0 | queue 9333 | rechecking 407 | 429s 63 | dropped 0 | top scans 75 | apps none=4453460,axiom=661015,pump=369768,fomo=244204,gmgn=113486
 [2026-10-22 02:06:11] 🎁 dev r7wiQQ sent 3.6% of ZIZAI to AjZ2fHJYHXovgwukg5GCi1Gcw54xDTY4dcR1Lm8tZDMN
 [2026-10-22 02:07:08] gift watcher: 725 dev wallets watched | 140996 txs | 119 gifts | 738 MB today (~15k credits)
 [2026-10-22 02:07:08] stats 225m: trades 5986403 (443/s) | lookups 6865 | profiles 6735 | with X 330 | ALERTS 0 | queue 9351 | rechecking 407 | 429s 63 | dropped 0 | top scans 75 | apps none=4469172,axiom=662945,pump=371324,fomo=244907,gmgn=113961
@@ -309,6 +307,8 @@
 [2026-10-22 02:20:08] stats 238m: trades 6260030 (438/s) | lookups 7245 | profiles 7110 | with X 348 | ALERTS 0 | queue 9526 | rechecking 417 | 429s 67 | dropped 0 | top scans 79 | apps none=4668079,axiom=694389,pump=392696,fomo=255799,gmgn=119203
 [2026-10-22 02:20:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:21:08] stats 239m: trades 6282517 (438/s) | lookups 7274 | profiles 7139 | with X 348 | ALERTS 0 | queue 9565 | rechecking 416 | 429s 67 | dropped 0 | top scans 80 | apps none=4684859,axiom=696599,pump=394497,fomo=256787,gmgn=119506
+[2026-10-22 02:22:08] gift watcher: 687 dev wallets watched | 151570 txs | 123 gifts | 842 MB today (~17k credits)
+[2026-10-22 02:22:08] stats 240m: trades 6300965 (438/s) | lookups 7327 | profiles 7191 | with X 350 | ALERTS 0 | queue 9550 | rechecking 416 | 429s 68 | dropped 0 | top scans 80 | apps none=4698081,axiom=698661,pump=396048,fomo=257663,gmgn=119847
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
