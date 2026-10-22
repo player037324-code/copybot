@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 20:07:08] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
-[2026-10-22 20:08:07] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
 [2026-10-22 20:08:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-22 20:08:08] feed connected
 [2026-10-22 20:08:38] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
@@ -309,6 +307,8 @@
 [2026-10-22 20:21:07] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
 [2026-10-22 20:21:07] feed connected
 [2026-10-22 20:21:37] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
+[2026-10-22 20:22:07] stats 1m: trades 22989 (383/s) | lookups 59 | profiles 0 | with X 0 | ALERTS 0 | queue 549 | rechecking 499 | 429s 0 | dropped 0 | top scans 1 | apps none=17457,axiom=1846,pump=1817,fomo=960,padre=405
+[2026-10-22 20:23:07] stats 2m: trades 49537 (413/s) | lookups 119 | profiles 0 | with X 0 | ALERTS 0 | queue 927 | rechecking 497 | 429s 0 | dropped 0 | top scans 1 | apps none=37633,axiom=4183,pump=3890,fomo=1999,gmgn=844
 
 --- callouts ---
 [TAILING] Tailing last 20 lines for [callouts] process (change the value with --lines option)
