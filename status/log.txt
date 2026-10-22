@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:13:30] 🎁 dev BAoJmp sent 2.7% of LARPMAXXING to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
-[2026-10-22 00:13:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:14:08] stats 112m: trades 3333544 (496/s) | lookups 3298 | profiles 3237 | with X 187 | ALERTS 0 | queue 7397 | rechecking 340 | 429s 33 | dropped 0 | top scans 38 | apps none=2487506,axiom=370332,pump=205697,fomo=139365,gmgn=61627
 [2026-10-22 00:15:08] stats 113m: trades 3358630 (495/s) | lookups 3351 | profiles 3289 | with X 188 | ALERTS 0 | queue 7396 | rechecking 342 | 429s 34 | dropped 0 | top scans 38 | apps none=2506621,axiom=372536,pump=206930,fomo=141010,gmgn=62041
 [2026-10-22 00:15:12] 🎁 dev 3H4GRC sent 1.7% of ARMY to H2uysPHpbjLSb9Zd4GySsGm8caqhQiAi3qvkcg1TPWL5
@@ -309,6 +307,8 @@
 [2026-10-22 00:27:08] gift watcher: 906 dev wallets watched | 77795 txs | 63 gifts | 147 MB today (~3k credits)
 [2026-10-22 00:27:08] stats 125m: trades 3640013 (485/s) | lookups 3687 | profiles 3617 | with X 208 | ALERTS 0 | queue 7672 | rechecking 351 | 429s 37 | dropped 0 | top scans 42 | apps none=2719427,axiom=398915,pump=223831,fomo=155835,gmgn=67061
 [2026-10-22 00:27:31] 🎁 dev 3wPoE1 sent 3.6% of POKEBREED to DGb1ouFKY5364YATwYozJPMy226jYpKVZh787ore3GeK
+[2026-10-22 00:28:08] stats 126m: trades 3662530 (484/s) | lookups 3746 | profiles 3676 | with X 210 | ALERTS 0 | queue 7681 | rechecking 352 | 429s 37 | dropped 0 | top scans 42 | apps none=2736523,axiom=400924,pump=225379,fomo=156874,gmgn=67501
+[2026-10-22 00:28:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
