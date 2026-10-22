@@ -23,13 +23,27 @@ const sent = new Set();
 
 async function tg(text, photo) {
   if (!TG_TOKEN || !TG_CHAT) return warn('telegram not configured');
-  const call = async (method, body) => {
-    const j = await (await fetch(`https://api.telegram.org/bot${TG_TOKEN}/${method}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: TG_CHAT, parse_mode: 'HTML', ...body }) })).json();
-    if (!j.ok) throw new Error(JSON.stringify(j).slice(0, 160));
-  };
+  const api = (m) => `https://api.telegram.org/bot${TG_TOKEN}/${m}`;
   try {
-    if (photo) { try { return await call('sendPhoto', { photo, caption: text.slice(0, 1020) }); } catch (e) { warn('photo failed:', e.message); } }
-    await call('sendMessage', { text, disable_web_page_preview: true });
+    if (photo) {
+      // Telegram often can't fetch IPFS links itself, so we download (max 2.5s) and upload the image
+      try {
+        const r = await fetch(photo, { signal: AbortSignal.timeout(2500) });
+        if (r.ok) {
+          const blob = await r.blob();
+          if (blob.size > 0 && blob.size < 9e6) {
+            const fd = new FormData();
+            fd.append('chat_id', TG_CHAT); fd.append('parse_mode', 'HTML'); fd.append('caption', text.slice(0, 1020));
+            fd.append('photo', blob, 'coin' + (/(png|gif|webp)/.exec(blob.type || '')?.[0] ? '.' + /(png|gif|webp)/.exec(blob.type)[0] : '.jpg'));
+            const j = await (await fetch(api('sendPhoto'), { method: 'POST', body: fd, signal: AbortSignal.timeout(6000) })).json();
+            if (j.ok) return;
+            warn('photo upload failed:', JSON.stringify(j).slice(0, 120));
+          }
+        }
+      } catch (e) { warn('photo skipped:', e.message); }
+    }
+    const j = await (await fetch(api('sendMessage'), { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: TG_CHAT, parse_mode: 'HTML', text, disable_web_page_preview: true }) })).json();
+    if (!j.ok) warn('telegram:', JSON.stringify(j).slice(0, 160));
   } catch (e) { warn('telegram:', e.message); }
 }
 
