@@ -253,7 +253,6 @@
 [TAILING] Tailing last 20 lines for [ladder] process (change the value with --lines option)
 /root/.pm2/logs/ladder-error.log last 20 lines:
 /root/.pm2/logs/ladder-out.log last 20 lines:
-[2026-10-21 17:40:10] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:42:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:50:09] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-21 17:52:08] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
@@ -273,18 +272,13 @@
 [2026-10-21 22:22:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-22 20:08:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 [2026-10-22 20:12:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
+[2026-10-22 20:17:07] ladder running: every +100% from entry -> sell 10% of original to SOL | wallet CXo65mgYGaE7797cFjPu6T1Jeh3o6FKWrxCPahiLBSxr
 
 --- pfwatch ---
 [TAILING] Tailing last 30 lines for [pfwatch] process (change the value with --lines option)
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 19:59:08] stats 1297m: trades 30788588 (396/s) | lookups 40263 | profiles 38024 | with X 988 | ALERTS 0 | queue 21002 | rechecking 511 | 429s 358 | dropped 0 | top scans 433 | apps none=24041636,axiom=2702444,pump=1840394,fomo=1005855,gmgn=614755
-[2026-10-22 20:00:08] stats 1298m: trades 30816251 (396/s) | lookups 40323 | profiles 38024 | with X 988 | ALERTS 0 | queue 21009 | rechecking 510 | 429s 358 | dropped 0 | top scans 433 | apps none=24062783,axiom=2704472,pump=1842689,fomo=1006948,gmgn=615347
-[2026-10-22 20:01:08] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
-[2026-10-22 20:01:08] stats 1299m: trades 30842947 (396/s) | lookups 40382 | profiles 38024 | with X 988 | ALERTS 0 | queue 21016 | rechecking 510 | 429s 358 | dropped 0 | top scans 434 | apps none=24082916,axiom=2706814,pump=1844826,fomo=1007944,gmgn=615895
-[2026-10-22 20:02:08] gift watcher: 8188 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
-[2026-10-22 20:02:08] stats 1300m: trades 30868883 (396/s) | lookups 40441 | profiles 38024 | with X 988 | ALERTS 0 | queue 21032 | rechecking 509 | 429s 358 | dropped 0 | top scans 434 | apps none=24102804,axiom=2708822,pump=1846878,fomo=1008959,gmgn=616289
 [2026-10-22 20:03:08] stats 1301m: trades 30895405 (396/s) | lookups 40501 | profiles 38024 | with X 988 | ALERTS 0 | queue 21073 | rechecking 509 | 429s 358 | dropped 0 | top scans 434 | apps none=24122494,axiom=2711527,pump=1849121,fomo=1009831,gmgn=616773
 [2026-10-22 20:04:08] stats 1302m: trades 30923390 (396/s) | lookups 40561 | profiles 38024 | with X 988 | ALERTS 0 | queue 21076 | rechecking 509 | 429s 358 | dropped 0 | top scans 434 | apps none=24142650,axiom=2714809,pump=1851200,fomo=1010980,gmgn=617372
 [2026-10-22 20:04:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
@@ -309,6 +303,12 @@
 [2026-10-22 20:14:07] stats 2m: trades 47175 (393/s) | lookups 119 | profiles 0 | with X 0 | ALERTS 0 | queue 827 | rechecking 506 | 429s 0 | dropped 0 | top scans 1 | apps none=35055,axiom=4588,pump=3468,fomo=1778,gmgn=1014
 [2026-10-22 20:15:07] stats 3m: trades 72799 (404/s) | lookups 179 | profiles 0 | with X 0 | ALERTS 0 | queue 1109 | rechecking 505 | 429s 0 | dropped 0 | top scans 1 | apps none=52133,axiom=8951,pump=5396,fomo=2681,gmgn=1622
 [2026-10-22 20:15:08] top scan: 0 profiles (cutoff Infinity pump followers) in 1s, 0 new to the list
+[2026-10-22 20:16:07] stats 4m: trades 98459 (410/s) | lookups 238 | profiles 0 | with X 0 | ALERTS 0 | queue 1369 | rechecking 505 | 429s 0 | dropped 0 | top scans 2 | apps none=70006,axiom=12380,pump=7336,fomo=3752,gmgn=2162
+[2026-10-22 20:17:08] pfwatch: alert when a new pump.fun profile (set up within 24h) links an X with 2000+ followers | lookups 1/s | pump app traders only | top 2000 scan every 3m | recheck every 30m
+[2026-10-22 20:17:08] feed: wss://unified-prod.nats.realtime.pump.fun subject unifiedTradeEvent.processed.>
+[2026-10-22 20:17:08] feed connected
+[2026-10-22 20:17:38] top scan: 0 profiles (cutoff Infinity pump followers) in 0s, 0 new to the list
+[2026-10-22 20:18:08] stats 1m: trades 29809 (497/s) | lookups 59 | profiles 0 | with X 0 | ALERTS 0 | queue 577 | rechecking 504 | 429s 0 | dropped 0 | top scans 1 | apps none=23532,axiom=2284,pump=1958,fomo=1044,gmgn=512
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
