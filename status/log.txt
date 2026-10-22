@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:32:08] stats 190m: trades 5154855 (452/s) | lookups 5755 | profiles 5647 | with X 291 | ALERTS 0 | queue 8898 | rechecking 394 | 429s 54 | dropped 0 | top scans 63 | apps none=3832738,axiom=576953,pump=321223,fomo=218805,gmgn=96163
-[2026-10-22 01:32:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 01:33:08] stats 191m: trades 5179355 (452/s) | lookups 5785 | profiles 5677 | with X 291 | ALERTS 0 | queue 8929 | rechecking 393 | 429s 54 | dropped 0 | top scans 64 | apps none=3852205,axiom=578901,pump=322697,fomo=219551,gmgn=96573
 [2026-10-22 01:34:08] stats 192m: trades 5204383 (452/s) | lookups 5838 | profiles 5727 | with X 292 | ALERTS 0 | queue 8928 | rechecking 397 | 429s 55 | dropped 0 | top scans 64 | apps none=3871615,axiom=581100,pump=324252,fomo=220395,gmgn=97133
 [2026-10-22 01:35:08] stats 193m: trades 5226520 (451/s) | lookups 5838 | profiles 5727 | with X 292 | ALERTS 0 | queue 8957 | rechecking 397 | 429s 55 | dropped 0 | top scans 64 | apps none=3888644,axiom=582905,pump=325684,fomo=221240,gmgn=97737
 [2026-10-22 01:35:38] top scan: 2001 profiles (cutoff 1043 pump followers) in 91s, 0 new to the list
@@ -309,6 +306,9 @@
 [2026-10-22 01:44:08] stats 202m: trades 5466571 (451/s) | lookups 6112 | profiles 5994 | with X 297 | ALERTS 0 | queue 9119 | rechecking 400 | 429s 57 | dropped 0 | top scans 68 | apps none=4070367,axiom=610876,pump=338630,fomo=228979,gmgn=102832
 [2026-10-22 01:45:08] stats 203m: trades 5494544 (451/s) | lookups 6171 | profiles 6053 | with X 304 | ALERTS 0 | queue 9110 | rechecking 398 | 429s 57 | dropped 0 | top scans 68 | apps none=4092927,axiom=612835,pump=340061,fomo=229790,gmgn=103374
 [2026-10-22 01:45:43] 🎁 dev AqsW2q sent 5.0% of zCloud to Dh5mfdLZTDmJLcERCQB4sjKbzjpYvqEFbujZqFo2SNLh
+[2026-10-22 01:46:08] stats 204m: trades 5519364 (451/s) | lookups 6224 | profiles 6104 | with X 311 | ALERTS 0 | queue 9095 | rechecking 399 | 429s 58 | dropped 0 | top scans 68 | apps none=4112913,axiom=614759,pump=341552,fomo=230465,gmgn=103769
+[2026-10-22 01:46:31] 🎁 dev BAoJmp sent 3.2% of Ng to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 01:46:31] 🎁 dev BAoJmp sent 3.2% of Ng to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
