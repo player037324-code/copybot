@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:50:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
-[2026-10-22 05:51:08] stats 449m: trades 10418189 (387/s) | lookups 13556 | profiles 13293 | with X 522 | ALERTS 0 | queue 12101 | rechecking 489 | 429s 128 | dropped 0 | top scans 150 | apps none=7854000,axiom=1064053,pump=679124,fomo=424628,gmgn=196735
-[2026-10-22 05:52:08] gift watcher: 550 dev wallets watched | 266350 txs | 225 gifts | 1916 MB today (~38k credits)
 [2026-10-22 05:52:08] stats 450m: trades 10434250 (386/s) | lookups 13609 | profiles 13344 | with X 523 | ALERTS 0 | queue 12103 | rechecking 488 | 429s 129 | dropped 0 | top scans 150 | apps none=7866515,axiom=1065301,pump=680175,fomo=425201,gmgn=197104
 [2026-10-22 05:53:08] stats 451m: trades 10450736 (386/s) | lookups 13609 | profiles 13344 | with X 523 | ALERTS 0 | queue 12127 | rechecking 488 | 429s 129 | dropped 0 | top scans 150 | apps none=7879423,axiom=1066653,pump=681205,fomo=425797,gmgn=197446
 [2026-10-22 05:53:38] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
@@ -309,6 +306,9 @@
 [2026-10-22 06:07:08] gift watcher: 553 dev wallets watched | 272782 txs | 227 gifts | 1971 MB today (~39k credits)
 [2026-10-22 06:07:08] stats 465m: trades 10682582 (383/s) | lookups 14085 | profiles 13816 | with X 533 | ALERTS 0 | queue 12220 | rechecking 485 | 429s 132 | dropped 0 | top scans 155 | apps none=8062571,axiom=1084120,pump=695585,fomo=434612,gmgn=201497
 [2026-10-22 06:07:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
+[2026-10-22 06:08:08] stats 466m: trades 10700510 (383/s) | lookups 14105 | profiles 13836 | with X 533 | ALERTS 0 | queue 12241 | rechecking 484 | 429s 132 | dropped 0 | top scans 156 | apps none=8077162,axiom=1085256,pump=696661,fomo=435181,gmgn=201749
+[2026-10-22 06:08:36] 🎁 dev 7pa9H6 sent 1.2% of bearcunt to tqVvFiW1UcMzx1rknDzd4BUTPyLmC9wxK36o5KSrTXw
+[2026-10-22 06:08:36] 🎁 dev 7pa9H6 sent 1.6% of bearcunt to D4m5kk6R7M6Nfp7dtSasvHRvLH1NWGjXukpyDAiGPVkb
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
