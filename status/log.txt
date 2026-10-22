@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:37:18] 🎁 dev ExfWiN sent 1.1% of WOFI to 7wQsXvLCcxnh9cwj5Uykf39keqrFitdpZQAE4Ap3J8Nv
-[2026-10-22 02:37:19] 🎁 dev ExfWiN sent 1.0% of WOFI to 7iNiqYKcEUZ5rAkavBU3JKUXds3FeRAeT2HJvn6W3D5o
-[2026-10-22 02:37:19] 🎁 dev ExfWiN sent 1.0% of WOFI to EQgSXHLXPpp4c48EyCsdaTn3MrbjZoVCmMU5sW6YFvsg
-[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.2% of WOFI to 4P4GbCMna3P7rWn7QnSQv1Rc6M97kRCipdP8ijSArweo
 [2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to DcSZCeZUgqCGQTcDe8fzp6r3E3zCw4xgTGpYZDKtSx5o
 [2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.1% of WOFI to BwjQUhv8FzabAYuEte2N1vrXJnRnF6pCRR2jMt1dtmAQ
 [2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to CAZjRRvrS2SWPrwLHax1pAMbWzXHfxH8UaqSHwX2am3K
@@ -309,6 +305,10 @@
 [2026-10-22 02:40:52] 🎁 dev 2VHc4n sent 4.0% of ElePHPant to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
 [2026-10-22 02:40:56] 🎁 dev 2VHc4n sent 2.1% of ElePHPant to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
 [2026-10-22 02:41:08] stats 259m: trades 6703123 (431/s) | lookups 7848 | profiles 7679 | with X 363 | ALERTS 0 | queue 9951 | rechecking 423 | 429s 73 | dropped 0 | top scans 87 | apps none=5003789,axiom=731262,pump=425269,fomo=277181,gmgn=127379
+[2026-10-22 02:42:08] gift watcher: 676 dev wallets watched | 162932 txs | 157 gifts | 979 MB today (~20k credits)
+[2026-10-22 02:42:08] stats 260m: trades 6725658 (431/s) | lookups 7901 | profiles 7731 | with X 363 | ALERTS 0 | queue 9949 | rechecking 424 | 429s 74 | dropped 0 | top scans 87 | apps none=5021445,axiom=732884,pump=426880,fomo=278127,gmgn=127715
+[2026-10-22 02:42:40] 🎁 dev BAoJmp sent 2.4% of AUINU to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 02:42:40] 🎁 dev BAoJmp sent 3.4% of AUINU to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
