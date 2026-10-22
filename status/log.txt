@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-21 23:49:08] stats 87m: trades 2764704 (530/s) | lookups 2555 | profiles 2507 | with X 156 | ALERTS 0 | queue 6750 | rechecking 327 | 429s 27 | dropped 0 | top scans 29 | apps none=2056926,axiom=315376,pump=168983,fomo=114071,gmgn=51490
 [2026-10-21 23:50:08] stats 88m: trades 2784932 (527/s) | lookups 2555 | profiles 2507 | with X 156 | ALERTS 0 | queue 6793 | rechecking 327 | 429s 27 | dropped 0 | top scans 29 | apps none=2072599,axiom=316943,pump=170380,fomo=114839,gmgn=51816
 [2026-10-21 23:50:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 1 new to the list
 [2026-10-21 23:51:08] stats 89m: trades 2805661 (525/s) | lookups 2585 | profiles 2537 | with X 158 | ALERTS 0 | queue 6808 | rechecking 327 | 429s 27 | dropped 0 | top scans 30 | apps none=2087924,axiom=319119,pump=171878,fomo=115764,gmgn=52164
@@ -309,6 +308,7 @@
 [2026-10-22 00:01:54] 🎁 dev Agenta sent 1.0% of Cybermint to 3KmWffHefDX9tMjEJbW3QrnoDt8h3evG5Zt3R4BUdLbZ
 [2026-10-22 00:02:08] gift watcher: 939 dev wallets watched | 58358 txs | 51 gifts | 7 MB today (~0k credits)
 [2026-10-22 00:02:08] stats 100m: trades 3036341 (506/s) | lookups 2911 | profiles 2857 | with X 167 | ALERTS 0 | queue 7079 | rechecking 333 | 429s 30 | dropped 0 | top scans 34 | apps none=2264689,axiom=339144,pump=188394,fomo=124779,gmgn=56017
+[2026-10-22 00:03:08] stats 101m: trades 3057519 (505/s) | lookups 2971 | profiles 2917 | with X 171 | ALERTS 0 | queue 7074 | rechecking 336 | 429s 30 | dropped 0 | top scans 34 | apps none=2280437,axiom=341229,pump=190011,fomo=125713,gmgn=56334
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
