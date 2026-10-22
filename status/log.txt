@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 05:10:08] stats 408m: trades 9741847 (398/s) | lookups 12398 | profiles 12148 | with X 494 | ALERTS 0 | queue 11609 | rechecking 476 | 429s 116 | dropped 0 | top scans 136 | apps none=7321134,axiom=1011768,pump=636330,fomo=399863,gmgn=184045
-[2026-10-22 05:11:08] stats 409m: trades 9760526 (398/s) | lookups 12398 | profiles 12148 | with X 494 | ALERTS 0 | queue 11635 | rechecking 476 | 429s 116 | dropped 0 | top scans 136 | apps none=7335574,axiom=1013368,pump=637418,fomo=400513,gmgn=184482
 [2026-10-22 05:11:13] 🎁 dev 3Fzjh5 sent 3.1% of CATOGRAPHE to BCnuCeCaZjke1zheXUujxijVwvidHobwYN79FaxtKZvA
 [2026-10-22 05:11:37] top scan: 2000 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 05:12:08] gift watcher: 593 dev wallets watched | 243426 txs | 221 gifts | 1714 MB today (~34k credits)
@@ -309,6 +307,8 @@
 [2026-10-22 05:25:08] stats 423m: trades 10001317 (394/s) | lookups 12867 | profiles 12612 | with X 507 | ALERTS 0 | queue 11712 | rechecking 486 | 429s 120 | dropped 0 | top scans 141 | apps none=7528826,axiom=1029617,pump=651716,fomo=409271,gmgn=188904
 [2026-10-22 05:26:08] stats 424m: trades 10017643 (394/s) | lookups 12867 | profiles 12612 | with X 507 | ALERTS 0 | queue 11733 | rechecking 486 | 429s 120 | dropped 0 | top scans 141 | apps none=7542167,axiom=1030624,pump=652611,fomo=409843,gmgn=189165
 [2026-10-22 05:26:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
+[2026-10-22 05:27:08] gift watcher: 563 dev wallets watched | 253802 txs | 224 gifts | 1786 MB today (~36k credits)
+[2026-10-22 05:27:08] stats 425m: trades 10035229 (394/s) | lookups 12897 | profiles 12642 | with X 507 | ALERTS 0 | queue 11757 | rechecking 486 | 429s 120 | dropped 0 | top scans 142 | apps none=7555811,axiom=1032153,pump=653775,fomo=410461,gmgn=189493
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
