@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 01:38:08] stats 196m: trades 5309812 (452/s) | lookups 5920 | profiles 5807 | with X 294 | ALERTS 0 | queue 9011 | rechecking 398 | 429s 56 | dropped 0 | top scans 65 | apps none=3950758,axiom=593398,pump=330328,fomo=223730,gmgn=99670
-[2026-10-22 01:38:37] top scan: 2001 profiles (cutoff 1043 pump followers) in 90s, 0 new to the list
-[2026-10-22 01:39:08] stats 197m: trades 5341053 (452/s) | lookups 5950 | profiles 5836 | with X 294 | ALERTS 0 | queue 9046 | rechecking 397 | 429s 56 | dropped 0 | top scans 66 | apps none=3974620,axiom=597157,pump=331717,fomo=224802,gmgn=100275
-[2026-10-22 01:40:06] 🎁 dev EhETqp sent 2.5% of 37GzEH to XWFX9CVGxiFfiPx4zeb4AGnvm2wHietL7MEaQpzzTAd
 [2026-10-22 01:40:08] stats 198m: trades 5368564 (452/s) | lookups 6009 | profiles 5895 | with X 294 | ALERTS 0 | queue 9046 | rechecking 400 | 429s 56 | dropped 0 | top scans 66 | apps none=3994455,axiom=601169,pump=333317,fomo=225837,gmgn=100766
 [2026-10-22 01:40:11] 🎁 dev 3aL27k sent 1.7% of gold-197 to 3gSH3M5zY5Bd8hZ8Ddo2bkkw5QSxUeUBTAdjEtzsB4mn
 [2026-10-22 01:40:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-22 01:50:08] stats 208m: trades 5616027 (450/s) | lookups 6307 | profiles 6184 | with X 313 | ALERTS 0 | queue 9164 | rechecking 399 | 429s 59 | dropped 0 | top scans 69 | apps none=4187557,axiom=624746,pump=347166,fomo=233025,gmgn=105934
 [2026-10-22 01:50:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 01:51:08] stats 209m: trades 5636924 (450/s) | lookups 6336 | profiles 6213 | with X 313 | ALERTS 0 | queue 9196 | rechecking 399 | 429s 59 | dropped 0 | top scans 70 | apps none=4202623,axiom=627636,pump=348589,fomo=233678,gmgn=106368
+[2026-10-22 01:52:08] gift watcher: 698 dev wallets watched | 133354 txs | 110 gifts | 645 MB today (~13k credits)
+[2026-10-22 01:52:08] stats 210m: trades 5657771 (449/s) | lookups 6389 | profiles 6265 | with X 314 | ALERTS 0 | queue 9184 | rechecking 399 | 429s 60 | dropped 0 | top scans 70 | apps none=4218431,axiom=629775,pump=349963,fomo=234445,gmgn=106742
+[2026-10-22 01:52:14] 🎁 dev BAoJmp sent 1.7% of AU to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
+[2026-10-22 01:52:14] 🎁 dev BAoJmp sent 2.0% of AU to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
