@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:14:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:15:08] stats 233m: trades 6153042 (440/s) | lookups 7109 | profiles 6976 | with X 344 | ALERTS 0 | queue 9445 | rechecking 412 | 429s 65 | dropped 0 | top scans 78 | apps none=4591642,axiom=681980,pump=384155,fomo=250977,gmgn=117024
 [2026-10-22 02:16:08] stats 234m: trades 6175578 (440/s) | lookups 7162 | profiles 7028 | with X 345 | ALERTS 0 | queue 9441 | rechecking 414 | 429s 66 | dropped 0 | top scans 78 | apps none=4607228,axiom=685595,pump=385875,fomo=251924,gmgn=117398
 [2026-10-22 02:16:20] 🎁 dev 3At9KL sent 2.1% of Pilly to 6gzhX4M9Si9EaiX7R8vsfoNFFJad2i9ZnrunyRbE2FmQ
@@ -309,6 +308,7 @@
 [2026-10-22 02:29:08] stats 247m: trades 6442481 (435/s) | lookups 7492 | profiles 7354 | with X 353 | ALERTS 0 | queue 9678 | rechecking 418 | 429s 70 | dropped 0 | top scans 82 | apps none=4805329,axiom=710206,pump=406381,fomo=264943,gmgn=122472
 [2026-10-22 02:29:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
 [2026-10-22 02:30:08] stats 248m: trades 6463403 (434/s) | lookups 7521 | profiles 7383 | with X 353 | ALERTS 0 | queue 9710 | rechecking 418 | 429s 70 | dropped 0 | top scans 83 | apps none=4821226,axiom=712102,pump=407726,fomo=265726,gmgn=123072
+[2026-10-22 02:31:08] stats 249m: trades 6487511 (434/s) | lookups 7574 | profiles 7435 | with X 355 | ALERTS 0 | queue 9714 | rechecking 419 | 429s 71 | dropped 0 | top scans 83 | apps none=4840069,axiom=714205,pump=409112,fomo=266734,gmgn=123499
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
