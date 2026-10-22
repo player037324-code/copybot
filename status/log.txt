@@ -279,7 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:56:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 0 new to the list
 [2026-10-22 04:56:52] 🎁 dev HZRo1d sent 4.3% of TUNNEL to 7MxmPPV4LY8tMu1rJ3PMFBuECPGhGpUcmr835meXcytz
 [2026-10-22 04:57:08] gift watcher: 614 dev wallets watched | 232538 txs | 220 gifts | 1645 MB today (~33k credits)
 [2026-10-22 04:57:08] stats 395m: trades 9499134 (401/s) | lookups 11959 | profiles 11713 | with X 482 | ALERTS 0 | queue 11430 | rechecking 470 | 429s 112 | dropped 0 | top scans 132 | apps none=7128939,axiom=992536,pump=621194,fomo=391902,gmgn=180000
@@ -309,6 +308,7 @@
 [2026-10-22 05:12:08] stats 410m: trades 9776741 (397/s) | lookups 12428 | profiles 12177 | with X 494 | ALERTS 0 | queue 11656 | rechecking 476 | 429s 116 | dropped 0 | top scans 137 | apps none=7348010,axiom=1014688,pump=638477,fomo=401249,gmgn=184837
 [2026-10-22 05:13:08] stats 411m: trades 9797698 (397/s) | lookups 12488 | profiles 12237 | with X 496 | ALERTS 0 | queue 11618 | rechecking 477 | 429s 116 | dropped 0 | top scans 137 | apps none=7365126,axiom=1016080,pump=639547,fomo=401900,gmgn=185241
 [2026-10-22 05:13:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
+[2026-10-22 05:14:08] stats 412m: trades 9824303 (397/s) | lookups 12507 | profiles 12256 | with X 496 | ALERTS 0 | queue 11625 | rechecking 477 | 429s 116 | dropped 0 | top scans 138 | apps none=7388192,axiom=1017406,pump=640424,fomo=402592,gmgn=185571
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
