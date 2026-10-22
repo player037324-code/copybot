@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 04:34:37] 🎁 dev 9gpdgZ sent 2.0% of PauseAI to DogeUX58ATqUPGzhTVdEdtpWnkaxWg9kJcBHqjM6Derp
-[2026-10-22 04:34:48] 🎁 dev HgAhL3 sent 1.3% of Chara to DUr4cBBTNZcoKg4K9jxWjJpwpzC91Mn9TpHTNDLFHnfs
 [2026-10-22 04:35:08] stats 373m: trades 9116995 (407/s) | lookups 11352 | profiles 11118 | with X 473 | ALERTS 0 | queue 11185 | rechecking 471 | 429s 105 | dropped 0 | top scans 124 | apps none=6842974,axiom=955520,pump=593912,fomo=375508,gmgn=172005
 [2026-10-22 04:35:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
 [2026-10-22 04:36:08] stats 374m: trades 9132718 (407/s) | lookups 11382 | profiles 11147 | with X 473 | ALERTS 0 | queue 11199 | rechecking 470 | 429s 105 | dropped 0 | top scans 125 | apps none=6854199,axiom=957153,pump=595276,fomo=376236,gmgn=172430
@@ -309,6 +307,8 @@
 [2026-10-22 04:49:31] 🎁 dev F5XvCe sent 10.0% of SAINDRA to 8rCjoeuCkxZ7tT3dSJ1F8pRKZMaokKTY6gqRTCfdN3VG
 [2026-10-22 04:50:08] stats 388m: trades 9358669 (402/s) | lookups 11764 | profiles 11523 | with X 479 | ALERTS 0 | queue 11350 | rechecking 472 | 429s 110 | dropped 0 | top scans 129 | apps none=7018211,axiom=981702,pump=612721,fomo=386543,gmgn=177364
 [2026-10-22 04:50:37] top scan: 2001 profiles (cutoff 1050 pump followers) in 90s, 1 new to the list
+[2026-10-22 04:51:08] stats 389m: trades 9376758 (402/s) | lookups 11794 | profiles 11553 | with X 479 | ALERTS 0 | queue 11368 | rechecking 472 | 429s 110 | dropped 0 | top scans 130 | apps none=7031656,axiom=983130,pump=613947,fomo=387440,gmgn=178045
+[2026-10-22 04:51:13] 🎁 dev D8LzpP sent 4.3% of Si to 2h49osyS4nJE3RUDYxAPHwocVo8QmAcJXDkdVm8Hs6Dw
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
