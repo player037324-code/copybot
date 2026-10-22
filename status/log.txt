@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-:08] stats 824m: trades 17406769 (352/s) | lookups 25055 | profiles 24682 | with X 760 | ALERTS 0 | queue 15531 | rechecking 581 | 429s 232 | dropped 0 | top scans 275 | apps none=13538292,axiom=1570277,pump=1064241,fomo=607588,gmgn=315125
-[2026-10-22 12:07:08] gift watcher: 2788 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
+ PAUSED (cap)
 [2026-10-22 12:07:08] stats 825m: trades 17423799 (352/s) | lookups 25114 | profiles 24741 | with X 761 | ALERTS 0 | queue 15520 | rechecking 582 | 429s 232 | dropped 0 | top scans 275 | apps none=13552137,axiom=1571316,pump=1065142,fomo=608200,gmgn=315432
 [2026-10-22 12:07:47] top scan: 2001 profiles (cutoff 1088 pump followers) in 39s, 0 new to the list
 [2026-10-22 12:08:08] stats 826m: trades 17443834 (352/s) | lookups 25134 | profiles 24761 | with X 761 | ALERTS 0 | queue 15525 | rechecking 583 | 429s 232 | dropped 0 | top scans 276 | apps none=13568898,axiom=1572225,pump=1066246,fomo=608792,gmgn=315754
@@ -308,6 +307,8 @@
 [2026-10-22 12:22:47] top scan: 2001 profiles (cutoff 1088 pump followers) in 39s, 0 new to the list
 [2026-10-22 12:23:08] stats 841m: trades 17724146 (351/s) | lookups 25603 | profiles 25226 | with X 767 | ALERTS 0 | queue 15634 | rechecking 592 | 429s 236 | dropped 0 | top scans 281 | apps none=13800959,axiom=1588836,pump=1081996,fomo=615497,gmgn=320483
 [2026-10-22 12:24:08] stats 842m: trades 17744937 (351/s) | lookups 25656 | profiles 25278 | with X 769 | ALERTS 0 | queue 15629 | rechecking 592 | 429s 237 | dropped 0 | top scans 281 | apps none=13817951,axiom=1590441,pump=1083091,fomo=615916,gmgn=320779
+[2026-10-22 12:25:08] stats 843m: trades 17769247 (351/s) | lookups 25666 | profiles 25288 | with X 769 | ALERTS 0 | queue 15662 | rechecking 592 | 429s 237 | dropped 0 | top scans 281 | apps none=13839090,axiom=1591479,pump=1084252,fomo=616263,gmgn=321091
+[2026-10-22 12:25:48] top scan: 2001 profiles (cutoff 1088 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
