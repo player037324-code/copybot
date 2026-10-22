@@ -279,9 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.7% of PERRO to 5Z8aytx5vFYHqy2WT6zdVJdGfjF4LadHw3ofjuhiBCAw
-[2026-10-22 00:42:34] 🎁 dev 8sZCez sent 2.0% of PERRO to X6Dr2Fxs1ebqiiTmDLKocDNZPBriLrFNRRjHmy1Pmwy
-[2026-10-22 00:42:34] 🎁 dev 8sZCez sent 1.9% of PERRO to 3WngPZ36AvRNnAn2WZNEECVtDaZazyShFLFZezWgvN9k
 [2026-10-22 00:43:08] stats 141m: trades 3991161 (472/s) | lookups 4215 | profiles 4135 | with X 226 | ALERTS 0 | queue 8008 | rechecking 363 | 429s 41 | dropped 0 | top scans 47 | apps none=2985701,axiom=429860,pump=248402,fomo=172489,gmgn=72885
 [2026-10-22 00:43:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 00:44:08] stats 142m: trades 4009980 (471/s) | lookups 4235 | profiles 4155 | with X 228 | ALERTS 0 | queue 8027 | rechecking 363 | 429s 41 | dropped 0 | top scans 48 | apps none=2999463,axiom=431746,pump=249957,fomo=173320,gmgn=73239
@@ -309,6 +306,9 @@
 [2026-10-22 00:57:08] gift watcher: 743 dev wallets watched | 93706 txs | 76 gifts | 299 MB today (~6k credits)
 [2026-10-22 00:57:08] stats 155m: trades 4250154 (457/s) | lookups 4625 | profiles 4539 | with X 239 | ALERTS 0 | queue 8293 | rechecking 370 | 429s 45 | dropped 0 | top scans 52 | apps none=3173957,axiom=459098,pump=267502,fomo=183991,gmgn=77328
 [2026-10-22 00:57:55] 🎁 dev 2VHc4n sent 1.8% of TCAT to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
+[2026-10-22 00:58:08] stats 156m: trades 4267037 (456/s) | lookups 4684 | profiles 4598 | with X 241 | ALERTS 0 | queue 8292 | rechecking 374 | 429s 45 | dropped 0 | top scans 52 | apps none=3186509,axiom=460661,pump=268840,fomo=184770,gmgn=77633
+[2026-10-22 00:58:37] 🎁 dev BnJ571 sent 1.8% of FF to 6SV55Muh9Yy8o5EEtcMp9Yg6dKm9T8VRBNEk23ZTtke8
+[2026-10-22 00:58:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
