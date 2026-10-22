@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-n 91s, 0 new to the list
-[2026-10-22 06:51:08] stats 509m: trades 11499241 (377/s) | lookups 15432 | profiles 15147 | with X 575 | ALERTS 0 | queue 12616 | rechecking 497 | 429s 144 | dropped 0 | top scans 170 | apps none=8728941,axiom=1139759,pump=739210,fomo=459163,gmgn=215488
+,fomo=459163,gmgn=215488
 [2026-10-22 06:52:08] gift watcher: 732 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 06:52:08] stats 510m: trades 11518720 (376/s) | lookups 15485 | profiles 15199 | with X 576 | ALERTS 0 | queue 12621 | rechecking 498 | 429s 145 | dropped 0 | top scans 170 | apps none=8745265,axiom=1141064,pump=740195,fomo=459579,gmgn=215712
 [2026-10-22 06:53:08] stats 511m: trades 11540968 (376/s) | lookups 15485 | profiles 15199 | with X 576 | ALERTS 0 | queue 12641 | rechecking 498 | 429s 145 | dropped 0 | top scans 170 | apps none=8763991,axiom=1142425,pump=741270,fomo=460044,gmgn=216038
@@ -309,6 +308,7 @@ n 91s, 0 new to the list
 [2026-10-22 07:07:47] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 [2026-10-22 07:08:08] stats 526m: trades 11811561 (374/s) | lookups 15981 | profiles 15692 | with X 590 | ALERTS 0 | queue 12755 | rechecking 501 | 429s 148 | dropped 0 | top scans 176 | apps none=8984478,axiom=1161262,pump=755660,fomo=467992,gmgn=220101
 [2026-10-22 07:09:08] stats 527m: trades 11829078 (374/s) | lookups 16041 | profiles 15752 | with X 591 | ALERTS 0 | queue 12742 | rechecking 500 | 429s 148 | dropped 0 | top scans 176 | apps none=8998744,axiom=1162419,pump=756640,fomo=468517,gmgn=220373
+[2026-10-22 07:10:08] stats 528m: trades 11846110 (374/s) | lookups 16093 | profiles 15803 | with X 593 | ALERTS 0 | queue 12748 | rechecking 501 | 429s 149 | dropped 0 | top scans 176 | apps none=9012154,axiom=1163860,pump=757679,fomo=469100,gmgn=220624
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
