@@ -279,36 +279,36 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 02:18:08] stats 236m: trades 6216761 (439/s) | lookups 7192 | profiles 7058 | with X 347 | ALERTS 0 | queue 9497 | rechecking 413 | 429s 66 | dropped 0 | top scans 79 | apps none=4636677,axiom=689578,pump=389646,fomo=253815,gmgn=118223
-[2026-10-22 02:19:08] stats 237m: trades 6236717 (439/s) | lookups 7245 | profiles 7110 | with X 348 | ALERTS 0 | queue 9490 | rechecking 417 | 429s 67 | dropped 0 | top scans 79 | apps none=4650491,axiom=691948,pump=391189,fomo=254864,gmgn=118804
-[2026-10-22 02:20:08] stats 238m: trades 6260030 (438/s) | lookups 7245 | profiles 7110 | with X 348 | ALERTS 0 | queue 9526 | rechecking 417 | 429s 67 | dropped 0 | top scans 79 | apps none=4668079,axiom=694389,pump=392696,fomo=255799,gmgn=119203
-[2026-10-22 02:20:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:21:08] stats 239m: trades 6282517 (438/s) | lookups 7274 | profiles 7139 | with X 348 | ALERTS 0 | queue 9565 | rechecking 416 | 429s 67 | dropped 0 | top scans 80 | apps none=4684859,axiom=696599,pump=394497,fomo=256787,gmgn=119506
-[2026-10-22 02:22:08] gift watcher: 687 dev wallets watched | 151570 txs | 123 gifts | 842 MB today (~17k credits)
-[2026-10-22 02:22:08] stats 240m: trades 6300965 (438/s) | lookups 7327 | profiles 7191 | with X 350 | ALERTS 0 | queue 9550 | rechecking 416 | 429s 68 | dropped 0 | top scans 80 | apps none=4698081,axiom=698661,pump=396048,fomo=257663,gmgn=119847
-[2026-10-22 02:23:08] stats 241m: trades 6320052 (437/s) | lookups 7327 | profiles 7191 | with X 350 | ALERTS 0 | queue 9579 | rechecking 416 | 429s 68 | dropped 0 | top scans 80 | apps none=4712243,axiom=700707,pump=397359,fomo=258531,gmgn=120195
-[2026-10-22 02:23:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:23:53] 🎁 dev AzAEWh sent 1.3% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
-[2026-10-22 02:23:57] 🎁 dev AzAEWh sent 1.7% of boof to J1Xuvxq6SfkAN8z6Tpnhy5mxxrvMwpHgtdYRppP3Uagx
-[2026-10-22 02:24:08] stats 242m: trades 6338762 (437/s) | lookups 7357 | profiles 7221 | with X 350 | ALERTS 0 | queue 9613 | rechecking 416 | 429s 68 | dropped 0 | top scans 81 | apps none=4726360,axiom=702465,pump=398651,fomo=259392,gmgn=120579
-[2026-10-22 02:25:08] stats 243m: trades 6359428 (436/s) | lookups 7409 | profiles 7272 | with X 351 | ALERTS 0 | queue 9620 | rechecking 416 | 429s 69 | dropped 0 | top scans 81 | apps none=4742355,axiom=704025,pump=400142,fomo=260338,gmgn=120933
-[2026-10-22 02:26:08] stats 244m: trades 6379472 (436/s) | lookups 7409 | profiles 7272 | with X 351 | ALERTS 0 | queue 9653 | rechecking 416 | 429s 69 | dropped 0 | top scans 81 | apps none=4757577,axiom=705728,pump=401472,fomo=261404,gmgn=121259
-[2026-10-22 02:26:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:27:08] gift watcher: 677 dev wallets watched | 154983 txs | 125 gifts | 887 MB today (~18k credits)
-[2026-10-22 02:27:08] stats 245m: trades 6399843 (435/s) | lookups 7439 | profiles 7302 | with X 351 | ALERTS 0 | queue 9680 | rechecking 416 | 429s 69 | dropped 0 | top scans 82 | apps none=4772837,axiom=707324,pump=402994,fomo=262570,gmgn=121703
-[2026-10-22 02:28:08] stats 246m: trades 6419302 (435/s) | lookups 7492 | profiles 7354 | with X 353 | ALERTS 0 | queue 9649 | rechecking 418 | 429s 70 | dropped 0 | top scans 82 | apps none=4787154,axiom=708813,pump=404679,fomo=263719,gmgn=122133
-[2026-10-22 02:29:08] stats 247m: trades 6442481 (435/s) | lookups 7492 | profiles 7354 | with X 353 | ALERTS 0 | queue 9678 | rechecking 418 | 429s 70 | dropped 0 | top scans 82 | apps none=4805329,axiom=710206,pump=406381,fomo=264943,gmgn=122472
-[2026-10-22 02:29:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:30:08] stats 248m: trades 6463403 (434/s) | lookups 7521 | profiles 7383 | with X 353 | ALERTS 0 | queue 9710 | rechecking 418 | 429s 70 | dropped 0 | top scans 83 | apps none=4821226,axiom=712102,pump=407726,fomo=265726,gmgn=123072
-[2026-10-22 02:31:08] stats 249m: trades 6487511 (434/s) | lookups 7574 | profiles 7435 | with X 355 | ALERTS 0 | queue 9714 | rechecking 419 | 429s 71 | dropped 0 | top scans 83 | apps none=4840069,axiom=714205,pump=409112,fomo=266734,gmgn=123499
-[2026-10-22 02:32:08] gift watcher: 693 dev wallets watched | 157567 txs | 125 gifts | 916 MB today (~18k credits)
-[2026-10-22 02:32:08] stats 250m: trades 6512054 (434/s) | lookups 7574 | profiles 7435 | with X 355 | ALERTS 0 | queue 9754 | rechecking 419 | 429s 71 | dropped 0 | top scans 83 | apps none=4859423,axiom=715941,pump=410654,fomo=267823,gmgn=123894
-[2026-10-22 02:32:37] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:33:08] stats 251m: trades 6534378 (434/s) | lookups 7604 | profiles 7465 | with X 355 | ALERTS 0 | queue 9789 | rechecking 419 | 429s 71 | dropped 0 | top scans 84 | apps none=4875440,axiom=718302,pump=412433,fomo=269075,gmgn=124377
-[2026-10-22 02:34:08] stats 252m: trades 6556480 (434/s) | lookups 7657 | profiles 7517 | with X 356 | ALERTS 0 | queue 9789 | rechecking 422 | 429s 72 | dropped 0 | top scans 84 | apps none=4891670,axiom=720429,pump=414187,fomo=270229,gmgn=124795
-[2026-10-22 02:35:08] stats 253m: trades 6579103 (433/s) | lookups 7657 | profiles 7517 | with X 356 | ALERTS 0 | queue 9823 | rechecking 422 | 429s 72 | dropped 0 | top scans 84 | apps none=4909050,axiom=722226,pump=415882,fomo=271068,gmgn=125204
-[2026-10-22 02:35:38] top scan: 2001 profiles (cutoff 1041 pump followers) in 90s, 0 new to the list
-[2026-10-22 02:36:08] stats 254m: trades 6601815 (433/s) | lookups 7686 | profiles 7546 | with X 356 | ALERTS 0 | queue 9849 | rechecking 420 | 429s 72 | dropped 0 | top scans 85 | apps none=4926646,axiom=723817,pump=417437,fomo=272194,gmgn=125572
+[2026-10-22 02:37:13] 🎁 dev ExfWiN sent 1.0% of WOFI to 92gbFPMZ4oHWTbrwnh5EKJbxrjgPkzHkwjjWNpNwrRj9
+[2026-10-22 02:37:15] 🎁 dev ExfWiN sent 1.2% of WOFI to 684c26U6wULnobkdrHhWQ1HYH6pcEFsd7SuwagJYKcZM
+[2026-10-22 02:37:15] 🎁 dev ExfWiN sent 1.1% of WOFI to 9qvwi2Fz4sNxn5QGmSwZayTBwHxM6ADLqbaYB4jGHD4M
+[2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.0% of WOFI to E8hT3uWzbEPo6Cb3KRvyTSyCbrnqVagN6LjYUG5BKqGa
+[2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.1% of WOFI to 6B5vf23qQZFenq1yyV6WA3eW8xGatn5tnwday2CnZaGT
+[2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.0% of WOFI to 6oXsZUAnu9LXWi8wYMs4QLg8ajHGKEWzLAfvWbp7Q7WS
+[2026-10-22 02:37:17] 🎁 dev ExfWiN sent 1.0% of WOFI to 6nMZ6Vf41xjECZGyjFkHfdeLGJyFhutuHPW5TJLZTPca
+[2026-10-22 02:37:18] 🎁 dev ExfWiN sent 1.1% of WOFI to FXj9ggbRgwnALC9mufBFoza2M2VFesJw4eYK284PXftK
+[2026-10-22 02:37:18] 🎁 dev ExfWiN sent 1.1% of WOFI to 7wQsXvLCcxnh9cwj5Uykf39keqrFitdpZQAE4Ap3J8Nv
+[2026-10-22 02:37:19] 🎁 dev ExfWiN sent 1.0% of WOFI to 7iNiqYKcEUZ5rAkavBU3JKUXds3FeRAeT2HJvn6W3D5o
+[2026-10-22 02:37:19] 🎁 dev ExfWiN sent 1.0% of WOFI to EQgSXHLXPpp4c48EyCsdaTn3MrbjZoVCmMU5sW6YFvsg
+[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.2% of WOFI to 4P4GbCMna3P7rWn7QnSQv1Rc6M97kRCipdP8ijSArweo
+[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to DcSZCeZUgqCGQTcDe8fzp6r3E3zCw4xgTGpYZDKtSx5o
+[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.1% of WOFI to BwjQUhv8FzabAYuEte2N1vrXJnRnF6pCRR2jMt1dtmAQ
+[2026-10-22 02:37:20] 🎁 dev ExfWiN sent 1.0% of WOFI to CAZjRRvrS2SWPrwLHax1pAMbWzXHfxH8UaqSHwX2am3K
+[2026-10-22 02:37:21] 🎁 dev ExfWiN sent 1.1% of WOFI to B3ekcBSS5hYzpXMaWqHj2HSSmRB3cDkNwM98VfQAQEAr
+[2026-10-22 02:37:22] 🎁 dev ExfWiN sent 1.1% of WOFI to 7sFMZQtZJGfG8ZgeaUmW6JSjT646KR9XcEvGb2dd8veD
+[2026-10-22 02:37:22] 🎁 dev ExfWiN sent 1.1% of WOFI to A3oCXNRfCgnArf97QUfiJrdc3FVHNDPcNwUpu7os37Hq
+[2026-10-22 02:37:22] 🎁 dev ExfWiN sent 1.1% of WOFI to 8YKXhk27rXELLbNQ3Jn7UD6rt6895W886PqNFt5j6VqD
+[2026-10-22 02:37:23] 🎁 dev ExfWiN sent 1.0% of WOFI to HdNKvJoDqcUkV7bAbEkXQh7SgJePKRM5GSeyMbgQ6S3s
+[2026-10-22 02:37:23] 🎁 dev ExfWiN sent 1.1% of WOFI to BU19zepC8pRpJLy71md5f3krYf1e15XMaG1RALAL8JZH
+[2026-10-22 02:37:24] 🎁 dev ExfWiN sent 1.1% of WOFI to AnC7mZmRTFSoRCYqoM8Z9GGU4LUpbo4MGEaxgKvHx39X
+[2026-10-22 02:37:24] 🎁 dev ExfWiN sent 1.1% of WOFI to 29PjQbVENWuCFTvPvxxdyQCYXRbJYwhwwpAy4F35bcYp
+[2026-10-22 02:37:25] 🎁 dev ExfWiN sent 1.1% of WOFI to Hj43vFy1D1AxJLSeRr71gEgvqgUuUaQyH42i5JwyMQNV
+[2026-10-22 02:37:25] 🎁 dev ExfWiN sent 1.2% of WOFI to 3Qvv5LjuSqxxzn9gPh1ttM4kTUNjMPdbQwAEMoCmDXvx
+[2026-10-22 02:37:25] 🎁 dev ExfWiN sent 1.0% of WOFI to CJD2Bvw2oN2X5sGaLxCgbnwMBw935V56PsLHtvxhXTQh
+[2026-10-22 02:37:25] 🎁 dev ExfWiN sent 1.0% of WOFI to HShsEe3A9YuvXJZPyXnBksoBmBgWW2L4h7ZWM8nhbxRF
+[2026-10-22 02:37:25] 🎁 dev ExfWiN sent 1.0% of WOFI to A6uFxhD7xpuYoXJ4JMagkfvuDgo6KGs9UXM3MuMM2tHK
+[2026-10-22 02:37:26] 🎁 dev ExfWiN sent 1.0% of WOFI to 5riEfaMDSBwuGWU7iyuNQQpFDvBH6MBQP8Yob4B9r5xo
+[2026-10-22 02:37:27] 🎁 dev ExfWiN sent 1.1% of WOFI to GjS8D77rSUbYVWwryxTM2cYQM29rcC6ZdRb9J9HuVnfn
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
