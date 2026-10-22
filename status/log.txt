@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:47:08] stats 145m: trades 4068923 (468/s) | lookups 4318 | profiles 4235 | with X 229 | ALERTS 0 | queue 8103 | rechecking 364 | 429s 42 | dropped 0 | top scans 49 | apps none=3041453,axiom=439654,pump=254122,fomo=175611,gmgn=74272
-[2026-10-22 00:48:08] stats 146m: trades 4087186 (467/s) | lookups 4371 | profiles 4287 | with X 232 | ALERTS 0 | queue 8108 | rechecking 367 | 429s 43 | dropped 0 | top scans 49 | apps none=3054376,axiom=442063,pump=255461,fomo=176390,gmgn=74564
 [2026-10-22 00:49:08] stats 147m: trades 4104813 (465/s) | lookups 4380 | profiles 4296 | with X 232 | ALERTS 0 | queue 8156 | rechecking 367 | 429s 43 | dropped 0 | top scans 49 | apps none=3066917,axiom=444328,pump=256801,fomo=177134,gmgn=74870
 [2026-10-22 00:49:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
 [2026-10-22 00:50:08] stats 148m: trades 4122026 (464/s) | lookups 4400 | profiles 4316 | with X 232 | ALERTS 0 | queue 8186 | rechecking 367 | 429s 43 | dropped 0 | top scans 50 | apps none=3079271,axiom=446379,pump=258086,fomo=177893,gmgn=75208
@@ -309,6 +307,8 @@
 [2026-10-22 01:02:08] stats 160m: trades 4351574 (453/s) | lookups 4787 | profiles 4699 | with X 247 | ALERTS 0 | queue 8369 | rechecking 377 | 429s 46 | dropped 0 | top scans 54 | apps none=3251578,axiom=467397,pump=274892,fomo=188254,gmgn=78937
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 4.2% of CyberGato to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 01:02:19] 🎁 dev BAoJmp sent 3.6% of CyberGato to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
+[2026-10-22 01:03:08] stats 161m: trades 4373591 (453/s) | lookups 4846 | profiles 4756 | with X 251 | ALERTS 0 | queue 8378 | rechecking 381 | 429s 46 | dropped 0 | top scans 54 | apps none=3268686,axiom=469116,pump=276519,fomo=189124,gmgn=79242
+[2026-10-22 01:03:54] skip speedkillz @N0ZEbeers: 1038 X followers
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
