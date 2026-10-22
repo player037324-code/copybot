@@ -279,8 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 06:13:08] stats 471m: trades 10790636 (382/s) | lookups 14300 | profiles 14028 | with X 541 | ALERTS 0 | queue 12278 | rechecking 486 | 429s 134 | dropped 0 | top scans 157 | apps none=8151114,axiom=1090495,pump=702033,fomo=438074,gmgn=203285
-[2026-10-22 06:13:10] 🎁 dev 7pa9H6 sent 1.2% of Andrés to tqVvFiW1UcMzx1rknDzd4BUTPyLmC9wxK36o5KSrTXw
 [2026-10-22 06:13:10] 🎁 dev 7pa9H6 sent 1.6% of Andrés to D4m5kk6R7M6Nfp7dtSasvHRvLH1NWGjXukpyDAiGPVkb
 [2026-10-22 06:13:26] 🎁 dev 7pa9H6 sent 1.1% of Andrés to 7sPaiJMhDAA2aVqyuksRJ58YtGMwUadytjr4wTGfgjAR
 [2026-10-22 06:14:08] stats 472m: trades 10812323 (382/s) | lookups 14300 | profiles 14028 | with X 541 | ALERTS 0 | queue 12309 | rechecking 486 | 429s 134 | dropped 0 | top scans 157 | apps none=8169126,axiom=1091658,pump=703173,fomo=438774,gmgn=203667
@@ -309,6 +307,8 @@
 [2026-10-22 06:26:08] stats 484m: trades 11023286 (380/s) | lookups 14656 | profiles 14378 | with X 550 | ALERTS 0 | queue 12423 | rechecking 490 | 429s 137 | dropped 0 | top scans 162 | apps none=8339284,axiom=1107117,pump=714636,fomo=445721,gmgn=207351
 [2026-10-22 06:27:08] gift watcher: 570 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 06:27:08] stats 485m: trades 11047068 (380/s) | lookups 14709 | profiles 14430 | with X 554 | ALERTS 0 | queue 12410 | rechecking 491 | 429s 138 | dropped 0 | top scans 162 | apps none=8358899,axiom=1108912,pump=715671,fomo=446330,gmgn=207709
+[2026-10-22 06:28:08] stats 486m: trades 11068274 (380/s) | lookups 14719 | profiles 14440 | with X 554 | ALERTS 0 | queue 12425 | rechecking 492 | 429s 138 | dropped 0 | top scans 162 | apps none=8375802,axiom=1110701,pump=716494,fomo=447110,gmgn=208163
+[2026-10-22 06:28:48] top scan: 2001 profiles (cutoff 1050 pump followers) in 40s, 0 new to the list
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
