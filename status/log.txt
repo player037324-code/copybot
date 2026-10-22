@@ -279,10 +279,6 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 00:44:08] stats 142m: trades 4009980 (471/s) | lookups 4235 | profiles 4155 | with X 228 | ALERTS 0 | queue 8027 | rechecking 363 | 429s 41 | dropped 0 | top scans 48 | apps none=2999463,axiom=431746,pump=249957,fomo=173320,gmgn=73239
-[2026-10-22 00:44:10] 🎁 dev 97K6ns sent 1.2% of POINTLESS to Gm3Aab4uNkrYyH72Ewc1iDUvkEhc9i2o3uvNFZX7Vdwu
-[2026-10-22 00:45:08] stats 143m: trades 4029982 (470/s) | lookups 4288 | profiles 4207 | with X 229 | ALERTS 0 | queue 8025 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3013400,axiom=434741,pump=251394,fomo=174020,gmgn=73556
-[2026-10-22 00:45:36] 🎁 dev BAoJmp sent 3.0% of LARPLESS to EV5qdMrhVVfi3G5GifeW3Wb5RDX2swbhswsDE9ynEvBu
 [2026-10-22 00:45:36] 🎁 dev BAoJmp sent 2.7% of LARPLESS to CwSaVFHnwSUDPXgcNKe5WXQqeJKzreiBqSUn2e19hF3q
 [2026-10-22 00:46:08] stats 144m: trades 4051340 (469/s) | lookups 4298 | profiles 4215 | with X 229 | ALERTS 0 | queue 8072 | rechecking 364 | 429s 42 | dropped 0 | top scans 48 | apps none=3028983,axiom=437387,pump=252844,fomo=174828,gmgn=73920
 [2026-10-22 00:46:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
@@ -309,6 +305,10 @@
 [2026-10-22 00:58:47] top scan: 2001 profiles (cutoff 1043 pump followers) in 39s, 0 new to the list
 [2026-10-22 00:59:08] stats 157m: trades 4284597 (455/s) | lookups 4704 | profiles 4617 | with X 244 | ALERTS 0 | queue 8304 | rechecking 374 | 429s 45 | dropped 0 | top scans 53 | apps none=3199947,axiom=461896,pump=270212,fomo=185582,gmgn=77929
 [2026-10-22 01:00:08] stats 158m: trades 4304951 (454/s) | lookups 4757 | profiles 4669 | with X 247 | ALERTS 0 | queue 8312 | rechecking 377 | 429s 46 | dropped 0 | top scans 53 | apps none=3215277,axiom=463813,pump=271763,fomo=186414,gmgn=78218
+[2026-10-22 01:01:08] stats 159m: trades 4326897 (454/s) | lookups 4767 | profiles 4679 | with X 247 | ALERTS 0 | queue 8345 | rechecking 377 | 429s 46 | dropped 0 | top scans 53 | apps none=3231854,axiom=465631,pump=273356,fomo=187376,gmgn=78641
+[2026-10-22 01:01:48] top scan: 2001 profiles (cutoff 1043 pump followers) in 40s, 0 new to the list
+[2026-10-22 01:01:49] 🎁 dev 2VHc4n sent 2.9% of TI to DTzth8MyhtQcRKfMavQfVh1R6QfyKJa2s9YwVh2HZ5EX
+[2026-10-22 01:01:53] 🎁 dev 2VHc4n sent 1.1% of TI to CLhoYrMne1ac12AQV36EyfUJW5iJPBHiaYLkQY2wsukD
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
