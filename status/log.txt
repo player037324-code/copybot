@@ -279,8 +279,7 @@
 /root/.pm2/logs/pfwatch-error.log last 30 lines:
 
 /root/.pm2/logs/pfwatch-out.log last 30 lines:
-[2026-10-22 13:14:37] top scan: 2001 profiles (cutoff 1088 pump followers) in 90s, 0 new to the list
-[2026-10-22 13:15:08] stats 893m: trades 19004687 (355/s) | lookups 27179 | profiles 26787 | with X 791 | ALERTS 0 | queue 16305 | rechecking 595 | 429s 251 | dropped 0 | top scans 298 | apps none=14803754,axiom=1707819,pump=1149547,fomo=650091,gmgn=350365
+6787 | with X 791 | ALERTS 0 | queue 16305 | rechecking 595 | 429s 251 | dropped 0 | top scans 298 | apps none=14803754,axiom=1707819,pump=1149547,fomo=650091,gmgn=350365
 [2026-10-22 13:16:08] stats 894m: trades 19033459 (355/s) | lookups 27232 | profiles 26839 | with X 794 | ALERTS 0 | queue 16284 | rechecking 596 | 429s 252 | dropped 0 | top scans 298 | apps none=14826551,axiom=1710641,pump=1151149,fomo=650712,gmgn=350889
 [2026-10-22 13:17:08] gift watcher: 3418 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 13:17:08] stats 895m: trades 19061230 (355/s) | lookups 27232 | profiles 26839 | with X 794 | ALERTS 0 | queue 16314 | rechecking 596 | 429s 252 | dropped 0 | top scans 298 | apps none=14849158,axiom=1712781,pump=1152543,fomo=651353,gmgn=351484
@@ -309,6 +308,7 @@
 [2026-10-22 13:31:53] skip traderbepis @traderbepis: 834 X followers
 [2026-10-22 13:32:08] gift watcher: 3539 dev wallets watched | 276860 txs | 236 gifts | 2000 MB today (~40k credits) | PAUSED (cap)
 [2026-10-22 13:32:08] stats 910m: trades 19424290 (356/s) | lookups 27671 | profiles 27274 | with X 799 | ALERTS 0 | queue 16485 | rechecking 600 | 429s 256 | dropped 0 | top scans 304 | apps none=15136828,axiom=1743957,pump=1174143,fomo=660601,gmgn=358778
+[2026-10-22 13:33:08] stats 911m: trades 19451606 (356/s) | lookups 27724 | profiles 27326 | with X 799 | ALERTS 0 | queue 16503 | rechecking 600 | 429s 257 | dropped 0 | top scans 304 | apps none=15158579,axiom=1746385,pump=1175623,fomo=661231,gmgn=359197
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
