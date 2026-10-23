@@ -314,7 +314,6 @@
 [TAILING] Tailing last 20 lines for [callouts] process (change the value with --lines option)
 /root/.pm2/logs/callouts-error.log last 20 lines:
 /root/.pm2/logs/callouts-out.log last 20 lines:
-[2026-10-23 03:23:06] stats 410m: 15828 callouts seen on pump.fun | 0 from watchlist
 [2026-10-23 03:28:06] stats 415m: 15985 callouts seen on pump.fun | 0 from watchlist
 [2026-10-23 03:33:06] stats 420m: 16150 callouts seen on pump.fun | 0 from watchlist
 [2026-10-23 03:38:06] stats 425m: 16305 callouts seen on pump.fun | 0 from watchlist
@@ -334,6 +333,7 @@
 [2026-10-23 04:48:06] stats 495m: 18110 callouts seen on pump.fun | 0 from watchlist
 [2026-10-23 04:53:06] stats 500m: 18225 callouts seen on pump.fun | 0 from watchlist
 [2026-10-23 04:58:06] stats 505m: 18349 callouts seen on pump.fun | 0 from watchlist
+[2026-10-23 05:03:06] stats 510m: 18462 callouts seen on pump.fun | 0 from watchlist
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
