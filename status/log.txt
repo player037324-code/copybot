@@ -313,9 +313,9 @@
 
 --- callouts ---
 [TAILING] Tailing last 20 lines for [callouts] process (change the value with --lines option)
+/root/.pm2/logs/callouts-error.log last 20 lines:
+
 /root/.pm2/logs/callouts-out.log last 20 lines:
-[2026-10-28 21:28:07] stats 8695m: 257926 callouts seen on pump.fun | 0 from watchlist
-[2026-10-28 21:33:07] stats 8700m: 258110 callouts seen on pump.fun | 0 from watchlist
 [2026-10-28 21:38:07] stats 8705m: 258358 callouts seen on pump.fun | 0 from watchlist
 [2026-10-28 21:43:07] stats 8710m: 258684 callouts seen on pump.fun | 0 from watchlist
 [2026-10-28 21:48:07] stats 8715m: 258923 callouts seen on pump.fun | 0 from watchlist
@@ -334,8 +334,8 @@
 [2026-10-28 22:53:07] stats 8780m: 262250 callouts seen on pump.fun | 0 from watchlist
 [2026-10-28 22:58:07] stats 8785m: 262451 callouts seen on pump.fun | 0 from watchlist
 [2026-10-28 23:03:07] stats 8790m: 262646 callouts seen on pump.fun | 0 from watchlist
-
-/root/.pm2/logs/callouts-error.log last 20 lines:
+[2026-10-28 23:05:07] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
+[2026-10-28 23:05:07] feed connected
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
