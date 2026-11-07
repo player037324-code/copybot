@@ -316,7 +316,6 @@
 /root/.pm2/logs/callouts-error.log last 20 lines:
 
 /root/.pm2/logs/callouts-out.log last 20 lines:
-[2026-11-07 16:48:08] stats 22815m: 739186 callouts seen on pump.fun | 0 from watchlist
 [2026-11-07 16:53:08] stats 22820m: 739361 callouts seen on pump.fun | 0 from watchlist
 [2026-11-07 16:58:08] stats 22825m: 739555 callouts seen on pump.fun | 0 from watchlist
 [2026-11-07 17:03:08] stats 22830m: 739740 callouts seen on pump.fun | 0 from watchlist
@@ -336,6 +335,7 @@
 [2026-11-07 18:13:08] stats 22900m: 742498 callouts seen on pump.fun | 0 from watchlist
 [2026-11-07 18:18:08] stats 22905m: 742658 callouts seen on pump.fun | 0 from watchlist
 [2026-11-07 18:23:08] stats 22910m: 742794 callouts seen on pump.fun | 0 from watchlist
+[2026-11-07 18:28:08] stats 22915m: 742954 callouts seen on pump.fun | 0 from watchlist
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
