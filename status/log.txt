@@ -316,7 +316,6 @@
 /root/.pm2/logs/callouts-error.log last 20 lines:
 
 /root/.pm2/logs/callouts-out.log last 20 lines:
-[2026-11-21 11:59:05] feed: wss://prod-v2.nats.realtime.pump.fun subject calloutCreated | watching Gs5FHwYLrDBmCmiv5VhBLCvyiBmBYfcPedZDqR88GYeX, ea1951bf-9885-4dca-9f28-82830824ce3c
 [2026-11-21 11:59:05] feed connected
 [2026-11-21 12:03:09] stats 42690m: 1399986 callouts seen on pump.fun | 0 from watchlist
 [2026-11-21 12:08:09] stats 42695m: 1400066 callouts seen on pump.fun | 0 from watchlist
@@ -336,6 +335,7 @@
 [2026-11-21 13:18:09] stats 42765m: 1401751 callouts seen on pump.fun | 0 from watchlist
 [2026-11-21 13:23:09] stats 42770m: 1401869 callouts seen on pump.fun | 0 from watchlist
 [2026-11-21 13:28:09] stats 42775m: 1401972 callouts seen on pump.fun | 0 from watchlist
+[2026-11-21 13:33:09] stats 42780m: 1402100 callouts seen on pump.fun | 0 from watchlist
 
 --- errors ---
 [2026-10-17 21:53:40] WARN websocket closed, reconnecting
